@@ -97,6 +97,35 @@ class VoxelithLibrary {
       ],
     ),
     LibraryStory(
+      id: 'en_new_hobby',
+      lang: LearnLang.en,
+      level: Cefr.a1,
+      title: 'A New Hobby',
+      titleTr: 'Yeni Bir Hobi',
+      sentences: [
+        LibrarySentence(
+          target: 'Last month I started learning to paint.',
+          glossTr: 'Geçen ay resim yapmayı öğrenmeye başladım.',
+        ),
+        LibrarySentence(
+          target: 'I go to a small class near my house.',
+          glossTr: 'Evimin yakınındaki küçük bir kursa gidiyorum.',
+        ),
+        LibrarySentence(
+          target: 'My first paintings were not very good.',
+          glossTr: 'İlk resimlerim çok iyi değildi.',
+        ),
+        LibrarySentence(
+          target: 'But every week I feel more confident.',
+          glossTr: 'Ama her hafta kendimi daha güvenli hissediyorum.',
+        ),
+        LibrarySentence(
+          target: 'Now I want to paint a picture for my mother.',
+          glossTr: 'Şimdi anneme bir tablo yapmak istiyorum.',
+        ),
+      ],
+    ),
+    LibraryStory(
       id: 'es_mercado',
       lang: LearnLang.es,
       level: Cefr.a1,
@@ -151,6 +180,35 @@ class VoxelithLibrary {
         LibrarySentence(
           target: 'Espero verlo otra vez la próxima semana.',
           glossTr: 'Onu gelecek hafta tekrar görmeyi umuyorum.',
+        ),
+      ],
+    ),
+    LibraryStory(
+      id: 'es_vecino',
+      lang: LearnLang.es,
+      level: Cefr.a1,
+      title: 'El Vecino Nuevo',
+      titleTr: 'Yeni Komşu',
+      sentences: [
+        LibrarySentence(
+          target: 'Un hombre nuevo vive en el piso de arriba.',
+          glossTr: 'Üst kattaki dairede yeni bir adam yaşıyor.',
+        ),
+        LibrarySentence(
+          target: 'Es muy amable y siempre saluda.',
+          glossTr: 'Çok kibar ve her zaman selam veriyor.',
+        ),
+        LibrarySentence(
+          target: 'Un día me ayudó a subir las bolsas.',
+          glossTr: 'Bir gün torbaları çıkarmama yardım etti.',
+        ),
+        LibrarySentence(
+          target: 'Ahora tomamos café juntos los domingos.',
+          glossTr: 'Şimdi pazarları birlikte kahve içiyoruz.',
+        ),
+        LibrarySentence(
+          target: 'Me alegra tener un buen vecino.',
+          glossTr: 'İyi bir komşum olduğu için mutluyum.',
         ),
       ],
     ),
@@ -213,6 +271,35 @@ class VoxelithLibrary {
       ],
     ),
     LibraryStory(
+      id: 'de_markt',
+      lang: LearnLang.de,
+      level: Cefr.a1,
+      title: 'Der Wochenmarkt',
+      titleTr: 'Haftalık Pazar',
+      sentences: [
+        LibrarySentence(
+          target: 'Am Samstag gehe ich immer auf den Markt.',
+          glossTr: 'Cumartesi günleri her zaman pazara giderim.',
+        ),
+        LibrarySentence(
+          target: 'Dort kaufe ich frisches Gemüse und Käse.',
+          glossTr: 'Orada taze sebze ve peynir alırım.',
+        ),
+        LibrarySentence(
+          target: 'Die Verkäuferin kennt mich schon gut.',
+          glossTr: 'Satıcı beni artık iyi tanıyor.',
+        ),
+        LibrarySentence(
+          target: 'Wir sprechen kurz über das Wetter.',
+          glossTr: 'Kısaca hava durumu hakkında konuşuruz.',
+        ),
+        LibrarySentence(
+          target: 'Danach trage ich alles nach Hause.',
+          glossTr: 'Sonra her şeyi eve taşırım.',
+        ),
+      ],
+    ),
+    LibraryStory(
       id: 'fr_cafe',
       lang: LearnLang.fr,
       level: Cefr.a1,
@@ -271,6 +358,35 @@ class VoxelithLibrary {
       ],
     ),
     LibraryStory(
+      id: 'fr_velo',
+      lang: LearnLang.fr,
+      level: Cefr.a1,
+      title: "Le Nouveau Vélo",
+      titleTr: 'Yeni Bisiklet',
+      sentences: [
+        LibrarySentence(
+          target: "J'ai acheté un nouveau vélo la semaine dernière.",
+          glossTr: 'Geçen hafta yeni bir bisiklet aldım.',
+        ),
+        LibrarySentence(
+          target: 'Je vais au travail à vélo chaque matin.',
+          glossTr: 'Her sabah bisikletle işe gidiyorum.',
+        ),
+        LibrarySentence(
+          target: "L'air frais me réveille complètement.",
+          glossTr: 'Temiz hava beni tamamen uyandırıyor.',
+        ),
+        LibrarySentence(
+          target: 'Parfois, je prends un chemin plus long.',
+          glossTr: 'Bazen daha uzun bir yol seçiyorum.',
+        ),
+        LibrarySentence(
+          target: 'Faire du vélo me rend vraiment heureux.',
+          glossTr: 'Bisiklete binmek beni gerçekten mutlu ediyor.',
+        ),
+      ],
+    ),
+    LibraryStory(
       id: 'ar_madina',
       lang: LearnLang.ar,
       level: Cefr.a1,
@@ -325,6 +441,35 @@ class VoxelithLibrary {
         LibrarySentence(
           target: 'أنا سعيدة بهذه الصداقة.',
           glossTr: 'Bu arkadaşlıktan mutluyum.',
+        ),
+      ],
+    ),
+    LibraryStory(
+      id: 'ar_hadiqa',
+      lang: LearnLang.ar,
+      level: Cefr.a1,
+      title: 'الحديقة القريبة',
+      titleTr: 'Yakındaki Park',
+      sentences: [
+        LibrarySentence(
+          target: 'بجانب بيتي حديقة صغيرة وجميلة.',
+          glossTr: 'Evimin yanında küçük ve güzel bir park var.',
+        ),
+        LibrarySentence(
+          target: 'أذهب إليها كل صباح للمشي.',
+          glossTr: 'Her sabah yürüyüş yapmak için oraya giderim.',
+        ),
+        LibrarySentence(
+          target: 'الأطفال يلعبون هناك بسعادة.',
+          glossTr: 'Çocuklar orada mutlu bir şekilde oynar.',
+        ),
+        LibrarySentence(
+          target: 'أجلس على مقعد وأشرب قهوتي.',
+          glossTr: 'Bir bankta oturup kahvemi içerim.',
+        ),
+        LibrarySentence(
+          target: 'هذه اللحظات الهادئة تعجبني كثيراً.',
+          glossTr: 'Bu sakin anları çok seviyorum.',
         ),
       ],
     ),
