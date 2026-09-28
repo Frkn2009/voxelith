@@ -23,8 +23,8 @@ class PremiumTtsService {
         'tts',
         body: {
           'text': text,
-          if (voiceId != null) 'voiceId': voiceId,
-          if (lang != null) 'lang': lang,
+          'voiceId': ?voiceId,
+          'lang': ?lang,
         },
       );
       final data = response.data;
