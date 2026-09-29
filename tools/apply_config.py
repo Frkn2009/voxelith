@@ -19,6 +19,9 @@ ROOT = Path(__file__).resolve().parent.parent
 REQ = ROOT / 'docs/content_tasks/REQUESTS.json'
 
 FORMATS = {
+    ('sirket', 'kvk_numarasi'): r'\d{8}',
+    ('sirket', 'btw_numarasi'): r'NL\d{9}B\d{2}',
+    ('sirket', 'telefon'): r'\+\d{8,15}',
     ('sirket', 'destek_eposta'): r'[^@\s]+@[^@\s]+\.[a-z]{2,}',
     ('sirket', 'gizlilik_eposta'): r'[^@\s]+@[^@\s]+\.[a-z]{2,}',
     ('sirket', 'alan_adi'): r'(?:[a-z0-9-]+\.)+[a-z]{2,}',
@@ -47,11 +50,12 @@ def values():
             errors.append(f'{grp}.{key} = {v!r} biçimi yanlış')
             continue
         out[(grp, key)] = v
-    company = str(data.get('sirket', {}).get('sirket_adi', '')).strip()
-    if company:
-        out[('sirket', 'sirket_adi')] = company
-    else:
-        missing.append('sirket.sirket_adi')
+    for key in ('hukuki_unvan', 'adres'):
+        val = str(data.get('sirket', {}).get(key, '')).strip()
+        if val:
+            out[('sirket', key)] = val
+        else:
+            missing.append(f'sirket.{key}')
     return out, errors, missing
 
 
@@ -80,23 +84,33 @@ def main():
         return
 
     s = lambda k: v.get(k)
-    if s(('sirket', 'destek_eposta')):
-        sub_file('lib/core/legal_info.dart', r"static const supportEmail = '[^']*';",
-                 f"static const supportEmail = '{s(('sirket', 'destek_eposta'))}';")
-    if s(('sirket', 'gizlilik_eposta')):
-        mail = s(('sirket', 'gizlilik_eposta'))
-        sub_file('lib/core/legal_info.dart', r"static const privacyEmail = '[^']*';",
-                 f"static const privacyEmail = '{mail}';")
-        for rel in ('site/delete-account.html', 'site/index.html'):
+    legal = {
+        'companyLegalName': s(('sirket', 'hukuki_unvan')),
+        'companyAddress': s(('sirket', 'adres')),
+        'kvkNumber': s(('sirket', 'kvk_numarasi')),
+        'vatNumber': s(('sirket', 'btw_numarasi')),
+        'supportEmail': s(('sirket', 'destek_eposta')),
+        'privacyEmail': s(('sirket', 'gizlilik_eposta')),
+    }
+    markers = {
+        'companyLegalName': '[LEGAL_COMPANY_NAME]', 'companyAddress': '[REGISTERED_ADDRESS]',
+        'kvkNumber': '[KVK_NUMBER]', 'vatNumber': '[VAT_NUMBER]',
+        'supportEmail': '[SUPPORT_EMAIL]', 'privacyEmail': '[PRIVACY_EMAIL]',
+    }
+    for const, val in legal.items():
+        if not val:
+            continue
+        safe = val.replace('\\', '\\\\').replace("'", "\\'").replace('$', '\\$')
+        sub_file('lib/core/legal_info.dart',
+                 rf"static const {const} =\s*'[^']*';",
+                 lambda m, safe=safe, const=const: f"static const {const} = '{safe}';")
+        for rel in ('site/index.html', 'site/delete-account.html'):
             p = ROOT / rel
-            p.write_text(re.sub(r'[\w.+-]+@voxelith\.app', mail, p.read_text(encoding='utf-8')),
+            p.write_text(p.read_text(encoding='utf-8').replace(markers[const], val),
                          encoding='utf-8')
     if s(('sirket', 'alan_adi')):
         sub_file('lib/core/legal_info.dart', r"static const websiteUrl = '[^']*';",
                  f"static const websiteUrl = 'https://{s(('sirket', 'alan_adi'))}';")
-    if s(('sirket', 'sirket_adi')):
-        sub_file('site/delete-account.html', r'(Developer|Geliştirici): [^<]*',
-                 lambda m: f"{m.group(1)}: {s(('sirket', 'sirket_adi'))}", count=0)
     if s(('admob', 'android_app_id')):
         sub_file('android/app/src/main/AndroidManifest.xml',
                  r'(android:name="com\.google\.android\.gms\.ads\.APPLICATION_ID"\s*android:value=")[^"]*',

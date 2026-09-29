@@ -2,12 +2,16 @@
   "_nasil": "1) 'girdiler' altındaki boş (\"\") alanları doldur. 2) python3 tools/apply_config.py çalıştır — değerleri doğru dosyalara yazar. 3) 'yapay_zeka_isleri' komutlarını sırayla çalıştır. 4) 'sunucu_isleri'ni yap. 5) Claude Code'a 'hazır' de. API anahtarlarını BU DOSYAYA YAZMA — yalnızca ortam değişkeni olarak ver.",
   "girdiler": {
     "sirket": {
-      "sirket_adi": "",
-      "ulke": "Türkiye",
+      "_not": "Hollanda şirketi — AB/GDPR. Değerler gizlilik politikasına, kullanım koşullarına, site sayfalarına ve mağaza 'tüccar' (DSA) bilgisine girer.",
+      "hukuki_unvan": "",
+      "adres": "",
+      "kvk_numarasi": "",
+      "btw_numarasi": "",
+      "telefon": "",
+      "ulke": "Nederland",
       "alan_adi": "voxelith.app",
       "destek_eposta": "",
-      "gizlilik_eposta": "",
-      "_not": "Repodaki destek@/gizlilik@voxelith.app adresleri kodda YER TUTUCU olarak işaretli; gerçekten e-posta aldığını onaylayıp buraya yaz."
+      "gizlilik_eposta": ""
     },
     "admob": {
       "_not": "AdMob panelinden. App ID'ler '~', reklam birimleri '/' içerir.",

@@ -886,7 +886,14 @@ def status_text():
             total += len(items)
             miss += len(missing(ui, lang, i18n))
         lines.append(f'| {ui} | %{100 * (total - miss) // max(total, 1)} ({total - miss}/{total}) |')
-    lines += ['', '## 4. Mağaza metinleri — docs/STORE_METADATA_*.md', '',
+    info = (ROOT / 'lib/core/legal_info.dart').read_text(encoding='utf-8')
+    legal_missing = re.findall(r"static const (\w+) =\s*'\[([A-Z_]+)\]'", info)
+    lines += ['', '## 4. Yasal bilgiler (AB/GDPR) — lib/core/legal_info.dart', '',
+              'Hollanda şirketi. `[İŞARET]` duran alan henüz girilmemiş demektir;',
+              'bunlar dururken uygulama ve site yayınlanmamalı.', '']
+    lines += ([f'- **{m}** eksik (`{c}`)' for c, m in legal_missing]
+              or ['- Tüm yasal alanlar dolu.'])
+    lines += ['', '## 5. Mağaza metinleri — docs/STORE_METADATA_*.md', '',
               'Her dilin bölümü var mı ve kapalı (ücretli) özellik vaadi — AI, sohbet botu,',
               'premium ses — içeriyor mu. Karakter sınırları `store` komutunda denetlenir.', '',
               '| Dil | Durum | Bulunan ifade |', '|---|---|---|']

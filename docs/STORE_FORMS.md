@@ -5,9 +5,27 @@ Uygulama içi gizlilik metni (`lib/core/l10n/i18n_store.dart` → `privacyBody`)
 `site/privacy.html` ve `ios/Runner/PrivacyInfo.xcprivacy` ile **birebir aynı**
 kalmalı. Yeni bir SDK / veri akışı eklenirse dördünü birlikte güncelle.
 
-Yer tutucular (yayından önce doldur): şirket adı, `voxelith.app` alan adı,
-`destek@` / `gizlilik@` adresleri → hepsi `lib/core/legal_info.dart` +
-`python3 tools/gen_legal_html.py`.
+Şirket: **Hollanda'da kayıtlı** — metinler AB (GDPR/AVG) ve Hollanda
+hukukuna göre. Şirket bilgileri `docs/content_tasks/REQUESTS.json` →
+`python3 tools/apply_config.py` ile `lib/core/legal_info.dart` ve `site/`
+sayfalarına yazılır; `[KÖŞELİ]` işaretler dururken yayınlama.
+
+## AB / Hollanda şirketi — hesap ve mağaza
+
+- **Apple Developer (organizasyon):** D-U-N-S numarası Hollanda şirketi
+  (KvK kaydı) adına alınır; hesap adı hukuki unvanla aynı olmalı.
+- **App Store — AB tüccar durumu (DSA):** App Store Connect → Business →
+  "Trader status" = **Trader**. AB'de mağaza sayfasında gösterilir ve
+  doğrulanır: hukuki unvan, adres, telefon (`+31…`), e-posta.
+- **Google Play — organizasyon hesabı:** KvK belgeleri ve D-U-N-S ile
+  doğrulama; geliştirici adresi ve telefonu mağazada görünür.
+- **Vergi:** Apple/Google AB'de KDV'yi (BTW) pazar yeri olarak tahsil eder;
+  mağaza hesaplarına BTW numarasını gir. Muhasebe için mali müşavire danış.
+- **Tüketici hukuku:** Kullanım koşullarında Hollanda hukuku, AB 14 günlük
+  cayma hakkının dijital içerikte hemen erişimle sona ermesi ve zorunlu
+  tüketici haklarının saklı olduğu yazıyor; iadeleri mağaza yapar.
+- **Reklam izni:** AEA'da Google UMP izin formu ilk açılışta; izin
+  Sen → Gizlilik seçenekleri'nden geri çekilebilir (GDPR md. 7/3).
 
 ---
 
@@ -49,9 +67,10 @@ hesapları satın almayı ücretsiz dener.)
   Bulunur", "Uygulama İçi Satın Alma" etiketleri.
 
 ### Hedef kitle ve içerik
-- Hedef yaş grupları: **13-15, 16-17, 18+** (13 yaş altını **seçme** —
+- Hedef yaş grupları: **16-17, 18+** (16 yaş altını **seçme** — Hollanda'da
+  GDPR md. 8 dijital rıza yaşı 16; ayrıca
   seçilirse Aileler politikası ve çocuklara yönelik reklam kuralları
-  devreye girer; gizlilik politikası "13 yaş altına yönelik değil" diyor).
+  devreye girer; gizlilik politikası "16 yaş altına yönelik değil" diyor).
 - Uygulama çocukların ilgisini çekebilir mi: **Hayır** (yetişkin/genç dil
   öğrenenlere yönelik).
 
@@ -133,7 +152,7 @@ Bu liste `ios/Runner/PrivacyInfo.xcprivacy` ile aynıdır.
   **Evet**
 - Sınırsız web erişimi: **Hayır**
 - AI sohbet botu: **Hayır**
-- Beklenen sonuç: **13+**
+- Beklenen sonuç: **13+** (Apple'ın derecelendirmesi; hedef kitle yine 16+)
 
 ### Şifreleme (Export Compliance)
 `Info.plist` → `ITSAppUsesNonExemptEncryption = NO` ayarlandı (yalnızca

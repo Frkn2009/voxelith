@@ -1,7 +1,10 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../data/ads/ad_service.dart';
+import '../../core/l10n/i18n_store.dart';
 import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/models/models.dart';
@@ -351,18 +354,27 @@ class ProfileScreen extends ConsumerWidget {
             ),
           ],
           const SizedBox(height: 16),
-          SwitchListTile(
-            title: Text(i18n.devPlusToggle),
-            subtitle: Text(i18n.devPlusToggleSubtitle),
-            value: p.isPlus,
-            activeThumbColor: Voxelith.forest,
-            onChanged: (v) => ref.read(sessionProvider.notifier).setPlus(v),
-          ),
+          // Yalnızca geliştirme derlemesinde: yayında Plus yalnızca mağaza
+          // satın alımıyla açılır (PlusController / RevenueCat).
+          if (kDebugMode)
+            SwitchListTile(
+              title: Text(i18n.devPlusToggle),
+              subtitle: Text(i18n.devPlusToggleSubtitle),
+              value: p.isPlus,
+              activeThumbColor: Voxelith.forest,
+              onChanged: (v) => ref.read(sessionProvider.notifier).setPlus(v),
+            ),
           ListTile(
             title: Text(i18n.privacyPolicy),
             trailing: const Icon(Icons.chevron_right),
             onTap: () => context.push('/privacy'),
           ),
+          if (AdService.supported)
+            ListTile(
+              title: Text(i18n.privacyChoices),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: AdService.showPrivacyOptions,
+            ),
           ListTile(
             title: Text(
               i18n.deleteAccount,

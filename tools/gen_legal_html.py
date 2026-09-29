@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DART = (ROOT / 'lib/core/l10n/i18n_store.dart').read_text(encoding='utf-8')
 INFO = (ROOT / 'lib/core/legal_info.dart').read_text(encoding='utf-8')
 
-CONSTS = dict(re.findall(r"static const (\w+) = '([^']*)';", INFO))
+CONSTS = dict(re.findall(r"static const (\w+) =\s*'([^']*)';", INFO))
 
 
 def _dart_literal(body: str) -> str:

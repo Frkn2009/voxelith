@@ -1,14 +1,16 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:voxelith/features/plus/data/billing_service.dart';
 import 'package:voxelith/features/plus/data/fake_billing_service.dart';
 import 'package:voxelith/features/plus/data/revenuecat_billing_service.dart';
+import 'package:voxelith/features/plus/data/unavailable_billing_service.dart';
 import 'package:voxelith/features/plus/domain/entitlement.dart';
 import 'package:voxelith/state/session.dart';
 
 final billingServiceProvider = Provider<BillingService>((ref) {
-  return RevenueCatBillingService.isConfigured
-      ? RevenueCatBillingService()
-      : FakeBillingService();
+  if (RevenueCatBillingService.isConfigured) return RevenueCatBillingService();
+  // Anahtarsız yayın derlemesi ücretsiz Plus dağıtmasın.
+  return kReleaseMode ? UnavailableBillingService() : FakeBillingService();
 });
 
 final plusControllerProvider =

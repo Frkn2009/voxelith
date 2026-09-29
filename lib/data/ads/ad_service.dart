@@ -69,6 +69,17 @@ class AdService {
     }
   }
 
+  /// GDPR: izni geri çekmek vermek kadar kolay olmalı. Profil ekranındaki
+  /// "Gizlilik seçenekleri" UMP'nin gizlilik seçenekleri formunu açar.
+  static Future<void> showPrivacyOptions() async {
+    if (!supported) return;
+    await initialize();
+    final done = Completer<void>();
+    ConsentForm.showPrivacyOptionsForm((_) => done.complete());
+    await done.future;
+    _canRequestAds = await ConsentInformation.instance.canRequestAds();
+  }
+
   static String get _rewardedUnit => defaultTargetPlatform == TargetPlatform.iOS
       ? _rewardedIos
       : _rewardedAndroid;

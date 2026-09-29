@@ -12,7 +12,7 @@ anında İngilizceye düşer (güvenlik ağı).
 |---|---|---|---|---|---|---|
 | `i18n.dart` | 145 | 145 | 0 | 0 | 0 | 0 |
 | `i18n_ui.dart` | 334 | 221 | 113 | 0 | 0 | 2871 |
-| `i18n_store.dart` | 43 | 30 | 13 | 0 | 0 | 354 |
+| `i18n_store.dart` | 44 | 31 | 13 | 0 | 0 | 354 |
 
 **Toplam eksik UI çevirisi (anahtar × dil): 3225**
 
@@ -123,7 +123,19 @@ hikâye başlık ve cümleleri. Dart'taki değer veya assets/content/i18n/<dil>.
 | fa | %0 (0/12226) |
 | sw | %0 (0/12226) |
 
-## 4. Mağaza metinleri — docs/STORE_METADATA_*.md
+## 4. Yasal bilgiler (AB/GDPR) — lib/core/legal_info.dart
+
+Hollanda şirketi. `[İŞARET]` duran alan henüz girilmemiş demektir;
+bunlar dururken uygulama ve site yayınlanmamalı.
+
+- **LEGAL_COMPANY_NAME** eksik (`companyLegalName`)
+- **REGISTERED_ADDRESS** eksik (`companyAddress`)
+- **KVK_NUMBER** eksik (`kvkNumber`)
+- **VAT_NUMBER** eksik (`vatNumber`)
+- **SUPPORT_EMAIL** eksik (`supportEmail`)
+- **PRIVACY_EMAIL** eksik (`privacyEmail`)
+
+## 5. Mağaza metinleri — docs/STORE_METADATA_*.md
 
 Her dilin bölümü var mı ve kapalı (ücretli) özellik vaadi — AI, sohbet botu,
 premium ses — içeriyor mu. Karakter sınırları `store` komutunda denetlenir.
