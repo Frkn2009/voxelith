@@ -85,7 +85,7 @@ yeniden düşürüldü:
 
 | Operasyon | Ücretsiz | Plus | Plus sınıra tam ulaşılırsa/ay |
 |---|---|---|---|
-| `ai-feedback` | **1/gün** (+reklamla 5'e kadar ek hak) | 15/gün | 15 × 30 × $0.0024 ≈ **$1.08** |
+| `ai-feedback` | **0/gün** — yalnızca ödüllü reklamla, günde en fazla 5; ucuz model (Haiku ≈ $0.0011) → reklam geliri maliyeti karşılar (29 Eylül) | 15/gün | 15 × 30 × $0.0024 ≈ **$1.08** |
 | `chat` | Plus'a kilitli, $0 | 20/gün | 20 × 30 × $0.0011 ≈ **$0.66** |
 | `tts` | Plus'a kilitli, $0 | 8/gün | 8 × 30 × $0.0045 ≈ **$1.08** |
 | `translate` | Plus gerektirir, $0 | 6/gün | 6 × 30 × $0.006 ≈ **$1.08** |

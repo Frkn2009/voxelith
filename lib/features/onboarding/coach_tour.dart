@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
+import '../../state/session.dart';
 
 /// Tek bir tanıtım turu adımı: gerçek bir ekran öğesine (GlobalKey ile)
 /// bağlı bir spot ışığı + başlık/açıklama balonu.
@@ -30,9 +34,14 @@ class CoachTour {
     if (steps.isEmpty) return;
     dismiss();
     final overlay = Overlay.of(context, rootOverlay: true);
+    final i18n = ProviderScope.containerOf(
+      context,
+      listen: false,
+    ).read(i18nProvider);
     _entry = OverlayEntry(
       builder: (_) => _CoachTourOverlay(
         steps: steps,
+        i18n: i18n,
         onFinish: () {
           dismiss();
           onFinish?.call();
@@ -49,8 +58,13 @@ class CoachTour {
 }
 
 class _CoachTourOverlay extends StatefulWidget {
-  const _CoachTourOverlay({required this.steps, required this.onFinish});
+  const _CoachTourOverlay({
+    required this.steps,
+    required this.i18n,
+    required this.onFinish,
+  });
   final List<CoachStep> steps;
+  final I18n i18n;
   final VoidCallback onFinish;
 
   @override
@@ -173,14 +187,14 @@ class _CoachTourOverlayState extends State<_CoachTourOverlay> {
                       children: [
                         _TourButton(
                           onTap: widget.onFinish,
-                          label: 'Geç',
+                          label: widget.i18n.tourSkip,
                           foreground: Voxelith.terrSoft,
                         ),
                         _TourButton(
                           onTap: _next,
                           label: _index >= widget.steps.length - 1
-                              ? 'Bitir'
-                              : 'İleri',
+                              ? widget.i18n.commonFinish
+                              : widget.i18n.commonNext,
                           background: Voxelith.terr,
                           foreground: Voxelith.cream,
                         ),

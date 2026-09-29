@@ -1,0 +1,2992 @@
+{
+ "lang": "fa",
+ "scenarios": [
+  {
+   "id": "fa_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "fa_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "fa_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "fa_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "fa_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "fa_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "fa_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "fa_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "fa_intro",
+   "cefr": "a1",
+   "title": "Getting to know someone"
+  },
+  {
+   "id": "fa_shopping",
+   "cefr": "a1",
+   "title": "Clothes shopping"
+  },
+  {
+   "id": "fa_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers and time"
+  },
+  {
+   "id": "fa_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "fa_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "fa_transport",
+   "cefr": "a1",
+   "title": "Public transport"
+  },
+  {
+   "id": "fa_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "fa_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "fa_past_story",
+   "cefr": "a1",
+   "title": "Telling a story in the past"
+  },
+  {
+   "id": "fa_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "fa_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  }
+ ],
+ "stories": [
+  {
+   "id": "fa_phone",
+   "level": "a1",
+   "title": "قرار با دوست"
+  },
+  {
+   "id": "fa_pet",
+   "level": "a1",
+   "title": "گربه من"
+  },
+  {
+   "id": "fa_housework",
+   "level": "a1",
+   "title": "خانه تمیز"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.fa_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "یک قهوه، لطفاً.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "چقدر می‌شود؟",
+   "have": []
+  },
+  {
+   "key": "p.fa_cafe_0",
+   "kind": "phrase",
+   "target": "یک قهوه، لطفاً.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_cafe_1",
+   "kind": "phrase",
+   "target": "چقدر می‌شود؟",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_cafe_2",
+   "kind": "phrase",
+   "target": "خیلی ممنون.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "من رزرو دارم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "صبحانه شامل می‌شود؟",
+   "have": []
+  },
+  {
+   "key": "p.fa_hotel_0",
+   "kind": "phrase",
+   "target": "من رزرو دارم.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_hotel_1",
+   "kind": "phrase",
+   "target": "صبحانه شامل می‌شود؟",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_hotel_2",
+   "kind": "phrase",
+   "target": "خیلی ممنون.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "ببخشید، ایستگاه کجاست؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "خیلی ممنون.",
+   "have": []
+  },
+  {
+   "key": "p.fa_dir_0",
+   "kind": "phrase",
+   "target": "ببخشید، ایستگاه کجاست؟",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_dir_1",
+   "kind": "phrase",
+   "target": "خیلی ممنون.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_dir_2",
+   "kind": "phrase",
+   "target": "نمی‌فهمم.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "سلام، اسم من دنیز است.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "من از ترکیه هستم.",
+   "have": []
+  },
+  {
+   "key": "p.fa_hi_0",
+   "kind": "phrase",
+   "target": "سلام، اسم من دنیز است.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_hi_1",
+   "kind": "phrase",
+   "target": "من از ترکیه هستم.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_hi_2",
+   "kind": "phrase",
+   "target": "خیلی ممنون.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "دنبال آپارتمان می‌گردم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "اجاره چقدر است؟",
+   "have": []
+  },
+  {
+   "key": "p.fa_flat_0",
+   "kind": "phrase",
+   "target": "دنبال آپارتمان می‌گردم.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_flat_1",
+   "kind": "phrase",
+   "target": "اجاره چقدر است؟",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_flat_2",
+   "kind": "phrase",
+   "target": "می‌توانید کمکم کنید؟",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "این چقدر است؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "این را می‌برم.",
+   "have": []
+  },
+  {
+   "key": "p.fa_shop_0",
+   "kind": "phrase",
+   "target": "این چقدر است؟",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_shop_1",
+   "kind": "phrase",
+   "target": "این را می‌برم.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_shop_2",
+   "kind": "phrase",
+   "target": "کارت قبول می‌کنید؟",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "صورتحساب، لطفاً.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "می‌خواهیم با هم حساب کنیم.",
+   "have": []
+  },
+  {
+   "key": "p.fa_bill_0",
+   "kind": "phrase",
+   "target": "صورتحساب، لطفاً.",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_bill_1",
+   "kind": "phrase",
+   "target": "می‌خواهیم با هم حساب کنیم.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_bill_2",
+   "kind": "phrase",
+   "target": "بقیه‌اش مال شما.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "من رزرو دارم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "صندلی کنار پنجره.",
+   "have": []
+  },
+  {
+   "key": "p.fa_airport_0",
+   "kind": "phrase",
+   "target": "من رزرو دارم.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_airport_1",
+   "kind": "phrase",
+   "target": "صندلی کنار پنجره.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_airport_2",
+   "kind": "phrase",
+   "target": "این صف سوار شدن است؟",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_intro",
+   "kind": "scenario_title",
+   "tr": "Kendini tanıtmak",
+   "en": "Getting to know someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fa_intro",
+   "kind": "grammar_rule",
+   "tr": "Yeni tanıştığın biriyle resmi \"شما\" (siz) kullanılır, günlük \"تو\" (sen) değil — fiil çekimi de buna göre değişir.",
+   "en": "Use the formal \"شما\" (you) with someone you just met, not the informal \"تو\" — the verb ending changes accordingly (هستید vs هستی).",
+   "context": "شما اهل کجا هستید؟ / ✗ تو اهل کجا هستی؟",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_intro.0",
+   "kind": "speaking_prompt",
+   "en": "Someone extends a hand.",
+   "context": "سلام، از آشنایی‌تان خوشبختم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_intro.1",
+   "kind": "speaking_prompt",
+   "en": "You want to know their name.",
+   "context": "اسم شما چیست؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_intro.2",
+   "kind": "speaking_prompt",
+   "en": "They ask your name.",
+   "context": "اسم من دنیز است.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_intro.3",
+   "kind": "speaking_prompt",
+   "en": "Small talk continues.",
+   "context": "شغل شما چیست؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask about your job.",
+   "context": "من معلم هستم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You want to know their origin.",
+   "context": "شما اهل کجا هستید؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_intro.6",
+   "kind": "speaking_prompt",
+   "en": "The conversation ends.",
+   "context": "خداحافظ.",
+   "have": []
+  },
+  {
+   "key": "p.fa_intro_0",
+   "kind": "phrase",
+   "target": "سلام، از آشنایی‌تان خوشبختم.",
+   "tr": "Merhaba, tanıştığımıza memnun oldum.",
+   "en": "Hello, nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_intro_1",
+   "kind": "phrase",
+   "target": "اسم شما چیست؟",
+   "tr": "Adınız nedir?",
+   "en": "What's your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_intro_2",
+   "kind": "phrase",
+   "target": "اسم من دنیز است.",
+   "tr": "Benim adım Deniz.",
+   "en": "My name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_intro_3",
+   "kind": "phrase",
+   "target": "شغل شما چیست؟",
+   "tr": "Ne iş yapıyorsunuz?",
+   "en": "What do you do?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_intro_4",
+   "kind": "phrase",
+   "target": "من معلم هستم.",
+   "tr": "Ben öğretmenim.",
+   "en": "I am a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_intro_5",
+   "kind": "phrase",
+   "target": "شما اهل کجا هستید؟",
+   "tr": "Nerelisiniz?",
+   "en": "Where are you from?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_intro_6",
+   "kind": "phrase",
+   "target": "خداحافظ.",
+   "tr": "Hoşça kalın.",
+   "en": "Goodbye.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_shopping",
+   "kind": "scenario_title",
+   "tr": "Kıyafet alışverişi",
+   "en": "Clothes shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fa_shopping",
+   "kind": "grammar_rule",
+   "tr": "Karşılaştırma sıfatı, sıfatın sonuna ـتر eklenerek yapılır: بزرگ (büyük) → بزرگ‌تر (daha büyük).",
+   "en": "Comparative adjectives are formed by adding ـتر to the adjective: بزرگ (big) → بزرگ‌تر (bigger).",
+   "context": "سایز بزرگ‌تر دارید؟ / ✗ سایز خیلی بزرگ دارید؟",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You enter a clothing store.",
+   "context": "دنبال یک ژاکت می‌گردم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "It feels tight.",
+   "context": "سایز بزرگ‌تر دارید؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want to try the jacket.",
+   "context": "می‌توانم این را امتحان کنم؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "The clerk points.",
+   "context": "اتاق پرو آن‌جاست.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You want another color.",
+   "context": "این را آبی هم دارید؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You check the price.",
+   "context": "تخفیف دارد؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You decide.",
+   "context": "این را برمی‌دارم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_shopping.7",
+   "kind": "speaking_prompt",
+   "en": "Time to pay.",
+   "context": "می‌توانم با کارت پرداخت کنم؟",
+   "have": []
+  },
+  {
+   "key": "p.fa_shopping_0",
+   "kind": "phrase",
+   "target": "دنبال یک ژاکت می‌گردم.",
+   "tr": "Bir ceket arıyorum.",
+   "en": "I'm looking for a jacket.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_shopping_1",
+   "kind": "phrase",
+   "target": "سایز بزرگ‌تر دارید؟",
+   "tr": "Daha büyük bedeniniz var mı?",
+   "en": "Do you have a bigger size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_shopping_2",
+   "kind": "phrase",
+   "target": "می‌توانم این را امتحان کنم؟",
+   "tr": "Bunu deneyebilir miyim?",
+   "en": "Can I try this on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_shopping_3",
+   "kind": "phrase",
+   "target": "اتاق پرو آن‌جاست.",
+   "tr": "Deneme kabini şurada.",
+   "en": "The fitting room is over there.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_shopping_4",
+   "kind": "phrase",
+   "target": "این را آبی هم دارید؟",
+   "tr": "Bunun mavisi var mı?",
+   "en": "Do you have this in blue too?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_shopping_5",
+   "kind": "phrase",
+   "target": "تخفیف دارد؟",
+   "tr": "İndirim var mı?",
+   "en": "Is there a discount?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_shopping_6",
+   "kind": "phrase",
+   "target": "این را برمی‌دارم.",
+   "tr": "Bunu alıyorum.",
+   "en": "I'll take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_shopping_7",
+   "kind": "phrase",
+   "target": "می‌توانم با کارت پرداخت کنم؟",
+   "tr": "Kartla ödeyebilir miyim?",
+   "en": "Can I pay by card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers and time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fa_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "Saat sormak için \"ساعت چند است؟\" denir, cevap verirken sayı ساعت kelimesinin hemen ardından gelir.",
+   "en": "To ask the time say \"ساعت چند است؟\" and when answering, put the number right after ساعت: ساعت + number + است.",
+   "context": "ساعت سه است. / ✗ سه ساعت است.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You check the time.",
+   "context": "ساعت چند است؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "The clock shows three.",
+   "context": "ساعت سه است.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "You want to know opening hours.",
+   "context": "مغازه ساعت چند باز می‌شود؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "The clerk explains.",
+   "context": "ساعت نه صبح باز می‌شود.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "Talking about family.",
+   "context": "من دو برادر دارم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "You point at an item.",
+   "context": "این چند است؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "The clerk answers.",
+   "context": "بیست یورو.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_numbers_time.7",
+   "kind": "speaking_prompt",
+   "en": "Saying goodbye.",
+   "context": "ساعت پنج می‌بینمت.",
+   "have": []
+  },
+  {
+   "key": "p.fa_numbers_time_0",
+   "kind": "phrase",
+   "target": "ساعت چند است؟",
+   "tr": "Saat kaç?",
+   "en": "What time is it?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_numbers_time_1",
+   "kind": "phrase",
+   "target": "ساعت سه است.",
+   "tr": "Saat üç.",
+   "en": "It's three o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_numbers_time_2",
+   "kind": "phrase",
+   "target": "مغازه ساعت چند باز می‌شود؟",
+   "tr": "Mağaza saat kaçta açılıyor?",
+   "en": "What time does the store open?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_numbers_time_3",
+   "kind": "phrase",
+   "target": "ساعت نه صبح باز می‌شود.",
+   "tr": "Sabah dokuzda açılıyor.",
+   "en": "It opens at nine in the morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_numbers_time_4",
+   "kind": "phrase",
+   "target": "من دو برادر دارم.",
+   "tr": "İki erkek kardeşim var.",
+   "en": "I have two brothers.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_numbers_time_5",
+   "kind": "phrase",
+   "target": "این چند است؟",
+   "tr": "Bu ne kadar?",
+   "en": "How much is this?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_numbers_time_6",
+   "kind": "phrase",
+   "target": "بیست یورو.",
+   "tr": "Yirmi euro.",
+   "en": "Twenty euros.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_numbers_time_7",
+   "kind": "phrase",
+   "target": "ساعت پنج می‌بینمت.",
+   "tr": "Saat beşte görüşürüz.",
+   "en": "See you at five.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fa_family",
+   "kind": "grammar_rule",
+   "tr": "\"Benim\" anlamı için isme doğrudan ـم eki eklenir: پدر+م=پدرم.",
+   "en": "To say \"my [noun]\", attach the suffix ـم directly to the noun: پدر+م=پدرم (my father).",
+   "context": "پدرم دکتر است. / ✗ من پدر دکتر است.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a photo.",
+   "context": "این خانواده‌ی من است.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_family.1",
+   "kind": "speaking_prompt",
+   "en": "They ask about siblings.",
+   "context": "من دو خواهر دارم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_family.2",
+   "kind": "speaking_prompt",
+   "en": "Talking about parents.",
+   "context": "پدرم دکتر است.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_family.3",
+   "kind": "speaking_prompt",
+   "en": "More about your mother.",
+   "context": "مادرم در بیمارستان کار می‌کند.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_family.4",
+   "kind": "speaking_prompt",
+   "en": "You ask them back.",
+   "context": "تو خواهر یا برادر داری؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask your birth order.",
+   "context": "من کوچک‌ترین هستم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_family.6",
+   "kind": "speaking_prompt",
+   "en": "Talking about your household.",
+   "context": "مادربزرگم با ما زندگی می‌کند.",
+   "have": []
+  },
+  {
+   "key": "p.fa_family_0",
+   "kind": "phrase",
+   "target": "این خانواده‌ی من است.",
+   "tr": "Bu benim ailem.",
+   "en": "This is my family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_family_1",
+   "kind": "phrase",
+   "target": "من دو خواهر دارم.",
+   "tr": "İki kız kardeşim var.",
+   "en": "I have two sisters.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_family_2",
+   "kind": "phrase",
+   "target": "پدرم دکتر است.",
+   "tr": "Babam doktor.",
+   "en": "My father is a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_family_3",
+   "kind": "phrase",
+   "target": "مادرم در بیمارستان کار می‌کند.",
+   "tr": "Annem hastanede çalışıyor.",
+   "en": "My mother works at a hospital.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_family_4",
+   "kind": "phrase",
+   "target": "تو خواهر یا برادر داری؟",
+   "tr": "Kardeşin var mı?",
+   "en": "Do you have any siblings?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_family_5",
+   "kind": "phrase",
+   "target": "من کوچک‌ترین هستم.",
+   "tr": "Ben en küçüğüyüm.",
+   "en": "I am the youngest.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_family_6",
+   "kind": "phrase",
+   "target": "مادربزرگم با ما زندگی می‌کند.",
+   "tr": "Büyükannem bizimle yaşıyor.",
+   "en": "My grandmother lives with us.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fa_weather",
+   "kind": "grammar_rule",
+   "tr": "\"Yağmur yağıyor\" ifadesi, öznesi باران (yağmur) olan bir cümledir; \"o\" anlamına gelen ayrı bir özne kullanılmaz.",
+   "en": "\"It's raining\" literally says \"rain is pouring\" — باران (rain) is the grammatical subject; there is no dummy \"it\".",
+   "context": "باران می‌بارد. / ✗ آن باران می‌بارد.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_weather.0",
+   "kind": "speaking_prompt",
+   "en": "Small talk opener.",
+   "context": "امروز هوا چطور است؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You look outside.",
+   "context": "امروز هوا آفتابی است.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_weather.2",
+   "kind": "speaking_prompt",
+   "en": "Clouds gather.",
+   "context": "باران می‌بارد.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You step outside.",
+   "context": "بیرون خیلی سرد است.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You warn a friend.",
+   "context": "چتر بردار.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_weather.5",
+   "kind": "speaking_prompt",
+   "en": "Checking the forecast.",
+   "context": "فردا هوا گرم‌تر می‌شود.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_weather.6",
+   "kind": "speaking_prompt",
+   "en": "Sharing your preference.",
+   "context": "من روزهای آفتابی را دوست دارم.",
+   "have": []
+  },
+  {
+   "key": "p.fa_weather_0",
+   "kind": "phrase",
+   "target": "امروز هوا چطور است؟",
+   "tr": "Bugün hava nasıl?",
+   "en": "How's the weather today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_weather_1",
+   "kind": "phrase",
+   "target": "امروز هوا آفتابی است.",
+   "tr": "Bugün güneşli.",
+   "en": "It's sunny today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_weather_2",
+   "kind": "phrase",
+   "target": "باران می‌بارد.",
+   "tr": "Yağmur yağıyor.",
+   "en": "It's raining.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_weather_3",
+   "kind": "phrase",
+   "target": "بیرون خیلی سرد است.",
+   "tr": "Dışarısı çok soğuk.",
+   "en": "It's very cold outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_weather_4",
+   "kind": "phrase",
+   "target": "چتر بردار.",
+   "tr": "Şemsiye al.",
+   "en": "Take an umbrella.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_weather_5",
+   "kind": "phrase",
+   "target": "فردا هوا گرم‌تر می‌شود.",
+   "tr": "Yarın hava daha sıcak olacak.",
+   "en": "Tomorrow the weather will be warmer.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_weather_6",
+   "kind": "phrase",
+   "target": "من روزهای آفتابی را دوست دارم.",
+   "tr": "Güneşli günleri severim.",
+   "en": "I love sunny days.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_transport",
+   "kind": "scenario_title",
+   "tr": "Toplu taşıma",
+   "en": "Public transport",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fa_transport",
+   "kind": "grammar_rule",
+   "tr": "Bir yere gitmek belirtilirken hedef isimden önce به (\"-e/-a\") edatı kullanılır.",
+   "en": "To express a destination, put به (\"to\") before the place noun.",
+   "context": "بلیت به فرودگاه. / ✗ بلیت فرودگاه.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You are at a bus stop.",
+   "context": "کدام اتوبوس به مرکز شهر می‌رود؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_transport.1",
+   "kind": "speaking_prompt",
+   "en": "At the ticket counter.",
+   "context": "یک بلیت به فرودگاه، لطفاً.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_transport.2",
+   "kind": "speaking_prompt",
+   "en": "Checking the schedule.",
+   "context": "قطار بعدی ساعت چند حرکت می‌کند؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_transport.3",
+   "kind": "speaking_prompt",
+   "en": "You are lost.",
+   "context": "نزدیک‌ترین ایستگاه مترو کجاست؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You want to sit down.",
+   "context": "این صندلی خالی است؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You are in a taxi.",
+   "context": "لطفاً این‌جا نگه دارید.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_transport.6",
+   "kind": "speaking_prompt",
+   "en": "Asking about the trip.",
+   "context": "چقدر طول می‌کشد؟",
+   "have": []
+  },
+  {
+   "key": "p.fa_transport_0",
+   "kind": "phrase",
+   "target": "کدام اتوبوس به مرکز شهر می‌رود؟",
+   "tr": "Hangi otobüs şehir merkezine gidiyor?",
+   "en": "Which bus goes to the city center?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_transport_1",
+   "kind": "phrase",
+   "target": "یک بلیت به فرودگاه، لطفاً.",
+   "tr": "Havalimanına bir bilet, lütfen.",
+   "en": "A ticket to the airport, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_transport_2",
+   "kind": "phrase",
+   "target": "قطار بعدی ساعت چند حرکت می‌کند؟",
+   "tr": "Sonraki tren saat kaçta kalkıyor?",
+   "en": "What time does the next train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_transport_3",
+   "kind": "phrase",
+   "target": "نزدیک‌ترین ایستگاه مترو کجاست؟",
+   "tr": "En yakın metro istasyonu nerede?",
+   "en": "Where is the nearest metro station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_transport_4",
+   "kind": "phrase",
+   "target": "این صندلی خالی است؟",
+   "tr": "Bu koltuk boş mu?",
+   "en": "Is this seat free?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_transport_5",
+   "kind": "phrase",
+   "target": "لطفاً این‌جا نگه دارید.",
+   "tr": "Lütfen burada durun.",
+   "en": "Please stop here.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_transport_6",
+   "kind": "phrase",
+   "target": "چقدر طول می‌کشد؟",
+   "tr": "Ne kadar sürer?",
+   "en": "How long does it take?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fa_emergency",
+   "kind": "grammar_rule",
+   "tr": "Nazik/resmi emir kipi fiil kökü + ید ekiyle yapılır: خبر کنید (\"haber verin/çağırın\").",
+   "en": "The polite/plural command form is the verb stem + ید: خبر کنید (\"call!\" — polite).",
+   "context": "پلیس را خبر کنید! / ✗ پلیس را خبر کن!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something goes wrong.",
+   "context": "کمک!",
+   "have": []
+  },
+  {
+   "key": "tp.fa_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Someone collapses.",
+   "context": "آمبولانس خبر کنید!",
+   "have": []
+  },
+  {
+   "key": "tp.fa_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You feel unwell.",
+   "context": "من به دکتر احتیاج دارم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You ask a stranger.",
+   "context": "نزدیک‌ترین بیمارستان کجاست؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "At the police station.",
+   "context": "پاسپورتم را گم کردم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "There has been a theft.",
+   "context": "لطفاً پلیس را خبر کنید.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You describe how you feel.",
+   "context": "حالم خیلی بد است.",
+   "have": []
+  },
+  {
+   "key": "p.fa_emergency_0",
+   "kind": "phrase",
+   "target": "کمک!",
+   "tr": "İmdat!",
+   "en": "Help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_emergency_1",
+   "kind": "phrase",
+   "target": "آمبولانس خبر کنید!",
+   "tr": "Ambulans çağırın!",
+   "en": "Call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_emergency_2",
+   "kind": "phrase",
+   "target": "من به دکتر احتیاج دارم.",
+   "tr": "Bir doktora ihtiyacım var.",
+   "en": "I need a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_emergency_3",
+   "kind": "phrase",
+   "target": "نزدیک‌ترین بیمارستان کجاست؟",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_emergency_4",
+   "kind": "phrase",
+   "target": "پاسپورتم را گم کردم.",
+   "tr": "Pasaportumu kaybettim.",
+   "en": "I lost my passport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_emergency_5",
+   "kind": "phrase",
+   "target": "لطفاً پلیس را خبر کنید.",
+   "tr": "Lütfen polisi arayın.",
+   "en": "Please call the police.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_emergency_6",
+   "kind": "phrase",
+   "target": "حالم خیلی بد است.",
+   "tr": "Kendimi çok kötü hissediyorum.",
+   "en": "I feel very sick.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fa_routine",
+   "kind": "grammar_rule",
+   "tr": "Şimdiki zaman/alışkanlık bildiren fiillerde köke می- ön eki eklenir: می‌روم، می‌خورم، می‌خوابم.",
+   "en": "The prefix می- before the verb stem marks the habitual present tense: می‌روم (I go), می‌خورم (I eat), می‌خوابم (I sleep).",
+   "context": "هر روز بیدار می‌شوم. / ✗ هر روز بیدار شوم.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Describing your morning.",
+   "context": "من هر روز ساعت هفت بیدار می‌شوم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_routine.1",
+   "kind": "speaking_prompt",
+   "en": "What do you do next?",
+   "context": "ساعت هشت صبحانه می‌خورم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_routine.2",
+   "kind": "speaking_prompt",
+   "en": "How do you commute?",
+   "context": "با اتوبوس به سر کار می‌روم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_routine.3",
+   "kind": "speaking_prompt",
+   "en": "When does your day end?",
+   "context": "ساعت پنج کارم را تمام می‌کنم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_routine.4",
+   "kind": "speaking_prompt",
+   "en": "What about the evening?",
+   "context": "عصرها شام درست می‌کنم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_routine.5",
+   "kind": "speaking_prompt",
+   "en": "When do you go to bed?",
+   "context": "ساعت یازده می‌خوابم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_routine.6",
+   "kind": "speaking_prompt",
+   "en": "What about weekends?",
+   "context": "آخر هفته‌ها دیر بیدار می‌شوم.",
+   "have": []
+  },
+  {
+   "key": "p.fa_routine_0",
+   "kind": "phrase",
+   "target": "من هر روز ساعت هفت بیدار می‌شوم.",
+   "tr": "Her gün saat yedide uyanırım.",
+   "en": "I wake up at seven every day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_routine_1",
+   "kind": "phrase",
+   "target": "ساعت هشت صبحانه می‌خورم.",
+   "tr": "Sekizde kahvaltı yaparım.",
+   "en": "I have breakfast at eight.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_routine_2",
+   "kind": "phrase",
+   "target": "با اتوبوس به سر کار می‌روم.",
+   "tr": "Otobüsle işe giderim.",
+   "en": "I go to work by bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_routine_3",
+   "kind": "phrase",
+   "target": "ساعت پنج کارم را تمام می‌کنم.",
+   "tr": "İşimi saat beşte bitiririm.",
+   "en": "I finish my work at five.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_routine_4",
+   "kind": "phrase",
+   "target": "عصرها شام درست می‌کنم.",
+   "tr": "Akşamları yemek pişiririm.",
+   "en": "In the evenings I make dinner.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_routine_5",
+   "kind": "phrase",
+   "target": "ساعت یازده می‌خوابم.",
+   "tr": "Saat on birde uyurum.",
+   "en": "I go to sleep at eleven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_routine_6",
+   "kind": "phrase",
+   "target": "آخر هفته‌ها دیر بیدار می‌شوم.",
+   "tr": "Hafta sonları geç kalkarım.",
+   "en": "On weekends I wake up late.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_past_story",
+   "kind": "scenario_title",
+   "tr": "Geçmişte bir gün anlatmak",
+   "en": "Telling a story in the past",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fa_past_story",
+   "kind": "grammar_rule",
+   "tr": "Basit geçmiş zaman geçmiş kökü + kişi ekiyle yapılır; \"ben\" için ek ـم\"dir, yardımcı fiil gerekmez: رفتم، خوردم، بودم.",
+   "en": "The simple past = past stem + personal ending; for \"I\" the ending is ـم, no helping verb needed: رفتم (I went), خوردم (I drank/ate), بودم (I was).",
+   "context": "دیروز به بازار رفتم. / ✗ دیروز به بازار می‌روم.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "Tell what happened yesterday.",
+   "context": "دیروز به بازار رفتم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "Who did you see?",
+   "context": "آن‌جا یک دوست دیدم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "What did you do together?",
+   "context": "با هم قهوه خوردیم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "What happened next?",
+   "context": "بعد به خانه برگشتم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "How did you feel?",
+   "context": "خیلی خسته بودم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "What did you do after that?",
+   "context": "زود خوابیدم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "Sum up the day.",
+   "context": "روز خوبی بود.",
+   "have": []
+  },
+  {
+   "key": "p.fa_past_story_0",
+   "kind": "phrase",
+   "target": "دیروز به بازار رفتم.",
+   "tr": "Dün markete gittim.",
+   "en": "Yesterday I went to the market.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_past_story_1",
+   "kind": "phrase",
+   "target": "آن‌جا یک دوست دیدم.",
+   "tr": "Orada bir arkadaşımla karşılaştım.",
+   "en": "I saw a friend there.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_past_story_2",
+   "kind": "phrase",
+   "target": "با هم قهوه خوردیم.",
+   "tr": "Birlikte kahve içtik.",
+   "en": "We drank coffee together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_past_story_3",
+   "kind": "phrase",
+   "target": "بعد به خانه برگشتم.",
+   "tr": "Sonra eve döndüm.",
+   "en": "Then I went back home.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_past_story_4",
+   "kind": "phrase",
+   "target": "خیلی خسته بودم.",
+   "tr": "Çok yorgundum.",
+   "en": "I was very tired.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_past_story_5",
+   "kind": "phrase",
+   "target": "زود خوابیدم.",
+   "tr": "Erken uyudum.",
+   "en": "I slept early.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_past_story_6",
+   "kind": "phrase",
+   "target": "روز خوبی بود.",
+   "tr": "Güzel bir gündü.",
+   "en": "It was a good day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "یک قهوه، لطفاً.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "من رزرو دارم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "ببخشید، ایستگاه کجاست؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "سلام، اسم من دنیز است.",
+   "have": []
+  },
+  {
+   "key": "p.fa_a2_route_0",
+   "kind": "phrase",
+   "target": "یک قهوه، لطفاً.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_a2_route_1",
+   "kind": "phrase",
+   "target": "من رزرو دارم.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_a2_route_2",
+   "kind": "phrase",
+   "target": "ببخشید، ایستگاه کجاست؟",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_a2_route_3",
+   "kind": "phrase",
+   "target": "سلام، اسم من دنیز است.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fa_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fa_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "صبحانه شامل می‌شود؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "نمی‌فهمم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "دنبال آپارتمان می‌گردم.",
+   "have": []
+  },
+  {
+   "key": "tp.fa_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "اجاره چقدر است؟",
+   "have": []
+  },
+  {
+   "key": "tp.fa_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "کارت قبول می‌کنید؟",
+   "have": []
+  },
+  {
+   "key": "p.fa_b1_solve_0",
+   "kind": "phrase",
+   "target": "صبحانه شامل می‌شود؟",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_b1_solve_1",
+   "kind": "phrase",
+   "target": "نمی‌فهمم.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_b1_solve_2",
+   "kind": "phrase",
+   "target": "دنبال آپارتمان می‌گردم.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_b1_solve_3",
+   "kind": "phrase",
+   "target": "اجاره چقدر است؟",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fa_b1_solve_4",
+   "kind": "phrase",
+   "target": "کارت قبول می‌کنید؟",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "st.fa_phone",
+   "kind": "story_title",
+   "target": "قرار با دوست",
+   "tr": "Arkadaşla Randevu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_phone.0",
+   "kind": "story_sentence",
+   "target": "روز شنبه، دوستم رضا زنگ می‌زند.",
+   "tr": "Cumartesi, arkadaşım Reza arar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_phone.1",
+   "kind": "story_sentence",
+   "target": "می‌گوید که دوست دارد به پارک برود.",
+   "tr": "Parka gitmek istediğini söylüyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_phone.2",
+   "kind": "story_sentence",
+   "target": "ما یک‌شنبه به پارک می‌رویم.",
+   "tr": "Pazar günü parka gideriz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_phone.3",
+   "kind": "story_sentence",
+   "target": "من میوه و نان می‌خرم و او چای می‌آورد.",
+   "tr": "Ben meyve ve ekmek alıyorum, o çay getiriyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_phone.4",
+   "kind": "story_sentence",
+   "target": "در پارک زیر درخت می‌نشینیم و حرف می‌زنیم.",
+   "tr": "Parkta bir ağacın altına oturup sohbet ediyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_phone.5",
+   "kind": "story_sentence",
+   "target": "روزهای ساده بهترین روزها هستند.",
+   "tr": "Basit günler en iyi günlerdir.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.fa_pet",
+   "kind": "story_title",
+   "target": "گربه من",
+   "tr": "Kedim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_pet.0",
+   "kind": "story_sentence",
+   "target": "من یک گربه دارم. اسمش تیفی است.",
+   "tr": "Bir kedim var. Adı Tifi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_pet.1",
+   "kind": "story_sentence",
+   "target": "تیفی صبح زود بیدارم می‌کند.",
+   "tr": "Tifi beni erken sabah uyandırır.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_pet.2",
+   "kind": "story_sentence",
+   "target": "او پنجره را دوست دارد و پرنده‌ها را نگاه می‌کند.",
+   "tr": "Pencereyi sever ve kuşlara bakar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_pet.3",
+   "kind": "story_sentence",
+   "target": "هر روز به او آب تازه می‌دهم.",
+   "tr": "Her gün ona taze su veririm.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_pet.4",
+   "kind": "story_sentence",
+   "target": "تیفی با نخ بازی می‌کند و خیلی خوشحال می‌شود.",
+   "tr": "Tifi ip ile oynar ve çok mutlu olur.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_pet.5",
+   "kind": "story_sentence",
+   "target": "با تیفی خانه ما گرم و شاد است.",
+   "tr": "Tifi ile evimiz sıcak ve neşeli.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.fa_housework",
+   "kind": "story_title",
+   "target": "خانه تمیز",
+   "tr": "Temiz Ev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_housework.0",
+   "kind": "story_sentence",
+   "target": "ما هر عصر آشپزخانه را مرتب می‌کنیم.",
+   "tr": "Her akşam mutfakları düzene koyarız.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_housework.1",
+   "kind": "story_sentence",
+   "target": "من قابلمه‌ها را می‌شُستم و شوهرم سفره را می‌چیند.",
+   "tr": "Ben tencereleri yıkarım, kocam sofrayı kurar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_housework.2",
+   "kind": "story_sentence",
+   "target": "ما هنگام آشپزی موسیقی گوش می‌دهیم.",
+   "tr": "Yemek pişirirken müzik dinleriz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_housework.3",
+   "kind": "story_sentence",
+   "target": "بعد از شام، ظرف‌ها را می‌شوییم.",
+   "tr": "Akşam yemeğinden sonra tabakları yıkarız.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_housework.4",
+   "kind": "story_sentence",
+   "target": "خانه ما همیشه تمیز و مرتب است.",
+   "tr": "Evimiz her zaman temiz ve düzenlidir.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fa_housework.5",
+   "kind": "story_sentence",
+   "target": "من خانه تمیز را دوست دارم.",
+   "tr": "Temiz evi severim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ا.n",
+   "kind": "alphabet_letter_name",
+   "target": "ا",
+   "tr": "Elif",
+   "en": "Alef",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ا.s",
+   "kind": "alphabet_sound",
+   "target": "ا",
+   "tr": "a",
+   "context": "آب",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ا.m",
+   "kind": "alphabet_example",
+   "target": "آب",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ب.n",
+   "kind": "alphabet_letter_name",
+   "target": "ب",
+   "tr": "Be",
+   "en": "Be",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ب.s",
+   "kind": "alphabet_sound",
+   "target": "ب",
+   "tr": "b",
+   "context": "باد",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ب.m",
+   "kind": "alphabet_example",
+   "target": "باد",
+   "tr": "Rüzgar",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.پ.n",
+   "kind": "alphabet_letter_name",
+   "target": "پ",
+   "tr": "Pe",
+   "en": "Pe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.پ.s",
+   "kind": "alphabet_sound",
+   "target": "پ",
+   "tr": "p",
+   "context": "پدر",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.پ.m",
+   "kind": "alphabet_example",
+   "target": "پدر",
+   "tr": "Baba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ت.n",
+   "kind": "alphabet_letter_name",
+   "target": "ت",
+   "tr": "Te",
+   "en": "Te",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ت.s",
+   "kind": "alphabet_sound",
+   "target": "ت",
+   "tr": "t",
+   "context": "توپ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ت.m",
+   "kind": "alphabet_example",
+   "target": "توپ",
+   "tr": "Top",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ج.n",
+   "kind": "alphabet_letter_name",
+   "target": "ج",
+   "tr": "Cim",
+   "en": "Jim",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ج.s",
+   "kind": "alphabet_sound",
+   "target": "ج",
+   "tr": "c",
+   "context": "جنگل",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ج.m",
+   "kind": "alphabet_example",
+   "target": "جنگل",
+   "tr": "Orman",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.چ.n",
+   "kind": "alphabet_letter_name",
+   "target": "چ",
+   "tr": "Çe",
+   "en": "Che",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.چ.s",
+   "kind": "alphabet_sound",
+   "target": "چ",
+   "tr": "ç",
+   "context": "چای",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.چ.m",
+   "kind": "alphabet_example",
+   "target": "چای",
+   "tr": "Çay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.د.n",
+   "kind": "alphabet_letter_name",
+   "target": "د",
+   "tr": "Dal",
+   "en": "Dal",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.د.s",
+   "kind": "alphabet_sound",
+   "target": "د",
+   "tr": "d",
+   "context": "در",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.د.m",
+   "kind": "alphabet_example",
+   "target": "در",
+   "tr": "Kapı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ر.n",
+   "kind": "alphabet_letter_name",
+   "target": "ر",
+   "tr": "Re",
+   "en": "Re",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ر.s",
+   "kind": "alphabet_sound",
+   "target": "ر",
+   "tr": "r",
+   "context": "روز",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ر.m",
+   "kind": "alphabet_example",
+   "target": "روز",
+   "tr": "Gün",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ز.n",
+   "kind": "alphabet_letter_name",
+   "target": "ز",
+   "tr": "Ze",
+   "en": "Ze",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ز.s",
+   "kind": "alphabet_sound",
+   "target": "ز",
+   "tr": "z",
+   "context": "زن",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ز.m",
+   "kind": "alphabet_example",
+   "target": "زن",
+   "tr": "Kadın",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ژ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ژ",
+   "tr": "Je",
+   "en": "Zhe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ژ.s",
+   "kind": "alphabet_sound",
+   "target": "ژ",
+   "tr": "j",
+   "context": "ژاله",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ژ.m",
+   "kind": "alphabet_example",
+   "target": "ژاله",
+   "tr": "Çiy (kadın adı)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.س.n",
+   "kind": "alphabet_letter_name",
+   "target": "س",
+   "tr": "Sin",
+   "en": "Sin",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.س.s",
+   "kind": "alphabet_sound",
+   "target": "س",
+   "tr": "s",
+   "context": "سیب",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.س.m",
+   "kind": "alphabet_example",
+   "target": "سیب",
+   "tr": "Elma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ش.n",
+   "kind": "alphabet_letter_name",
+   "target": "ش",
+   "tr": "Şın",
+   "en": "Shin",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ش.s",
+   "kind": "alphabet_sound",
+   "target": "ش",
+   "tr": "ş",
+   "context": "شب",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ش.m",
+   "kind": "alphabet_example",
+   "target": "شب",
+   "tr": "Gece",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ف.n",
+   "kind": "alphabet_letter_name",
+   "target": "ف",
+   "tr": "Fe",
+   "en": "Fe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ف.s",
+   "kind": "alphabet_sound",
+   "target": "ف",
+   "tr": "f",
+   "context": "فیل",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ف.m",
+   "kind": "alphabet_example",
+   "target": "فیل",
+   "tr": "Fil",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ک.n",
+   "kind": "alphabet_letter_name",
+   "target": "ک",
+   "tr": "Kaf",
+   "en": "Kaf",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ک.s",
+   "kind": "alphabet_sound",
+   "target": "ک",
+   "tr": "k",
+   "context": "کتاب",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ک.m",
+   "kind": "alphabet_example",
+   "target": "کتاب",
+   "tr": "Kitap",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.گ.n",
+   "kind": "alphabet_letter_name",
+   "target": "گ",
+   "tr": "Gaf",
+   "en": "Gaf",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.گ.s",
+   "kind": "alphabet_sound",
+   "target": "گ",
+   "tr": "g",
+   "context": "گل",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.گ.m",
+   "kind": "alphabet_example",
+   "target": "گل",
+   "tr": "Çiçek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ل.n",
+   "kind": "alphabet_letter_name",
+   "target": "ل",
+   "tr": "Lam",
+   "en": "Lam",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ل.s",
+   "kind": "alphabet_sound",
+   "target": "ل",
+   "tr": "l",
+   "context": "لب",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ل.m",
+   "kind": "alphabet_example",
+   "target": "لب",
+   "tr": "Dudak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.م.n",
+   "kind": "alphabet_letter_name",
+   "target": "م",
+   "tr": "Mim",
+   "en": "Mim",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.م.s",
+   "kind": "alphabet_sound",
+   "target": "م",
+   "tr": "m",
+   "context": "ماه",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.م.m",
+   "kind": "alphabet_example",
+   "target": "ماه",
+   "tr": "Ay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ن.n",
+   "kind": "alphabet_letter_name",
+   "target": "ن",
+   "tr": "Nun",
+   "en": "Nun",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ن.s",
+   "kind": "alphabet_sound",
+   "target": "ن",
+   "tr": "n",
+   "context": "نان",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ن.m",
+   "kind": "alphabet_example",
+   "target": "نان",
+   "tr": "Ekmek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.و.n",
+   "kind": "alphabet_letter_name",
+   "target": "و",
+   "tr": "Vav",
+   "en": "Vav",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.و.s",
+   "kind": "alphabet_sound",
+   "target": "و",
+   "tr": "v/u",
+   "context": "ورزش",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.و.m",
+   "kind": "alphabet_example",
+   "target": "ورزش",
+   "tr": "Spor",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ه.n",
+   "kind": "alphabet_letter_name",
+   "target": "ه",
+   "tr": "He",
+   "en": "He",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ه.s",
+   "kind": "alphabet_sound",
+   "target": "ه",
+   "tr": "h",
+   "context": "هوا",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ه.m",
+   "kind": "alphabet_example",
+   "target": "هوا",
+   "tr": "Hava",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ی.n",
+   "kind": "alphabet_letter_name",
+   "target": "ی",
+   "tr": "Ye",
+   "en": "Ye",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fa.ی.s",
+   "kind": "alphabet_sound",
+   "target": "ی",
+   "tr": "y/i",
+   "context": "یخ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fa.ی.m",
+   "kind": "alphabet_example",
+   "target": "یخ",
+   "tr": "Buz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.fa.0.h",
+   "kind": "pronunciation_heard",
+   "target": "پ",
+   "tr": "p",
+   "context": "Arapça'da yok.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.fa.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "پدر",
+   "tr": "pedar",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.fa.1.h",
+   "kind": "pronunciation_heard",
+   "target": "چ",
+   "tr": "ç",
+   "context": "Türkçe ç.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.fa.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "چای",
+   "tr": "çay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.fa.2.h",
+   "kind": "pronunciation_heard",
+   "target": "ژ",
+   "tr": "j (Fransızca)",
+   "context": "Yumuşak j.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.fa.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "ژاپن",
+   "tr": "japon",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

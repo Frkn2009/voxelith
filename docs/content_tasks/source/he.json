@@ -1,0 +1,3022 @@
+{
+ "lang": "he",
+ "scenarios": [
+  {
+   "id": "he_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "he_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "he_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "he_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "he_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "he_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "he_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "he_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "he_intro",
+   "cefr": "a1",
+   "title": "Getting to know someone"
+  },
+  {
+   "id": "he_shopping",
+   "cefr": "a1",
+   "title": "Clothes shopping"
+  },
+  {
+   "id": "he_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers and time"
+  },
+  {
+   "id": "he_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "he_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "he_transport",
+   "cefr": "a1",
+   "title": "Public transport"
+  },
+  {
+   "id": "he_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "he_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "he_past_story",
+   "cefr": "a1",
+   "title": "Telling a story in the past"
+  },
+  {
+   "id": "he_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "he_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  }
+ ],
+ "stories": [
+  {
+   "id": "he_school",
+   "level": "a1",
+   "title": "יום בבית הספר"
+  },
+  {
+   "id": "he_garden",
+   "level": "a1",
+   "title": "הגן של סבא"
+  },
+  {
+   "id": "he_phone",
+   "level": "a1",
+   "title": "טלפון של חבר"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.he_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "קפה, בבקשה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "כמה זה עולה?",
+   "have": []
+  },
+  {
+   "key": "p.he_cafe_0",
+   "kind": "phrase",
+   "target": "קפה, בבקשה.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_cafe_1",
+   "kind": "phrase",
+   "target": "כמה זה עולה?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_cafe_2",
+   "kind": "phrase",
+   "target": "תודה רבה.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "יש לי הזמנה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "ארוחת בוקר כלולה?",
+   "have": []
+  },
+  {
+   "key": "p.he_hotel_0",
+   "kind": "phrase",
+   "target": "יש לי הזמנה.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_hotel_1",
+   "kind": "phrase",
+   "target": "ארוחת בוקר כלולה?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_hotel_2",
+   "kind": "phrase",
+   "target": "תודה רבה.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "סליחה, איפה התחנה?",
+   "have": []
+  },
+  {
+   "key": "tp.he_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "תודה רבה.",
+   "have": []
+  },
+  {
+   "key": "p.he_dir_0",
+   "kind": "phrase",
+   "target": "סליחה, איפה התחנה?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_dir_1",
+   "kind": "phrase",
+   "target": "תודה רבה.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_dir_2",
+   "kind": "phrase",
+   "target": "אני לא מבין.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "שלום, שמי דניז.",
+   "have": []
+  },
+  {
+   "key": "tp.he_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "אני מטורקיה.",
+   "have": []
+  },
+  {
+   "key": "p.he_hi_0",
+   "kind": "phrase",
+   "target": "שלום, שמי דניז.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_hi_1",
+   "kind": "phrase",
+   "target": "אני מטורקיה.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_hi_2",
+   "kind": "phrase",
+   "target": "תודה רבה.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "אני מחפש דירה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "כמה שכר הדירה?",
+   "have": []
+  },
+  {
+   "key": "p.he_flat_0",
+   "kind": "phrase",
+   "target": "אני מחפש דירה.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_flat_1",
+   "kind": "phrase",
+   "target": "כמה שכר הדירה?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_flat_2",
+   "kind": "phrase",
+   "target": "אתה יכול לעזור לי?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "כמה זה עולה?",
+   "have": []
+  },
+  {
+   "key": "tp.he_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "אני אקח את זה.",
+   "have": []
+  },
+  {
+   "key": "p.he_shop_0",
+   "kind": "phrase",
+   "target": "כמה זה עולה?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_shop_1",
+   "kind": "phrase",
+   "target": "אני אקח את זה.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_shop_2",
+   "kind": "phrase",
+   "target": "אתם מקבלים כרטיס?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "חשבון, בבקשה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "אנחנו רוצים לשלם ביחד.",
+   "have": []
+  },
+  {
+   "key": "p.he_bill_0",
+   "kind": "phrase",
+   "target": "חשבון, בבקשה.",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_bill_1",
+   "kind": "phrase",
+   "target": "אנחנו רוצים לשלם ביחד.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_bill_2",
+   "kind": "phrase",
+   "target": "תשמור את העודף.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "יש לי הזמנה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "מושב ליד החלון.",
+   "have": []
+  },
+  {
+   "key": "p.he_airport_0",
+   "kind": "phrase",
+   "target": "יש לי הזמנה.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_airport_1",
+   "kind": "phrase",
+   "target": "מושב ליד החלון.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_airport_2",
+   "kind": "phrase",
+   "target": "זו התור לעלייה?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_intro",
+   "kind": "scenario_title",
+   "tr": "Kendini tanıtmak",
+   "en": "Getting to know someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.he_intro",
+   "kind": "grammar_rule",
+   "tr": "İbranicede şimdiki zamanda \"olmak\" fiili yoktur — özne ve yüklem art arda söylenir.",
+   "en": "Hebrew has no present-tense verb \"to be\" — the subject and predicate are simply placed next to each other: אני מורה (\"I teacher\" = I am a teacher).",
+   "context": "אני מורה. / ✗ אני יש מורה.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_intro.0",
+   "kind": "speaking_prompt",
+   "en": "Someone extends a hand.",
+   "context": "שלום, נעים מאוד.",
+   "have": []
+  },
+  {
+   "key": "tp.he_intro.1",
+   "kind": "speaking_prompt",
+   "en": "You want to know their name.",
+   "context": "מה שמך?",
+   "have": []
+  },
+  {
+   "key": "tp.he_intro.2",
+   "kind": "speaking_prompt",
+   "en": "They ask your name.",
+   "context": "שמי דניז.",
+   "have": []
+  },
+  {
+   "key": "tp.he_intro.3",
+   "kind": "speaking_prompt",
+   "en": "Small talk continues.",
+   "context": "במה אתה עובד?",
+   "have": []
+  },
+  {
+   "key": "tp.he_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask about your job.",
+   "context": "אני מורה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You want to know their origin.",
+   "context": "מאיפה אתה?",
+   "have": []
+  },
+  {
+   "key": "tp.he_intro.6",
+   "kind": "speaking_prompt",
+   "en": "The conversation ends.",
+   "context": "להתראות.",
+   "have": []
+  },
+  {
+   "key": "p.he_intro_0",
+   "kind": "phrase",
+   "target": "שלום, נעים מאוד.",
+   "tr": "Merhaba, tanıştığımıza memnun oldum.",
+   "en": "Hello, nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_intro_1",
+   "kind": "phrase",
+   "target": "מה שמך?",
+   "tr": "Adın ne?",
+   "en": "What's your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_intro_2",
+   "kind": "phrase",
+   "target": "שמי דניז.",
+   "tr": "Benim adım Deniz.",
+   "en": "My name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_intro_3",
+   "kind": "phrase",
+   "target": "במה אתה עובד?",
+   "tr": "Ne iş yapıyorsun?",
+   "en": "What do you do?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_intro_4",
+   "kind": "phrase",
+   "target": "אני מורה.",
+   "tr": "Ben öğretmenim.",
+   "en": "I am a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_intro_5",
+   "kind": "phrase",
+   "target": "מאיפה אתה?",
+   "tr": "Nerelisin?",
+   "en": "Where are you from?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_intro_6",
+   "kind": "phrase",
+   "target": "להתראות.",
+   "tr": "Görüşmek üzere.",
+   "en": "See you later.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_shopping",
+   "kind": "scenario_title",
+   "tr": "Kıyafet alışverişi",
+   "en": "Clothes shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.he_shopping",
+   "kind": "grammar_rule",
+   "tr": "Belirlilik takısı ה, isme boşluksuz doğrudan eklenir.",
+   "en": "The definite article ה attaches directly to the front of the noun, with no space and no separate word.",
+   "context": "חדר ההלבשה. / ✗ חדר ה הלבשה.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You enter a clothing store.",
+   "context": "אני מחפש ז׳קט.",
+   "have": []
+  },
+  {
+   "key": "tp.he_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "It feels tight.",
+   "context": "יש לכם את זה במידה גדולה יותר?",
+   "have": []
+  },
+  {
+   "key": "tp.he_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want to try the jacket.",
+   "context": "אפשר למדוד את זה?",
+   "have": []
+  },
+  {
+   "key": "tp.he_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "The clerk points.",
+   "context": "חדר ההלבשה שם.",
+   "have": []
+  },
+  {
+   "key": "tp.he_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You want another color.",
+   "context": "יש לכם את זה בכחול?",
+   "have": []
+  },
+  {
+   "key": "tp.he_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You check the price.",
+   "context": "יש הנחה?",
+   "have": []
+  },
+  {
+   "key": "tp.he_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You decide.",
+   "context": "אני אקח את זה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_shopping.7",
+   "kind": "speaking_prompt",
+   "en": "Time to pay.",
+   "context": "אפשר לשלם בכרטיס אשראי?",
+   "have": []
+  },
+  {
+   "key": "p.he_shopping_0",
+   "kind": "phrase",
+   "target": "אני מחפש ז׳קט.",
+   "tr": "Bir ceket arıyorum.",
+   "en": "I'm looking for a jacket.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_shopping_1",
+   "kind": "phrase",
+   "target": "יש לכם את זה במידה גדולה יותר?",
+   "tr": "Bunun daha büyük bedeni var mı?",
+   "en": "Do you have this in a bigger size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_shopping_2",
+   "kind": "phrase",
+   "target": "אפשר למדוד את זה?",
+   "tr": "Bunu deneyebilir miyim?",
+   "en": "Can I try this on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_shopping_3",
+   "kind": "phrase",
+   "target": "חדר ההלבשה שם.",
+   "tr": "Deneme kabini şurada.",
+   "en": "The fitting room is over there.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_shopping_4",
+   "kind": "phrase",
+   "target": "יש לכם את זה בכחול?",
+   "tr": "Bunun mavisi var mı?",
+   "en": "Do you have this in blue?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_shopping_5",
+   "kind": "phrase",
+   "target": "יש הנחה?",
+   "tr": "İndirim var mı?",
+   "en": "Is there a discount?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_shopping_6",
+   "kind": "phrase",
+   "target": "אני אקח את זה.",
+   "tr": "Bunu alıyorum.",
+   "en": "I'll take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_shopping_7",
+   "kind": "phrase",
+   "target": "אפשר לשלם בכרטיס אשראי?",
+   "tr": "Kartla ödeyebilir miyim?",
+   "en": "Can I pay by credit card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers and time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.he_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "Saat söylerken sayının dişil biçimi kullanılır çünkü \"שעה\" (saat) dişil bir isimdir.",
+   "en": "Telling time uses the feminine form of the number, because שעה (\"hour\") is a feminine noun.",
+   "context": "נתראה בשתיים. / ✗ נתראה בשניים.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You check the time.",
+   "context": "מה השעה?",
+   "have": []
+  },
+  {
+   "key": "tp.he_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "The clock shows three.",
+   "context": "השעה שלוש.",
+   "have": []
+  },
+  {
+   "key": "tp.he_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "You want to know opening hours.",
+   "context": "באיזו שעה החנות נפתחת?",
+   "have": []
+  },
+  {
+   "key": "tp.he_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "The clerk explains.",
+   "context": "היא נפתחת בתשע בבוקר.",
+   "have": []
+  },
+  {
+   "key": "tp.he_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "Talking about family.",
+   "context": "יש לי שני אחים.",
+   "have": []
+  },
+  {
+   "key": "tp.he_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "You point at an item.",
+   "context": "כמה זה עולה?",
+   "have": []
+  },
+  {
+   "key": "tp.he_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "The clerk answers.",
+   "context": "עשרים יורו.",
+   "have": []
+  },
+  {
+   "key": "tp.he_numbers_time.7",
+   "kind": "speaking_prompt",
+   "en": "Saying goodbye.",
+   "context": "נתראה בחמש.",
+   "have": []
+  },
+  {
+   "key": "p.he_numbers_time_0",
+   "kind": "phrase",
+   "target": "מה השעה?",
+   "tr": "Saat kaç?",
+   "en": "What time is it?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_numbers_time_1",
+   "kind": "phrase",
+   "target": "השעה שלוש.",
+   "tr": "Saat üç.",
+   "en": "It's three o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_numbers_time_2",
+   "kind": "phrase",
+   "target": "באיזו שעה החנות נפתחת?",
+   "tr": "Mağaza ne zaman açılıyor?",
+   "en": "What time does the store open?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_numbers_time_3",
+   "kind": "phrase",
+   "target": "היא נפתחת בתשע בבוקר.",
+   "tr": "Sabah dokuzda açılıyor.",
+   "en": "It opens at nine in the morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_numbers_time_4",
+   "kind": "phrase",
+   "target": "יש לי שני אחים.",
+   "tr": "İki erkek kardeşim var.",
+   "en": "I have two brothers.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_numbers_time_5",
+   "kind": "phrase",
+   "target": "כמה זה עולה?",
+   "tr": "Bu ne kadar?",
+   "en": "How much is this?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_numbers_time_6",
+   "kind": "phrase",
+   "target": "עשרים יורו.",
+   "tr": "Yirmi euro.",
+   "en": "Twenty euros.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_numbers_time_7",
+   "kind": "phrase",
+   "target": "נתראה בחמש.",
+   "tr": "Saat beşte görüşürüz.",
+   "en": "See you at five.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.he_family",
+   "kind": "grammar_rule",
+   "tr": "\"Benim\" anlamı için שלי sözcüğü, ismin arkasına yerleştirilir.",
+   "en": "To say \"my [noun]\", place שלי after the noun: אבא שלי (\"father of-mine\" = my father).",
+   "context": "אבא שלי רופא. / ✗ שלי אבא רופא.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a photo.",
+   "context": "זאת המשפחה שלי.",
+   "have": []
+  },
+  {
+   "key": "tp.he_family.1",
+   "kind": "speaking_prompt",
+   "en": "They ask about siblings.",
+   "context": "יש לי שתי אחיות.",
+   "have": []
+  },
+  {
+   "key": "tp.he_family.2",
+   "kind": "speaking_prompt",
+   "en": "Talking about parents.",
+   "context": "אבא שלי רופא.",
+   "have": []
+  },
+  {
+   "key": "tp.he_family.3",
+   "kind": "speaking_prompt",
+   "en": "More about your mother.",
+   "context": "אמא שלי עובדת בבית חולים.",
+   "have": []
+  },
+  {
+   "key": "tp.he_family.4",
+   "kind": "speaking_prompt",
+   "en": "You ask them back.",
+   "context": "יש לך אחים?",
+   "have": []
+  },
+  {
+   "key": "tp.he_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask your birth order.",
+   "context": "אני הכי צעיר.",
+   "have": []
+  },
+  {
+   "key": "tp.he_family.6",
+   "kind": "speaking_prompt",
+   "en": "Talking about your household.",
+   "context": "סבתא שלי גרה איתנו.",
+   "have": []
+  },
+  {
+   "key": "p.he_family_0",
+   "kind": "phrase",
+   "target": "זאת המשפחה שלי.",
+   "tr": "Bu benim ailem.",
+   "en": "This is my family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_family_1",
+   "kind": "phrase",
+   "target": "יש לי שתי אחיות.",
+   "tr": "İki kız kardeşim var.",
+   "en": "I have two sisters.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_family_2",
+   "kind": "phrase",
+   "target": "אבא שלי רופא.",
+   "tr": "Babam doktor.",
+   "en": "My father is a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_family_3",
+   "kind": "phrase",
+   "target": "אמא שלי עובדת בבית חולים.",
+   "tr": "Annem hastanede çalışıyor.",
+   "en": "My mother works at a hospital.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_family_4",
+   "kind": "phrase",
+   "target": "יש לך אחים?",
+   "tr": "Kardeşin var mı?",
+   "en": "Do you have any siblings?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_family_5",
+   "kind": "phrase",
+   "target": "אני הכי צעיר.",
+   "tr": "Ben en küçüğüyüm.",
+   "en": "I am the youngest.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_family_6",
+   "kind": "phrase",
+   "target": "סבתא שלי גרה איתנו.",
+   "tr": "Büyükannem bizimle yaşıyor.",
+   "en": "My grandmother lives with us.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.he_weather",
+   "kind": "grammar_rule",
+   "tr": "\"Güneşli\" demek için sıfat değil, יש (\"var\") + isim kalıbı kullanılır: יש שמש (\"güneş var\").",
+   "en": "\"It's sunny\" is expressed with יש (\"there is\") + a noun, not an adjective: יש שמש (\"there is sun\").",
+   "context": "יש שמש היום. / ✗ זה שמש היום.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_weather.0",
+   "kind": "speaking_prompt",
+   "en": "Small talk opener.",
+   "context": "איך מזג האוויר היום?",
+   "have": []
+  },
+  {
+   "key": "tp.he_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You look outside.",
+   "context": "יש שמש היום.",
+   "have": []
+  },
+  {
+   "key": "tp.he_weather.2",
+   "kind": "speaking_prompt",
+   "en": "Clouds gather.",
+   "context": "יורד גשם.",
+   "have": []
+  },
+  {
+   "key": "tp.he_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You step outside.",
+   "context": "קר מאוד בחוץ.",
+   "have": []
+  },
+  {
+   "key": "tp.he_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You warn a friend.",
+   "context": "קח מטריה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_weather.5",
+   "kind": "speaking_prompt",
+   "en": "Checking the forecast.",
+   "context": "מחר יהיה יותר חם.",
+   "have": []
+  },
+  {
+   "key": "tp.he_weather.6",
+   "kind": "speaking_prompt",
+   "en": "Sharing your preference.",
+   "context": "אני אוהב ימים שמשיים.",
+   "have": []
+  },
+  {
+   "key": "p.he_weather_0",
+   "kind": "phrase",
+   "target": "איך מזג האוויר היום?",
+   "tr": "Bugün hava nasıl?",
+   "en": "How's the weather today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_weather_1",
+   "kind": "phrase",
+   "target": "יש שמש היום.",
+   "tr": "Bugün güneşli.",
+   "en": "It's sunny today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_weather_2",
+   "kind": "phrase",
+   "target": "יורד גשם.",
+   "tr": "Yağmur yağıyor.",
+   "en": "It's raining.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_weather_3",
+   "kind": "phrase",
+   "target": "קר מאוד בחוץ.",
+   "tr": "Dışarısı çok soğuk.",
+   "en": "It's very cold outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_weather_4",
+   "kind": "phrase",
+   "target": "קח מטריה.",
+   "tr": "Şemsiye al.",
+   "en": "Take an umbrella.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_weather_5",
+   "kind": "phrase",
+   "target": "מחר יהיה יותר חם.",
+   "tr": "Yarın hava daha sıcak olacak.",
+   "en": "Tomorrow it will be warmer.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_weather_6",
+   "kind": "phrase",
+   "target": "אני אוהב ימים שמשיים.",
+   "tr": "Güneşli günleri severim.",
+   "en": "I love sunny days.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_transport",
+   "kind": "scenario_title",
+   "tr": "Toplu taşıma",
+   "en": "Public transport",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.he_transport",
+   "kind": "grammar_rule",
+   "tr": "Bir yere gitmek belirtilirken ל (\"-e/-a\") öneki, yer isminin başına doğrudan eklenir.",
+   "en": "To express a destination, the prefix ל (\"to\") attaches directly to the front of the place noun.",
+   "context": "כרטיס לשדה התעופה. / ✗ כרטיס ל שדה התעופה.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You are at a bus stop.",
+   "context": "איזה אוטובוס נוסע למרכז?",
+   "have": []
+  },
+  {
+   "key": "tp.he_transport.1",
+   "kind": "speaking_prompt",
+   "en": "At the ticket counter.",
+   "context": "כרטיס לשדה התעופה, בבקשה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_transport.2",
+   "kind": "speaking_prompt",
+   "en": "Checking the schedule.",
+   "context": "באיזו שעה יוצאת הרכבת הבאה?",
+   "have": []
+  },
+  {
+   "key": "tp.he_transport.3",
+   "kind": "speaking_prompt",
+   "en": "You are lost.",
+   "context": "איפה תחנת המטרו הקרובה?",
+   "have": []
+  },
+  {
+   "key": "tp.he_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You want to sit down.",
+   "context": "המקום הזה תפוס?",
+   "have": []
+  },
+  {
+   "key": "tp.he_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You are in a taxi.",
+   "context": "תעצור כאן, בבקשה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_transport.6",
+   "kind": "speaking_prompt",
+   "en": "Asking about the trip.",
+   "context": "כמה זמן זה לוקח?",
+   "have": []
+  },
+  {
+   "key": "p.he_transport_0",
+   "kind": "phrase",
+   "target": "איזה אוטובוס נוסע למרכז?",
+   "tr": "Hangi otobüs merkeze gidiyor?",
+   "en": "Which bus goes to the center?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_transport_1",
+   "kind": "phrase",
+   "target": "כרטיס לשדה התעופה, בבקשה.",
+   "tr": "Havalimanına bir bilet, lütfen.",
+   "en": "A ticket to the airport, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_transport_2",
+   "kind": "phrase",
+   "target": "באיזו שעה יוצאת הרכבת הבאה?",
+   "tr": "Sonraki tren saat kaçta kalkıyor?",
+   "en": "What time does the next train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_transport_3",
+   "kind": "phrase",
+   "target": "איפה תחנת המטרו הקרובה?",
+   "tr": "En yakın metro istasyonu nerede?",
+   "en": "Where is the nearest metro station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_transport_4",
+   "kind": "phrase",
+   "target": "המקום הזה תפוס?",
+   "tr": "Bu koltuk dolu mu?",
+   "en": "Is this seat taken?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_transport_5",
+   "kind": "phrase",
+   "target": "תעצור כאן, בבקשה.",
+   "tr": "Lütfen burada durun.",
+   "en": "Please stop here.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_transport_6",
+   "kind": "phrase",
+   "target": "כמה זמן זה לוקח?",
+   "tr": "Ne kadar sürer?",
+   "en": "How long does it take?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.he_emergency",
+   "kind": "grammar_rule",
+   "tr": "Günlük konuşmada emirler genellikle gelecek zaman fiil biçimiyle ifade edilir: תתקשרו (\"arayacaksınız\" = \"arayın\").",
+   "en": "Everyday commands are often expressed with the future-tense verb form instead of a true imperative: תתקשרו (\"you will call\" = \"call!\").",
+   "context": "תתקשרו למשטרה! / ✗ להתקשר למשטרה!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something goes wrong.",
+   "context": "הצילו!",
+   "have": []
+  },
+  {
+   "key": "tp.he_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Someone collapses.",
+   "context": "תתקשרו לאמבולנס!",
+   "have": []
+  },
+  {
+   "key": "tp.he_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You feel unwell.",
+   "context": "אני צריך רופא.",
+   "have": []
+  },
+  {
+   "key": "tp.he_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You ask a stranger.",
+   "context": "איפה בית החולים הקרוב?",
+   "have": []
+  },
+  {
+   "key": "tp.he_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "At the police station.",
+   "context": "איבדתי את הדרכון שלי.",
+   "have": []
+  },
+  {
+   "key": "tp.he_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "There has been a theft.",
+   "context": "תתקשרו למשטרה, בבקשה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You describe how you feel.",
+   "context": "אני מרגיש ממש רע.",
+   "have": []
+  },
+  {
+   "key": "p.he_emergency_0",
+   "kind": "phrase",
+   "target": "הצילו!",
+   "tr": "İmdat!",
+   "en": "Help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_emergency_1",
+   "kind": "phrase",
+   "target": "תתקשרו לאמבולנס!",
+   "tr": "Ambulans çağırın!",
+   "en": "Call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_emergency_2",
+   "kind": "phrase",
+   "target": "אני צריך רופא.",
+   "tr": "Bir doktora ihtiyacım var.",
+   "en": "I need a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_emergency_3",
+   "kind": "phrase",
+   "target": "איפה בית החולים הקרוב?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_emergency_4",
+   "kind": "phrase",
+   "target": "איבדתי את הדרכון שלי.",
+   "tr": "Pasaportumu kaybettim.",
+   "en": "I lost my passport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_emergency_5",
+   "kind": "phrase",
+   "target": "תתקשרו למשטרה, בבקשה.",
+   "tr": "Lütfen polisi arayın.",
+   "en": "Please call the police.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_emergency_6",
+   "kind": "phrase",
+   "target": "אני מרגיש ממש רע.",
+   "tr": "Kendimi çok kötü hissediyorum.",
+   "en": "I feel very sick.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.he_routine",
+   "kind": "grammar_rule",
+   "tr": "Şimdiki zaman fiilleri, \"ben\" öznesinde bile konuşanın cinsiyetine göre değişir: אני קם (erkek) / אני קמה (kadın).",
+   "en": "Present-tense verbs change ending based on the speaker's gender, even for \"I\": אני קם (a man says \"I wake up\") vs אני קמה (a woman says it).",
+   "context": "אני קמה בשבע. / ✗ אני קם בשבע.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Describing your morning.",
+   "context": "אני קם בשבע כל יום.",
+   "have": []
+  },
+  {
+   "key": "tp.he_routine.1",
+   "kind": "speaking_prompt",
+   "en": "What do you do next?",
+   "context": "אני אוכל ארוחת בוקר בשמונה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_routine.2",
+   "kind": "speaking_prompt",
+   "en": "How do you commute?",
+   "context": "אני נוסע לעבודה באוטובוס.",
+   "have": []
+  },
+  {
+   "key": "tp.he_routine.3",
+   "kind": "speaking_prompt",
+   "en": "When does your day end?",
+   "context": "אני מסיים לעבוד בחמש.",
+   "have": []
+  },
+  {
+   "key": "tp.he_routine.4",
+   "kind": "speaking_prompt",
+   "en": "What about the evening?",
+   "context": "בערב אני מבשל ארוחת ערב.",
+   "have": []
+  },
+  {
+   "key": "tp.he_routine.5",
+   "kind": "speaking_prompt",
+   "en": "When do you go to bed?",
+   "context": "אני הולך לישון באחת עשרה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_routine.6",
+   "kind": "speaking_prompt",
+   "en": "What about weekends?",
+   "context": "בסופי שבוע אני קם מאוחר.",
+   "have": []
+  },
+  {
+   "key": "p.he_routine_0",
+   "kind": "phrase",
+   "target": "אני קם בשבע כל יום.",
+   "tr": "Her gün saat yedide uyanırım.",
+   "en": "I wake up at seven every day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_routine_1",
+   "kind": "phrase",
+   "target": "אני אוכל ארוחת בוקר בשמונה.",
+   "tr": "Sekizde kahvaltı yaparım.",
+   "en": "I eat breakfast at eight.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_routine_2",
+   "kind": "phrase",
+   "target": "אני נוסע לעבודה באוטובוס.",
+   "tr": "Otobüsle işe giderim.",
+   "en": "I go to work by bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_routine_3",
+   "kind": "phrase",
+   "target": "אני מסיים לעבוד בחמש.",
+   "tr": "İşimi saat beşte bitiririm.",
+   "en": "I finish work at five.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_routine_4",
+   "kind": "phrase",
+   "target": "בערב אני מבשל ארוחת ערב.",
+   "tr": "Akşamları yemek pişiririm.",
+   "en": "In the evening I cook dinner.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_routine_5",
+   "kind": "phrase",
+   "target": "אני הולך לישון באחת עשרה.",
+   "tr": "Saat on birde yatarım.",
+   "en": "I go to sleep at eleven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_routine_6",
+   "kind": "phrase",
+   "target": "בסופי שבוע אני קם מאוחר.",
+   "tr": "Hafta sonları geç kalkarım.",
+   "en": "On weekends I wake up late.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_past_story",
+   "kind": "scenario_title",
+   "tr": "Geçmişte bir gün anlatmak",
+   "en": "Telling a story in the past",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.he_past_story",
+   "kind": "grammar_rule",
+   "tr": "Geçmiş zamanda \"ben\" öznesi için fiil sonuna תי eki eklenir: הלכתי, פגשתי, שתיתי.",
+   "en": "Hebrew past-tense \"I\" verbs end in תי: הלכתי (I went), פגשתי (I met), שתיתי (I drank).",
+   "context": "הלכתי לשוק. / ✗ אני הלך לשוק.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "Tell what happened yesterday.",
+   "context": "אתמול הלכתי לשוק.",
+   "have": []
+  },
+  {
+   "key": "tp.he_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "Who did you see?",
+   "context": "פגשתי שם חבר.",
+   "have": []
+  },
+  {
+   "key": "tp.he_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "What did you do together?",
+   "context": "שתינו קפה ביחד.",
+   "have": []
+  },
+  {
+   "key": "tp.he_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "What happened next?",
+   "context": "אחר כך חזרתי הביתה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "How did you feel?",
+   "context": "הייתי מאוד עייף.",
+   "have": []
+  },
+  {
+   "key": "tp.he_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "What did you do after that?",
+   "context": "הלכתי לישון מוקדם.",
+   "have": []
+  },
+  {
+   "key": "tp.he_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "Sum up the day.",
+   "context": "זה היה יום נחמד.",
+   "have": []
+  },
+  {
+   "key": "p.he_past_story_0",
+   "kind": "phrase",
+   "target": "אתמול הלכתי לשוק.",
+   "tr": "Dün markete gittim.",
+   "en": "Yesterday I went to the market.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_past_story_1",
+   "kind": "phrase",
+   "target": "פגשתי שם חבר.",
+   "tr": "Orada bir arkadaşımla karşılaştım.",
+   "en": "I met a friend there.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_past_story_2",
+   "kind": "phrase",
+   "target": "שתינו קפה ביחד.",
+   "tr": "Birlikte kahve içtik.",
+   "en": "We drank coffee together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_past_story_3",
+   "kind": "phrase",
+   "target": "אחר כך חזרתי הביתה.",
+   "tr": "Sonra eve döndüm.",
+   "en": "Then I went back home.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_past_story_4",
+   "kind": "phrase",
+   "target": "הייתי מאוד עייף.",
+   "tr": "Çok yorgundum.",
+   "en": "I was very tired.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_past_story_5",
+   "kind": "phrase",
+   "target": "הלכתי לישון מוקדם.",
+   "tr": "Erken uyudum.",
+   "en": "I went to sleep early.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_past_story_6",
+   "kind": "phrase",
+   "target": "זה היה יום נחמד.",
+   "tr": "Güzel bir gündü.",
+   "en": "It was a nice day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "קפה, בבקשה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "יש לי הזמנה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "סליחה, איפה התחנה?",
+   "have": []
+  },
+  {
+   "key": "tp.he_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "שלום, שמי דניז.",
+   "have": []
+  },
+  {
+   "key": "p.he_a2_route_0",
+   "kind": "phrase",
+   "target": "קפה, בבקשה.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_a2_route_1",
+   "kind": "phrase",
+   "target": "יש לי הזמנה.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_a2_route_2",
+   "kind": "phrase",
+   "target": "סליחה, איפה התחנה?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_a2_route_3",
+   "kind": "phrase",
+   "target": "שלום, שמי דניז.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.he_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.he_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "ארוחת בוקר כלולה?",
+   "have": []
+  },
+  {
+   "key": "tp.he_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "אני לא מבין.",
+   "have": []
+  },
+  {
+   "key": "tp.he_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "אני מחפש דירה.",
+   "have": []
+  },
+  {
+   "key": "tp.he_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "כמה שכר הדירה?",
+   "have": []
+  },
+  {
+   "key": "tp.he_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "אתם מקבלים כרטיס?",
+   "have": []
+  },
+  {
+   "key": "p.he_b1_solve_0",
+   "kind": "phrase",
+   "target": "ארוחת בוקר כלולה?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_b1_solve_1",
+   "kind": "phrase",
+   "target": "אני לא מבין.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_b1_solve_2",
+   "kind": "phrase",
+   "target": "אני מחפש דירה.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_b1_solve_3",
+   "kind": "phrase",
+   "target": "כמה שכר הדירה?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.he_b1_solve_4",
+   "kind": "phrase",
+   "target": "אתם מקבלים כרטיס?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "st.he_school",
+   "kind": "story_title",
+   "target": "יום בבית הספר",
+   "tr": "Okulda Bir Gün",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_school.0",
+   "kind": "story_sentence",
+   "target": "היום אני הולך לבית הספר.",
+   "tr": "Bugün okula gidiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_school.1",
+   "kind": "story_sentence",
+   "target": "בשבע בבוקר השיעורים מתחילים.",
+   "tr": "Sabah yedide dersler başlar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_school.2",
+   "kind": "story_sentence",
+   "target": "אני אוהב את השיעור של מדעים.",
+   "tr": "Bilim dersini severim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_school.3",
+   "kind": "story_sentence",
+   "target": "המורה מלמדת אותנו על הצמחים.",
+   "tr": "Öğretmen bize bitkiler hakkında öğretiyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_school.4",
+   "kind": "story_sentence",
+   "target": "בצהריים אוכל עם חבר שלי.",
+   "tr": "Öğlede arkadaşla yemek yerim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_school.5",
+   "kind": "story_sentence",
+   "target": "בבית אנחנו עושים שיעורי בית.",
+   "tr": "Evde ödev yaparız.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.he_garden",
+   "kind": "story_title",
+   "target": "הגן של סבא",
+   "tr": "Dedemin Bahçesi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_garden.0",
+   "kind": "story_sentence",
+   "target": "לסבא שלי יש גן גדול.",
+   "tr": "Dedemin büyük bir bahçesi var.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_garden.1",
+   "kind": "story_sentence",
+   "target": "שם גדלים עגבניות, מלפפונים וקישואים.",
+   "tr": "Orada domates, salatalık ve kabak yetişiyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_garden.2",
+   "kind": "story_sentence",
+   "target": "סבא משקה את הצמחים כל בוקר.",
+   "tr": "Dedem her sabah bitkilere su verir.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_garden.3",
+   "kind": "story_sentence",
+   "target": "אני אוסף את הירקות עם סבא.",
+   "tr": "Sebze dedemle toplarım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_garden.4",
+   "kind": "story_sentence",
+   "target": "בקיץ כל המשפחה אוכלת מהגן.",
+   "tr": "Yazda bütün aile bahçeden yer.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_garden.5",
+   "kind": "story_sentence",
+   "target": "הגן של סבא הוא המקום הכי טוב.",
+   "tr": "Dedemin bahçesi en güzel yer.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.he_phone",
+   "kind": "story_title",
+   "target": "טלפון של חבר",
+   "tr": "Arkadaşın Araması",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_phone.0",
+   "kind": "story_sentence",
+   "target": "החבר שלי מתקשר בצהריים.",
+   "tr": "Öğlen arkadaşım arar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_phone.1",
+   "kind": "story_sentence",
+   "target": "הוא רוצה לבוא אליי לערב.",
+   "tr": "Akşam benim eve gelmek istiyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_phone.2",
+   "kind": "story_sentence",
+   "target": "אני מבשל עוף ועגבניות.",
+   "tr": "Tavuk ve domates pişiririm.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_phone.3",
+   "kind": "story_sentence",
+   "target": "הוא יביא איתו פירות.",
+   "tr": "Yanında meyve getirecek.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_phone.4",
+   "kind": "story_sentence",
+   "target": "אנחנו נאכל ונשתה תה יחד.",
+   "tr": "Birlikte yiyip çay içeceğiz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.he_phone.5",
+   "kind": "story_sentence",
+   "target": "זה תמיד ערב נעים.",
+   "tr": "Bu her zaman güzel bir akşamdır.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.א.n",
+   "kind": "alphabet_letter_name",
+   "target": "א",
+   "tr": "Alef",
+   "en": "Alef",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.א.s",
+   "kind": "alphabet_sound",
+   "target": "א",
+   "tr": "sessiz/a",
+   "context": "אבא",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.א.m",
+   "kind": "alphabet_example",
+   "target": "אבא",
+   "tr": "Baba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ב.n",
+   "kind": "alphabet_letter_name",
+   "target": "ב",
+   "tr": "Bet",
+   "en": "Bet",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ב.s",
+   "kind": "alphabet_sound",
+   "target": "ב",
+   "tr": "b/v",
+   "context": "בית",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ב.m",
+   "kind": "alphabet_example",
+   "target": "בית",
+   "tr": "Ev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ג.n",
+   "kind": "alphabet_letter_name",
+   "target": "ג",
+   "tr": "Gimel",
+   "en": "Gimel",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ג.s",
+   "kind": "alphabet_sound",
+   "target": "ג",
+   "tr": "g",
+   "context": "גמל",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ג.m",
+   "kind": "alphabet_example",
+   "target": "גמל",
+   "tr": "Deve",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ד.n",
+   "kind": "alphabet_letter_name",
+   "target": "ד",
+   "tr": "Dalet",
+   "en": "Dalet",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ד.s",
+   "kind": "alphabet_sound",
+   "target": "ד",
+   "tr": "d",
+   "context": "דג",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ד.m",
+   "kind": "alphabet_example",
+   "target": "דג",
+   "tr": "Balık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ה.n",
+   "kind": "alphabet_letter_name",
+   "target": "ה",
+   "tr": "He",
+   "en": "He",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ה.s",
+   "kind": "alphabet_sound",
+   "target": "ה",
+   "tr": "h",
+   "context": "הר",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ה.m",
+   "kind": "alphabet_example",
+   "target": "הר",
+   "tr": "Dağ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ו.n",
+   "kind": "alphabet_letter_name",
+   "target": "ו",
+   "tr": "Vav",
+   "en": "Vav",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ו.s",
+   "kind": "alphabet_sound",
+   "target": "ו",
+   "tr": "v/u",
+   "context": "ורד",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ו.m",
+   "kind": "alphabet_example",
+   "target": "ורד",
+   "tr": "Gül",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ז.n",
+   "kind": "alphabet_letter_name",
+   "target": "ז",
+   "tr": "Zayin",
+   "en": "Zayin",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ז.s",
+   "kind": "alphabet_sound",
+   "target": "ז",
+   "tr": "z",
+   "context": "זהב",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ז.m",
+   "kind": "alphabet_example",
+   "target": "זהב",
+   "tr": "Altın",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ח.n",
+   "kind": "alphabet_letter_name",
+   "target": "ח",
+   "tr": "Het",
+   "en": "Het",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ח.s",
+   "kind": "alphabet_sound",
+   "target": "ח",
+   "tr": "h (derin)",
+   "context": "חלון",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ח.m",
+   "kind": "alphabet_example",
+   "target": "חלון",
+   "tr": "Pencere",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ט.n",
+   "kind": "alphabet_letter_name",
+   "target": "ט",
+   "tr": "Tet",
+   "en": "Tet",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ט.s",
+   "kind": "alphabet_sound",
+   "target": "ט",
+   "tr": "t",
+   "context": "טל",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ט.m",
+   "kind": "alphabet_example",
+   "target": "טל",
+   "tr": "Çiy",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.י.n",
+   "kind": "alphabet_letter_name",
+   "target": "י",
+   "tr": "Yod",
+   "en": "Yod",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.י.s",
+   "kind": "alphabet_sound",
+   "target": "י",
+   "tr": "y/i",
+   "context": "יד",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.י.m",
+   "kind": "alphabet_example",
+   "target": "יד",
+   "tr": "El",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.כ.n",
+   "kind": "alphabet_letter_name",
+   "target": "כ",
+   "tr": "Kaf",
+   "en": "Kaf",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.כ.s",
+   "kind": "alphabet_sound",
+   "target": "כ",
+   "tr": "k/kh",
+   "context": "כלב",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.כ.m",
+   "kind": "alphabet_example",
+   "target": "כלב",
+   "tr": "Köpek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ל.n",
+   "kind": "alphabet_letter_name",
+   "target": "ל",
+   "tr": "Lamed",
+   "en": "Lamed",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ל.s",
+   "kind": "alphabet_sound",
+   "target": "ל",
+   "tr": "l",
+   "context": "לב",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ל.m",
+   "kind": "alphabet_example",
+   "target": "לב",
+   "tr": "Kalp",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.מ.n",
+   "kind": "alphabet_letter_name",
+   "target": "מ",
+   "tr": "Mem",
+   "en": "Mem",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.מ.s",
+   "kind": "alphabet_sound",
+   "target": "מ",
+   "tr": "m",
+   "context": "מים",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.מ.m",
+   "kind": "alphabet_example",
+   "target": "מים",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.נ.n",
+   "kind": "alphabet_letter_name",
+   "target": "נ",
+   "tr": "Nun",
+   "en": "Nun",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.נ.s",
+   "kind": "alphabet_sound",
+   "target": "נ",
+   "tr": "n",
+   "context": "נהר",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.נ.m",
+   "kind": "alphabet_example",
+   "target": "נהר",
+   "tr": "Nehir",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ס.n",
+   "kind": "alphabet_letter_name",
+   "target": "ס",
+   "tr": "Samekh",
+   "en": "Samekh",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ס.s",
+   "kind": "alphabet_sound",
+   "target": "ס",
+   "tr": "s",
+   "context": "סוס",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ס.m",
+   "kind": "alphabet_example",
+   "target": "סוס",
+   "tr": "At",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ע.n",
+   "kind": "alphabet_letter_name",
+   "target": "ע",
+   "tr": "Ayin",
+   "en": "Ayin",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ע.s",
+   "kind": "alphabet_sound",
+   "target": "ע",
+   "tr": "gırtlak",
+   "context": "עין",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ע.m",
+   "kind": "alphabet_example",
+   "target": "עין",
+   "tr": "Göz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.פ.n",
+   "kind": "alphabet_letter_name",
+   "target": "פ",
+   "tr": "Pe",
+   "en": "Pe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.פ.s",
+   "kind": "alphabet_sound",
+   "target": "פ",
+   "tr": "p/f",
+   "context": "פה",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.פ.m",
+   "kind": "alphabet_example",
+   "target": "פה",
+   "tr": "Ağız",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.צ.n",
+   "kind": "alphabet_letter_name",
+   "target": "צ",
+   "tr": "Tsadi",
+   "en": "Tsadi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.צ.s",
+   "kind": "alphabet_sound",
+   "target": "צ",
+   "tr": "ts",
+   "context": "ציפור",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.צ.m",
+   "kind": "alphabet_example",
+   "target": "ציפור",
+   "tr": "Kuş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ק.n",
+   "kind": "alphabet_letter_name",
+   "target": "ק",
+   "tr": "Qof",
+   "en": "Qof",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ק.s",
+   "kind": "alphabet_sound",
+   "target": "ק",
+   "tr": "k",
+   "context": "קול",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ק.m",
+   "kind": "alphabet_example",
+   "target": "קול",
+   "tr": "Ses",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ר.n",
+   "kind": "alphabet_letter_name",
+   "target": "ר",
+   "tr": "Resh",
+   "en": "Resh",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ר.s",
+   "kind": "alphabet_sound",
+   "target": "ר",
+   "tr": "r",
+   "context": "ראש",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ר.m",
+   "kind": "alphabet_example",
+   "target": "ראש",
+   "tr": "Baş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ש.n",
+   "kind": "alphabet_letter_name",
+   "target": "ש",
+   "tr": "Shin",
+   "en": "Shin",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ש.s",
+   "kind": "alphabet_sound",
+   "target": "ש",
+   "tr": "sh/s",
+   "context": "שמש",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ש.m",
+   "kind": "alphabet_example",
+   "target": "שמש",
+   "tr": "Güneş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ת.n",
+   "kind": "alphabet_letter_name",
+   "target": "ת",
+   "tr": "Tav",
+   "en": "Tav",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.he.ת.s",
+   "kind": "alphabet_sound",
+   "target": "ת",
+   "tr": "t",
+   "context": "תודה",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.he.ת.m",
+   "kind": "alphabet_example",
+   "target": "תודה",
+   "tr": "Teşekkür",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.he.0.h",
+   "kind": "pronunciation_heard",
+   "target": "ח",
+   "tr": "boğaz h",
+   "context": "Arapça ح'ya yakın.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.he.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "חלב",
+   "tr": "halav",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.he.1.h",
+   "kind": "pronunciation_heard",
+   "target": "כ/ך",
+   "tr": "k veya h",
+   "context": "Bazen k, bazen h.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.he.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "כלב",
+   "tr": "kelev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.he.2.h",
+   "kind": "pronunciation_heard",
+   "target": "ר",
+   "tr": "r (boğazdan)",
+   "context": "Fransızca r'ye yakın.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.he.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "ראש",
+   "tr": "roş",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

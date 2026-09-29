@@ -1,0 +1,3526 @@
+{
+ "lang": "ko",
+ "scenarios": [
+  {
+   "id": "ko_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "ko_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "ko_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "ko_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "ko_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "ko_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "ko_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "ko_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "ko_intro",
+   "cefr": "a1",
+   "title": "Meeting someone"
+  },
+  {
+   "id": "ko_shopping",
+   "cefr": "a1",
+   "title": "Clothes shopping"
+  },
+  {
+   "id": "ko_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers & time"
+  },
+  {
+   "id": "ko_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "ko_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "ko_transport",
+   "cefr": "a1",
+   "title": "Getting around"
+  },
+  {
+   "id": "ko_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "ko_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "ko_past_story",
+   "cefr": "a1",
+   "title": "Telling a past event"
+  },
+  {
+   "id": "ko_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "ko_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  }
+ ],
+ "stories": [
+  {
+   "id": "ko_my_friend",
+   "level": "a1",
+   "title": "내 친구"
+  },
+  {
+   "id": "ko_weather",
+   "level": "a1",
+   "title": "날씨"
+  },
+  {
+   "id": "ko_shopping",
+   "level": "a1",
+   "title": "장보기"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.ko_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "커피 한 잔 주세요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "얼마예요?",
+   "have": []
+  },
+  {
+   "key": "p.ko_cafe_0",
+   "kind": "phrase",
+   "target": "커피 한 잔 주세요.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_cafe_1",
+   "kind": "phrase",
+   "target": "얼마예요?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_cafe_2",
+   "kind": "phrase",
+   "target": "감사합니다.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "예약이 있습니다.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "아침 식사 포함인가요?",
+   "have": []
+  },
+  {
+   "key": "p.ko_hotel_0",
+   "kind": "phrase",
+   "target": "예약이 있습니다.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_hotel_1",
+   "kind": "phrase",
+   "target": "아침 식사 포함인가요?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_hotel_2",
+   "kind": "phrase",
+   "target": "감사합니다.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "실례합니다, 역이 어디인가요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "감사합니다.",
+   "have": []
+  },
+  {
+   "key": "p.ko_dir_0",
+   "kind": "phrase",
+   "target": "실례합니다, 역이 어디인가요?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_dir_1",
+   "kind": "phrase",
+   "target": "감사합니다.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_dir_2",
+   "kind": "phrase",
+   "target": "이해하지 못합니다.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "안녕하세요, 저는 데니즈입니다.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "터키에서 왔습니다.",
+   "have": []
+  },
+  {
+   "key": "p.ko_hi_0",
+   "kind": "phrase",
+   "target": "안녕하세요, 저는 데니즈입니다.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_hi_1",
+   "kind": "phrase",
+   "target": "터키에서 왔습니다.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_hi_2",
+   "kind": "phrase",
+   "target": "감사합니다.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "아파트를 찾고 있습니다.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "임대료가 얼마인가요?",
+   "have": []
+  },
+  {
+   "key": "p.ko_flat_0",
+   "kind": "phrase",
+   "target": "아파트를 찾고 있습니다.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_flat_1",
+   "kind": "phrase",
+   "target": "임대료가 얼마인가요?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_flat_2",
+   "kind": "phrase",
+   "target": "도와주실 수 있나요?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "이거 얼마예요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "이거 살게요.",
+   "have": []
+  },
+  {
+   "key": "p.ko_shop_0",
+   "kind": "phrase",
+   "target": "이거 얼마예요?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_shop_1",
+   "kind": "phrase",
+   "target": "이거 살게요.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_shop_2",
+   "kind": "phrase",
+   "target": "카드 되나요?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "계산서 주세요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "같이 계산하고 싶어요.",
+   "have": []
+  },
+  {
+   "key": "p.ko_bill_0",
+   "kind": "phrase",
+   "target": "계산서 주세요.",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_bill_1",
+   "kind": "phrase",
+   "target": "같이 계산하고 싶어요.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_bill_2",
+   "kind": "phrase",
+   "target": "거스름돈은 괜찮아요.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "예약이 있습니다.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "창가 좌석 주세요.",
+   "have": []
+  },
+  {
+   "key": "p.ko_airport_0",
+   "kind": "phrase",
+   "target": "예약이 있습니다.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_airport_1",
+   "kind": "phrase",
+   "target": "창가 좌석 주세요.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_airport_2",
+   "kind": "phrase",
+   "target": "탑승 줄인가요?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Meeting someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ko_intro",
+   "kind": "grammar_rule",
+   "tr": "저 gibi ünlü ile biten kelimelerden sonra 는 gelir, ünsüzle bitenlerden sonra 은 gelir.",
+   "en": "는 follows a word ending in a vowel (like 저), and 은 follows a word ending in a consonant.",
+   "context": "저는 데니즈예요. / ✗ 저은 데니즈예요.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_intro.0",
+   "kind": "speaking_prompt",
+   "en": "A stranger smiles and greets you.",
+   "context": "안녕하세요, 만나서 반갑습니다.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_intro.1",
+   "kind": "speaking_prompt",
+   "en": "They wait for your name.",
+   "context": "저는 데니즈예요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_intro.2",
+   "kind": "speaking_prompt",
+   "en": "You want to know their name too.",
+   "context": "이름이 뭐예요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_intro.3",
+   "kind": "speaking_prompt",
+   "en": "You are curious where they are from.",
+   "context": "어느 나라에서 왔어요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask where you are from.",
+   "context": "저는 터키에서 왔어요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You want to know their job.",
+   "context": "무슨 일을 하세요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_intro.6",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do.",
+   "context": "저는 학생이에요.",
+   "have": []
+  },
+  {
+   "key": "p.ko_intro_0",
+   "kind": "phrase",
+   "target": "안녕하세요, 만나서 반갑습니다.",
+   "tr": "Merhaba, tanıştığımıza memnun oldum.",
+   "en": "Hi, nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_intro_1",
+   "kind": "phrase",
+   "target": "저는 데니즈예요.",
+   "tr": "Adım Deniz.",
+   "en": "My name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_intro_2",
+   "kind": "phrase",
+   "target": "이름이 뭐예요?",
+   "tr": "Senin adın ne?",
+   "en": "What's your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_intro_3",
+   "kind": "phrase",
+   "target": "어느 나라에서 왔어요?",
+   "tr": "Hangi ülkedensin?",
+   "en": "Where are you from?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_intro_4",
+   "kind": "phrase",
+   "target": "저는 터키에서 왔어요.",
+   "tr": "Türkiye'denim.",
+   "en": "I'm from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_intro_5",
+   "kind": "phrase",
+   "target": "무슨 일을 하세요?",
+   "tr": "Ne iş yapıyorsun?",
+   "en": "What do you do for work?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_intro_6",
+   "kind": "phrase",
+   "target": "저는 학생이에요.",
+   "tr": "Ben öğrenciyim.",
+   "en": "I'm a student.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_shopping",
+   "kind": "scenario_title",
+   "tr": "Kıyafet alışverişi",
+   "en": "Clothes shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ko_shopping",
+   "kind": "grammar_rule",
+   "tr": "을/를 fiilin nesnesini işaretler; ünsüzle biten kelimeden sonra 을, ünlüyle bitenden sonra 를 gelir.",
+   "en": "을/를 marks the object of the verb: 을 after a consonant-ending word, 를 after a vowel-ending one.",
+   "context": "이것을 주세요. / ✗ 이것이 주세요.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You are looking at a shirt.",
+   "context": "실례합니다, 다른 색깔 있어요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "You like the shirt.",
+   "context": "입어봐도 돼요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want to try it on.",
+   "context": "피팅룸이 어디예요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "It does not fit.",
+   "context": "더 작은 사이즈 있어요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You decide to buy it.",
+   "context": "이거 주세요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You are ready to pay.",
+   "context": "카드 돼요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You need proof of purchase.",
+   "context": "영수증 주세요.",
+   "have": []
+  },
+  {
+   "key": "p.ko_shopping_0",
+   "kind": "phrase",
+   "target": "실례합니다, 다른 색깔 있어요?",
+   "tr": "Affedersiniz, başka renk var mı?",
+   "en": "Excuse me, do you have another color?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_shopping_1",
+   "kind": "phrase",
+   "target": "입어봐도 돼요?",
+   "tr": "Deneyebilir miyim?",
+   "en": "Can I try it on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_shopping_2",
+   "kind": "phrase",
+   "target": "피팅룸이 어디예요?",
+   "tr": "Deneme kabini nerede?",
+   "en": "Where is the fitting room?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_shopping_3",
+   "kind": "phrase",
+   "target": "더 작은 사이즈 있어요?",
+   "tr": "Daha küçük beden var mı?",
+   "en": "Do you have a smaller size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_shopping_4",
+   "kind": "phrase",
+   "target": "이거 주세요.",
+   "tr": "Bunu alayım.",
+   "en": "I'll take this, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_shopping_5",
+   "kind": "phrase",
+   "target": "카드 돼요?",
+   "tr": "Kartla ödeyebilir miyim?",
+   "en": "Can I pay by card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_shopping_6",
+   "kind": "phrase",
+   "target": "영수증 주세요.",
+   "tr": "Fiş alabilir miyim?",
+   "en": "Receipt, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers & time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ko_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "Belirli bir saati söylerken 에 eklenir (\"...de/da\" anlamında).",
+   "en": "에 attaches to a specific clock time to mean 'at ___'.",
+   "context": "일곱 시에 만나요. / ✗ 일곱 시가 만나요.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You check your watch.",
+   "context": "지금 몇 시예요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks the time.",
+   "context": "세 시예요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "You are at the station.",
+   "context": "기차가 몇 시에 출발해요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "The clerk checks the schedule.",
+   "context": "아홉 시 반에 출발해요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "You are planning to meet a friend.",
+   "context": "저녁 일곱 시에 만나요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "The cashier tells you the total.",
+   "context": "전부 이십 달러예요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You are running late.",
+   "context": "십 분 후에 도착해요.",
+   "have": []
+  },
+  {
+   "key": "p.ko_numbers_time_0",
+   "kind": "phrase",
+   "target": "지금 몇 시예요?",
+   "tr": "Saat kaç?",
+   "en": "What time is it now?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_numbers_time_1",
+   "kind": "phrase",
+   "target": "세 시예요.",
+   "tr": "Saat üç.",
+   "en": "It's three o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_numbers_time_2",
+   "kind": "phrase",
+   "target": "기차가 몇 시에 출발해요?",
+   "tr": "Tren saat kaçta kalkıyor?",
+   "en": "What time does the train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_numbers_time_3",
+   "kind": "phrase",
+   "target": "아홉 시 반에 출발해요.",
+   "tr": "Dokuz buçukta kalkıyor.",
+   "en": "It leaves at nine thirty.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_numbers_time_4",
+   "kind": "phrase",
+   "target": "저녁 일곱 시에 만나요.",
+   "tr": "Akşam yedide buluşalım.",
+   "en": "Let's meet at seven in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_numbers_time_5",
+   "kind": "phrase",
+   "target": "전부 이십 달러예요.",
+   "tr": "Toplam yirmi dolar.",
+   "en": "That's twenty dollars in total.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_numbers_time_6",
+   "kind": "phrase",
+   "target": "십 분 후에 도착해요.",
+   "tr": "On dakikaya varırım.",
+   "en": "I'll arrive in ten minutes.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ko_family",
+   "kind": "grammar_rule",
+   "tr": "Aile üyelerini sayarken sayı ile isim arasına \"명\" (kişi sayaç kelimesi) gelir.",
+   "en": "When counting family members, put the counter word 명 between the number and the noun.",
+   "context": "오빠가 한 명 있어요. / ✗ 오빠가 한 있어요.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a photo.",
+   "context": "이 사람들은 제 가족이에요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_family.1",
+   "kind": "speaking_prompt",
+   "en": "They ask about your siblings.",
+   "context": "저는 오빠가 한 명 있어요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_family.2",
+   "kind": "speaking_prompt",
+   "en": "They ask about your mother.",
+   "context": "우리 엄마는 선생님이에요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_family.3",
+   "kind": "speaking_prompt",
+   "en": "They ask about your father.",
+   "context": "우리 아빠는 병원에서 일해요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_family.4",
+   "kind": "speaking_prompt",
+   "en": "You ask them the same question.",
+   "context": "형제자매가 있어요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask your place in the family.",
+   "context": "저는 집에서 막내예요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_family.6",
+   "kind": "speaking_prompt",
+   "en": "They ask who else lives with you.",
+   "context": "할머니가 우리랑 같이 살아요.",
+   "have": []
+  },
+  {
+   "key": "p.ko_family_0",
+   "kind": "phrase",
+   "target": "이 사람들은 제 가족이에요.",
+   "tr": "Bunlar benim ailem.",
+   "en": "This is my family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_family_1",
+   "kind": "phrase",
+   "target": "저는 오빠가 한 명 있어요.",
+   "tr": "Bir abim var.",
+   "en": "I have one older brother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_family_2",
+   "kind": "phrase",
+   "target": "우리 엄마는 선생님이에요.",
+   "tr": "Annem öğretmen.",
+   "en": "My mom is a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_family_3",
+   "kind": "phrase",
+   "target": "우리 아빠는 병원에서 일해요.",
+   "tr": "Babam hastanede çalışıyor.",
+   "en": "My dad works at a hospital.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_family_4",
+   "kind": "phrase",
+   "target": "형제자매가 있어요?",
+   "tr": "Kardeşin var mı?",
+   "en": "Do you have any siblings?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_family_5",
+   "kind": "phrase",
+   "target": "저는 집에서 막내예요.",
+   "tr": "Ailede en küçüğüyüm.",
+   "en": "I'm the youngest in the family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_family_6",
+   "kind": "phrase",
+   "target": "할머니가 우리랑 같이 살아요.",
+   "tr": "Büyükannem bizimle yaşıyor.",
+   "en": "My grandmother lives with us.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ko_weather",
+   "kind": "grammar_rule",
+   "tr": "ㅂ ile biten bazı sıfatlar (춥다 gibi) çekimlenirken ㅂ düşer ve 워 eklenir.",
+   "en": "Some adjectives ending in ㅂ (like 춥다, 'cold') drop the ㅂ and add 워 when conjugated.",
+   "context": "오늘 추워요. / ✗ 오늘 춥어요.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You look outside.",
+   "context": "오늘 날씨가 어때요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You check the sky.",
+   "context": "오늘은 맑아요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You hear rain outside.",
+   "context": "밖에 비가 와요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You feel a chill.",
+   "context": "오늘 아침에 정말 추워요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You check tomorrow's forecast.",
+   "context": "내일은 더울까요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_weather.5",
+   "kind": "speaking_prompt",
+   "en": "A friend is leaving without a coat.",
+   "context": "우산을 가져가세요, 비가 올지도 몰라요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_weather.6",
+   "kind": "speaking_prompt",
+   "en": "They ask about your favorite weather.",
+   "context": "저는 맑은 날을 좋아해요.",
+   "have": []
+  },
+  {
+   "key": "p.ko_weather_0",
+   "kind": "phrase",
+   "target": "오늘 날씨가 어때요?",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_weather_1",
+   "kind": "phrase",
+   "target": "오늘은 맑아요.",
+   "tr": "Bugün güneşli.",
+   "en": "It's sunny today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_weather_2",
+   "kind": "phrase",
+   "target": "밖에 비가 와요.",
+   "tr": "Dışarıda yağmur yağıyor.",
+   "en": "It's raining outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_weather_3",
+   "kind": "phrase",
+   "target": "오늘 아침에 정말 추워요.",
+   "tr": "Bu sabah gerçekten soğuk.",
+   "en": "It's really cold this morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_weather_4",
+   "kind": "phrase",
+   "target": "내일은 더울까요?",
+   "tr": "Yarın sıcak olur mu?",
+   "en": "Will it be hot tomorrow?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_weather_5",
+   "kind": "phrase",
+   "target": "우산을 가져가세요, 비가 올지도 몰라요.",
+   "tr": "Şemsiye götür, yağmur yağabilir.",
+   "en": "Take an umbrella, it might rain.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_weather_6",
+   "kind": "phrase",
+   "target": "저는 맑은 날을 좋아해요.",
+   "tr": "Güneşli günleri severim.",
+   "en": "I like sunny days.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Getting around",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ko_transport",
+   "kind": "grammar_rule",
+   "tr": "Bir ulaşım aracına binmeyi anlatmak için araç adından sonra 을/를 gelir, sonra 타다 fiili kullanılır.",
+   "en": "To say you take a vehicle, mark it with 을/를 and use the verb 타다 (to ride).",
+   "context": "버스를 타요. / ✗ 버스가 타요.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You are lost downtown.",
+   "context": "실례합니다, 시내 중심가는 어떻게 가요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_transport.1",
+   "kind": "speaking_prompt",
+   "en": "They ask how you get to work.",
+   "context": "저는 버스를 타고 출근해요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You need the subway.",
+   "context": "가장 가까운 지하철역이 어디예요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_transport.3",
+   "kind": "speaking_prompt",
+   "en": "A bus pulls up.",
+   "context": "이 버스가 공항에 가요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You are at the ticket counter.",
+   "context": "중앙역까지 표 한 장 주세요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You want to catch the last train.",
+   "context": "마지막 기차가 몇 시에 출발해요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_transport.6",
+   "kind": "speaking_prompt",
+   "en": "A friend offers you a ride.",
+   "context": "가까우니까 걸어갈게요.",
+   "have": []
+  },
+  {
+   "key": "p.ko_transport_0",
+   "kind": "phrase",
+   "target": "실례합니다, 시내 중심가는 어떻게 가요?",
+   "tr": "Affedersiniz, şehir merkezine nasıl gidilir?",
+   "en": "Excuse me, how do I get downtown?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_transport_1",
+   "kind": "phrase",
+   "target": "저는 버스를 타고 출근해요.",
+   "tr": "İşe otobüsle giderim.",
+   "en": "I take the bus to work.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_transport_2",
+   "kind": "phrase",
+   "target": "가장 가까운 지하철역이 어디예요?",
+   "tr": "En yakın metro istasyonu nerede?",
+   "en": "Where's the nearest subway station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_transport_3",
+   "kind": "phrase",
+   "target": "이 버스가 공항에 가요?",
+   "tr": "Bu otobüs havaalanına gidiyor mu?",
+   "en": "Does this bus go to the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_transport_4",
+   "kind": "phrase",
+   "target": "중앙역까지 표 한 장 주세요.",
+   "tr": "Merkez istasyona bir bilet, lütfen.",
+   "en": "One ticket to the central station, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_transport_5",
+   "kind": "phrase",
+   "target": "마지막 기차가 몇 시에 출발해요?",
+   "tr": "Son tren saat kaçta kalkıyor?",
+   "en": "What time does the last train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_transport_6",
+   "kind": "phrase",
+   "target": "가까우니까 걸어갈게요.",
+   "tr": "Yakın olduğu için yürüyerek gideceğim.",
+   "en": "It's close, so I'll walk.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ko_emergency",
+   "kind": "grammar_rule",
+   "tr": "Bir şeyi rica etmek için fiil gövdesine 아/어 주세요 eklenir, çekimli hale değil.",
+   "en": "To make a polite request, add 아/어 주세요 to the verb stem, not to its already-conjugated form.",
+   "context": "불러 주세요. / ✗ 불러요 주세요.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something dangerous just happened.",
+   "context": "도와주세요!",
+   "have": []
+  },
+  {
+   "key": "tp.ko_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Someone is badly hurt.",
+   "context": "구급차를 불러 주세요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You feel very sick.",
+   "context": "의사가 필요해요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You just saw a robbery.",
+   "context": "경찰을 불러 주세요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You check your bag.",
+   "context": "여권을 잃어버렸어요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "You smell smoke.",
+   "context": "불이 났어요!",
+   "have": []
+  },
+  {
+   "key": "tp.ko_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You need medical help nearby.",
+   "context": "가장 가까운 병원이 어디예요?",
+   "have": []
+  },
+  {
+   "key": "p.ko_emergency_0",
+   "kind": "phrase",
+   "target": "도와주세요!",
+   "tr": "İmdat!",
+   "en": "Help me!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_emergency_1",
+   "kind": "phrase",
+   "target": "구급차를 불러 주세요.",
+   "tr": "Lütfen ambulans çağırın.",
+   "en": "Please call an ambulance.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_emergency_2",
+   "kind": "phrase",
+   "target": "의사가 필요해요.",
+   "tr": "Doktora ihtiyacım var.",
+   "en": "I need a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_emergency_3",
+   "kind": "phrase",
+   "target": "경찰을 불러 주세요.",
+   "tr": "Lütfen polis çağırın.",
+   "en": "Please call the police.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_emergency_4",
+   "kind": "phrase",
+   "target": "여권을 잃어버렸어요.",
+   "tr": "Pasaportumu kaybettim.",
+   "en": "I lost my passport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_emergency_5",
+   "kind": "phrase",
+   "target": "불이 났어요!",
+   "tr": "Yangın var!",
+   "en": "There's a fire!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_emergency_6",
+   "kind": "phrase",
+   "target": "가장 가까운 병원이 어디예요?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ko_routine",
+   "kind": "grammar_rule",
+   "tr": "동사 어간 + 고 나서, \"yaptıktan sonra\" sırasını anlatır.",
+   "en": "Verb stem + 고 나서 shows the order of actions: 'after doing ___'.",
+   "context": "먹고 나서 봐요. / ✗ 먹어서 나서 봐요.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your mornings.",
+   "context": "저는 매일 일곱 시에 일어나요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_routine.1",
+   "kind": "speaking_prompt",
+   "en": "You describe getting ready.",
+   "context": "이를 닦고 나서 샤워해요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_routine.2",
+   "kind": "speaking_prompt",
+   "en": "They ask about breakfast.",
+   "context": "여덟 시에 아침을 먹어요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_routine.3",
+   "kind": "speaking_prompt",
+   "en": "They ask how you get to work.",
+   "context": "자전거를 타고 출근해요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_routine.4",
+   "kind": "speaking_prompt",
+   "en": "They ask when your day ends.",
+   "context": "저녁 여섯 시에 퇴근해요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_routine.5",
+   "kind": "speaking_prompt",
+   "en": "They ask about your evenings.",
+   "context": "저녁을 먹고 나서 텔레비전을 봐요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_routine.6",
+   "kind": "speaking_prompt",
+   "en": "They ask when you sleep.",
+   "context": "밤 열한 시에 자요.",
+   "have": []
+  },
+  {
+   "key": "p.ko_routine_0",
+   "kind": "phrase",
+   "target": "저는 매일 일곱 시에 일어나요.",
+   "tr": "Her gün saat yedide kalkarım.",
+   "en": "I get up at seven every day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_routine_1",
+   "kind": "phrase",
+   "target": "이를 닦고 나서 샤워해요.",
+   "tr": "Dişlerimi fırçaladıktan sonra duş alırım.",
+   "en": "I brush my teeth, then take a shower.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_routine_2",
+   "kind": "phrase",
+   "target": "여덟 시에 아침을 먹어요.",
+   "tr": "Saat sekizde kahvaltı ederim.",
+   "en": "I have breakfast at eight.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_routine_3",
+   "kind": "phrase",
+   "target": "자전거를 타고 출근해요.",
+   "tr": "İşe bisikletle giderim.",
+   "en": "I go to work by bike.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_routine_4",
+   "kind": "phrase",
+   "target": "저녁 여섯 시에 퇴근해요.",
+   "tr": "Akşam altıda işten çıkarım.",
+   "en": "I finish work at six in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_routine_5",
+   "kind": "phrase",
+   "target": "저녁을 먹고 나서 텔레비전을 봐요.",
+   "tr": "Akşam yemeğinden sonra televizyon izlerim.",
+   "en": "After eating dinner, I watch TV.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_routine_6",
+   "kind": "phrase",
+   "target": "밤 열한 시에 자요.",
+   "tr": "Gece saat on birde yatarım.",
+   "en": "I go to bed at eleven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_past_story",
+   "kind": "scenario_title",
+   "tr": "Geçmişte bir gün",
+   "en": "Telling a past event",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ko_past_story",
+   "kind": "grammar_rule",
+   "tr": "Geçmiş zaman için fiil/sıfat gövdesine (ünlü uyumuna göre) 았/었어요 eklenir.",
+   "en": "For the past tense, add 았/었어요 to the verb/adjective stem, following vowel harmony.",
+   "context": "어제 공항에 갔어요. / ✗ 어제 공항에 가요.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "They ask about your day yesterday.",
+   "context": "어제 공항에 갔어요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "They ask what happened there.",
+   "context": "거기서 옛 친구를 만났어요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what you did together.",
+   "context": "우리는 같이 커피를 마셨어요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "They ask what happened next.",
+   "context": "그 다음에 비행기를 놓쳤어요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "They ask how you felt.",
+   "context": "저는 정말 피곤했어요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "They ask when you got home.",
+   "context": "자정에야 겨우 집에 도착했어요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "They ask how your day was.",
+   "context": "정말 긴 하루였어요.",
+   "have": []
+  },
+  {
+   "key": "p.ko_past_story_0",
+   "kind": "phrase",
+   "target": "어제 공항에 갔어요.",
+   "tr": "Dün havaalanına gittim.",
+   "en": "Yesterday I went to the airport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_past_story_1",
+   "kind": "phrase",
+   "target": "거기서 옛 친구를 만났어요.",
+   "tr": "Orada eski bir arkadaşımla karşılaştım.",
+   "en": "I met an old friend there.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_past_story_2",
+   "kind": "phrase",
+   "target": "우리는 같이 커피를 마셨어요.",
+   "tr": "Birlikte kahve içtik.",
+   "en": "We drank coffee together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_past_story_3",
+   "kind": "phrase",
+   "target": "그 다음에 비행기를 놓쳤어요.",
+   "tr": "Sonra uçağımı kaçırdım.",
+   "en": "Then I missed my flight.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_past_story_4",
+   "kind": "phrase",
+   "target": "저는 정말 피곤했어요.",
+   "tr": "Çok yorgundum.",
+   "en": "I was very tired.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_past_story_5",
+   "kind": "phrase",
+   "target": "자정에야 겨우 집에 도착했어요.",
+   "tr": "Eve ancak gece yarısı vardım.",
+   "en": "I finally arrived home at midnight.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_past_story_6",
+   "kind": "phrase",
+   "target": "정말 긴 하루였어요.",
+   "tr": "Gerçekten uzun bir gündü.",
+   "en": "It was a long day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "커피 한 잔 주세요.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "예약이 있습니다.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "실례합니다, 역이 어디인가요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "안녕하세요, 저는 데니즈입니다.",
+   "have": []
+  },
+  {
+   "key": "p.ko_a2_route_0",
+   "kind": "phrase",
+   "target": "커피 한 잔 주세요.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_a2_route_1",
+   "kind": "phrase",
+   "target": "예약이 있습니다.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_a2_route_2",
+   "kind": "phrase",
+   "target": "실례합니다, 역이 어디인가요?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_a2_route_3",
+   "kind": "phrase",
+   "target": "안녕하세요, 저는 데니즈입니다.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ko_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ko_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "아침 식사 포함인가요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "이해하지 못합니다.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "아파트를 찾고 있습니다.",
+   "have": []
+  },
+  {
+   "key": "tp.ko_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "임대료가 얼마인가요?",
+   "have": []
+  },
+  {
+   "key": "tp.ko_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "카드 되나요?",
+   "have": []
+  },
+  {
+   "key": "p.ko_b1_solve_0",
+   "kind": "phrase",
+   "target": "아침 식사 포함인가요?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_b1_solve_1",
+   "kind": "phrase",
+   "target": "이해하지 못합니다.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_b1_solve_2",
+   "kind": "phrase",
+   "target": "아파트를 찾고 있습니다.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_b1_solve_3",
+   "kind": "phrase",
+   "target": "임대료가 얼마인가요?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ko_b1_solve_4",
+   "kind": "phrase",
+   "target": "카드 되나요?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "st.ko_my_friend",
+   "kind": "story_title",
+   "target": "내 친구",
+   "tr": "Arkadaşım",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_my_friend.0",
+   "kind": "story_sentence",
+   "target": "내 친구 이름은 민준입니다.",
+   "tr": "Arkadaşımın adı Minjun.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_my_friend.1",
+   "kind": "story_sentence",
+   "target": "그는 우리 회사에서 일합니다.",
+   "tr": "O bizim şirketimizde çalışıyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_my_friend.2",
+   "kind": "story_sentence",
+   "target": "토요일에 우리는 공원에 갑니다.",
+   "tr": "Cumartesi günleri parka gideriz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_my_friend.3",
+   "kind": "story_sentence",
+   "target": "우리는 음악과 운동을 좋아합니다.",
+   "tr": "Müzik ve sporu seviyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_my_friend.4",
+   "kind": "story_sentence",
+   "target": "지난 주말에 우리는 축구했습니다.",
+   "tr": "Geçen hafta sonu futbol oynadık.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_my_friend.5",
+   "kind": "story_sentence",
+   "target": "저녁에 민준이 집에 왔고, 우리는 차를 마셨습니다.",
+   "tr": "Akşam Minjun bana geldi, çay içtik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.ko_weather",
+   "kind": "story_title",
+   "target": "날씨",
+   "tr": "Hava",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_weather.0",
+   "kind": "story_sentence",
+   "target": "오늘 아침은 춥습니다.",
+   "tr": "Bugün sabah soğuk.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_weather.1",
+   "kind": "story_sentence",
+   "target": "낮에는 비가 왔습니다.",
+   "tr": "Öğlen yağmur yağdı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_weather.2",
+   "kind": "story_sentence",
+   "target": "우산을 가지고 회사에 갔습니다.",
+   "tr": "Şemsiyemi alıp şirkete gittim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_weather.3",
+   "kind": "story_sentence",
+   "target": "회사에서는 따뜻하고 편했습니다.",
+   "tr": "Şirkette sıcak ve rahattı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_weather.4",
+   "kind": "story_sentence",
+   "target": "저녁에 비가 그쳤습니다.",
+   "tr": "Akşam yağmur durdu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_weather.5",
+   "kind": "story_sentence",
+   "target": "친구에게 전화를 걸고 산책하자고 했습니다.",
+   "tr": "Arkadaşıma telefon edip yürüyüşe çıkmayı teklif ettim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.ko_shopping",
+   "kind": "story_title",
+   "target": "장보기",
+   "tr": "Alışveriş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_shopping.0",
+   "kind": "story_sentence",
+   "target": "일요일 아침에 저는 시장에 갔습니다.",
+   "tr": "Pazar sabahı pazara gittim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_shopping.1",
+   "kind": "story_sentence",
+   "target": "빵, 우유, 사과를 샀습니다.",
+   "tr": "Ekmek, süt ve elma aldım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_shopping.2",
+   "kind": "story_sentence",
+   "target": "시장에서 물건은 싼 편입니다.",
+   "tr": "Pazarda ürünler nispeten ucuz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_shopping.3",
+   "kind": "story_sentence",
+   "target": "저는 목록을 가지고 가서 아무것도 잊지 않았습니다.",
+   "tr": "Listemi alıp gittim, hiçbir şeyi unutmadım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_shopping.4",
+   "kind": "story_sentence",
+   "target": "집에 돌아와서 맛있는 아침을 만들었습니다.",
+   "tr": "Eve dönüp lezzetli bir kahvaltı hazırladım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ko_shopping.5",
+   "kind": "story_sentence",
+   "target": "커피를 마시고 아침을 먹었습니다.",
+   "tr": "Kahve içip kahvaltı yaptım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㄱ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㄱ",
+   "tr": "Giyeok",
+   "en": "Giyeok",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㄱ.s",
+   "kind": "alphabet_sound",
+   "target": "ㄱ",
+   "tr": "g/k",
+   "context": "가방",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㄱ.m",
+   "kind": "alphabet_example",
+   "target": "가방",
+   "tr": "Çanta",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㄴ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㄴ",
+   "tr": "Nieun",
+   "en": "Nieun",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㄴ.s",
+   "kind": "alphabet_sound",
+   "target": "ㄴ",
+   "tr": "n",
+   "context": "나라",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㄴ.m",
+   "kind": "alphabet_example",
+   "target": "나라",
+   "tr": "Ülke",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㄷ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㄷ",
+   "tr": "Digeut",
+   "en": "Digeut",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㄷ.s",
+   "kind": "alphabet_sound",
+   "target": "ㄷ",
+   "tr": "d/t",
+   "context": "다리",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㄷ.m",
+   "kind": "alphabet_example",
+   "target": "다리",
+   "tr": "Köprü",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㄹ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㄹ",
+   "tr": "Rieul",
+   "en": "Rieul",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㄹ.s",
+   "kind": "alphabet_sound",
+   "target": "ㄹ",
+   "tr": "r/l",
+   "context": "라면",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㄹ.m",
+   "kind": "alphabet_example",
+   "target": "라면",
+   "tr": "Ramen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅁ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅁ",
+   "tr": "Mieum",
+   "en": "Mieum",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅁ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅁ",
+   "tr": "m",
+   "context": "마을",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅁ.m",
+   "kind": "alphabet_example",
+   "target": "마을",
+   "tr": "Köy",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅂ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅂ",
+   "tr": "Bieup",
+   "en": "Bieup",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅂ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅂ",
+   "tr": "b/p",
+   "context": "바다",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅂ.m",
+   "kind": "alphabet_example",
+   "target": "바다",
+   "tr": "Deniz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅅ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅅ",
+   "tr": "Siot",
+   "en": "Siot",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅅ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅅ",
+   "tr": "s",
+   "context": "사람",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅅ.m",
+   "kind": "alphabet_example",
+   "target": "사람",
+   "tr": "İnsan",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅇ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅇ",
+   "tr": "İeung",
+   "en": "Ieung",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅇ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅇ",
+   "tr": "ng",
+   "context": "아이",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅇ.m",
+   "kind": "alphabet_example",
+   "target": "아이",
+   "tr": "Çocuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅈ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅈ",
+   "tr": "Cieut",
+   "en": "Jieut",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅈ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅈ",
+   "tr": "j",
+   "context": "자전거",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅈ.m",
+   "kind": "alphabet_example",
+   "target": "자전거",
+   "tr": "Bisiklet",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅊ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅊ",
+   "tr": "Çieut",
+   "en": "Chieut",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅊ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅊ",
+   "tr": "ch",
+   "context": "차",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅊ.m",
+   "kind": "alphabet_example",
+   "target": "차",
+   "tr": "Çay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅋ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅋ",
+   "tr": "Kieuk",
+   "en": "Kieuk",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅋ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅋ",
+   "tr": "k",
+   "context": "코",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅋ.m",
+   "kind": "alphabet_example",
+   "target": "코",
+   "tr": "Burun",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅌ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅌ",
+   "tr": "Tieut",
+   "en": "Tieut",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅌ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅌ",
+   "tr": "t",
+   "context": "타다",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅌ.m",
+   "kind": "alphabet_example",
+   "target": "타다",
+   "tr": "Binmek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅍ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅍ",
+   "tr": "Pieup",
+   "en": "Pieup",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅍ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅍ",
+   "tr": "p",
+   "context": "파",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅍ.m",
+   "kind": "alphabet_example",
+   "target": "파",
+   "tr": "Pırasa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅎ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅎ",
+   "tr": "Hieut",
+   "en": "Hieut",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅎ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅎ",
+   "tr": "h",
+   "context": "하나",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅎ.m",
+   "kind": "alphabet_example",
+   "target": "하나",
+   "tr": "Bir (sayı)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅏ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅏ",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅏ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅏ",
+   "tr": "a",
+   "context": "아기",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅏ.m",
+   "kind": "alphabet_example",
+   "target": "아기",
+   "tr": "Bebek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅑ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅑ",
+   "tr": "Ya",
+   "en": "Ya",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅑ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅑ",
+   "tr": "ya",
+   "context": "야구",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅑ.m",
+   "kind": "alphabet_example",
+   "target": "야구",
+   "tr": "Beyzbol",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅓ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅓ",
+   "tr": "Eo",
+   "en": "Eo",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅓ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅓ",
+   "tr": "eo",
+   "context": "어머니",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅓ.m",
+   "kind": "alphabet_example",
+   "target": "어머니",
+   "tr": "Anne",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅕ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅕ",
+   "tr": "Yeo",
+   "en": "Yeo",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅕ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅕ",
+   "tr": "yeo",
+   "context": "여자",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅕ.m",
+   "kind": "alphabet_example",
+   "target": "여자",
+   "tr": "Kadın",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅗ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅗ",
+   "tr": "O",
+   "en": "O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅗ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅗ",
+   "tr": "o",
+   "context": "오리",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅗ.m",
+   "kind": "alphabet_example",
+   "target": "오리",
+   "tr": "Ördek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅛ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅛ",
+   "tr": "Yo",
+   "en": "Yo",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅛ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅛ",
+   "tr": "yo",
+   "context": "요리",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅛ.m",
+   "kind": "alphabet_example",
+   "target": "요리",
+   "tr": "Yemek pişirme",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅜ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅜ",
+   "tr": "U",
+   "en": "U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅜ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅜ",
+   "tr": "u",
+   "context": "우유",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅜ.m",
+   "kind": "alphabet_example",
+   "target": "우유",
+   "tr": "Süt",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅠ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅠ",
+   "tr": "Yu",
+   "en": "Yu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅠ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅠ",
+   "tr": "yu",
+   "context": "유리",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅠ.m",
+   "kind": "alphabet_example",
+   "target": "유리",
+   "tr": "Cam",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅡ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅡ",
+   "tr": "Eu",
+   "en": "Eu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅡ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅡ",
+   "tr": "eu",
+   "context": "음식",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅡ.m",
+   "kind": "alphabet_example",
+   "target": "음식",
+   "tr": "Yemek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅣ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅣ",
+   "tr": "İ",
+   "en": "I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅣ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅣ",
+   "tr": "i",
+   "context": "이름",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅣ.m",
+   "kind": "alphabet_example",
+   "target": "이름",
+   "tr": "İsim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅐ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅐ",
+   "tr": "Ae",
+   "en": "Ae",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅐ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅐ",
+   "tr": "ae",
+   "context": "개",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅐ.m",
+   "kind": "alphabet_example",
+   "target": "개",
+   "tr": "Köpek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅔ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅔ",
+   "tr": "E",
+   "en": "E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅔ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅔ",
+   "tr": "e",
+   "context": "네",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅔ.m",
+   "kind": "alphabet_example",
+   "target": "네",
+   "tr": "Evet",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅒ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅒ",
+   "tr": "Yae",
+   "en": "Yae",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅒ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅒ",
+   "tr": "yae",
+   "context": "얘",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅒ.m",
+   "kind": "alphabet_example",
+   "target": "얘",
+   "tr": "Bu çocuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅖ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅖ",
+   "tr": "Ye",
+   "en": "Ye",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅖ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅖ",
+   "tr": "ye",
+   "context": "예",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅖ.m",
+   "kind": "alphabet_example",
+   "target": "예",
+   "tr": "Evet (resmi)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅘ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅘ",
+   "tr": "Wa",
+   "en": "Wa",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅘ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅘ",
+   "tr": "wa",
+   "context": "와",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅘ.m",
+   "kind": "alphabet_example",
+   "target": "와",
+   "tr": "Vay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅙ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅙ",
+   "tr": "Wae",
+   "en": "Wae",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅙ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅙ",
+   "tr": "wae",
+   "context": "왜",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅙ.m",
+   "kind": "alphabet_example",
+   "target": "왜",
+   "tr": "Neden",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅚ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅚ",
+   "tr": "Oe",
+   "en": "Oe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅚ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅚ",
+   "tr": "oe",
+   "context": "외",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅚ.m",
+   "kind": "alphabet_example",
+   "target": "외",
+   "tr": "Dış",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅝ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅝ",
+   "tr": "Wo",
+   "en": "Wo",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅝ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅝ",
+   "tr": "wo",
+   "context": "워",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅝ.m",
+   "kind": "alphabet_example",
+   "target": "워",
+   "tr": "(ünlem)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅞ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅞ",
+   "tr": "We",
+   "en": "We",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅞ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅞ",
+   "tr": "we",
+   "context": "웨",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅞ.m",
+   "kind": "alphabet_example",
+   "target": "웨",
+   "tr": "(ünlem)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅟ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅟ",
+   "tr": "Wi",
+   "en": "Wi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅟ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅟ",
+   "tr": "wi",
+   "context": "위",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅟ.m",
+   "kind": "alphabet_example",
+   "target": "위",
+   "tr": "Üst/yukarı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅢ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅢ",
+   "tr": "Ui",
+   "en": "Ui",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅢ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅢ",
+   "tr": "ui",
+   "context": "의",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅢ.m",
+   "kind": "alphabet_example",
+   "target": "의",
+   "tr": "-ın/-in eki",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㄲ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㄲ",
+   "tr": "Ssang-giyeok",
+   "en": "Kk",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㄲ.s",
+   "kind": "alphabet_sound",
+   "target": "ㄲ",
+   "tr": "kk",
+   "context": "꼬리",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㄲ.m",
+   "kind": "alphabet_example",
+   "target": "꼬리",
+   "tr": "Kuyruk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㄸ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㄸ",
+   "tr": "Ssang-digeut",
+   "en": "Tt",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㄸ.s",
+   "kind": "alphabet_sound",
+   "target": "ㄸ",
+   "tr": "tt",
+   "context": "땅",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㄸ.m",
+   "kind": "alphabet_example",
+   "target": "땅",
+   "tr": "Toprak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅃ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅃ",
+   "tr": "Ssang-bieup",
+   "en": "Pp",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅃ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅃ",
+   "tr": "pp",
+   "context": "빵",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅃ.m",
+   "kind": "alphabet_example",
+   "target": "빵",
+   "tr": "Ekmek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅆ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅆ",
+   "tr": "Ssang-siot",
+   "en": "Ss",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅆ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅆ",
+   "tr": "ss",
+   "context": "쌀",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅆ.m",
+   "kind": "alphabet_example",
+   "target": "쌀",
+   "tr": "Pirinç",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅉ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ㅉ",
+   "tr": "Ssang-jieut",
+   "en": "Jj",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ko.ㅉ.s",
+   "kind": "alphabet_sound",
+   "target": "ㅉ",
+   "tr": "jj",
+   "context": "짜다",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ko.ㅉ.m",
+   "kind": "alphabet_example",
+   "target": "짜다",
+   "tr": "Tuzlu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ko.0.h",
+   "kind": "pronunciation_heard",
+   "target": "ㅂ/ㅃ/ㅍ",
+   "tr": "b / pp / p",
+   "context": "Üç farklı p/b.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ko.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "바 / 빠 / 파",
+   "tr": "ba · ppa · pa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ko.1.h",
+   "kind": "pronunciation_heard",
+   "target": "ㄱ/ㄲ/ㅋ",
+   "tr": "g / kk / k",
+   "context": "Üç farklı g/k.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ko.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "가 / 까 / 카",
+   "tr": "ga · kka · ka",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ko.2.h",
+   "kind": "pronunciation_heard",
+   "target": "받침",
+   "tr": "alt sessiz",
+   "context": "Blok altındaki harf.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ko.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "한국",
+   "tr": "han-guk",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

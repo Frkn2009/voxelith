@@ -1,0 +1,3136 @@
+{
+ "lang": "zh",
+ "scenarios": [
+  {
+   "id": "zh_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "zh_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "zh_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "zh_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "zh_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "zh_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "zh_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "zh_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "zh_intro",
+   "cefr": "a1",
+   "title": "Meeting someone"
+  },
+  {
+   "id": "zh_shopping",
+   "cefr": "a1",
+   "title": "Clothes shopping"
+  },
+  {
+   "id": "zh_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers & time"
+  },
+  {
+   "id": "zh_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "zh_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "zh_transport",
+   "cefr": "a1",
+   "title": "Getting around"
+  },
+  {
+   "id": "zh_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "zh_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "zh_past_story",
+   "cefr": "a1",
+   "title": "Telling a past event"
+  },
+  {
+   "id": "zh_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "zh_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  }
+ ],
+ "stories": [
+  {
+   "id": "zh_weekend",
+   "level": "a1",
+   "title": "周末"
+  },
+  {
+   "id": "zh_my_job",
+   "level": "a1",
+   "title": "我的工作"
+  },
+  {
+   "id": "zh_shopping",
+   "level": "a1",
+   "title": "买东西"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.zh_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "请给我一杯咖啡。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "多少钱？",
+   "have": []
+  },
+  {
+   "key": "p.zh_cafe_0",
+   "kind": "phrase",
+   "target": "请给我一杯咖啡。",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_cafe_1",
+   "kind": "phrase",
+   "target": "多少钱？",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_cafe_2",
+   "kind": "phrase",
+   "target": "非常感谢。",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "我有预订。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "包含早餐吗？",
+   "have": []
+  },
+  {
+   "key": "p.zh_hotel_0",
+   "kind": "phrase",
+   "target": "我有预订。",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_hotel_1",
+   "kind": "phrase",
+   "target": "包含早餐吗？",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_hotel_2",
+   "kind": "phrase",
+   "target": "非常感谢。",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "请问，车站在哪里？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "非常感谢。",
+   "have": []
+  },
+  {
+   "key": "p.zh_dir_0",
+   "kind": "phrase",
+   "target": "请问，车站在哪里？",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_dir_1",
+   "kind": "phrase",
+   "target": "非常感谢。",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_dir_2",
+   "kind": "phrase",
+   "target": "我不明白。",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "你好，我叫德尼兹。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "我来自土耳其。",
+   "have": []
+  },
+  {
+   "key": "p.zh_hi_0",
+   "kind": "phrase",
+   "target": "你好，我叫德尼兹。",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_hi_1",
+   "kind": "phrase",
+   "target": "我来自土耳其。",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_hi_2",
+   "kind": "phrase",
+   "target": "非常感谢。",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "我在找公寓。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "房租多少？",
+   "have": []
+  },
+  {
+   "key": "p.zh_flat_0",
+   "kind": "phrase",
+   "target": "我在找公寓。",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_flat_1",
+   "kind": "phrase",
+   "target": "房租多少？",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_flat_2",
+   "kind": "phrase",
+   "target": "你能帮我吗？",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "这个多少钱？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "我要这个。",
+   "have": []
+  },
+  {
+   "key": "p.zh_shop_0",
+   "kind": "phrase",
+   "target": "这个多少钱？",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_shop_1",
+   "kind": "phrase",
+   "target": "我要这个。",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_shop_2",
+   "kind": "phrase",
+   "target": "可以刷卡吗？",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "请结账。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "我们想一起付。",
+   "have": []
+  },
+  {
+   "key": "p.zh_bill_0",
+   "kind": "phrase",
+   "target": "请结账。",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_bill_1",
+   "kind": "phrase",
+   "target": "我们想一起付。",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_bill_2",
+   "kind": "phrase",
+   "target": "不用找了。",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "我有预订。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "靠窗的座位。",
+   "have": []
+  },
+  {
+   "key": "p.zh_airport_0",
+   "kind": "phrase",
+   "target": "我有预订。",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_airport_1",
+   "kind": "phrase",
+   "target": "靠窗的座位。",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_airport_2",
+   "kind": "phrase",
+   "target": "这是登机队列吗？",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Meeting someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.zh_intro",
+   "kind": "grammar_rule",
+   "tr": "呢 kelimesini bir isim veya zamirden sonra eklersen, tüm soruyu tekrar etmeden \"Ya sen?\" demiş olursun.",
+   "en": "Add 呢 (ne) right after a noun or pronoun to ask \"What about ___?\" without repeating the whole question.",
+   "context": "我是学生，你呢？ / ✗ 我是学生，你是呢？",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_intro.0",
+   "kind": "speaking_prompt",
+   "en": "A stranger smiles and greets you.",
+   "context": "你好，很高兴认识你。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_intro.1",
+   "kind": "speaking_prompt",
+   "en": "They wait for your name.",
+   "context": "我叫德尼兹。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_intro.2",
+   "kind": "speaking_prompt",
+   "en": "You want to know their name too.",
+   "context": "你叫什么名字？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_intro.3",
+   "kind": "speaking_prompt",
+   "en": "You are curious where they are from.",
+   "context": "你是哪里人？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask where you are from.",
+   "context": "我是土耳其人。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You want to know their job.",
+   "context": "你做什么工作？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_intro.6",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do.",
+   "context": "我是学生，你呢？",
+   "have": []
+  },
+  {
+   "key": "p.zh_intro_0",
+   "kind": "phrase",
+   "target": "你好，很高兴认识你。",
+   "tr": "Merhaba, tanıştığımıza memnun oldum.",
+   "en": "Hi, nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_intro_1",
+   "kind": "phrase",
+   "target": "我叫德尼兹。",
+   "tr": "Adım Deniz.",
+   "en": "My name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_intro_2",
+   "kind": "phrase",
+   "target": "你叫什么名字？",
+   "tr": "Senin adın ne?",
+   "en": "What's your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_intro_3",
+   "kind": "phrase",
+   "target": "你是哪里人？",
+   "tr": "Nerelisin?",
+   "en": "Where are you from?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_intro_4",
+   "kind": "phrase",
+   "target": "我是土耳其人。",
+   "tr": "Ben Türküm.",
+   "en": "I'm from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_intro_5",
+   "kind": "phrase",
+   "target": "你做什么工作？",
+   "tr": "Ne iş yapıyorsun?",
+   "en": "What do you do for work?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_intro_6",
+   "kind": "phrase",
+   "target": "我是学生，你呢？",
+   "tr": "Ben öğrenciyim, ya sen?",
+   "en": "I'm a student, and you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_shopping",
+   "kind": "scenario_title",
+   "tr": "Kıyafet alışverişi",
+   "en": "Clothes shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.zh_shopping",
+   "kind": "grammar_rule",
+   "tr": "Sayı ile isim arasına mutlaka bir ölçü kelimesi (量词) gelir; kıyafetler için bu \"件\"dir.",
+   "en": "A number and a noun always need a measure word between them; for clothing items, that word is 件 (jiàn).",
+   "context": "我要一件衬衫。 / ✗ 我要一衬衫。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You are looking at a shirt.",
+   "context": "请问，这个有别的颜色吗？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "You like the shirt.",
+   "context": "我可以试穿吗？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want to try it on.",
+   "context": "试衣间在哪里？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "It does not fit.",
+   "context": "有小一点的号码吗？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You decide to buy it.",
+   "context": "我要这件。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You are ready to pay.",
+   "context": "可以刷卡吗？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You need proof of purchase.",
+   "context": "可以给我发票吗？",
+   "have": []
+  },
+  {
+   "key": "p.zh_shopping_0",
+   "kind": "phrase",
+   "target": "请问，这个有别的颜色吗？",
+   "tr": "Afedersiniz, bunun başka rengi var mı?",
+   "en": "Excuse me, does this come in another color?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_shopping_1",
+   "kind": "phrase",
+   "target": "我可以试穿吗？",
+   "tr": "Deneyebilir miyim?",
+   "en": "Can I try it on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_shopping_2",
+   "kind": "phrase",
+   "target": "试衣间在哪里？",
+   "tr": "Deneme kabini nerede?",
+   "en": "Where is the fitting room?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_shopping_3",
+   "kind": "phrase",
+   "target": "有小一点的号码吗？",
+   "tr": "Biraz daha küçük beden var mı?",
+   "en": "Do you have a smaller size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_shopping_4",
+   "kind": "phrase",
+   "target": "我要这件。",
+   "tr": "Bunu alayım.",
+   "en": "I'll take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_shopping_5",
+   "kind": "phrase",
+   "target": "可以刷卡吗？",
+   "tr": "Kartla ödeyebilir miyim?",
+   "en": "Can I pay by card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_shopping_6",
+   "kind": "phrase",
+   "target": "可以给我发票吗？",
+   "tr": "Fiş alabilir miyim?",
+   "en": "Can I get a receipt?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers & time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.zh_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "Saat söylerken önce saat (点), sonra dakika ya da \"buçuk\" (半) gelir.",
+   "en": "When telling time, say the hour (点) first, then the minutes or 'half' (半).",
+   "context": "九点半 / ✗ 半九点",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You check your watch.",
+   "context": "现在几点？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks the time.",
+   "context": "三点。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "You are at the station.",
+   "context": "火车几点开？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "The clerk checks the schedule.",
+   "context": "九点半开。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "You are planning to meet a friend.",
+   "context": "我们晚上七点见面吧。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "The cashier tells you the total.",
+   "context": "一共二十块。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You are running late.",
+   "context": "我十分钟后到。",
+   "have": []
+  },
+  {
+   "key": "p.zh_numbers_time_0",
+   "kind": "phrase",
+   "target": "现在几点？",
+   "tr": "Saat kaç?",
+   "en": "What time is it now?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_numbers_time_1",
+   "kind": "phrase",
+   "target": "三点。",
+   "tr": "Saat üç.",
+   "en": "It's three o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_numbers_time_2",
+   "kind": "phrase",
+   "target": "火车几点开？",
+   "tr": "Tren saat kaçta kalkıyor?",
+   "en": "What time does the train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_numbers_time_3",
+   "kind": "phrase",
+   "target": "九点半开。",
+   "tr": "Dokuz buçukta kalkıyor.",
+   "en": "It leaves at nine thirty.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_numbers_time_4",
+   "kind": "phrase",
+   "target": "我们晚上七点见面吧。",
+   "tr": "Akşam yedide buluşalım.",
+   "en": "Let's meet at seven in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_numbers_time_5",
+   "kind": "phrase",
+   "target": "一共二十块。",
+   "tr": "Toplam yirmi yuan.",
+   "en": "That's twenty yuan in total.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_numbers_time_6",
+   "kind": "phrase",
+   "target": "我十分钟后到。",
+   "tr": "On dakikaya varırım.",
+   "en": "I'll arrive in ten minutes.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.zh_family",
+   "kind": "grammar_rule",
+   "tr": "Bir şeye/birine sahip olduğunu söylemek için 有 kullanılır, 是 değil.",
+   "en": "Use 有 (yǒu, 'to have') to say you possess or have something, not 是 (shì, 'to be').",
+   "context": "我有两个哥哥。 / ✗ 我是两个哥哥。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a photo.",
+   "context": "这是我的家人。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_family.1",
+   "kind": "speaking_prompt",
+   "en": "They ask about your siblings.",
+   "context": "我有两个哥哥。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_family.2",
+   "kind": "speaking_prompt",
+   "en": "They ask about your mother.",
+   "context": "我妈妈是老师。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_family.3",
+   "kind": "speaking_prompt",
+   "en": "They ask about your father.",
+   "context": "我爸爸在医院工作。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_family.4",
+   "kind": "speaking_prompt",
+   "en": "You ask them the same question.",
+   "context": "你有兄弟姐妹吗？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask your place in the family.",
+   "context": "我是家里最小的。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_family.6",
+   "kind": "speaking_prompt",
+   "en": "They ask who else lives with you.",
+   "context": "我奶奶跟我们一起住。",
+   "have": []
+  },
+  {
+   "key": "p.zh_family_0",
+   "kind": "phrase",
+   "target": "这是我的家人。",
+   "tr": "Bu benim ailem.",
+   "en": "This is my family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_family_1",
+   "kind": "phrase",
+   "target": "我有两个哥哥。",
+   "tr": "İki abim var.",
+   "en": "I have two older brothers.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_family_2",
+   "kind": "phrase",
+   "target": "我妈妈是老师。",
+   "tr": "Annem öğretmen.",
+   "en": "My mom is a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_family_3",
+   "kind": "phrase",
+   "target": "我爸爸在医院工作。",
+   "tr": "Babam hastanede çalışıyor.",
+   "en": "My dad works at a hospital.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_family_4",
+   "kind": "phrase",
+   "target": "你有兄弟姐妹吗？",
+   "tr": "Kardeşin var mı?",
+   "en": "Do you have any siblings?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_family_5",
+   "kind": "phrase",
+   "target": "我是家里最小的。",
+   "tr": "Ailede en küçüğüyüm.",
+   "en": "I'm the youngest in the family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_family_6",
+   "kind": "phrase",
+   "target": "我奶奶跟我们一起住。",
+   "tr": "Anneannem bizimle yaşıyor.",
+   "en": "My grandma lives with us.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.zh_weather",
+   "kind": "grammar_rule",
+   "tr": "Sıfatlar Çincede doğrudan yüklem olur, önüne 很 gelir; 是 kullanılmaz.",
+   "en": "Adjectives act as the predicate directly in Chinese, usually preceded by 很 (hěn); don't add 是 (shì).",
+   "context": "今天很冷。 / ✗ 今天是冷。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You look outside.",
+   "context": "今天天气怎么样？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You check the sky.",
+   "context": "今天很晴朗。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You hear rain outside.",
+   "context": "外面在下雨。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You feel a chill.",
+   "context": "今天早上很冷。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You check tomorrow's forecast.",
+   "context": "明天会热吗？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_weather.5",
+   "kind": "speaking_prompt",
+   "en": "A friend is leaving without a coat.",
+   "context": "带把伞吧，可能会下雨。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_weather.6",
+   "kind": "speaking_prompt",
+   "en": "They ask about your favorite weather.",
+   "context": "我喜欢晴天。",
+   "have": []
+  },
+  {
+   "key": "p.zh_weather_0",
+   "kind": "phrase",
+   "target": "今天天气怎么样？",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_weather_1",
+   "kind": "phrase",
+   "target": "今天很晴朗。",
+   "tr": "Bugün güneşli.",
+   "en": "It's sunny today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_weather_2",
+   "kind": "phrase",
+   "target": "外面在下雨。",
+   "tr": "Dışarıda yağmur yağıyor.",
+   "en": "It's raining outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_weather_3",
+   "kind": "phrase",
+   "target": "今天早上很冷。",
+   "tr": "Bu sabah çok soğuk.",
+   "en": "It's very cold this morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_weather_4",
+   "kind": "phrase",
+   "target": "明天会热吗？",
+   "tr": "Yarın sıcak olacak mı?",
+   "en": "Will it be hot tomorrow?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_weather_5",
+   "kind": "phrase",
+   "target": "带把伞吧，可能会下雨。",
+   "tr": "Şemsiye al, yağmur yağabilir.",
+   "en": "Bring an umbrella, it might rain.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_weather_6",
+   "kind": "phrase",
+   "target": "我喜欢晴天。",
+   "tr": "Güneşli günleri severim.",
+   "en": "I like sunny days.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Getting around",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.zh_transport",
+   "kind": "grammar_rule",
+   "tr": "İçine oturarak binilen araçlar için 坐, üzerine binilenler (bisiklet gibi) için 骑 kullanılır.",
+   "en": "Use 坐 (zuò) for vehicles you sit inside (bus, car, train) and 骑 (qí) for ones you straddle (bike, motorbike).",
+   "context": "我坐公交车上班。 / ✗ 我骑公交车上班。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You are lost downtown.",
+   "context": "请问，市中心怎么走？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_transport.1",
+   "kind": "speaking_prompt",
+   "en": "They ask how you get to work.",
+   "context": "我坐公交车上班。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You need the subway.",
+   "context": "最近的地铁站在哪里？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_transport.3",
+   "kind": "speaking_prompt",
+   "en": "A bus pulls up.",
+   "context": "这辆车去机场吗？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You are at the ticket counter.",
+   "context": "请给我一张去中央车站的票。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You want to catch the last train.",
+   "context": "最后一班火车几点开？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_transport.6",
+   "kind": "speaking_prompt",
+   "en": "A friend offers you a ride.",
+   "context": "我想走路去，很近。",
+   "have": []
+  },
+  {
+   "key": "p.zh_transport_0",
+   "kind": "phrase",
+   "target": "请问，市中心怎么走？",
+   "tr": "Affedersiniz, şehir merkezine nasıl gidilir?",
+   "en": "Excuse me, how do I get downtown?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_transport_1",
+   "kind": "phrase",
+   "target": "我坐公交车上班。",
+   "tr": "İşe otobüsle giderim.",
+   "en": "I take the bus to work.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_transport_2",
+   "kind": "phrase",
+   "target": "最近的地铁站在哪里？",
+   "tr": "En yakın metro istasyonu nerede?",
+   "en": "Where's the nearest subway station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_transport_3",
+   "kind": "phrase",
+   "target": "这辆车去机场吗？",
+   "tr": "Bu otobüs havaalanına gidiyor mu?",
+   "en": "Does this bus go to the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_transport_4",
+   "kind": "phrase",
+   "target": "请给我一张去中央车站的票。",
+   "tr": "Merkez istasyona bir bilet, lütfen.",
+   "en": "One ticket to the central station, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_transport_5",
+   "kind": "phrase",
+   "target": "最后一班火车几点开？",
+   "tr": "Son tren saat kaçta kalkıyor?",
+   "en": "What time does the last train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_transport_6",
+   "kind": "phrase",
+   "target": "我想走路去，很近。",
+   "tr": "Yürüyerek gitmek istiyorum, çok yakın.",
+   "en": "I'd rather walk, it's close.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.zh_emergency",
+   "kind": "grammar_rule",
+   "tr": "\"Birine yardım ederek bir şey yaptırmak\" için 帮 + kişi + fiil kalıbı kullanılır, araya 的 girmez.",
+   "en": "To say 'help someone do something', use 帮 + person + verb — no 的 goes in between.",
+   "context": "请帮我叫警察。 / ✗ 请帮我叫的警察。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something dangerous just happened.",
+   "context": "救命！",
+   "have": []
+  },
+  {
+   "key": "tp.zh_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Someone is badly hurt.",
+   "context": "请帮我叫救护车。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You feel very sick.",
+   "context": "我需要看医生。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You just saw a robbery.",
+   "context": "请帮我叫警察。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You check your bag.",
+   "context": "我的护照丢了。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "You smell smoke.",
+   "context": "着火了！",
+   "have": []
+  },
+  {
+   "key": "tp.zh_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You need medical help nearby.",
+   "context": "最近的医院在哪里？",
+   "have": []
+  },
+  {
+   "key": "p.zh_emergency_0",
+   "kind": "phrase",
+   "target": "救命！",
+   "tr": "İmdat!",
+   "en": "Help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_emergency_1",
+   "kind": "phrase",
+   "target": "请帮我叫救护车。",
+   "tr": "Lütfen ambulans çağırın.",
+   "en": "Please help me call an ambulance.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_emergency_2",
+   "kind": "phrase",
+   "target": "我需要看医生。",
+   "tr": "Doktora ihtiyacım var.",
+   "en": "I need a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_emergency_3",
+   "kind": "phrase",
+   "target": "请帮我叫警察。",
+   "tr": "Lütfen polis çağırın.",
+   "en": "Please call the police.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_emergency_4",
+   "kind": "phrase",
+   "target": "我的护照丢了。",
+   "tr": "Pasaportumu kaybettim.",
+   "en": "I lost my passport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_emergency_5",
+   "kind": "phrase",
+   "target": "着火了！",
+   "tr": "Yangın var!",
+   "en": "There's a fire!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_emergency_6",
+   "kind": "phrase",
+   "target": "最近的医院在哪里？",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.zh_routine",
+   "kind": "grammar_rule",
+   "tr": "Zaman ifadesi (saat gibi) her zaman fiilden önce gelir, sonra değil.",
+   "en": "A time expression (like a clock time) always comes before the verb, never after it.",
+   "context": "我每天七点起床。 / ✗ 我每天起床七点。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your mornings.",
+   "context": "我每天七点起床。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_routine.1",
+   "kind": "speaking_prompt",
+   "en": "You describe getting ready.",
+   "context": "我刷牙，然后洗澡。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_routine.2",
+   "kind": "speaking_prompt",
+   "en": "They ask about breakfast.",
+   "context": "我八点吃早饭。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_routine.3",
+   "kind": "speaking_prompt",
+   "en": "They ask how you get to work.",
+   "context": "我骑自行车上班。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_routine.4",
+   "kind": "speaking_prompt",
+   "en": "They ask when your day ends.",
+   "context": "我晚上六点下班。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_routine.5",
+   "kind": "speaking_prompt",
+   "en": "They ask about your evenings.",
+   "context": "晚饭后，我看电视。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_routine.6",
+   "kind": "speaking_prompt",
+   "en": "They ask when you sleep.",
+   "context": "我十一点睡觉。",
+   "have": []
+  },
+  {
+   "key": "p.zh_routine_0",
+   "kind": "phrase",
+   "target": "我每天七点起床。",
+   "tr": "Her gün saat yedide kalkarım.",
+   "en": "I get up at seven every day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_routine_1",
+   "kind": "phrase",
+   "target": "我刷牙，然后洗澡。",
+   "tr": "Dişlerimi fırçalarım, sonra duş alırım.",
+   "en": "I brush my teeth, then take a shower.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_routine_2",
+   "kind": "phrase",
+   "target": "我八点吃早饭。",
+   "tr": "Saat sekizde kahvaltı ederim.",
+   "en": "I have breakfast at eight.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_routine_3",
+   "kind": "phrase",
+   "target": "我骑自行车上班。",
+   "tr": "İşe bisikletle giderim.",
+   "en": "I ride a bike to work.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_routine_4",
+   "kind": "phrase",
+   "target": "我晚上六点下班。",
+   "tr": "Akşam altıda işten çıkarım.",
+   "en": "I finish work at six in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_routine_5",
+   "kind": "phrase",
+   "target": "晚饭后，我看电视。",
+   "tr": "Akşam yemeğinden sonra televizyon izlerim.",
+   "en": "After dinner, I watch TV.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_routine_6",
+   "kind": "phrase",
+   "target": "我十一点睡觉。",
+   "tr": "Saat on birde yatarım.",
+   "en": "I go to bed at eleven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_past_story",
+   "kind": "scenario_title",
+   "tr": "Geçmişte bir gün",
+   "en": "Telling a past event",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.zh_past_story",
+   "kind": "grammar_rule",
+   "tr": "Tamamlanmış bir eylemi anlatırken fiilden hemen sonra 了 eklenir.",
+   "en": "Add 了 (le) right after the verb to show the action is completed — no verb conjugation needed.",
+   "context": "昨天我去了机场。 / ✗ 昨天我去机场。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "They ask about your day yesterday.",
+   "context": "昨天我去了机场。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "They ask what happened there.",
+   "context": "我在那里遇到了一个老朋友。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what you did together.",
+   "context": "我们一起喝了咖啡。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "They ask what happened next.",
+   "context": "然后我错过了航班。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "They ask how you felt.",
+   "context": "我非常累。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "They ask when you got home.",
+   "context": "我半夜才到家。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "They ask how your day was.",
+   "context": "那真是漫长的一天。",
+   "have": []
+  },
+  {
+   "key": "p.zh_past_story_0",
+   "kind": "phrase",
+   "target": "昨天我去了机场。",
+   "tr": "Dün havaalanına gittim.",
+   "en": "Yesterday I went to the airport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_past_story_1",
+   "kind": "phrase",
+   "target": "我在那里遇到了一个老朋友。",
+   "tr": "Orada eski bir arkadaşımla karşılaştım.",
+   "en": "I met an old friend there.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_past_story_2",
+   "kind": "phrase",
+   "target": "我们一起喝了咖啡。",
+   "tr": "Birlikte kahve içtik.",
+   "en": "We drank coffee together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_past_story_3",
+   "kind": "phrase",
+   "target": "然后我错过了航班。",
+   "tr": "Sonra uçağımı kaçırdım.",
+   "en": "Then I missed my flight.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_past_story_4",
+   "kind": "phrase",
+   "target": "我非常累。",
+   "tr": "Çok yorgundum.",
+   "en": "I was very tired.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_past_story_5",
+   "kind": "phrase",
+   "target": "我半夜才到家。",
+   "tr": "Eve ancak gece yarısı vardım.",
+   "en": "I finally arrived home at midnight.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_past_story_6",
+   "kind": "phrase",
+   "target": "那真是漫长的一天。",
+   "tr": "Gerçekten uzun bir gündü.",
+   "en": "It was a long day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "请给我一杯咖啡。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "我有预订。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "请问，车站在哪里？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "你好，我叫德尼兹。",
+   "have": []
+  },
+  {
+   "key": "p.zh_a2_route_0",
+   "kind": "phrase",
+   "target": "请给我一杯咖啡。",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_a2_route_1",
+   "kind": "phrase",
+   "target": "我有预订。",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_a2_route_2",
+   "kind": "phrase",
+   "target": "请问，车站在哪里？",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_a2_route_3",
+   "kind": "phrase",
+   "target": "你好，我叫德尼兹。",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.zh_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.zh_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "包含早餐吗？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "我不明白。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "我在找公寓。",
+   "have": []
+  },
+  {
+   "key": "tp.zh_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "房租多少？",
+   "have": []
+  },
+  {
+   "key": "tp.zh_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "可以刷卡吗？",
+   "have": []
+  },
+  {
+   "key": "p.zh_b1_solve_0",
+   "kind": "phrase",
+   "target": "包含早餐吗？",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_b1_solve_1",
+   "kind": "phrase",
+   "target": "我不明白。",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_b1_solve_2",
+   "kind": "phrase",
+   "target": "我在找公寓。",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_b1_solve_3",
+   "kind": "phrase",
+   "target": "房租多少？",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.zh_b1_solve_4",
+   "kind": "phrase",
+   "target": "可以刷卡吗？",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "st.zh_weekend",
+   "kind": "story_title",
+   "target": "周末",
+   "tr": "Hafta Sonu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_weekend.0",
+   "kind": "story_sentence",
+   "target": "星期六早上，我去了公园。",
+   "tr": "Cumartesi sabahı parka gittim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_weekend.1",
+   "kind": "story_sentence",
+   "target": "我和朋友一起散步。",
+   "tr": "Arkadaşımla birlikte yürüdük.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_weekend.2",
+   "kind": "story_sentence",
+   "target": "公园里有花，还有小鸟。",
+   "tr": "Parkta çiçekler ve küçük kuşlar vardı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_weekend.3",
+   "kind": "story_sentence",
+   "target": "中午，我们吃面。",
+   "tr": "Öğle yemeğinde noodle yedik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_weekend.4",
+   "kind": "story_sentence",
+   "target": "面条很好吃，我们都很开心。",
+   "tr": "Noodle çok lezzetliydi, hepimiz çok mutlu olduk.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_weekend.5",
+   "kind": "story_sentence",
+   "target": "这个周末很好。",
+   "tr": "Bu hafta sonu güzeldi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.zh_my_job",
+   "kind": "story_title",
+   "target": "我的工作",
+   "tr": "Benim İşim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_my_job.0",
+   "kind": "story_sentence",
+   "target": "我在医院当医生。",
+   "tr": "Hastanede doktor olarak çalışıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_my_job.1",
+   "kind": "story_sentence",
+   "target": "我每天早上八点去上班。",
+   "tr": "Her sabah sekizde işe gidiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_my_job.2",
+   "kind": "story_sentence",
+   "target": "我的工作是帮病人。",
+   "tr": "İşim hastalara yardım etmek.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_my_job.3",
+   "kind": "story_sentence",
+   "target": "中午在医院吃饭。",
+   "tr": "Öğle yemeğini hastanede yiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_my_job.4",
+   "kind": "story_sentence",
+   "target": "晚上我回家，给妈妈打电话。",
+   "tr": "Akşam eve dönüyorum, anneme telefon ediyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_my_job.5",
+   "kind": "story_sentence",
+   "target": "工作很累，但我喜欢。",
+   "tr": "İş yorucu, ama seviyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.zh_shopping",
+   "kind": "story_title",
+   "target": "买东西",
+   "tr": "Alışveriş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_shopping.0",
+   "kind": "story_sentence",
+   "target": "今天天气很好，我去了超市。",
+   "tr": "Bugün hava çok güzel, süpermarkete gittim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_shopping.1",
+   "kind": "story_sentence",
+   "target": "超市里的人很多，东西很新鲜。",
+   "tr": "Süpermarkette çok insan vardı, ürünler çok taze.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_shopping.2",
+   "kind": "story_sentence",
+   "target": "我买了蔬菜、水果和面包。",
+   "tr": "Sebze, meyve ve ekmek aldım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_shopping.3",
+   "kind": "story_sentence",
+   "target": "我带了一个大袋子回家。",
+   "tr": "Büyük bir poşetle eve döndüm.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_shopping.4",
+   "kind": "story_sentence",
+   "target": "下午我在家里做饭。",
+   "tr": "Öğleden sonra evde yemek yaptım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.zh_shopping.5",
+   "kind": "story_sentence",
+   "target": "晚上，我和家人一起吃饭。",
+   "tr": "Akşam ailemle birlikte yemek yedik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.b.n",
+   "kind": "alphabet_letter_name",
+   "target": "b",
+   "tr": "Be",
+   "en": "Be",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.b.s",
+   "kind": "alphabet_sound",
+   "target": "b",
+   "tr": "b",
+   "context": "爸 (bà)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.b.m",
+   "kind": "alphabet_example",
+   "target": "爸 (bà)",
+   "tr": "Baba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.p.n",
+   "kind": "alphabet_letter_name",
+   "target": "p",
+   "tr": "Pe",
+   "en": "Pe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.p.s",
+   "kind": "alphabet_sound",
+   "target": "p",
+   "tr": "p",
+   "context": "怕 (pà)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.p.m",
+   "kind": "alphabet_example",
+   "target": "怕 (pà)",
+   "tr": "Korkmak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.m.n",
+   "kind": "alphabet_letter_name",
+   "target": "m",
+   "tr": "Me",
+   "en": "Me",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.m.s",
+   "kind": "alphabet_sound",
+   "target": "m",
+   "tr": "m",
+   "context": "妈 (mā)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.m.m",
+   "kind": "alphabet_example",
+   "target": "妈 (mā)",
+   "tr": "Anne",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.f.n",
+   "kind": "alphabet_letter_name",
+   "target": "f",
+   "tr": "Fe",
+   "en": "Fe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.f.s",
+   "kind": "alphabet_sound",
+   "target": "f",
+   "tr": "f",
+   "context": "饭 (fàn)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.f.m",
+   "kind": "alphabet_example",
+   "target": "饭 (fàn)",
+   "tr": "Yemek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.d.n",
+   "kind": "alphabet_letter_name",
+   "target": "d",
+   "tr": "De",
+   "en": "De",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.d.s",
+   "kind": "alphabet_sound",
+   "target": "d",
+   "tr": "d",
+   "context": "大 (dà)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.d.m",
+   "kind": "alphabet_example",
+   "target": "大 (dà)",
+   "tr": "Büyük",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.t.n",
+   "kind": "alphabet_letter_name",
+   "target": "t",
+   "tr": "Te",
+   "en": "Te",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.t.s",
+   "kind": "alphabet_sound",
+   "target": "t",
+   "tr": "t",
+   "context": "他 (tā)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.t.m",
+   "kind": "alphabet_example",
+   "target": "他 (tā)",
+   "tr": "O (erkek)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.n.n",
+   "kind": "alphabet_letter_name",
+   "target": "n",
+   "tr": "Ne",
+   "en": "Ne",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.n.s",
+   "kind": "alphabet_sound",
+   "target": "n",
+   "tr": "n",
+   "context": "你 (nǐ)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.n.m",
+   "kind": "alphabet_example",
+   "target": "你 (nǐ)",
+   "tr": "Sen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.l.n",
+   "kind": "alphabet_letter_name",
+   "target": "l",
+   "tr": "Le",
+   "en": "Le",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.l.s",
+   "kind": "alphabet_sound",
+   "target": "l",
+   "tr": "l",
+   "context": "绿 (lǜ)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.l.m",
+   "kind": "alphabet_example",
+   "target": "绿 (lǜ)",
+   "tr": "Yeşil",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.g.n",
+   "kind": "alphabet_letter_name",
+   "target": "g",
+   "tr": "Ge",
+   "en": "Ge",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.g.s",
+   "kind": "alphabet_sound",
+   "target": "g",
+   "tr": "g",
+   "context": "狗 (gǒu)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.g.m",
+   "kind": "alphabet_example",
+   "target": "狗 (gǒu)",
+   "tr": "Köpek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.k.n",
+   "kind": "alphabet_letter_name",
+   "target": "k",
+   "tr": "Ke",
+   "en": "Ke",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.k.s",
+   "kind": "alphabet_sound",
+   "target": "k",
+   "tr": "k",
+   "context": "渴 (kě)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.k.m",
+   "kind": "alphabet_example",
+   "target": "渴 (kě)",
+   "tr": "Susamış",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.h.n",
+   "kind": "alphabet_letter_name",
+   "target": "h",
+   "tr": "He",
+   "en": "He",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.h.s",
+   "kind": "alphabet_sound",
+   "target": "h",
+   "tr": "h",
+   "context": "好 (hǎo)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.h.m",
+   "kind": "alphabet_example",
+   "target": "好 (hǎo)",
+   "tr": "İyi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.j.n",
+   "kind": "alphabet_letter_name",
+   "target": "j",
+   "tr": "Ci",
+   "en": "Ji",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.j.s",
+   "kind": "alphabet_sound",
+   "target": "j",
+   "tr": "c",
+   "context": "家 (jiā)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.j.m",
+   "kind": "alphabet_example",
+   "target": "家 (jiā)",
+   "tr": "Ev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.q.n",
+   "kind": "alphabet_letter_name",
+   "target": "q",
+   "tr": "Çi",
+   "en": "Qi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.q.s",
+   "kind": "alphabet_sound",
+   "target": "q",
+   "tr": "ç",
+   "context": "去 (qù)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.q.m",
+   "kind": "alphabet_example",
+   "target": "去 (qù)",
+   "tr": "Gitmek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.x.n",
+   "kind": "alphabet_letter_name",
+   "target": "x",
+   "tr": "Si (ince)",
+   "en": "Xi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.x.s",
+   "kind": "alphabet_sound",
+   "target": "x",
+   "tr": "sy",
+   "context": "谢 (xiè)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.x.m",
+   "kind": "alphabet_example",
+   "target": "谢 (xiè)",
+   "tr": "Teşekkür",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.zh.n",
+   "kind": "alphabet_letter_name",
+   "target": "zh",
+   "tr": "Cı",
+   "en": "Zhi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.zh.s",
+   "kind": "alphabet_sound",
+   "target": "zh",
+   "tr": "c (kalın)",
+   "context": "中 (zhōng)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.zh.m",
+   "kind": "alphabet_example",
+   "target": "中 (zhōng)",
+   "tr": "Orta",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.ch.n",
+   "kind": "alphabet_letter_name",
+   "target": "ch",
+   "tr": "Çı",
+   "en": "Chi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.ch.s",
+   "kind": "alphabet_sound",
+   "target": "ch",
+   "tr": "ç (kalın)",
+   "context": "吃 (chī)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.ch.m",
+   "kind": "alphabet_example",
+   "target": "吃 (chī)",
+   "tr": "Yemek yemek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.sh.n",
+   "kind": "alphabet_letter_name",
+   "target": "sh",
+   "tr": "Şı",
+   "en": "Shi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.sh.s",
+   "kind": "alphabet_sound",
+   "target": "sh",
+   "tr": "ş (kalın)",
+   "context": "山 (shān)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.sh.m",
+   "kind": "alphabet_example",
+   "target": "山 (shān)",
+   "tr": "Dağ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.r.n",
+   "kind": "alphabet_letter_name",
+   "target": "r",
+   "tr": "Rı",
+   "en": "Ri",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.r.s",
+   "kind": "alphabet_sound",
+   "target": "r",
+   "tr": "j/r",
+   "context": "人 (rén)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.r.m",
+   "kind": "alphabet_example",
+   "target": "人 (rén)",
+   "tr": "İnsan",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.z.n",
+   "kind": "alphabet_letter_name",
+   "target": "z",
+   "tr": "Dzı",
+   "en": "Zi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.z.s",
+   "kind": "alphabet_sound",
+   "target": "z",
+   "tr": "dz",
+   "context": "在 (zài)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.z.m",
+   "kind": "alphabet_example",
+   "target": "在 (zài)",
+   "tr": "(yer belirteci)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.c.n",
+   "kind": "alphabet_letter_name",
+   "target": "c",
+   "tr": "Tsı",
+   "en": "Ci",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.c.s",
+   "kind": "alphabet_sound",
+   "target": "c",
+   "tr": "ts",
+   "context": "菜 (cài)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.c.m",
+   "kind": "alphabet_example",
+   "target": "菜 (cài)",
+   "tr": "Sebze",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.s.n",
+   "kind": "alphabet_letter_name",
+   "target": "s",
+   "tr": "Sı",
+   "en": "Si",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.s.s",
+   "kind": "alphabet_sound",
+   "target": "s",
+   "tr": "s",
+   "context": "三 (sān)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.s.m",
+   "kind": "alphabet_example",
+   "target": "三 (sān)",
+   "tr": "Üç",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.a.n",
+   "kind": "alphabet_letter_name",
+   "target": "a",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.a.s",
+   "kind": "alphabet_sound",
+   "target": "a",
+   "tr": "a",
+   "context": "啊 (ā)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.a.m",
+   "kind": "alphabet_example",
+   "target": "啊 (ā)",
+   "tr": "(ünlem)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.o.n",
+   "kind": "alphabet_letter_name",
+   "target": "o",
+   "tr": "O",
+   "en": "O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.o.s",
+   "kind": "alphabet_sound",
+   "target": "o",
+   "tr": "o",
+   "context": "哦 (ò)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.o.m",
+   "kind": "alphabet_example",
+   "target": "哦 (ò)",
+   "tr": "(ünlem)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.e.n",
+   "kind": "alphabet_letter_name",
+   "target": "e",
+   "tr": "I/E",
+   "en": "E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.e.s",
+   "kind": "alphabet_sound",
+   "target": "e",
+   "tr": "ı/e",
+   "context": "饿 (è)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.e.m",
+   "kind": "alphabet_example",
+   "target": "饿 (è)",
+   "tr": "Aç",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.i.n",
+   "kind": "alphabet_letter_name",
+   "target": "i",
+   "tr": "İ",
+   "en": "I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.i.s",
+   "kind": "alphabet_sound",
+   "target": "i",
+   "tr": "i",
+   "context": "一 (yī)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.i.m",
+   "kind": "alphabet_example",
+   "target": "一 (yī)",
+   "tr": "Bir",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.u.n",
+   "kind": "alphabet_letter_name",
+   "target": "u",
+   "tr": "U",
+   "en": "U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.u.s",
+   "kind": "alphabet_sound",
+   "target": "u",
+   "tr": "u",
+   "context": "五 (wǔ)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.u.m",
+   "kind": "alphabet_example",
+   "target": "五 (wǔ)",
+   "tr": "Beş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.ü.n",
+   "kind": "alphabet_letter_name",
+   "target": "ü",
+   "tr": "Ü",
+   "en": "Yu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.zh.ü.s",
+   "kind": "alphabet_sound",
+   "target": "ü",
+   "tr": "ü",
+   "context": "雨 (yǔ)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.zh.ü.m",
+   "kind": "alphabet_example",
+   "target": "雨 (yǔ)",
+   "tr": "Yağmur",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.zh.0.h",
+   "kind": "pronunciation_heard",
+   "target": "4 ton",
+   "tr": "düz/yükselen/alçalıp-yükselen/düşen",
+   "context": "Ton = anlam.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.zh.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "mā má mǎ mà",
+   "tr": "anne · kenevirr · at · azarlamak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.zh.1.h",
+   "kind": "pronunciation_heard",
+   "target": "zh",
+   "tr": "c (dil geriye)",
+   "context": "Türkçe c'ye yakın.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.zh.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "中国",
+   "tr": "cong-guo",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.zh.2.h",
+   "kind": "pronunciation_heard",
+   "target": "x",
+   "tr": "ince s",
+   "context": "s ve ş arası.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.zh.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "谢谢",
+   "tr": "syeh-syeh",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

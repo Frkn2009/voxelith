@@ -2,6 +2,8 @@ import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_store.dart';
 import '../models/models.dart';
 
 class NotificationService {
@@ -10,13 +12,16 @@ class NotificationService {
   static const _reminderCount = 7;
   static const _channelKey = 'daily_practice';
 
-  static Future<void> initialize() async {
+  /// [ui] yalnızca Android bildirim kanalının (sistem ayarlarında görünen)
+  /// adı içindir; kanal bir kez oluşturulur.
+  static Future<void> initialize({UiLang ui = UiLang.en}) async {
     if (_initialized || kIsWeb) return;
+    final i18n = I18n(ui);
     await AwesomeNotifications().initialize(null, [
       NotificationChannel(
         channelKey: _channelKey,
-        channelName: 'Günlük pratik',
-        channelDescription: 'VOXELITH günlük ders ve seri hatırlatmaları',
+        channelName: i18n.notifChannelName,
+        channelDescription: i18n.notifChannelDescription,
         defaultColor: const Color(0xFF0D5955),
         ledColor: const Color(0xFFFFFFFF),
         importance: NotificationImportance.Default,
@@ -31,7 +36,7 @@ class NotificationService {
   /// bir bildirim planlar. Uygulama her açıldığında kayan pencere yenilenir.
   static Future<void> sync(UserProfile profile) async {
     if (kIsWeb) return;
-    await initialize();
+    await initialize(ui: profile.uiLang);
     for (var offset = 0; offset < _reminderCount; offset++) {
       await AwesomeNotifications().cancelSchedule(_firstReminderId + offset);
     }
@@ -67,39 +72,16 @@ class NotificationService {
 
   /// Saf içerik seçimi test edilebilir ve bildirimler öğretmen tonunda kalır.
   static (String, String) contentFor(UserProfile profile, int dayOffset) {
-    final turkish = profile.uiLang == UiLang.tr;
+    final i18n = I18n(profile.uiLang);
     if (profile.isPlus && dayOffset % 4 == 0) {
-      return turkish
-          ? (
-              'VOXELITH Plus',
-              'Sınırsız konuşma hakkın hazır. Bugünün sahnesine geç!',
-            )
-          : ('VOXELITH Plus', 'Unlimited speaking is ready. Start today’s scene.');
+      return ('VOXELITH Plus', i18n.notifPlusBody);
     }
     if (profile.streak >= 2 && dayOffset % 3 == 1) {
-      return turkish
-          ? ('Serini koru', '🔥 Serin ${profile.streak} gün! Bugün kırma!')
-          : (
-              'Keep your streak',
-              '${profile.streak} days strong. Keep the chain alive today.',
-            );
+      return (i18n.notifStreakTitle, i18n.notifStreakBody(profile.streak));
     }
     if (dayOffset % 3 == 2) {
-      return turkish
-          ? ('Yeni oyun', '🎮 Yeni oyun: Harf Sıralama dene!')
-          : (
-              'Ready for a quick game?',
-              'Try Letter Order to sharpen your vocabulary.',
-            );
+      return (i18n.notifGameTitle, i18n.notifGameBody);
     }
-    return turkish
-        ? (
-            'Hadi derse! 📚',
-            'Bugün henüz pratik yapmadın. Kısa bir konuşma yeter.',
-          )
-        : (
-            'Time to practise!',
-            'You have not practised today. One short conversation is enough.',
-          );
+    return (i18n.notifPracticeTitle, i18n.notifPracticeBody);
   }
 }

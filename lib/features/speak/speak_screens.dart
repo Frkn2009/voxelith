@@ -2,17 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/features.dart';
+import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
-import '../ai/screen/ai_feedback_screen.dart';
 import '../../data/ads/ad_service.dart';
 import '../../data/content/catalog.dart';
-import '../../data/events/analytics_events.dart';
 import '../../data/content/language_guides.dart';
+import '../../data/events/analytics_events.dart';
 import '../../data/models/models.dart';
 import '../../data/speech/premium_tts_service.dart';
 import '../../data/speech/speech_controller.dart';
 import '../../state/session.dart';
 import '../../ui/widgets.dart';
+import '../ai/screen/ai_feedback_screen.dart';
 
 class SpeakHubScreen extends ConsumerWidget {
   const SpeakHubScreen({super.key});
@@ -32,7 +35,7 @@ class SpeakHubScreen extends ConsumerWidget {
           const SizedBox(height: 6),
           Text(
             p.isPlus
-                ? 'Sınırsız · Maya ile senaryo'
+                ? i18n.speakPlusSubtitle
                 : '${i18n.remainingToday}: ${remain}s',
             style: TextStyle(
               color: Theme.of(context).colorScheme.onSurfaceVariant,
@@ -70,7 +73,7 @@ class SpeakHubScreen extends ConsumerWidget {
                         ),
                       ),
                       Text(
-                        'Kısa cümleleri dinle, gölgele ve konuş',
+                        i18n.speakClipsSubtitle,
                         style: TextStyle(
                           color: Theme.of(context).colorScheme.onSurfaceVariant,
                           fontSize: 12,
@@ -116,6 +119,7 @@ class SpeakHubScreen extends ConsumerWidget {
                 scenes: scenes.where((s) => s.cefr == level).toList(),
                 unlocked: _levelUnlocked(level, scenes, p.completedSceneIds),
                 uiLang: p.uiLang,
+                i18n: i18n,
               ),
         ],
       ),
@@ -143,25 +147,20 @@ class SpeakHubScreen extends ConsumerWidget {
   }
 }
 
-const _levelLabels = {
-  Cefr.a1: 'A1 · Hayatta kalma dili',
-  Cefr.a2: 'A2 · Bağlantılı konuşma',
-  Cefr.b1: 'B1 · Fikir ve görüş',
-  Cefr.b2: 'B2 · İleri seviye',
-};
-
 class _LevelSection extends StatelessWidget {
   const _LevelSection({
     required this.level,
     required this.scenes,
     required this.unlocked,
     required this.uiLang,
+    required this.i18n,
   });
 
   final Cefr level;
   final List<Scenario> scenes;
   final bool unlocked;
   final UiLang uiLang;
+  final I18n i18n;
 
   @override
   Widget build(BuildContext context) {
@@ -173,8 +172,11 @@ class _LevelSection extends StatelessWidget {
           Row(
             children: [
               Text(
-                _levelLabels[level] ?? level.name.toUpperCase(),
-                style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15),
+                i18n.speakLevelLabel(level),
+                style: const TextStyle(
+                  fontWeight: FontWeight.w700,
+                  fontSize: 15,
+                ),
               ),
               if (!unlocked) ...[
                 const SizedBox(width: 6),
@@ -190,7 +192,7 @@ class _LevelSection extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 2, bottom: 6),
               child: Text(
-                'Önceki seviyenin en az %70\'ini bitirince açılır.',
+                i18n.speakLevelLocked,
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onSurfaceVariant,
                   fontSize: 12,
@@ -230,7 +232,7 @@ class _LevelSection extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              '${s.minutes} dk · ${s.cefr.name.toUpperCase()} · ${s.turns.length} tur',
+                              '${i18n.minutesShort(s.minutes)} · ${s.cefr.name.toUpperCase()} · ${i18n.turnsCount(s.turns.length)}',
                               style: TextStyle(
                                 color: Theme.of(
                                   context,
@@ -286,11 +288,11 @@ List<_Step> _stepOrderFor(LearningStyle style) => switch (style) {
   ],
 };
 
-const _stepLabels = {
-  _Step.hear: 'Duy',
-  _Step.shadow: 'Gölgele',
-  _Step.speak: 'Konuş',
-  _Step.fix: 'Düzelt',
+String _stepLabel(I18n i18n, _Step step) => switch (step) {
+  _Step.hear => i18n.stepHear,
+  _Step.shadow => i18n.stepShadow,
+  _Step.speak => i18n.stepSpeak,
+  _Step.fix => i18n.stepFix,
 };
 
 class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
@@ -347,15 +349,17 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
     context.push('/ad');
   }
 
-  String _microphoneMessage() => switch (speech.availability) {
-    SpeechAvailability.permissionPermanentlyDenied =>
-      'Mikrofon izni kapalı. Telefon ayarlarından VOXELITH için mikrofonu aç.',
-    SpeechAvailability.permissionDenied =>
-      'Konuşabilmek için mikrofon izni vermen gerekiyor.',
-    SpeechAvailability.unavailable =>
-      'Bu cihazda konuşma tanıma kullanılamıyor. Telefonda tekrar dene.',
-    _ => 'Mikrofon başlatılamadı. Lütfen tekrar dene.',
-  };
+  String _microphoneMessage() {
+    final i18n = ref.read(i18nProvider);
+    return switch (speech.availability) {
+      SpeechAvailability.permissionPermanentlyDenied =>
+        i18n.interpreterMicPermanentlyDenied,
+      SpeechAvailability.permissionDenied =>
+        i18n.interpreterMicPermissionDenied,
+      SpeechAvailability.unavailable => i18n.micUnavailableTryPhone,
+      _ => i18n.interpreterMicStartFailed,
+    };
+  }
 
   Future<void> _down() async {
     final p = ref.read(sessionProvider);
@@ -432,7 +436,9 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
       phonemeScore = assessment.phonemeAccuracy;
       fluencyScore = assessment.fluency;
       clarityScore = assessment.clarity;
-      pronunciationFeedback = assessment.feedback;
+      pronunciationFeedback = ref
+          .read(i18nProvider)
+          .pronunciationFeedback(assessment.feedbackKind);
       stepIndex = _stepOrder.length - 1;
     });
     if (recognized.trim().isNotEmpty) {
@@ -477,7 +483,7 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
       }
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Sahne tamamlandı · +$sceneXp XP')),
+        SnackBar(content: Text(ref.read(i18nProvider).sceneCompleted(sceneXp))),
       );
       context.go('/app');
     }
@@ -525,7 +531,7 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
                 children: [
                   for (final entry in order.asMap().entries)
                     Text(
-                      '${entry.key + 1}  ${_stepLabels[entry.value]}',
+                      '${entry.key + 1}  ${_stepLabel(i18n, entry.value)}',
                       style: TextStyle(
                         color: entry.key == stepIndex
                             ? Voxelith.terrSoft
@@ -555,12 +561,15 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
               Text(
                 speech.usingNeuralVoice
                     ? 'Maya · Neural'
-                    : 'Maya · kadın cihaz sesi',
+                    : i18n.mayaDeviceVoice,
                 style: const TextStyle(color: Voxelith.terrSoft),
               ),
               const SizedBox(height: 18),
               Text(
-                currentTurn.prompt,
+                scene.turnPromptFor(
+                  turn.clamp(0, scene.turns.length - 1),
+                  ref.watch(sessionProvider).uiLang,
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onSurfaceVariant,
@@ -603,10 +612,25 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
                   ),
                   child: Text(
                     () {
-                      final tip = LanguageGuide.of(
-                        scene.lang,
-                      ).tipFor(currentTurn.expected)!;
-                      return '${tip.written}  →  ${tip.heard}\n${tip.example}  ≈  ${tip.exampleSaid}';
+                      final guide = LanguageGuide.of(scene.lang);
+                      final tip = guide.tipFor(currentTurn.expected)!;
+                      final ui = ref.watch(sessionProvider).uiLang;
+                      // Okunuşlar Türkçe yazımla yazılı; diğer diller için
+                      // içerik çeviri hattından gelir, yoksa gösterilmez.
+                      final base =
+                          'gd.${scene.lang.name}.${guide.rules.indexOf(tip)}';
+                      final heard = ui == UiLang.tr
+                          ? tip.heard
+                          : ContentOverlay.lookup('$base.h', ui);
+                      final said = ui == UiLang.tr
+                          ? tip.exampleSaid
+                          : ContentOverlay.lookup('$base.x', ui);
+                      return [
+                        heard == null
+                            ? tip.written
+                            : '${tip.written}  →  $heard',
+                        said == null ? tip.example : '${tip.example}  ≈  $said',
+                      ].join('\n');
                     }(),
                     textAlign: TextAlign.center,
                     style: const TextStyle(
@@ -630,17 +654,17 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Row(
+                      Row(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.school_outlined,
                             size: 15,
                             color: Voxelith.gold,
                           ),
-                          SizedBox(width: 6),
+                          const SizedBox(width: 6),
                           Text(
-                            'Bu ünitenin kuralı',
-                            style: TextStyle(
+                            i18n.unitRule,
+                            style: const TextStyle(
                               color: Voxelith.gold,
                               fontWeight: FontWeight.w700,
                               fontSize: 12,
@@ -650,7 +674,10 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
                       ),
                       const SizedBox(height: 6),
                       Text(
-                        scene.grammarNote!.ruleFor(p.uiLang),
+                        scene.grammarNote!.ruleFor(
+                          p.uiLang,
+                          scenarioId: scene.id,
+                        ),
                         style: const TextStyle(
                           color: Voxelith.cream,
                           fontSize: 13,
@@ -688,10 +715,10 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
                 Wrap(
                   spacing: 8,
                   children: [
-                    _chip('Genel $score'),
-                    _chip('Fonem $phonemeScore'),
-                    _chip('Akıcılık $fluencyScore'),
-                    _chip('Netlik $clarityScore'),
+                    _chip('${i18n.scoreOverall} $score'),
+                    _chip('${i18n.scorePhoneme} $phonemeScore'),
+                    _chip('${i18n.scoreFluency} $fluencyScore'),
+                    _chip('${i18n.scoreClarity} $clarityScore'),
                   ],
                 ),
                 const SizedBox(height: 12),
@@ -702,7 +729,9 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
                     color: Theme.of(context).colorScheme.onSurfaceVariant,
                   ),
                 ),
-                if (score > 0 && heard.isNotEmpty) ...[
+                if (Features.paidCloudApis &&
+                    score > 0 &&
+                    heard.isNotEmpty) ...[
                   const SizedBox(height: 6),
                   TextButton.icon(
                     onPressed: () => Navigator.of(context).push(
@@ -716,7 +745,7 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
                       ),
                     ),
                     icon: const Icon(Icons.psychology_outlined, size: 18),
-                    label: const Text('Detaylı AI analizi'),
+                    label: Text(i18n.detailedAiAnalysis),
                     style: TextButton.styleFrom(foregroundColor: Voxelith.gold),
                   ),
                 ],
@@ -726,10 +755,10 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
                   onPressed: score == 0 ? _retrySpeak : _nextTurn,
                   child: Text(
                     score == 0
-                        ? 'Tekrar dene'
+                        ? i18n.retryCta
                         : (turn < scene.turns.length - 1
                               ? i18n.continueCta
-                              : 'Bitir'),
+                              : i18n.commonFinish),
                   ),
                 ),
               ] else if (step == _Step.speak) ...[
@@ -763,10 +792,10 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
                 const SizedBox(height: 10),
                 Text(
                   holding
-                      ? '${holdSec}s · dinliyorum'
+                      ? i18n.listeningNow(holdSec)
                       : (_speechReady
                             ? i18n.holdToSpeak
-                            : 'Basılı tut · mikrofon izni istenecek'),
+                            : i18n.holdMicPermission),
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurfaceVariant,
                   ),
@@ -809,7 +838,7 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
                     _nextStep();
                   },
                   child: Text(
-                    step == _Step.hear ? 'Dinle / duydum' : 'Gölgeledim',
+                    step == _Step.hear ? i18n.listenHeard : i18n.shadowedIt,
                   ),
                 ),
             ],
@@ -826,7 +855,10 @@ class _SpeakSessionScreenState extends ConsumerState<SpeakSessionScreen> {
         color: Voxelith.mintDark,
         borderRadius: BorderRadius.circular(Voxelith.radius),
       ),
-      child: Text(s, style: const TextStyle(color: Voxelith.cream, fontSize: 12)),
+      child: Text(
+        s,
+        style: const TextStyle(color: Voxelith.cream, fontSize: 12),
+      ),
     );
   }
 }

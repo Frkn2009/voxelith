@@ -1,0 +1,3196 @@
+{
+ "lang": "vi",
+ "scenarios": [
+  {
+   "id": "vi_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "vi_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "vi_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "vi_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "vi_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "vi_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "vi_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "vi_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "vi_intro",
+   "cefr": "a1",
+   "title": "Getting to know someone"
+  },
+  {
+   "id": "vi_shopping",
+   "cefr": "a1",
+   "title": "Shopping for clothes"
+  },
+  {
+   "id": "vi_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers and telling time"
+  },
+  {
+   "id": "vi_family",
+   "cefr": "a1",
+   "title": "Talking about family"
+  },
+  {
+   "id": "vi_weather",
+   "cefr": "a1",
+   "title": "Talking about the weather"
+  },
+  {
+   "id": "vi_transport",
+   "cefr": "a1",
+   "title": "Getting around"
+  },
+  {
+   "id": "vi_emergency",
+   "cefr": "a1",
+   "title": "Emergency situations"
+  },
+  {
+   "id": "vi_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "vi_past_story",
+   "cefr": "a1",
+   "title": "Telling a story in the past"
+  },
+  {
+   "id": "vi_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "vi_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  }
+ ],
+ "stories": [
+  {
+   "id": "vi_river_walk",
+   "level": "a1",
+   "title": "Đi dạo bên sông"
+  },
+  {
+   "id": "vi_library",
+   "level": "a1",
+   "title": "Góc đọc sách"
+  },
+  {
+   "id": "vi_pet",
+   "level": "a1",
+   "title": "Con mèo của tôi"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.vi_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "Cho tôi một cà phê.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "Bao nhiêu tiền?",
+   "have": []
+  },
+  {
+   "key": "p.vi_cafe_0",
+   "kind": "phrase",
+   "target": "Cho tôi một cà phê.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_cafe_1",
+   "kind": "phrase",
+   "target": "Bao nhiêu tiền?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_cafe_2",
+   "kind": "phrase",
+   "target": "Cảm ơn rất nhiều.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "Tôi có đặt chỗ.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "Có bao gồm bữa sáng không?",
+   "have": []
+  },
+  {
+   "key": "p.vi_hotel_0",
+   "kind": "phrase",
+   "target": "Tôi có đặt chỗ.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_hotel_1",
+   "kind": "phrase",
+   "target": "Có bao gồm bữa sáng không?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_hotel_2",
+   "kind": "phrase",
+   "target": "Cảm ơn rất nhiều.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "Xin lỗi, ga ở đâu?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "Cảm ơn rất nhiều.",
+   "have": []
+  },
+  {
+   "key": "p.vi_dir_0",
+   "kind": "phrase",
+   "target": "Xin lỗi, ga ở đâu?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_dir_1",
+   "kind": "phrase",
+   "target": "Cảm ơn rất nhiều.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_dir_2",
+   "kind": "phrase",
+   "target": "Tôi không hiểu.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "Xin chào, tôi tên là Deniz.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "Tôi đến từ Thổ Nhĩ Kỳ.",
+   "have": []
+  },
+  {
+   "key": "p.vi_hi_0",
+   "kind": "phrase",
+   "target": "Xin chào, tôi tên là Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_hi_1",
+   "kind": "phrase",
+   "target": "Tôi đến từ Thổ Nhĩ Kỳ.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_hi_2",
+   "kind": "phrase",
+   "target": "Cảm ơn rất nhiều.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "Tôi đang tìm căn hộ.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "Tiền thuê bao nhiêu?",
+   "have": []
+  },
+  {
+   "key": "p.vi_flat_0",
+   "kind": "phrase",
+   "target": "Tôi đang tìm căn hộ.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_flat_1",
+   "kind": "phrase",
+   "target": "Tiền thuê bao nhiêu?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_flat_2",
+   "kind": "phrase",
+   "target": "Bạn có thể giúp tôi không?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "Cái này bao nhiêu tiền?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "Tôi lấy cái này.",
+   "have": []
+  },
+  {
+   "key": "p.vi_shop_0",
+   "kind": "phrase",
+   "target": "Cái này bao nhiêu tiền?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_shop_1",
+   "kind": "phrase",
+   "target": "Tôi lấy cái này.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_shop_2",
+   "kind": "phrase",
+   "target": "Có nhận thẻ không?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "Cho tôi hóa đơn.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "Chúng tôi muốn trả chung.",
+   "have": []
+  },
+  {
+   "key": "p.vi_bill_0",
+   "kind": "phrase",
+   "target": "Cho tôi hóa đơn.",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_bill_1",
+   "kind": "phrase",
+   "target": "Chúng tôi muốn trả chung.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_bill_2",
+   "kind": "phrase",
+   "target": "Không cần trả lại.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "Tôi có đặt chỗ.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "Cho tôi ghế cạnh cửa sổ.",
+   "have": []
+  },
+  {
+   "key": "p.vi_airport_0",
+   "kind": "phrase",
+   "target": "Tôi có đặt chỗ.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_airport_1",
+   "kind": "phrase",
+   "target": "Cho tôi ghế cạnh cửa sổ.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_airport_2",
+   "kind": "phrase",
+   "target": "Đây có phải hàng lên máy bay không?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Getting to know someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.vi_intro",
+   "kind": "grammar_rule",
+   "tr": "Vietnamcada \"sen/siz\" için tek bir zamir yoktur — yaşça/ilişki olarak belirsiz durumlarda yabancılarla \"tôi\" (ben) / \"bạn\" (sen) çifti güvenli ve nötr seçimdir.",
+   "en": "Vietnamese has no single word for \"you\" — for strangers or unclear age/relationship, \"tôi\" (I) / \"bạn\" (you) is the safe, neutral pair.",
+   "context": "Tôi tên là Lan. Bạn tên là gì? / ✗ Tôi tên là Lan. Mày tên là gì?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_intro.0",
+   "kind": "speaking_prompt",
+   "en": "Someone greets you.",
+   "context": "Xin chào, rất vui được gặp bạn.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_intro.1",
+   "kind": "speaking_prompt",
+   "en": "They ask your name.",
+   "context": "Tôi tên là Ayşe, bạn tên là gì?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_intro.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do.",
+   "context": "Tôi là giáo viên. Bạn làm nghề gì?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_intro.3",
+   "kind": "speaking_prompt",
+   "en": "They ask your age.",
+   "context": "Bạn bao nhiêu tuổi?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_intro.4",
+   "kind": "speaking_prompt",
+   "en": "You answer.",
+   "context": "Tôi ba mươi tuổi.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_intro.5",
+   "kind": "speaking_prompt",
+   "en": "They ask for your number.",
+   "context": "Bạn có số điện thoại không?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_intro.6",
+   "kind": "speaking_prompt",
+   "en": "You hand it over and say goodbye.",
+   "context": "Đây là số của tôi, hẹn gặp lại nhé!",
+   "have": []
+  },
+  {
+   "key": "p.vi_intro_0",
+   "kind": "phrase",
+   "target": "Xin chào, rất vui được gặp bạn.",
+   "tr": "Merhaba, tanıştığımıza memnun oldum.",
+   "en": "Hello, nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_intro_1",
+   "kind": "phrase",
+   "target": "Tôi tên là Ayşe, bạn tên là gì?",
+   "tr": "Benim adım Ayşe, senin adın ne?",
+   "en": "My name is Ayşe, what's your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_intro_2",
+   "kind": "phrase",
+   "target": "Tôi là giáo viên. Bạn làm nghề gì?",
+   "tr": "Ben öğretmenim. Sen ne iş yapıyorsun?",
+   "en": "I am a teacher. What do you do?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_intro_3",
+   "kind": "phrase",
+   "target": "Bạn bao nhiêu tuổi?",
+   "tr": "Kaç yaşındasın?",
+   "en": "How old are you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_intro_4",
+   "kind": "phrase",
+   "target": "Tôi ba mươi tuổi.",
+   "tr": "Otuz yaşındayım.",
+   "en": "I am thirty years old.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_intro_5",
+   "kind": "phrase",
+   "target": "Bạn có số điện thoại không?",
+   "tr": "Telefon numaran var mı?",
+   "en": "Do you have a phone number?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_intro_6",
+   "kind": "phrase",
+   "target": "Đây là số của tôi, hẹn gặp lại nhé!",
+   "tr": "İşte numaram, sonra görüşürüz!",
+   "en": "Here is my number, see you later!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_shopping",
+   "kind": "scenario_title",
+   "tr": "Alışveriş",
+   "en": "Shopping for clothes",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.vi_shopping",
+   "kind": "grammar_rule",
+   "tr": "Nesne sayılırken sınıflayıcı \"cái\", sayı ile isim ARASINA girer.",
+   "en": "The classifier \"cái\" goes between the number and the noun for inanimate objects.",
+   "context": "hai cái áo / ✗ hai áo",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You see a shirt you like.",
+   "context": "Xin lỗi, cái áo này bao nhiêu tiền?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "It's too big.",
+   "context": "Có size nhỏ hơn không?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want to try it.",
+   "context": "Tôi mặc thử được không?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "You look for a place to change.",
+   "context": "Phòng thử đồ ở đâu?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You decide to buy it.",
+   "context": "Tôi lấy cái này.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You're ready to pay.",
+   "context": "Ở đây có nhận thẻ tín dụng không?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You need to carry it home.",
+   "context": "Cho tôi xin một cái túi.",
+   "have": []
+  },
+  {
+   "key": "p.vi_shopping_0",
+   "kind": "phrase",
+   "target": "Xin lỗi, cái áo này bao nhiêu tiền?",
+   "tr": "Affedersiniz, bu gömlek ne kadar?",
+   "en": "Excuse me, how much is this shirt?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_shopping_1",
+   "kind": "phrase",
+   "target": "Có size nhỏ hơn không?",
+   "tr": "Daha küçük beden var mı?",
+   "en": "Do you have a smaller size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_shopping_2",
+   "kind": "phrase",
+   "target": "Tôi mặc thử được không?",
+   "tr": "Deneyebilir miyim?",
+   "en": "Can I try it on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_shopping_3",
+   "kind": "phrase",
+   "target": "Phòng thử đồ ở đâu?",
+   "tr": "Deneme kabini nerede?",
+   "en": "Where is the fitting room?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_shopping_4",
+   "kind": "phrase",
+   "target": "Tôi lấy cái này.",
+   "tr": "Bunu alacağım.",
+   "en": "I'll take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_shopping_5",
+   "kind": "phrase",
+   "target": "Ở đây có nhận thẻ tín dụng không?",
+   "tr": "Kredi kartı geçiyor mu?",
+   "en": "Do you accept credit cards?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_shopping_6",
+   "kind": "phrase",
+   "target": "Cho tôi xin một cái túi.",
+   "tr": "Bir poşet alabilir miyim?",
+   "en": "Can I get a bag, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers and telling time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.vi_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "\"Buçuk/yarım\" anlamındaki \"rưỡi\", \"giờ\" kelimesinden SONRA gelir — İngilizce \"half past\" kalıbının tersi.",
+   "en": "\"rưỡi\" (half) comes AFTER \"giờ\" (o'clock) — the reverse of the English \"half past\" order.",
+   "context": "Bây giờ là ba giờ rưỡi. / ✗ Bây giờ là rưỡi ba giờ.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You want to know the time.",
+   "context": "Bây giờ là mấy giờ?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "Someone answers.",
+   "context": "Bây giờ là ba giờ.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "You're at the station.",
+   "context": "Tàu chạy lúc mấy giờ?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "The clerk answers.",
+   "context": "Tàu chạy lúc bốn giờ rưỡi.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "You mention your schedule.",
+   "context": "Tôi có cuộc họp lúc mười giờ sáng.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "You arrange to meet.",
+   "context": "Hẹn gặp lúc bảy giờ tối nhé.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You want today's date.",
+   "context": "Hôm nay là ngày mấy?",
+   "have": []
+  },
+  {
+   "key": "p.vi_numbers_time_0",
+   "kind": "phrase",
+   "target": "Bây giờ là mấy giờ?",
+   "tr": "Şu an saat kaç?",
+   "en": "What time is it now?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_numbers_time_1",
+   "kind": "phrase",
+   "target": "Bây giờ là ba giờ.",
+   "tr": "Saat üç.",
+   "en": "It's three o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_numbers_time_2",
+   "kind": "phrase",
+   "target": "Tàu chạy lúc mấy giờ?",
+   "tr": "Tren saat kaçta kalkıyor?",
+   "en": "What time does the train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_numbers_time_3",
+   "kind": "phrase",
+   "target": "Tàu chạy lúc bốn giờ rưỡi.",
+   "tr": "Dört buçukta kalkıyor.",
+   "en": "It leaves at half past four.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_numbers_time_4",
+   "kind": "phrase",
+   "target": "Tôi có cuộc họp lúc mười giờ sáng.",
+   "tr": "Sabah saat onda toplantım var.",
+   "en": "I have a meeting at ten in the morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_numbers_time_5",
+   "kind": "phrase",
+   "target": "Hẹn gặp lúc bảy giờ tối nhé.",
+   "tr": "Akşam yedide görüşürüz.",
+   "en": "See you at seven in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_numbers_time_6",
+   "kind": "phrase",
+   "target": "Hôm nay là ngày mấy?",
+   "tr": "Bugünün tarihi kaç?",
+   "en": "What is today's date?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Talking about family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.vi_family",
+   "kind": "grammar_rule",
+   "tr": "İyelik \"của\" ile isimden SONRA belirtilir — İngilizce \"my\" gibi isimden önce gelmez.",
+   "en": "Possession is marked with \"của\" placed AFTER the noun — not before it like English \"my\".",
+   "context": "em trai của tôi / ✗ của tôi em trai",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a photo.",
+   "context": "Đây là mẹ của tôi.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_family.1",
+   "kind": "speaking_prompt",
+   "en": "You point to another person.",
+   "context": "Đây là bố của tôi.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_family.2",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about siblings.",
+   "context": "Tôi có hai anh chị em.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_family.3",
+   "kind": "speaking_prompt",
+   "en": "You introduce him.",
+   "context": "Đây là em trai của tôi.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_family.4",
+   "kind": "speaking_prompt",
+   "en": "You introduce her.",
+   "context": "Đây là chị gái của tôi.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_family.5",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about her.",
+   "context": "Cô ấy là vợ của bạn phải không?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_family.6",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your son.",
+   "context": "Con trai tôi năm tuổi.",
+   "have": []
+  },
+  {
+   "key": "p.vi_family_0",
+   "kind": "phrase",
+   "target": "Đây là mẹ của tôi.",
+   "tr": "Bu benim annem.",
+   "en": "This is my mother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_family_1",
+   "kind": "phrase",
+   "target": "Đây là bố của tôi.",
+   "tr": "Bu benim babam.",
+   "en": "This is my father.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_family_2",
+   "kind": "phrase",
+   "target": "Tôi có hai anh chị em.",
+   "tr": "İki kardeşim var.",
+   "en": "I have two siblings.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_family_3",
+   "kind": "phrase",
+   "target": "Đây là em trai của tôi.",
+   "tr": "Bu benim küçük erkek kardeşim.",
+   "en": "This is my younger brother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_family_4",
+   "kind": "phrase",
+   "target": "Đây là chị gái của tôi.",
+   "tr": "Bu benim büyük ablam.",
+   "en": "This is my older sister.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_family_5",
+   "kind": "phrase",
+   "target": "Cô ấy là vợ của bạn phải không?",
+   "tr": "O senin eşin mi?",
+   "en": "Is she your wife?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_family_6",
+   "kind": "phrase",
+   "target": "Con trai tôi năm tuổi.",
+   "tr": "Oğlum beş yaşında.",
+   "en": "My son is five years old.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Talking about the weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.vi_weather",
+   "kind": "grammar_rule",
+   "tr": "\"Trời\" (gökyüzü/hava) öznesinden sonra sıfat doğrudan gelir — sıfattan önce \"là\" (\"olmak\") konmaz.",
+   "en": "After the dummy subject \"trời\" (sky/weather), the adjective follows directly — never insert \"là\" (\"to be\") before it.",
+   "context": "Hôm nay trời nóng. / ✗ Hôm nay trời là nóng.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You start small talk.",
+   "context": "Hôm nay thời tiết thế nào?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You comment on the heat.",
+   "context": "Hôm nay trời nóng lắm.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You look outside.",
+   "context": "Bên ngoài trời đang mưa.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You warn a friend.",
+   "context": "Trời lạnh, mang áo khoác theo nhé.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You check the forecast.",
+   "context": "Ngày mai trời sẽ nắng.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_weather.5",
+   "kind": "speaking_prompt",
+   "en": "You feel the wind.",
+   "context": "Gió thổi mạnh lắm.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_weather.6",
+   "kind": "speaking_prompt",
+   "en": "You share your preference.",
+   "context": "Tôi thích mùa đông hơn mùa hè.",
+   "have": []
+  },
+  {
+   "key": "p.vi_weather_0",
+   "kind": "phrase",
+   "target": "Hôm nay thời tiết thế nào?",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_weather_1",
+   "kind": "phrase",
+   "target": "Hôm nay trời nóng lắm.",
+   "tr": "Bugün çok sıcak.",
+   "en": "It's very hot today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_weather_2",
+   "kind": "phrase",
+   "target": "Bên ngoài trời đang mưa.",
+   "tr": "Dışarıda yağmur yağıyor.",
+   "en": "It's raining outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_weather_3",
+   "kind": "phrase",
+   "target": "Trời lạnh, mang áo khoác theo nhé.",
+   "tr": "Hava soğuk, ceket al.",
+   "en": "It's cold, take a jacket.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_weather_4",
+   "kind": "phrase",
+   "target": "Ngày mai trời sẽ nắng.",
+   "tr": "Yarın güneşli olacak.",
+   "en": "Tomorrow it will be sunny.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_weather_5",
+   "kind": "phrase",
+   "target": "Gió thổi mạnh lắm.",
+   "tr": "Çok rüzgar var.",
+   "en": "It's very windy.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_weather_6",
+   "kind": "phrase",
+   "target": "Tôi thích mùa đông hơn mùa hè.",
+   "tr": "Yazdan çok kışı severim.",
+   "en": "I like winter more than summer.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Getting around",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.vi_transport",
+   "kind": "grammar_rule",
+   "tr": "Gelecek zaman belirteci \"sẽ\", doğrudan ana fiilin ÖNÜNE gelir.",
+   "en": "The future marker \"sẽ\" goes directly BEFORE the main verb.",
+   "context": "Tôi sẽ đi bằng taxi. / ✗ Tôi đi sẽ bằng taxi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You're lost downtown.",
+   "context": "Xe buýt nào đi trung tâm thành phố?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_transport.1",
+   "kind": "speaking_prompt",
+   "en": "You ask a stranger.",
+   "context": "Làm sao để đến sân bay?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You decide how to travel.",
+   "context": "Tôi sẽ đi bằng taxi.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_transport.3",
+   "kind": "speaking_prompt",
+   "en": "You check an empty seat.",
+   "context": "Chỗ này có ai ngồi chưa?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You need a ticket.",
+   "context": "Mua vé ở đâu?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You're waiting at the platform.",
+   "context": "Chuyến tàu tiếp theo chạy lúc mấy giờ?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_transport.6",
+   "kind": "speaking_prompt",
+   "en": "You're in the taxi.",
+   "context": "Làm ơn dừng ở đây.",
+   "have": []
+  },
+  {
+   "key": "p.vi_transport_0",
+   "kind": "phrase",
+   "target": "Xe buýt nào đi trung tâm thành phố?",
+   "tr": "Şehir merkezine hangi otobüs gidiyor?",
+   "en": "Which bus goes to the city center?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_transport_1",
+   "kind": "phrase",
+   "target": "Làm sao để đến sân bay?",
+   "tr": "Havaalanına nasıl gidebilirim?",
+   "en": "How do I get to the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_transport_2",
+   "kind": "phrase",
+   "target": "Tôi sẽ đi bằng taxi.",
+   "tr": "Taksiyle gideceğim.",
+   "en": "I will go by taxi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_transport_3",
+   "kind": "phrase",
+   "target": "Chỗ này có ai ngồi chưa?",
+   "tr": "Bu koltuk dolu mu?",
+   "en": "Is this seat taken?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_transport_4",
+   "kind": "phrase",
+   "target": "Mua vé ở đâu?",
+   "tr": "Bilet nereden alınır?",
+   "en": "Where do I buy a ticket?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_transport_5",
+   "kind": "phrase",
+   "target": "Chuyến tàu tiếp theo chạy lúc mấy giờ?",
+   "tr": "Bir sonraki tren saat kaçta kalkıyor?",
+   "en": "What time does the next train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_transport_6",
+   "kind": "phrase",
+   "target": "Làm ơn dừng ở đây.",
+   "tr": "Lütfen burada durun.",
+   "en": "Please stop here.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency situations",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.vi_emergency",
+   "kind": "grammar_rule",
+   "tr": "Kibarlık işareti \"làm ơn\" (lütfen), istek fiilinin ÖNÜNE gelir.",
+   "en": "The politeness marker \"làm ơn\" (please) comes BEFORE the request verb.",
+   "context": "Làm ơn gọi xe cấp cứu! / ✗ Gọi làm ơn xe cấp cứu!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something just happened.",
+   "context": "Cứu tôi với!",
+   "have": []
+  },
+  {
+   "key": "tp.vi_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Someone is badly hurt.",
+   "context": "Làm ơn gọi xe cấp cứu!",
+   "have": []
+  },
+  {
+   "key": "tp.vi_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You check your bag.",
+   "context": "Tôi bị mất hộ chiếu.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You witness a crime.",
+   "context": "Làm ơn gọi cảnh sát!",
+   "have": []
+  },
+  {
+   "key": "tp.vi_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You need medical help.",
+   "context": "Bệnh viện gần nhất ở đâu?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "Someone asks how you feel.",
+   "context": "Tôi cảm thấy rất khó chịu trong người.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You plead for help.",
+   "context": "Làm ơn, tôi cần giúp đỡ ngay bây giờ.",
+   "have": []
+  },
+  {
+   "key": "p.vi_emergency_0",
+   "kind": "phrase",
+   "target": "Cứu tôi với!",
+   "tr": "İmdat!",
+   "en": "Help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_emergency_1",
+   "kind": "phrase",
+   "target": "Làm ơn gọi xe cấp cứu!",
+   "tr": "Lütfen ambulans çağırın!",
+   "en": "Please call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_emergency_2",
+   "kind": "phrase",
+   "target": "Tôi bị mất hộ chiếu.",
+   "tr": "Pasaportumu kaybettim.",
+   "en": "I lost my passport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_emergency_3",
+   "kind": "phrase",
+   "target": "Làm ơn gọi cảnh sát!",
+   "tr": "Lütfen polisi arayın!",
+   "en": "Call the police, please!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_emergency_4",
+   "kind": "phrase",
+   "target": "Bệnh viện gần nhất ở đâu?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_emergency_5",
+   "kind": "phrase",
+   "target": "Tôi cảm thấy rất khó chịu trong người.",
+   "tr": "Kendimi çok kötü hissediyorum.",
+   "en": "I feel very sick.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_emergency_6",
+   "kind": "phrase",
+   "target": "Làm ơn, tôi cần giúp đỡ ngay bây giờ.",
+   "tr": "Lütfen, şimdi yardıma ihtiyacım var.",
+   "en": "Please, I need help now.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.vi_routine",
+   "kind": "grammar_rule",
+   "tr": "Alışkanlık zarfı \"thường\" (genelde), fiilin ÖNÜNE gelir.",
+   "en": "The habitual adverb \"thường\" (usually) is placed BEFORE the verb.",
+   "context": "Tôi thường dậy lúc sáu giờ. / ✗ Tôi dậy thường lúc sáu giờ.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your morning.",
+   "context": "Tôi thường dậy lúc sáu giờ.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_routine.1",
+   "kind": "speaking_prompt",
+   "en": "You describe your habit.",
+   "context": "Tôi đánh răng trước.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_routine.2",
+   "kind": "speaking_prompt",
+   "en": "You continue the routine.",
+   "context": "Tôi ăn sáng lúc bảy giờ.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_routine.3",
+   "kind": "speaking_prompt",
+   "en": "They ask how you commute.",
+   "context": "Tôi đi làm bằng xe buýt.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_routine.4",
+   "kind": "speaking_prompt",
+   "en": "They ask about lunch.",
+   "context": "Tôi thường ăn trưa lúc giữa trưa.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_routine.5",
+   "kind": "speaking_prompt",
+   "en": "They ask about the evening.",
+   "context": "Sau bữa tối tôi xem TV.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_routine.6",
+   "kind": "speaking_prompt",
+   "en": "They ask when you sleep.",
+   "context": "Tôi đi ngủ lúc mười một giờ.",
+   "have": []
+  },
+  {
+   "key": "p.vi_routine_0",
+   "kind": "phrase",
+   "target": "Tôi thường dậy lúc sáu giờ.",
+   "tr": "Genelde altıda kalkarım.",
+   "en": "I usually wake up at six.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_routine_1",
+   "kind": "phrase",
+   "target": "Tôi đánh răng trước.",
+   "tr": "Önce dişlerimi fırçalarım.",
+   "en": "I brush my teeth first.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_routine_2",
+   "kind": "phrase",
+   "target": "Tôi ăn sáng lúc bảy giờ.",
+   "tr": "Yedide kahvaltı yaparım.",
+   "en": "I have breakfast at seven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_routine_3",
+   "kind": "phrase",
+   "target": "Tôi đi làm bằng xe buýt.",
+   "tr": "İşe otobüsle giderim.",
+   "en": "I go to work by bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_routine_4",
+   "kind": "phrase",
+   "target": "Tôi thường ăn trưa lúc giữa trưa.",
+   "tr": "Genelde öğlen yemek yerim.",
+   "en": "I usually eat lunch at noon.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_routine_5",
+   "kind": "phrase",
+   "target": "Sau bữa tối tôi xem TV.",
+   "tr": "Akşam yemeğinden sonra televizyon izlerim.",
+   "en": "After dinner I watch TV.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_routine_6",
+   "kind": "phrase",
+   "target": "Tôi đi ngủ lúc mười một giờ.",
+   "tr": "On birde yatarım.",
+   "en": "I go to bed at eleven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_past_story",
+   "kind": "scenario_title",
+   "tr": "Geçmişte bir gün",
+   "en": "Telling a story in the past",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.vi_past_story",
+   "kind": "grammar_rule",
+   "tr": "Tamamlanmış geçmişi belirten \"đã\", doğrudan fiilin ÖNÜNE gelir.",
+   "en": "The past marker \"đã\" goes directly BEFORE the verb to mark a completed action.",
+   "context": "Hôm qua tôi đã đi chợ. / ✗ Hôm qua tôi đi đã chợ.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "You start telling a story.",
+   "context": "Hôm qua tôi đã đi chợ.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "Tôi đã mua ít rau.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "Sau đó tôi đã gặp bạn tôi.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "Chúng tôi đã uống cà phê cùng nhau.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "Sau đó tôi đã về nhà.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "Tôi đã nấu bữa tối.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "You finish the story.",
+   "context": "Đó là một ngày tốt lành.",
+   "have": []
+  },
+  {
+   "key": "p.vi_past_story_0",
+   "kind": "phrase",
+   "target": "Hôm qua tôi đã đi chợ.",
+   "tr": "Dün pazara gittim.",
+   "en": "Yesterday I went to the market.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_past_story_1",
+   "kind": "phrase",
+   "target": "Tôi đã mua ít rau.",
+   "tr": "Biraz sebze aldım.",
+   "en": "I bought some vegetables.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_past_story_2",
+   "kind": "phrase",
+   "target": "Sau đó tôi đã gặp bạn tôi.",
+   "tr": "Sonra arkadaşımla buluştum.",
+   "en": "Then I met my friend.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_past_story_3",
+   "kind": "phrase",
+   "target": "Chúng tôi đã uống cà phê cùng nhau.",
+   "tr": "Birlikte kahve içtik.",
+   "en": "We drank coffee together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_past_story_4",
+   "kind": "phrase",
+   "target": "Sau đó tôi đã về nhà.",
+   "tr": "Ondan sonra eve gittim.",
+   "en": "After that I went home.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_past_story_5",
+   "kind": "phrase",
+   "target": "Tôi đã nấu bữa tối.",
+   "tr": "Akşam yemeği pişirdim.",
+   "en": "I cooked dinner.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_past_story_6",
+   "kind": "phrase",
+   "target": "Đó là một ngày tốt lành.",
+   "tr": "Güzel bir gündü.",
+   "en": "It was a good day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "Cho tôi một cà phê.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "Tôi có đặt chỗ.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "Xin lỗi, ga ở đâu?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "Xin chào, tôi tên là Deniz.",
+   "have": []
+  },
+  {
+   "key": "p.vi_a2_route_0",
+   "kind": "phrase",
+   "target": "Cho tôi một cà phê.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_a2_route_1",
+   "kind": "phrase",
+   "target": "Tôi có đặt chỗ.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_a2_route_2",
+   "kind": "phrase",
+   "target": "Xin lỗi, ga ở đâu?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_a2_route_3",
+   "kind": "phrase",
+   "target": "Xin chào, tôi tên là Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.vi_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.vi_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "Có bao gồm bữa sáng không?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "Tôi không hiểu.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "Tôi đang tìm căn hộ.",
+   "have": []
+  },
+  {
+   "key": "tp.vi_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "Tiền thuê bao nhiêu?",
+   "have": []
+  },
+  {
+   "key": "tp.vi_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "Có nhận thẻ không?",
+   "have": []
+  },
+  {
+   "key": "p.vi_b1_solve_0",
+   "kind": "phrase",
+   "target": "Có bao gồm bữa sáng không?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_b1_solve_1",
+   "kind": "phrase",
+   "target": "Tôi không hiểu.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_b1_solve_2",
+   "kind": "phrase",
+   "target": "Tôi đang tìm căn hộ.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_b1_solve_3",
+   "kind": "phrase",
+   "target": "Tiền thuê bao nhiêu?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.vi_b1_solve_4",
+   "kind": "phrase",
+   "target": "Có nhận thẻ không?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "st.vi_river_walk",
+   "kind": "story_title",
+   "target": "Đi dạo bên sông",
+   "tr": "Nehir Kenarında Yürüyüş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_river_walk.0",
+   "kind": "story_sentence",
+   "target": "Mỗi sáng, tôi đi dạo bên sông.",
+   "tr": "Her sabah nehir kenarında yürüyüşe çıkarım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_river_walk.1",
+   "kind": "story_sentence",
+   "target": "Tôi mang theo bình nước và một ít trái cây.",
+   "tr": "Yanıma su şişesi ve biraz meyve alıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_river_walk.2",
+   "kind": "story_sentence",
+   "target": "Sáng sớm, nước sông rất trong.",
+   "tr": "Sabah erken saatlerde nehir suyu çok berrak.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_river_walk.3",
+   "kind": "story_sentence",
+   "target": "Tôi thấy nhiều chim trên cây.",
+   "tr": "Ağaçlarda birçok kuş görüyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_river_walk.4",
+   "kind": "story_sentence",
+   "target": "Đôi khi tôi ngồi và xem cá bơi.",
+   "tr": "Bazen oturup balıkların yüzmese izlerim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_river_walk.5",
+   "kind": "story_sentence",
+   "target": "Tôi rất thích buổi sáng bên sông.",
+   "tr": "Nehir kenarındaki sabahları çok severim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.vi_library",
+   "kind": "story_title",
+   "target": "Góc đọc sách",
+   "tr": "Okuma Köşesi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_library.0",
+   "kind": "story_sentence",
+   "target": "Gần nhà tôi có một thư viện cũ và đẹp.",
+   "tr": "Evinin yakınında eski ve güzel bir kütüphane var.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_library.1",
+   "kind": "story_sentence",
+   "target": "Mỗi chiều, tôi đọc sách ở đó.",
+   "tr": "Her akşam orada kitap okurum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_library.2",
+   "kind": "story_sentence",
+   "target": "Tôi mượn sách tiếng Việt, tiếng Anh và tiếng Pháp.",
+   "tr": "Vietnamca, İngilizce ve Fransızca kitap ödünç alırım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_library.3",
+   "kind": "story_sentence",
+   "target": "Góc đọc gần cửa sổ là chỗ yêu thích của tôi.",
+   "tr": "Pencereye yakın okuma köşesi favorim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_library.4",
+   "kind": "story_sentence",
+   "target": "Ở đó, thời gian trôi rất chậm.",
+   "tr": "Orada zaman çok yavaş akar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_library.5",
+   "kind": "story_sentence",
+   "target": "Thư viện giúp tôi bình yên.",
+   "tr": "Kütüphane beni sakinleştiriyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.vi_pet",
+   "kind": "story_title",
+   "target": "Con mèo của tôi",
+   "tr": "Kedim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_pet.0",
+   "kind": "story_sentence",
+   "target": "Tôi có một con mèo. Tên nó là Tí.",
+   "tr": "Bir kedim var. Adı Tí.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_pet.1",
+   "kind": "story_sentence",
+   "target": "Tí rất thích ngủ trên ghế sofa.",
+   "tr": "Tí koltukta uyumayı çok sever.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_pet.2",
+   "kind": "story_sentence",
+   "target": "Ban ngày nó sưởi nắng trước cửa sổ.",
+   "tr": "Gündüzleri pencere önünde güneşlenir.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_pet.3",
+   "kind": "story_sentence",
+   "target": "Tối tôi cho nó ăn cơm với cá.",
+   "tr": "Akşamları ona balıklı pirinç yerim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_pet.4",
+   "kind": "story_sentence",
+   "target": "Đôi khi nó đuổi theo bướm.",
+   "tr": "Bazen kelebekleri kovalar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.vi_pet.5",
+   "kind": "story_sentence",
+   "target": "Tí là thành viên nhỏ trong gia đình tôi.",
+   "tr": "Tí ailemin küçük üyesi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.A.n",
+   "kind": "alphabet_letter_name",
+   "target": "A",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.A.s",
+   "kind": "alphabet_sound",
+   "target": "A",
+   "tr": "a",
+   "context": "Anh",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.A.m",
+   "kind": "alphabet_example",
+   "target": "Anh",
+   "tr": "Abi / sen (erkek)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Ă.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ă",
+   "tr": "Kısa A",
+   "en": "Short A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.Ă.s",
+   "kind": "alphabet_sound",
+   "target": "Ă",
+   "tr": "ă",
+   "context": "Ăn",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Ă.m",
+   "kind": "alphabet_example",
+   "target": "Ăn",
+   "tr": "Yemek yemek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Â.n",
+   "kind": "alphabet_letter_name",
+   "target": "Â",
+   "tr": "Şapkalı A",
+   "en": "A-circumflex",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.Â.s",
+   "kind": "alphabet_sound",
+   "target": "Â",
+   "tr": "â",
+   "context": "Ấm",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Â.m",
+   "kind": "alphabet_example",
+   "target": "Ấm",
+   "tr": "Sıcak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.B.n",
+   "kind": "alphabet_letter_name",
+   "target": "B",
+   "tr": "Be",
+   "en": "Be",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.B.s",
+   "kind": "alphabet_sound",
+   "target": "B",
+   "tr": "b",
+   "context": "Bàn",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.B.m",
+   "kind": "alphabet_example",
+   "target": "Bàn",
+   "tr": "Masa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.C.n",
+   "kind": "alphabet_letter_name",
+   "target": "C",
+   "tr": "Se",
+   "en": "Se",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.C.s",
+   "kind": "alphabet_sound",
+   "target": "C",
+   "tr": "k",
+   "context": "Cá",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.C.m",
+   "kind": "alphabet_example",
+   "target": "Cá",
+   "tr": "Balık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.D.n",
+   "kind": "alphabet_letter_name",
+   "target": "D",
+   "tr": "De",
+   "en": "De",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.D.s",
+   "kind": "alphabet_sound",
+   "target": "D",
+   "tr": "z/y",
+   "context": "Dao",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.D.m",
+   "kind": "alphabet_example",
+   "target": "Dao",
+   "tr": "Bıçak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Đ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Đ",
+   "tr": "De (çizgili)",
+   "en": "D-bar",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.Đ.s",
+   "kind": "alphabet_sound",
+   "target": "Đ",
+   "tr": "d",
+   "context": "Đèn",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Đ.m",
+   "kind": "alphabet_example",
+   "target": "Đèn",
+   "tr": "Lamba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.E.n",
+   "kind": "alphabet_letter_name",
+   "target": "E",
+   "tr": "E",
+   "en": "E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.E.s",
+   "kind": "alphabet_sound",
+   "target": "E",
+   "tr": "e",
+   "context": "Em",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.E.m",
+   "kind": "alphabet_example",
+   "target": "Em",
+   "tr": "Küçük kardeş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Ê.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ê",
+   "tr": "Şapkalı E",
+   "en": "E-circumflex",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.Ê.s",
+   "kind": "alphabet_sound",
+   "target": "Ê",
+   "tr": "ê",
+   "context": "Êm",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Ê.m",
+   "kind": "alphabet_example",
+   "target": "Êm",
+   "tr": "Yumuşak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.G.n",
+   "kind": "alphabet_letter_name",
+   "target": "G",
+   "tr": "Ge",
+   "en": "Ge",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.G.s",
+   "kind": "alphabet_sound",
+   "target": "G",
+   "tr": "g",
+   "context": "Gà",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.G.m",
+   "kind": "alphabet_example",
+   "target": "Gà",
+   "tr": "Tavuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.H.n",
+   "kind": "alphabet_letter_name",
+   "target": "H",
+   "tr": "Haş",
+   "en": "Hash",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.H.s",
+   "kind": "alphabet_sound",
+   "target": "H",
+   "tr": "h",
+   "context": "Hoa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.H.m",
+   "kind": "alphabet_example",
+   "target": "Hoa",
+   "tr": "Çiçek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.I.n",
+   "kind": "alphabet_letter_name",
+   "target": "I",
+   "tr": "İ kısa",
+   "en": "Short I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.I.s",
+   "kind": "alphabet_sound",
+   "target": "I",
+   "tr": "i",
+   "context": "Ít",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.I.m",
+   "kind": "alphabet_example",
+   "target": "Ít",
+   "tr": "Az",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.K.n",
+   "kind": "alphabet_letter_name",
+   "target": "K",
+   "tr": "Ka",
+   "en": "Ka",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.K.s",
+   "kind": "alphabet_sound",
+   "target": "K",
+   "tr": "k",
+   "context": "Kem",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.K.m",
+   "kind": "alphabet_example",
+   "target": "Kem",
+   "tr": "Dondurma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.L.n",
+   "kind": "alphabet_letter_name",
+   "target": "L",
+   "tr": "El",
+   "en": "El",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.L.s",
+   "kind": "alphabet_sound",
+   "target": "L",
+   "tr": "l",
+   "context": "Lá",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.L.m",
+   "kind": "alphabet_example",
+   "target": "Lá",
+   "tr": "Yaprak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.M.n",
+   "kind": "alphabet_letter_name",
+   "target": "M",
+   "tr": "Em",
+   "en": "Em",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.M.s",
+   "kind": "alphabet_sound",
+   "target": "M",
+   "tr": "m",
+   "context": "Mưa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.M.m",
+   "kind": "alphabet_example",
+   "target": "Mưa",
+   "tr": "Yağmur",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.N.n",
+   "kind": "alphabet_letter_name",
+   "target": "N",
+   "tr": "En",
+   "en": "En",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.N.s",
+   "kind": "alphabet_sound",
+   "target": "N",
+   "tr": "n",
+   "context": "Nước",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.N.m",
+   "kind": "alphabet_example",
+   "target": "Nước",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.O.n",
+   "kind": "alphabet_letter_name",
+   "target": "O",
+   "tr": "O",
+   "en": "O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.O.s",
+   "kind": "alphabet_sound",
+   "target": "O",
+   "tr": "o",
+   "context": "Ong",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.O.m",
+   "kind": "alphabet_example",
+   "target": "Ong",
+   "tr": "Arı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Ô.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ô",
+   "tr": "Şapkalı O",
+   "en": "O-circumflex",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.Ô.s",
+   "kind": "alphabet_sound",
+   "target": "Ô",
+   "tr": "ô",
+   "context": "Ô",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Ô.m",
+   "kind": "alphabet_example",
+   "target": "Ô",
+   "tr": "Şemsiye",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Ơ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ơ",
+   "tr": "Kancalı O",
+   "en": "O-horn",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.Ơ.s",
+   "kind": "alphabet_sound",
+   "target": "Ơ",
+   "tr": "ơ",
+   "context": "Bơ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Ơ.m",
+   "kind": "alphabet_example",
+   "target": "Bơ",
+   "tr": "Tereyağı / avokado",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.P.n",
+   "kind": "alphabet_letter_name",
+   "target": "P",
+   "tr": "Pe",
+   "en": "Pe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.P.s",
+   "kind": "alphabet_sound",
+   "target": "P",
+   "tr": "p",
+   "context": "Pin",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.P.m",
+   "kind": "alphabet_example",
+   "target": "Pin",
+   "tr": "Pil",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Q.n",
+   "kind": "alphabet_letter_name",
+   "target": "Q",
+   "tr": "Ku",
+   "en": "Qu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.Q.s",
+   "kind": "alphabet_sound",
+   "target": "Q",
+   "tr": "k(w)",
+   "context": "Quả",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Q.m",
+   "kind": "alphabet_example",
+   "target": "Quả",
+   "tr": "Meyve",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.R.n",
+   "kind": "alphabet_letter_name",
+   "target": "R",
+   "tr": "Er",
+   "en": "Er",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.R.s",
+   "kind": "alphabet_sound",
+   "target": "R",
+   "tr": "r/z",
+   "context": "Rừng",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.R.m",
+   "kind": "alphabet_example",
+   "target": "Rừng",
+   "tr": "Orman",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.S.n",
+   "kind": "alphabet_letter_name",
+   "target": "S",
+   "tr": "Es",
+   "en": "Es",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.S.s",
+   "kind": "alphabet_sound",
+   "target": "S",
+   "tr": "s",
+   "context": "Sông",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.S.m",
+   "kind": "alphabet_example",
+   "target": "Sông",
+   "tr": "Nehir",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.T.n",
+   "kind": "alphabet_letter_name",
+   "target": "T",
+   "tr": "Te",
+   "en": "Te",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.T.s",
+   "kind": "alphabet_sound",
+   "target": "T",
+   "tr": "t",
+   "context": "Táo",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.T.m",
+   "kind": "alphabet_example",
+   "target": "Táo",
+   "tr": "Elma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.U.n",
+   "kind": "alphabet_letter_name",
+   "target": "U",
+   "tr": "U",
+   "en": "U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.U.s",
+   "kind": "alphabet_sound",
+   "target": "U",
+   "tr": "u",
+   "context": "Út",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.U.m",
+   "kind": "alphabet_example",
+   "target": "Út",
+   "tr": "En küçük çocuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Ư.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ư",
+   "tr": "Kancalı U",
+   "en": "U-horn",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.Ư.s",
+   "kind": "alphabet_sound",
+   "target": "Ư",
+   "tr": "ư",
+   "context": "Ướt",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Ư.m",
+   "kind": "alphabet_example",
+   "target": "Ướt",
+   "tr": "Islak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.V.n",
+   "kind": "alphabet_letter_name",
+   "target": "V",
+   "tr": "Ve",
+   "en": "Ve",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.V.s",
+   "kind": "alphabet_sound",
+   "target": "V",
+   "tr": "v",
+   "context": "Voi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.V.m",
+   "kind": "alphabet_example",
+   "target": "Voi",
+   "tr": "Fil",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.X.n",
+   "kind": "alphabet_letter_name",
+   "target": "X",
+   "tr": "İks",
+   "en": "Iks",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.X.s",
+   "kind": "alphabet_sound",
+   "target": "X",
+   "tr": "s",
+   "context": "Xe",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.X.m",
+   "kind": "alphabet_example",
+   "target": "Xe",
+   "tr": "Araç",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Y.n",
+   "kind": "alphabet_letter_name",
+   "target": "Y",
+   "tr": "İ Grek",
+   "en": "Y",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.vi.Y.s",
+   "kind": "alphabet_sound",
+   "target": "Y",
+   "tr": "i",
+   "context": "Y tá",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.vi.Y.m",
+   "kind": "alphabet_example",
+   "target": "Y tá",
+   "tr": "Hemşire",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.vi.0.h",
+   "kind": "pronunciation_heard",
+   "target": "6 ton",
+   "tr": "6 farklı melodi",
+   "context": "Her ton farklı kelime.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.vi.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "ma, má, mà, mả, mã, mạ",
+   "tr": "altı farklı anlam",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.vi.1.h",
+   "kind": "pronunciation_heard",
+   "target": "ơ",
+   "tr": "ı/ö arası",
+   "context": "Türkçe'de yok.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.vi.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "mơ",
+   "tr": "mơ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.vi.2.h",
+   "kind": "pronunciation_heard",
+   "target": "đ",
+   "tr": "d",
+   "context": "Normal d sesi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.vi.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "đi",
+   "tr": "di",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

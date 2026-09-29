@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/content/clips.dart';
 import '../../data/models/models.dart';
@@ -93,7 +94,7 @@ class _ClipsScreenState extends ConsumerState<ClipsScreen> {
                           style: Theme.of(context).textTheme.titleLarge,
                         ),
                         Text(
-                          '${clips.length} kısa müfredat klibi · kaydırarak ilerle',
+                          i18n.clipsCountHint(clips.length),
                           style: const TextStyle(
                             color: Voxelith.muted,
                             fontSize: 13,
@@ -170,7 +171,7 @@ class _ClipsScreenState extends ConsumerState<ClipsScreen> {
               children: [
                 Semantics(
                   button: true,
-                  label: isPlaying ? 'Klibi durdur' : 'Klibi oynat',
+                  label: isPlaying ? i18n.pauseClip : i18n.playClip,
                   child: InkWell(
                     onTap: () {
                       if (isPlaying) {
@@ -236,7 +237,7 @@ class _ClipsScreenState extends ConsumerState<ClipsScreen> {
                                 const SizedBox(height: 14),
                                 Text(
                                   shadowMode && isPlaying
-                                      ? 'Dinle ve aynı anda tekrar et'
+                                      ? i18n.listenRepeatSimultaneously
                                       : clip.scenario.title(uiLanguage),
                                   style: const TextStyle(
                                     color: Colors.white,
@@ -245,7 +246,7 @@ class _ClipsScreenState extends ConsumerState<ClipsScreen> {
                                 ),
                                 const SizedBox(height: 4),
                                 Text(
-                                  'Müfredat klibi ${clip.position + 1}',
+                                  i18n.curriculumClip(clip.position + 1),
                                   style: const TextStyle(
                                     color: Colors.white60,
                                     fontSize: 12,
@@ -281,7 +282,10 @@ class _ClipsScreenState extends ConsumerState<ClipsScreen> {
                       const SizedBox(height: 8),
                       Text(
                         clip.phrase.glossFor(uiLanguage),
-                        style: const TextStyle(fontSize: 16, color: Voxelith.muted),
+                        style: const TextStyle(
+                          fontSize: 16,
+                          color: Voxelith.muted,
+                        ),
                       ),
                       const SizedBox(height: 22),
                       Row(
@@ -316,9 +320,7 @@ class _ClipsScreenState extends ConsumerState<ClipsScreen> {
                                 .read(sessionProvider.notifier)
                                 .learnPhrase(clip.phrase.id);
                             ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(
-                                content: Text('Kalıp tekrar listene eklendi.'),
-                              ),
+                              SnackBar(content: Text(i18n.phraseAddedToReview)),
                             );
                           },
                           icon: const Icon(Icons.bookmark_add_outlined),

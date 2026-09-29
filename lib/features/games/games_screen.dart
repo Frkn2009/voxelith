@@ -4,6 +4,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/ads/ad_service.dart';
 import '../../data/content/catalog.dart';
@@ -18,6 +20,7 @@ class GamesScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final profile = ref.watch(sessionProvider);
+    final i18n = ref.watch(i18nProvider);
     Future<int> completeGame(int correct, int total) async {
       final earned = await ref
           .read(sessionProvider.notifier)
@@ -31,8 +34,8 @@ class GamesScreen extends ConsumerWidget {
 
     final games = <_GameDefinition>[
       _GameDefinition(
-        'Doğru / Yanlış',
-        'Çeviri eşleşmesini değerlendir',
+        i18n.gameTrueFalse,
+        i18n.gameTrueFalseDesc,
         Icons.rule_rounded,
         Voxelith.mint,
         () => TrueFalseGameScreen(
@@ -43,8 +46,8 @@ class GamesScreen extends ConsumerWidget {
         ),
       ),
       _GameDefinition(
-        'Harf Sıralama',
-        'Karışık harflerden kelime kur',
+        i18n.gameLetterOrder,
+        i18n.gameLetterOrderDesc,
         Icons.sort_by_alpha_rounded,
         Voxelith.sky,
         () => LetterOrderGameScreen(
@@ -55,8 +58,8 @@ class GamesScreen extends ConsumerWidget {
         ),
       ),
       _GameDefinition(
-        'Ses Bulmaca',
-        'Dinle ve dört seçenekten bul',
+        i18n.gameAudioPuzzle,
+        i18n.gameAudioPuzzleDesc,
         Icons.headphones_rounded,
         Voxelith.lavender,
         () => AudioPuzzleScreen(
@@ -67,8 +70,8 @@ class GamesScreen extends ConsumerWidget {
         ),
       ),
       _GameDefinition(
-        'Boşluk Doldur',
-        'Eksik kelimeyi tamamla',
+        i18n.gameFillBlank,
+        i18n.gameFillBlankDesc,
         Icons.edit_note_rounded,
         Voxelith.coral,
         () => FillBlankGameScreen(
@@ -79,8 +82,8 @@ class GamesScreen extends ConsumerWidget {
         ),
       ),
       _GameDefinition(
-        'Zamana Karşı',
-        '60 saniyede en çok doğru',
+        i18n.gameTimed,
+        i18n.gameTimedDesc,
         Icons.timer_outlined,
         Voxelith.sunflower,
         () => TimedGameScreen(
@@ -96,10 +99,13 @@ class GamesScreen extends ConsumerWidget {
       child: ListView(
         padding: const EdgeInsets.fromLTRB(22, 16, 22, 28),
         children: [
-          Text('Oyunlar', style: Theme.of(context).textTheme.displayMedium),
+          Text(
+            i18n.gamesTitle,
+            style: Theme.of(context).textTheme.displayMedium,
+          ),
           const SizedBox(height: 5),
           Text(
-            '${profile.learnLang.flag()} ${profile.learnLang.label(profile.uiLang)} · 5 özgün pratik',
+            '${profile.learnLang.flag()} ${profile.learnLang.label(profile.uiLang)} · ${i18n.gamesSubtitleCount}',
             style: TextStyle(
               color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
@@ -198,6 +204,8 @@ class TrueFalseGameScreen extends StatefulWidget {
 }
 
 class _TrueFalseGameScreenState extends State<TrueFalseGameScreen> {
+  I18n get _i18n => I18n(widget.ui);
+
   final random = Random();
   late final List<Phrase> deck;
   int round = 0;
@@ -238,7 +246,8 @@ class _TrueFalseGameScreenState extends State<TrueFalseGameScreen> {
       if (round == 9) {
         showGameResult(
           context,
-          title: 'Doğru / Yanlış',
+          i18n: _i18n,
+          title: _i18n.gameTrueFalse,
           correct: correct,
           total: 10,
           onComplete: widget.onComplete,
@@ -254,12 +263,12 @@ class _TrueFalseGameScreenState extends State<TrueFalseGameScreen> {
 
   @override
   Widget build(BuildContext context) => _GameScaffold(
-    title: 'Doğru / Yanlış',
+    title: _i18n.gameTrueFalse,
     progress: (round + 1) / 10,
     child: Column(
       children: [
         Text(
-          'Bu çeviri doğru mu?',
+          _i18n.gameIsTranslationRight,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurfaceVariant,
           ),
@@ -279,7 +288,7 @@ class _TrueFalseGameScreenState extends State<TrueFalseGameScreen> {
               child: OutlinedButton.icon(
                 onPressed: answered ? null : () => _answer(false),
                 icon: const Icon(Icons.close_rounded),
-                label: const Text('Yanlış'),
+                label: Text(_i18n.gameFalse),
               ),
             ),
             const SizedBox(width: 12),
@@ -287,7 +296,7 @@ class _TrueFalseGameScreenState extends State<TrueFalseGameScreen> {
               child: FilledButton.icon(
                 onPressed: answered ? null : () => _answer(true),
                 icon: const Icon(Icons.check_rounded),
-                label: const Text('Doğru'),
+                label: Text(_i18n.gameTrue),
               ),
             ),
           ],
@@ -297,8 +306,8 @@ class _TrueFalseGameScreenState extends State<TrueFalseGameScreen> {
           MascotFeedback(
             correct: lastRight,
             message: lastRight
-                ? 'Doğru karar!'
-                : 'Doğrusu: ${phrase.glossFor(widget.ui)}',
+                ? _i18n.gameRightCall
+                : _i18n.gameCorrectIs(phrase.glossFor(widget.ui)),
           ),
         ],
       ],
@@ -324,6 +333,8 @@ class LetterOrderGameScreen extends StatefulWidget {
 }
 
 class _LetterOrderGameScreenState extends State<LetterOrderGameScreen> {
+  I18n get _i18n => I18n(widget.ui);
+
   final random = Random();
   late final List<Phrase> deck;
   int round = 0;
@@ -368,7 +379,8 @@ class _LetterOrderGameScreenState extends State<LetterOrderGameScreen> {
     if (round == 4) {
       showGameResult(
         context,
-        title: 'Harf Sıralama',
+        i18n: _i18n,
+        title: _i18n.gameLetterOrder,
         correct: correct,
         total: 5,
         onComplete: widget.onComplete,
@@ -379,7 +391,9 @@ class _LetterOrderGameScreenState extends State<LetterOrderGameScreen> {
       SnackBar(
         content: MascotFeedback(
           correct: right,
-          message: right ? 'Doğru!' : 'Tekrar dene · $expected',
+          message: right
+              ? _i18n.correctExclaim
+              : '${_i18n.retryCta} · $expected',
         ),
       ),
     );
@@ -393,7 +407,7 @@ class _LetterOrderGameScreenState extends State<LetterOrderGameScreen> {
   Widget build(BuildContext context) {
     final expectedLength = _practiceWord(phrase.target).characters.length;
     return _GameScaffold(
-      title: 'Harf Sıralama',
+      title: _i18n.gameLetterOrder,
       progress: (round + 1) / 5,
       child: Column(
         children: [
@@ -437,7 +451,7 @@ class _LetterOrderGameScreenState extends State<LetterOrderGameScreen> {
           const Spacer(),
           FilledButton(
             onPressed: selected.length == expectedLength ? _check : null,
-            child: const Text('Kontrol et'),
+            child: Text(_i18n.checkCta),
           ),
         ],
       ),
@@ -494,6 +508,8 @@ class AudioPuzzleScreen extends StatefulWidget {
 }
 
 class _AudioPuzzleScreenState extends State<AudioPuzzleScreen> {
+  I18n get _i18n => I18n(widget.ui);
+
   final random = Random();
   final speech = SpeechController();
   late final List<Phrase> deck;
@@ -534,7 +550,8 @@ class _AudioPuzzleScreenState extends State<AudioPuzzleScreen> {
       if (round == 9) {
         showGameResult(
           context,
-          title: 'Ses Bulmaca',
+          i18n: _i18n,
+          title: _i18n.gameAudioPuzzle,
           correct: correct,
           total: 10,
           onComplete: widget.onComplete,
@@ -556,12 +573,12 @@ class _AudioPuzzleScreenState extends State<AudioPuzzleScreen> {
 
   @override
   Widget build(BuildContext context) => _GameScaffold(
-    title: 'Ses Bulmaca',
+    title: _i18n.gameAudioPuzzle,
     progress: (round + 1) / 10,
     child: Column(
       children: [
         Text(
-          'Cümleyi dinle ve anlamını seç',
+          _i18n.gameListenPick,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurfaceVariant,
           ),
@@ -569,7 +586,7 @@ class _AudioPuzzleScreenState extends State<AudioPuzzleScreen> {
         const SizedBox(height: 24),
         Semantics(
           button: true,
-          label: 'Sesi oynat',
+          label: _i18n.playAudio,
           child: InkWell(
             onTap: _play,
             borderRadius: BorderRadius.circular(Voxelith.radiusLg),
@@ -604,8 +621,8 @@ class _AudioPuzzleScreenState extends State<AudioPuzzleScreen> {
           MascotFeedback(
             correct: lastRight,
             message: lastRight
-                ? 'Harika dinledin!'
-                : 'Voxelith: dinledikçe daha net olacak.',
+                ? _i18n.gameGreatListening
+                : _i18n.gameListeningEncourage,
           ),
       ],
     ),
@@ -630,6 +647,8 @@ class FillBlankGameScreen extends StatefulWidget {
 }
 
 class _FillBlankGameScreenState extends State<FillBlankGameScreen> {
+  I18n get _i18n => I18n(widget.ui);
+
   final controller = TextEditingController();
   late final List<Phrase> deck;
   int round = 0;
@@ -673,7 +692,8 @@ class _FillBlankGameScreenState extends State<FillBlankGameScreen> {
     if (round == 4) {
       showGameResult(
         context,
-        title: 'Boşluk Doldur',
+        i18n: _i18n,
+        title: _i18n.gameFillBlank,
         correct: correct,
         total: 5,
         onComplete: widget.onComplete,
@@ -684,7 +704,7 @@ class _FillBlankGameScreenState extends State<FillBlankGameScreen> {
       SnackBar(
         content: MascotFeedback(
           correct: right,
-          message: right ? 'Doğru!' : 'Tekrar dene · $answer',
+          message: right ? _i18n.correctExclaim : '${_i18n.retryCta} · $answer',
         ),
       ),
     );
@@ -702,7 +722,7 @@ class _FillBlankGameScreenState extends State<FillBlankGameScreen> {
 
   @override
   Widget build(BuildContext context) => _GameScaffold(
-    title: 'Boşluk Doldur',
+    title: _i18n.gameFillBlank,
     progress: (round + 1) / 5,
     child: Column(
       children: [
@@ -726,10 +746,10 @@ class _FillBlankGameScreenState extends State<FillBlankGameScreen> {
           textAlign: TextAlign.center,
           autocorrect: false,
           onSubmitted: (_) => _check(),
-          decoration: const InputDecoration(hintText: 'Eksik kelime'),
+          decoration: InputDecoration(hintText: _i18n.missingWordHint),
         ),
         const Spacer(),
-        FilledButton(onPressed: _check, child: const Text('Kontrol et')),
+        FilledButton(onPressed: _check, child: Text(_i18n.checkCta)),
       ],
     ),
   );
@@ -753,6 +773,8 @@ class TimedGameScreen extends StatefulWidget {
 }
 
 class _TimedGameScreenState extends State<TimedGameScreen> {
+  I18n get _i18n => I18n(widget.ui);
+
   final random = Random();
   late final List<Phrase> deck;
   Timer? timer;
@@ -775,7 +797,8 @@ class _TimedGameScreenState extends State<TimedGameScreen> {
         setState(() => seconds = 0);
         showGameResult(
           context,
-          title: 'Zamana Karşı',
+          i18n: _i18n,
+          title: _i18n.gameTimed,
           correct: correct,
           total: total,
           onComplete: widget.onComplete,
@@ -809,13 +832,13 @@ class _TimedGameScreenState extends State<TimedGameScreen> {
 
   @override
   Widget build(BuildContext context) => _GameScaffold(
-    title: 'Zamana Karşı · ${seconds}s',
+    title: '${_i18n.gameTimed} · ${seconds}s',
     progress: seconds / 60,
-    trailing: '$correct doğru',
+    trailing: _i18n.gameCorrectCount(correct),
     child: Column(
       children: [
         Text(
-          'Doğru çeviriyi seç',
+          _i18n.gamePickCorrectTranslation,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurfaceVariant,
           ),
@@ -933,6 +956,7 @@ class _PromptCard extends StatelessWidget {
 
 Future<void> showGameResult(
   BuildContext context, {
+  required I18n i18n,
   required String title,
   required int correct,
   required int total,
@@ -965,7 +989,7 @@ Future<void> showGameResult(
           ),
           const SizedBox(height: 6),
           Text(
-            '$correct / $total doğru',
+            i18n.gameCorrectOfTotal(correct, total),
             style: TextStyle(
               color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
@@ -986,7 +1010,7 @@ Future<void> showGameResult(
             Navigator.of(dialogContext).pop();
             Navigator.of(context).pop();
           },
-          child: const Text('Tamam'),
+          child: Text(i18n.commonOk),
         ),
       ],
     ),

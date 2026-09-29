@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/content/catalog.dart';
 import '../../data/models/models.dart';
@@ -43,13 +44,13 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
       appBar: VoxelithAppBar(pageTitle: Text(i18n.review)),
       body: SafeArea(
         child: due.isEmpty
-            ? const Center(
+            ? Center(
                 child: Padding(
-                  padding: EdgeInsets.all(32),
+                  padding: const EdgeInsets.all(32),
                   child: Text(
-                    'Bugün tekrar yok. Konuş, kalıp biriksin.',
+                    i18n.reviewEmpty,
                     textAlign: TextAlign.center,
-                    style: TextStyle(color: Voxelith.muted, fontSize: 16),
+                    style: const TextStyle(color: Voxelith.muted, fontSize: 16),
                   ),
                 ),
               )
@@ -80,9 +81,10 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
                             const SizedBox(height: 22),
                             if (revealed)
                               Directionality(
-                                textDirection: _isRtlPhrase(
-                                  due[i.clamp(0, due.length - 1)].id,
-                                )
+                                textDirection:
+                                    _isRtlPhrase(
+                                      due[i.clamp(0, due.length - 1)].id,
+                                    )
                                     ? TextDirection.rtl
                                     : TextDirection.ltr,
                                 child: Text(
@@ -97,10 +99,7 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
                               )
                             else
                               Text(
-                                i18n.holdToSpeak.replaceFirst(
-                                  'Konuşmak için basılı tut',
-                                  'Söyle, sonra aç',
-                                ),
+                                i18n.reviewSayThenReveal,
                                 style: const TextStyle(color: Voxelith.soft),
                               ),
                           ],
@@ -110,7 +109,7 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
                     const SizedBox(height: 16),
                     if (!revealed)
                       ForestButton(
-                        label: 'Cevabı göster',
+                        label: i18n.showAnswer,
                         onPressed: () => setState(() => revealed = true),
                       )
                     else
@@ -119,21 +118,21 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
                           Expanded(
                             child: OutlinedButton(
                               onPressed: () => _grade(due, 0),
-                              child: const Text('Tekrar'),
+                              child: Text(i18n.gradeAgain),
                             ),
                           ),
                           const SizedBox(width: 8),
                           Expanded(
                             child: OutlinedButton(
                               onPressed: () => _grade(due, 3),
-                              child: const Text('İyi'),
+                              child: Text(i18n.gradeGood),
                             ),
                           ),
                           const SizedBox(width: 8),
                           Expanded(
                             child: FilledButton(
                               onPressed: () => _grade(due, 5),
-                              child: const Text('Kolay'),
+                              child: Text(i18n.gradeEasy),
                             ),
                           ),
                         ],

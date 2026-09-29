@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/ads/ad_service.dart';
 import '../../data/models/models.dart';
@@ -35,11 +36,12 @@ class _AdGateScreenState extends ConsumerState<AdGateScreen> {
     final earned = await AdService.showRewarded();
     if (!mounted) return;
     if (!earned) {
+      final i18n = ref.read(i18nProvider);
       setState(() {
         loading = false;
         error = AdService.supported
-            ? 'Reklam tamamlanmadı. Ödül için videoyu sonuna kadar izle.'
-            : 'Video reklamlar telefonda çalışır. Web’de Plus seçeneğini kullanabilirsin.';
+            ? i18n.adNotCompletedWatchToEnd
+            : i18n.adsPhoneOnlyWebPlus;
       });
       return;
     }
@@ -52,7 +54,7 @@ class _AdGateScreenState extends ConsumerState<AdGateScreen> {
     final i18n = ref.watch(i18nProvider);
     final profile = ref.watch(sessionProvider);
     return Scaffold(
-      appBar: VoxelithAppBar(pageTitle: const Text('Ödüllü video')),
+      appBar: VoxelithAppBar(pageTitle: Text(i18n.rewardedVideo)),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.fromLTRB(22, 18, 22, 28),
@@ -75,8 +77,8 @@ class _AdGateScreenState extends ConsumerState<AdGateScreen> {
                         const SizedBox(height: 8),
                         Text(
                           profile.speakSecondsUsed >= 30
-                              ? 'Hay aksi, bugünkü hakkın bitti! Devam etmek için kısa bir video izle ve ödülünü seç, ya da Plus ile sınırları tamamen kaldır.'
-                              : 'Kısa bir video izle ve ödülünü seç. Plus üyeler hiçbir video reklam görmez.',
+                              ? i18n.adGateOutOfTime
+                              : i18n.adGateIntro,
                           style: const TextStyle(
                             color: Voxelith.cream,
                             fontSize: 18,
@@ -92,23 +94,27 @@ class _AdGateScreenState extends ConsumerState<AdGateScreen> {
             const SizedBox(height: 18),
             Text(
               profile.canWatchAd
-                  ? 'Bugün kalan video: ${UserProfile.maxRewardedAdsPerDay - profile.adsWatchedToday} / ${UserProfile.maxRewardedAdsPerDay}'
-                  : 'Bugünkü 5 video sınırına ulaştın.',
+                  ? i18n.videosLeftToday(
+                      UserProfile.maxRewardedAdsPerDay -
+                          profile.adsWatchedToday,
+                      UserProfile.maxRewardedAdsPerDay,
+                    )
+                  : i18n.dailyVideoLimitReached,
               style: TextStyle(
                 color: Theme.of(context).colorScheme.onSurfaceVariant,
               ),
             ),
             const SizedBox(height: 20),
-            const Eyebrow('Ödülünü seç'),
+            Eyebrow(i18n.chooseReward),
             const SizedBox(height: 8),
             SegmentedButton<AdReward>(
-              segments: const [
+              segments: [
                 ButtonSegment(
                   value: AdReward.speakTime,
-                  icon: Icon(Icons.mic_none),
-                  label: Text('+30 sn konuşma'),
+                  icon: const Icon(Icons.mic_none),
+                  label: Text(i18n.rewardSpeakSeconds),
                 ),
-                ButtonSegment(
+                const ButtonSegment(
                   value: AdReward.xp,
                   icon: Icon(Icons.bolt),
                   label: Text('+20 XP'),
@@ -141,8 +147,8 @@ class _AdGateScreenState extends ConsumerState<AdGateScreen> {
               ),
               label: Text(
                 loading
-                    ? 'Video hazırlanıyor…'
-                    : (profile.canWatchAd ? 'Videoyu izle' : 'Plus’a geç'),
+                    ? i18n.videoPreparing
+                    : (profile.canWatchAd ? i18n.watchVideo : i18n.goPlusCta),
               ),
             ),
             const SizedBox(height: 10),

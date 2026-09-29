@@ -1,19 +1,20 @@
 import '../models/models.dart';
 
-/// A2/B1 çalışma paketlerini mevcut, insan tarafından doğrulanmış cümlelerden
-/// üretir. Yeni çeviri uydurmak yerine bilişsel zorluğu cümleleri daha uzun,
-/// bağlantılı görevlerde birleştirerek yükseltir.
+/// A1 cümlelerini karışık sırayla tekrar ettiren iki paket üretir. Yeni
+/// içerik değildir; bu yüzden A1 olarak ve "tekrar" adıyla işaretlenir
+/// (eskiden A2/B1 etiketliydi — yanıltıcıydı). Kimlikler değişmedi, kullanıcı
+/// ilerlemesi korunur. Gerçek A2+ içerik: docs/AI_ICERIK_PROMPTLARI.md.
 class IntermediateCatalog {
   static List<Scenario> build(LearnLang language, List<Scenario> foundation) {
     if (foundation.length < 6) return const [];
     return [
       _scenario(
         language: language,
-        level: Cefr.a2,
+        level: Cefr.a1,
         suffix: 'a2_route',
         minutes: 9,
-        titleTr: 'Bağlantılı günlük işler',
-        titleEn: 'Connected daily tasks',
+        titleTr: 'Karışık tekrar 1',
+        titleEn: 'Mixed review 1',
         sources: [
           foundation[0].phrases[0],
           foundation[1].phrases[0],
@@ -29,11 +30,11 @@ class IntermediateCatalog {
       ),
       _scenario(
         language: language,
-        level: Cefr.b1,
+        level: Cefr.a1,
         suffix: 'b1_solve',
         minutes: 12,
-        titleTr: 'Sorun çözme konuşması',
-        titleEn: 'Problem-solving conversation',
+        titleTr: 'Karışık tekrar 2',
+        titleEn: 'Mixed review 2',
         sources: [
           foundation[1].phrases[1],
           foundation[2].phrases[2],

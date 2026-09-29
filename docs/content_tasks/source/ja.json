@@ -1,0 +1,4894 @@
+{
+ "lang": "ja",
+ "scenarios": [
+  {
+   "id": "ja_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "ja_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "ja_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "ja_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "ja_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "ja_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "ja_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "ja_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "ja_intro",
+   "cefr": "a1",
+   "title": "Meeting someone"
+  },
+  {
+   "id": "ja_shopping",
+   "cefr": "a1",
+   "title": "Clothes shopping"
+  },
+  {
+   "id": "ja_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers & time"
+  },
+  {
+   "id": "ja_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "ja_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "ja_transport",
+   "cefr": "a1",
+   "title": "Getting around"
+  },
+  {
+   "id": "ja_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "ja_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "ja_past_story",
+   "cefr": "a1",
+   "title": "Telling a past event"
+  },
+  {
+   "id": "ja_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "ja_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  },
+  {
+   "id": "ja_exp_job_interview",
+   "cefr": "b1",
+   "title": "Job interview"
+  },
+  {
+   "id": "ja_exp_team_meeting",
+   "cefr": "b1",
+   "title": "Team meeting"
+  },
+  {
+   "id": "ja_exp_bank",
+   "cefr": "a2",
+   "title": "Bank account"
+  },
+  {
+   "id": "ja_exp_apartment",
+   "cefr": "a2",
+   "title": "Apartment viewing"
+  },
+  {
+   "id": "ja_exp_doctor",
+   "cefr": "a2",
+   "title": "At the doctor's"
+  },
+  {
+   "id": "ja_exp_business_lunch",
+   "cefr": "b1",
+   "title": "Business lunch"
+  },
+  {
+   "id": "ja_exp_complaint",
+   "cefr": "b1",
+   "title": "Complaint"
+  },
+  {
+   "id": "ja_exp_business_trip",
+   "cefr": "a2",
+   "title": "Business trip"
+  },
+  {
+   "id": "ja_exp_client_call",
+   "cefr": "b1",
+   "title": "Client phone call"
+  },
+  {
+   "id": "ja_exp_hr_salary",
+   "cefr": "b2",
+   "title": "Salary conversation"
+  },
+  {
+   "id": "ja_exp_daily_errands",
+   "cefr": "a2",
+   "title": "Errands and deliveries"
+  },
+  {
+   "id": "ja_exp_networking",
+   "cefr": "b1",
+   "title": "Networking"
+  }
+ ],
+ "stories": [
+  {
+   "id": "ja_weekend",
+   "level": "a1",
+   "title": "週末"
+  },
+  {
+   "id": "ja_my_job",
+   "level": "a1",
+   "title": "私の仕事"
+  },
+  {
+   "id": "ja_weather",
+   "level": "a1",
+   "title": "天気"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.ja_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "コーヒーをお願いします。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "いくらですか？",
+   "have": []
+  },
+  {
+   "key": "p.ja_cafe_0",
+   "kind": "phrase",
+   "target": "コーヒーをお願いします。",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_cafe_1",
+   "kind": "phrase",
+   "target": "いくらですか？",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_cafe_2",
+   "kind": "phrase",
+   "target": "ありがとうございます。",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "予約があります。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "朝食は含まれていますか？",
+   "have": []
+  },
+  {
+   "key": "p.ja_hotel_0",
+   "kind": "phrase",
+   "target": "予約があります。",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_hotel_1",
+   "kind": "phrase",
+   "target": "朝食は含まれていますか？",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_hotel_2",
+   "kind": "phrase",
+   "target": "ありがとうございます。",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "すみません、駅はどこですか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "ありがとうございます。",
+   "have": []
+  },
+  {
+   "key": "p.ja_dir_0",
+   "kind": "phrase",
+   "target": "すみません、駅はどこですか？",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_dir_1",
+   "kind": "phrase",
+   "target": "ありがとうございます。",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_dir_2",
+   "kind": "phrase",
+   "target": "分かりません。",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "こんにちは、デニズです。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "トルコから来ました。",
+   "have": []
+  },
+  {
+   "key": "p.ja_hi_0",
+   "kind": "phrase",
+   "target": "こんにちは、デニズです。",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_hi_1",
+   "kind": "phrase",
+   "target": "トルコから来ました。",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_hi_2",
+   "kind": "phrase",
+   "target": "ありがとうございます。",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "アパートを探しています。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "家賃はいくらですか？",
+   "have": []
+  },
+  {
+   "key": "p.ja_flat_0",
+   "kind": "phrase",
+   "target": "アパートを探しています。",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_flat_1",
+   "kind": "phrase",
+   "target": "家賃はいくらですか？",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_flat_2",
+   "kind": "phrase",
+   "target": "助けていただけますか？",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "これはいくらですか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "これをください。",
+   "have": []
+  },
+  {
+   "key": "p.ja_shop_0",
+   "kind": "phrase",
+   "target": "これはいくらですか？",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_shop_1",
+   "kind": "phrase",
+   "target": "これをください。",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_shop_2",
+   "kind": "phrase",
+   "target": "カードは使えますか？",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "お会計をお願いします。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "一緒に支払いたいです。",
+   "have": []
+  },
+  {
+   "key": "p.ja_bill_0",
+   "kind": "phrase",
+   "target": "お会計をお願いします。",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_bill_1",
+   "kind": "phrase",
+   "target": "一緒に支払いたいです。",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_bill_2",
+   "kind": "phrase",
+   "target": "おつりは結構です。",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "予約があります。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "窓側の席をお願いします。",
+   "have": []
+  },
+  {
+   "key": "p.ja_airport_0",
+   "kind": "phrase",
+   "target": "予約があります。",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_airport_1",
+   "kind": "phrase",
+   "target": "窓側の席をお願いします。",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_airport_2",
+   "kind": "phrase",
+   "target": "これは搭乗の列ですか？",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Meeting someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_intro",
+   "kind": "grammar_rule",
+   "tr": "は konuyu işaretler (kim/ne hakkında konuştuğunu belirtir); nesne işareti を ile karıştırma.",
+   "en": "は (wa) marks the topic — what you're talking about; don't confuse it with the object particle を (o).",
+   "context": "わたしはデニズです。 / ✗ わたしをデニズです。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_intro.0",
+   "kind": "speaking_prompt",
+   "en": "A stranger smiles and greets you.",
+   "context": "こんにちは、はじめまして。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_intro.1",
+   "kind": "speaking_prompt",
+   "en": "They wait for your name.",
+   "context": "わたしはデニズです。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_intro.2",
+   "kind": "speaking_prompt",
+   "en": "You want to know their name too.",
+   "context": "お名前は何ですか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_intro.3",
+   "kind": "speaking_prompt",
+   "en": "You are curious where they are from.",
+   "context": "どちらの出身ですか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask where you are from.",
+   "context": "トルコから来ました。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You want to know their job.",
+   "context": "お仕事は何ですか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_intro.6",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do.",
+   "context": "学生です。",
+   "have": []
+  },
+  {
+   "key": "p.ja_intro_0",
+   "kind": "phrase",
+   "target": "こんにちは、はじめまして。",
+   "tr": "Merhaba, tanıştığımıza memnun oldum.",
+   "en": "Hi, nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_intro_1",
+   "kind": "phrase",
+   "target": "わたしはデニズです。",
+   "tr": "Adım Deniz.",
+   "en": "My name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_intro_2",
+   "kind": "phrase",
+   "target": "お名前は何ですか？",
+   "tr": "Adınız ne?",
+   "en": "What's your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_intro_3",
+   "kind": "phrase",
+   "target": "どちらの出身ですか？",
+   "tr": "Nerelisiniz?",
+   "en": "Where are you from?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_intro_4",
+   "kind": "phrase",
+   "target": "トルコから来ました。",
+   "tr": "Türkiye'den geldim.",
+   "en": "I'm from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_intro_5",
+   "kind": "phrase",
+   "target": "お仕事は何ですか？",
+   "tr": "Ne iş yapıyorsunuz?",
+   "en": "What do you do for work?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_intro_6",
+   "kind": "phrase",
+   "target": "学生です。",
+   "tr": "Öğrenciyim.",
+   "en": "I'm a student.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_shopping",
+   "kind": "scenario_title",
+   "tr": "Kıyafet alışverişi",
+   "en": "Clothes shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_shopping",
+   "kind": "grammar_rule",
+   "tr": "を, ください'den (lütfen verin) önceki istenen şeyi işaretler.",
+   "en": "を (o) marks the thing you're asking for right before ください ('please give me').",
+   "context": "これをください。 / ✗ これはください。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You are looking at a shirt.",
+   "context": "すみません、これは他の色がありますか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "You like the shirt.",
+   "context": "試着してもいいですか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want to try it on.",
+   "context": "試着室はどこですか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "It does not fit.",
+   "context": "もっと小さいサイズはありますか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You decide to buy it.",
+   "context": "これをください。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You are ready to pay.",
+   "context": "カードは使えますか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You need proof of purchase.",
+   "context": "レシートをください。",
+   "have": []
+  },
+  {
+   "key": "p.ja_shopping_0",
+   "kind": "phrase",
+   "target": "すみません、これは他の色がありますか？",
+   "tr": "Affedersiniz, bunun başka rengi var mı?",
+   "en": "Excuse me, does this come in another color?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_shopping_1",
+   "kind": "phrase",
+   "target": "試着してもいいですか？",
+   "tr": "Deneyebilir miyim?",
+   "en": "May I try it on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_shopping_2",
+   "kind": "phrase",
+   "target": "試着室はどこですか？",
+   "tr": "Deneme kabini nerede?",
+   "en": "Where is the fitting room?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_shopping_3",
+   "kind": "phrase",
+   "target": "もっと小さいサイズはありますか？",
+   "tr": "Daha küçük beden var mı?",
+   "en": "Do you have a smaller size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_shopping_4",
+   "kind": "phrase",
+   "target": "これをください。",
+   "tr": "Bunu alayım.",
+   "en": "I'll take this, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_shopping_5",
+   "kind": "phrase",
+   "target": "カードは使えますか？",
+   "tr": "Kartla ödeyebilir miyim?",
+   "en": "Can I use a card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_shopping_6",
+   "kind": "phrase",
+   "target": "レシートをください。",
+   "tr": "Fiş alabilir miyim?",
+   "en": "Receipt, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers & time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "に, saat gibi belirli bir zaman noktasına eklenir (\"bugün\" gibi göreceli zaman kelimelerine değil).",
+   "en": "に (ni) attaches to a specific clock time ('at 9 o'clock'), but not to relative time words like 'today'.",
+   "context": "九時半に出ます。 / ✗ 九時半で出ます。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You check your watch.",
+   "context": "今何時ですか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks the time.",
+   "context": "三時です。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "You are at the station.",
+   "context": "電車は何時に出ますか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "The clerk checks the schedule.",
+   "context": "九時半に出ます。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "You are planning to meet a friend.",
+   "context": "夜七時に会いましょう。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "The cashier tells you the total.",
+   "context": "全部で二十ドルです。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You are running late.",
+   "context": "十分で着きます。",
+   "have": []
+  },
+  {
+   "key": "p.ja_numbers_time_0",
+   "kind": "phrase",
+   "target": "今何時ですか？",
+   "tr": "Saat kaç?",
+   "en": "What time is it now?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_numbers_time_1",
+   "kind": "phrase",
+   "target": "三時です。",
+   "tr": "Saat üç.",
+   "en": "It's three o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_numbers_time_2",
+   "kind": "phrase",
+   "target": "電車は何時に出ますか？",
+   "tr": "Tren saat kaçta kalkıyor?",
+   "en": "What time does the train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_numbers_time_3",
+   "kind": "phrase",
+   "target": "九時半に出ます。",
+   "tr": "Dokuz buçukta kalkıyor.",
+   "en": "It leaves at nine thirty.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_numbers_time_4",
+   "kind": "phrase",
+   "target": "夜七時に会いましょう。",
+   "tr": "Akşam yedide buluşalım.",
+   "en": "Let's meet at seven in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_numbers_time_5",
+   "kind": "phrase",
+   "target": "全部で二十ドルです。",
+   "tr": "Toplam yirmi dolar.",
+   "en": "That's twenty dollars in total.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_numbers_time_6",
+   "kind": "phrase",
+   "target": "十分で着きます。",
+   "tr": "On dakikaya varırım.",
+   "en": "I'll arrive in ten minutes.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_family",
+   "kind": "grammar_rule",
+   "tr": "Aile üyeleri/insanlar için います kullanılır, cansız nesneler için あります değil.",
+   "en": "Use います (imasu) for people/animate beings, not あります (arimasu), which is for inanimate things.",
+   "context": "兄が二人います。 / ✗ 兄が二人あります。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a photo.",
+   "context": "これは私の家族です。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_family.1",
+   "kind": "speaking_prompt",
+   "en": "They ask about your siblings.",
+   "context": "兄が二人います。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_family.2",
+   "kind": "speaking_prompt",
+   "en": "They ask about your mother.",
+   "context": "母は先生です。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_family.3",
+   "kind": "speaking_prompt",
+   "en": "They ask about your father.",
+   "context": "父は病院で働いています。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_family.4",
+   "kind": "speaking_prompt",
+   "en": "You ask them the same question.",
+   "context": "兄弟はいますか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask your place in the family.",
+   "context": "家族の中で一番下です。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_family.6",
+   "kind": "speaking_prompt",
+   "en": "They ask who else lives with you.",
+   "context": "祖母は私たちと一緒に住んでいます。",
+   "have": []
+  },
+  {
+   "key": "p.ja_family_0",
+   "kind": "phrase",
+   "target": "これは私の家族です。",
+   "tr": "Bu benim ailem.",
+   "en": "This is my family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_family_1",
+   "kind": "phrase",
+   "target": "兄が二人います。",
+   "tr": "İki abim var.",
+   "en": "I have two older brothers.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_family_2",
+   "kind": "phrase",
+   "target": "母は先生です。",
+   "tr": "Annem öğretmen.",
+   "en": "My mother is a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_family_3",
+   "kind": "phrase",
+   "target": "父は病院で働いています。",
+   "tr": "Babam hastanede çalışıyor.",
+   "en": "My father works at a hospital.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_family_4",
+   "kind": "phrase",
+   "target": "兄弟はいますか？",
+   "tr": "Kardeşin var mı?",
+   "en": "Do you have any siblings?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_family_5",
+   "kind": "phrase",
+   "target": "家族の中で一番下です。",
+   "tr": "Ailede en küçüğüyüm.",
+   "en": "I'm the youngest in the family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_family_6",
+   "kind": "phrase",
+   "target": "祖母は私たちと一緒に住んでいます。",
+   "tr": "Büyükannem bizimle yaşıyor.",
+   "en": "My grandmother lives with us.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_weather",
+   "kind": "grammar_rule",
+   "tr": "い ile biten bir sıfatı \"oluyor\" anlamına getirmek için い'yi düşürüp くなります eklenir.",
+   "en": "To say an i-adjective 'is becoming ___', drop the final い and add くなります.",
+   "context": "暑くなります。 / ✗ 暑いになります。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You look outside.",
+   "context": "今日の天気はどうですか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You check the sky.",
+   "context": "今日は晴れです。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You hear rain outside.",
+   "context": "外は雨が降っています。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You feel a chill.",
+   "context": "今朝はとても寒いです。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You check tomorrow's forecast.",
+   "context": "明日は暑くなりますか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_weather.5",
+   "kind": "speaking_prompt",
+   "en": "A friend is leaving without a coat.",
+   "context": "傘を持って行ってください、雨が降るかもしれません。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_weather.6",
+   "kind": "speaking_prompt",
+   "en": "They ask about your favorite weather.",
+   "context": "晴れの日が好きです。",
+   "have": []
+  },
+  {
+   "key": "p.ja_weather_0",
+   "kind": "phrase",
+   "target": "今日の天気はどうですか？",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_weather_1",
+   "kind": "phrase",
+   "target": "今日は晴れです。",
+   "tr": "Bugün güneşli.",
+   "en": "It's sunny today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_weather_2",
+   "kind": "phrase",
+   "target": "外は雨が降っています。",
+   "tr": "Dışarıda yağmur yağıyor.",
+   "en": "It's raining outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_weather_3",
+   "kind": "phrase",
+   "target": "今朝はとても寒いです。",
+   "tr": "Bu sabah çok soğuk.",
+   "en": "It's very cold this morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_weather_4",
+   "kind": "phrase",
+   "target": "明日は暑くなりますか？",
+   "tr": "Yarın sıcak olacak mı?",
+   "en": "Will it get hot tomorrow?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_weather_5",
+   "kind": "phrase",
+   "target": "傘を持って行ってください、雨が降るかもしれません。",
+   "tr": "Şemsiye götürün, yağmur yağabilir.",
+   "en": "Take an umbrella, it might rain.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_weather_6",
+   "kind": "phrase",
+   "target": "晴れの日が好きです。",
+   "tr": "Güneşli günleri severim.",
+   "en": "I like sunny days.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Getting around",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_transport",
+   "kind": "grammar_rule",
+   "tr": "乗ります (binmek) fiiliyle bindiğin aracı işaretlemek için に kullanılır, を değil.",
+   "en": "With 乗ります (noru, 'to ride'), mark the vehicle you board with に, not を.",
+   "context": "バスに乗ります。 / ✗ バスを乗ります。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You are lost downtown.",
+   "context": "すみません、中心部までどう行きますか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_transport.1",
+   "kind": "speaking_prompt",
+   "en": "They ask how you get to work.",
+   "context": "バスに乗って会社に行きます。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You need the subway.",
+   "context": "一番近い地下鉄の駅はどこですか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_transport.3",
+   "kind": "speaking_prompt",
+   "en": "A bus pulls up.",
+   "context": "このバスは空港に行きますか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You are at the ticket counter.",
+   "context": "中央駅までの切符を一枚ください。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You want to catch the last train.",
+   "context": "最終電車は何時に出ますか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_transport.6",
+   "kind": "speaking_prompt",
+   "en": "A friend offers you a ride.",
+   "context": "近いので歩いて行きます。",
+   "have": []
+  },
+  {
+   "key": "p.ja_transport_0",
+   "kind": "phrase",
+   "target": "すみません、中心部までどう行きますか？",
+   "tr": "Affedersiniz, şehir merkezine nasıl gidilir?",
+   "en": "Excuse me, how do I get downtown?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_transport_1",
+   "kind": "phrase",
+   "target": "バスに乗って会社に行きます。",
+   "tr": "İşe otobüsle giderim.",
+   "en": "I take the bus to work.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_transport_2",
+   "kind": "phrase",
+   "target": "一番近い地下鉄の駅はどこですか？",
+   "tr": "En yakın metro istasyonu nerede?",
+   "en": "Where's the nearest subway station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_transport_3",
+   "kind": "phrase",
+   "target": "このバスは空港に行きますか？",
+   "tr": "Bu otobüs havaalanına gidiyor mu?",
+   "en": "Does this bus go to the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_transport_4",
+   "kind": "phrase",
+   "target": "中央駅までの切符を一枚ください。",
+   "tr": "Merkez istasyona bir bilet, lütfen.",
+   "en": "One ticket to the central station, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_transport_5",
+   "kind": "phrase",
+   "target": "最終電車は何時に出ますか？",
+   "tr": "Son tren saat kaçta kalkıyor?",
+   "en": "What time does the last train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_transport_6",
+   "kind": "phrase",
+   "target": "近いので歩いて行きます。",
+   "tr": "Yakın olduğu için yürüyerek gidiyorum.",
+   "en": "It's close, so I'll walk.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_emergency",
+   "kind": "grammar_rule",
+   "tr": "Rica etmek için fiilin て-hali + ください kullanılır, ます-hali değil.",
+   "en": "To make a polite request, use the verb's て-form + ください, not the ます-form.",
+   "context": "呼んでください。 / ✗ 呼びますください。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something dangerous just happened.",
+   "context": "助けて！",
+   "have": []
+  },
+  {
+   "key": "tp.ja_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Someone is badly hurt.",
+   "context": "救急車を呼んでください。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You feel very sick.",
+   "context": "医者が必要です。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You just saw a robbery.",
+   "context": "警察を呼んでください。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You check your bag.",
+   "context": "パスポートをなくしました。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "You smell smoke.",
+   "context": "火事です！",
+   "have": []
+  },
+  {
+   "key": "tp.ja_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You need medical help nearby.",
+   "context": "一番近い病院はどこですか？",
+   "have": []
+  },
+  {
+   "key": "p.ja_emergency_0",
+   "kind": "phrase",
+   "target": "助けて！",
+   "tr": "İmdat!",
+   "en": "Help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_emergency_1",
+   "kind": "phrase",
+   "target": "救急車を呼んでください。",
+   "tr": "Lütfen ambulans çağırın.",
+   "en": "Please call an ambulance.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_emergency_2",
+   "kind": "phrase",
+   "target": "医者が必要です。",
+   "tr": "Doktora ihtiyacım var.",
+   "en": "I need a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_emergency_3",
+   "kind": "phrase",
+   "target": "警察を呼んでください。",
+   "tr": "Lütfen polis çağırın.",
+   "en": "Please call the police.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_emergency_4",
+   "kind": "phrase",
+   "target": "パスポートをなくしました。",
+   "tr": "Pasaportumu kaybettim.",
+   "en": "I lost my passport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_emergency_5",
+   "kind": "phrase",
+   "target": "火事です！",
+   "tr": "Yangın var!",
+   "en": "There's a fire!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_emergency_6",
+   "kind": "phrase",
+   "target": "一番近い病院はどこですか？",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_routine",
+   "kind": "grammar_rule",
+   "tr": "Fiilin て-hali + から, \"yaptıktan sonra\" anlamına gelir.",
+   "en": "Verb て-form + から means 'after doing ___'.",
+   "context": "食べてからテレビを見ます。 / ✗ 食べるからテレビを見ます。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your mornings.",
+   "context": "毎日七時に起きます。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_routine.1",
+   "kind": "speaking_prompt",
+   "en": "You describe getting ready.",
+   "context": "歯を磨いてからシャワーを浴びます。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_routine.2",
+   "kind": "speaking_prompt",
+   "en": "They ask about breakfast.",
+   "context": "八時に朝ごはんを食べます。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_routine.3",
+   "kind": "speaking_prompt",
+   "en": "They ask how you get to work.",
+   "context": "自転車で会社に行きます。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_routine.4",
+   "kind": "speaking_prompt",
+   "en": "They ask when your day ends.",
+   "context": "夜六時に仕事が終わります。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_routine.5",
+   "kind": "speaking_prompt",
+   "en": "They ask about your evenings.",
+   "context": "晩ごはんを食べてからテレビを見ます。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_routine.6",
+   "kind": "speaking_prompt",
+   "en": "They ask when you sleep.",
+   "context": "十一時に寝ます。",
+   "have": []
+  },
+  {
+   "key": "p.ja_routine_0",
+   "kind": "phrase",
+   "target": "毎日七時に起きます。",
+   "tr": "Her gün saat yedide kalkarım.",
+   "en": "I get up at seven every day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_routine_1",
+   "kind": "phrase",
+   "target": "歯を磨いてからシャワーを浴びます。",
+   "tr": "Dişlerimi fırçaladıktan sonra duş alırım.",
+   "en": "I brush my teeth, then take a shower.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_routine_2",
+   "kind": "phrase",
+   "target": "八時に朝ごはんを食べます。",
+   "tr": "Saat sekizde kahvaltı ederim.",
+   "en": "I have breakfast at eight.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_routine_3",
+   "kind": "phrase",
+   "target": "自転車で会社に行きます。",
+   "tr": "İşe bisikletle giderim.",
+   "en": "I go to work by bike.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_routine_4",
+   "kind": "phrase",
+   "target": "夜六時に仕事が終わります。",
+   "tr": "Akşam altıda işten çıkarım.",
+   "en": "I finish work at six in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_routine_5",
+   "kind": "phrase",
+   "target": "晩ごはんを食べてからテレビを見ます。",
+   "tr": "Akşam yemeğinden sonra televizyon izlerim.",
+   "en": "After eating dinner, I watch TV.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_routine_6",
+   "kind": "phrase",
+   "target": "十一時に寝ます。",
+   "tr": "Saat on birde yatarım.",
+   "en": "I go to bed at eleven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_past_story",
+   "kind": "scenario_title",
+   "tr": "Geçmişte bir gün",
+   "en": "Telling a past event",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_past_story",
+   "kind": "grammar_rule",
+   "tr": "Geçmişte olan bir şeyi anlatmak için fiil ました (geçmiş, kibar) haline getirilir.",
+   "en": "To talk about a completed past event, put the verb in its ました (polite past) form.",
+   "context": "空港に行きました。 / ✗ 空港に行きます。",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "They ask about your day yesterday.",
+   "context": "昨日、空港に行きました。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "They ask what happened there.",
+   "context": "そこで昔の友達に会いました。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what you did together.",
+   "context": "一緒にコーヒーを飲みました。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "They ask what happened next.",
+   "context": "それから、飛行機に乗り遅れました。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "They ask how you felt.",
+   "context": "とても疲れていました。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "They ask when you got home.",
+   "context": "真夜中にやっと家に着きました。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "They ask how your day was.",
+   "context": "本当に長い一日でした。",
+   "have": []
+  },
+  {
+   "key": "p.ja_past_story_0",
+   "kind": "phrase",
+   "target": "昨日、空港に行きました。",
+   "tr": "Dün havaalanına gittim.",
+   "en": "Yesterday I went to the airport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_past_story_1",
+   "kind": "phrase",
+   "target": "そこで昔の友達に会いました。",
+   "tr": "Orada eski bir arkadaşımla karşılaştım.",
+   "en": "I met an old friend there.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_past_story_2",
+   "kind": "phrase",
+   "target": "一緒にコーヒーを飲みました。",
+   "tr": "Birlikte kahve içtik.",
+   "en": "We drank coffee together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_past_story_3",
+   "kind": "phrase",
+   "target": "それから、飛行機に乗り遅れました。",
+   "tr": "Sonra uçağımı kaçırdım.",
+   "en": "Then I missed my flight.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_past_story_4",
+   "kind": "phrase",
+   "target": "とても疲れていました。",
+   "tr": "Çok yorgundum.",
+   "en": "I was very tired.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_past_story_5",
+   "kind": "phrase",
+   "target": "真夜中にやっと家に着きました。",
+   "tr": "Eve ancak gece yarısı vardım.",
+   "en": "I finally arrived home at midnight.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_past_story_6",
+   "kind": "phrase",
+   "target": "本当に長い一日でした。",
+   "tr": "Gerçekten uzun bir gündü.",
+   "en": "It was a long day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "コーヒーをお願いします。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "予約があります。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "すみません、駅はどこですか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "こんにちは、デニズです。",
+   "have": []
+  },
+  {
+   "key": "p.ja_a2_route_0",
+   "kind": "phrase",
+   "target": "コーヒーをお願いします。",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_a2_route_1",
+   "kind": "phrase",
+   "target": "予約があります。",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_a2_route_2",
+   "kind": "phrase",
+   "target": "すみません、駅はどこですか？",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_a2_route_3",
+   "kind": "phrase",
+   "target": "こんにちは、デニズです。",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ja_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "朝食は含まれていますか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "分かりません。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "アパートを探しています。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "家賃はいくらですか？",
+   "have": []
+  },
+  {
+   "key": "tp.ja_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "カードは使えますか？",
+   "have": []
+  },
+  {
+   "key": "p.ja_b1_solve_0",
+   "kind": "phrase",
+   "target": "朝食は含まれていますか？",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_b1_solve_1",
+   "kind": "phrase",
+   "target": "分かりません。",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_b1_solve_2",
+   "kind": "phrase",
+   "target": "アパートを探しています。",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_b1_solve_3",
+   "kind": "phrase",
+   "target": "家賃はいくらですか？",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ja_b1_solve_4",
+   "kind": "phrase",
+   "target": "カードは使えますか？",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ja_exp_job_interview",
+   "kind": "scenario_title",
+   "tr": "İş görüşmesi",
+   "en": "Job interview",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_exp_job_interview",
+   "kind": "grammar_rule",
+   "tr": "Kendi eyleminizi alçaltan 謙譲語 (kenjougo): 説明する → ご説明いたします, 聞く → 伺う. Karşı tarafın eylemi için 尊敬語 kullanılır.",
+   "en": null,
+   "context": "ご説明いたします。伺ってもよろしいでしょうか。 / ✗ 説明するよ。聞いていい？",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ja_exp_job_interview.0",
+   "kind": "speaking_prompt",
+   "en": "志望動機を教えてください。",
+   "context": "顧客課題を整理する仕事に、強みを活かせると考えております。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_exp_job_interview.1",
+   "kind": "speaking_prompt",
+   "en": "困難だった案件はありますか。",
+   "context": "納期が迫った際、範囲を切り分けて共有しました。",
+   "have": []
+  },
+  {
+   "key": "p.ja_exp_interview_0",
+   "kind": "phrase",
+   "target": "本日はお時間をいただき、ありがとうございます。",
+   "tr": "Bugün bana vakit ayırdığınız için teşekkür ederim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_interview_1",
+   "kind": "phrase",
+   "target": "これまでの職務について、簡潔にご説明いたします。",
+   "tr": "Şimdiye kadarki iş deneyimimi kısaca anlatacağım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_interview_2",
+   "kind": "phrase",
+   "target": "御社の事業に強く魅力を感じております。",
+   "tr": "Şirketinizin işine güçlü bir ilgi duyuyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_interview_3",
+   "kind": "phrase",
+   "target": "短所は、時に細部に入り込みすぎることです。チェックリストで補っています。",
+   "tr": "Zayıf yönüm bazen ayrıntıya fazla dalmam; bunu kontrol listesiyle telafi ediyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_interview_4",
+   "kind": "phrase",
+   "target": "入社時期は、ご相談可能でしょうか。",
+   "tr": "Başlama tarihini konuşabilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_interview_5",
+   "kind": "phrase",
+   "target": "評価制度について、伺ってもよろしいでしょうか。",
+   "tr": "Değerlendirme sistemini sorabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ja_exp_team_meeting",
+   "kind": "scenario_title",
+   "tr": "Ekip toplantısı",
+   "en": "Team meeting",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_exp_team_meeting",
+   "kind": "grammar_rule",
+   "tr": "İzin/teklif kalıbı: 〜てもよろしいでしょうか. 〜てもいい? daha arkadaşça, iş ortamında kullanılmaz.",
+   "en": null,
+   "context": "後回しにしてもよろしいでしょうか。 / ✗ 後でいいっしょ。",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ja_exp_team_meeting.0",
+   "kind": "speaking_prompt",
+   "en": "ブロッカーがある方はいますか。",
+   "context": "デザイン確認待ちです。明日リマインドします。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_exp_team_meeting.1",
+   "kind": "speaking_prompt",
+   "en": "では、担当はお願いします。",
+   "context": "承知しました、今週中に更新を共有します。",
+   "have": []
+  },
+  {
+   "key": "p.ja_exp_meeting_0",
+   "kind": "phrase",
+   "target": "では、アジェンダに入ります。",
+   "tr": "O zaman gündeme geçiyoruz.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_meeting_1",
+   "kind": "phrase",
+   "target": "私の担当は、API遅延が残っています。明日までに日付を出します。",
+   "tr": "Benim tarafımda API gecikmesi var, yarına kadar tarih vereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_meeting_2",
+   "kind": "phrase",
+   "target": "この件は後回しにしてもよろしいでしょうか。",
+   "tr": "Bu konuyu sona bırakabilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_meeting_3",
+   "kind": "phrase",
+   "target": "決定事項を共有します。木曜16時です。",
+   "tr": "Kararı paylaşıyorum: perşembe saat 16.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_meeting_4",
+   "kind": "phrase",
+   "target": "異議はありませんが、リスクも残しておきたいです。",
+   "tr": "İtirazım yok ama riski de not etmek istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_meeting_5",
+   "kind": "phrase",
+   "target": "5分だけ延長しても大丈夫でしょうか。",
+   "tr": "Sadece 5 dakika uzatabilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ja_exp_bank",
+   "kind": "scenario_title",
+   "tr": "Bankada hesap",
+   "en": "Bank account",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_exp_bank",
+   "kind": "grammar_rule",
+   "tr": "〜たいのですが yarıda bırakan, yumuşak bir istek biçimidir; gişede 〜たいです'ten daha nazik durur.",
+   "en": null,
+   "context": "口座を開設したいのですが。 / ✗ 口座を作れ。",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ja_exp_bank.0",
+   "kind": "speaking_prompt",
+   "en": "口座の種類はどちらになさいますか。",
+   "context": "給与受取用の普通預金でお願いします。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_exp_bank.1",
+   "kind": "speaking_prompt",
+   "en": "こちらにご署名ください。",
+   "context": "はい、こちらでよろしいでしょうか。",
+   "have": []
+  },
+  {
+   "key": "p.ja_exp_bank_0",
+   "kind": "phrase",
+   "target": "普通預金の口座を開設したいのですが。",
+   "tr": "Vadesiz hesap açmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_bank_1",
+   "kind": "phrase",
+   "target": "身分証と住所確認書類を持ってまいりました。",
+   "tr": "Kimlik ve adres belgemi getirdim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_bank_2",
+   "kind": "phrase",
+   "target": "カードの年会費はいくらでしょうか。",
+   "tr": "Kartın yıllık ücreti nedir?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_bank_3",
+   "kind": "phrase",
+   "target": "インターネットバンキングもお願いします。",
+   "tr": "İnternet bankacılığını da rica ediyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_bank_4",
+   "kind": "phrase",
+   "target": "振込限度額を教えていただけますか。",
+   "tr": "Havale limitini söyler misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_bank_5",
+   "kind": "phrase",
+   "target": "明細はメールで受け取れますか。",
+   "tr": "Ekstreyi e-posta ile alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ja_exp_apartment",
+   "kind": "scenario_title",
+   "tr": "Ev bakma",
+   "en": "Apartment viewing",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_exp_apartment",
+   "kind": "grammar_rule",
+   "tr": "Miktar sorusu 何か月分 (kaç aylık); いくら fiyat sorar, süre değil.",
+   "en": null,
+   "context": "敷金は何か月分でしょうか。 / ✗ 敷金はいくら月？",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ja_exp_apartment.0",
+   "kind": "speaking_prompt",
+   "en": "ご入居はいつ頃をお考えですか。",
+   "context": "月初を希望しています。荷物は少なめです。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_exp_apartment.1",
+   "kind": "speaking_prompt",
+   "en": "ペット不可とのことです。",
+   "context": "承知しました、問題ありません。",
+   "have": []
+  },
+  {
+   "key": "p.ja_exp_apartment_0",
+   "kind": "phrase",
+   "target": "広告を見て参りました。まだ空いていますか。",
+   "tr": "İlanı görüp geldim, hâlâ boş mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_apartment_1",
+   "kind": "phrase",
+   "target": "管理費に共熱費は含まれますか。",
+   "tr": "Aidat ısıtmayı kapsıyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_apartment_2",
+   "kind": "phrase",
+   "target": "敷金は何か月分でしょうか。",
+   "tr": "Depozito kaç aylık?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_apartment_3",
+   "kind": "phrase",
+   "target": "契約は一年からですか。短期は可能でしょうか。",
+   "tr": "Sözleşme bir yıldan mı başlıyor? Kısa süreli olur mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_apartment_4",
+   "kind": "phrase",
+   "target": "在宅勤務なので、静かな環境か伺いたいです。",
+   "tr": "Evden çalışıyorum, sessiz bir yer mi diye sormak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_apartment_5",
+   "kind": "phrase",
+   "target": "返事は明日までにお伝えします。",
+   "tr": "Cevabımı yarına kadar bildiririm.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ja_exp_doctor",
+   "kind": "scenario_title",
+   "tr": "Doktorda",
+   "en": "At the doctor's",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_exp_doctor",
+   "kind": "grammar_rule",
+   "tr": "Belirtiyi 普通形+ます ile anlatın (熱がある, 咳が出る); kendi teşhisinizi koymayın.",
+   "en": null,
+   "context": "夜に咳が出ます。 / ✗ 肺炎だと思います。",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ja_exp_doctor.0",
+   "kind": "speaking_prompt",
+   "en": "痛みはどこですか。急に始まりましたか。",
+   "context": "胸の右側です。昨夜からです。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_exp_doctor.1",
+   "kind": "speaking_prompt",
+   "en": "血液検査をお願いします。",
+   "context": "はい、どちらに伺えばよいですか。",
+   "have": []
+  },
+  {
+   "key": "p.ja_exp_doctor_0",
+   "kind": "phrase",
+   "target": "三日前から熱があって、夜に咳が出ます。",
+   "tr": "Üç gündür ateşim var, gece öksürüyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_doctor_1",
+   "kind": "phrase",
+   "target": "ペニシリンアレルギーはありません。",
+   "tr": "Penisilin alerjim yok.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_doctor_2",
+   "kind": "phrase",
+   "target": "この薬は眠くなりますか。",
+   "tr": "Bu ilaç uyku getirir mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_doctor_3",
+   "kind": "phrase",
+   "target": "診断書は必要でしょうか。",
+   "tr": "Rapor gerekir mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_doctor_4",
+   "kind": "phrase",
+   "target": "再診はいつ頃がよいですか。",
+   "tr": "Kontrole ne zaman geleyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_doctor_5",
+   "kind": "phrase",
+   "target": "薬局は建物の外でしょうか。",
+   "tr": "Eczane bina dışında mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ja_exp_business_lunch",
+   "kind": "scenario_title",
+   "tr": "İş yemeği",
+   "en": "Business lunch",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_exp_business_lunch",
+   "kind": "grammar_rule",
+   "tr": "Hesabı üstlenme: ご馳走させてください (izinli/alçaltan biçim); ご馳走します daha az nazik durabilir.",
+   "en": null,
+   "context": "こちらでご馳走させてください。 / ✗ 俺が払うよ。",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ja_exp_business_lunch.0",
+   "kind": "speaking_prompt",
+   "en": "まだ価格が高い印象です。",
+   "context": "フェーズを二つに分ける案はいかがでしょうか。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_exp_business_lunch.1",
+   "kind": "speaking_prompt",
+   "en": "検討します。",
+   "context": "かしこまりました、来週改めてご連絡します。",
+   "have": []
+  },
+  {
+   "key": "p.ja_exp_lunch_0",
+   "kind": "phrase",
+   "target": "お店はご希望に合わせて選びました。",
+   "tr": "Mekânı sizin tercihinize göre seçtim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_lunch_1",
+   "kind": "phrase",
+   "target": "アレルギーや苦手なものはございますか。",
+   "tr": "Alerjiniz ya da sevmediğiniz bir şey var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_lunch_2",
+   "kind": "phrase",
+   "target": "ご注文の前に、本日の論点だけ確認できますでしょうか。",
+   "tr": "Sipariş vermeden önce bugünün konularını netleştirebilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_lunch_3",
+   "kind": "phrase",
+   "target": "細かい数字は後ほどメールにいたします。",
+   "tr": "Ayrıntılı rakamları sonra mail ile göndereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_lunch_4",
+   "kind": "phrase",
+   "target": "本日はこちらでご馳走させてください。",
+   "tr": "Bugün ikram etmeme izin verin.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_lunch_5",
+   "kind": "phrase",
+   "target": "有意義なお時間をありがとうございました。",
+   "tr": "Verimli bir zaman için teşekkür ederim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ja_exp_complaint",
+   "kind": "scenario_title",
+   "tr": "Şikâyet",
+   "en": "Complaint",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_exp_complaint",
+   "kind": "grammar_rule",
+   "tr": "Karşıdan eylem ricası: ご〜いただけますでしょうか (ご検討いただけますでしょうか); emir kipi kullanılmaz.",
+   "en": null,
+   "context": "ご検討いただけますでしょうか。 / ✗ 返金しろ。",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ja_exp_complaint.0",
+   "kind": "speaking_prompt",
+   "en": "ご不便をおかけし、申し訳ございません。確認いたします。",
+   "context": "ありがとうございます。時刻も残してください。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_exp_complaint.1",
+   "kind": "speaking_prompt",
+   "en": "明日14時までのお届けとなります。",
+   "context": "承知しました、お待ちしています。",
+   "have": []
+  },
+  {
+   "key": "p.ja_exp_complaint_0",
+   "kind": "phrase",
+   "target": "注文番号は1842です。まだ届いておりません。",
+   "tr": "Sipariş numaram 1842, hâlâ ulaşmadı.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_complaint_1",
+   "kind": "phrase",
+   "target": "お約束の日は昨日でした。",
+   "tr": "Söz verilen tarih dündü.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_complaint_2",
+   "kind": "phrase",
+   "target": "送料の返金をご検討いただけますでしょうか。",
+   "tr": "Kargo ücretinin iadesini değerlendirebilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_complaint_3",
+   "kind": "phrase",
+   "target": "上長の方におつなぎすべきでしょうか。",
+   "tr": "Bir üst yetkiliye mi bağlanmalıyım?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_complaint_4",
+   "kind": "phrase",
+   "target": "書面でご確認をいただけますか。",
+   "tr": "Yazılı olarak teyit alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_complaint_5",
+   "kind": "phrase",
+   "target": "本日中に確かな日時が必要です。",
+   "tr": "Bugün içinde kesin bir tarih gerekiyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ja_exp_business_trip",
+   "kind": "scenario_title",
+   "tr": "İş seyahati",
+   "en": "Business trip",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_exp_business_trip",
+   "kind": "grammar_rule",
+   "tr": "Aktarma kaygısı: 間に合うか心配です. 間に合う = yetişmek, zamanında varmak.",
+   "en": null,
+   "context": "乗り継ぎに間に合うか心配です。 / ✗ 乗り継ぎを負けます。",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ja_exp_business_trip.0",
+   "kind": "speaking_prompt",
+   "en": "窓側と通路側、どちらがよろしいですか。",
+   "context": "通路側で、出入り口に近いと助かります。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_exp_business_trip.1",
+   "kind": "speaking_prompt",
+   "en": "12番ゲート、40分後です。",
+   "context": "ありがとうございます、向かいます。",
+   "have": []
+  },
+  {
+   "key": "p.ja_exp_trip_0",
+   "kind": "phrase",
+   "target": "予約番号はこちらです。搭乗券をお願いします。",
+   "tr": "Rezervasyon numaram bu, biniş kartı lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_trip_1",
+   "kind": "phrase",
+   "target": "機内持ち込みのサイズは大丈夫でしょうか。",
+   "tr": "El bagajı boyutuna uygun mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_trip_2",
+   "kind": "phrase",
+   "target": "遅延で乗り継ぎに間に合うか心配です。",
+   "tr": "Gecikme yüzünden aktarmayı yakalar mıyım diye endişeliyim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_trip_3",
+   "kind": "phrase",
+   "target": "領収書は会社名でお願いします。",
+   "tr": "Fatura şirket adına lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_trip_4",
+   "kind": "phrase",
+   "target": "ラウンジの入口はどちらですか。",
+   "tr": "Lounge girişi nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_trip_5",
+   "kind": "phrase",
+   "target": "タクシーの領収書を保管する必要があります。",
+   "tr": "Taksi fişini saklamam gerekiyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ja_exp_client_call",
+   "kind": "scenario_title",
+   "tr": "Müşteri telefonu",
+   "en": "Client phone call",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_exp_client_call",
+   "kind": "grammar_rule",
+   "tr": "Telefon izni: önce 今よろしいでしょうか. Direkt konuya girmek B2 seviyesinde bile riskli kaçar.",
+   "en": null,
+   "context": "今、お電話よろしいでしょうか。 / ✗ ちょっといい？今からスコープ。",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ja_exp_client_call.0",
+   "kind": "speaking_prompt",
+   "en": "この機能がないとリリースできません。",
+   "context": "では他の項目をずらして、これを前倒ししましょう。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_exp_client_call.1",
+   "kind": "speaking_prompt",
+   "en": "では、文書化してください。",
+   "context": "かしこまりました、すぐにまとめます。",
+   "have": []
+  },
+  {
+   "key": "p.ja_exp_call_0",
+   "kind": "phrase",
+   "target": "今、お電話よろしいでしょうか。5分だけいただきます。",
+   "tr": "Şimdi konuşabilir misiniz? Sadece 5 dakika alacağım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_call_1",
+   "kind": "phrase",
+   "target": "昨日のメールの3点目が、少し不明確です。",
+   "tr": "Dünkü mailin 3. maddesi biraz net değil.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_call_2",
+   "kind": "phrase",
+   "target": "追加なのか、現行範囲なのか、切り分けたいです。",
+   "tr": "Ek iş mi, mevcut kapsam mı, netleştirmek istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_call_3",
+   "kind": "phrase",
+   "target": "認識違いがあれば、ご指摘ください。",
+   "tr": "Yanlış anladıysam lütfen düzeltin.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_call_4",
+   "kind": "phrase",
+   "target": "金曜に草案、月曜にご意見、という理解です。",
+   "tr": "Anladığım kadarıyla: cuma taslak, pazartesi yorumunuz.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_call_5",
+   "kind": "phrase",
+   "target": "記録のため、ただいまメールします。",
+   "tr": "Kayıt için şimdi mail atıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ja_exp_hr_salary",
+   "kind": "scenario_title",
+   "tr": "Maaş görüşmesi",
+   "en": "Salary conversation",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_exp_hr_salary",
+   "kind": "grammar_rule",
+   "tr": "İK'da duygu fiili yumuşak: ずれていると感じています. 不満です (memnuniyetsizim) konuşmayı kapatır.",
+   "en": null,
+   "context": "肩書きが実務とずれていると感じています。 / ✗ 待遇に不満です。",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ja_exp_hr_salary.0",
+   "kind": "speaking_prompt",
+   "en": "今期は予算が厳しいです。",
+   "context": "中間での見直しや、等級の調整は可能でしょうか。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_exp_hr_salary.1",
+   "kind": "speaking_prompt",
+   "en": "3月に再検討しましょう。",
+   "context": "では3月をカレンダーに入れ、基準を今日揃えましょう。",
+   "have": []
+  },
+  {
+   "key": "p.ja_exp_salary_0",
+   "kind": "phrase",
+   "target": "評価と市場水準について、お話しできますでしょうか。",
+   "tr": "Değerlendirme ve piyasa seviyesi hakkında konuşabilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_salary_1",
+   "kind": "phrase",
+   "target": "半年間で3件を納期内に届けました。",
+   "tr": "Altı ayda üç projeyi zamanında teslim ettim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_salary_2",
+   "kind": "phrase",
+   "target": "希望は15パーセントです。根拠もご説明できます。",
+   "tr": "Beklentim yüzde 15, gerekçesini de anlatabilirim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_salary_3",
+   "kind": "phrase",
+   "target": "現在の肩書きが、実務とずれていると感じています。",
+   "tr": "Şu anki unvanın işi yansıtmadığını düşünüyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_salary_4",
+   "kind": "phrase",
+   "target": "今期が難しければ、実施時期を明確にしたいです。",
+   "tr": "Bu dönem zorsa, uygulama tarihini netleştirmek istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_salary_5",
+   "kind": "phrase",
+   "target": "決定事項は文書でいただきたいです。",
+   "tr": "Kararı yazılı olarak almak isterim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ja_exp_daily_errands",
+   "kind": "scenario_title",
+   "tr": "Market ve kargo",
+   "en": "Errands and deliveries",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_exp_daily_errands",
+   "kind": "grammar_rule",
+   "tr": "結構です nazikçe \"hayır teşekkürler\" der (袋は結構です); いらない kaba kaçar.",
+   "en": null,
+   "context": "袋は結構です。 / ✗ 袋いらない。",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ja_exp_daily_errands.0",
+   "kind": "speaking_prompt",
+   "en": "ポイントカードはお持ちですか。",
+   "context": "いいえ、今回は大丈夫です。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_exp_daily_errands.1",
+   "kind": "speaking_prompt",
+   "en": "お札の崩しができないのでカードで。",
+   "context": "かしこまりました、カードでお願いします。",
+   "have": []
+  },
+  {
+   "key": "p.ja_exp_errands_0",
+   "kind": "phrase",
+   "target": "このパンを二つと、レシートをお願いします。",
+   "tr": "Bu ekmekten iki tane ve fiş lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_errands_1",
+   "kind": "phrase",
+   "target": "グルテンフリーの棚はどこですか。",
+   "tr": "Glütensiz reyon nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_errands_2",
+   "kind": "phrase",
+   "target": "不在時は隣人に渡さず、メモを残してください。",
+   "tr": "Yokken komşuya bırakmayın, not bırakın.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_errands_3",
+   "kind": "phrase",
+   "target": "現金がないのでカードでお願いします。",
+   "tr": "Nakit param yok, kartla lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_errands_4",
+   "kind": "phrase",
+   "target": "返品は14日以内でよろしいですか。",
+   "tr": "İade 14 gün içinde mi olmalı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_errands_5",
+   "kind": "phrase",
+   "target": "袋は結構です。持参しています。",
+   "tr": "Poşet istemiyorum, kendim getirdim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ja_exp_networking",
+   "kind": "scenario_title",
+   "tr": "Networking",
+   "en": "Networking",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ja_exp_networking",
+   "kind": "grammar_rule",
+   "tr": "しております しています'ten bir kademe resmidir; networking'de güvenli kimlik cümlesi kurar.",
+   "en": null,
+   "context": "プロダクトマネージャーをしております。 / ✗ PMやってます。",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ja_exp_networking.0",
+   "kind": "speaking_prompt",
+   "en": "どのようなお仕事を。",
+   "context": "中小企業の請求回収を楽にするプロダクトです。",
+   "have": []
+  },
+  {
+   "key": "tp.ja_exp_networking.1",
+   "kind": "speaking_prompt",
+   "en": "興味があります。ご連絡ください。",
+   "context": "ありがとうございます、ぜひご連絡します。",
+   "have": []
+  },
+  {
+   "key": "p.ja_exp_networking_0",
+   "kind": "phrase",
+   "target": "フィンテックでプロダクトマネージャーをしております、佐藤です。",
+   "tr": "Ben Sato, fintech'te ürün yöneticisiyim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_networking_1",
+   "kind": "phrase",
+   "target": "先ほどの決済の例が、非常に分かりやすかったです。",
+   "tr": "Az önceki ödeme örneği çok anlaşılırdı.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_networking_2",
+   "kind": "phrase",
+   "target": "御社でも似た課題はございますか。",
+   "tr": "Sizde de benzer bir sorun var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_networking_3",
+   "kind": "phrase",
+   "target": "名刺が切れてしまい、LinkedInでご連絡してもよろしいでしょうか。",
+   "tr": "Kartvizitim bitti, LinkedIn'den ulaşabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_networking_4",
+   "kind": "phrase",
+   "target": "2分だけお時間いただけますか。",
+   "tr": "Sadece 2 dakikanızı alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ja_exp_networking_5",
+   "kind": "phrase",
+   "target": "ご紹介できる方がいれば、おつなぎします。",
+   "tr": "Tanıştırabileceğim biri varsa sizi bağlarım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.ja_weekend",
+   "kind": "story_title",
+   "target": "週末",
+   "tr": "Hafta Sonu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_weekend.0",
+   "kind": "story_sentence",
+   "target": "土曜日の朝、公園に行きました。",
+   "tr": "Cumartesi sabahı parka gittim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_weekend.1",
+   "kind": "story_sentence",
+   "target": "友達と散歩しました。",
+   "tr": "Arkadaşımla yürüdük.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_weekend.2",
+   "kind": "story_sentence",
+   "target": "公園には花がたくさんありました。",
+   "tr": "Parkta çok çiçek vardı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_weekend.3",
+   "kind": "story_sentence",
+   "target": "昼はラーメンを食べました。",
+   "tr": "Öğlen ramen yedik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_weekend.4",
+   "kind": "story_sentence",
+   "target": "ラーメンはとてもおいしかったです。",
+   "tr": "Ramen çok lezzetliydi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_weekend.5",
+   "kind": "story_sentence",
+   "target": "いい週末でした。",
+   "tr": "Güzel bir hafta sonuydu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.ja_my_job",
+   "kind": "story_title",
+   "target": "私の仕事",
+   "tr": "Benim İşim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_my_job.0",
+   "kind": "story_sentence",
+   "target": "私は会社の近くに住んでいます。",
+   "tr": "Şirketin yakınında oturuyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_my_job.1",
+   "kind": "story_sentence",
+   "target": "朝は電車で会社に行きます。",
+   "tr": "Sabahları trenle şirkete gidiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_my_job.2",
+   "kind": "story_sentence",
+   "target": "午前中はパソコンで仕事をします。",
+   "tr": "Öğlene kadar bilgisayarla çalışıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_my_job.3",
+   "kind": "story_sentence",
+   "target": "昼は友達と昼ご飯を食べます。",
+   "tr": "Öğlen arkadaşlarımla yemek yiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_my_job.4",
+   "kind": "story_sentence",
+   "target": "六時に仕事を終えます。",
+   "tr": "Altıda işi bitiriyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_my_job.5",
+   "kind": "story_sentence",
+   "target": "夜は家でゆっくり休みます。",
+   "tr": "Akşam evde rahatça dinleniyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.ja_weather",
+   "kind": "story_title",
+   "target": "天気",
+   "tr": "Hava Durumu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_weather.0",
+   "kind": "story_sentence",
+   "target": "今日はお天気がいいです。",
+   "tr": "Bugün hava güzel.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_weather.1",
+   "kind": "story_sentence",
+   "target": "朝は少し寒かったです。",
+   "tr": "Sabah biraz soğuktu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_weather.2",
+   "kind": "story_sentence",
+   "target": "昼は雨が降りました。",
+   "tr": "Öğlen yağmur yağdı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_weather.3",
+   "kind": "story_sentence",
+   "target": "私は傘を持って出かけました。",
+   "tr": "Şemsiyemi alıp dışarı çıktım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_weather.4",
+   "kind": "story_sentence",
+   "target": "夜は雨が終わりました。",
+   "tr": "Akşam yağmur durdu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ja_weather.5",
+   "kind": "story_sentence",
+   "target": "明日はきっと晴れます。",
+   "tr": "Yarın kesinlikle güneşli olacak.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.あ.n",
+   "kind": "alphabet_letter_name",
+   "target": "あ",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.あ.s",
+   "kind": "alphabet_sound",
+   "target": "あ",
+   "tr": "a",
+   "context": "あめ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.あ.m",
+   "kind": "alphabet_example",
+   "target": "あめ",
+   "tr": "Yağmur",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.い.n",
+   "kind": "alphabet_letter_name",
+   "target": "い",
+   "tr": "İ",
+   "en": "I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.い.s",
+   "kind": "alphabet_sound",
+   "target": "い",
+   "tr": "i",
+   "context": "いぬ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.い.m",
+   "kind": "alphabet_example",
+   "target": "いぬ",
+   "tr": "Köpek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.う.n",
+   "kind": "alphabet_letter_name",
+   "target": "う",
+   "tr": "U",
+   "en": "U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.う.s",
+   "kind": "alphabet_sound",
+   "target": "う",
+   "tr": "u",
+   "context": "うみ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.う.m",
+   "kind": "alphabet_example",
+   "target": "うみ",
+   "tr": "Deniz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.え.n",
+   "kind": "alphabet_letter_name",
+   "target": "え",
+   "tr": "E",
+   "en": "E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.え.s",
+   "kind": "alphabet_sound",
+   "target": "え",
+   "tr": "e",
+   "context": "えき",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.え.m",
+   "kind": "alphabet_example",
+   "target": "えき",
+   "tr": "İstasyon",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.お.n",
+   "kind": "alphabet_letter_name",
+   "target": "お",
+   "tr": "O",
+   "en": "O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.お.s",
+   "kind": "alphabet_sound",
+   "target": "お",
+   "tr": "o",
+   "context": "おちゃ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.お.m",
+   "kind": "alphabet_example",
+   "target": "おちゃ",
+   "tr": "Çay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.か.n",
+   "kind": "alphabet_letter_name",
+   "target": "か",
+   "tr": "Ka",
+   "en": "Ka",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.か.s",
+   "kind": "alphabet_sound",
+   "target": "か",
+   "tr": "ka",
+   "context": "かさ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.か.m",
+   "kind": "alphabet_example",
+   "target": "かさ",
+   "tr": "Şemsiye",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.き.n",
+   "kind": "alphabet_letter_name",
+   "target": "き",
+   "tr": "Ki",
+   "en": "Ki",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.き.s",
+   "kind": "alphabet_sound",
+   "target": "き",
+   "tr": "ki",
+   "context": "きく",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.き.m",
+   "kind": "alphabet_example",
+   "target": "きく",
+   "tr": "Dinlemek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.く.n",
+   "kind": "alphabet_letter_name",
+   "target": "く",
+   "tr": "Ku",
+   "en": "Ku",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.く.s",
+   "kind": "alphabet_sound",
+   "target": "く",
+   "tr": "ku",
+   "context": "くも",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.く.m",
+   "kind": "alphabet_example",
+   "target": "くも",
+   "tr": "Bulut",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.け.n",
+   "kind": "alphabet_letter_name",
+   "target": "け",
+   "tr": "Ke",
+   "en": "Ke",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.け.s",
+   "kind": "alphabet_sound",
+   "target": "け",
+   "tr": "ke",
+   "context": "けさ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.け.m",
+   "kind": "alphabet_example",
+   "target": "けさ",
+   "tr": "Bu sabah",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.こ.n",
+   "kind": "alphabet_letter_name",
+   "target": "こ",
+   "tr": "Ko",
+   "en": "Ko",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.こ.s",
+   "kind": "alphabet_sound",
+   "target": "こ",
+   "tr": "ko",
+   "context": "こども",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.こ.m",
+   "kind": "alphabet_example",
+   "target": "こども",
+   "tr": "Çocuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.さ.n",
+   "kind": "alphabet_letter_name",
+   "target": "さ",
+   "tr": "Sa",
+   "en": "Sa",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.さ.s",
+   "kind": "alphabet_sound",
+   "target": "さ",
+   "tr": "sa",
+   "context": "さかな",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.さ.m",
+   "kind": "alphabet_example",
+   "target": "さかな",
+   "tr": "Balık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.し.n",
+   "kind": "alphabet_letter_name",
+   "target": "し",
+   "tr": "Şi",
+   "en": "Shi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.し.s",
+   "kind": "alphabet_sound",
+   "target": "し",
+   "tr": "shi",
+   "context": "しろ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.し.m",
+   "kind": "alphabet_example",
+   "target": "しろ",
+   "tr": "Beyaz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.す.n",
+   "kind": "alphabet_letter_name",
+   "target": "す",
+   "tr": "Su",
+   "en": "Su",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.す.s",
+   "kind": "alphabet_sound",
+   "target": "す",
+   "tr": "su",
+   "context": "すし",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.す.m",
+   "kind": "alphabet_example",
+   "target": "すし",
+   "tr": "Suşi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.せ.n",
+   "kind": "alphabet_letter_name",
+   "target": "せ",
+   "tr": "Se",
+   "en": "Se",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.せ.s",
+   "kind": "alphabet_sound",
+   "target": "せ",
+   "tr": "se",
+   "context": "せんせい",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.せ.m",
+   "kind": "alphabet_example",
+   "target": "せんせい",
+   "tr": "Öğretmen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.そ.n",
+   "kind": "alphabet_letter_name",
+   "target": "そ",
+   "tr": "So",
+   "en": "So",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.そ.s",
+   "kind": "alphabet_sound",
+   "target": "そ",
+   "tr": "so",
+   "context": "そら",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.そ.m",
+   "kind": "alphabet_example",
+   "target": "そら",
+   "tr": "Gökyüzü",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.た.n",
+   "kind": "alphabet_letter_name",
+   "target": "た",
+   "tr": "Ta",
+   "en": "Ta",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.た.s",
+   "kind": "alphabet_sound",
+   "target": "た",
+   "tr": "ta",
+   "context": "たべる",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.た.m",
+   "kind": "alphabet_example",
+   "target": "たべる",
+   "tr": "Yemek yemek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ち.n",
+   "kind": "alphabet_letter_name",
+   "target": "ち",
+   "tr": "Çi",
+   "en": "Chi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.ち.s",
+   "kind": "alphabet_sound",
+   "target": "ち",
+   "tr": "chi",
+   "context": "ちず",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ち.m",
+   "kind": "alphabet_example",
+   "target": "ちず",
+   "tr": "Harita",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.つ.n",
+   "kind": "alphabet_letter_name",
+   "target": "つ",
+   "tr": "Tsu",
+   "en": "Tsu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.つ.s",
+   "kind": "alphabet_sound",
+   "target": "つ",
+   "tr": "tsu",
+   "context": "つき",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.つ.m",
+   "kind": "alphabet_example",
+   "target": "つき",
+   "tr": "Ay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.て.n",
+   "kind": "alphabet_letter_name",
+   "target": "て",
+   "tr": "Te",
+   "en": "Te",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.て.s",
+   "kind": "alphabet_sound",
+   "target": "て",
+   "tr": "te",
+   "context": "て",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.て.m",
+   "kind": "alphabet_example",
+   "target": "て",
+   "tr": "El",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.と.n",
+   "kind": "alphabet_letter_name",
+   "target": "と",
+   "tr": "To",
+   "en": "To",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.と.s",
+   "kind": "alphabet_sound",
+   "target": "と",
+   "tr": "to",
+   "context": "とり",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.と.m",
+   "kind": "alphabet_example",
+   "target": "とり",
+   "tr": "Kuş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.な.n",
+   "kind": "alphabet_letter_name",
+   "target": "な",
+   "tr": "Na",
+   "en": "Na",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.な.s",
+   "kind": "alphabet_sound",
+   "target": "な",
+   "tr": "na",
+   "context": "なまえ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.な.m",
+   "kind": "alphabet_example",
+   "target": "なまえ",
+   "tr": "İsim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.に.n",
+   "kind": "alphabet_letter_name",
+   "target": "に",
+   "tr": "Ni",
+   "en": "Ni",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.に.s",
+   "kind": "alphabet_sound",
+   "target": "に",
+   "tr": "ni",
+   "context": "にほん",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.に.m",
+   "kind": "alphabet_example",
+   "target": "にほん",
+   "tr": "Japonya",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ぬ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ぬ",
+   "tr": "Nu",
+   "en": "Nu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.ぬ.s",
+   "kind": "alphabet_sound",
+   "target": "ぬ",
+   "tr": "nu",
+   "context": "ぬの",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ぬ.m",
+   "kind": "alphabet_example",
+   "target": "ぬの",
+   "tr": "Kumaş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ね.n",
+   "kind": "alphabet_letter_name",
+   "target": "ね",
+   "tr": "Ne",
+   "en": "Ne",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.ね.s",
+   "kind": "alphabet_sound",
+   "target": "ね",
+   "tr": "ne",
+   "context": "ねこ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ね.m",
+   "kind": "alphabet_example",
+   "target": "ねこ",
+   "tr": "Kedi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.の.n",
+   "kind": "alphabet_letter_name",
+   "target": "の",
+   "tr": "No",
+   "en": "No",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.の.s",
+   "kind": "alphabet_sound",
+   "target": "の",
+   "tr": "no",
+   "context": "のむ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.の.m",
+   "kind": "alphabet_example",
+   "target": "のむ",
+   "tr": "İçmek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.は.n",
+   "kind": "alphabet_letter_name",
+   "target": "は",
+   "tr": "Ha",
+   "en": "Ha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.は.s",
+   "kind": "alphabet_sound",
+   "target": "は",
+   "tr": "ha",
+   "context": "はな",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.は.m",
+   "kind": "alphabet_example",
+   "target": "はな",
+   "tr": "Çiçek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ひ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ひ",
+   "tr": "Hi",
+   "en": "Hi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.ひ.s",
+   "kind": "alphabet_sound",
+   "target": "ひ",
+   "tr": "hi",
+   "context": "ひと",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ひ.m",
+   "kind": "alphabet_example",
+   "target": "ひと",
+   "tr": "İnsan",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ふ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ふ",
+   "tr": "Fu",
+   "en": "Fu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.ふ.s",
+   "kind": "alphabet_sound",
+   "target": "ふ",
+   "tr": "fu",
+   "context": "ふね",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ふ.m",
+   "kind": "alphabet_example",
+   "target": "ふね",
+   "tr": "Gemi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.へ.n",
+   "kind": "alphabet_letter_name",
+   "target": "へ",
+   "tr": "He",
+   "en": "He",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.へ.s",
+   "kind": "alphabet_sound",
+   "target": "へ",
+   "tr": "he",
+   "context": "へや",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.へ.m",
+   "kind": "alphabet_example",
+   "target": "へや",
+   "tr": "Oda",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ほ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ほ",
+   "tr": "Ho",
+   "en": "Ho",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.ほ.s",
+   "kind": "alphabet_sound",
+   "target": "ほ",
+   "tr": "ho",
+   "context": "ほん",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ほ.m",
+   "kind": "alphabet_example",
+   "target": "ほん",
+   "tr": "Kitap",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ま.n",
+   "kind": "alphabet_letter_name",
+   "target": "ま",
+   "tr": "Ma",
+   "en": "Ma",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.ま.s",
+   "kind": "alphabet_sound",
+   "target": "ま",
+   "tr": "ma",
+   "context": "まど",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ま.m",
+   "kind": "alphabet_example",
+   "target": "まど",
+   "tr": "Pencere",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.み.n",
+   "kind": "alphabet_letter_name",
+   "target": "み",
+   "tr": "Mi",
+   "en": "Mi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.み.s",
+   "kind": "alphabet_sound",
+   "target": "み",
+   "tr": "mi",
+   "context": "みず",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.み.m",
+   "kind": "alphabet_example",
+   "target": "みず",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.む.n",
+   "kind": "alphabet_letter_name",
+   "target": "む",
+   "tr": "Mu",
+   "en": "Mu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.む.s",
+   "kind": "alphabet_sound",
+   "target": "む",
+   "tr": "mu",
+   "context": "むし",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.む.m",
+   "kind": "alphabet_example",
+   "target": "むし",
+   "tr": "Böcek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.め.n",
+   "kind": "alphabet_letter_name",
+   "target": "め",
+   "tr": "Me",
+   "en": "Me",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.め.s",
+   "kind": "alphabet_sound",
+   "target": "め",
+   "tr": "me",
+   "context": "め",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.め.m",
+   "kind": "alphabet_example",
+   "target": "め",
+   "tr": "Göz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.も.n",
+   "kind": "alphabet_letter_name",
+   "target": "も",
+   "tr": "Mo",
+   "en": "Mo",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.も.s",
+   "kind": "alphabet_sound",
+   "target": "も",
+   "tr": "mo",
+   "context": "もも",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.も.m",
+   "kind": "alphabet_example",
+   "target": "もも",
+   "tr": "Şeftali",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.や.n",
+   "kind": "alphabet_letter_name",
+   "target": "や",
+   "tr": "Ya",
+   "en": "Ya",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.や.s",
+   "kind": "alphabet_sound",
+   "target": "や",
+   "tr": "ya",
+   "context": "やま",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.や.m",
+   "kind": "alphabet_example",
+   "target": "やま",
+   "tr": "Dağ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ゆ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ゆ",
+   "tr": "Yu",
+   "en": "Yu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.ゆ.s",
+   "kind": "alphabet_sound",
+   "target": "ゆ",
+   "tr": "yu",
+   "context": "ゆき",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ゆ.m",
+   "kind": "alphabet_example",
+   "target": "ゆき",
+   "tr": "Kar",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.よ.n",
+   "kind": "alphabet_letter_name",
+   "target": "よ",
+   "tr": "Yo",
+   "en": "Yo",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.よ.s",
+   "kind": "alphabet_sound",
+   "target": "よ",
+   "tr": "yo",
+   "context": "よる",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.よ.m",
+   "kind": "alphabet_example",
+   "target": "よる",
+   "tr": "Gece",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ら.n",
+   "kind": "alphabet_letter_name",
+   "target": "ら",
+   "tr": "Ra",
+   "en": "Ra",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.ら.s",
+   "kind": "alphabet_sound",
+   "target": "ら",
+   "tr": "ra",
+   "context": "らいねん",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ら.m",
+   "kind": "alphabet_example",
+   "target": "らいねん",
+   "tr": "Gelecek yıl",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.り.n",
+   "kind": "alphabet_letter_name",
+   "target": "り",
+   "tr": "Ri",
+   "en": "Ri",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.り.s",
+   "kind": "alphabet_sound",
+   "target": "り",
+   "tr": "ri",
+   "context": "りんご",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.り.m",
+   "kind": "alphabet_example",
+   "target": "りんご",
+   "tr": "Elma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.る.n",
+   "kind": "alphabet_letter_name",
+   "target": "る",
+   "tr": "Ru",
+   "en": "Ru",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.る.s",
+   "kind": "alphabet_sound",
+   "target": "る",
+   "tr": "ru",
+   "context": "るす",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.る.m",
+   "kind": "alphabet_example",
+   "target": "るす",
+   "tr": "Evde olmama",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.れ.n",
+   "kind": "alphabet_letter_name",
+   "target": "れ",
+   "tr": "Re",
+   "en": "Re",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.れ.s",
+   "kind": "alphabet_sound",
+   "target": "れ",
+   "tr": "re",
+   "context": "れいぞうこ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.れ.m",
+   "kind": "alphabet_example",
+   "target": "れいぞうこ",
+   "tr": "Buzdolabı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ろ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ろ",
+   "tr": "Ro",
+   "en": "Ro",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.ろ.s",
+   "kind": "alphabet_sound",
+   "target": "ろ",
+   "tr": "ro",
+   "context": "ろく",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ろ.m",
+   "kind": "alphabet_example",
+   "target": "ろく",
+   "tr": "Altı (sayı)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.わ.n",
+   "kind": "alphabet_letter_name",
+   "target": "わ",
+   "tr": "Wa",
+   "en": "Wa",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.わ.s",
+   "kind": "alphabet_sound",
+   "target": "わ",
+   "tr": "wa",
+   "context": "わたし",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.わ.m",
+   "kind": "alphabet_example",
+   "target": "わたし",
+   "tr": "Ben",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.を.n",
+   "kind": "alphabet_letter_name",
+   "target": "を",
+   "tr": "Wo",
+   "en": "Wo",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.を.s",
+   "kind": "alphabet_sound",
+   "target": "を",
+   "tr": "o",
+   "context": "を",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.を.m",
+   "kind": "alphabet_example",
+   "target": "を",
+   "tr": "(nesne eki)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ん.n",
+   "kind": "alphabet_letter_name",
+   "target": "ん",
+   "tr": "N",
+   "en": "N",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ja.ん.s",
+   "kind": "alphabet_sound",
+   "target": "ん",
+   "tr": "n",
+   "context": "せん",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ja.ん.m",
+   "kind": "alphabet_example",
+   "target": "せん",
+   "tr": "Bin (sayı)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ja.0.h",
+   "kind": "pronunciation_heard",
+   "target": "uzun ünlü",
+   "tr": "anlam değiştirir",
+   "context": "Teyze vs büyükanne.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ja.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "おばさん vs おばあさん",
+   "tr": "obasan · obaasan",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ja.1.h",
+   "kind": "pronunciation_heard",
+   "target": "r",
+   "tr": "l ve r arası",
+   "context": "Dili damağa vur.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ja.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "ラーメン",
+   "tr": "raamen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ja.2.h",
+   "kind": "pronunciation_heard",
+   "target": "っ (sokuon)",
+   "tr": "çift sessiz / duraklama",
+   "context": "Kısa duraklama.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ja.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "きって",
+   "tr": "kit-te",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

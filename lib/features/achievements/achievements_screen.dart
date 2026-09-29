@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/models/achievements.dart';
 import '../../state/session.dart';
@@ -12,9 +14,10 @@ class AchievementsScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final profile = ref.watch(sessionProvider);
+    final i18n = ref.watch(i18nProvider);
     final unlocked = profile.achievements;
     return Scaffold(
-      appBar: VoxelithAppBar(pageTitle: const Text('Başarımlar')),
+      appBar: VoxelithAppBar(pageTitle: Text(i18n.achievementsTitle)),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.fromLTRB(22, 16, 22, 30),
@@ -23,7 +26,7 @@ class AchievementsScreen extends ConsumerWidget {
               children: [
                 Expanded(
                   child: Text(
-                    'Rozet koleksiyonu',
+                    i18n.achievementsHeading,
                     style: Theme.of(context).textTheme.displayMedium,
                   ),
                 ),
@@ -54,6 +57,7 @@ class AchievementsScreen extends ConsumerWidget {
               itemBuilder: (context, index) {
                 final achievement = Achievement.values[index];
                 return _AchievementCard(
+                  i18n: i18n,
                   achievement: achievement,
                   unlocked: unlocked.contains(achievement),
                 );
@@ -67,7 +71,12 @@ class AchievementsScreen extends ConsumerWidget {
 }
 
 class _AchievementCard extends StatelessWidget {
-  const _AchievementCard({required this.achievement, required this.unlocked});
+  const _AchievementCard({
+    required this.i18n,
+    required this.achievement,
+    required this.unlocked,
+  });
+  final I18n i18n;
   final Achievement achievement;
   final bool unlocked;
 
@@ -107,7 +116,7 @@ class _AchievementCard extends StatelessWidget {
           ),
           const Spacer(),
           Text(
-            achievement.title,
+            i18n.achievementTitle(achievement),
             style: TextStyle(
               color: foreground,
               fontWeight: FontWeight.w700,
@@ -116,7 +125,7 @@ class _AchievementCard extends StatelessWidget {
           ),
           const SizedBox(height: 5),
           Text(
-            achievement.description,
+            i18n.achievementDescription(achievement),
             maxLines: 3,
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(

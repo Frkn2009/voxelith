@@ -71,15 +71,12 @@ class PlanGenerator {
   }
 
   static List<String> _previewTitles(UserProfile profile) {
-    final scenarios = Catalog.forLang(profile.learnLang)
-        .where((s) => s.cefr == profile.cefr)
-        .toList();
+    final scenarios = Catalog.forLang(
+      profile.learnLang,
+    ).where((s) => s.cefr == profile.cefr).toList();
     final pool = scenarios.isNotEmpty
         ? scenarios
         : Catalog.forLang(profile.learnLang);
-    return pool
-        .take(3)
-        .map((s) => s.titles[profile.uiLang] ?? s.titles.values.first)
-        .toList();
+    return pool.take(3).map((s) => s.title(profile.uiLang)).toList();
   }
 }

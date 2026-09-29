@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/models/clan.dart';
 import '../../data/supabase/supa_service.dart';
@@ -50,9 +51,7 @@ class _ClanScreenState extends ConsumerState<ClanScreen> {
                   }
                   if (snapshot.hasError) return _failed(i18n);
                   final members = snapshot.data ?? const [];
-                  return members.isEmpty
-                      ? _empty(i18n)
-                      : _team(members, i18n);
+                  return members.isEmpty ? _empty(i18n) : _team(members, i18n);
                 },
               ),
       ),
@@ -66,7 +65,11 @@ class _ClanScreenState extends ConsumerState<ClanScreen> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(Icons.groups_outlined, size: 48, color: Voxelith.mintDark),
+            const Icon(
+              Icons.groups_outlined,
+              size: 48,
+              color: Voxelith.mintDark,
+            ),
             const SizedBox(height: 12),
             Text(
               i18n.clanLoginPrompt,
@@ -140,9 +143,9 @@ class _ClanScreenState extends ConsumerState<ClanScreen> {
           onTap: () async {
             await Clipboard.setData(ClipboardData(text: clan.joinCode));
             if (mounted) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text(i18n.clanCodeCopied)),
-              );
+              ScaffoldMessenger.of(
+                context,
+              ).showSnackBar(SnackBar(content: Text(i18n.clanCodeCopied)));
             }
           },
           child: Row(
@@ -200,7 +203,10 @@ class _ClanScreenState extends ConsumerState<ClanScreen> {
                     ),
                     Text(
                       i18n.peerCorrectionCardSubtitle,
-                      style: const TextStyle(color: Voxelith.muted, fontSize: 12),
+                      style: const TextStyle(
+                        color: Voxelith.muted,
+                        fontSize: 12,
+                      ),
                     ),
                   ],
                 ),
@@ -229,7 +235,11 @@ class _ClanScreenState extends ConsumerState<ClanScreen> {
         SizedBox(
           width: 32,
           child: member.rank == 1
-              ? const Icon(Icons.emoji_events, color: Voxelith.sunflower, size: 20)
+              ? const Icon(
+                  Icons.emoji_events,
+                  color: Voxelith.sunflower,
+                  size: 20,
+                )
               : Text(
                   '${member.rank}',
                   textAlign: TextAlign.center,
@@ -242,7 +252,7 @@ class _ClanScreenState extends ConsumerState<ClanScreen> {
         const SizedBox(width: 8),
         Expanded(
           child: Text(
-            '${member.playerName}${member.isMe ? ' · ${i18n.you}' : ''}',
+            '${i18n.playerDisplayName(member.playerName)}${member.isMe ? ' · ${i18n.you}' : ''}',
             style: TextStyle(
               fontWeight: member.isMe ? FontWeight.w700 : FontWeight.w500,
             ),
@@ -251,7 +261,11 @@ class _ClanScreenState extends ConsumerState<ClanScreen> {
         if (member.isOwner)
           const Padding(
             padding: EdgeInsets.only(right: 8),
-            child: Icon(Icons.shield_outlined, size: 18, color: Voxelith.sunflower),
+            child: Icon(
+              Icons.shield_outlined,
+              size: 18,
+              color: Voxelith.sunflower,
+            ),
           ),
         Text(
           '${member.xp} XP',

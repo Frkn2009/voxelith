@@ -1,3 +1,7 @@
+/// Telaffuz geri bildiriminin türü — UI bunu `I18n` ile kullanıcının
+/// arayüz diline çevirir (bkz. `UiStrings.pronunciationFeedback`).
+enum PronunciationFeedback { noAudio, notEnough, excellent, good, fair, weak }
+
 class PronunciationAssessment {
   const PronunciationAssessment({
     required this.overall,
@@ -5,13 +9,18 @@ class PronunciationAssessment {
     required this.fluency,
     required this.clarity,
     required this.feedback,
+    required this.feedbackKind,
   });
 
   final int overall;
   final int phonemeAccuracy;
   final int fluency;
   final int clarity;
+
+  /// Türkçe geri bildirim metni (geriye dönük uyumluluk için). Ekranlar
+  /// bunun yerine [feedbackKind]'ı yerelleştirerek göstermeli.
   final String feedback;
+  final PronunciationFeedback feedbackKind;
 }
 
 /// STT'nin akustik çözümlemesini dil-duyarlı fonem dizisiyle değerlendirir.
@@ -31,6 +40,7 @@ class PhonemeScorer {
         fluency: 0,
         clarity: 0,
         feedback: 'Ses algılanmadı. Mikrofona yakın ve doğal hızda tekrar et.',
+        feedbackKind: PronunciationFeedback.noAudio,
       );
     }
 
@@ -43,6 +53,7 @@ class PhonemeScorer {
         fluency: 0,
         clarity: 0,
         feedback: 'Değerlendirilecek yeterli ses birimi bulunamadı.',
+        feedbackKind: PronunciationFeedback.notEnough,
       );
     }
 
@@ -76,12 +87,19 @@ class PhonemeScorer {
       >= 55 => 'Anlaşılır; cümleyi yavaşlatıp sesleri birbirine bağla.',
       _ => 'Önce yavaş dinle, ardından kelime kelime tekrar et.',
     };
+    final feedbackKind = switch (overall) {
+      >= 90 => PronunciationFeedback.excellent,
+      >= 75 => PronunciationFeedback.good,
+      >= 55 => PronunciationFeedback.fair,
+      _ => PronunciationFeedback.weak,
+    };
     return PronunciationAssessment(
       overall: overall,
       phonemeAccuracy: phoneme,
       fluency: fluency,
       clarity: clarity,
       feedback: feedback,
+      feedbackKind: feedbackKind,
     );
   }
 

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../../core/features.dart';
 import '../../core/supabase_config.dart';
 
 /// ElevenLabs destekli "gerçek insan sesine yakın" anlatım (Plus özelliği).
@@ -13,19 +14,20 @@ import '../../core/supabase_config.dart';
 class PremiumTtsService {
   static final AudioPlayer _player = AudioPlayer();
 
-  static Future<bool> speak(String text, {String? voiceId, String? lang}) async {
-    if (!SupaConfig.isSet) return false;
+  static Future<bool> speak(
+    String text, {
+    String? voiceId,
+    String? lang,
+  }) async {
+    // Ücretli ses kapalı: çağıran taraf cihaz TTS'ine düşer.
+    if (!Features.paidCloudApis || !SupaConfig.isSet) return false;
     final client = Supabase.instance.client;
     if (client.auth.currentSession == null) return false;
 
     try {
       final response = await client.functions.invoke(
         'tts',
-        body: {
-          'text': text,
-          'voiceId': ?voiceId,
-          'lang': ?lang,
-        },
+        body: {'text': text, 'voiceId': ?voiceId, 'lang': ?lang},
       );
       final data = response.data;
       if (data is! Map || data['audioBase64'] is! String) return false;

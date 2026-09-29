@@ -7,9 +7,22 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>$(DEVELOPMENT_LANGUAGE)</string>
 		<key>NSMicrophoneUsageDescription</key>
-		<string>VOXELITH konuşma pratiği için mikrofonunu kullanır. Ses cihazda kalır.</string>
+		<string>VOXELITH uses the microphone during speaking practice so it can check your pronunciation. Recordings are not stored.</string>
 		<key>NSSpeechRecognitionUsageDescription</key>
-		<string>Söylediğin cümleyi yazıya çevirmek için konuşma tanıma gerekir.</string>
+		<string>VOXELITH uses Apple speech recognition to turn what you say into text and give you feedback on your answer.</string>
+		<key>NSUserTrackingUsageDescription</key>
+		<string>Your data will be used to show you more relevant ads in the free version. You can still use VOXELITH if you decline.</string>
+		<key>ITSAppUsesNonExemptEncryption</key>
+		<false/>
+		<!-- AdMob: Google'ın kendi SKAdNetwork kimliği. Mediation/ek ağ
+		     eklenirse Google'ın 3p-skadnetworks listesindeki kimlikleri de ekle. -->
+		<key>SKAdNetworkItems</key>
+		<array>
+			<dict>
+				<key>SKAdNetworkIdentifier</key>
+				<string>cstr6suwn9.skadnetwork</string>
+			</dict>
+		</array>
 		<key>CFBundleDisplayName</key>
 		<string>VOXELITH</string>
 		<!-- Google'ın test App ID'si. Üretimde AdMob konsolundaki App ID ile değiştir. -->
@@ -22,7 +35,7 @@
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundleName</key>
-		<string>voxelo</string>
+		<string>VOXELITH</string>
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleURLTypes</key>
@@ -30,7 +43,7 @@
 			<dict>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>voxelo</string>
+					<string>voxelith</string>
 				</array>
 			</dict>
 		</array>

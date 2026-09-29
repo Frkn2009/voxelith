@@ -38,6 +38,7 @@ async function callClaude(
   system: string,
   userPrompt: string,
   maxTokens: number,
+  model: string,
 ): Promise<Record<string, unknown>> {
   const response = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
@@ -47,10 +48,10 @@ async function callClaude(
       'anthropic-version': '2023-06-01',
     },
     body: JSON.stringify({
-      model: 'claude-sonnet-5',
+      model,
       max_tokens: maxTokens,
       system,
-      output_config: { effort: 'low' },
+      ...(model.startsWith('claude-sonnet') ? { output_config: { effort: 'low' } } : {}),
       messages: [{ role: 'user', content: userPrompt }],
     }),
   });
@@ -71,6 +72,11 @@ function asScore(raw: unknown): number {
 
 Deno.serve(async (request) => {
   if (request.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
+  // Sıfır maliyet: ücretli dış API'ler varsayılan olarak kapalı. Açmak için
+  // Supabase secret: VOXELITH_PAID_APIS=true (bkz. lib/core/features.dart).
+  if (Deno.env.get('VOXELITH_PAID_APIS') !== 'true') {
+    return json({ error: 'feature_disabled' }, 410);
+  }
   if (request.method !== 'POST') return json({ error: 'method_not_allowed' }, 405);
 
   const authorization = request.headers.get('Authorization');
@@ -95,7 +101,13 @@ Deno.serve(async (request) => {
   // yönlensin. Plus kullanıcı günde 15'e kadar, Business günde 40'a kadar
   // (Business'ın $200/yıl fiyatını gerçek bir değerle karşılamak için 4
   // Eylül'de eklendi — bkz. docs/MALIYET_ANALIZI_2026_09.md).
-  const FREE_DAILY_LIMIT = 1;
+  // Sıfır maliyet kuralı (29 Eylül 2026): ücretsiz kullanıcıya bedava AI
+  // çağrısı yok. Her hak ödüllü bir reklamla kazanılır (claim_ad_bonus) ve
+  // ücretsiz çağrılar ucuz modele gider — bir çağrının maliyeti (~$0.0011)
+  // bir ödüllü reklam gösteriminin gelirinin altında kalır.
+  const FREE_DAILY_LIMIT = 0;
+  const PAID_MODEL = 'claude-sonnet-5';
+  const FREE_MODEL = 'claude-haiku-4-5-20251001';
   const PLUS_DAILY_LIMIT = 15;
   const BUSINESS_DAILY_LIMIT = 40;
   // Var olan ödüllü reklam sınırıyla aynı (bkz.
@@ -174,7 +186,7 @@ Deno.serve(async (request) => {
         `Expected sentence (${targetLanguage}): "${sourceText}"\n` +
         `Learner's answer: "${userAnswer}"`;
 
-      const result = await callClaude(anthropicApiKey, system, user, 1024);
+      const result = await callClaude(anthropicApiKey, system, user, 1024, isPlus ? PAID_MODEL : FREE_MODEL);
       const tipsRaw = result.tips;
       const tips = Array.isArray(tipsRaw)
         ? tipsRaw.map((t) => String(t)).filter((t) => t.length > 0)
@@ -211,7 +223,7 @@ Deno.serve(async (request) => {
         `Keep sentences short and appropriate for level "${level}". Topic: ` +
         `"${topic}".`;
 
-      const result = await callClaude(anthropicApiKey, system, 'Generate the scenario now.', 1536);
+      const result = await callClaude(anthropicApiKey, system, 'Generate the scenario now.', 1536, isPlus ? PAID_MODEL : FREE_MODEL);
       const dialogueRaw = Array.isArray(result.dialogue) ? result.dialogue : [];
       const dialogue = dialogueRaw
         .filter((d): d is Record<string, unknown> => typeof d === 'object' && d !== null)
@@ -254,7 +266,7 @@ Deno.serve(async (request) => {
         'any, only counts.';
       const user = `reviewedCount=${reviewedCount}, difficultCount=${difficultCount}, masteredCount=${masteredCount}, streakDays=${streakDays}`;
 
-      const result = await callClaude(anthropicApiKey, system, user, 512);
+      const result = await callClaude(anthropicApiKey, system, user, 512, isPlus ? PAID_MODEL : FREE_MODEL);
       const message = typeof result.message === 'string' ? result.message : '';
       if (!message) return json({ error: 'incomplete_summary' }, 502);
       return json({

@@ -423,29 +423,49 @@ class I18n {
     'ar':
         'قوائم الكلمات تُنسى، شجاعة الكلام تبقى. '
         'نورا توصلك إلى جملتك الأولى، ثم إلى ما بعدها.',
-    'pt': 'Listas de palavras são esquecidas, a coragem de falar permanece. O Voxelith te leva à primeira frase, depois adiante.',
-    'it': 'Le liste di parole si dimenticano, il coraggio di parlare resta. Voxelith ti porta alla prima frase, poi oltre.',
-    'ru': 'Списки слов забываются, смелость говорить остаётся. Voxelith доведёт тебя до первой фразы, а потом дальше.',
+    'pt':
+        'Listas de palavras são esquecidas, a coragem de falar permanece. O Voxelith te leva à primeira frase, depois adiante.',
+    'it':
+        'Le liste di parole si dimenticano, il coraggio di parlare resta. Voxelith ti porta alla prima frase, poi oltre.',
+    'ru':
+        'Списки слов забываются, смелость говорить остаётся. Voxelith доведёт тебя до первой фразы, а потом дальше.',
     'zh': '单词表会被遗忘,但开口说话的勇气会留下来。Voxelith 带你说出第一句话,然后继续前进。',
     'ja': '単語リストは忘れられても、話す勇気は残る。Voxelithは最初の一文へ、そしてその先へ導く。',
     'ko': '단어 목록은 잊혀도 말할 용기는 남는다. Voxelith는 첫 문장으로, 그리고 그 다음으로 데려다준다.',
-    'pl': 'Listy słówek się zapomina, odwaga mówienia zostaje. Voxelith prowadzi cię do pierwszego zdania, a potem dalej.',
-    'sv': 'Ordlistor glöms bort, modet att prata finns kvar. Voxelith tar dig till din första mening, sedan vidare.',
-    'da': 'Ordlister bliver glemt, modet til at tale forbliver. Voxelith fører dig til din første sætning og videre.',
-    'no': 'Ordlister blir glemt, motet til å snakke består. Voxelith fører deg til din første setning, og videre.',
-    'fi': 'Sanalistat unohtuvat, rohkeus puhua jää. Voxelith vie sinut ensimmäiseen lauseeseen ja siitä eteenpäin.',
-    'el': 'Οι λίστες λέξεων ξεχνιούνται, το θάρρος να μιλήσεις μένει. Το Voxelith σε πάει στην πρώτη σου πρόταση, και μετά παραπέρα.',
-    'cs': 'Seznamy slovíček se zapomínají, odvaha mluvit zůstává. Voxelith tě dovede k první větě a pak dál.',
-    'ro': 'Listele de cuvinte se uită, curajul de a vorbi rămâne. Voxelith te duce la prima ta propoziție, apoi mai departe.',
-    'hu': 'A szólisták elfelejtődnek, a beszédhez való bátorság megmarad. A Voxelith elvisz az első mondatodig, majd tovább.',
-    'hi': 'शब्द सूचियाँ भुला दी जाती हैं, बोलने का साहस बना रहता है। Voxelith तुम्हें पहला वाक्य बनाने तक ले जाता है, फिर आगे।',
-    'th': 'รายการคำศัพท์ถูกลืมได้ แต่ความกล้าที่จะพูดยังคงอยู่ Voxelith พาคุณไปสู่ประโยคแรก แล้วพาไปต่อ',
-    'vi': 'Danh sách từ vựng rồi sẽ bị quên, nhưng can đảm để nói thì còn mãi. Voxelith đưa bạn đến câu đầu tiên, rồi tiếp tục từ đó.',
-    'id': 'Daftar kata akan terlupakan, keberanian untuk berbicara akan bertahan. Voxelith membawamu ke kalimat pertama, lalu melanjutkannya.',
-    'uk': 'Списки слів забуваються, сміливість говорити залишається. Voxelith доведе тебе до першого речення, а потім далі.',
-    'he': 'רשימות מילים נשכחות, האומץ לדבר נשאר. Voxelith מוביל אותך למשפט הראשון שלך, ואז הלאה.',
-    'fa': 'فهرست کلمات فراموش می‌شود، اما شجاعتِ صحبت‌کردن می‌ماند. Voxelith تو را به اولین جمله‌ات می‌رساند، سپس ادامه می‌دهد.',
-    'sw': 'Orodha za maneno husahaulika, ujasiri wa kuzungumza hubaki. Voxelith hukupeleka kwenye sentensi yako ya kwanza, kisha kuendelea.',
+    'pl':
+        'Listy słówek się zapomina, odwaga mówienia zostaje. Voxelith prowadzi cię do pierwszego zdania, a potem dalej.',
+    'sv':
+        'Ordlistor glöms bort, modet att prata finns kvar. Voxelith tar dig till din första mening, sedan vidare.',
+    'da':
+        'Ordlister bliver glemt, modet til at tale forbliver. Voxelith fører dig til din første sætning og videre.',
+    'no':
+        'Ordlister blir glemt, motet til å snakke består. Voxelith fører deg til din første setning, og videre.',
+    'fi':
+        'Sanalistat unohtuvat, rohkeus puhua jää. Voxelith vie sinut ensimmäiseen lauseeseen ja siitä eteenpäin.',
+    'el':
+        'Οι λίστες λέξεων ξεχνιούνται, το θάρρος να μιλήσεις μένει. Το Voxelith σε πάει στην πρώτη σου πρόταση, και μετά παραπέρα.',
+    'cs':
+        'Seznamy slovíček se zapomínají, odvaha mluvit zůstává. Voxelith tě dovede k první větě a pak dál.',
+    'ro':
+        'Listele de cuvinte se uită, curajul de a vorbi rămâne. Voxelith te duce la prima ta propoziție, apoi mai departe.',
+    'hu':
+        'A szólisták elfelejtődnek, a beszédhez való bátorság megmarad. A Voxelith elvisz az első mondatodig, majd tovább.',
+    'hi':
+        'शब्द सूचियाँ भुला दी जाती हैं, बोलने का साहस बना रहता है। Voxelith तुम्हें पहला वाक्य बनाने तक ले जाता है, फिर आगे।',
+    'th':
+        'รายการคำศัพท์ถูกลืมได้ แต่ความกล้าที่จะพูดยังคงอยู่ Voxelith พาคุณไปสู่ประโยคแรก แล้วพาไปต่อ',
+    'vi':
+        'Danh sách từ vựng rồi sẽ bị quên, nhưng can đảm để nói thì còn mãi. Voxelith đưa bạn đến câu đầu tiên, rồi tiếp tục từ đó.',
+    'id':
+        'Daftar kata akan terlupakan, keberanian untuk berbicara akan bertahan. Voxelith membawamu ke kalimat pertama, lalu melanjutkannya.',
+    'uk':
+        'Списки слів забуваються, сміливість говорити залишається. Voxelith доведе тебе до першого речення, а потім далі.',
+    'he':
+        'רשימות מילים נשכחות, האומץ לדבר נשאר. Voxelith מוביל אותך למשפט הראשון שלך, ואז הלאה.',
+    'fa':
+        'فهرست کلمات فراموش می‌شود، اما شجاعتِ صحبت‌کردن می‌ماند. Voxelith تو را به اولین جمله‌ات می‌رساند، سپس ادامه می‌دهد.',
+    'sw':
+        'Orodha za maneno husahaulika, ujasiri wa kuzungumza hubaki. Voxelith hukupeleka kwenye sentensi yako ya kwanza, kisha kuendelea.',
   });
 
   String get storySlide2Title => t({
@@ -503,29 +523,50 @@ class I18n {
     'ar':
         'كل تمرين يُقال بصوت عالٍ. ليس حفظ القاعدة، بل المحاولة حتى '
         'تُنطق صحيحاً — هناك يحدث التعلّم الحقيقي.',
-    'pt': 'Todo exercício é falado em voz alta. Não é decorar a regra, mas tentar até sair certo — é aí que acontece o aprendizado de verdade.',
-    'it': 'Ogni esercizio si dice ad alta voce. Non memorizzare la regola, ma provare finché non esce giusto — lì avviene il vero apprendimento.',
-    'ru': 'Каждое упражнение произносится вслух. Дело не в зубрёжке правила, а в попытках, пока не получится верно — именно там происходит настоящее обучение.',
+    'pt':
+        'Todo exercício é falado em voz alta. Não é decorar a regra, mas tentar até sair certo — é aí que acontece o aprendizado de verdade.',
+    'it':
+        'Ogni esercizio si dice ad alta voce. Non memorizzare la regola, ma provare finché non esce giusto — lì avviene il vero apprendimento.',
+    'ru':
+        'Каждое упражнение произносится вслух. Дело не в зубрёжке правила, а в попытках, пока не получится верно — именно там происходит настоящее обучение.',
     'zh': '每个练习都要大声说出来。不是死记规则,而是反复尝试直到说对——真正的学习就发生在那里。',
     'ja': 'すべての練習は声に出して行う。ルールを暗記するのではなく、正しく言えるまで試す——そこに本当の学びがある。',
-    'ko': '모든 연습은 소리 내어 말한다. 규칙을 외우는 게 아니라 제대로 나올 때까지 시도하는 것 — 진짜 배움은 거기서 일어난다.',
-    'pl': 'Każde ćwiczenie mówisz na głos. Nie chodzi o wkuwanie reguły, lecz o próbowanie, aż wyjdzie dobrze — tam dzieje się prawdziwa nauka.',
-    'sv': 'Varje övning sägs högt. Inte att memorera regeln, utan att öva tills det låter rätt — där sker det verkliga lärandet.',
-    'da': 'Hver øvelse siges højt. Ikke at udenadlære reglen, men at øve, til det lyder rigtigt — det er der, den rigtige læring sker.',
-    'no': 'Hver øvelse sies høyt. Ikke å pugge regelen, men å prøve til det sitter — der skjer den ekte læringen.',
-    'fi': 'Jokainen harjoitus sanotaan ääneen. Ei säännön ulkoa opettelua, vaan yrittämistä kunnes se onnistuu — siinä tapahtuu todellinen oppiminen.',
-    'el': 'Κάθε άσκηση λέγεται δυνατά. Όχι να αποστηθίσεις τον κανόνα, αλλά να προσπαθείς μέχρι να βγει σωστά — εκεί γίνεται η πραγματική μάθηση.',
-    'cs': 'Každé cvičení se říká nahlas. Nejde o biflování pravidla, ale o zkoušení, dokud to nezní správně — tam se odehrává skutečné učení.',
-    'ro': 'Fiecare exercițiu se spune cu voce tare. Nu memorarea regulii, ci încercarea până iese bine — acolo are loc adevărata învățare.',
-    'hu': 'Minden gyakorlatot hangosan mondasz ki. Nem a szabály bemagolása, hanem a próbálkozás, amíg jól nem sikerül — ott történik az igazi tanulás.',
-    'hi': 'हर अभ्यास ज़ोर से बोला जाता है। नियम रटना नहीं, बल्कि तब तक कोशिश करना जब तक सही न निकले — वहीं असली सीख होती है।',
-    'th': 'ทุกแบบฝึกหัดต้องพูดออกเสียง ไม่ใช่การท่องจำกฎ แต่คือการลองจนกว่าจะพูดถูก — ตรงนั้นแหละคือการเรียนรู้ที่แท้จริง',
-    'vi': 'Mọi bài tập đều được nói to. Không phải học thuộc quy tắc, mà là thử cho đến khi đúng — đó mới là học thật sự.',
-    'id': 'Setiap latihan diucapkan dengan lantang. Bukan menghafal aturan, tapi mencoba sampai benar — di situlah pembelajaran sesungguhnya terjadi.',
-    'uk': 'Кожна вправа промовляється вголос. Це не зубріння правила, а спроби, поки не вийде правильно — саме там відбувається справжнє навчання.',
-    'he': 'כל תרגיל נאמר בקול. לא לשנן את הכלל, אלא לנסות עד שזה יוצא נכון — שם קורית הלמידה האמיתית.',
-    'fa': 'هر تمرین با صدای بلند گفته می‌شود. نه حفظ‌کردن قاعده، بلکه تلاش تا زمانی که درست ادا شود — یادگیری واقعی همان‌جا اتفاق می‌افتد.',
-    'sw': 'Kila zoezi husemwa kwa sauti. Si kukariri kanuni, bali kujaribu hadi itoke sawa — hapo ndipo kujifunza halisi hutokea.',
+    'ko':
+        '모든 연습은 소리 내어 말한다. 규칙을 외우는 게 아니라 제대로 나올 때까지 시도하는 것 — 진짜 배움은 거기서 일어난다.',
+    'pl':
+        'Każde ćwiczenie mówisz na głos. Nie chodzi o wkuwanie reguły, lecz o próbowanie, aż wyjdzie dobrze — tam dzieje się prawdziwa nauka.',
+    'sv':
+        'Varje övning sägs högt. Inte att memorera regeln, utan att öva tills det låter rätt — där sker det verkliga lärandet.',
+    'da':
+        'Hver øvelse siges højt. Ikke at udenadlære reglen, men at øve, til det lyder rigtigt — det er der, den rigtige læring sker.',
+    'no':
+        'Hver øvelse sies høyt. Ikke å pugge regelen, men å prøve til det sitter — der skjer den ekte læringen.',
+    'fi':
+        'Jokainen harjoitus sanotaan ääneen. Ei säännön ulkoa opettelua, vaan yrittämistä kunnes se onnistuu — siinä tapahtuu todellinen oppiminen.',
+    'el':
+        'Κάθε άσκηση λέγεται δυνατά. Όχι να αποστηθίσεις τον κανόνα, αλλά να προσπαθείς μέχρι να βγει σωστά — εκεί γίνεται η πραγματική μάθηση.',
+    'cs':
+        'Každé cvičení se říká nahlas. Nejde o biflování pravidla, ale o zkoušení, dokud to nezní správně — tam se odehrává skutečné učení.',
+    'ro':
+        'Fiecare exercițiu se spune cu voce tare. Nu memorarea regulii, ci încercarea până iese bine — acolo are loc adevărata învățare.',
+    'hu':
+        'Minden gyakorlatot hangosan mondasz ki. Nem a szabály bemagolása, hanem a próbálkozás, amíg jól nem sikerül — ott történik az igazi tanulás.',
+    'hi':
+        'हर अभ्यास ज़ोर से बोला जाता है। नियम रटना नहीं, बल्कि तब तक कोशिश करना जब तक सही न निकले — वहीं असली सीख होती है।',
+    'th':
+        'ทุกแบบฝึกหัดต้องพูดออกเสียง ไม่ใช่การท่องจำกฎ แต่คือการลองจนกว่าจะพูดถูก — ตรงนั้นแหละคือการเรียนรู้ที่แท้จริง',
+    'vi':
+        'Mọi bài tập đều được nói to. Không phải học thuộc quy tắc, mà là thử cho đến khi đúng — đó mới là học thật sự.',
+    'id':
+        'Setiap latihan diucapkan dengan lantang. Bukan menghafal aturan, tapi mencoba sampai benar — di situlah pembelajaran sesungguhnya terjadi.',
+    'uk':
+        'Кожна вправа промовляється вголос. Це не зубріння правила, а спроби, поки не вийде правильно — саме там відбувається справжнє навчання.',
+    'he':
+        'כל תרגיל נאמר בקול. לא לשנן את הכלל, אלא לנסות עד שזה יוצא נכון — שם קורית הלמידה האמיתית.',
+    'fa':
+        'هر تمرین با صدای بلند گفته می‌شود. نه حفظ‌کردن قاعده، بلکه تلاش تا زمانی که درست ادا شود — یادگیری واقعی همان‌جا اتفاق می‌افتد.',
+    'sw':
+        'Kila zoezi husemwa kwa sauti. Si kukariri kanuni, bali kujaribu hadi itoke sawa — hapo ndipo kujifunza halisi hutokea.',
   });
 
   String get storySlide3Title => t({
@@ -583,29 +624,49 @@ class I18n {
     'ar':
         'بضع دقائق يومياً تكفي. بعد شهر ستلاحظ أنك تستطيع فعلاً '
         'التحدث مع من أمامك.',
-    'pt': 'Alguns minutos por dia bastam. Em um mês você vai perceber que consegue mesmo conversar com quem está à sua frente.',
-    'it': 'Bastano pochi minuti al giorno. Tra un mese scoprirai che riesci davvero a parlare con la persona di fronte a te.',
-    'ru': 'Достаточно нескольких минут в день. Через месяц ты заметишь, что действительно можешь говорить с человеком напротив.',
+    'pt':
+        'Alguns minutos por dia bastam. Em um mês você vai perceber que consegue mesmo conversar com quem está à sua frente.',
+    'it':
+        'Bastano pochi minuti al giorno. Tra un mese scoprirai che riesci davvero a parlare con la persona di fronte a te.',
+    'ru':
+        'Достаточно нескольких минут в день. Через месяц ты заметишь, что действительно можешь говорить с человеком напротив.',
     'zh': '每天几分钟就够了。一个月后你会发现,自己真的能和面前的人交谈了。',
     'ja': '毎日数分で十分。1ヶ月後には、目の前の人と本当に話せる自分に気づくはず。',
     'ko': '하루 몇 분이면 충분하다. 한 달 후엔 눈앞의 사람과 정말로 대화할 수 있다는 걸 알게 될 것이다.',
-    'pl': 'Wystarczy kilka minut dziennie. Za miesiąc zauważysz, że naprawdę potrafisz rozmawiać z osobą naprzeciwko.',
-    'sv': 'Några minuter om dagen räcker. Om en månad märker du att du verkligen kan prata med personen framför dig.',
-    'da': 'Nogle minutter om dagen er nok. Om en måned vil du opdage, at du rent faktisk kan tale med personen foran dig.',
-    'no': 'Noen minutter om dagen er nok. Om en måned merker du at du faktisk kan snakke med personen foran deg.',
-    'fi': 'Muutama minuutti päivässä riittää. Kuukauden kuluttua huomaat, että pystyt oikeasti puhumaan edessäsi olevan ihmisen kanssa.',
-    'el': 'Λίγα λεπτά την ημέρα αρκούν. Σε έναν μήνα θα διαπιστώσεις ότι μπορείς πραγματικά να μιλήσεις με το άτομο απέναντί σου.',
-    'cs': 'Stačí pár minut denně. Za měsíc zjistíš, že opravdu dokážeš mluvit s člověkem naproti tobě.',
-    'ro': 'Câteva minute pe zi sunt suficiente. Peste o lună vei observa că poți vorbi cu adevărat cu persoana din fața ta.',
-    'hu': 'Naponta néhány perc elég. Egy hónap múlva észreveszed, hogy valóban tudsz beszélni a veled szemben állóval.',
-    'hi': 'रोज़ बस कुछ मिनट काफी हैं। एक महीने बाद तुम्हें एहसास होगा कि तुम सामने वाले व्यक्ति से सच में बात कर सकते हो।',
-    'th': 'แค่ไม่กี่นาทีต่อวันก็พอ อีกหนึ่งเดือนคุณจะสังเกตว่าคุณสามารถพูดคุยกับคนตรงหน้าได้จริงๆ',
-    'vi': 'Chỉ vài phút mỗi ngày là đủ. Một tháng sau, bạn sẽ nhận ra mình thực sự có thể trò chuyện với người trước mặt.',
-    'id': 'Beberapa menit sehari sudah cukup. Sebulan lagi kamu akan menyadari bisa benar-benar berbicara dengan orang di depanmu.',
-    'uk': 'Кількох хвилин на день достатньо. Через місяць ти помітиш, що справді можеш говорити з людиною навпроти.',
-    'he': 'כמה דקות ביום מספיקות. בעוד חודש תבחין שאתה באמת יכול לדבר עם האדם שמולך.',
-    'fa': 'چند دقیقه در روز کافی است. یک ماه دیگر متوجه می‌شوی که واقعاً می‌توانی با کسی که روبرویت است صحبت کنی.',
-    'sw': 'Dakika chache kwa siku zinatosha. Baada ya mwezi mmoja utagundua kuwa unaweza kuzungumza kikweli na mtu aliye mbele yako.',
+    'pl':
+        'Wystarczy kilka minut dziennie. Za miesiąc zauważysz, że naprawdę potrafisz rozmawiać z osobą naprzeciwko.',
+    'sv':
+        'Några minuter om dagen räcker. Om en månad märker du att du verkligen kan prata med personen framför dig.',
+    'da':
+        'Nogle minutter om dagen er nok. Om en måned vil du opdage, at du rent faktisk kan tale med personen foran dig.',
+    'no':
+        'Noen minutter om dagen er nok. Om en måned merker du at du faktisk kan snakke med personen foran deg.',
+    'fi':
+        'Muutama minuutti päivässä riittää. Kuukauden kuluttua huomaat, että pystyt oikeasti puhumaan edessäsi olevan ihmisen kanssa.',
+    'el':
+        'Λίγα λεπτά την ημέρα αρκούν. Σε έναν μήνα θα διαπιστώσεις ότι μπορείς πραγματικά να μιλήσεις με το άτομο απέναντί σου.',
+    'cs':
+        'Stačí pár minut denně. Za měsíc zjistíš, že opravdu dokážeš mluvit s člověkem naproti tobě.',
+    'ro':
+        'Câteva minute pe zi sunt suficiente. Peste o lună vei observa că poți vorbi cu adevărat cu persoana din fața ta.',
+    'hu':
+        'Naponta néhány perc elég. Egy hónap múlva észreveszed, hogy valóban tudsz beszélni a veled szemben állóval.',
+    'hi':
+        'रोज़ बस कुछ मिनट काफी हैं। एक महीने बाद तुम्हें एहसास होगा कि तुम सामने वाले व्यक्ति से सच में बात कर सकते हो।',
+    'th':
+        'แค่ไม่กี่นาทีต่อวันก็พอ อีกหนึ่งเดือนคุณจะสังเกตว่าคุณสามารถพูดคุยกับคนตรงหน้าได้จริงๆ',
+    'vi':
+        'Chỉ vài phút mỗi ngày là đủ. Một tháng sau, bạn sẽ nhận ra mình thực sự có thể trò chuyện với người trước mặt.',
+    'id':
+        'Beberapa menit sehari sudah cukup. Sebulan lagi kamu akan menyadari bisa benar-benar berbicara dengan orang di depanmu.',
+    'uk':
+        'Кількох хвилин на день достатньо. Через місяць ти помітиш, що справді можеш говорити з людиною навпроти.',
+    'he':
+        'כמה דקות ביום מספיקות. בעוד חודש תבחין שאתה באמת יכול לדבר עם האדם שמולך.',
+    'fa':
+        'چند دقیقه در روز کافی است. یک ماه دیگر متوجه می‌شوی که واقعاً می‌توانی با کسی که روبرویت است صحبت کنی.',
+    'sw':
+        'Dakika chache kwa siku zinatosha. Baada ya mwezi mmoja utagundua kuwa unaweza kuzungumza kikweli na mtu aliye mbele yako.',
   });
 
   String get homeTourXpTitle => t({
@@ -663,29 +724,49 @@ class I18n {
     'ar':
         'اكسب نقاط خبرة كل يوم لترتقي. عند امتلاء الشريط تكون قد أتممت '
         'هدفك اليومي.',
-    'pt': 'Ganhe XP todos os dias para subir de nível. Quando a barra encher, você terá cumprido sua meta diária.',
-    'it': 'Guadagna XP ogni giorno per salire di livello. Quando la barra si riempie, hai raggiunto il tuo obiettivo giornaliero.',
-    'ru': 'Зарабатывай опыт каждый день, чтобы повышать уровень. Когда шкала заполнится, дневная цель будет выполнена.',
+    'pt':
+        'Ganhe XP todos os dias para subir de nível. Quando a barra encher, você terá cumprido sua meta diária.',
+    'it':
+        'Guadagna XP ogni giorno per salire di livello. Quando la barra si riempie, hai raggiunto il tuo obiettivo giornaliero.',
+    'ru':
+        'Зарабатывай опыт каждый день, чтобы повышать уровень. Когда шкала заполнится, дневная цель будет выполнена.',
     'zh': '每天赚取经验值来升级。进度条填满时,就完成了当天的目标。',
     'ja': '毎日XPを獲得してレベルアップ。バーが満タンになれば、今日の目標達成。',
     'ko': '매일 XP를 얻어 레벨업하세요. 게이지가 다 차면 오늘의 목표를 달성한 것입니다.',
-    'pl': 'Zdobywaj codziennie punkty XP, by awansować. Gdy pasek się zapełni, osiągniesz swój dzienny cel.',
-    'sv': 'Tjäna XP varje dag för att gå upp i nivå. När stapeln är full har du nått ditt dagliga mål.',
-    'da': 'Optjen XP hver dag for at stige i niveau. Når baren er fuld, har du nået dit daglige mål.',
-    'no': 'Tjen XP hver dag for å nivåstige. Når stolpen er full, har du nådd det daglige målet ditt.',
-    'fi': 'Ansaitse XP:tä joka päivä noustaksesi tasoissa. Kun palkki täyttyy, olet saavuttanut päivätavoitteesi.',
-    'el': 'Κέρδισε XP κάθε μέρα για να ανεβάσεις επίπεδο. Όταν η μπάρα γεμίσει, θα έχεις πετύχει τον καθημερινό σου στόχο.',
-    'cs': 'Získávej XP každý den, abys postoupil na vyšší úroveň. Až se ukazatel zaplní, splníš svůj denní cíl.',
-    'ro': 'Câștigă XP în fiecare zi pentru a urca în nivel. Când bara se umple, ți-ai atins obiectivul zilnic.',
-    'hu': 'Szerezz XP-t minden nap a szintlépéshez. Ha megtelik a sáv, teljesítetted a napi célodat.',
-    'hi': 'हर दिन XP कमाकर लेवल बढ़ाओ। बार भर जाने पर तुमने अपना दैनिक लक्ष्य पूरा कर लिया होगा।',
-    'th': 'รับ XP ทุกวันเพื่อเลื่อนระดับ เมื่อแถบเต็มแสดงว่าคุณทำเป้าหมายรายวันสำเร็จแล้ว',
-    'vi': 'Kiếm XP mỗi ngày để lên cấp. Khi thanh đầy, bạn đã hoàn thành mục tiêu hằng ngày.',
-    'id': 'Dapatkan XP setiap hari untuk naik level. Saat bar terisi penuh, kamu telah mencapai target harianmu.',
-    'uk': 'Заробляй досвід щодня, щоб підвищувати рівень. Коли шкала заповниться, денну мету буде досягнуто.',
-    'he': 'צבור נקודות XP כל יום כדי לעלות רמה. כשהמד מתמלא, השלמת את היעד היומי שלך.',
-    'fa': 'هر روز امتیاز XP کسب کن تا سطح‌ات بالا برود. وقتی نوار پر شد، هدف روزانه‌ات کامل شده است.',
-    'sw': 'Pata XP kila siku ili kupanda ngazi. Bar ikijaa, utakuwa umetimiza lengo lako la siku hiyo.',
+    'pl':
+        'Zdobywaj codziennie punkty XP, by awansować. Gdy pasek się zapełni, osiągniesz swój dzienny cel.',
+    'sv':
+        'Tjäna XP varje dag för att gå upp i nivå. När stapeln är full har du nått ditt dagliga mål.',
+    'da':
+        'Optjen XP hver dag for at stige i niveau. Når baren er fuld, har du nået dit daglige mål.',
+    'no':
+        'Tjen XP hver dag for å nivåstige. Når stolpen er full, har du nådd det daglige målet ditt.',
+    'fi':
+        'Ansaitse XP:tä joka päivä noustaksesi tasoissa. Kun palkki täyttyy, olet saavuttanut päivätavoitteesi.',
+    'el':
+        'Κέρδισε XP κάθε μέρα για να ανεβάσεις επίπεδο. Όταν η μπάρα γεμίσει, θα έχεις πετύχει τον καθημερινό σου στόχο.',
+    'cs':
+        'Získávej XP každý den, abys postoupil na vyšší úroveň. Až se ukazatel zaplní, splníš svůj denní cíl.',
+    'ro':
+        'Câștigă XP în fiecare zi pentru a urca în nivel. Când bara se umple, ți-ai atins obiectivul zilnic.',
+    'hu':
+        'Szerezz XP-t minden nap a szintlépéshez. Ha megtelik a sáv, teljesítetted a napi célodat.',
+    'hi':
+        'हर दिन XP कमाकर लेवल बढ़ाओ। बार भर जाने पर तुमने अपना दैनिक लक्ष्य पूरा कर लिया होगा।',
+    'th':
+        'รับ XP ทุกวันเพื่อเลื่อนระดับ เมื่อแถบเต็มแสดงว่าคุณทำเป้าหมายรายวันสำเร็จแล้ว',
+    'vi':
+        'Kiếm XP mỗi ngày để lên cấp. Khi thanh đầy, bạn đã hoàn thành mục tiêu hằng ngày.',
+    'id':
+        'Dapatkan XP setiap hari untuk naik level. Saat bar terisi penuh, kamu telah mencapai target harianmu.',
+    'uk':
+        'Заробляй досвід щодня, щоб підвищувати рівень. Коли шкала заповниться, денну мету буде досягнуто.',
+    'he':
+        'צבור נקודות XP כל יום כדי לעלות רמה. כשהמד מתמלא, השלמת את היעד היומי שלך.',
+    'fa':
+        'هر روز امتیاز XP کسب کن تا سطح‌ات بالا برود. وقتی نوار پر شد، هدف روزانه‌ات کامل شده است.',
+    'sw':
+        'Pata XP kila siku ili kupanda ngazi. Bar ikijaa, utakuwa umetimiza lengo lako la siku hiyo.',
   });
 
   String get homeTourSpeakTitle => t({
@@ -743,29 +824,49 @@ class I18n {
     'ar':
         'كل يوم نختار لك تمرين محادثة قصيرًا خاصًا بك. ابدأ من هنا، '
         'استمع وكرر.',
-    'pt': 'Todo dia escolhemos uma breve prática de conversação só para você. Comece aqui, ouça e repita.',
-    'it': 'Ogni giorno scegliamo un breve esercizio di conversazione solo per te. Inizia da qui, ascolta e ripeti.',
-    'ru': 'Каждый день мы подбираем для тебя короткую разговорную практику. Начни здесь, слушай и повторяй.',
+    'pt':
+        'Todo dia escolhemos uma breve prática de conversação só para você. Comece aqui, ouça e repita.',
+    'it':
+        'Ogni giorno scegliamo un breve esercizio di conversazione solo per te. Inizia da qui, ascolta e ripeti.',
+    'ru':
+        'Каждый день мы подбираем для тебя короткую разговорную практику. Начни здесь, слушай и повторяй.',
     'zh': '我们每天都为你挑选一个简短的对话练习。从这里开始,聆听并跟读。',
     'ja': '毎日あなたのために短い会話練習を用意します。ここから始めて、聞いて繰り返しましょう。',
     'ko': '매일 당신만을 위한 짧은 말하기 연습을 골라드립니다. 여기서 시작해 듣고 따라 해보세요.',
-    'pl': 'Codziennie wybieramy dla ciebie krótkie ćwiczenie mówienia. Zacznij tutaj, słuchaj i powtarzaj.',
-    'sv': 'Varje dag väljer vi en kort talövning bara för dig. Börja här, lyssna och upprepa.',
-    'da': 'Hver dag vælger vi en kort taleøvelse kun til dig. Start her, lyt og gentag.',
-    'no': 'Hver dag velger vi en kort taleøvelse bare for deg. Start her, lytt og gjenta.',
-    'fi': 'Valitsemme sinulle joka päivä lyhyen puheharjoituksen. Aloita täältä, kuuntele ja toista.',
-    'el': 'Κάθε μέρα επιλέγουμε μια σύντομη άσκηση ομιλίας μόνο για σένα. Ξεκίνα εδώ, άκου και επανάλαβε.',
-    'cs': 'Každý den pro tebe vybíráme krátké mluvní cvičení. Začni tady, poslouchej a opakuj.',
-    'ro': 'În fiecare zi alegem un exercițiu scurt de vorbire doar pentru tine. Începe de aici, ascultă și repetă.',
-    'hu': 'Minden nap kiválasztunk neked egy rövid beszédgyakorlatot. Kezdd itt, hallgasd meg és ismételd.',
-    'hi': 'हर दिन हम तुम्हारे लिए एक छोटा बोलचाल अभ्यास चुनते हैं। यहाँ से शुरू करो, सुनो और दोहराओ।',
-    'th': 'ทุกวันเราจะเลือกแบบฝึกพูดสั้นๆ ให้คุณโดยเฉพาะ เริ่มที่นี่ ฟังแล้วพูดตาม',
-    'vi': 'Mỗi ngày chúng tôi chọn một bài luyện nói ngắn dành riêng cho bạn. Bắt đầu tại đây, nghe và lặp lại.',
-    'id': 'Setiap hari kami memilihkan latihan bicara singkat khusus untukmu. Mulai di sini, dengarkan, dan ulangi.',
-    'uk': 'Щодня ми обираємо для тебе коротку розмовну практику. Почни тут, слухай і повторюй.',
-    'he': 'כל יום אנחנו בוחרים תרגול דיבור קצר במיוחד בשבילך. התחל כאן, האזן וחזור.',
-    'fa': 'هر روز یک تمرین گفتاری کوتاه مخصوص تو انتخاب می‌کنیم. از اینجا شروع کن، گوش بده و تکرار کن.',
-    'sw': 'Kila siku tunachagua zoezi fupi la kuzungumza kwa ajili yako pekee. Anza hapa, sikiliza kisha rudia.',
+    'pl':
+        'Codziennie wybieramy dla ciebie krótkie ćwiczenie mówienia. Zacznij tutaj, słuchaj i powtarzaj.',
+    'sv':
+        'Varje dag väljer vi en kort talövning bara för dig. Börja här, lyssna och upprepa.',
+    'da':
+        'Hver dag vælger vi en kort taleøvelse kun til dig. Start her, lyt og gentag.',
+    'no':
+        'Hver dag velger vi en kort taleøvelse bare for deg. Start her, lytt og gjenta.',
+    'fi':
+        'Valitsemme sinulle joka päivä lyhyen puheharjoituksen. Aloita täältä, kuuntele ja toista.',
+    'el':
+        'Κάθε μέρα επιλέγουμε μια σύντομη άσκηση ομιλίας μόνο για σένα. Ξεκίνα εδώ, άκου και επανάλαβε.',
+    'cs':
+        'Každý den pro tebe vybíráme krátké mluvní cvičení. Začni tady, poslouchej a opakuj.',
+    'ro':
+        'În fiecare zi alegem un exercițiu scurt de vorbire doar pentru tine. Începe de aici, ascultă și repetă.',
+    'hu':
+        'Minden nap kiválasztunk neked egy rövid beszédgyakorlatot. Kezdd itt, hallgasd meg és ismételd.',
+    'hi':
+        'हर दिन हम तुम्हारे लिए एक छोटा बोलचाल अभ्यास चुनते हैं। यहाँ से शुरू करो, सुनो और दोहराओ।',
+    'th':
+        'ทุกวันเราจะเลือกแบบฝึกพูดสั้นๆ ให้คุณโดยเฉพาะ เริ่มที่นี่ ฟังแล้วพูดตาม',
+    'vi':
+        'Mỗi ngày chúng tôi chọn một bài luyện nói ngắn dành riêng cho bạn. Bắt đầu tại đây, nghe và lặp lại.',
+    'id':
+        'Setiap hari kami memilihkan latihan bicara singkat khusus untukmu. Mulai di sini, dengarkan, dan ulangi.',
+    'uk':
+        'Щодня ми обираємо для тебе коротку розмовну практику. Почни тут, слухай і повторюй.',
+    'he':
+        'כל יום אנחנו בוחרים תרגול דיבור קצר במיוחד בשבילך. התחל כאן, האזן וחזור.',
+    'fa':
+        'هر روز یک تمرین گفتاری کوتاه مخصوص تو انتخاب می‌کنیم. از اینجا شروع کن، گوش بده و تکرار کن.',
+    'sw':
+        'Kila siku tunachagua zoezi fupi la kuzungumza kwa ajili yako pekee. Anza hapa, sikiliza kisha rudia.',
   });
 
   String get homeTourLibraryTitle => t({
@@ -821,29 +922,46 @@ class I18n {
         'Lees en luister naar korte verhalen op jouw niveau om lezen '
         'en uitspraak te oefenen.',
     'ar': 'اقرأ واستمع إلى قصص قصيرة بمستواك لتتمرن على القراءة والنطق.',
-    'pt': 'Leia e ouça histórias curtas no seu nível para praticar leitura e pronúncia.',
-    'it': 'Leggi e ascolta brevi storie al tuo livello per esercitarti in lettura e pronuncia.',
-    'ru': 'Читай и слушай короткие истории на своём уровне, чтобы практиковать чтение и произношение.',
+    'pt':
+        'Leia e ouça histórias curtas no seu nível para praticar leitura e pronúncia.',
+    'it':
+        'Leggi e ascolta brevi storie al tuo livello per esercitarti in lettura e pronuncia.',
+    'ru':
+        'Читай и слушай короткие истории на своём уровне, чтобы практиковать чтение и произношение.',
     'zh': '阅读并聆听适合你水平的短篇故事,练习阅读和发音。',
     'ja': 'あなたのレベルに合った短編を読んで聞いて、読解と発音を練習しましょう。',
     'ko': '자신의 수준에 맞는 짧은 이야기를 읽고 들으며 읽기와 발음을 연습하세요.',
-    'pl': 'Czytaj i słuchaj krótkich opowiadań na swoim poziomie, by ćwiczyć czytanie i wymowę.',
-    'sv': 'Läs och lyssna på korta berättelser på din nivå för att öva läsning och uttal.',
-    'da': 'Læs og lyt til korte historier på dit niveau for at øve læsning og udtale.',
+    'pl':
+        'Czytaj i słuchaj krótkich opowiadań na swoim poziomie, by ćwiczyć czytanie i wymowę.',
+    'sv':
+        'Läs och lyssna på korta berättelser på din nivå för att öva läsning och uttal.',
+    'da':
+        'Læs og lyt til korte historier på dit niveau for at øve læsning og udtale.',
     'no': 'Les og hør korte historier på ditt nivå for å øve lesing og uttale.',
-    'fi': 'Lue ja kuuntele lyhyitä tarinoita tasollesi harjoitellaksesi lukemista ja ääntämistä.',
-    'el': 'Διάβασε και άκουσε σύντομες ιστορίες στο επίπεδό σου για να εξασκηθείς στην ανάγνωση και την προφορά.',
-    'cs': 'Čti a poslouchej krátké příběhy na své úrovni, abys procvičil čtení a výslovnost.',
-    'ro': 'Citește și ascultă povești scurte la nivelul tău pentru a exersa citirea și pronunția.',
-    'hu': 'Olvass és hallgass rövid történeteket a szintednek megfelelően az olvasás és a kiejtés gyakorlásához.',
-    'hi': 'अपने स्तर की छोटी कहानियाँ पढ़ो और सुनो ताकि पढ़ने और उच्चारण का अभ्यास हो सके।',
+    'fi':
+        'Lue ja kuuntele lyhyitä tarinoita tasollesi harjoitellaksesi lukemista ja ääntämistä.',
+    'el':
+        'Διάβασε και άκουσε σύντομες ιστορίες στο επίπεδό σου για να εξασκηθείς στην ανάγνωση και την προφορά.',
+    'cs':
+        'Čti a poslouchej krátké příběhy na své úrovni, abys procvičil čtení a výslovnost.',
+    'ro':
+        'Citește și ascultă povești scurte la nivelul tău pentru a exersa citirea și pronunția.',
+    'hu':
+        'Olvass és hallgass rövid történeteket a szintednek megfelelően az olvasás és a kiejtés gyakorlásához.',
+    'hi':
+        'अपने स्तर की छोटी कहानियाँ पढ़ो और सुनो ताकि पढ़ने और उच्चारण का अभ्यास हो सके।',
     'th': 'อ่านและฟังเรื่องสั้นๆ ตามระดับของคุณเพื่อฝึกการอ่านและการออกเสียง',
-    'vi': 'Đọc và nghe những câu chuyện ngắn theo trình độ của bạn để luyện đọc và phát âm.',
-    'id': 'Baca dan dengarkan cerita pendek sesuai levelmu untuk melatih membaca dan pelafalan.',
-    'uk': 'Читай і слухай короткі історії свого рівня, щоб практикувати читання та вимову.',
+    'vi':
+        'Đọc và nghe những câu chuyện ngắn theo trình độ của bạn để luyện đọc và phát âm.',
+    'id':
+        'Baca dan dengarkan cerita pendek sesuai levelmu untuk melatih membaca dan pelafalan.',
+    'uk':
+        'Читай і слухай короткі історії свого рівня, щоб практикувати читання та вимову.',
     'he': 'קרא והאזן לסיפורים קצרים ברמה שלך כדי לתרגל קריאה והגייה.',
-    'fa': 'داستان‌های کوتاه در سطح خودت را بخوان و گوش کن تا خواندن و تلفظ را تمرین کنی.',
-    'sw': 'Soma na usikilize hadithi fupi katika kiwango chako ili kufanya mazoezi ya kusoma na matamshi.',
+    'fa':
+        'داستان‌های کوتاه در سطح خودت را بخوان و گوش کن تا خواندن و تلفظ را تمرین کنی.',
+    'sw':
+        'Soma na usikilize hadithi fupi katika kiwango chako ili kufanya mazoezi ya kusoma na matamshi.',
   });
 
   String get homeTourReviewTitle => t({
@@ -901,29 +1019,49 @@ class I18n {
     'ar':
         'الكلمات التي تعلمتها تتجمع هنا للمراجعة في الوقت المناسب — '
         'ثبّتها قبل أن تنساها.',
-    'pt': 'As palavras que você aprendeu se acumulam aqui para revisão na hora certa — reforce-as antes de esquecer.',
-    'it': 'Le parole che hai imparato si accumulano qui per essere ripassate al momento giusto — rinforzale prima di dimenticarle.',
-    'ru': 'Изученные слова собираются здесь для повторения точно вовремя — закрепи их, пока не забыл.',
+    'pt':
+        'As palavras que você aprendeu se acumulam aqui para revisão na hora certa — reforce-as antes de esquecer.',
+    'it':
+        'Le parole che hai imparato si accumulano qui per essere ripassate al momento giusto — rinforzale prima di dimenticarle.',
+    'ru':
+        'Изученные слова собираются здесь для повторения точно вовремя — закрепи их, пока не забыл.',
     'zh': '你学过的单词会在这里累积,到时间就该复习——趁没忘记之前巩固它们。',
     'ja': '学んだ単語はここに集まり、ちょうど良いタイミングで復習できます——忘れる前に定着させましょう。',
     'ko': '배운 단어들이 여기 모여 적절한 시점에 복습할 수 있습니다 — 잊기 전에 확실히 익히세요.',
-    'pl': 'Poznane słowa gromadzą się tutaj do powtórki w idealnym momencie — utrwal je, zanim zapomnisz.',
-    'sv': 'Ord du har lärt dig samlas här för repetition vid rätt tidpunkt — befäst dem innan du glömmer.',
-    'da': 'De ord, du har lært, samles her til gennemgang på det rette tidspunkt — fasthold dem, før du glemmer dem.',
-    'no': 'Ord du har lært samles her for repetisjon i riktig øyeblikk — fest dem før du glemmer.',
-    'fi': 'Oppimasi sanat kerääntyvät tänne kerrattavaksi juuri oikeaan aikaan — vahvista ne ennen kuin unohdat.',
-    'el': 'Οι λέξεις που έμαθες συγκεντρώνονται εδώ για επανάληψη τη σωστή στιγμή — εμπέδωσέ τες πριν τις ξεχάσεις.',
-    'cs': 'Slova, která ses naučil, se tu shromažďují k opakování ve správný čas — upevni si je, než je zapomeneš.',
-    'ro': 'Cuvintele pe care le-ai învățat se adună aici pentru recapitulare exact la momentul potrivit — fixează-le înainte să le uiți.',
-    'hu': 'A megtanult szavak itt gyűlnek össze, hogy pont a megfelelő pillanatban ismételd át őket — rögzítsd, mielőtt elfelejted.',
-    'hi': 'तुमने जो शब्द सीखे हैं वे सही समय पर दोहराने के लिए यहाँ जमा होते हैं — भूलने से पहले उन्हें पक्का कर लो।',
-    'th': 'คำศัพท์ที่คุณเรียนไปแล้วจะถูกรวบรวมไว้ที่นี่เพื่อทบทวนในเวลาที่เหมาะสม — ตอกย้ำก่อนที่คุณจะลืม',
-    'vi': 'Những từ bạn đã học sẽ được gom lại đây để ôn tập đúng lúc — củng cố chúng trước khi bạn quên.',
-    'id': 'Kata-kata yang telah kamu pelajari terkumpul di sini untuk ditinjau tepat waktu — kuatkan sebelum kamu lupa.',
-    'uk': 'Слова, які ти вивчив, збираються тут для повторення саме вчасно — закріпи їх, поки не забув.',
-    'he': 'המילים שלמדת מצטברות כאן לחזרה בדיוק בזמן הנכון — חזק אותן לפני שתשכח.',
-    'fa': 'کلماتی که یاد گرفته‌ای درست در زمان مناسب اینجا جمع می‌شوند تا مرور کنی — قبل از فراموشی آن‌ها را تثبیت کن.',
-    'sw': 'Maneno uliyojifunza hukusanyika hapa kwa mapitio wakati unaofaa — yaimarishe kabla hujayasahau.',
+    'pl':
+        'Poznane słowa gromadzą się tutaj do powtórki w idealnym momencie — utrwal je, zanim zapomnisz.',
+    'sv':
+        'Ord du har lärt dig samlas här för repetition vid rätt tidpunkt — befäst dem innan du glömmer.',
+    'da':
+        'De ord, du har lært, samles her til gennemgang på det rette tidspunkt — fasthold dem, før du glemmer dem.',
+    'no':
+        'Ord du har lært samles her for repetisjon i riktig øyeblikk — fest dem før du glemmer.',
+    'fi':
+        'Oppimasi sanat kerääntyvät tänne kerrattavaksi juuri oikeaan aikaan — vahvista ne ennen kuin unohdat.',
+    'el':
+        'Οι λέξεις που έμαθες συγκεντρώνονται εδώ για επανάληψη τη σωστή στιγμή — εμπέδωσέ τες πριν τις ξεχάσεις.',
+    'cs':
+        'Slova, která ses naučil, se tu shromažďují k opakování ve správný čas — upevni si je, než je zapomeneš.',
+    'ro':
+        'Cuvintele pe care le-ai învățat se adună aici pentru recapitulare exact la momentul potrivit — fixează-le înainte să le uiți.',
+    'hu':
+        'A megtanult szavak itt gyűlnek össze, hogy pont a megfelelő pillanatban ismételd át őket — rögzítsd, mielőtt elfelejted.',
+    'hi':
+        'तुमने जो शब्द सीखे हैं वे सही समय पर दोहराने के लिए यहाँ जमा होते हैं — भूलने से पहले उन्हें पक्का कर लो।',
+    'th':
+        'คำศัพท์ที่คุณเรียนไปแล้วจะถูกรวบรวมไว้ที่นี่เพื่อทบทวนในเวลาที่เหมาะสม — ตอกย้ำก่อนที่คุณจะลืม',
+    'vi':
+        'Những từ bạn đã học sẽ được gom lại đây để ôn tập đúng lúc — củng cố chúng trước khi bạn quên.',
+    'id':
+        'Kata-kata yang telah kamu pelajari terkumpul di sini untuk ditinjau tepat waktu — kuatkan sebelum kamu lupa.',
+    'uk':
+        'Слова, які ти вивчив, збираються тут для повторення саме вчасно — закріпи їх, поки не забув.',
+    'he':
+        'המילים שלמדת מצטברות כאן לחזרה בדיוק בזמן הנכון — חזק אותן לפני שתשכח.',
+    'fa':
+        'کلماتی که یاد گرفته‌ای درست در زمان مناسب اینجا جمع می‌شوند تا مرور کنی — قبل از فراموشی آن‌ها را تثبیت کن.',
+    'sw':
+        'Maneno uliyojifunza hukusanyika hapa kwa mapitio wakati unaofaa — yaimarishe kabla hujayasahau.',
   });
 
   String get whyTitle => t({
@@ -1294,37 +1432,40 @@ class I18n {
     'sw': 'Shikilia ili kuzungumza',
   });
 
+  // Plus ekranına götüren genel buton. Deneme vaadi içermez — deneme
+  // yalnızca mağaza ürününde tanımlıysa abonelik ekranında gösterilir
+  // (bkz. StoreStrings.trialCta).
   String get plusCta => t({
-    'tr': '3 gün ücretsiz dene',
-    'en': 'Start 3-day free trial',
-    'es': 'Prueba 3 días',
-    'de': '3 Tage testen',
-    'fr': 'Essai 3 jours',
-    'nl': '3 dagen proberen',
-    'ar': 'جرّب مجاناً لمدة 3 أيام',
-    'pt': 'Teste grátis por 3 dias',
-    'it': 'Prova gratis per 3 giorni',
-    'ru': 'Бесплатная пробная версия на 3 дня',
-    'zh': '开始3天免费试用',
-    'ja': '3日間無料トライアルを開始',
-    'ko': '3일 무료 체험 시작',
-    'pl': 'Rozpocznij 3-dniowy bezpłatny okres próbny',
-    'sv': 'Starta 3 dagars gratis provperiod',
-    'da': 'Start 3 dages gratis prøveperiode',
-    'no': 'Start 3 dagers gratis prøveperiode',
-    'fi': 'Aloita 3 päivän ilmainen kokeilu',
-    'el': 'Ξεκίνα δωρεάν δοκιμή 3 ημερών',
-    'cs': 'Začni 3denní bezplatnou zkušební verzi',
-    'ro': 'Începe perioada gratuită de 3 zile',
-    'hu': 'Indíts 3 napos ingyenes próbaidőszakot',
-    'hi': '3 दिन का मुफ़्त ट्रायल शुरू करें',
-    'th': 'เริ่มทดลองใช้ฟรี 3 วัน',
-    'vi': 'Bắt đầu dùng thử miễn phí 3 ngày',
-    'id': 'Mulai uji coba gratis 3 hari',
-    'uk': 'Розпочати 3-денну безкоштовну пробну версію',
-    'he': 'התחל ניסיון חינם ל-3 ימים',
-    'fa': 'شروع دوره آزمایشی رایگان ۳ روزه',
-    'sw': 'Anza jaribio la bure la siku 3',
+    'tr': "Plus'a geç",
+    'en': 'Get VOXELITH Plus',
+    'es': 'Consigue VOXELITH Plus',
+    'de': 'VOXELITH Plus holen',
+    'fr': 'Passer à VOXELITH Plus',
+    'nl': 'VOXELITH Plus nemen',
+    'ar': 'احصل على VOXELITH Plus',
+    'pt': 'Assine o VOXELITH Plus',
+    'it': 'Passa a VOXELITH Plus',
+    'ru': 'Перейти на VOXELITH Plus',
+    'zh': '升级 VOXELITH Plus',
+    'ja': 'VOXELITH Plusにする',
+    'ko': 'VOXELITH Plus 시작',
+    'pl': 'Przejdź na VOXELITH Plus',
+    'sv': 'Skaffa VOXELITH Plus',
+    'da': 'Få VOXELITH Plus',
+    'no': 'Få VOXELITH Plus',
+    'fi': 'Hanki VOXELITH Plus',
+    'el': 'Απόκτησε το VOXELITH Plus',
+    'cs': 'Získej VOXELITH Plus',
+    'ro': 'Treci la VOXELITH Plus',
+    'hu': 'VOXELITH Plus aktiválása',
+    'hi': 'VOXELITH Plus लें',
+    'th': 'อัปเกรดเป็น VOXELITH Plus',
+    'vi': 'Nâng cấp VOXELITH Plus',
+    'id': 'Dapatkan VOXELITH Plus',
+    'uk': 'Перейти на VOXELITH Plus',
+    'he': 'שדרג ל-VOXELITH Plus',
+    'fa': 'دریافت VOXELITH Plus',
+    'sw': 'Pata VOXELITH Plus',
   });
 
   String get paywallTitle => t({
@@ -2054,68 +2195,118 @@ class I18n {
     'sw': 'Mkalimani wa Mikutano',
   });
   String interpreterCardSubtitle(int minutes) => t({
-    'tr': 'İki dili sırayla dinler, hem yazılı hem sesli çevirir · bugün kalan $minutes dk',
-    'en': 'Listens to two languages in turn, translates both text and speech · $minutes min left today',
-    'es': 'Escucha dos idiomas por turnos, traduce texto y voz · $minutes min restantes hoy',
-    'de': 'Hört abwechselnd zwei Sprachen, übersetzt Text und Sprache · noch $minutes Min heute',
-    'fr': "Écoute deux langues à tour de rôle, traduit texte et voix · $minutes min restantes aujourd'hui",
-    'nl': 'Luistert om beurten naar twee talen, vertaalt tekst en spraak · nog $minutes min vandaag',
-    'ar': 'يستمع للغتين بالتناوب، يترجم نصاً وصوتاً · تبقى $minutes دقيقة اليوم',
-    'pt': 'Ouve dois idiomas por vez, traduz texto e voz · $minutes min restantes hoje',
-    'it': 'Ascolta due lingue a turno, traduce testo e voce · $minutes min rimanenti oggi',
-    'ru': 'Слушает два языка по очереди, переводит текст и речь · осталось $minutes мин сегодня',
+    'tr':
+        'İki dili sırayla dinler, hem yazılı hem sesli çevirir · bugün kalan $minutes dk',
+    'en':
+        'Listens to two languages in turn, translates both text and speech · $minutes min left today',
+    'es':
+        'Escucha dos idiomas por turnos, traduce texto y voz · $minutes min restantes hoy',
+    'de':
+        'Hört abwechselnd zwei Sprachen, übersetzt Text und Sprache · noch $minutes Min heute',
+    'fr':
+        "Écoute deux langues à tour de rôle, traduit texte et voix · $minutes min restantes aujourd'hui",
+    'nl':
+        'Luistert om beurten naar twee talen, vertaalt tekst en spraak · nog $minutes min vandaag',
+    'ar':
+        'يستمع للغتين بالتناوب، يترجم نصاً وصوتاً · تبقى $minutes دقيقة اليوم',
+    'pt':
+        'Ouve dois idiomas por vez, traduz texto e voz · $minutes min restantes hoje',
+    'it':
+        'Ascolta due lingue a turno, traduce testo e voce · $minutes min rimanenti oggi',
+    'ru':
+        'Слушает два языка по очереди, переводит текст и речь · осталось $minutes мин сегодня',
     'zh': '轮流聆听两种语言,翻译文字和语音 · 今天还剩 $minutes 分钟',
     'ja': '2つの言語を交互に聞き、テキストと音声を翻訳 · 今日残り$minutes分',
     'ko': '두 언어를 번갈아 듣고 텍스트와 음성을 번역 · 오늘 $minutes분 남음',
-    'pl': 'Słucha dwóch języków na zmianę, tłumaczy tekst i mowę · zostało $minutes min dziś',
-    'sv': 'Lyssnar på två språk i tur och ordning, översätter text och tal · $minutes min kvar idag',
-    'da': 'Lytter til to sprog på skift, oversætter tekst og tale · $minutes min tilbage i dag',
-    'no': 'Lytter til to språk om hverandre, oversetter tekst og tale · $minutes min igjen i dag',
-    'fi': 'Kuuntelee kahta kieltä vuorotellen, kääntää tekstin ja puheen · $minutes min jäljellä tänään',
-    'el': 'Ακούει δύο γλώσσες εναλλάξ, μεταφράζει κείμενο και ομιλία · απομένουν $minutes λεπτά σήμερα',
-    'cs': 'Poslouchá dva jazyky střídavě, překládá text i řeč · dnes zbývá $minutes min',
-    'ro': 'Ascultă două limbi pe rând, traduce text și vorbire · au mai rămas $minutes min azi',
-    'hu': 'Felváltva hallgatja a két nyelvet, szöveget és beszédet is fordít · ma még $minutes perc van hátra',
-    'hi': 'दो भाषाओं को बारी-बारी सुनता है, टेक्स्ट और आवाज़ दोनों अनुवाद करता है · आज $minutes मिनट शेष',
-    'th': 'ฟังสองภาษาสลับกัน แปลทั้งข้อความและเสียง · เหลือ $minutes นาทีวันนี้',
-    'vi': 'Nghe hai ngôn ngữ luân phiên, dịch cả văn bản và giọng nói · còn $minutes phút hôm nay',
-    'id': 'Mendengarkan dua bahasa secara bergantian, menerjemahkan teks dan suara · $minutes menit tersisa hari ini',
-    'uk': 'Слухає дві мови по черзі, перекладає текст і мовлення · залишилось $minutes хв сьогодні',
-    'he': 'מאזין לשתי שפות לסירוגין, מתרגם טקסט ודיבור · נותרו $minutes דקות היום',
-    'fa': 'به‌نوبت به دو زبان گوش می‌دهد، متن و گفتار را ترجمه می‌کند · $minutes دقیقه امروز باقی‌مانده',
-    'sw': 'Husikiliza lugha mbili kwa zamu, hutafsiri maandishi na sauti · dakika $minutes zimebaki leo',
+    'pl':
+        'Słucha dwóch języków na zmianę, tłumaczy tekst i mowę · zostało $minutes min dziś',
+    'sv':
+        'Lyssnar på två språk i tur och ordning, översätter text och tal · $minutes min kvar idag',
+    'da':
+        'Lytter til to sprog på skift, oversætter tekst og tale · $minutes min tilbage i dag',
+    'no':
+        'Lytter til to språk om hverandre, oversetter tekst og tale · $minutes min igjen i dag',
+    'fi':
+        'Kuuntelee kahta kieltä vuorotellen, kääntää tekstin ja puheen · $minutes min jäljellä tänään',
+    'el':
+        'Ακούει δύο γλώσσες εναλλάξ, μεταφράζει κείμενο και ομιλία · απομένουν $minutes λεπτά σήμερα',
+    'cs':
+        'Poslouchá dva jazyky střídavě, překládá text i řeč · dnes zbývá $minutes min',
+    'ro':
+        'Ascultă două limbi pe rând, traduce text și vorbire · au mai rămas $minutes min azi',
+    'hu':
+        'Felváltva hallgatja a két nyelvet, szöveget és beszédet is fordít · ma még $minutes perc van hátra',
+    'hi':
+        'दो भाषाओं को बारी-बारी सुनता है, टेक्स्ट और आवाज़ दोनों अनुवाद करता है · आज $minutes मिनट शेष',
+    'th':
+        'ฟังสองภาษาสลับกัน แปลทั้งข้อความและเสียง · เหลือ $minutes นาทีวันนี้',
+    'vi':
+        'Nghe hai ngôn ngữ luân phiên, dịch cả văn bản và giọng nói · còn $minutes phút hôm nay',
+    'id':
+        'Mendengarkan dua bahasa secara bergantian, menerjemahkan teks dan suara · $minutes menit tersisa hari ini',
+    'uk':
+        'Слухає дві мови по черзі, перекладає текст і мовлення · залишилось $minutes хв сьогодні',
+    'he':
+        'מאזין לשתי שפות לסירוגין, מתרגם טקסט ודיבור · נותרו $minutes דקות היום',
+    'fa':
+        'به‌نوبت به دو زبان گوش می‌دهد، متن و گفتار را ترجمه می‌کند · $minutes دقیقه امروز باقی‌مانده',
+    'sw':
+        'Husikiliza lugha mbili kwa zamu, hutafsiri maandishi na sauti · dakika $minutes zimebaki leo',
   });
   String get translateSignInRequired => t({
     'tr': 'Plus bulut çevirisi için profilinden VOXELITH hesabına giriş yap.',
-    'en': 'Sign in to your VOXELITH account from your profile for Plus cloud translation.',
-    'es': 'Inicia sesión en tu cuenta VOXELITH desde tu perfil para la traducción en la nube Plus.',
-    'de': 'Melde dich über dein Profil bei deinem VOXELITH-Konto an, um die Plus-Cloud-Übersetzung zu nutzen.',
-    'fr': 'Connecte-toi à ton compte VOXELITH depuis ton profil pour la traduction cloud Plus.',
-    'nl': 'Log via je profiel in op je VOXELITH-account voor Plus-cloudvertaling.',
-    'ar': 'سجّل الدخول إلى حساب VOXELITH من ملفك الشخصي لاستخدام الترجمة السحابية Plus.',
-    'pt': 'Faça login na sua conta VOXELITH pelo seu perfil para a tradução em nuvem Plus.',
-    'it': 'Accedi al tuo account VOXELITH dal tuo profilo per la traduzione cloud Plus.',
-    'ru': 'Войди в свой аккаунт VOXELITH через профиль, чтобы использовать облачный перевод Plus.',
+    'en':
+        'Sign in to your VOXELITH account from your profile for Plus cloud translation.',
+    'es':
+        'Inicia sesión en tu cuenta VOXELITH desde tu perfil para la traducción en la nube Plus.',
+    'de':
+        'Melde dich über dein Profil bei deinem VOXELITH-Konto an, um die Plus-Cloud-Übersetzung zu nutzen.',
+    'fr':
+        'Connecte-toi à ton compte VOXELITH depuis ton profil pour la traduction cloud Plus.',
+    'nl':
+        'Log via je profiel in op je VOXELITH-account voor Plus-cloudvertaling.',
+    'ar':
+        'سجّل الدخول إلى حساب VOXELITH من ملفك الشخصي لاستخدام الترجمة السحابية Plus.',
+    'pt':
+        'Faça login na sua conta VOXELITH pelo seu perfil para a tradução em nuvem Plus.',
+    'it':
+        'Accedi al tuo account VOXELITH dal tuo profilo per la traduzione cloud Plus.',
+    'ru':
+        'Войди в свой аккаунт VOXELITH через профиль, чтобы использовать облачный перевод Plus.',
     'zh': '从个人资料登录你的 VOXELITH 账户以使用 Plus 云翻译。',
     'ja': 'Plusクラウド翻訳を利用するには、プロフィールからVOXELITHアカウントにサインインしてください。',
     'ko': 'Plus 클라우드 번역을 사용하려면 프로필에서 VOXELITH 계정에 로그인하세요.',
-    'pl': 'Zaloguj się na konto VOXELITH z profilu, aby korzystać z tłumaczenia w chmurze Plus.',
-    'sv': 'Logga in på ditt VOXELITH-konto från din profil för Plus molnöversättning.',
-    'da': 'Log ind på din VOXELITH-konto fra din profil for Plus-cloudoversættelse.',
-    'no': 'Logg inn på VOXELITH-kontoen din fra profilen for Plus-skyoversettelse.',
-    'fi': 'Kirjaudu VOXELITH-tilillesi profiilistasi käyttääksesi Plus-pilvikäännöstä.',
-    'el': 'Συνδέσου στον λογαριασμό VOXELITH από το προφίλ σου για τη μετάφραση cloud Plus.',
-    'cs': 'Přihlas se ke svému účtu VOXELITH ve svém profilu pro cloudový překlad Plus.',
-    'ro': 'Conectează-te la contul tău VOXELITH din profil pentru traducerea cloud Plus.',
-    'hu': 'Jelentkezz be a VOXELITH-fiókodba a profilodból a Plus felhőalapú fordításhoz.',
-    'hi': 'Plus क्लाउड अनुवाद के लिए अपनी प्रोफ़ाइल से VOXELITH खाते में साइन इन करें।',
-    'th': 'ลงชื่อเข้าใช้บัญชี VOXELITH จากโปรไฟล์ของคุณเพื่อใช้การแปลบนคลาวด์ของ Plus',
-    'vi': 'Đăng nhập vào tài khoản VOXELITH từ hồ sơ của bạn để dùng dịch đám mây Plus.',
+    'pl':
+        'Zaloguj się na konto VOXELITH z profilu, aby korzystać z tłumaczenia w chmurze Plus.',
+    'sv':
+        'Logga in på ditt VOXELITH-konto från din profil för Plus molnöversättning.',
+    'da':
+        'Log ind på din VOXELITH-konto fra din profil for Plus-cloudoversættelse.',
+    'no':
+        'Logg inn på VOXELITH-kontoen din fra profilen for Plus-skyoversettelse.',
+    'fi':
+        'Kirjaudu VOXELITH-tilillesi profiilistasi käyttääksesi Plus-pilvikäännöstä.',
+    'el':
+        'Συνδέσου στον λογαριασμό VOXELITH από το προφίλ σου για τη μετάφραση cloud Plus.',
+    'cs':
+        'Přihlas se ke svému účtu VOXELITH ve svém profilu pro cloudový překlad Plus.',
+    'ro':
+        'Conectează-te la contul tău VOXELITH din profil pentru traducerea cloud Plus.',
+    'hu':
+        'Jelentkezz be a VOXELITH-fiókodba a profilodból a Plus felhőalapú fordításhoz.',
+    'hi':
+        'Plus क्लाउड अनुवाद के लिए अपनी प्रोफ़ाइल से VOXELITH खाते में साइन इन करें।',
+    'th':
+        'ลงชื่อเข้าใช้บัญชี VOXELITH จากโปรไฟล์ของคุณเพื่อใช้การแปลบนคลาวด์ของ Plus',
+    'vi':
+        'Đăng nhập vào tài khoản VOXELITH từ hồ sơ của bạn để dùng dịch đám mây Plus.',
     'id': 'Masuk ke akun VOXELITH-mu dari profil untuk terjemahan cloud Plus.',
-    'uk': 'Увійди в свій акаунт VOXELITH через профіль для хмарного перекладу Plus.',
+    'uk':
+        'Увійди в свій акаунт VOXELITH через профіль для хмарного перекладу Plus.',
     'he': 'התחבר לחשבון VOXELITH שלך מהפרופיל כדי להשתמש בתרגום הענן של Plus.',
     'fa': 'برای ترجمه ابری Plus، از پروفایل خود وارد حساب VOXELITH شو.',
-    'sw': 'Ingia kwenye akaunti yako ya VOXELITH kutoka wasifu wako kwa tafsiri ya wingu ya Plus.',
+    'sw':
+        'Ingia kwenye akaunti yako ya VOXELITH kutoka wasifu wako kwa tafsiri ya wingu ya Plus.',
   });
   String get translatePlusNotVerified => t({
     'tr': 'Bulut Plus hakkın henüz doğrulanmadı.',
@@ -2184,12 +2375,16 @@ class I18n {
   String get translateCloudUnavailable => t({
     'tr': 'Bulut çeviriye şu an ulaşılamıyor. Daha sonra tekrar dene.',
     'en': "Cloud translation isn't reachable right now. Try again later.",
-    'es': 'La traducción en la nube no está disponible ahora. Inténtalo más tarde.',
-    'de': 'Die Cloud-Übersetzung ist gerade nicht erreichbar. Versuch es später erneut.',
-    'fr': 'La traduction cloud est actuellement inaccessible. Réessaie plus tard.',
+    'es':
+        'La traducción en la nube no está disponible ahora. Inténtalo más tarde.',
+    'de':
+        'Die Cloud-Übersetzung ist gerade nicht erreichbar. Versuch es später erneut.',
+    'fr':
+        'La traduction cloud est actuellement inaccessible. Réessaie plus tard.',
     'nl': 'Cloudvertaling is nu niet bereikbaar. Probeer het later opnieuw.',
     'ar': 'الترجمة السحابية غير متاحة الآن. حاول لاحقاً.',
-    'pt': 'A tradução em nuvem não está disponível agora. Tente novamente mais tarde.',
+    'pt':
+        'A tradução em nuvem não está disponível agora. Tente novamente mais tarde.',
     'it': 'La traduzione cloud non è raggiungibile ora. Riprova più tardi.',
     'ru': 'Облачный перевод сейчас недоступен. Попробуй позже.',
     'zh': '云翻译当前无法访问。请稍后重试。',
@@ -2200,9 +2395,11 @@ class I18n {
     'da': 'Cloudoversættelse er ikke tilgængelig lige nu. Prøv igen senere.',
     'no': 'Sky-oversettelse er ikke tilgjengelig nå. Prøv igjen senere.',
     'fi': 'Pilvikäännös ei ole nyt tavoitettavissa. Yritä myöhemmin uudelleen.',
-    'el': 'Η μετάφραση cloud δεν είναι διαθέσιμη αυτή τη στιγμή. Δοκίμασε ξανά αργότερα.',
+    'el':
+        'Η μετάφραση cloud δεν είναι διαθέσιμη αυτή τη στιγμή. Δοκίμασε ξανά αργότερα.',
     'cs': 'Cloudový překlad teď není dostupný. Zkus to znovu později.',
-    'ro': 'Traducerea cloud nu este accesibilă acum. Încearcă din nou mai târziu.',
+    'ro':
+        'Traducerea cloud nu este accesibilă acum. Încearcă din nou mai târziu.',
     'hu': 'A felhőalapú fordítás jelenleg nem elérhető. Próbáld újra később.',
     'hi': 'क्लाउड अनुवाद अभी उपलब्ध नहीं है। बाद में पुनः प्रयास करें।',
     'th': 'ไม่สามารถเชื่อมต่อการแปลบนคลาวด์ได้ในขณะนี้ ลองใหม่อีกครั้งภายหลัง',
@@ -2304,40 +2501,66 @@ class I18n {
     'ar':
         'هذه الجملة غير موجودة في قاموس VOXELITH. لا نعرض ترجمة مُلفّقة — '
         'نفضّل تركها فارغة على تعليم عبارة خاطئة.',
-    'pt': 'Esta frase não está no dicionário VOXELITH. Não mostramos traduções inventadas — preferimos deixar em branco a ensinar uma frase errada.',
-    'it': 'Questa frase non è nel dizionario VOXELITH. Non mostriamo traduzioni inventate — preferiamo lasciare vuoto piuttosto che insegnare una frase sbagliata.',
-    'ru': 'Этой фразы нет в словаре VOXELITH. Мы не показываем выдуманные переводы — лучше оставить пусто, чем научить неправильной фразе.',
+    'pt':
+        'Esta frase não está no dicionário VOXELITH. Não mostramos traduções inventadas — preferimos deixar em branco a ensinar uma frase errada.',
+    'it':
+        'Questa frase non è nel dizionario VOXELITH. Non mostriamo traduzioni inventate — preferiamo lasciare vuoto piuttosto che insegnare una frase sbagliata.',
+    'ru':
+        'Этой фразы нет в словаре VOXELITH. Мы не показываем выдуманные переводы — лучше оставить пусто, чем научить неправильной фразе.',
     'zh': '这句话不在 VOXELITH 词典中。我们不会显示编造的翻译——宁可留空,也不教错误的表达。',
     'ja': 'この文はVOXELITH辞書にありません。でっち上げの翻訳は表示しません——間違った言い回しを教えるより空欄のほうがましです。',
-    'ko': '이 문장은 VOXELITH 사전에 없습니다. 지어낸 번역은 보여주지 않습니다 — 틀린 표현을 가르치느니 비워두는 쪽을 택합니다.',
-    'pl': 'To zdanie nie znajduje się w słowniku VOXELITH. Nie pokazujemy zmyślonych tłumaczeń — wolimy zostawić puste pole niż nauczyć błędnego zwrotu.',
-    'sv': 'Den här meningen finns inte i VOXELITH-ordboken. Vi visar inte hittepå-översättningar — vi lämnar hellre tomt än lär ut fel fras.',
-    'da': 'Denne sætning findes ikke i VOXELITH-ordbogen. Vi viser ikke opdigtede oversættelser — vi vil hellere lade det stå tomt end at lære en forkert vending.',
-    'no': 'Denne setningen finnes ikke i VOXELITH-ordboken. Vi viser ikke oppdiktede oversettelser — vi lar det heller stå tomt enn å lære bort en feil frase.',
-    'fi': 'Tätä lausetta ei ole VOXELITH-sanakirjassa. Emme näytä keksittyjä käännöksiä — jätämme mieluummin tyhjäksi kuin opetamme väärän ilmauksen.',
-    'el': 'Αυτή η πρόταση δεν υπάρχει στο λεξικό του VOXELITH. Δεν εμφανίζουμε επινοημένες μεταφράσεις — προτιμούμε να το αφήσουμε κενό παρά να διδάξουμε λάθος φράση.',
-    'cs': 'Tato věta není ve slovníku VOXELITH. Nezobrazujeme vymyšlené překlady — raději necháme prázdné, než abychom naučili špatnou frázi.',
-    'ro': 'Această propoziție nu se află în dicționarul VOXELITH. Nu afișăm traduceri inventate — preferăm să lăsăm gol decât să învățăm o expresie greșită.',
-    'hu': 'Ez a mondat nincs benne a VOXELITH szótárban. Nem jelenítünk meg kitalált fordítást — inkább üresen hagyjuk, minthogy rossz kifejezést tanítsunk.',
-    'hi': 'यह वाक्य VOXELITH शब्दकोश में नहीं है। हम बनावटी अनुवाद नहीं दिखाते — गलत वाक्यांश सिखाने से बेहतर है खाली छोड़ देना।',
-    'th': 'ประโยคนี้ไม่มีอยู่ในพจนานุกรม VOXELITH เราไม่แสดงคำแปลที่กุขึ้นมา — เราขอปล่อยว่างไว้ดีกว่าสอนวลีที่ผิด',
-    'vi': 'Câu này không có trong từ điển VOXELITH. Chúng tôi không hiển thị bản dịch bịa đặt — thà để trống còn hơn dạy sai một cụm từ.',
-    'id': 'Kalimat ini tidak ada dalam kamus VOXELITH. Kami tidak menampilkan terjemahan karangan — lebih baik dikosongkan daripada mengajarkan frasa yang salah.',
-    'uk': 'Цього речення немає у словнику VOXELITH. Ми не показуємо вигадані переклади — краще залишити порожнім, ніж навчити неправильної фрази.',
-    'he': 'המשפט הזה לא נמצא במילון VOXELITH. אנחנו לא מציגים תרגומים מומצאים — עדיף להשאיר ריק מאשר ללמד ביטוי שגוי.',
-    'fa': 'این جمله در فرهنگ لغت VOXELITH نیست. ما ترجمه‌ی ساختگی نشان نمی‌دهیم — ترجیح می‌دهیم خالی بگذاریم تا عبارت اشتباه یاد بدهیم.',
-    'sw': 'Sentensi hii haipo katika kamusi ya VOXELITH. Hatuonyeshi tafsiri za kubuni — tunapendelea kuacha wazi kuliko kufundisha kifungu kibaya.',
+    'ko':
+        '이 문장은 VOXELITH 사전에 없습니다. 지어낸 번역은 보여주지 않습니다 — 틀린 표현을 가르치느니 비워두는 쪽을 택합니다.',
+    'pl':
+        'To zdanie nie znajduje się w słowniku VOXELITH. Nie pokazujemy zmyślonych tłumaczeń — wolimy zostawić puste pole niż nauczyć błędnego zwrotu.',
+    'sv':
+        'Den här meningen finns inte i VOXELITH-ordboken. Vi visar inte hittepå-översättningar — vi lämnar hellre tomt än lär ut fel fras.',
+    'da':
+        'Denne sætning findes ikke i VOXELITH-ordbogen. Vi viser ikke opdigtede oversættelser — vi vil hellere lade det stå tomt end at lære en forkert vending.',
+    'no':
+        'Denne setningen finnes ikke i VOXELITH-ordboken. Vi viser ikke oppdiktede oversettelser — vi lar det heller stå tomt enn å lære bort en feil frase.',
+    'fi':
+        'Tätä lausetta ei ole VOXELITH-sanakirjassa. Emme näytä keksittyjä käännöksiä — jätämme mieluummin tyhjäksi kuin opetamme väärän ilmauksen.',
+    'el':
+        'Αυτή η πρόταση δεν υπάρχει στο λεξικό του VOXELITH. Δεν εμφανίζουμε επινοημένες μεταφράσεις — προτιμούμε να το αφήσουμε κενό παρά να διδάξουμε λάθος φράση.',
+    'cs':
+        'Tato věta není ve slovníku VOXELITH. Nezobrazujeme vymyšlené překlady — raději necháme prázdné, než abychom naučili špatnou frázi.',
+    'ro':
+        'Această propoziție nu se află în dicționarul VOXELITH. Nu afișăm traduceri inventate — preferăm să lăsăm gol decât să învățăm o expresie greșită.',
+    'hu':
+        'Ez a mondat nincs benne a VOXELITH szótárban. Nem jelenítünk meg kitalált fordítást — inkább üresen hagyjuk, minthogy rossz kifejezést tanítsunk.',
+    'hi':
+        'यह वाक्य VOXELITH शब्दकोश में नहीं है। हम बनावटी अनुवाद नहीं दिखाते — गलत वाक्यांश सिखाने से बेहतर है खाली छोड़ देना।',
+    'th':
+        'ประโยคนี้ไม่มีอยู่ในพจนานุกรม VOXELITH เราไม่แสดงคำแปลที่กุขึ้นมา — เราขอปล่อยว่างไว้ดีกว่าสอนวลีที่ผิด',
+    'vi':
+        'Câu này không có trong từ điển VOXELITH. Chúng tôi không hiển thị bản dịch bịa đặt — thà để trống còn hơn dạy sai một cụm từ.',
+    'id':
+        'Kalimat ini tidak ada dalam kamus VOXELITH. Kami tidak menampilkan terjemahan karangan — lebih baik dikosongkan daripada mengajarkan frasa yang salah.',
+    'uk':
+        'Цього речення немає у словнику VOXELITH. Ми не показуємо вигадані переклади — краще залишити порожнім, ніж навчити неправильної фрази.',
+    'he':
+        'המשפט הזה לא נמצא במילון VOXELITH. אנחנו לא מציגים תרגומים מומצאים — עדיף להשאיר ריק מאשר ללמד ביטוי שגוי.',
+    'fa':
+        'این جمله در فرهنگ لغت VOXELITH نیست. ما ترجمه‌ی ساختگی نشان نمی‌دهیم — ترجیح می‌دهیم خالی بگذاریم تا عبارت اشتباه یاد بدهیم.',
+    'sw':
+        'Sentensi hii haipo katika kamusi ya VOXELITH. Hatuonyeshi tafsiri za kubuni — tunapendelea kuacha wazi kuliko kufundisha kifungu kibaya.',
   });
   String get translatePlusRequiredNote => t({
     'tr': 'Plus bulut çevirisi için hesap ve aktif abonelik gerekir.',
-    'en': 'Plus cloud translation requires an account and an active subscription.',
-    'es': 'La traducción en la nube Plus requiere una cuenta y una suscripción activa.',
-    'de': 'Die Plus-Cloud-Übersetzung erfordert ein Konto und ein aktives Abonnement.',
-    'fr': 'La traduction cloud Plus nécessite un compte et un abonnement actif.',
+    'en':
+        'Plus cloud translation requires an account and an active subscription.',
+    'es':
+        'La traducción en la nube Plus requiere una cuenta y una suscripción activa.',
+    'de':
+        'Die Plus-Cloud-Übersetzung erfordert ein Konto und ein aktives Abonnement.',
+    'fr':
+        'La traduction cloud Plus nécessite un compte et un abonnement actif.',
     'nl': 'Plus-cloudvertaling vereist een account en een actief abonnement.',
     'ar': 'تتطلب الترجمة السحابية Plus حساباً واشتراكاً نشطاً.',
     'pt': 'A tradução em nuvem Plus requer uma conta e uma assinatura ativa.',
-    'it': 'La traduzione cloud Plus richiede un account e un abbonamento attivo.',
+    'it':
+        'La traduzione cloud Plus richiede un account e un abbonamento attivo.',
     'ru': 'Облачный перевод Plus требует аккаунта и активной подписки.',
     'zh': 'Plus 云翻译需要账户和有效订阅。',
     'ja': 'Plusクラウド翻訳にはアカウントと有効なサブスクリプションが必要です。',
@@ -2365,7 +2588,8 @@ class I18n {
     'en': 'Get expanded cloud translation and saving with Plus.',
     'es': 'Con Plus obtienes traducción en la nube ampliada y guardado.',
     'de': 'Mit Plus erhältst du erweiterte Cloud-Übersetzung und Speichern.',
-    'fr': 'Avec Plus, profite d\'une traduction cloud étendue et de la sauvegarde.',
+    'fr':
+        'Avec Plus, profite d\'une traduction cloud étendue et de la sauvegarde.',
     'nl': 'Met Plus krijg je uitgebreide cloudvertaling en opslaan.',
     'ar': 'مع Plus تحصل على ترجمة سحابية موسّعة وإمكانية الحفظ.',
     'pt': 'Com o Plus você tem tradução em nuvem ampliada e salvamento.',
@@ -2386,7 +2610,8 @@ class I18n {
     'hi': 'Plus के साथ विस्तारित क्लाउड अनुवाद और सेविंग पाएं।',
     'th': 'รับการแปลบนคลาวด์แบบขยายและการบันทึกด้วย Plus',
     'vi': 'Nhận dịch đám mây mở rộng và lưu trữ với Plus.',
-    'id': 'Dapatkan terjemahan cloud yang diperluas dan penyimpanan dengan Plus.',
+    'id':
+        'Dapatkan terjemahan cloud yang diperluas dan penyimpanan dengan Plus.',
     'uk': 'З Plus отримуй розширений хмарний переклад і збереження.',
     'he': 'קבל תרגום ענן מורחב ושמירה עם Plus.',
     'fa': 'با Plus ترجمه ابری گسترده و ذخیره‌سازی دریافت کن.',
@@ -2588,35 +2813,53 @@ class I18n {
   // Interpreter screen
   String get interpreterQuotaExhausted => t({
     'tr': 'Bugünkü Toplantı Çevirmeni kotan bitti, yarın sıfırlanır.',
-    'en': "Your Meeting Interpreter quota for today is used up, it resets tomorrow.",
-    'es': 'Tu cuota del Intérprete de reuniones de hoy se agotó, se reinicia mañana.',
-    'de': 'Dein heutiges Kontingent für den Besprechungsdolmetscher ist aufgebraucht, es wird morgen zurückgesetzt.',
-    'fr': "Ton quota d'Interprète de réunion du jour est épuisé, il se réinitialise demain.",
-    'nl': 'Je quotum voor de Vergadertolk van vandaag is op, morgen wordt het gereset.',
+    'en':
+        "Your Meeting Interpreter quota for today is used up, it resets tomorrow.",
+    'es':
+        'Tu cuota del Intérprete de reuniones de hoy se agotó, se reinicia mañana.',
+    'de':
+        'Dein heutiges Kontingent für den Besprechungsdolmetscher ist aufgebraucht, es wird morgen zurückgesetzt.',
+    'fr':
+        "Ton quota d'Interprète de réunion du jour est épuisé, il se réinitialise demain.",
+    'nl':
+        'Je quotum voor de Vergadertolk van vandaag is op, morgen wordt het gereset.',
     'ar': 'انتهت حصتك اليومية من مترجم الاجتماعات، وستُعاد ضبطها غداً.',
-    'pt': 'Sua cota diária do Intérprete de Reuniões acabou, ela reinicia amanhã.',
-    'it': 'La tua quota giornaliera dell\'Interprete per riunioni è esaurita, si azzera domani.',
-    'ru': 'Твоя дневная квота Переводчика для встреч исчерпана, она обновится завтра.',
+    'pt':
+        'Sua cota diária do Intérprete de Reuniões acabou, ela reinicia amanhã.',
+    'it':
+        'La tua quota giornaliera dell\'Interprete per riunioni è esaurita, si azzera domani.',
+    'ru':
+        'Твоя дневная квота Переводчика для встреч исчерпана, она обновится завтра.',
     'zh': '你今天的会议翻译额度已用完,明天会重置。',
     'ja': '本日の会議通訳のクォータを使い切りました。明日リセットされます。',
     'ko': '오늘의 회의 통역 사용량이 다 되었습니다. 내일 초기화됩니다.',
-    'pl': 'Twój dzienny limit Tłumacza spotkań się skończył, zresetuje się jutro.',
+    'pl':
+        'Twój dzienny limit Tłumacza spotkań się skończył, zresetuje się jutro.',
     'sv': 'Din dagliga kvot för Mötestolk är slut, den återställs imorgon.',
-    'da': 'Din daglige kvote for Mødetolk er brugt op, den nulstilles i morgen.',
-    'no': 'Din daglige kvote for Møtetolk er brukt opp, den nullstilles i morgen.',
-    'fi': 'Tämän päivän Kokoustulkin kiintiösi on käytetty, se nollautuu huomenna.',
-    'el': 'Η ημερήσια ποσόστωσή σου για τον Διερμηνέα συναντήσεων εξαντλήθηκε, μηδενίζεται αύριο.',
-    'cs': 'Tvá denní kvóta pro Tlumočníka schůzek je vyčerpána, resetuje se zítra.',
-    'ro': 'Cota ta zilnică pentru Interpretul de întâlniri s-a epuizat, se resetează mâine.',
+    'da':
+        'Din daglige kvote for Mødetolk er brugt op, den nulstilles i morgen.',
+    'no':
+        'Din daglige kvote for Møtetolk er brukt opp, den nullstilles i morgen.',
+    'fi':
+        'Tämän päivän Kokoustulkin kiintiösi on käytetty, se nollautuu huomenna.',
+    'el':
+        'Η ημερήσια ποσόστωσή σου για τον Διερμηνέα συναντήσεων εξαντλήθηκε, μηδενίζεται αύριο.',
+    'cs':
+        'Tvá denní kvóta pro Tlumočníka schůzek je vyčerpána, resetuje se zítra.',
+    'ro':
+        'Cota ta zilnică pentru Interpretul de întâlniri s-a epuizat, se resetează mâine.',
     'hu': 'A mai napi Megbeszélés-tolmács kereted elfogyott, holnap visszaáll.',
     'hi': 'आज की मीटिंग दुभाषिया सीमा समाप्त हो गई है, यह कल रीसेट होगी।',
     'th': 'โควตาล่ามการประชุมวันนี้ของคุณหมดแล้ว จะรีเซ็ตในวันพรุ่งนี้',
-    'vi': 'Hạn mức Phiên dịch cuộc họp hôm nay của bạn đã hết, sẽ được đặt lại vào ngày mai.',
+    'vi':
+        'Hạn mức Phiên dịch cuộc họp hôm nay của bạn đã hết, sẽ được đặt lại vào ngày mai.',
     'id': 'Kuota Penerjemah Rapat harianmu sudah habis, akan direset besok.',
-    'uk': 'Твоя денна квота Перекладача для зустрічей вичерпана, вона скинеться завтра.',
+    'uk':
+        'Твоя денна квота Перекладача для зустрічей вичерпана, вона скинеться завтра.',
     'he': 'המכסה היומית שלך למתורגמן לפגישות נגמרה, היא תתאפס מחר.',
     'fa': 'سهمیه امروز مترجم جلسات تو تمام شده و فردا بازنشانی می‌شود.',
-    'sw': 'Kiwango chako cha kila siku cha Mkalimani wa Mikutano kimeisha, kitawekwa upya kesho.',
+    'sw':
+        'Kiwango chako cha kila siku cha Mkalimani wa Mikutano kimeisha, kitawekwa upya kesho.',
   });
   String get interpreterDisclaimer => t({
     'tr': 'Sadece çeviriyor, yorum katmıyor',
@@ -2713,61 +2956,109 @@ class I18n {
         'ضع الهاتف على الطاولة. من يريد التحدث يضغط مطولاً على زر لغته، '
         'وعند تركه تُترجم العبارة إلى لغة الطرف الآخر وتُعرض كتابةً '
         'وتُقرأ صوتياً.',
-    'pt': 'Coloque o telefone na mesa. Quem quiser falar segura o botão do seu idioma; ao soltar, é traduzido para o idioma do outro lado e mostrado por escrito e em voz alta.',
-    'it': 'Metti il telefono sul tavolo. Chi vuole parlare tiene premuto il pulsante della propria lingua; al rilascio viene tradotto nella lingua dell\'altro e mostrato in forma scritta e letto ad alta voce.',
-    'ru': 'Положи телефон на стол. Тот, кто хочет говорить, удерживает кнопку своего языка; при отпускании фраза переводится на язык собеседника и показывается текстом, а также произносится вслух.',
+    'pt':
+        'Coloque o telefone na mesa. Quem quiser falar segura o botão do seu idioma; ao soltar, é traduzido para o idioma do outro lado e mostrado por escrito e em voz alta.',
+    'it':
+        'Metti il telefono sul tavolo. Chi vuole parlare tiene premuto il pulsante della propria lingua; al rilascio viene tradotto nella lingua dell\'altro e mostrato in forma scritta e letto ad alta voce.',
+    'ru':
+        'Положи телефон на стол. Тот, кто хочет говорить, удерживает кнопку своего языка; при отпускании фраза переводится на язык собеседника и показывается текстом, а также произносится вслух.',
     'zh': '把手机放在桌上。想说话的人按住自己语言的按钮;松开后会翻译成对方的语言,以文字显示并朗读出来。',
     'ja': '電話をテーブルに置きます。話したい人は自分の言語のボタンを押し続け、離すと相手の言語に翻訳されてテキスト表示と読み上げが行われます。',
-    'ko': '휴대폰을 테이블에 놓으세요. 말하고 싶은 사람이 자기 언어 버튼을 누르고 있다가 떼면, 상대방 언어로 번역되어 텍스트로 표시되고 소리로도 읽어줍니다.',
-    'pl': 'Połóż telefon na stole. Osoba, która chce mówić, przytrzymuje przycisk swojego języka; po puszczeniu zdanie jest tłumaczone na język drugiej strony, wyświetlane i odczytywane na głos.',
-    'sv': 'Lägg telefonen på bordet. Den som vill prata håller ner knappen för sitt eget språk; vid släpp översätts det till den andres språk och visas skriftligt samt läses upp.',
-    'da': 'Læg telefonen på bordet. Den, der vil tale, holder sin egen sprogknap nede; når den slippes, oversættes det til den andens sprog og vises skriftligt samt læses højt.',
-    'no': 'Legg telefonen på bordet. Den som vil snakke, holder inne knappen for sitt eget språk; når den slippes, oversettes det til den andres språk og vises skriftlig samt leses høyt.',
-    'fi': 'Aseta puhelin pöydälle. Puhuja pitää painettuna oman kielensä painiketta; kun se vapautetaan, lause käännetään toisen osapuolen kielelle ja näytetään tekstinä sekä luetaan ääneen.',
-    'el': 'Βάλε το τηλέφωνο στο τραπέζι. Όποιος θέλει να μιλήσει κρατά πατημένο το κουμπί της γλώσσας του· όταν το αφήσει, μεταφράζεται στη γλώσσα του άλλου και εμφανίζεται γραπτά ενώ διαβάζεται και δυνατά.',
-    'cs': 'Polož telefon na stůl. Kdo chce mluvit, podrží tlačítko svého jazyka; po uvolnění se věta přeloží do jazyka druhé strany a zobrazí se písemně i nahlas přečte.',
-    'ro': 'Pune telefonul pe masă. Cine vrea să vorbească ține apăsat butonul limbii sale; la eliberare, fraza este tradusă în limba celeilalte părți și afișată în scris, fiind și citită cu voce tare.',
-    'hu': 'Tedd a telefont az asztalra. Aki beszélni akar, tartsa lenyomva a saját nyelvének gombját; elengedéskor a mondat lefordul a másik fél nyelvére, megjelenik írásban és fel is olvassa.',
-    'hi': 'फ़ोन को मेज़ पर रखो। जो बोलना चाहे वह अपनी भाषा का बटन दबाए रखे; छोड़ने पर यह दूसरे पक्ष की भाषा में अनुवादित होकर लिखित रूप में दिखेगा और ज़ोर से पढ़ा भी जाएगा।',
-    'th': 'วางโทรศัพท์ไว้บนโต๊ะ ผู้ที่ต้องการพูดกดปุ่มภาษาของตนค้างไว้ เมื่อปล่อยจะถูกแปลเป็นภาษาของอีกฝ่าย แสดงเป็นข้อความและอ่านออกเสียงด้วย',
-    'vi': 'Đặt điện thoại lên bàn. Ai muốn nói thì giữ nút ngôn ngữ của mình; khi thả ra, câu nói sẽ được dịch sang ngôn ngữ của phía kia, hiển thị bằng chữ và đọc to lên.',
-    'id': 'Letakkan ponsel di atas meja. Siapa pun yang ingin berbicara menahan tombol bahasanya sendiri; saat dilepas, ucapan diterjemahkan ke bahasa pihak lain dan ditampilkan secara tertulis sekaligus dibacakan.',
-    'uk': 'Поклади телефон на стіл. Хто хоче говорити, утримує кнопку своєї мови; після відпускання фраза перекладається мовою іншої сторони та показується текстом і озвучується.',
-    'he': 'הנח את הטלפון על השולחן. מי שרוצה לדבר מחזיק את כפתור השפה שלו; בשחרור, המשפט מתורגם לשפת הצד השני ומוצג בכתב וגם מוקרא בקול.',
-    'fa': 'گوشی را روی میز بگذار. هر کس می‌خواهد صحبت کند دکمه زبان خودش را نگه می‌دارد؛ با رها کردن، جمله به زبان طرف مقابل ترجمه شده و هم به‌صورت نوشتاری نمایش داده می‌شود و هم با صدا خوانده می‌شود.',
-    'sw': 'Weka simu mezani. Anayetaka kuzungumza hushikilia kitufe cha lugha yake; akikiacha, sentensi hutafsiriwa kwa lugha ya upande mwingine na kuonyeshwa kwa maandishi na pia kusomwa kwa sauti.',
+    'ko':
+        '휴대폰을 테이블에 놓으세요. 말하고 싶은 사람이 자기 언어 버튼을 누르고 있다가 떼면, 상대방 언어로 번역되어 텍스트로 표시되고 소리로도 읽어줍니다.',
+    'pl':
+        'Połóż telefon na stole. Osoba, która chce mówić, przytrzymuje przycisk swojego języka; po puszczeniu zdanie jest tłumaczone na język drugiej strony, wyświetlane i odczytywane na głos.',
+    'sv':
+        'Lägg telefonen på bordet. Den som vill prata håller ner knappen för sitt eget språk; vid släpp översätts det till den andres språk och visas skriftligt samt läses upp.',
+    'da':
+        'Læg telefonen på bordet. Den, der vil tale, holder sin egen sprogknap nede; når den slippes, oversættes det til den andens sprog og vises skriftligt samt læses højt.',
+    'no':
+        'Legg telefonen på bordet. Den som vil snakke, holder inne knappen for sitt eget språk; når den slippes, oversettes det til den andres språk og vises skriftlig samt leses høyt.',
+    'fi':
+        'Aseta puhelin pöydälle. Puhuja pitää painettuna oman kielensä painiketta; kun se vapautetaan, lause käännetään toisen osapuolen kielelle ja näytetään tekstinä sekä luetaan ääneen.',
+    'el':
+        'Βάλε το τηλέφωνο στο τραπέζι. Όποιος θέλει να μιλήσει κρατά πατημένο το κουμπί της γλώσσας του· όταν το αφήσει, μεταφράζεται στη γλώσσα του άλλου και εμφανίζεται γραπτά ενώ διαβάζεται και δυνατά.',
+    'cs':
+        'Polož telefon na stůl. Kdo chce mluvit, podrží tlačítko svého jazyka; po uvolnění se věta přeloží do jazyka druhé strany a zobrazí se písemně i nahlas přečte.',
+    'ro':
+        'Pune telefonul pe masă. Cine vrea să vorbească ține apăsat butonul limbii sale; la eliberare, fraza este tradusă în limba celeilalte părți și afișată în scris, fiind și citită cu voce tare.',
+    'hu':
+        'Tedd a telefont az asztalra. Aki beszélni akar, tartsa lenyomva a saját nyelvének gombját; elengedéskor a mondat lefordul a másik fél nyelvére, megjelenik írásban és fel is olvassa.',
+    'hi':
+        'फ़ोन को मेज़ पर रखो। जो बोलना चाहे वह अपनी भाषा का बटन दबाए रखे; छोड़ने पर यह दूसरे पक्ष की भाषा में अनुवादित होकर लिखित रूप में दिखेगा और ज़ोर से पढ़ा भी जाएगा।',
+    'th':
+        'วางโทรศัพท์ไว้บนโต๊ะ ผู้ที่ต้องการพูดกดปุ่มภาษาของตนค้างไว้ เมื่อปล่อยจะถูกแปลเป็นภาษาของอีกฝ่าย แสดงเป็นข้อความและอ่านออกเสียงด้วย',
+    'vi':
+        'Đặt điện thoại lên bàn. Ai muốn nói thì giữ nút ngôn ngữ của mình; khi thả ra, câu nói sẽ được dịch sang ngôn ngữ của phía kia, hiển thị bằng chữ và đọc to lên.',
+    'id':
+        'Letakkan ponsel di atas meja. Siapa pun yang ingin berbicara menahan tombol bahasanya sendiri; saat dilepas, ucapan diterjemahkan ke bahasa pihak lain dan ditampilkan secara tertulis sekaligus dibacakan.',
+    'uk':
+        'Поклади телефон на стіл. Хто хоче говорити, утримує кнопку своєї мови; після відпускання фраза перекладається мовою іншої сторони та показується текстом і озвучується.',
+    'he':
+        'הנח את הטלפון על השולחן. מי שרוצה לדבר מחזיק את כפתור השפה שלו; בשחרור, המשפט מתורגם לשפת הצד השני ומוצג בכתב וגם מוקרא בקול.',
+    'fa':
+        'گوشی را روی میز بگذار. هر کس می‌خواهد صحبت کند دکمه زبان خودش را نگه می‌دارد؛ با رها کردن، جمله به زبان طرف مقابل ترجمه شده و هم به‌صورت نوشتاری نمایش داده می‌شود و هم با صدا خوانده می‌شود.',
+    'sw':
+        'Weka simu mezani. Anayetaka kuzungumza hushikilia kitufe cha lugha yake; akikiacha, sentensi hutafsiriwa kwa lugha ya upande mwingine na kuonyeshwa kwa maandishi na pia kusomwa kwa sauti.',
   });
   String get interpreterMicPermanentlyDenied => t({
-    'tr': 'Mikrofon izni kapalı. Telefon ayarlarından VOXELITH için mikrofonu aç.',
-    'en': 'Microphone access is off. Turn on the microphone for VOXELITH in your phone settings.',
-    'es': 'El acceso al micrófono está desactivado. Actívalo para VOXELITH en los ajustes del teléfono.',
-    'de': 'Mikrofonzugriff ist deaktiviert. Aktiviere das Mikrofon für VOXELITH in den Telefoneinstellungen.',
-    'fr': "L'accès au microphone est désactivé. Active le micro pour VOXELITH dans les réglages du téléphone.",
-    'nl': 'Microfoontoegang staat uit. Zet de microfoon voor VOXELITH aan in je telefooninstellingen.',
-    'ar': 'إذن الميكروفون مغلق. فعّل الميكروفون لتطبيق VOXELITH من إعدادات الهاتف.',
-    'pt': 'O acesso ao microfone está desativado. Ative o microfone para o VOXELITH nas configurações do telefone.',
-    'it': 'L\'accesso al microfono è disattivato. Attivalo per VOXELITH nelle impostazioni del telefono.',
-    'ru': 'Доступ к микрофону отключён. Включи микрофон для VOXELITH в настройках телефона.',
+    'tr':
+        'Mikrofon izni kapalı. Telefon ayarlarından VOXELITH için mikrofonu aç.',
+    'en':
+        'Microphone access is off. Turn on the microphone for VOXELITH in your phone settings.',
+    'es':
+        'El acceso al micrófono está desactivado. Actívalo para VOXELITH en los ajustes del teléfono.',
+    'de':
+        'Mikrofonzugriff ist deaktiviert. Aktiviere das Mikrofon für VOXELITH in den Telefoneinstellungen.',
+    'fr':
+        "L'accès au microphone est désactivé. Active le micro pour VOXELITH dans les réglages du téléphone.",
+    'nl':
+        'Microfoontoegang staat uit. Zet de microfoon voor VOXELITH aan in je telefooninstellingen.',
+    'ar':
+        'إذن الميكروفون مغلق. فعّل الميكروفون لتطبيق VOXELITH من إعدادات الهاتف.',
+    'pt':
+        'O acesso ao microfone está desativado. Ative o microfone para o VOXELITH nas configurações do telefone.',
+    'it':
+        'L\'accesso al microfono è disattivato. Attivalo per VOXELITH nelle impostazioni del telefono.',
+    'ru':
+        'Доступ к микрофону отключён. Включи микрофон для VOXELITH в настройках телефона.',
     'zh': '麦克风权限已关闭。请在手机设置中为 VOXELITH 开启麦克风。',
     'ja': 'マイクへのアクセスがオフです。電話の設定でVOXELITHのマイクをオンにしてください。',
     'ko': '마이크 접근이 꺼져 있습니다. 휴대폰 설정에서 VOXELITH의 마이크를 켜주세요.',
-    'pl': 'Dostęp do mikrofonu jest wyłączony. Włącz mikrofon dla VOXELITH w ustawieniach telefonu.',
-    'sv': 'Mikrofonåtkomst är avstängd. Slå på mikrofonen för VOXELITH i telefonens inställningar.',
-    'da': 'Mikrofonadgang er slået fra. Slå mikrofonen til for VOXELITH i telefonens indstillinger.',
-    'no': 'Mikrofontilgang er avslått. Slå på mikrofonen for VOXELITH i telefoninnstillingene.',
-    'fi': 'Mikrofonin käyttöoikeus on pois päältä. Ota mikrofoni käyttöön VOXELITHille puhelimen asetuksista.',
-    'el': 'Η πρόσβαση στο μικρόφωνο είναι απενεργοποιημένη. Ενεργοποίησε το μικρόφωνο για το VOXELITH στις ρυθμίσεις του τηλεφώνου.',
-    'cs': 'Přístup k mikrofonu je vypnutý. Zapni mikrofon pro VOXELITH v nastavení telefonu.',
-    'ro': 'Accesul la microfon este dezactivat. Activează microfonul pentru VOXELITH din setările telefonului.',
-    'hu': 'A mikrofonhozzáférés ki van kapcsolva. Kapcsold be a mikrofont a VOXELITH számára a telefon beállításaiban.',
-    'hi': 'माइक्रोफ़ोन एक्सेस बंद है। फ़ोन सेटिंग्स से VOXELITH के लिए माइक्रोफ़ोन चालू करें।',
-    'th': 'สิทธิ์ไมโครโฟนถูกปิดอยู่ กรุณาเปิดไมโครโฟนสำหรับ VOXELITH ในการตั้งค่าโทรศัพท์',
-    'vi': 'Quyền truy cập micrô đang tắt. Bật micrô cho VOXELITH trong cài đặt điện thoại.',
-    'id': 'Akses mikrofon nonaktif. Aktifkan mikrofon untuk VOXELITH di pengaturan ponselmu.',
-    'uk': 'Доступ до мікрофона вимкнено. Увімкни мікрофон для VOXELITH у налаштуваннях телефону.',
-    'he': 'הגישה למיקרופון כבויה. הפעל את המיקרופון עבור VOXELITH בהגדרות הטלפון.',
-    'fa': 'دسترسی میکروفون خاموش است. میکروفون را برای VOXELITH در تنظیمات گوشی روشن کن.',
-    'sw': 'Ufikiaji wa maikrofoni umezimwa. Washa maikrofoni kwa VOXELITH kwenye mipangilio ya simu yako.',
+    'pl':
+        'Dostęp do mikrofonu jest wyłączony. Włącz mikrofon dla VOXELITH w ustawieniach telefonu.',
+    'sv':
+        'Mikrofonåtkomst är avstängd. Slå på mikrofonen för VOXELITH i telefonens inställningar.',
+    'da':
+        'Mikrofonadgang er slået fra. Slå mikrofonen til for VOXELITH i telefonens indstillinger.',
+    'no':
+        'Mikrofontilgang er avslått. Slå på mikrofonen for VOXELITH i telefoninnstillingene.',
+    'fi':
+        'Mikrofonin käyttöoikeus on pois päältä. Ota mikrofoni käyttöön VOXELITHille puhelimen asetuksista.',
+    'el':
+        'Η πρόσβαση στο μικρόφωνο είναι απενεργοποιημένη. Ενεργοποίησε το μικρόφωνο για το VOXELITH στις ρυθμίσεις του τηλεφώνου.',
+    'cs':
+        'Přístup k mikrofonu je vypnutý. Zapni mikrofon pro VOXELITH v nastavení telefonu.',
+    'ro':
+        'Accesul la microfon este dezactivat. Activează microfonul pentru VOXELITH din setările telefonului.',
+    'hu':
+        'A mikrofonhozzáférés ki van kapcsolva. Kapcsold be a mikrofont a VOXELITH számára a telefon beállításaiban.',
+    'hi':
+        'माइक्रोफ़ोन एक्सेस बंद है। फ़ोन सेटिंग्स से VOXELITH के लिए माइक्रोफ़ोन चालू करें।',
+    'th':
+        'สิทธิ์ไมโครโฟนถูกปิดอยู่ กรุณาเปิดไมโครโฟนสำหรับ VOXELITH ในการตั้งค่าโทรศัพท์',
+    'vi':
+        'Quyền truy cập micrô đang tắt. Bật micrô cho VOXELITH trong cài đặt điện thoại.',
+    'id':
+        'Akses mikrofon nonaktif. Aktifkan mikrofon untuk VOXELITH di pengaturan ponselmu.',
+    'uk':
+        'Доступ до мікрофона вимкнено. Увімкни мікрофон для VOXELITH у налаштуваннях телефону.',
+    'he':
+        'הגישה למיקרופון כבויה. הפעל את המיקרופון עבור VOXELITH בהגדרות הטלפון.',
+    'fa':
+        'دسترسی میکروفون خاموش است. میکروفون را برای VOXELITH در تنظیمات گوشی روشن کن.',
+    'sw':
+        'Ufikiaji wa maikrofoni umezimwa. Washa maikrofoni kwa VOXELITH kwenye mipangilio ya simu yako.',
   });
   String get interpreterMicPermissionDenied => t({
     'tr': 'Konuşabilmek için mikrofon izni vermen gerekiyor.',
@@ -3576,34 +3867,53 @@ class I18n {
   String get clanEmptyBody => t({
     'tr': 'Takım kur veya 6 haneli davet koduyla arkadaşlarına katıl.',
     'en': 'Create a team, or join friends with a 6-digit invite code.',
-    'es': 'Crea un equipo o únete a tus amigos con un código de invitación de 6 dígitos.',
-    'de': 'Erstelle ein Team oder tritt Freunden mit einem 6-stelligen Einladungscode bei.',
-    'fr': "Crée une équipe ou rejoins tes amis avec un code d'invitation à 6 chiffres.",
-    'nl': 'Maak een team of doe mee met vrienden via een 6-cijferige uitnodigingscode.',
+    'es':
+        'Crea un equipo o únete a tus amigos con un código de invitación de 6 dígitos.',
+    'de':
+        'Erstelle ein Team oder tritt Freunden mit einem 6-stelligen Einladungscode bei.',
+    'fr':
+        "Crée une équipe ou rejoins tes amis avec un code d'invitation à 6 chiffres.",
+    'nl':
+        'Maak een team of doe mee met vrienden via een 6-cijferige uitnodigingscode.',
     'ar': 'أنشئ فريقاً أو انضم إلى أصدقائك برمز دعوة من 6 أرقام.',
-    'pt': 'Crie uma equipe ou junte-se a amigos com um código de convite de 6 dígitos.',
-    'it': 'Crea una squadra o unisciti agli amici con un codice invito di 6 cifre.',
-    'ru': 'Создай команду или присоединись к друзьям по 6-значному коду приглашения.',
+    'pt':
+        'Crie uma equipe ou junte-se a amigos com um código de convite de 6 dígitos.',
+    'it':
+        'Crea una squadra o unisciti agli amici con un codice invito di 6 cifre.',
+    'ru':
+        'Создай команду или присоединись к друзьям по 6-значному коду приглашения.',
     'zh': '创建团队,或用6位邀请码加入朋友。',
     'ja': 'チームを作るか、6桁の招待コードで友達と参加しましょう。',
     'ko': '팀을 만들거나 6자리 초대 코드로 친구와 함께하세요.',
-    'pl': 'Załóż drużynę lub dołącz do znajomych za pomocą 6-cyfrowego kodu zaproszenia.',
-    'sv': 'Skapa ett team, eller gå med vänner med en 6-siffrig inbjudningskod.',
-    'da': 'Opret et hold, eller deltag med venner via en 6-cifret invitationskode.',
-    'no': 'Opprett et lag, eller bli med venner med en 6-sifret invitasjonskode.',
-    'fi': 'Perusta tiimi tai liity ystäviesi seuraan 6-numeroisella kutsukoodilla.',
-    'el': 'Δημιούργησε ομάδα ή συμμετάσχεις με φίλους μέσω 6ψήφιου κωδικού πρόσκλησης.',
-    'cs': 'Založ tým, nebo se přidej k přátelům pomocí 6místného pozvánkového kódu.',
-    'ro': 'Creează o echipă sau alătură-te prietenilor cu un cod de invitație din 6 cifre.',
-    'hu': 'Hozz létre csapatot, vagy csatlakozz barátaidhoz egy 6 jegyű meghívókóddal.',
+    'pl':
+        'Załóż drużynę lub dołącz do znajomych za pomocą 6-cyfrowego kodu zaproszenia.',
+    'sv':
+        'Skapa ett team, eller gå med vänner med en 6-siffrig inbjudningskod.',
+    'da':
+        'Opret et hold, eller deltag med venner via en 6-cifret invitationskode.',
+    'no':
+        'Opprett et lag, eller bli med venner med en 6-sifret invitasjonskode.',
+    'fi':
+        'Perusta tiimi tai liity ystäviesi seuraan 6-numeroisella kutsukoodilla.',
+    'el':
+        'Δημιούργησε ομάδα ή συμμετάσχεις με φίλους μέσω 6ψήφιου κωδικού πρόσκλησης.',
+    'cs':
+        'Založ tým, nebo se přidej k přátelům pomocí 6místného pozvánkového kódu.',
+    'ro':
+        'Creează o echipă sau alătură-te prietenilor cu un cod de invitație din 6 cifre.',
+    'hu':
+        'Hozz létre csapatot, vagy csatlakozz barátaidhoz egy 6 jegyű meghívókóddal.',
     'hi': 'टीम बनाएं या 6-अंकीय आमंत्रण कोड से दोस्तों से जुड़ें।',
     'th': 'สร้างทีม หรือเข้าร่วมกับเพื่อนด้วยรหัสเชิญ 6 หลัก',
     'vi': 'Tạo nhóm, hoặc tham gia cùng bạn bè bằng mã mời gồm 6 chữ số.',
-    'id': 'Buat tim, atau bergabung dengan teman menggunakan kode undangan 6 digit.',
-    'uk': 'Створи команду або приєднайся до друзів за 6-значним кодом запрошення.',
+    'id':
+        'Buat tim, atau bergabung dengan teman menggunakan kode undangan 6 digit.',
+    'uk':
+        'Створи команду або приєднайся до друзів за 6-значним кодом запрошення.',
     'he': 'צור קבוצה, או הצטרף לחברים עם קוד הזמנה בן 6 ספרות.',
     'fa': 'یک تیم بساز یا با کد دعوت ۶ رقمی به دوستانت بپیوند.',
-    'sw': 'Unda timu, au jiunge na marafiki kwa msimbo wa mwaliko wa tarakimu 6.',
+    'sw':
+        'Unda timu, au jiunge na marafiki kwa msimbo wa mwaliko wa tarakimu 6.',
   });
   String get clanCreateCta => t({
     'tr': 'Takım kur',
@@ -4668,13 +4978,17 @@ class I18n {
   String get dailyWheelPlusPitch => t({
     'tr': 'Plus ile sınırsız konuşma ve reklamsız deneyimi keşfet.',
     'en': 'Discover unlimited speaking and an ad-free experience with Plus.',
-    'es': 'Descubre conversación ilimitada y una experiencia sin anuncios con Plus.',
-    'de': 'Entdecke unbegrenztes Sprechen und ein werbefreies Erlebnis mit Plus.',
-    'fr': 'Découvre la conversation illimitée et une expérience sans publicité avec Plus.',
+    'es':
+        'Descubre conversación ilimitada y una experiencia sin anuncios con Plus.',
+    'de':
+        'Entdecke unbegrenztes Sprechen und ein werbefreies Erlebnis mit Plus.',
+    'fr':
+        'Découvre la conversation illimitée et une expérience sans publicité avec Plus.',
     'nl': 'Ontdek onbeperkt spreken en een advertentievrije ervaring met Plus.',
     'ar': 'اكتشف محادثة غير محدودة وتجربة بلا إعلانات مع Plus.',
     'pt': 'Descubra fala ilimitada e uma experiência sem anúncios com o Plus.',
-    'it': 'Scopri la conversazione illimitata e un\'esperienza senza pubblicità con Plus.',
+    'it':
+        'Scopri la conversazione illimitata e un\'esperienza senza pubblicità con Plus.',
     'ru': 'Открой безлимитную речь и опыт без рекламы с Plus.',
     'zh': '通过 Plus 体验无限对话和无广告体验。',
     'ja': 'Plusで無制限のスピーキングと広告なしの体験を。',
@@ -4684,13 +4998,16 @@ class I18n {
     'da': 'Oplev ubegrænset tale og en reklamefri oplevelse med Plus.',
     'no': 'Oppdag ubegrenset tale og en reklamefri opplevelse med Plus.',
     'fi': 'Koe rajaton puhuminen ja mainokseton kokemus Plussalla.',
-    'el': 'Ανακάλυψε απεριόριστη ομιλία και εμπειρία χωρίς διαφημίσεις με το Plus.',
+    'el':
+        'Ανακάλυψε απεριόριστη ομιλία και εμπειρία χωρίς διαφημίσεις με το Plus.',
     'cs': 'Objevte neomezené mluvení a zážitek bez reklam s Plus.',
     'ro': 'Descoperă vorbirea nelimitată și o experiență fără reclame cu Plus.',
-    'hu': 'Fedezd fel a korlátlan beszédet és a reklámmentes élményt a Plusszal.',
+    'hu':
+        'Fedezd fel a korlátlan beszédet és a reklámmentes élményt a Plusszal.',
     'hi': 'Plus के साथ असीमित बोलचाल और विज्ञापन-रहित अनुभव का आनंद लें।',
     'th': 'ค้นพบการพูดไม่จำกัดและประสบการณ์ที่ไม่มีโฆษณาด้วย Plus',
-    'vi': 'Khám phá nói không giới hạn và trải nghiệm không quảng cáo với Plus.',
+    'vi':
+        'Khám phá nói không giới hạn và trải nghiệm không quảng cáo với Plus.',
     'id': 'Temukan bicara tanpa batas dan pengalaman tanpa iklan dengan Plus.',
     'uk': 'Відкрий необмежене мовлення та досвід без реклами з Plus.',
     'he': 'גלה דיבור ללא הגבלה וחוויה ללא פרסומות עם Plus.',

@@ -100,10 +100,7 @@ final List<Scenario> catalogExtraBatchC = [
         prompt: "You ask about their job.",
         expected: "Qu'est-ce que tu fais dans la vie ?",
       ),
-      SpeakTurn(
-        prompt: "They ask what you do.",
-        expected: "Je suis étudiant.",
-      ),
+      SpeakTurn(prompt: "They ask what you do.", expected: "Je suis étudiant."),
       SpeakTurn(
         prompt: "Time to say goodbye.",
         expected: "Ravi d'avoir discuté, à bientôt !",
@@ -278,12 +275,18 @@ final List<Scenario> catalogExtraBatchC = [
         prompt: "You want to know the time.",
         expected: "Quelle heure est-il ?",
       ),
-      SpeakTurn(prompt: "Someone answers you.", expected: "Il est trois heures."),
+      SpeakTurn(
+        prompt: "Someone answers you.",
+        expected: "Il est trois heures.",
+      ),
       SpeakTurn(
         prompt: "You want to visit a shop later.",
         expected: "Le magasin ouvre à quelle heure ?",
       ),
-      SpeakTurn(prompt: "You get the answer.", expected: "Il ouvre à neuf heures."),
+      SpeakTurn(
+        prompt: "You get the answer.",
+        expected: "Il ouvre à neuf heures.",
+      ),
       SpeakTurn(
         prompt: "You check your schedule.",
         expected: "J'ai rendez-vous à cinq heures.",
@@ -397,7 +400,8 @@ final List<Scenario> catalogExtraBatchC = [
       rule: {
         UiLang.tr:
             "Hava durumu anlatılırken 'il fait + sıfat' kalıbı kullanılır, 'il est' değil.",
-        UiLang.en: "Weather is described with 'il fait + adjective', not 'il est'.",
+        UiLang.en:
+            "Weather is described with 'il fait + adjective', not 'il est'.",
       },
       goodExample: "Il fait chaud aujourd'hui.",
       badExample: "Il est chaud aujourd'hui.",
@@ -414,7 +418,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "fr_weather_1",
         target: "Il fait beau aujourd'hui.",
-        gloss: {UiLang.tr: "Bugün hava güzel.", UiLang.en: "It's nice out today."},
+        gloss: {
+          UiLang.tr: "Bugün hava güzel.",
+          UiLang.en: "It's nice out today.",
+        },
       ),
       Phrase(
         id: "fr_weather_2",
@@ -465,7 +472,10 @@ final List<Scenario> catalogExtraBatchC = [
         prompt: "You talk about winter.",
         expected: "Il fait très froid en hiver.",
       ),
-      SpeakTurn(prompt: "You talk about summer.", expected: "Il fait chaud en été."),
+      SpeakTurn(
+        prompt: "You talk about summer.",
+        expected: "Il fait chaud en été.",
+      ),
       SpeakTurn(
         prompt: "You warn a friend before they leave.",
         expected: "Prends un parapluie, il va peut-être pleuvoir.",
@@ -487,7 +497,8 @@ final List<Scenario> catalogExtraBatchC = [
       rule: {
         UiLang.tr:
             "Ulaşım aracından bahsederken 'en' edatı kullanılır (en bus), 'avec' değil.",
-        UiLang.en: "Use the preposition 'en' for transport modes (en bus), not 'avec'.",
+        UiLang.en:
+            "Use the preposition 'en' for transport modes (en bus), not 'avec'.",
       },
       goodExample: "Je vais au travail en bus.",
       badExample: "Je vais au travail avec bus.",
@@ -607,7 +618,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "fr_emergency_1",
         target: "Appelez une ambulance !",
-        gloss: {UiLang.tr: "Ambulans çağırın!", UiLang.en: "Call an ambulance!"},
+        gloss: {
+          UiLang.tr: "Ambulans çağırın!",
+          UiLang.en: "Call an ambulance!",
+        },
       ),
       Phrase(
         id: "fr_emergency_2",
@@ -668,7 +682,10 @@ final List<Scenario> catalogExtraBatchC = [
         prompt: "You check your bag, it's missing.",
         expected: "J'ai perdu mon passeport.",
       ),
-      SpeakTurn(prompt: "You witness a crime.", expected: "Appelez la police !"),
+      SpeakTurn(
+        prompt: "You witness a crime.",
+        expected: "Appelez la police !",
+      ),
       SpeakTurn(
         prompt: "A stranger asks if you're okay.",
         expected: "Je me sens très mal.",
@@ -696,7 +713,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "fr_routine_0",
         target: "Je me lève à sept heures.",
-        gloss: {UiLang.tr: "Saat yedide kalkarım.", UiLang.en: "I wake up at seven."},
+        gloss: {
+          UiLang.tr: "Saat yedide kalkarım.",
+          UiLang.en: "I wake up at seven.",
+        },
       ),
       Phrase(
         id: "fr_routine_1",
@@ -762,8 +782,14 @@ final List<Scenario> catalogExtraBatchC = [
         prompt: "When are you home?",
         expected: "Je rentre à la maison à six heures du soir.",
       ),
-      SpeakTurn(prompt: "What about the evening?", expected: "Je dîne avec ma famille."),
-      SpeakTurn(prompt: "And finally?", expected: "Je me couche à onze heures."),
+      SpeakTurn(
+        prompt: "What about the evening?",
+        expected: "Je dîne avec ma famille.",
+      ),
+      SpeakTurn(
+        prompt: "And finally?",
+        expected: "Je me couche à onze heures.",
+      ),
     ],
   ),
   Scenario(
@@ -806,7 +832,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "fr_past_story_2",
         target: "J'ai visité un musée.",
-        gloss: {UiLang.tr: "Bir müze gezdim.", UiLang.en: "I visited a museum."},
+        gloss: {
+          UiLang.tr: "Bir müze gezdim.",
+          UiLang.en: "I visited a museum.",
+        },
       ),
       Phrase(
         id: "fr_past_story_3",
@@ -835,7 +864,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "fr_past_story_6",
         target: "C'était une journée magnifique.",
-        gloss: {UiLang.tr: "Harika bir gündü.", UiLang.en: "It was a wonderful day."},
+        gloss: {
+          UiLang.tr: "Harika bir gündü.",
+          UiLang.en: "It was a wonderful day.",
+        },
       ),
     ],
     turns: [
@@ -847,8 +879,14 @@ final List<Scenario> catalogExtraBatchC = [
         prompt: "How did you get there?",
         expected: "J'ai pris le train le matin.",
       ),
-      SpeakTurn(prompt: "What did you do first?", expected: "J'ai visité un musée."),
-      SpeakTurn(prompt: "Did you eat well?", expected: "J'ai mangé un repas délicieux."),
+      SpeakTurn(
+        prompt: "What did you do first?",
+        expected: "J'ai visité un musée.",
+      ),
+      SpeakTurn(
+        prompt: "Did you eat well?",
+        expected: "J'ai mangé un repas délicieux.",
+      ),
       SpeakTurn(
         prompt: "Did you see anyone you know?",
         expected: "J'ai rencontré une amie.",
@@ -875,12 +913,12 @@ final List<Scenario> catalogExtraBatchC = [
     grammarNote: GrammarNote(
       rule: {
         UiLang.tr:
-            "Meslek söylerken 'essere' fiilinden sonra belirsiz artikel ('un/una') kullanılmaz.",
+            "Meslek söylerken 'essere'den sonra artikel genelde düşer (Sono insegnante). Ama mesleğe bir sıfat eklenirse artikel zorunludur.",
         UiLang.en:
-            "After 'essere' + profession, Italian drops the indefinite article (un/una).",
+            "After 'essere' + profession the article is usually dropped (Sono insegnante), but once you add an adjective the article is required.",
       },
-      goodExample: "Sono insegnante.",
-      badExample: "Sono un'insegnante.",
+      goodExample: "Sono un bravo insegnante.",
+      badExample: "Sono bravo insegnante.",
     ),
     phrases: [
       Phrase(
@@ -1116,7 +1154,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "it_numbers_time_3",
         target: "Ho due biglietti.",
-        gloss: {UiLang.tr: "İki biletim var.", UiLang.en: "I have two tickets."},
+        gloss: {
+          UiLang.tr: "İki biletim var.",
+          UiLang.en: "I have two tickets.",
+        },
       ),
       Phrase(
         id: "it_numbers_time_4",
@@ -1202,7 +1243,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "it_family_2",
         target: "Mia madre è medica.",
-        gloss: {UiLang.tr: "Annem doktor.", UiLang.en: "My mother is a doctor."},
+        gloss: {
+          UiLang.tr: "Annem doktor.",
+          UiLang.en: "My mother is a doctor.",
+        },
       ),
       Phrase(
         id: "it_family_3",
@@ -1231,7 +1275,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "it_family_6",
         target: "Hai figli?",
-        gloss: {UiLang.tr: "Çocuğun var mı?", UiLang.en: "Do you have children?"},
+        gloss: {
+          UiLang.tr: "Çocuğun var mı?",
+          UiLang.en: "Do you have children?",
+        },
       ),
     ],
     turns: [
@@ -1331,7 +1378,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "it_weather_6",
         target: "Tira vento oggi?",
-        gloss: {UiLang.tr: "Bugün rüzgar var mı?", UiLang.en: "Is it windy today?"},
+        gloss: {
+          UiLang.tr: "Bugün rüzgar var mı?",
+          UiLang.en: "Is it windy today?",
+        },
       ),
     ],
     turns: [
@@ -1423,7 +1473,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "it_transport_5",
         target: "Ho bisogno di un taxi.",
-        gloss: {UiLang.tr: "Taksiye ihtiyacım var.", UiLang.en: "I need a taxi."},
+        gloss: {
+          UiLang.tr: "Taksiye ihtiyacım var.",
+          UiLang.en: "I need a taxi.",
+        },
       ),
       Phrase(
         id: "it_transport_6",
@@ -1822,12 +1875,12 @@ final List<Scenario> catalogExtraBatchC = [
     grammarNote: GrammarNote(
       rule: {
         UiLang.tr:
-            "Meslek söylerken 'a fi' fiilinden sonra belirsiz artikel kullanılmaz.",
+            "Meslek adı konuşanın cinsiyetine uyar: erkek 'profesor', kadın 'profesoară'. 'a fi'den sonra artikel genelde düşer.",
         UiLang.en:
-            "After 'a fi' + profession, Romanian drops the indefinite article.",
+            "Job titles agree with the speaker's gender: a man is 'profesor', a woman is 'profesoară'. After 'a fi' the article is usually dropped.",
       },
-      goodExample: "Sunt profesoară.",
-      badExample: "Sunt o profesoară.",
+      goodExample: "Ea este profesoară.",
+      badExample: "Ea este profesor.",
     ),
     phrases: [
       Phrase(
@@ -2054,7 +2107,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "ro_numbers_time_3",
         target: "Am două bilete.",
-        gloss: {UiLang.tr: "İki biletim var.", UiLang.en: "I have two tickets."},
+        gloss: {
+          UiLang.tr: "İki biletim var.",
+          UiLang.en: "I have two tickets.",
+        },
       ),
       Phrase(
         id: "ro_numbers_time_4",
@@ -2140,7 +2196,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "ro_family_2",
         target: "Mama mea este doctoriță.",
-        gloss: {UiLang.tr: "Annem doktor.", UiLang.en: "My mother is a doctor."},
+        gloss: {
+          UiLang.tr: "Annem doktor.",
+          UiLang.en: "My mother is a doctor.",
+        },
       ),
       Phrase(
         id: "ro_family_3",
@@ -2169,7 +2228,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "ro_family_6",
         target: "Ai copii?",
-        gloss: {UiLang.tr: "Çocuğun var mı?", UiLang.en: "Do you have children?"},
+        gloss: {
+          UiLang.tr: "Çocuğun var mı?",
+          UiLang.en: "Do you have children?",
+        },
       ),
     ],
     turns: [
@@ -2269,7 +2331,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "ro_weather_6",
         target: "Bate vântul azi?",
-        gloss: {UiLang.tr: "Bugün rüzgar var mı?", UiLang.en: "Is it windy today?"},
+        gloss: {
+          UiLang.tr: "Bugün rüzgar var mı?",
+          UiLang.en: "Is it windy today?",
+        },
       ),
     ],
     turns: [
@@ -2361,7 +2426,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "ro_transport_5",
         target: "Am nevoie de un taxi.",
-        gloss: {UiLang.tr: "Taksiye ihtiyacım var.", UiLang.en: "I need a taxi."},
+        gloss: {
+          UiLang.tr: "Taksiye ihtiyacım var.",
+          UiLang.en: "I need a taxi.",
+        },
       ),
       Phrase(
         id: "ro_transport_6",
@@ -2444,7 +2512,10 @@ final List<Scenario> catalogExtraBatchC = [
       Phrase(
         id: "ro_emergency_1",
         target: "S-a întâmplat un accident.",
-        gloss: {UiLang.tr: "Bir kaza oldu.", UiLang.en: "An accident happened."},
+        gloss: {
+          UiLang.tr: "Bir kaza oldu.",
+          UiLang.en: "An accident happened.",
+        },
       ),
       Phrase(
         id: "ro_emergency_2",

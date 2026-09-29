@@ -3,6 +3,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'package:voxelith/core/l10n/i18n.dart';
+import 'package:voxelith/core/l10n/i18n_ui.dart';
 import 'package:voxelith/core/theme/dark_theme.dart';
 import 'package:voxelith/data/content/catalog.dart';
 import 'package:voxelith/data/content/clips.dart';
@@ -31,9 +33,12 @@ void main() {
     }
   });
 
-  test('Spanish has 29 scenarios including A2/B1, bonus and professional packs', () {
-    expect(Catalog.forLang(LearnLang.es).length, 29);
-  });
+  test(
+    'Spanish has 29 scenarios including A2/B1, bonus and professional packs',
+    () {
+      expect(Catalog.forLang(LearnLang.es).length, 29);
+    },
+  );
 
   test('Arabic A1 pack exists', () {
     expect(Catalog.forLang(LearnLang.ar).length, greaterThanOrEqualTo(5));
@@ -187,9 +192,12 @@ void main() {
 
   test('all ten achievements have metadata and persist in profiles', () {
     expect(Achievement.values.length, 10);
-    for (final achievement in Achievement.values) {
-      expect(achievement.title, isNotEmpty);
-      expect(achievement.description, isNotEmpty);
+    for (final ui in [UiLang.tr, UiLang.en]) {
+      final i18n = I18n(ui);
+      for (final achievement in Achievement.values) {
+        expect(i18n.achievementTitle(achievement), isNotEmpty);
+        expect(i18n.achievementDescription(achievement), isNotEmpty);
+      }
     }
     final profile = UserProfile.empty.copyWith(
       completedScenes: 3,
@@ -229,7 +237,9 @@ void main() {
     expect(restored.reminderHour, 10);
   });
 
-  testWidgets('original Voxelith mascot renders every expression', (tester) async {
+  testWidgets('original Voxelith mascot renders every expression', (
+    tester,
+  ) async {
     for (final mood in MascotMood.values) {
       await tester.pumpWidget(
         MaterialApp(
@@ -257,8 +267,50 @@ void main() {
     expect(UserProfile.empty.copyWith(adsWatchedToday: 5).canWatchAd, false);
   });
 
-  test('every language has connected A2 and B1 practice', () {
+  test('A2+ scenarios teach new sentences, not relabelled A1 ones', () {
     for (final language in LearnLang.values) {
+      final scenarios = Catalog.forLang(language);
+      final a1 = {
+        for (final s in scenarios.where((s) => s.cefr == Cefr.a1))
+          for (final p in s.phrases) p.target.trim(),
+      };
+      for (final s in scenarios.where((s) => s.cefr != Cefr.a1)) {
+        expect(
+          s.phrases.every((p) => a1.contains(p.target.trim())),
+          false,
+          reason: '${s.id} is labelled ${s.cefr.name} but only repeats A1',
+        );
+      }
+    }
+  });
+
+  test('languages with intermediate content keep A2 and B1 practice', () {
+    // ru, zh, ko, vi, id, uk, he, fa, sw have no real A2+ content yet
+    // (docs/AI_ICERIK_PROMPTLARI.md) — add them here once delivered.
+    const withIntermediate = [
+      LearnLang.en,
+      LearnLang.es,
+      LearnLang.de,
+      LearnLang.fr,
+      LearnLang.nl,
+      LearnLang.ar,
+      LearnLang.pt,
+      LearnLang.it,
+      LearnLang.ja,
+      LearnLang.tr,
+      LearnLang.pl,
+      LearnLang.sv,
+      LearnLang.da,
+      LearnLang.no,
+      LearnLang.fi,
+      LearnLang.el,
+      LearnLang.cs,
+      LearnLang.ro,
+      LearnLang.hu,
+      LearnLang.hi,
+      LearnLang.th,
+    ];
+    for (final language in withIntermediate) {
       final scenarios = Catalog.forLang(language);
       expect(
         scenarios.any((scenario) => scenario.cefr == Cefr.a2),

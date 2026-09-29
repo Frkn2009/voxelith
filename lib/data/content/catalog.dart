@@ -2,6 +2,7 @@
 // ignore_for_file: lines_longer_than_80_chars
 
 import '../models/models.dart';
+import 'content_store.dart';
 import 'intermediate_catalog.dart';
 import 'professional_catalog.dart';
 import 'extra/catalog_extra_batch_a.dart';
@@ -52,6 +53,7 @@ class Catalog {
       ...ExpandedCatalogHu.build(lang),
       ...ExpandedCatalogHi.build(lang),
       ...ExpandedCatalogTh.build(lang),
+      ...ContentStore.scenariosFor(lang),
     ];
   }
 
@@ -4566,11 +4568,11 @@ class Catalog {
       cefr: Cefr.a1,
       minutes: 6,
       titles: {UiLang.tr: 'Otele giriş', UiLang.en: 'Hotel check-in'},
-      clipLine: 'ผมมีการจอง',
+      clipLine: 'ฉันมีการจอง',
       phrases: [
         Phrase(
           id: 'th_hotel_0',
-          target: 'ผมมีการจอง',
+          target: 'ฉันมีการจอง',
           gloss: {
             UiLang.tr: 'Rezervasyonum var.',
             UiLang.en: 'I have a reservation.',
@@ -4594,7 +4596,7 @@ class Catalog {
         ),
       ],
       turns: [
-        SpeakTurn(prompt: 'Good evening.', expected: 'ผมมีการจอง'),
+        SpeakTurn(prompt: 'Good evening.', expected: 'ฉันมีการจอง'),
         SpeakTurn(prompt: 'Any questions?', expected: 'รวมอาหารเช้าไหม?'),
       ],
     ),
@@ -4624,7 +4626,7 @@ class Catalog {
         ),
         Phrase(
           id: 'th_dir_2',
-          target: 'ผมไม่เข้าใจ',
+          target: 'ฉันไม่เข้าใจ',
           gloss: {UiLang.tr: 'Anlamıyorum.', UiLang.en: 'I do not understand.'},
         ),
       ],
@@ -4642,11 +4644,11 @@ class Catalog {
       cefr: Cefr.a1,
       minutes: 6,
       titles: {UiLang.tr: 'Tanışmak', UiLang.en: 'Introducing yourself'},
-      clipLine: 'สวัสดี ผมชื่อเดนิซ',
+      clipLine: 'สวัสดี ฉันชื่อเดนิซ',
       phrases: [
         Phrase(
           id: 'th_hi_0',
-          target: 'สวัสดี ผมชื่อเดนิซ',
+          target: 'สวัสดี ฉันชื่อเดนิซ',
           gloss: {
             UiLang.tr: 'Merhaba, adım Deniz.',
             UiLang.en: 'Hi, my name is Deniz.',
@@ -4654,7 +4656,7 @@ class Catalog {
         ),
         Phrase(
           id: 'th_hi_1',
-          target: 'ผมมาจากตุรกี',
+          target: 'ฉันมาจากตุรกี',
           gloss: {UiLang.tr: 'Türkiye\'denim.', UiLang.en: 'I am from Turkey.'},
         ),
         Phrase(
@@ -4669,9 +4671,9 @@ class Catalog {
       turns: [
         SpeakTurn(
           prompt: 'Someone says hello.',
-          expected: 'สวัสดี ผมชื่อเดนิซ',
+          expected: 'สวัสดี ฉันชื่อเดนิซ',
         ),
-        SpeakTurn(prompt: 'Where are you from?', expected: 'ผมมาจากตุรกี'),
+        SpeakTurn(prompt: 'Where are you from?', expected: 'ฉันมาจากตุรกี'),
       ],
     ),
     Scenario(
@@ -4680,11 +4682,11 @@ class Catalog {
       cefr: Cefr.a1,
       minutes: 6,
       titles: {UiLang.tr: 'Ev bakmak', UiLang.en: 'Viewing a flat'},
-      clipLine: 'ผมกำลังหาอพาร์ตเมนต์',
+      clipLine: 'ฉันกำลังหาอพาร์ตเมนต์',
       phrases: [
         Phrase(
           id: 'th_flat_0',
-          target: 'ผมกำลังหาอพาร์ตเมนต์',
+          target: 'ฉันกำลังหาอพาร์ตเมนต์',
           gloss: {
             UiLang.tr: 'Daire arıyorum.',
             UiLang.en: 'I am looking for a flat.',
@@ -4700,7 +4702,7 @@ class Catalog {
         ),
         Phrase(
           id: 'th_flat_2',
-          target: 'ช่วยผมได้ไหม?',
+          target: 'ช่วยฉันได้ไหม?',
           gloss: {
             UiLang.tr: 'Bana yardım edebilir misiniz?',
             UiLang.en: 'Can you help me?',
@@ -4708,7 +4710,7 @@ class Catalog {
         ),
       ],
       turns: [
-        SpeakTurn(prompt: 'The agent asks.', expected: 'ผมกำลังหาอพาร์ตเมนต์'),
+        SpeakTurn(prompt: 'The agent asks.', expected: 'ฉันกำลังหาอพาร์ตเมนต์'),
         SpeakTurn(prompt: 'They show a listing.', expected: 'ค่าเช่าเท่าไหร่?'),
       ],
     ),
@@ -8799,11 +8801,11 @@ class Catalog {
       cefr: Cefr.a1,
       minutes: 6,
       titles: {UiLang.tr: 'Havaalanı check-in', UiLang.en: 'Airport check-in'},
-      clipLine: 'ผมมีการจอง',
+      clipLine: 'ฉันมีการจอง',
       phrases: [
         Phrase(
           id: 'th_airport_0',
-          target: 'ผมมีการจอง',
+          target: 'ฉันมีการจอง',
           gloss: {
             UiLang.tr: 'Rezervasyonum var.',
             UiLang.en: 'I have a reservation.',
@@ -8827,7 +8829,7 @@ class Catalog {
         ),
       ],
       turns: [
-        SpeakTurn(prompt: 'The agent greets you.', expected: 'ผมมีการจอง'),
+        SpeakTurn(prompt: 'The agent greets you.', expected: 'ฉันมีการจอง'),
         SpeakTurn(prompt: 'Window or aisle?', expected: 'ขอที่นั่งริมหน้าต่าง'),
       ],
     ),

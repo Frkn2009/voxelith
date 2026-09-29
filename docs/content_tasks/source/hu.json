@@ -1,0 +1,4762 @@
+{
+ "lang": "hu",
+ "scenarios": [
+  {
+   "id": "hu_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "hu_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "hu_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "hu_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "hu_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "hu_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "hu_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "hu_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "hu_intro",
+   "cefr": "a1",
+   "title": "Meeting someone"
+  },
+  {
+   "id": "hu_shopping",
+   "cefr": "a1",
+   "title": "Shopping"
+  },
+  {
+   "id": "hu_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers and time"
+  },
+  {
+   "id": "hu_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "hu_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "hu_transport",
+   "cefr": "a1",
+   "title": "Getting around"
+  },
+  {
+   "id": "hu_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "hu_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "hu_past_story",
+   "cefr": "a1",
+   "title": "Telling a story"
+  },
+  {
+   "id": "hu_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "hu_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  },
+  {
+   "id": "hu_exp_job_interview",
+   "cefr": "b1",
+   "title": "Job interview"
+  },
+  {
+   "id": "hu_exp_team_meeting",
+   "cefr": "b1",
+   "title": "Team meeting"
+  },
+  {
+   "id": "hu_exp_bank",
+   "cefr": "a2",
+   "title": "Bank account"
+  },
+  {
+   "id": "hu_exp_apartment",
+   "cefr": "a2",
+   "title": "Apartment viewing"
+  },
+  {
+   "id": "hu_exp_doctor",
+   "cefr": "a2",
+   "title": "At the doctor's"
+  },
+  {
+   "id": "hu_exp_business_lunch",
+   "cefr": "b1",
+   "title": "Business lunch"
+  },
+  {
+   "id": "hu_exp_complaint",
+   "cefr": "b1",
+   "title": "Complaint"
+  },
+  {
+   "id": "hu_exp_business_trip",
+   "cefr": "a2",
+   "title": "Business trip"
+  },
+  {
+   "id": "hu_exp_client_call",
+   "cefr": "b1",
+   "title": "Client phone call"
+  },
+  {
+   "id": "hu_exp_hr_salary",
+   "cefr": "b2",
+   "title": "Salary conversation"
+  },
+  {
+   "id": "hu_exp_daily_errands",
+   "cefr": "a2",
+   "title": "Errands and deliveries"
+  },
+  {
+   "id": "hu_exp_networking",
+   "cefr": "b1",
+   "title": "Networking"
+  }
+ ],
+ "stories": [
+  {
+   "id": "hu_neighbor",
+   "level": "a1",
+   "title": "Margit néni"
+  },
+  {
+   "id": "hu_river_walk",
+   "level": "a1",
+   "title": "A folyó mellett"
+  },
+  {
+   "id": "hu_vacation",
+   "level": "a1",
+   "title": "A tengeri nyaralás"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.hu_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "Egy kávét kérek.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "Mennyibe kerül?",
+   "have": []
+  },
+  {
+   "key": "p.hu_cafe_0",
+   "kind": "phrase",
+   "target": "Egy kávét kérek.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_cafe_1",
+   "kind": "phrase",
+   "target": "Mennyibe kerül?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_cafe_2",
+   "kind": "phrase",
+   "target": "Köszönöm szépen.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "Van foglalsom.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "A reggeli benne van?",
+   "have": []
+  },
+  {
+   "key": "p.hu_hotel_0",
+   "kind": "phrase",
+   "target": "Van foglalsom.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_hotel_1",
+   "kind": "phrase",
+   "target": "A reggeli benne van?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_hotel_2",
+   "kind": "phrase",
+   "target": "Köszönöm szépen.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "Elnézést, hol van az állomás?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "Köszönöm szépen.",
+   "have": []
+  },
+  {
+   "key": "p.hu_dir_0",
+   "kind": "phrase",
+   "target": "Elnézést, hol van az állomás?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_dir_1",
+   "kind": "phrase",
+   "target": "Köszönöm szépen.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_dir_2",
+   "kind": "phrase",
+   "target": "Nem értem.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "Szia, a nevem Deniz.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "Törökországból jöttem.",
+   "have": []
+  },
+  {
+   "key": "p.hu_hi_0",
+   "kind": "phrase",
+   "target": "Szia, a nevem Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_hi_1",
+   "kind": "phrase",
+   "target": "Törökországból jöttem.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_hi_2",
+   "kind": "phrase",
+   "target": "Köszönöm szépen.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "Lakást keresek.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "Mennyi a bérleti díj?",
+   "have": []
+  },
+  {
+   "key": "p.hu_flat_0",
+   "kind": "phrase",
+   "target": "Lakást keresek.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_flat_1",
+   "kind": "phrase",
+   "target": "Mennyi a bérleti díj?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_flat_2",
+   "kind": "phrase",
+   "target": "Tud segíteni?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "Mennyibe kerül ez?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "Ezt elviszem.",
+   "have": []
+  },
+  {
+   "key": "p.hu_shop_0",
+   "kind": "phrase",
+   "target": "Mennyibe kerül ez?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_shop_1",
+   "kind": "phrase",
+   "target": "Ezt elviszem.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_shop_2",
+   "kind": "phrase",
+   "target": "Kártyával fizethetek?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "Kérem a számlát.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "Együtt szeretnénk fizetni.",
+   "have": []
+  },
+  {
+   "key": "p.hu_bill_0",
+   "kind": "phrase",
+   "target": "Kérem a számlát.",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_bill_1",
+   "kind": "phrase",
+   "target": "Együtt szeretnénk fizetni.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_bill_2",
+   "kind": "phrase",
+   "target": "A többit tartsa meg.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "Van foglalsom.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "Ablak melletti helyet kérek.",
+   "have": []
+  },
+  {
+   "key": "p.hu_airport_0",
+   "kind": "phrase",
+   "target": "Van foglalsom.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_airport_1",
+   "kind": "phrase",
+   "target": "Ablak melletti helyet kérek.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_airport_2",
+   "kind": "phrase",
+   "target": "Ez a sor a beszálláshoz?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Meeting someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_intro",
+   "kind": "grammar_rule",
+   "tr": "Fiil kişiye göre çekimlenir: \"ben\" = vagyok. \"van\" yalnızca üçüncü şahıs içindir (ve \"o bir öğretmen\" derken hiç söylenmez). Zamir \"én\" genelde düşer: \"Tanár vagyok.\"",
+   "en": "The verb is conjugated for the person: \"I am\" = vagyok; \"van\" is only third person. The pronoun \"én\" is usually dropped: \"Tanár vagyok.\"",
+   "context": "Tanár vagyok. / ✗ Én tanár van.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_intro.0",
+   "kind": "speaking_prompt",
+   "en": "You just met someone new.",
+   "context": "Szia, örülök, hogy megismerhetlek.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_intro.1",
+   "kind": "speaking_prompt",
+   "en": "You want to know their name.",
+   "context": "Hogy hívnak?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_intro.2",
+   "kind": "speaking_prompt",
+   "en": "They ask for your name back.",
+   "context": "Kata vagyok, és téged?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_intro.3",
+   "kind": "speaking_prompt",
+   "en": "You're curious about their job.",
+   "context": "Mivel foglalkozol?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do.",
+   "context": "Tanár vagyok.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You want to stay in touch.",
+   "context": "Elkérhetem a számod?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_intro.6",
+   "kind": "speaking_prompt",
+   "en": "You're saying goodbye.",
+   "context": "Hamarosan találkozunk!",
+   "have": []
+  },
+  {
+   "key": "p.hu_intro_0",
+   "kind": "phrase",
+   "target": "Szia, örülök, hogy megismerhetlek.",
+   "tr": "Merhaba, tanıştığımıza memnun oldum.",
+   "en": "Hi, nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_intro_1",
+   "kind": "phrase",
+   "target": "Hogy hívnak?",
+   "tr": "Adın ne?",
+   "en": "What's your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_intro_2",
+   "kind": "phrase",
+   "target": "Kata vagyok, és téged?",
+   "tr": "Ben Kata, ya sen?",
+   "en": "I'm Kata, and you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_intro_3",
+   "kind": "phrase",
+   "target": "Mivel foglalkozol?",
+   "tr": "Ne iş yapıyorsun?",
+   "en": "What do you do?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_intro_4",
+   "kind": "phrase",
+   "target": "Tanár vagyok.",
+   "tr": "Öğretmenim.",
+   "en": "I'm a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_intro_5",
+   "kind": "phrase",
+   "target": "Elkérhetem a számod?",
+   "tr": "Numaranı alabilir miyim?",
+   "en": "Can I get your number?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_intro_6",
+   "kind": "phrase",
+   "target": "Hamarosan találkozunk!",
+   "tr": "Yakında görüşürüz!",
+   "en": "See you soon!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_shopping",
+   "kind": "scenario_title",
+   "tr": "Alışveriş",
+   "en": "Shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_shopping",
+   "kind": "grammar_rule",
+   "tr": "\"-val/-vel\" (ile) eki isme doğrudan eklenir ve ünlü uyumuna uyar: kártyával (kartla), készpénzzel (nakitle).",
+   "en": "The suffix \"-val/-vel\" (with) attaches directly to the noun and follows vowel harmony: kártyával (with card), készpénzzel (with cash).",
+   "context": "Fizethetek kártyával? / ✗ Fizethetek val kártya?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "A clerk asks if you need help.",
+   "context": "Csak nézelődöm, köszönöm.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "You found something you like.",
+   "context": "Megvan ez 40-es méretben?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want to test the fit.",
+   "context": "Felpróbálhatom?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "You're checking the price.",
+   "context": "Mennyibe kerül ez a cipő?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You're ready to pay.",
+   "context": "Fizethetek kártyával?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You think the price is high.",
+   "context": "Ez túl drága.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "It doesn't fit.",
+   "context": "Van kisebb méret?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_shopping.7",
+   "kind": "speaking_prompt",
+   "en": "You've decided to buy it.",
+   "context": "Ezt elviszem.",
+   "have": []
+  },
+  {
+   "key": "p.hu_shopping_0",
+   "kind": "phrase",
+   "target": "Csak nézelődöm, köszönöm.",
+   "tr": "Sadece bakıyorum, teşekkürler.",
+   "en": "I'm just looking, thanks.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_shopping_1",
+   "kind": "phrase",
+   "target": "Megvan ez 40-es méretben?",
+   "tr": "Bunun 40 numarası var mı?",
+   "en": "Do you have this in a size 40?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_shopping_2",
+   "kind": "phrase",
+   "target": "Felpróbálhatom?",
+   "tr": "Deneyebilir miyim?",
+   "en": "Can I try it on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_shopping_3",
+   "kind": "phrase",
+   "target": "Mennyibe kerül ez a cipő?",
+   "tr": "Bu ayakkabı ne kadar?",
+   "en": "How much is this shoe?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_shopping_4",
+   "kind": "phrase",
+   "target": "Fizethetek kártyával?",
+   "tr": "Kartla ödeyebilir miyim?",
+   "en": "Can I pay by card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_shopping_5",
+   "kind": "phrase",
+   "target": "Ez túl drága.",
+   "tr": "Bu çok pahalı.",
+   "en": "This is too expensive.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_shopping_6",
+   "kind": "phrase",
+   "target": "Van kisebb méret?",
+   "tr": "Daha küçük beden var mı?",
+   "en": "Is there a smaller size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_shopping_7",
+   "kind": "phrase",
+   "target": "Ezt elviszem.",
+   "tr": "Bunu alıyorum.",
+   "en": "I'll take this.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers and time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "\"Fél\" (yarım) ile saat söylenirken bir sonraki saat kullanılır: \"fél négy\" saat 3:30 demektir, 4:30 değil.",
+   "en": "With \"fél\" (half), Hungarian names the NEXT hour: \"fél négy\" (half four) means 3:30, not 4:30.",
+   "context": "Most fél négy van. / ✗ Most négy és fél van.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You don't know the time.",
+   "context": "Hány óra van most?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks you the time.",
+   "context": "Most fél négy van.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "You're checking the schedule.",
+   "context": "A vonat kilenckor indul.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "At the counter.",
+   "context": "Két jegyem van.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "The clerk tells you the price.",
+   "context": "Ez tizenkét euróba kerül.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "You're planning to meet a friend.",
+   "context": "Találkozzunk ötkor?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You're running a bit late.",
+   "context": "Tíz perc múlva ott vagyok.",
+   "have": []
+  },
+  {
+   "key": "p.hu_numbers_time_0",
+   "kind": "phrase",
+   "target": "Hány óra van most?",
+   "tr": "Şimdi saat kaç?",
+   "en": "What time is it now?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_numbers_time_1",
+   "kind": "phrase",
+   "target": "Most fél négy van.",
+   "tr": "Şimdi saat üç buçuk.",
+   "en": "It's half past three now.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_numbers_time_2",
+   "kind": "phrase",
+   "target": "A vonat kilenckor indul.",
+   "tr": "Tren dokuzda kalkıyor.",
+   "en": "The train leaves at nine.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_numbers_time_3",
+   "kind": "phrase",
+   "target": "Két jegyem van.",
+   "tr": "İki biletim var.",
+   "en": "I have two tickets.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_numbers_time_4",
+   "kind": "phrase",
+   "target": "Ez tizenkét euróba kerül.",
+   "tr": "Bu on iki avroya mal oluyor.",
+   "en": "That comes to twelve euros.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_numbers_time_5",
+   "kind": "phrase",
+   "target": "Találkozzunk ötkor?",
+   "tr": "Beşte buluşalım mı?",
+   "en": "Shall we meet at five?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_numbers_time_6",
+   "kind": "phrase",
+   "target": "Tíz perc múlva ott vagyok.",
+   "tr": "On dakikaya orada olurum.",
+   "en": "I'll be there in ten minutes.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_family",
+   "kind": "grammar_rule",
+   "tr": "İyelik ayrı bir kelime değil, isme eklenen bir ekle gösterilir: anya (anne) + m = anyám (annem).",
+   "en": "Possession is shown by a suffix on the noun itself, not a separate word: anya (mother) + m = anyám (my mother).",
+   "context": "Anyám orvos. / ✗ Az én anya orvos.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_family.0",
+   "kind": "speaking_prompt",
+   "en": "You're showing a photo.",
+   "context": "Ez itt a családom.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_family.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your siblings.",
+   "context": "Két öcsém és egy nővérem van.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_family.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what your mother does.",
+   "context": "Anyám orvos.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_family.3",
+   "kind": "speaking_prompt",
+   "en": "You're talking about your sister.",
+   "context": "Nagyon szereti az öccsét.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_family.4",
+   "kind": "speaking_prompt",
+   "en": "You want to know a friend's daughter's age.",
+   "context": "Hány éves a lányod?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask where your parents live.",
+   "context": "A szüleim Szegeden élnek.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_family.6",
+   "kind": "speaking_prompt",
+   "en": "You're asking a new friend.",
+   "context": "Vannak gyerekeid?",
+   "have": []
+  },
+  {
+   "key": "p.hu_family_0",
+   "kind": "phrase",
+   "target": "Ez itt a családom.",
+   "tr": "Bu benim ailem.",
+   "en": "This is my family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_family_1",
+   "kind": "phrase",
+   "target": "Két öcsém és egy nővérem van.",
+   "tr": "İki küçük erkek kardeşim ve bir büyük kız kardeşim var.",
+   "en": "I have two younger brothers and one older sister.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_family_2",
+   "kind": "phrase",
+   "target": "Anyám orvos.",
+   "tr": "Annem doktor.",
+   "en": "My mother is a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_family_3",
+   "kind": "phrase",
+   "target": "Nagyon szereti az öccsét.",
+   "tr": "Küçük kardeşini çok seviyor.",
+   "en": "She loves her little brother a lot.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_family_4",
+   "kind": "phrase",
+   "target": "Hány éves a lányod?",
+   "tr": "Kızın kaç yaşında?",
+   "en": "How old is your daughter?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_family_5",
+   "kind": "phrase",
+   "target": "A szüleim Szegeden élnek.",
+   "tr": "Ailem Szeged'de yaşıyor.",
+   "en": "My parents live in Szeged.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_family_6",
+   "kind": "phrase",
+   "target": "Vannak gyerekeid?",
+   "tr": "Çocuğun var mı?",
+   "en": "Do you have kids?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_weather",
+   "kind": "grammar_rule",
+   "tr": "Hava durumu ifadelerinde İngilizce'deki \"it\" gibi bir özne yoktur; fiil öznesiz üçüncü tekil şahısta kullanılır.",
+   "en": "Weather expressions have no dummy subject like English \"it\" — the verb simply stands alone in third-person singular.",
+   "context": "Esik ma. / ✗ Az esik ma.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You're about to go outside.",
+   "context": "Milyen ma az idő?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_weather.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about the weather.",
+   "context": "Esik ma.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You step outside.",
+   "context": "Nagyon meleg van kint.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_weather.3",
+   "kind": "speaking_prompt",
+   "en": "Your friend is leaving the house.",
+   "context": "Vigyél esernyőt, lehet, hogy esik.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You wake up and check the window.",
+   "context": "Nagyon hideg van ma reggel.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_weather.5",
+   "kind": "speaking_prompt",
+   "en": "You're talking about your favorite weather.",
+   "context": "Szeretem a napos napokat.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_weather.6",
+   "kind": "speaking_prompt",
+   "en": "You're deciding what to wear.",
+   "context": "Szeles van ma?",
+   "have": []
+  },
+  {
+   "key": "p.hu_weather_0",
+   "kind": "phrase",
+   "target": "Milyen ma az idő?",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_weather_1",
+   "kind": "phrase",
+   "target": "Esik ma.",
+   "tr": "Bugün yağmur yağıyor.",
+   "en": "It's raining today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_weather_2",
+   "kind": "phrase",
+   "target": "Nagyon meleg van kint.",
+   "tr": "Dışarısı çok sıcak.",
+   "en": "It's very hot outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_weather_3",
+   "kind": "phrase",
+   "target": "Vigyél esernyőt, lehet, hogy esik.",
+   "tr": "Şemsiye al, yağmur yağabilir.",
+   "en": "Take an umbrella, it might rain.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_weather_4",
+   "kind": "phrase",
+   "target": "Nagyon hideg van ma reggel.",
+   "tr": "Bu sabah çok soğuk.",
+   "en": "It's very cold this morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_weather_5",
+   "kind": "phrase",
+   "target": "Szeretem a napos napokat.",
+   "tr": "Güneşli günleri severim.",
+   "en": "I love sunny days.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_weather_6",
+   "kind": "phrase",
+   "target": "Szeles van ma?",
+   "tr": "Bugün rüzgarlı mı?",
+   "en": "Is it windy today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Getting around",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_transport",
+   "kind": "grammar_rule",
+   "tr": "\"-ba/-be\" eki bir yere doğru hareketi gösterir (\"a városba\" - şehre), \"-ban/-ben\" ise sadece bir yerde bulunmayı gösterir (\"a városban\" - şehirde).",
+   "en": "\"-ba/-be\" (into) shows movement toward a place (\"a városba\" - to the city), while \"-ban/-ben\" (in) shows just being located there (\"a városban\" - in the city).",
+   "context": "Egy jegyet a városba, legyen szíves. / ✗ Egy jegyet a városban, legyen szíves.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You need to find a bus.",
+   "context": "Hol a legközelebbi buszmegálló?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_transport.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks how you commute.",
+   "context": "Busszal járok dolgozni.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You're at the train station.",
+   "context": "Melyik vágányról indul?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_transport.3",
+   "kind": "speaking_prompt",
+   "en": "At the ticket counter.",
+   "context": "Egy jegyet a városba, legyen szíves.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You're not sure of the route.",
+   "context": "Ez a vonat megáll a reptérnél?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You missed the last bus.",
+   "context": "Taxira van szükségem.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_transport.6",
+   "kind": "speaking_prompt",
+   "en": "You're asking about travel time.",
+   "context": "Mennyi ideig tart az út?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_transport.7",
+   "kind": "speaking_prompt",
+   "en": "It's a short distance.",
+   "context": "Inkább gyalog megyek.",
+   "have": []
+  },
+  {
+   "key": "p.hu_transport_0",
+   "kind": "phrase",
+   "target": "Hol a legközelebbi buszmegálló?",
+   "tr": "En yakın otobüs durağı nerede?",
+   "en": "Where's the nearest bus stop?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_transport_1",
+   "kind": "phrase",
+   "target": "Busszal járok dolgozni.",
+   "tr": "İşe otobüsle gidiyorum.",
+   "en": "I go to work by bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_transport_2",
+   "kind": "phrase",
+   "target": "Melyik vágányról indul?",
+   "tr": "Hangi perondan kalkıyor?",
+   "en": "Which platform does it leave from?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_transport_3",
+   "kind": "phrase",
+   "target": "Egy jegyet a városba, legyen szíves.",
+   "tr": "Şehir merkezine bir bilet lütfen.",
+   "en": "One ticket to the city center, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_transport_4",
+   "kind": "phrase",
+   "target": "Ez a vonat megáll a reptérnél?",
+   "tr": "Bu tren havalimanında duruyor mu?",
+   "en": "Does this train stop at the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_transport_5",
+   "kind": "phrase",
+   "target": "Taxira van szükségem.",
+   "tr": "Taksiye ihtiyacım var.",
+   "en": "I need a taxi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_transport_6",
+   "kind": "phrase",
+   "target": "Mennyi ideig tart az út?",
+   "tr": "Yolculuk ne kadar sürüyor?",
+   "en": "How long does the trip take?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_transport_7",
+   "kind": "phrase",
+   "target": "Inkább gyalog megyek.",
+   "tr": "Yürüyerek gitmeyi tercih ederim.",
+   "en": "I'd rather walk.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_emergency",
+   "kind": "grammar_rule",
+   "tr": "Buyurma kipi fiil sonuna eklenen bir ekle kurulur: resmi \"ön\" için \"-jon/-jen\", senli \"sen\" için \"-j\".",
+   "en": "The imperative is formed by changing the verb ending: formal \"you\" takes \"-jon/-jen\", informal \"you\" takes \"-j\".",
+   "context": "Hívjon mentőt! / ✗ Hív mentőt!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "You see someone collapse.",
+   "context": "Segítség! Hívjon mentőt!",
+   "have": []
+  },
+  {
+   "key": "tp.hu_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "You call emergency services.",
+   "context": "Történt egy baleset.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You describe the urgency.",
+   "context": "Most azonnal orvosra van szükségem.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You need directions fast.",
+   "context": "Hol a legközelebbi kórház?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You're reporting a theft.",
+   "context": "Valaki ellopta a táskámat.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "A doctor asks about allergies.",
+   "context": "Allergiás vagyok a penicillinre.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You need official help.",
+   "context": "Kérem, hívja a rendőrséget.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_emergency.7",
+   "kind": "speaking_prompt",
+   "en": "You don't know where you are.",
+   "context": "Eltévedtem, tudna segíteni?",
+   "have": []
+  },
+  {
+   "key": "p.hu_emergency_0",
+   "kind": "phrase",
+   "target": "Segítség! Hívjon mentőt!",
+   "tr": "İmdat! Ambulans çağırın!",
+   "en": "Help! Call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_emergency_1",
+   "kind": "phrase",
+   "target": "Történt egy baleset.",
+   "tr": "Bir kaza oldu.",
+   "en": "There's been an accident.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_emergency_2",
+   "kind": "phrase",
+   "target": "Most azonnal orvosra van szükségem.",
+   "tr": "Şimdi bir doktora ihtiyacım var.",
+   "en": "I need a doctor right now.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_emergency_3",
+   "kind": "phrase",
+   "target": "Hol a legközelebbi kórház?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where's the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_emergency_4",
+   "kind": "phrase",
+   "target": "Valaki ellopta a táskámat.",
+   "tr": "Biri çantamı çaldı.",
+   "en": "Someone stole my bag.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_emergency_5",
+   "kind": "phrase",
+   "target": "Allergiás vagyok a penicillinre.",
+   "tr": "Penisiline alerjim var.",
+   "en": "I'm allergic to penicillin.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_emergency_6",
+   "kind": "phrase",
+   "target": "Kérem, hívja a rendőrséget.",
+   "tr": "Lütfen polisi arayın.",
+   "en": "Please call the police.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_emergency_7",
+   "kind": "phrase",
+   "target": "Eltévedtem, tudna segíteni?",
+   "tr": "Kayboldum, bana yardım edebilir misiniz?",
+   "en": "I'm lost, can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_routine",
+   "kind": "grammar_rule",
+   "tr": "\"Mindig\" (her zaman) gibi zaman zarfları cümle sonunda değil, doğrudan fiilden önce kullanılır.",
+   "en": "Frequency adverbs like \"mindig\" (always) go directly before the verb, not at the end of the sentence.",
+   "context": "Mindig hétkor kelek. / ✗ Kelek hétkor mindig.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your morning.",
+   "context": "Általában hétkor kelek.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_routine.1",
+   "kind": "speaking_prompt",
+   "en": "You describe your sister's routine.",
+   "context": "Minden reggel zuhanyzik.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_routine.2",
+   "kind": "speaking_prompt",
+   "en": "You talk about your family's mornings.",
+   "context": "Együtt reggelizünk.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_routine.3",
+   "kind": "speaking_prompt",
+   "en": "You describe your brother's commute.",
+   "context": "Biciklivel jár dolgozni.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_routine.4",
+   "kind": "speaking_prompt",
+   "en": "You're talking about hygiene habits.",
+   "context": "Naponta kétszer fogat mosok.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_routine.5",
+   "kind": "speaking_prompt",
+   "en": "You describe your roommates.",
+   "context": "Általában későn fekszenek le.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_routine.6",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your weekend.",
+   "context": "Vasárnaponként sokáig alszom.",
+   "have": []
+  },
+  {
+   "key": "p.hu_routine_0",
+   "kind": "phrase",
+   "target": "Általában hétkor kelek.",
+   "tr": "Genelde saat yedide kalkarım.",
+   "en": "I usually wake up at seven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_routine_1",
+   "kind": "phrase",
+   "target": "Minden reggel zuhanyzik.",
+   "tr": "Her sabah duş alır.",
+   "en": "She showers every morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_routine_2",
+   "kind": "phrase",
+   "target": "Együtt reggelizünk.",
+   "tr": "Birlikte kahvaltı yaparız.",
+   "en": "We have breakfast together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_routine_3",
+   "kind": "phrase",
+   "target": "Biciklivel jár dolgozni.",
+   "tr": "İşe bisikletle gider.",
+   "en": "He goes to work by bike.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_routine_4",
+   "kind": "phrase",
+   "target": "Naponta kétszer fogat mosok.",
+   "tr": "Günde iki kez dişlerimi fırçalarım.",
+   "en": "I brush my teeth twice a day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_routine_5",
+   "kind": "phrase",
+   "target": "Általában későn fekszenek le.",
+   "tr": "Genelde geç yatarlar.",
+   "en": "They usually go to bed late.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_routine_6",
+   "kind": "phrase",
+   "target": "Vasárnaponként sokáig alszom.",
+   "tr": "Pazar günleri geç kalkarım.",
+   "en": "On Sundays I sleep in.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_past_story",
+   "kind": "scenario_title",
+   "tr": "Bir olayı anlatmak",
+   "en": "Telling a story",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_past_story",
+   "kind": "grammar_rule",
+   "tr": "Geçmiş zaman, fiil köküne eklenen \"-t/-tt\" ekiyle kurulur.",
+   "en": "The past tense is formed by adding the suffix \"-t/-tt\" to the verb stem.",
+   "context": "Tegnap elmentem a piacra. / ✗ Tegnap elmegyek a piacra.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "You're telling a friend about your day.",
+   "context": "Tegnap elmentem a piacra.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "You continue the story.",
+   "context": "Vettem friss zöldséget.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "Something unexpected happened.",
+   "context": "Aztán találkoztam egy régi barátommal.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "You describe the encounter.",
+   "context": "Egy órát beszélgettünk.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "Something went wrong.",
+   "context": "Elvesztettem a pénztárcámat hazafelé.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "It has a happy ending.",
+   "context": "Szerencsére valaki megtalálta.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "You're wrapping up the story.",
+   "context": "Ez egy őrült nap volt!",
+   "have": []
+  },
+  {
+   "key": "p.hu_past_story_0",
+   "kind": "phrase",
+   "target": "Tegnap elmentem a piacra.",
+   "tr": "Dün pazara gittim.",
+   "en": "Yesterday I went to the market.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_past_story_1",
+   "kind": "phrase",
+   "target": "Vettem friss zöldséget.",
+   "tr": "Taze sebze aldım.",
+   "en": "I bought fresh vegetables.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_past_story_2",
+   "kind": "phrase",
+   "target": "Aztán találkoztam egy régi barátommal.",
+   "tr": "Sonra eski bir arkadaşımla karşılaştım.",
+   "en": "Then I met an old friend of mine.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_past_story_3",
+   "kind": "phrase",
+   "target": "Egy órát beszélgettünk.",
+   "tr": "Bir saat konuştuk.",
+   "en": "We talked for an hour.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_past_story_4",
+   "kind": "phrase",
+   "target": "Elvesztettem a pénztárcámat hazafelé.",
+   "tr": "Eve dönerken cüzdanımı kaybettim.",
+   "en": "I lost my wallet on the way home.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_past_story_5",
+   "kind": "phrase",
+   "target": "Szerencsére valaki megtalálta.",
+   "tr": "Neyse ki biri buldu.",
+   "en": "Luckily, someone found it.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_past_story_6",
+   "kind": "phrase",
+   "target": "Ez egy őrült nap volt!",
+   "tr": "Çılgın bir gündü!",
+   "en": "It was a crazy day!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "Egy kávét kérek.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "Van foglalsom.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "Elnézést, hol van az állomás?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "Szia, a nevem Deniz.",
+   "have": []
+  },
+  {
+   "key": "p.hu_a2_route_0",
+   "kind": "phrase",
+   "target": "Egy kávét kérek.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_a2_route_1",
+   "kind": "phrase",
+   "target": "Van foglalsom.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_a2_route_2",
+   "kind": "phrase",
+   "target": "Elnézést, hol van az állomás?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_a2_route_3",
+   "kind": "phrase",
+   "target": "Szia, a nevem Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hu_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "A reggeli benne van?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "Nem értem.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "Lakást keresek.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "Mennyi a bérleti díj?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "Kártyával fizethetek?",
+   "have": []
+  },
+  {
+   "key": "p.hu_b1_solve_0",
+   "kind": "phrase",
+   "target": "A reggeli benne van?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_b1_solve_1",
+   "kind": "phrase",
+   "target": "Nem értem.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_b1_solve_2",
+   "kind": "phrase",
+   "target": "Lakást keresek.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_b1_solve_3",
+   "kind": "phrase",
+   "target": "Mennyi a bérleti díj?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hu_b1_solve_4",
+   "kind": "phrase",
+   "target": "Kártyával fizethetek?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hu_exp_job_interview",
+   "kind": "scenario_title",
+   "tr": "İş görüşmesi",
+   "en": "Job interview",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_exp_job_interview",
+   "kind": "grammar_rule",
+   "tr": "Mülakatta \"Ön\" hitabı ve koşul kipi kullanılır: meg tudnák osztani; \"te\" + emir kaba kaçar.",
+   "en": null,
+   "context": "Meg tudnák osztani a bérsávot? / ✗ Mondd a fizut.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hu_exp_job_interview.0",
+   "kind": "speaking_prompt",
+   "en": "Miért pont nálunk szeretne dolgozni?",
+   "context": "Az ügyfélhez való hozzáállásuk egyezik az erősségemmel.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_job_interview.1",
+   "kind": "speaking_prompt",
+   "en": "Hogyan kezeli a szoros kiadási hetet?",
+   "context": "Csökkentem a scope-ot és írásban rögzítem a kockázatokat.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_job_interview.2",
+   "kind": "speaking_prompt",
+   "en": "Van kérdése hozzánk?",
+   "context": "Igen, mikortól kellene kezdenem?",
+   "have": []
+  },
+  {
+   "key": "p.hu_exp_interview_0",
+   "kind": "phrase",
+   "target": "Köszönöm, hogy meghívtak az interjúra.",
+   "tr": "Görüşmeye davet için teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_interview_1",
+   "kind": "phrase",
+   "target": "Öt éve dolgozom termékcsapatokban.",
+   "tr": "Beş yıldır ürün ekiplerinde çalışıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_interview_2",
+   "kind": "phrase",
+   "target": "Számomra a vevő igényének megértése a lényeg.",
+   "tr": "Benim için önemli olan müşterinin ihtiyacını anlamaktır.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_interview_3",
+   "kind": "phrase",
+   "target": "Gyengeségem a túlzott részletezés; checklistet használok.",
+   "tr": "Zayıf yönüm aşırı detaycılık; kontrol listesi kullanıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_interview_4",
+   "kind": "phrase",
+   "target": "Meg tudnák osztani a bérsávot?",
+   "tr": "Maaş aralığını paylaşabilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_interview_5",
+   "kind": "phrase",
+   "target": "Mikortól lenne szükségük valakire?",
+   "tr": "Ne zamandan itibaren birine ihtiyacınız olurdu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hu_exp_team_meeting",
+   "kind": "scenario_title",
+   "tr": "Ekip toplantısı",
+   "en": "Team meeting",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_exp_team_meeting",
+   "kind": "grammar_rule",
+   "tr": "\"vár\" fiili -ra/-re hâli alır: jóváhagyásra várok, \"várok jóváhagyás\" yanlıştır.",
+   "en": null,
+   "context": "A jóváhagyásra várok. / ✗ Várok a jóváhagyás.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hu_exp_team_meeting.0",
+   "kind": "speaking_prompt",
+   "en": "Van valakinek blokkolója?",
+   "context": "A design jóváhagyására várok; holnap emlékeztetek.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_team_meeting.1",
+   "kind": "speaking_prompt",
+   "en": "Akkor ez a feladat nálad marad.",
+   "context": "Rendben, péntekig frissítem a csapatot.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_team_meeting.2",
+   "kind": "speaking_prompt",
+   "en": "Van más napirendi pont?",
+   "context": "Nincs, ennyi volt mára.",
+   "have": []
+  },
+  {
+   "key": "p.hu_exp_meeting_0",
+   "kind": "phrase",
+   "target": "Menjünk egyből a napirendre.",
+   "tr": "Doğrudan gündeme geçelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_meeting_1",
+   "kind": "phrase",
+   "target": "Nálam API-blokkolás van; holnap adok dátumot.",
+   "tr": "Bende API engeli var; yarın tarih vereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_meeting_2",
+   "kind": "phrase",
+   "target": "Ezt a pontot hagyhatjuk a végére?",
+   "tr": "Bu maddeyi sona bırakabilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_meeting_3",
+   "kind": "phrase",
+   "target": "Rögzítem: csütörtök 16:00.",
+   "tr": "Kaydediyorum: perşembe 16:00.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_meeting_4",
+   "kind": "phrase",
+   "target": "Nincs ellenvetésem, de a kockázatot írjuk le.",
+   "tr": "İtirazım yok ama riski yazalım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_meeting_5",
+   "kind": "phrase",
+   "target": "Kell öt perc hosszabbítás?",
+   "tr": "Beş dakika uzatma gerekiyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hu_exp_bank",
+   "kind": "scenario_title",
+   "tr": "Bankada hesap",
+   "en": "Bank account",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_exp_bank",
+   "kind": "grammar_rule",
+   "tr": "Gişede \"szeretnék + infinitív\" kullanılır; \"nyiss számlát\" emirdir.",
+   "en": null,
+   "context": "Szeretnék folyószámlát nyitni. / ✗ Nyiss számlát.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hu_exp_bank.0",
+   "kind": "speaking_prompt",
+   "en": "Magánszámla bérre?",
+   "context": "Igen, fizetés fogadására.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_bank.1",
+   "kind": "speaking_prompt",
+   "en": "Ide írja alá, kérem.",
+   "context": "Rendben, aláírom.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_bank.2",
+   "kind": "speaking_prompt",
+   "en": "Szüksége van bankkártyára is?",
+   "context": "Igen, azt is kérek.",
+   "have": []
+  },
+  {
+   "key": "p.hu_exp_bank_0",
+   "kind": "phrase",
+   "target": "Szeretnék folyószámlát nyitni.",
+   "tr": "Bir vadesiz hesap açmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_bank_1",
+   "kind": "phrase",
+   "target": "Hozom a személyit és a lakcímigazolást.",
+   "tr": "Kimliğimi ve ikametgahımı getiriyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_bank_2",
+   "kind": "phrase",
+   "target": "Mennyi a kártya éves díja?",
+   "tr": "Kartın yıllık ücreti ne kadar?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_bank_3",
+   "kind": "phrase",
+   "target": "Internetes bankot is kérek.",
+   "tr": "İnternet bankacılığını da istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_bank_4",
+   "kind": "phrase",
+   "target": "Mennyi a napi átutalási limit?",
+   "tr": "Günlük havale limiti ne kadar?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_bank_5",
+   "kind": "phrase",
+   "target": "Kaphatok bizonylatot e-mailben?",
+   "tr": "Dekontu e-posta ile alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hu_exp_apartment",
+   "kind": "scenario_title",
+   "tr": "Ev bakma",
+   "en": "Apartment viewing",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_exp_apartment",
+   "kind": "grammar_rule",
+   "tr": "Hâlâ boş olup olmadığını sormak için \"még\" kullanılır.",
+   "en": null,
+   "context": "Még szabad a lakás? / ✗ Szabad mindig még?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hu_exp_apartment.0",
+   "kind": "speaking_prompt",
+   "en": "Mikor költözne?",
+   "context": "Hónap elején; kevés a holmim.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_apartment.1",
+   "kind": "speaking_prompt",
+   "en": "A tulaj nem enged állatot.",
+   "context": "Megértem, nincs is állatom.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_apartment.2",
+   "kind": "speaking_prompt",
+   "en": "Van más kérdése?",
+   "context": "Igen, mikor nézhetem meg élőben?",
+   "have": []
+  },
+  {
+   "key": "p.hu_exp_apartment_0",
+   "kind": "phrase",
+   "target": "A hirdetésre jöttem; még szabad a lakás?",
+   "tr": "İlan için geldim; daire hâlâ boş mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_apartment_1",
+   "kind": "phrase",
+   "target": "A közös költség tartalmazza a fűtést?",
+   "tr": "Aidat ısınmayı da kapsıyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_apartment_2",
+   "kind": "phrase",
+   "target": "A kaució hány havi bérleti díj?",
+   "tr": "Depozito kaç aylık kiraya denk geliyor?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_apartment_3",
+   "kind": "phrase",
+   "target": "Egyéves a szerződés, vagy lehet rövidebb?",
+   "tr": "Sözleşme bir yıllık mı, yoksa daha kısa olabilir mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_apartment_4",
+   "kind": "phrase",
+   "target": "Otthonról dolgozom, csend kell.",
+   "tr": "Evden çalışıyorum, sessizliğe ihtiyacım var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_apartment_5",
+   "kind": "phrase",
+   "target": "Holnap jelzek.",
+   "tr": "Yarın haber vereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hu_exp_doctor",
+   "kind": "scenario_title",
+   "tr": "Doktorda",
+   "en": "At the doctor's",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_exp_doctor",
+   "kind": "grammar_rule",
+   "tr": "Devam eden süre: -ja van + időtartam; kendi kendine teşhis koymayın.",
+   "en": null,
+   "context": "Három napja lázam van. / ✗ Tüdőgyulladásom van, szerintem.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hu_exp_doctor.0",
+   "kind": "speaking_prompt",
+   "en": "Hol fáj? Hirtelen kezdődött?",
+   "context": "A mellkas jobb oldalán, tegnap este óta.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_doctor.1",
+   "kind": "speaking_prompt",
+   "en": "Vért szeretnék venni.",
+   "context": "Rendben, hová menjek?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_doctor.2",
+   "kind": "speaking_prompt",
+   "en": "Szed most valamilyen gyógyszert?",
+   "context": "Nem, semmit nem szedek.",
+   "have": []
+  },
+  {
+   "key": "p.hu_exp_doctor_0",
+   "kind": "phrase",
+   "target": "Három napja lázam van, éjjel köhögök.",
+   "tr": "Üç gündür ateşim var, geceleri öksürüyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_doctor_1",
+   "kind": "phrase",
+   "target": "Penicillinallergiám nincs.",
+   "tr": "Penisilin alerjim yok.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_doctor_2",
+   "kind": "phrase",
+   "target": "Ez a gyógyszer álmosít?",
+   "tr": "Bu ilaç uyku hâli yapar mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_doctor_3",
+   "kind": "phrase",
+   "target": "Kell táppénzes papír a munkahelyre?",
+   "tr": "İş için rapor gerekiyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_doctor_4",
+   "kind": "phrase",
+   "target": "Mikor jöjjek kontrollra?",
+   "tr": "Kontrol için ne zaman geleyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_doctor_5",
+   "kind": "phrase",
+   "target": "A patika az épületen kívül van?",
+   "tr": "Eczane bina dışında mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hu_exp_business_lunch",
+   "kind": "scenario_title",
+   "tr": "İş yemeği",
+   "en": "Business lunch",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_exp_business_lunch",
+   "kind": "grammar_rule",
+   "tr": "Hesabı üstlenmek: mi álljuk; \"fizessenek önök\" kaba kaçar.",
+   "en": null,
+   "context": "A számlát mi álljuk. / ✗ Fizessék ki az egészet.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hu_exp_business_lunch.0",
+   "kind": "speaking_prompt",
+   "en": "Az ár még mindig magasnak tűnik.",
+   "context": "Két fázisra bonthatjuk.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_business_lunch.1",
+   "kind": "speaking_prompt",
+   "en": "Gondolkodunk rajta.",
+   "context": "Rendben, pénteken hívom.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_business_lunch.2",
+   "kind": "speaking_prompt",
+   "en": "Van más kérdésünk mára?",
+   "context": "Nincs, köszönöm az idejét.",
+   "have": []
+  },
+  {
+   "key": "p.hu_exp_lunch_0",
+   "kind": "phrase",
+   "target": "Az ön tippje alapján választottam a helyet.",
+   "tr": "Mekanı sizin öneriniz üzerine seçtim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_lunch_1",
+   "kind": "phrase",
+   "target": "Van allergiája vagy kérése?",
+   "tr": "Alerjiniz veya tercihiniz var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_lunch_2",
+   "kind": "phrase",
+   "target": "Rendelés előtt tisztázzuk a fő pontokat?",
+   "tr": "Sipariş vermeden önce ana noktaları netleştirelim mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_lunch_3",
+   "kind": "phrase",
+   "target": "Számokat az asztalnál nem beszélünk; később írok.",
+   "tr": "Masada rakamlara girmeyelim; sonra yazacağım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_lunch_4",
+   "kind": "phrase",
+   "target": "Most a számlát mi álljuk.",
+   "tr": "Bu sefer hesabı biz alıyoruz.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_lunch_5",
+   "kind": "phrase",
+   "target": "Hasznos volt, köszönöm.",
+   "tr": "Verimliydi, teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hu_exp_complaint",
+   "kind": "scenario_title",
+   "tr": "Şikâyet",
+   "en": "Complaint",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_exp_complaint",
+   "kind": "grammar_rule",
+   "tr": "Kanıt için \"írásos\" kullanılır; sadece sohbet mesajı yeterli değildir.",
+   "en": null,
+   "context": "Írásos megerősítést kérek. / ✗ Csak WhatsAppot írj.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hu_exp_complaint.0",
+   "kind": "speaking_prompt",
+   "en": "Elnézést a kellemetlenségért, ellenőrzöm.",
+   "context": "Köszönöm. A hívás idejét is jegyezze.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_complaint.1",
+   "kind": "speaking_prompt",
+   "en": "Holnap 14-ig kézbesítjük.",
+   "context": "Rendben, várom.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_complaint.2",
+   "kind": "speaking_prompt",
+   "en": "Küldhetek erről visszaigazolást e-mailben?",
+   "context": "Igen, kérem küldje el.",
+   "have": []
+  },
+  {
+   "key": "p.hu_exp_complaint_0",
+   "kind": "phrase",
+   "target": "A rendelésszám 1842, még nem érkezett meg.",
+   "tr": "Sipariş numarası 1842, hâlâ ulaşmadı.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_complaint_1",
+   "kind": "phrase",
+   "target": "A megbeszélt dátum tegnap volt.",
+   "tr": "Kararlaştırılan tarih dündü.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_complaint_2",
+   "kind": "phrase",
+   "target": "Megoldásként a szállítási díj visszatérítését kérem.",
+   "tr": "Çözüm olarak kargo ücretinin iadesini istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_complaint_3",
+   "kind": "phrase",
+   "target": "Vezetővel kell beszélnem, vagy ön elintézi?",
+   "tr": "Bir yöneticiyle mi konuşmalıyım, yoksa siz halleder misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_complaint_4",
+   "kind": "phrase",
+   "target": "Kaphatok írásos megerősítést?",
+   "tr": "Yazılı bir teyit alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_complaint_5",
+   "kind": "phrase",
+   "target": "Türelmes vagyok, de ma kell egy pontos idő.",
+   "tr": "Sabırlıyım ama bugün net bir saat lazım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hu_exp_business_trip",
+   "kind": "scenario_title",
+   "tr": "İş seyahati",
+   "en": "Business trip",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_exp_business_trip",
+   "kind": "grammar_rule",
+   "tr": "Aktarmaya yetişmek: elérem; lekésem = kaçırmak.",
+   "en": null,
+   "context": "Elérem a csatlakozást? / ✗ Lekésem a reptér?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hu_exp_business_trip.0",
+   "kind": "speaking_prompt",
+   "en": "Ablak vagy folyosó?",
+   "context": "Folyosó, lehetőleg a kijárathoz közel.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_business_trip.1",
+   "kind": "speaking_prompt",
+   "en": "12-es kapu, kb. negyven perc múlva.",
+   "context": "Köszönöm, most indulok.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_business_trip.2",
+   "kind": "speaking_prompt",
+   "en": "Van feladott csomagja?",
+   "context": "Nincs, csak a kézipoggyász.",
+   "have": []
+  },
+  {
+   "key": "p.hu_exp_trip_0",
+   "kind": "phrase",
+   "target": "Itt a PNR-kódom; boarding pass, kérem.",
+   "tr": "İşte rezervasyon kodum; biniş kartı lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_trip_1",
+   "kind": "phrase",
+   "target": "A kézipoggyász belefér a méretbe?",
+   "tr": "El bagajı ölçülere uyuyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_trip_2",
+   "kind": "phrase",
+   "target": "A késés miatt elérem a csatlakozást?",
+   "tr": "Gecikme nedeniyle aktarmaya yetişebilecek miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_trip_3",
+   "kind": "phrase",
+   "target": "A számlát a cég nevére kérem.",
+   "tr": "Fatura şirket adına lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_trip_4",
+   "kind": "phrase",
+   "target": "Hol a lounge bejárata?",
+   "tr": "Lounge girişi nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_trip_5",
+   "kind": "phrase",
+   "target": "A taxi blokkot el kell tennem elszámolásra.",
+   "tr": "Masraf için taksi fişini saklamam gerekiyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hu_exp_client_call",
+   "kind": "scenario_title",
+   "tr": "Müşteri telefonu",
+   "en": "Client phone call",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_exp_client_call",
+   "kind": "grammar_rule",
+   "tr": "Yanlış anlamayı teyit etmek için \"ha félreértettem\" kullanılır.",
+   "en": null,
+   "context": "Ha félreértettem, javítson ki. / ✗ Ha félreértenék rosszul…",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hu_exp_client_call.0",
+   "kind": "speaking_prompt",
+   "en": "E nélkül a funkció nélkül nem mehetünk élőbe.",
+   "context": "Akkor mást csúsztatunk, ezt hozzuk előre.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_client_call.1",
+   "kind": "speaking_prompt",
+   "en": "Rendben, írja le.",
+   "context": "Máris küldöm írásban.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_client_call.2",
+   "kind": "speaking_prompt",
+   "en": "Mikorra várható a végleges verzió?",
+   "context": "Péntekig kész lesz.",
+   "have": []
+  },
+  {
+   "key": "p.hu_exp_call_0",
+   "kind": "phrase",
+   "target": "Van öt perce most?",
+   "tr": "Şu an beş dakikanız var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_call_1",
+   "kind": "phrase",
+   "target": "A tegnapi mail 3. pontja nem tiszta.",
+   "tr": "Dünkü mailin 3. maddesi net değil.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_call_2",
+   "kind": "phrase",
+   "target": "Ez extra, vagy a jelenlegi keretben van?",
+   "tr": "Bu ek iş mi yoksa mevcut kapsamda mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_call_3",
+   "kind": "phrase",
+   "target": "Ha félreértettem, javítson ki.",
+   "tr": "Yanlış anladıysam lütfen düzeltin.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_call_4",
+   "kind": "phrase",
+   "target": "Röviden: péntek vázlat, hétfő komment.",
+   "tr": "Özetle: cuma taslak, pazartesi yorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_call_5",
+   "kind": "phrase",
+   "target": "Rögtön küldök visszaigazoló mailt.",
+   "tr": "Hemen bir teyit maili gönderiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hu_exp_hr_salary",
+   "kind": "scenario_title",
+   "tr": "Maaş görüşmesi",
+   "en": "Salary conversation",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_exp_hr_salary",
+   "kind": "grammar_rule",
+   "tr": "Yumuşak beklenti: várok 15%-ot; \"most követelek\" kapıyı kapatır.",
+   "en": null,
+   "context": "Tizenöt százalékot várok. / ✗ Most követelek tizenötöt.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hu_exp_hr_salary.0",
+   "kind": "speaking_prompt",
+   "en": "Idén szűk a költségvetés.",
+   "context": "Értem. Bónusz vagy szint szóba jöhet?",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_hr_salary.1",
+   "kind": "speaking_prompt",
+   "en": "Márciusban visszatérünk rá.",
+   "context": "Rendben, akkor márciusban folytatjuk.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_hr_salary.2",
+   "kind": "speaking_prompt",
+   "en": "Van más, amit meg szeretne beszélni?",
+   "context": "Igen, a képzési lehetőségeket is.",
+   "have": []
+  },
+  {
+   "key": "p.hu_exp_salary_0",
+   "kind": "phrase",
+   "target": "A teljesítményről és a piacról szeretnék beszélni.",
+   "tr": "Performansım ve piyasa hakkında konuşmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_salary_1",
+   "kind": "phrase",
+   "target": "Fél év alatt három projektet adtam le időben.",
+   "tr": "Altı ayda üç projeyi zamanında teslim ettim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_salary_2",
+   "kind": "phrase",
+   "target": "Tizenöt százalékot várok; indoklást tudok mutatni.",
+   "tr": "Yüzde on beş bekliyorum; gerekçemi gösterebilirim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_salary_3",
+   "kind": "phrase",
+   "target": "A jelenlegi cím nem tükrözi a felelősséget.",
+   "tr": "Mevcut unvan sorumluluğu yansıtmıyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_salary_4",
+   "kind": "phrase",
+   "target": "Ha nincs keret, rögzítsünk dátumot.",
+   "tr": "Bütçe yoksa bir tarih belirleyelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_salary_5",
+   "kind": "phrase",
+   "target": "A döntést írásban kérem.",
+   "tr": "Kararı yazılı olarak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hu_exp_daily_errands",
+   "kind": "scenario_title",
+   "tr": "Market ve kargo",
+   "en": "Errands and deliveries",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_exp_daily_errands",
+   "kind": "grammar_rule",
+   "tr": "Hizmet ricalarında cümle sonuna \"kérem\" eklenir.",
+   "en": null,
+   "context": "A blokkot, kérem. / ✗ Add a blokkot.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hu_exp_daily_errands.0",
+   "kind": "speaking_prompt",
+   "en": "Van hűségkártyája?",
+   "context": "Most nincs, köszönöm.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_daily_errands.1",
+   "kind": "speaking_prompt",
+   "en": "Nincs apróm, kártyáról vonom.",
+   "context": "Rendben, semmi gond.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_daily_errands.2",
+   "kind": "speaking_prompt",
+   "en": "Kér számlát is a blokk mellé?",
+   "context": "Nem, elég a blokk.",
+   "have": []
+  },
+  {
+   "key": "p.hu_exp_errands_0",
+   "kind": "phrase",
+   "target": "Kettőt ebből a kenyérből, és a blokkot, kérem.",
+   "tr": "Bu ekmekten iki tane ve fiş lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_errands_1",
+   "kind": "phrase",
+   "target": "Hol a gluténmentes polc?",
+   "tr": "Glütensiz reyon nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_errands_2",
+   "kind": "phrase",
+   "target": "Ne hagyják a szomszédnál; cetli az ajtóra.",
+   "tr": "Komşuya bırakmayın; kapıya not bırakın.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_errands_3",
+   "kind": "phrase",
+   "target": "Nincs készpénzem; kártya jó?",
+   "tr": "Nakit param yok; kart olur mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_errands_4",
+   "kind": "phrase",
+   "target": "A visszáru tizennégy nap, ugye?",
+   "tr": "İade on dört gün, değil mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_errands_5",
+   "kind": "phrase",
+   "target": "Nem kell tasak, van saját táskám.",
+   "tr": "Poşete gerek yok, kendi çantam var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hu_exp_networking",
+   "kind": "scenario_title",
+   "tr": "Networking",
+   "en": "Networking",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hu_exp_networking",
+   "kind": "grammar_rule",
+   "tr": "Meslek tanıtımı: vagyok + foglalkozás.",
+   "en": null,
+   "context": "Termékmenedzser vagyok fintechben. / ✗ Ilyen termékes cuccokat csinálok.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hu_exp_networking.0",
+   "kind": "speaking_prompt",
+   "en": "Mit old meg konkrétan az app?",
+   "context": "Kkv-knak egyszerűsítjük a számlázást és a behajtást.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_networking.1",
+   "kind": "speaking_prompt",
+   "en": "Érdekes, írjon e-mailt.",
+   "context": "Holnap írok, köszönöm.",
+   "have": []
+  },
+  {
+   "key": "tp.hu_exp_networking.2",
+   "kind": "speaking_prompt",
+   "en": "Milyen piacon vannak jelen?",
+   "context": "Elsősorban Közép-Európában.",
+   "have": []
+  },
+  {
+   "key": "p.hu_exp_networking_0",
+   "kind": "phrase",
+   "target": "Anna vagyok, termékmenedzser fintechben.",
+   "tr": "Benim adım Anna, fintech alanında ürün yöneticisiyim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_networking_1",
+   "kind": "phrase",
+   "target": "A fizetési példája nagyon világos volt.",
+   "tr": "Ödemeler hakkındaki örneğiniz çok netti.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_networking_2",
+   "kind": "phrase",
+   "target": "Önöknél is van ilyen súrlódás?",
+   "tr": "Sizde de böyle sürtüşmeler oluyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_networking_3",
+   "kind": "phrase",
+   "target": "Elfogyott a névjegy; írhatok LinkedInen?",
+   "tr": "Kartvizitlerim bitti; LinkedIn’den yazabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_networking_4",
+   "kind": "phrase",
+   "target": "Van két perce? Rövid leszek.",
+   "tr": "İki dakikanız var mı? Kısa keseceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hu_exp_networking_5",
+   "kind": "phrase",
+   "target": "Szívesen bemutatok valakit a területről.",
+   "tr": "Yardımcı olabilecek birini tanıştırabilirim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.hu_neighbor",
+   "kind": "story_title",
+   "target": "Margit néni",
+   "tr": "Margit Teyze",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_neighbor.0",
+   "kind": "story_sentence",
+   "target": "A szomszédom Margit néni.",
+   "tr": "Komşum Margit teyze.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_neighbor.1",
+   "kind": "story_sentence",
+   "target": "Ő mindig segít a gyerekeknek.",
+   "tr": "O hep çocuklara yardım eder.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_neighbor.2",
+   "kind": "story_sentence",
+   "target": "Ő süt süteményt, és ad nekünk.",
+   "tr": "Kurabiye pişirip bize verir.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_neighbor.3",
+   "kind": "story_sentence",
+   "target": "Ha a kutyám sír, ő kiengedi.",
+   "tr": "Köpeğim uluduğunda o bırakır.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_neighbor.4",
+   "kind": "story_sentence",
+   "target": "Nyáron a kertben beszélgetünk.",
+   "tr": "Yazın bahçede sohbet ederiz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_neighbor.5",
+   "kind": "story_sentence",
+   "target": "Margit néni jó és kedves ember.",
+   "tr": "Margit teyze iyi ve nazik bir insandır.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.hu_river_walk",
+   "kind": "story_title",
+   "target": "A folyó mellett",
+   "tr": "Nehir Kenarı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_river_walk.0",
+   "kind": "story_sentence",
+   "target": "Minden délután sétálok a folyó mellett.",
+   "tr": "Her öğleden sonra nehir kenarında yürüyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_river_walk.1",
+   "kind": "story_sentence",
+   "target": "A kutyám, Burek, az előttem fut.",
+   "tr": "Köpeğim Burek önümde koşar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_river_walk.2",
+   "kind": "story_sentence",
+   "target": "Délben a gyerekek a folyóban úsznak.",
+   "tr": "Öğlen çocuklar nehre girer.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_river_walk.3",
+   "kind": "story_sentence",
+   "target": "Este a levegő hűs, és a nap lenyugszik.",
+   "tr": "Akşam hava serin, güneş batıyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_river_walk.4",
+   "kind": "story_sentence",
+   "target": "Én csak teát iszom, és a csillagokat figyelem.",
+   "tr": "Ben sadece çay içip yıldızlara bakarım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_river_walk.5",
+   "kind": "story_sentence",
+   "target": "A természet a legjobb pihenés.",
+   "tr": "Doğa en iyi dinlence.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.hu_vacation",
+   "kind": "story_title",
+   "target": "A tengeri nyaralás",
+   "tr": "Deniz Tatili",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_vacation.0",
+   "kind": "story_sentence",
+   "target": "Nyáron a család a tengerhez megy.",
+   "tr": "Yazın aile denize gider.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_vacation.1",
+   "kind": "story_sentence",
+   "target": "A hotel a strand közelében van.",
+   "tr": "Hotel plajın yakınında.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_vacation.2",
+   "kind": "story_sentence",
+   "target": "Reggel a gyerekek a tengerben úsznak.",
+   "tr": "Sabah çocuklar denize girer.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_vacation.3",
+   "kind": "story_sentence",
+   "target": "Délben süt a nap, és a víz meleg.",
+   "tr": "Öğlen güneş var ve su sıcak.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_vacation.4",
+   "kind": "story_sentence",
+   "target": "Este a család a tengerparton sétál.",
+   "tr": "Akşam aile sahil yürüyüşü yapar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hu_vacation.5",
+   "kind": "story_sentence",
+   "target": "Mindenkinek tetszik a nyaralás.",
+   "tr": "Herkese tatil hoşuna gidiyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.A.n",
+   "kind": "alphabet_letter_name",
+   "target": "A",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.A.s",
+   "kind": "alphabet_sound",
+   "target": "A",
+   "tr": "a",
+   "context": "Alma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.A.m",
+   "kind": "alphabet_example",
+   "target": "Alma",
+   "tr": "Elma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Á.n",
+   "kind": "alphabet_letter_name",
+   "target": "Á",
+   "tr": "Uzun A",
+   "en": "Long A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Á.s",
+   "kind": "alphabet_sound",
+   "target": "Á",
+   "tr": "aa",
+   "context": "Ágy",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Á.m",
+   "kind": "alphabet_example",
+   "target": "Ágy",
+   "tr": "Yatak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.B.n",
+   "kind": "alphabet_letter_name",
+   "target": "B",
+   "tr": "Be",
+   "en": "Be",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.B.s",
+   "kind": "alphabet_sound",
+   "target": "B",
+   "tr": "b",
+   "context": "Béka",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.B.m",
+   "kind": "alphabet_example",
+   "target": "Béka",
+   "tr": "Kurbağa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.C.n",
+   "kind": "alphabet_letter_name",
+   "target": "C",
+   "tr": "Tse",
+   "en": "Tse",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.C.s",
+   "kind": "alphabet_sound",
+   "target": "C",
+   "tr": "ts",
+   "context": "Cica",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.C.m",
+   "kind": "alphabet_example",
+   "target": "Cica",
+   "tr": "Kedicik",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Cs.n",
+   "kind": "alphabet_letter_name",
+   "target": "Cs",
+   "tr": "Çe",
+   "en": "Che",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Cs.s",
+   "kind": "alphabet_sound",
+   "target": "Cs",
+   "tr": "ç",
+   "context": "Csillag",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Cs.m",
+   "kind": "alphabet_example",
+   "target": "Csillag",
+   "tr": "Yıldız",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.D.n",
+   "kind": "alphabet_letter_name",
+   "target": "D",
+   "tr": "De",
+   "en": "De",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.D.s",
+   "kind": "alphabet_sound",
+   "target": "D",
+   "tr": "d",
+   "context": "Dal",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.D.m",
+   "kind": "alphabet_example",
+   "target": "Dal",
+   "tr": "Şarkı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.E.n",
+   "kind": "alphabet_letter_name",
+   "target": "E",
+   "tr": "E",
+   "en": "E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.E.s",
+   "kind": "alphabet_sound",
+   "target": "E",
+   "tr": "e",
+   "context": "Egér",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.E.m",
+   "kind": "alphabet_example",
+   "target": "Egér",
+   "tr": "Fare",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.É.n",
+   "kind": "alphabet_letter_name",
+   "target": "É",
+   "tr": "Uzun E",
+   "en": "Long E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.É.s",
+   "kind": "alphabet_sound",
+   "target": "É",
+   "tr": "ee",
+   "context": "Érem",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.É.m",
+   "kind": "alphabet_example",
+   "target": "Érem",
+   "tr": "Madalya",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.F.n",
+   "kind": "alphabet_letter_name",
+   "target": "F",
+   "tr": "Ef",
+   "en": "Ef",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.F.s",
+   "kind": "alphabet_sound",
+   "target": "F",
+   "tr": "f",
+   "context": "Fa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.F.m",
+   "kind": "alphabet_example",
+   "target": "Fa",
+   "tr": "Ağaç",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.G.n",
+   "kind": "alphabet_letter_name",
+   "target": "G",
+   "tr": "Ge",
+   "en": "Ge",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.G.s",
+   "kind": "alphabet_sound",
+   "target": "G",
+   "tr": "g",
+   "context": "Gomba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.G.m",
+   "kind": "alphabet_example",
+   "target": "Gomba",
+   "tr": "Mantar",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Gy.n",
+   "kind": "alphabet_letter_name",
+   "target": "Gy",
+   "tr": "Dye",
+   "en": "Dye",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Gy.s",
+   "kind": "alphabet_sound",
+   "target": "Gy",
+   "tr": "ğ/dy",
+   "context": "Gyerek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Gy.m",
+   "kind": "alphabet_example",
+   "target": "Gyerek",
+   "tr": "Çocuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.H.n",
+   "kind": "alphabet_letter_name",
+   "target": "H",
+   "tr": "Ha",
+   "en": "Ha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.H.s",
+   "kind": "alphabet_sound",
+   "target": "H",
+   "tr": "h",
+   "context": "Ház",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.H.m",
+   "kind": "alphabet_example",
+   "target": "Ház",
+   "tr": "Ev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.I.n",
+   "kind": "alphabet_letter_name",
+   "target": "I",
+   "tr": "İ",
+   "en": "I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.I.s",
+   "kind": "alphabet_sound",
+   "target": "I",
+   "tr": "i",
+   "context": "Idő",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.I.m",
+   "kind": "alphabet_example",
+   "target": "Idő",
+   "tr": "Zaman/hava",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Í.n",
+   "kind": "alphabet_letter_name",
+   "target": "Í",
+   "tr": "Uzun İ",
+   "en": "Long I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Í.s",
+   "kind": "alphabet_sound",
+   "target": "Í",
+   "tr": "ii",
+   "context": "Íj",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Í.m",
+   "kind": "alphabet_example",
+   "target": "Íj",
+   "tr": "Yay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.J.n",
+   "kind": "alphabet_letter_name",
+   "target": "J",
+   "tr": "Yot",
+   "en": "Yot",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.J.s",
+   "kind": "alphabet_sound",
+   "target": "J",
+   "tr": "y",
+   "context": "Jég",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.J.m",
+   "kind": "alphabet_example",
+   "target": "Jég",
+   "tr": "Buz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.K.n",
+   "kind": "alphabet_letter_name",
+   "target": "K",
+   "tr": "Ka",
+   "en": "Ka",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.K.s",
+   "kind": "alphabet_sound",
+   "target": "K",
+   "tr": "k",
+   "context": "Kutya",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.K.m",
+   "kind": "alphabet_example",
+   "target": "Kutya",
+   "tr": "Köpek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.L.n",
+   "kind": "alphabet_letter_name",
+   "target": "L",
+   "tr": "El",
+   "en": "El",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.L.s",
+   "kind": "alphabet_sound",
+   "target": "L",
+   "tr": "l",
+   "context": "Level",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.L.m",
+   "kind": "alphabet_example",
+   "target": "Level",
+   "tr": "Yaprak/mektup",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.M.n",
+   "kind": "alphabet_letter_name",
+   "target": "M",
+   "tr": "Em",
+   "en": "Em",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.M.s",
+   "kind": "alphabet_sound",
+   "target": "M",
+   "tr": "m",
+   "context": "Macska",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.M.m",
+   "kind": "alphabet_example",
+   "target": "Macska",
+   "tr": "Kedi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.N.n",
+   "kind": "alphabet_letter_name",
+   "target": "N",
+   "tr": "En",
+   "en": "En",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.N.s",
+   "kind": "alphabet_sound",
+   "target": "N",
+   "tr": "n",
+   "context": "Nap",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.N.m",
+   "kind": "alphabet_example",
+   "target": "Nap",
+   "tr": "Güneş/gün",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ny.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ny",
+   "tr": "Nye",
+   "en": "Nye",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Ny.s",
+   "kind": "alphabet_sound",
+   "target": "Ny",
+   "tr": "ny",
+   "context": "Nyár",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ny.m",
+   "kind": "alphabet_example",
+   "target": "Nyár",
+   "tr": "Yaz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.O.n",
+   "kind": "alphabet_letter_name",
+   "target": "O",
+   "tr": "O",
+   "en": "O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.O.s",
+   "kind": "alphabet_sound",
+   "target": "O",
+   "tr": "o",
+   "context": "Orr",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.O.m",
+   "kind": "alphabet_example",
+   "target": "Orr",
+   "tr": "Burun",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ó.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ó",
+   "tr": "Uzun O",
+   "en": "Long O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Ó.s",
+   "kind": "alphabet_sound",
+   "target": "Ó",
+   "tr": "oo",
+   "context": "Óra",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ó.m",
+   "kind": "alphabet_example",
+   "target": "Óra",
+   "tr": "Saat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ö.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ö",
+   "tr": "Ö",
+   "en": "Oe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Ö.s",
+   "kind": "alphabet_sound",
+   "target": "Ö",
+   "tr": "ö",
+   "context": "Öröm",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ö.m",
+   "kind": "alphabet_example",
+   "target": "Öröm",
+   "tr": "Sevinç",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ő.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ő",
+   "tr": "Uzun Ö",
+   "en": "Long Oe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Ő.s",
+   "kind": "alphabet_sound",
+   "target": "Ő",
+   "tr": "öö",
+   "context": "Őz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ő.m",
+   "kind": "alphabet_example",
+   "target": "Őz",
+   "tr": "Karaca",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.P.n",
+   "kind": "alphabet_letter_name",
+   "target": "P",
+   "tr": "Pe",
+   "en": "Pe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.P.s",
+   "kind": "alphabet_sound",
+   "target": "P",
+   "tr": "p",
+   "context": "Pék",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.P.m",
+   "kind": "alphabet_example",
+   "target": "Pék",
+   "tr": "Fırıncı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.R.n",
+   "kind": "alphabet_letter_name",
+   "target": "R",
+   "tr": "Er",
+   "en": "Er",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.R.s",
+   "kind": "alphabet_sound",
+   "target": "R",
+   "tr": "r",
+   "context": "Róka",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.R.m",
+   "kind": "alphabet_example",
+   "target": "Róka",
+   "tr": "Tilki",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.S.n",
+   "kind": "alphabet_letter_name",
+   "target": "S",
+   "tr": "Ş",
+   "en": "Sh",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.S.s",
+   "kind": "alphabet_sound",
+   "target": "S",
+   "tr": "ş",
+   "context": "Sör",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.S.m",
+   "kind": "alphabet_example",
+   "target": "Sör",
+   "tr": "Bira",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Sz.n",
+   "kind": "alphabet_letter_name",
+   "target": "Sz",
+   "tr": "Es",
+   "en": "S",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Sz.s",
+   "kind": "alphabet_sound",
+   "target": "Sz",
+   "tr": "s",
+   "context": "Szív",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Sz.m",
+   "kind": "alphabet_example",
+   "target": "Szív",
+   "tr": "Kalp",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.T.n",
+   "kind": "alphabet_letter_name",
+   "target": "T",
+   "tr": "Te",
+   "en": "Te",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.T.s",
+   "kind": "alphabet_sound",
+   "target": "T",
+   "tr": "t",
+   "context": "Tenger",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.T.m",
+   "kind": "alphabet_example",
+   "target": "Tenger",
+   "tr": "Deniz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ty.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ty",
+   "tr": "Tye",
+   "en": "Tye",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Ty.s",
+   "kind": "alphabet_sound",
+   "target": "Ty",
+   "tr": "ty",
+   "context": "Tyúk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ty.m",
+   "kind": "alphabet_example",
+   "target": "Tyúk",
+   "tr": "Tavuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.U.n",
+   "kind": "alphabet_letter_name",
+   "target": "U",
+   "tr": "U",
+   "en": "U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.U.s",
+   "kind": "alphabet_sound",
+   "target": "U",
+   "tr": "u",
+   "context": "Uborka",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.U.m",
+   "kind": "alphabet_example",
+   "target": "Uborka",
+   "tr": "Salatalık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ú.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ú",
+   "tr": "Uzun U",
+   "en": "Long U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Ú.s",
+   "kind": "alphabet_sound",
+   "target": "Ú",
+   "tr": "uu",
+   "context": "Út",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ú.m",
+   "kind": "alphabet_example",
+   "target": "Út",
+   "tr": "Yol",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ü.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ü",
+   "tr": "Ü",
+   "en": "Ue",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Ü.s",
+   "kind": "alphabet_sound",
+   "target": "Ü",
+   "tr": "ü",
+   "context": "Üveg",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ü.m",
+   "kind": "alphabet_example",
+   "target": "Üveg",
+   "tr": "Cam/şişe",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ű.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ű",
+   "tr": "Uzun Ü",
+   "en": "Long Ue",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Ű.s",
+   "kind": "alphabet_sound",
+   "target": "Ű",
+   "tr": "üü",
+   "context": "Tűz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Ű.m",
+   "kind": "alphabet_example",
+   "target": "Tűz",
+   "tr": "Ateş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.V.n",
+   "kind": "alphabet_letter_name",
+   "target": "V",
+   "tr": "Ve",
+   "en": "Ve",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.V.s",
+   "kind": "alphabet_sound",
+   "target": "V",
+   "tr": "v",
+   "context": "Víz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.V.m",
+   "kind": "alphabet_example",
+   "target": "Víz",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Z.n",
+   "kind": "alphabet_letter_name",
+   "target": "Z",
+   "tr": "Zet",
+   "en": "Zet",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Z.s",
+   "kind": "alphabet_sound",
+   "target": "Z",
+   "tr": "z",
+   "context": "Zöld",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Z.m",
+   "kind": "alphabet_example",
+   "target": "Zöld",
+   "tr": "Yeşil",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Zs.n",
+   "kind": "alphabet_letter_name",
+   "target": "Zs",
+   "tr": "Je",
+   "en": "Zhe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hu.Zs.s",
+   "kind": "alphabet_sound",
+   "target": "Zs",
+   "tr": "j",
+   "context": "Zsemle",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hu.Zs.m",
+   "kind": "alphabet_example",
+   "target": "Zsemle",
+   "tr": "Ekmek çeşidi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.hu.0.h",
+   "kind": "pronunciation_heard",
+   "target": "á",
+   "tr": "uzun a",
+   "context": "Kısa a vs uzun á.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.hu.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "ház",
+   "tr": "haaz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.hu.1.h",
+   "kind": "pronunciation_heard",
+   "target": "sz",
+   "tr": "s",
+   "context": "sz = Türkçe s. s = ş!",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.hu.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "szép",
+   "tr": "sep",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.hu.2.h",
+   "kind": "pronunciation_heard",
+   "target": "gy",
+   "tr": "dy",
+   "context": "d+y birleşik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.hu.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "magyar",
+   "tr": "madyar",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

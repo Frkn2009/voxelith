@@ -1,0 +1,3256 @@
+{
+ "lang": "ru",
+ "scenarios": [
+  {
+   "id": "ru_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "ru_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "ru_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "ru_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "ru_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "ru_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "ru_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "ru_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "ru_intro",
+   "cefr": "a1",
+   "title": "Meeting someone new"
+  },
+  {
+   "id": "ru_shopping",
+   "cefr": "a1",
+   "title": "Shopping"
+  },
+  {
+   "id": "ru_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers and time"
+  },
+  {
+   "id": "ru_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "ru_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "ru_transport",
+   "cefr": "a1",
+   "title": "Transport"
+  },
+  {
+   "id": "ru_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "ru_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "ru_past_story",
+   "cefr": "a1",
+   "title": "Telling a past event"
+  },
+  {
+   "id": "ru_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "ru_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  }
+ ],
+ "stories": [
+  {
+   "id": "ru_my_friend",
+   "level": "a1",
+   "title": "Мой друг"
+  },
+  {
+   "id": "ru_weather",
+   "level": "a1",
+   "title": "Погода"
+  },
+  {
+   "id": "ru_at_the_store",
+   "level": "a1",
+   "title": "В магазине"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.ru_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "Кофе, пожалуйста.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "Сколько это стоит?",
+   "have": []
+  },
+  {
+   "key": "p.ru_cafe_0",
+   "kind": "phrase",
+   "target": "Кофе, пожалуйста.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_cafe_1",
+   "kind": "phrase",
+   "target": "Сколько это стоит?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_cafe_2",
+   "kind": "phrase",
+   "target": "Большое спасибо.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "У меня есть бронь.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "Завтрак включён?",
+   "have": []
+  },
+  {
+   "key": "p.ru_hotel_0",
+   "kind": "phrase",
+   "target": "У меня есть бронь.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_hotel_1",
+   "kind": "phrase",
+   "target": "Завтрак включён?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_hotel_2",
+   "kind": "phrase",
+   "target": "Большое спасибо.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "Извините, где станция?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "Большое спасибо.",
+   "have": []
+  },
+  {
+   "key": "p.ru_dir_0",
+   "kind": "phrase",
+   "target": "Извините, где станция?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_dir_1",
+   "kind": "phrase",
+   "target": "Большое спасибо.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_dir_2",
+   "kind": "phrase",
+   "target": "Я не понимаю.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "Привет, меня зовут Дениз.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "Я из Турции.",
+   "have": []
+  },
+  {
+   "key": "p.ru_hi_0",
+   "kind": "phrase",
+   "target": "Привет, меня зовут Дениз.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_hi_1",
+   "kind": "phrase",
+   "target": "Я из Турции.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_hi_2",
+   "kind": "phrase",
+   "target": "Большое спасибо.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "Я ищу квартиру.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "Сколько стоит аренда?",
+   "have": []
+  },
+  {
+   "key": "p.ru_flat_0",
+   "kind": "phrase",
+   "target": "Я ищу квартиру.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_flat_1",
+   "kind": "phrase",
+   "target": "Сколько стоит аренда?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_flat_2",
+   "kind": "phrase",
+   "target": "Вы можете мне помочь?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "Сколько это стоит?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "Я возьму это.",
+   "have": []
+  },
+  {
+   "key": "p.ru_shop_0",
+   "kind": "phrase",
+   "target": "Сколько это стоит?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_shop_1",
+   "kind": "phrase",
+   "target": "Я возьму это.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_shop_2",
+   "kind": "phrase",
+   "target": "Вы принимаете карту?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "Счёт, пожалуйста.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "Мы хотим заплатить вместе.",
+   "have": []
+  },
+  {
+   "key": "p.ru_bill_0",
+   "kind": "phrase",
+   "target": "Счёт, пожалуйста.",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_bill_1",
+   "kind": "phrase",
+   "target": "Мы хотим заплатить вместе.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_bill_2",
+   "kind": "phrase",
+   "target": "Сдачи не надо.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "У меня есть бронь.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "Место у окна, пожалуйста.",
+   "have": []
+  },
+  {
+   "key": "p.ru_airport_0",
+   "kind": "phrase",
+   "target": "У меня есть бронь.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_airport_1",
+   "kind": "phrase",
+   "target": "Место у окна, пожалуйста.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_airport_2",
+   "kind": "phrase",
+   "target": "Это очередь на посадку?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Meeting someone new",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ru_intro",
+   "kind": "grammar_rule",
+   "tr": "İsmini söylerken önce \"menya\" (beni) gelir, isim ise nominatif halde kalır — fiil \"ben\" özneli çekilmez.",
+   "en": "\"Меня зовут\" literally means \"they call me\" — the pronoun is accusative (меня) and the name stays nominative; don't conjugate a verb with \"я\".",
+   "context": "Меня зовут Анна. / ✗ Я зовут Анна.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_intro.0",
+   "kind": "speaking_prompt",
+   "en": "Someone greets you first.",
+   "context": "Привет! Как тебя зовут?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_intro.1",
+   "kind": "speaking_prompt",
+   "en": "They ask your name.",
+   "context": "Меня зовут Иван.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_intro.2",
+   "kind": "speaking_prompt",
+   "en": "You want to be polite.",
+   "context": "Очень приятно познакомиться.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_intro.3",
+   "kind": "speaking_prompt",
+   "en": "You want to know where they are from.",
+   "context": "Откуда ты?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask where you are from.",
+   "context": "Я из Турции.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You ask how they are doing.",
+   "context": "Как у тебя дела?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_intro.6",
+   "kind": "speaking_prompt",
+   "en": "They ask you back.",
+   "context": "Хорошо, спасибо, а у тебя?",
+   "have": []
+  },
+  {
+   "key": "p.ru_intro_0",
+   "kind": "phrase",
+   "target": "Привет! Как тебя зовут?",
+   "tr": "Merhaba! Adın ne?",
+   "en": "Hi! What's your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_intro_1",
+   "kind": "phrase",
+   "target": "Меня зовут Иван.",
+   "tr": "Benim adım İvan.",
+   "en": "My name is Ivan.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_intro_2",
+   "kind": "phrase",
+   "target": "Очень приятно познакомиться.",
+   "tr": "Tanıştığıma çok memnun oldum.",
+   "en": "Very nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_intro_3",
+   "kind": "phrase",
+   "target": "Откуда ты?",
+   "tr": "Nerelisin?",
+   "en": "Where are you from?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_intro_4",
+   "kind": "phrase",
+   "target": "Я из Турции.",
+   "tr": "Ben Türkiye'denim.",
+   "en": "I'm from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_intro_5",
+   "kind": "phrase",
+   "target": "Как у тебя дела?",
+   "tr": "Nasılsın?",
+   "en": "How are you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_intro_6",
+   "kind": "phrase",
+   "target": "Хорошо, спасибо, а у тебя?",
+   "tr": "İyiyim, teşekkürler, ya sen?",
+   "en": "Good, thanks, and you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_shopping",
+   "kind": "scenario_title",
+   "tr": "Alışveriş",
+   "en": "Shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ru_shopping",
+   "kind": "grammar_rule",
+   "tr": "2, 3, 4 sayılarından sonra isim tekil genitif halde olur; 5 ve üzeri sayılardan sonra çoğul genitif olur.",
+   "en": "After the numbers 2-4 the noun takes singular genitive; after 5 and up it takes plural genitive — \"два яблокА\" but \"пять яблОК\".",
+   "context": "Дайте, пожалуйста, два яблока. / ✗ Дайте, пожалуйста, два яблок.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You walk into a shop.",
+   "context": "Здравствуйте, я просто смотрю.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "You see a jacket you like.",
+   "context": "Сколько это стоит?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "It doesn't fit.",
+   "context": "У вас есть это в другом размере?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "They bring another size.",
+   "context": "Можно примерить?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You are at the fruit stand.",
+   "context": "Дайте, пожалуйста, два яблока.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "The price surprises you.",
+   "context": "Это слишком дорого.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You decide to buy the cheaper one.",
+   "context": "Я возьму это.",
+   "have": []
+  },
+  {
+   "key": "p.ru_shopping_0",
+   "kind": "phrase",
+   "target": "Здравствуйте, я просто смотрю.",
+   "tr": "Merhaba, sadece bakıyorum.",
+   "en": "Hello, I'm just looking.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_shopping_1",
+   "kind": "phrase",
+   "target": "Сколько это стоит?",
+   "tr": "Bu ne kadar?",
+   "en": "How much is this?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_shopping_2",
+   "kind": "phrase",
+   "target": "У вас есть это в другом размере?",
+   "tr": "Bunun başka bedeni var mı?",
+   "en": "Do you have this in another size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_shopping_3",
+   "kind": "phrase",
+   "target": "Можно примерить?",
+   "tr": "Deneyebilir miyim?",
+   "en": "Can I try it on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_shopping_4",
+   "kind": "phrase",
+   "target": "Дайте, пожалуйста, два яблока.",
+   "tr": "Lütfen iki elma verin.",
+   "en": "Please give me two apples.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_shopping_5",
+   "kind": "phrase",
+   "target": "Это слишком дорого.",
+   "tr": "Bu çok pahalı.",
+   "en": "This is too expensive.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_shopping_6",
+   "kind": "phrase",
+   "target": "Я возьму это.",
+   "tr": "Bunu alıyorum.",
+   "en": "I'll take this.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers and time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ru_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "\"Saat X'te\" derken \"в\" edatından sonra saat sayısı gelir — \"на\" değil.",
+   "en": "\"At X o'clock\" uses the preposition \"в\" + the hour number, not \"на\" — \"в семь часов\", never \"на семь часов\".",
+   "context": "Встреча в семь часов. / ✗ Встреча на семь часов.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You check your watch.",
+   "context": "Который час?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks the time.",
+   "context": "Сейчас три часа.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "A colleague asks when the meeting is.",
+   "context": "Встреча в семь часов.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "New friend asks your age.",
+   "context": "Сколько тебе лет?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "They wait for your answer.",
+   "context": "Мне двадцать пять лет.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "They ask for your number.",
+   "context": "Мой номер телефона: девять, ноль, один.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "They ask when the shop closes.",
+   "context": "Магазин открыт до восьми.",
+   "have": []
+  },
+  {
+   "key": "p.ru_numbers_time_0",
+   "kind": "phrase",
+   "target": "Который час?",
+   "tr": "Saat kaç?",
+   "en": "What time is it?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_numbers_time_1",
+   "kind": "phrase",
+   "target": "Сейчас три часа.",
+   "tr": "Şimdi saat üç.",
+   "en": "It's three o'clock now.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_numbers_time_2",
+   "kind": "phrase",
+   "target": "Встреча в семь часов.",
+   "tr": "Toplantı saat yedide.",
+   "en": "The meeting is at seven o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_numbers_time_3",
+   "kind": "phrase",
+   "target": "Сколько тебе лет?",
+   "tr": "Kaç yaşındasın?",
+   "en": "How old are you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_numbers_time_4",
+   "kind": "phrase",
+   "target": "Мне двадцать пять лет.",
+   "tr": "Ben yirmi beş yaşındayım.",
+   "en": "I am twenty-five years old.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_numbers_time_5",
+   "kind": "phrase",
+   "target": "Мой номер телефона: девять, ноль, один.",
+   "tr": "Telefon numaram: dokuz, sıfır, bir.",
+   "en": "My phone number is nine, zero, one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_numbers_time_6",
+   "kind": "phrase",
+   "target": "Магазин открыт до восьми.",
+   "tr": "Mağaza sekize kadar açık.",
+   "en": "The store is open until eight.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ru_family",
+   "kind": "grammar_rule",
+   "tr": "İyelik zamiri \"moy/moya/moyo\" ismin cinsiyetine göre değişir — sahibinin cinsiyetine göre değil.",
+   "en": "The possessive \"мой/моя/моё\" agrees with the gender of the noun it modifies, not the owner's gender — сестра is feminine so it's \"моя сестра\", never \"мой сестра\".",
+   "context": "Это моя сестра. / ✗ Это мой сестра.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a family photo.",
+   "context": "Это моя семья.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_family.1",
+   "kind": "speaking_prompt",
+   "en": "You point at a man.",
+   "context": "Это мой брат.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_family.2",
+   "kind": "speaking_prompt",
+   "en": "You point at a woman.",
+   "context": "Это моя сестра.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_family.3",
+   "kind": "speaking_prompt",
+   "en": "They ask about kids.",
+   "context": "У меня двое детей.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_family.4",
+   "kind": "speaking_prompt",
+   "en": "They ask where your parents live.",
+   "context": "Мои родители живут в другом городе.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_family.5",
+   "kind": "speaking_prompt",
+   "en": "You ask them the same.",
+   "context": "Сколько у тебя братьев и сестёр?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_family.6",
+   "kind": "speaking_prompt",
+   "en": "They ask about your spouse's job.",
+   "context": "Моя жена работает врачом.",
+   "have": []
+  },
+  {
+   "key": "p.ru_family_0",
+   "kind": "phrase",
+   "target": "Это моя семья.",
+   "tr": "Bu benim ailem.",
+   "en": "This is my family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_family_1",
+   "kind": "phrase",
+   "target": "Это мой брат.",
+   "tr": "Bu benim erkek kardeşim.",
+   "en": "This is my brother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_family_2",
+   "kind": "phrase",
+   "target": "Это моя сестра.",
+   "tr": "Bu benim kız kardeşim.",
+   "en": "This is my sister.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_family_3",
+   "kind": "phrase",
+   "target": "У меня двое детей.",
+   "tr": "İki çocuğum var.",
+   "en": "I have two children.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_family_4",
+   "kind": "phrase",
+   "target": "Мои родители живут в другом городе.",
+   "tr": "Ailem başka bir şehirde yaşıyor.",
+   "en": "My parents live in another city.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_family_5",
+   "kind": "phrase",
+   "target": "Сколько у тебя братьев и сестёр?",
+   "tr": "Kaç kardeşin var?",
+   "en": "How many siblings do you have?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_family_6",
+   "kind": "phrase",
+   "target": "Моя жена работает врачом.",
+   "tr": "Eşim doktor olarak çalışıyor.",
+   "en": "My wife works as a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ru_weather",
+   "kind": "grammar_rule",
+   "tr": "Hava durumu Rusçada kişisiz kurulur: fiil kullanılmaz, sadece zarf (холодно, тепло) kullanılır.",
+   "en": "Weather is expressed impersonally in Russian — just the neuter adverb form, with no \"to be\" verb in the present tense.",
+   "context": "Сегодня холодно. / ✗ Сегодня есть холодно.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You look out the window.",
+   "context": "Какая сегодня погода?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You shiver.",
+   "context": "Сегодня холодно.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You hear drops on the roof.",
+   "context": "На улице идёт дождь.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You check tomorrow's forecast.",
+   "context": "Завтра будет тепло.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You warn a friend before they leave.",
+   "context": "Возьми зонт.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_weather.5",
+   "kind": "speaking_prompt",
+   "en": "A tourist asks about summer here.",
+   "context": "Летом здесь очень жарко.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_weather.6",
+   "kind": "speaking_prompt",
+   "en": "You look outside in winter.",
+   "context": "Идёт снег.",
+   "have": []
+  },
+  {
+   "key": "p.ru_weather_0",
+   "kind": "phrase",
+   "target": "Какая сегодня погода?",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_weather_1",
+   "kind": "phrase",
+   "target": "Сегодня холодно.",
+   "tr": "Bugün hava soğuk.",
+   "en": "It's cold today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_weather_2",
+   "kind": "phrase",
+   "target": "На улице идёт дождь.",
+   "tr": "Dışarıda yağmur yağıyor.",
+   "en": "It's raining outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_weather_3",
+   "kind": "phrase",
+   "target": "Завтра будет тепло.",
+   "tr": "Yarın hava ılık olacak.",
+   "en": "Tomorrow it will be warm.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_weather_4",
+   "kind": "phrase",
+   "target": "Возьми зонт.",
+   "tr": "Şemsiye al.",
+   "en": "Take an umbrella.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_weather_5",
+   "kind": "phrase",
+   "target": "Летом здесь очень жарко.",
+   "tr": "Burada yazın çok sıcak oluyor.",
+   "en": "It's very hot here in summer.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_weather_6",
+   "kind": "phrase",
+   "target": "Идёт снег.",
+   "tr": "Kar yağıyor.",
+   "en": "It's snowing.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Transport",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ru_transport",
+   "kind": "grammar_rule",
+   "tr": "Bir araçla gitmek için \"ехать\" fiili kullanılır; \"идти\" sadece yürüyerek gitmek içindir.",
+   "en": "For traveling by vehicle use \"ехать\" — \"идти\" is only for going on foot.",
+   "context": "Я еду на автобусе. / ✗ Я иду на автобусе.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You stop a passerby.",
+   "context": "Как доехать до центра?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_transport.1",
+   "kind": "speaking_prompt",
+   "en": "They ask how you're traveling.",
+   "context": "Я еду на автобусе.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You look for the subway.",
+   "context": "Где ближайшая станция метро?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_transport.3",
+   "kind": "speaking_prompt",
+   "en": "You are at the ticket window.",
+   "context": "Один билет до вокзала, пожалуйста.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You're unsure which bus to take.",
+   "context": "Этот автобус идёт в аэропорт?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You're not sure where to get off.",
+   "context": "Мне выходить на следующей остановке?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_transport.6",
+   "kind": "speaking_prompt",
+   "en": "You're running late.",
+   "context": "Такси будет быстрее.",
+   "have": []
+  },
+  {
+   "key": "p.ru_transport_0",
+   "kind": "phrase",
+   "target": "Как доехать до центра?",
+   "tr": "Şehir merkezine nasıl gidilir?",
+   "en": "How do I get to the city center?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_transport_1",
+   "kind": "phrase",
+   "target": "Я еду на автобусе.",
+   "tr": "Otobüsle gidiyorum.",
+   "en": "I'm going by bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_transport_2",
+   "kind": "phrase",
+   "target": "Где ближайшая станция метро?",
+   "tr": "En yakın metro istasyonu nerede?",
+   "en": "Where is the nearest metro station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_transport_3",
+   "kind": "phrase",
+   "target": "Один билет до вокзала, пожалуйста.",
+   "tr": "Gara bir bilet lütfen.",
+   "en": "One ticket to the station, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_transport_4",
+   "kind": "phrase",
+   "target": "Этот автобус идёт в аэропорт?",
+   "tr": "Bu otobüs havalimanına gidiyor mu?",
+   "en": "Does this bus go to the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_transport_5",
+   "kind": "phrase",
+   "target": "Мне выходить на следующей остановке?",
+   "tr": "Bir sonraki durakta mı inmeliyim?",
+   "en": "Should I get off at the next stop?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_transport_6",
+   "kind": "phrase",
+   "target": "Такси будет быстрее.",
+   "tr": "Taksi daha hızlı olur.",
+   "en": "A taxi will be faster.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ru_emergency",
+   "kind": "grammar_rule",
+   "tr": "\"İhtiyacım var\" derken kişi datif halde olur (мне), ihtiyaç duyulan şey \"нужен/нужна/нужно\" ile cinsiyetine göre uyum sağlar.",
+   "en": "\"To need\" uses the dative person (мне) + \"нужен/нужна/нужно\" agreeing with the gender of the thing needed — the person is never the nominative subject.",
+   "context": "Мне нужна помощь! / ✗ Я нужна помощь!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something just went wrong.",
+   "context": "Помогите!",
+   "have": []
+  },
+  {
+   "key": "tp.ru_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "A stranger stops to check on you.",
+   "context": "Мне нужна помощь!",
+   "have": []
+  },
+  {
+   "key": "tp.ru_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "Someone is badly hurt.",
+   "context": "Вызовите скорую!",
+   "have": []
+  },
+  {
+   "key": "tp.ru_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You need medical care.",
+   "context": "Где ближайшая больница?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You check your bag and panic.",
+   "context": "Я потерял паспорт.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "You need to report a theft.",
+   "context": "Позвоните в полицию, пожалуйста.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "They ask if you're hurt.",
+   "context": "Со мной всё в порядке.",
+   "have": []
+  },
+  {
+   "key": "p.ru_emergency_0",
+   "kind": "phrase",
+   "target": "Помогите!",
+   "tr": "İmdat!",
+   "en": "Help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_emergency_1",
+   "kind": "phrase",
+   "target": "Мне нужна помощь!",
+   "tr": "Yardıma ihtiyacım var!",
+   "en": "I need help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_emergency_2",
+   "kind": "phrase",
+   "target": "Вызовите скорую!",
+   "tr": "Ambulans çağırın!",
+   "en": "Call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_emergency_3",
+   "kind": "phrase",
+   "target": "Где ближайшая больница?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_emergency_4",
+   "kind": "phrase",
+   "target": "Я потерял паспорт.",
+   "tr": "Pasaportumu kaybettim.",
+   "en": "I lost my passport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_emergency_5",
+   "kind": "phrase",
+   "target": "Позвоните в полицию, пожалуйста.",
+   "tr": "Lütfen polisi arayın.",
+   "en": "Please call the police.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_emergency_6",
+   "kind": "phrase",
+   "target": "Со мной всё в порядке.",
+   "tr": "Ben iyiyim.",
+   "en": "I'm okay.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ru_routine",
+   "kind": "grammar_rule",
+   "tr": "Günlük rutin fiillerinin çoğu Rusçada \"-ся\" ekiyle dönüşlüdür (просыпаться, ложиться) — Türkçedeki karşılığı dönüşlü olmasa bile.",
+   "en": "Many daily-routine verbs are reflexive in Russian, ending in \"-ся\" (просыпаться \"to wake up\") even when the English equivalent isn't — dropping \"-ся\" breaks the meaning.",
+   "context": "Я просыпаюсь в семь. / ✗ Я просыпаю в семь.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_routine.0",
+   "kind": "speaking_prompt",
+   "en": "The alarm goes off.",
+   "context": "Я просыпаюсь в семь.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_routine.1",
+   "kind": "speaking_prompt",
+   "en": "You describe your morning.",
+   "context": "Я умываюсь и завтракаю.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_routine.2",
+   "kind": "speaking_prompt",
+   "en": "What happens after breakfast?",
+   "context": "Потом я иду на работу.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_routine.3",
+   "kind": "speaking_prompt",
+   "en": "A colleague asks about lunch.",
+   "context": "Я обедаю в час.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_routine.4",
+   "kind": "speaking_prompt",
+   "en": "They ask about your evenings.",
+   "context": "Вечером я занимаюсь спортом.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_routine.5",
+   "kind": "speaking_prompt",
+   "en": "They ask when you sleep.",
+   "context": "Я ложусь спать в одиннадцать.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_routine.6",
+   "kind": "speaking_prompt",
+   "en": "They ask about weekends.",
+   "context": "По выходным я отдыхаю.",
+   "have": []
+  },
+  {
+   "key": "p.ru_routine_0",
+   "kind": "phrase",
+   "target": "Я просыпаюсь в семь.",
+   "tr": "Saat yedide uyanıyorum.",
+   "en": "I wake up at seven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_routine_1",
+   "kind": "phrase",
+   "target": "Я умываюсь и завтракаю.",
+   "tr": "Yüzümü yıkıyorum ve kahvaltı ediyorum.",
+   "en": "I wash up and have breakfast.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_routine_2",
+   "kind": "phrase",
+   "target": "Потом я иду на работу.",
+   "tr": "Sonra işe gidiyorum.",
+   "en": "Then I go to work.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_routine_3",
+   "kind": "phrase",
+   "target": "Я обедаю в час.",
+   "tr": "Saat birde öğle yemeği yiyorum.",
+   "en": "I have lunch at one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_routine_4",
+   "kind": "phrase",
+   "target": "Вечером я занимаюсь спортом.",
+   "tr": "Akşamları spor yapıyorum.",
+   "en": "In the evening I exercise.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_routine_5",
+   "kind": "phrase",
+   "target": "Я ложусь спать в одиннадцать.",
+   "tr": "Saat on birde yatıyorum.",
+   "en": "I go to bed at eleven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_routine_6",
+   "kind": "phrase",
+   "target": "По выходным я отдыхаю.",
+   "tr": "Hafta sonları dinleniyorum.",
+   "en": "On weekends I rest.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_past_story",
+   "kind": "scenario_title",
+   "tr": "Geçmişte bir olay",
+   "en": "Telling a past event",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ru_past_story",
+   "kind": "grammar_rule",
+   "tr": "Geçmiş zaman fiili, konuşan kişiye değil öznenin cinsiyetine göre çekimlenir: erkek özne \"-л\", kadın özne \"-ла\".",
+   "en": "Russian past-tense verbs agree with the subject's grammatical gender, not with person — masculine subjects take \"-л\" (пошёл), feminine subjects take \"-ла\" (пошла).",
+   "context": "Она пошла в кино. / ✗ Она пошёл в кино.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "You start telling a story.",
+   "context": "Вчера я пошёл в парк.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "You describe the day.",
+   "context": "Погода была прекрасная.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "Something unexpected happened.",
+   "context": "Я встретил старого друга.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "What did you two do?",
+   "context": "Мы долго разговаривали.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "Where did you go next?",
+   "context": "Потом мы пошли в кафе.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "You mention a friend's evening.",
+   "context": "Она пошла в кино вчера вечером.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "You wrap up the story.",
+   "context": "Это был отличный день.",
+   "have": []
+  },
+  {
+   "key": "p.ru_past_story_0",
+   "kind": "phrase",
+   "target": "Вчера я пошёл в парк.",
+   "tr": "Dün parka gittim.",
+   "en": "Yesterday I went to the park.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_past_story_1",
+   "kind": "phrase",
+   "target": "Погода была прекрасная.",
+   "tr": "Hava harikaydı.",
+   "en": "The weather was beautiful.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_past_story_2",
+   "kind": "phrase",
+   "target": "Я встретил старого друга.",
+   "tr": "Eski bir arkadaşımla karşılaştım.",
+   "en": "I met an old friend.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_past_story_3",
+   "kind": "phrase",
+   "target": "Мы долго разговаривали.",
+   "tr": "Uzun süre konuştuk.",
+   "en": "We talked for a long time.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_past_story_4",
+   "kind": "phrase",
+   "target": "Потом мы пошли в кафе.",
+   "tr": "Sonra bir kafeye gittik.",
+   "en": "Then we went to a café.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_past_story_5",
+   "kind": "phrase",
+   "target": "Она пошла в кино вчера вечером.",
+   "tr": "O dün akşam sinemaya gitti.",
+   "en": "She went to the movies last night.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_past_story_6",
+   "kind": "phrase",
+   "target": "Это был отличный день.",
+   "tr": "Harika bir gündü.",
+   "en": "It was a great day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "Кофе, пожалуйста.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "У меня есть бронь.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "Извините, где станция?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "Привет, меня зовут Дениз.",
+   "have": []
+  },
+  {
+   "key": "p.ru_a2_route_0",
+   "kind": "phrase",
+   "target": "Кофе, пожалуйста.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_a2_route_1",
+   "kind": "phrase",
+   "target": "У меня есть бронь.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_a2_route_2",
+   "kind": "phrase",
+   "target": "Извините, где станция?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_a2_route_3",
+   "kind": "phrase",
+   "target": "Привет, меня зовут Дениз.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ru_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ru_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "Завтрак включён?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "Я не понимаю.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "Я ищу квартиру.",
+   "have": []
+  },
+  {
+   "key": "tp.ru_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "Сколько стоит аренда?",
+   "have": []
+  },
+  {
+   "key": "tp.ru_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "Вы принимаете карту?",
+   "have": []
+  },
+  {
+   "key": "p.ru_b1_solve_0",
+   "kind": "phrase",
+   "target": "Завтрак включён?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_b1_solve_1",
+   "kind": "phrase",
+   "target": "Я не понимаю.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_b1_solve_2",
+   "kind": "phrase",
+   "target": "Я ищу квартиру.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_b1_solve_3",
+   "kind": "phrase",
+   "target": "Сколько стоит аренда?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ru_b1_solve_4",
+   "kind": "phrase",
+   "target": "Вы принимаете карту?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "st.ru_my_friend",
+   "kind": "story_title",
+   "target": "Мой друг",
+   "tr": "Arkadaşım",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_my_friend.0",
+   "kind": "story_sentence",
+   "target": "У меня есть друг.",
+   "tr": "Bir arkadaşım var.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_my_friend.1",
+   "kind": "story_sentence",
+   "target": "Его зовут Дима, и он живёт рядом со мной.",
+   "tr": "Adı Dima ve yanımda yaşıyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_my_friend.2",
+   "kind": "story_sentence",
+   "target": "По субботам мы гуляем в парке.",
+   "tr": "Cumartesi günleri parkta yürüyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_my_friend.3",
+   "kind": "story_sentence",
+   "target": "Мы любим музыку и спорт.",
+   "tr": "Müzik ve sporu seviyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_my_friend.4",
+   "kind": "story_sentence",
+   "target": "На прошлых выходных мы играли в футбол.",
+   "tr": "Geçen hafta sonu futbol oynadık.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_my_friend.5",
+   "kind": "story_sentence",
+   "target": "Вечером Дима пришёл ко мне, и мы пили чай.",
+   "tr": "Akşam Dima bana geldi, çay içtik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.ru_weather",
+   "kind": "story_title",
+   "target": "Погода",
+   "tr": "Hava",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_weather.0",
+   "kind": "story_sentence",
+   "target": "Сегодня утром было холодно.",
+   "tr": "Bu sabah hava soğuktu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_weather.1",
+   "kind": "story_sentence",
+   "target": "Днём пошёл дождь.",
+   "tr": "Öğlen yağmur başladı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_weather.2",
+   "kind": "story_sentence",
+   "target": "Я взял зонт и пошёл на работу.",
+   "tr": "Şemsiyemi alıp işe gittim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_weather.3",
+   "kind": "story_sentence",
+   "target": "На работе было тепло.",
+   "tr": "İş yerinde sıcaktı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_weather.4",
+   "kind": "story_sentence",
+   "target": "Вечером дождь закончился, и выглянуло солнце.",
+   "tr": "Akşam yağmur durdu, güneş çıktı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_weather.5",
+   "kind": "story_sentence",
+   "target": "Я позвонил другу и пригласил его гулять.",
+   "tr": "Arkadaşıma telefon edip yürüyüşe davet ettim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.ru_at_the_store",
+   "kind": "story_title",
+   "target": "В магазине",
+   "tr": "Mağazada",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_at_the_store.0",
+   "kind": "story_sentence",
+   "target": "В воскресенье утром я пошёл в магазин.",
+   "tr": "Pazar sabahı mağazaya gittim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_at_the_store.1",
+   "kind": "story_sentence",
+   "target": "Я купил хлеб, молоко и яблоки.",
+   "tr": "Ekmek, süt ve elma aldım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_at_the_store.2",
+   "kind": "story_sentence",
+   "target": "У меня был список, поэтому я ничего не забыл.",
+   "tr": "Bir listem vardı, bu yüzden hiçbir şeyi unutmadım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_at_the_store.3",
+   "kind": "story_sentence",
+   "target": "В магазине была очередь, но она была короткая.",
+   "tr": "Mağazada kuyruk vardı, ama kısaydı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_at_the_store.4",
+   "kind": "story_sentence",
+   "target": "После магазина я сделал большой завтрак.",
+   "tr": "Mağazadan sonra büyük bir kahvaltı hazırladım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ru_at_the_store.5",
+   "kind": "story_sentence",
+   "target": "С кофе и сыром завтрак был отличный.",
+   "tr": "Kahve ve peynirle kahvaltı harikaydı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.А.n",
+   "kind": "alphabet_letter_name",
+   "target": "А",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.А.s",
+   "kind": "alphabet_sound",
+   "target": "А",
+   "tr": "a",
+   "context": "Автобус",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.А.m",
+   "kind": "alphabet_example",
+   "target": "Автобус",
+   "tr": "Otobüs",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Б.n",
+   "kind": "alphabet_letter_name",
+   "target": "Б",
+   "tr": "Be",
+   "en": "Be",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Б.s",
+   "kind": "alphabet_sound",
+   "target": "Б",
+   "tr": "b",
+   "context": "Банан",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Б.m",
+   "kind": "alphabet_example",
+   "target": "Банан",
+   "tr": "Muz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.В.n",
+   "kind": "alphabet_letter_name",
+   "target": "В",
+   "tr": "Ve",
+   "en": "Ve",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.В.s",
+   "kind": "alphabet_sound",
+   "target": "В",
+   "tr": "v",
+   "context": "Вода",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.В.m",
+   "kind": "alphabet_example",
+   "target": "Вода",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Г.n",
+   "kind": "alphabet_letter_name",
+   "target": "Г",
+   "tr": "Ge",
+   "en": "Ge",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Г.s",
+   "kind": "alphabet_sound",
+   "target": "Г",
+   "tr": "g",
+   "context": "Город",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Г.m",
+   "kind": "alphabet_example",
+   "target": "Город",
+   "tr": "Şehir",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Д.n",
+   "kind": "alphabet_letter_name",
+   "target": "Д",
+   "tr": "De",
+   "en": "De",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Д.s",
+   "kind": "alphabet_sound",
+   "target": "Д",
+   "tr": "d",
+   "context": "Дом",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Д.m",
+   "kind": "alphabet_example",
+   "target": "Дом",
+   "tr": "Ev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Е.n",
+   "kind": "alphabet_letter_name",
+   "target": "Е",
+   "tr": "Ye",
+   "en": "Ye",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Е.s",
+   "kind": "alphabet_sound",
+   "target": "Е",
+   "tr": "ye",
+   "context": "Еда",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Е.m",
+   "kind": "alphabet_example",
+   "target": "Еда",
+   "tr": "Yemek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ж.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ж",
+   "tr": "Je",
+   "en": "Zhe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Ж.s",
+   "kind": "alphabet_sound",
+   "target": "Ж",
+   "tr": "j",
+   "context": "Жизнь",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ж.m",
+   "kind": "alphabet_example",
+   "target": "Жизнь",
+   "tr": "Hayat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.З.n",
+   "kind": "alphabet_letter_name",
+   "target": "З",
+   "tr": "Ze",
+   "en": "Ze",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.З.s",
+   "kind": "alphabet_sound",
+   "target": "З",
+   "tr": "z",
+   "context": "Звезда",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.З.m",
+   "kind": "alphabet_example",
+   "target": "Звезда",
+   "tr": "Yıldız",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.И.n",
+   "kind": "alphabet_letter_name",
+   "target": "И",
+   "tr": "İ",
+   "en": "Ee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.И.s",
+   "kind": "alphabet_sound",
+   "target": "И",
+   "tr": "i",
+   "context": "Игра",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.И.m",
+   "kind": "alphabet_example",
+   "target": "Игра",
+   "tr": "Oyun",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.К.n",
+   "kind": "alphabet_letter_name",
+   "target": "К",
+   "tr": "Ka",
+   "en": "Ka",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.К.s",
+   "kind": "alphabet_sound",
+   "target": "К",
+   "tr": "k",
+   "context": "Кот",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.К.m",
+   "kind": "alphabet_example",
+   "target": "Кот",
+   "tr": "Kedi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Л.n",
+   "kind": "alphabet_letter_name",
+   "target": "Л",
+   "tr": "El",
+   "en": "El",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Л.s",
+   "kind": "alphabet_sound",
+   "target": "Л",
+   "tr": "l",
+   "context": "Лес",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Л.m",
+   "kind": "alphabet_example",
+   "target": "Лес",
+   "tr": "Orman",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.М.n",
+   "kind": "alphabet_letter_name",
+   "target": "М",
+   "tr": "Em",
+   "en": "Em",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.М.s",
+   "kind": "alphabet_sound",
+   "target": "М",
+   "tr": "m",
+   "context": "Море",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.М.m",
+   "kind": "alphabet_example",
+   "target": "Море",
+   "tr": "Deniz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Н.n",
+   "kind": "alphabet_letter_name",
+   "target": "Н",
+   "tr": "En",
+   "en": "En",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Н.s",
+   "kind": "alphabet_sound",
+   "target": "Н",
+   "tr": "n",
+   "context": "Ночь",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Н.m",
+   "kind": "alphabet_example",
+   "target": "Ночь",
+   "tr": "Gece",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.О.n",
+   "kind": "alphabet_letter_name",
+   "target": "О",
+   "tr": "O",
+   "en": "O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.О.s",
+   "kind": "alphabet_sound",
+   "target": "О",
+   "tr": "o",
+   "context": "Окно",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.О.m",
+   "kind": "alphabet_example",
+   "target": "Окно",
+   "tr": "Pencere",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.П.n",
+   "kind": "alphabet_letter_name",
+   "target": "П",
+   "tr": "Pe",
+   "en": "Pe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.П.s",
+   "kind": "alphabet_sound",
+   "target": "П",
+   "tr": "p",
+   "context": "Парк",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.П.m",
+   "kind": "alphabet_example",
+   "target": "Парк",
+   "tr": "Park",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Р.n",
+   "kind": "alphabet_letter_name",
+   "target": "Р",
+   "tr": "Er",
+   "en": "Er",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Р.s",
+   "kind": "alphabet_sound",
+   "target": "Р",
+   "tr": "r",
+   "context": "Рука",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Р.m",
+   "kind": "alphabet_example",
+   "target": "Рука",
+   "tr": "El",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.С.n",
+   "kind": "alphabet_letter_name",
+   "target": "С",
+   "tr": "Es",
+   "en": "Es",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.С.s",
+   "kind": "alphabet_sound",
+   "target": "С",
+   "tr": "s",
+   "context": "Слон",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.С.m",
+   "kind": "alphabet_example",
+   "target": "Слон",
+   "tr": "Fil",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Т.n",
+   "kind": "alphabet_letter_name",
+   "target": "Т",
+   "tr": "Te",
+   "en": "Te",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Т.s",
+   "kind": "alphabet_sound",
+   "target": "Т",
+   "tr": "t",
+   "context": "Стол",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Т.m",
+   "kind": "alphabet_example",
+   "target": "Стол",
+   "tr": "Masa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.У.n",
+   "kind": "alphabet_letter_name",
+   "target": "У",
+   "tr": "U",
+   "en": "U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.У.s",
+   "kind": "alphabet_sound",
+   "target": "У",
+   "tr": "u",
+   "context": "Утро",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.У.m",
+   "kind": "alphabet_example",
+   "target": "Утро",
+   "tr": "Sabah",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ф.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ф",
+   "tr": "Ef",
+   "en": "Ef",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Ф.s",
+   "kind": "alphabet_sound",
+   "target": "Ф",
+   "tr": "f",
+   "context": "Флаг",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ф.m",
+   "kind": "alphabet_example",
+   "target": "Флаг",
+   "tr": "Bayrak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Х.n",
+   "kind": "alphabet_letter_name",
+   "target": "Х",
+   "tr": "Ha",
+   "en": "Kha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Х.s",
+   "kind": "alphabet_sound",
+   "target": "Х",
+   "tr": "kh",
+   "context": "Хлеб",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Х.m",
+   "kind": "alphabet_example",
+   "target": "Хлеб",
+   "tr": "Ekmek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ц.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ц",
+   "tr": "Tse",
+   "en": "Tse",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Ц.s",
+   "kind": "alphabet_sound",
+   "target": "Ц",
+   "tr": "ts",
+   "context": "Цветок",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ц.m",
+   "kind": "alphabet_example",
+   "target": "Цветок",
+   "tr": "Çiçek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ч.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ч",
+   "tr": "Çe",
+   "en": "Che",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Ч.s",
+   "kind": "alphabet_sound",
+   "target": "Ч",
+   "tr": "ç",
+   "context": "Час",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ч.m",
+   "kind": "alphabet_example",
+   "target": "Час",
+   "tr": "Saat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ш.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ш",
+   "tr": "Şa",
+   "en": "Sha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Ш.s",
+   "kind": "alphabet_sound",
+   "target": "Ш",
+   "tr": "ş",
+   "context": "Школа",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ш.m",
+   "kind": "alphabet_example",
+   "target": "Школа",
+   "tr": "Okul",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Щ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Щ",
+   "tr": "Şça",
+   "en": "Shcha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Щ.s",
+   "kind": "alphabet_sound",
+   "target": "Щ",
+   "tr": "şç",
+   "context": "Щенок",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Щ.m",
+   "kind": "alphabet_example",
+   "target": "Щенок",
+   "tr": "Yavru köpek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ъ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ъ",
+   "tr": "Sert işaret",
+   "en": "Hard sign",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Ъ.s",
+   "kind": "alphabet_sound",
+   "target": "Ъ",
+   "tr": "(sessiz)",
+   "context": "Объект",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ъ.m",
+   "kind": "alphabet_example",
+   "target": "Объект",
+   "tr": "Nesne",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ы.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ы",
+   "tr": "I",
+   "en": "Y",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Ы.s",
+   "kind": "alphabet_sound",
+   "target": "Ы",
+   "tr": "ı",
+   "context": "Сын",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ы.m",
+   "kind": "alphabet_example",
+   "target": "Сын",
+   "tr": "Oğul",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ь.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ь",
+   "tr": "Yumuşak işaret",
+   "en": "Soft sign",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Ь.s",
+   "kind": "alphabet_sound",
+   "target": "Ь",
+   "tr": "(sessiz)",
+   "context": "День",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ь.m",
+   "kind": "alphabet_example",
+   "target": "День",
+   "tr": "Gün",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Э.n",
+   "kind": "alphabet_letter_name",
+   "target": "Э",
+   "tr": "E",
+   "en": "E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Э.s",
+   "kind": "alphabet_sound",
+   "target": "Э",
+   "tr": "e",
+   "context": "Этаж",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Э.m",
+   "kind": "alphabet_example",
+   "target": "Этаж",
+   "tr": "Kat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ю.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ю",
+   "tr": "Yu",
+   "en": "Yu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Ю.s",
+   "kind": "alphabet_sound",
+   "target": "Ю",
+   "tr": "yu",
+   "context": "Юбка",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Ю.m",
+   "kind": "alphabet_example",
+   "target": "Юбка",
+   "tr": "Etek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Я.n",
+   "kind": "alphabet_letter_name",
+   "target": "Я",
+   "tr": "Ya",
+   "en": "Ya",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ru.Я.s",
+   "kind": "alphabet_sound",
+   "target": "Я",
+   "tr": "ya",
+   "context": "Яблоко",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ru.Я.m",
+   "kind": "alphabet_example",
+   "target": "Яблоко",
+   "tr": "Elma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ru.0.h",
+   "kind": "pronunciation_heard",
+   "target": "о (vurgusuz)",
+   "tr": "a gibi okunur",
+   "context": "Vurgusuz о → a.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ru.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "молоко",
+   "tr": "malako",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ru.1.h",
+   "kind": "pronunciation_heard",
+   "target": "ы",
+   "tr": "kalın ı",
+   "context": "Türkçe ı'ya yakın.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ru.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "мы, сын",
+   "tr": "mı · sın",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ru.2.h",
+   "kind": "pronunciation_heard",
+   "target": "ш vs щ",
+   "tr": "ş vs şç",
+   "context": "İkisi farklı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ru.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "шёл, щи",
+   "tr": "şol · şçi",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

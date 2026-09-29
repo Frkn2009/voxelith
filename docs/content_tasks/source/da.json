@@ -1,0 +1,4264 @@
+{
+ "lang": "da",
+ "scenarios": [
+  {
+   "id": "da_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "da_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "da_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "da_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "da_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "da_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "da_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "da_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "da_intro",
+   "cefr": "a1",
+   "title": "Getting to know someone"
+  },
+  {
+   "id": "da_shopping",
+   "cefr": "a1",
+   "title": "Clothes shopping"
+  },
+  {
+   "id": "da_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers & time"
+  },
+  {
+   "id": "da_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "da_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "da_transport",
+   "cefr": "a1",
+   "title": "Getting around"
+  },
+  {
+   "id": "da_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "da_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "da_past_story",
+   "cefr": "a1",
+   "title": "Telling a story about your day"
+  },
+  {
+   "id": "da_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "da_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  },
+  {
+   "id": "da_exp_job_interview",
+   "cefr": "b1",
+   "title": "Job interview"
+  },
+  {
+   "id": "da_exp_team_meeting",
+   "cefr": "b1",
+   "title": "Team meeting"
+  },
+  {
+   "id": "da_exp_bank",
+   "cefr": "a2",
+   "title": "Bank account"
+  },
+  {
+   "id": "da_exp_apartment",
+   "cefr": "a2",
+   "title": "Apartment viewing"
+  },
+  {
+   "id": "da_exp_doctor",
+   "cefr": "a2",
+   "title": "At the doctor's"
+  },
+  {
+   "id": "da_exp_business_lunch",
+   "cefr": "b1",
+   "title": "Business lunch"
+  },
+  {
+   "id": "da_exp_complaint",
+   "cefr": "b1",
+   "title": "Complaint"
+  },
+  {
+   "id": "da_exp_business_trip",
+   "cefr": "a2",
+   "title": "Business trip"
+  },
+  {
+   "id": "da_exp_client_call",
+   "cefr": "b1",
+   "title": "Client phone call"
+  },
+  {
+   "id": "da_exp_hr_salary",
+   "cefr": "b2",
+   "title": "Salary conversation"
+  },
+  {
+   "id": "da_exp_daily_errands",
+   "cefr": "a2",
+   "title": "Errands and deliveries"
+  },
+  {
+   "id": "da_exp_networking",
+   "cefr": "b1",
+   "title": "Networking"
+  }
+ ],
+ "stories": [
+  {
+   "id": "da_restaurant",
+   "level": "a1",
+   "title": "På restaurant"
+  },
+  {
+   "id": "da_neighbor",
+   "level": "a1",
+   "title": "Min nabo"
+  },
+  {
+   "id": "da_forest_walk",
+   "level": "a1",
+   "title": "Tur i skoven"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.da_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "En kaffe, tak.",
+   "have": []
+  },
+  {
+   "key": "tp.da_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "Hvor meget koster det?",
+   "have": []
+  },
+  {
+   "key": "p.da_cafe_0",
+   "kind": "phrase",
+   "target": "En kaffe, tak.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_cafe_1",
+   "kind": "phrase",
+   "target": "Hvor meget koster det?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_cafe_2",
+   "kind": "phrase",
+   "target": "Mange tak.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "Jeg har en reservation.",
+   "have": []
+  },
+  {
+   "key": "tp.da_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "Er morgenmad inkluderet?",
+   "have": []
+  },
+  {
+   "key": "p.da_hotel_0",
+   "kind": "phrase",
+   "target": "Jeg har en reservation.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_hotel_1",
+   "kind": "phrase",
+   "target": "Er morgenmad inkluderet?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_hotel_2",
+   "kind": "phrase",
+   "target": "Mange tak.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "Undskyld, hvor er stationen?",
+   "have": []
+  },
+  {
+   "key": "tp.da_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "Mange tak.",
+   "have": []
+  },
+  {
+   "key": "p.da_dir_0",
+   "kind": "phrase",
+   "target": "Undskyld, hvor er stationen?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_dir_1",
+   "kind": "phrase",
+   "target": "Mange tak.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_dir_2",
+   "kind": "phrase",
+   "target": "Jeg forstår ikke.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "Hej, jeg hedder Deniz.",
+   "have": []
+  },
+  {
+   "key": "tp.da_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "Jeg kommer fra Tyrkiet.",
+   "have": []
+  },
+  {
+   "key": "p.da_hi_0",
+   "kind": "phrase",
+   "target": "Hej, jeg hedder Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_hi_1",
+   "kind": "phrase",
+   "target": "Jeg kommer fra Tyrkiet.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_hi_2",
+   "kind": "phrase",
+   "target": "Mange tak.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "Jeg leder efter en lejlighed.",
+   "have": []
+  },
+  {
+   "key": "tp.da_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "Hvad koster huslejen?",
+   "have": []
+  },
+  {
+   "key": "p.da_flat_0",
+   "kind": "phrase",
+   "target": "Jeg leder efter en lejlighed.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_flat_1",
+   "kind": "phrase",
+   "target": "Hvad koster huslejen?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_flat_2",
+   "kind": "phrase",
+   "target": "Kan du hjælpe mig?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "Hvor meget koster det?",
+   "have": []
+  },
+  {
+   "key": "tp.da_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "Jeg tager den her.",
+   "have": []
+  },
+  {
+   "key": "p.da_shop_0",
+   "kind": "phrase",
+   "target": "Hvor meget koster det?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_shop_1",
+   "kind": "phrase",
+   "target": "Jeg tager den her.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_shop_2",
+   "kind": "phrase",
+   "target": "Tager I kort?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "Må jeg bede om regningen?",
+   "have": []
+  },
+  {
+   "key": "tp.da_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "Vi vil gerne betale sammen.",
+   "have": []
+  },
+  {
+   "key": "p.da_bill_0",
+   "kind": "phrase",
+   "target": "Må jeg bede om regningen?",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_bill_1",
+   "kind": "phrase",
+   "target": "Vi vil gerne betale sammen.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_bill_2",
+   "kind": "phrase",
+   "target": "Behold byttepengene.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "Jeg har en reservation.",
+   "have": []
+  },
+  {
+   "key": "tp.da_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "En vinduesplads, tak.",
+   "have": []
+  },
+  {
+   "key": "p.da_airport_0",
+   "kind": "phrase",
+   "target": "Jeg har en reservation.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_airport_1",
+   "kind": "phrase",
+   "target": "En vinduesplads, tak.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_airport_2",
+   "kind": "phrase",
+   "target": "Er dette køen til boarding?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Getting to know someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_intro",
+   "kind": "grammar_rule",
+   "tr": "Danca'da çekimli fiil her zaman cümlenin ikinci öğesidir; cümle bir zaman zarfıyla başlasa bile fiil ikinci sırada kalır ve özne ondan sonra gelir.",
+   "en": "The conjugated verb always comes second in a Danish sentence — even when the sentence starts with a time word, the verb stays second and the subject moves after it.",
+   "context": "I dag møder jeg en ny ven. / ✗ I dag jeg møder en ny ven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_intro.0",
+   "kind": "speaking_prompt",
+   "en": "You meet someone new.",
+   "context": "Rart at møde dig.",
+   "have": []
+  },
+  {
+   "key": "tp.da_intro.1",
+   "kind": "speaking_prompt",
+   "en": "You want to know their name.",
+   "context": "Hvad hedder du?",
+   "have": []
+  },
+  {
+   "key": "tp.da_intro.2",
+   "kind": "speaking_prompt",
+   "en": "They ask your age.",
+   "context": "Jeg er tredive år gammel.",
+   "have": []
+  },
+  {
+   "key": "tp.da_intro.3",
+   "kind": "speaking_prompt",
+   "en": "You want to know their job.",
+   "context": "Hvad arbejder du med?",
+   "have": []
+  },
+  {
+   "key": "tp.da_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do.",
+   "context": "Jeg er lærer.",
+   "have": []
+  },
+  {
+   "key": "tp.da_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You want to make sure you understand each other.",
+   "context": "Taler du engelsk?",
+   "have": []
+  },
+  {
+   "key": "tp.da_intro.6",
+   "kind": "speaking_prompt",
+   "en": "It is time to leave.",
+   "context": "Vi ses snart!",
+   "have": []
+  },
+  {
+   "key": "p.da_intro_0",
+   "kind": "phrase",
+   "target": "Rart at møde dig.",
+   "tr": "Tanıştığımıza memnun oldum.",
+   "en": "Nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_intro_1",
+   "kind": "phrase",
+   "target": "Hvad hedder du?",
+   "tr": "Adın ne?",
+   "en": "What is your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_intro_2",
+   "kind": "phrase",
+   "target": "Jeg er tredive år gammel.",
+   "tr": "Otuz yaşındayım.",
+   "en": "I am thirty years old.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_intro_3",
+   "kind": "phrase",
+   "target": "Hvad arbejder du med?",
+   "tr": "Ne iş yapıyorsun?",
+   "en": "What do you do for work?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_intro_4",
+   "kind": "phrase",
+   "target": "Jeg er lærer.",
+   "tr": "Öğretmenim.",
+   "en": "I am a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_intro_5",
+   "kind": "phrase",
+   "target": "Taler du engelsk?",
+   "tr": "İngilizce konuşuyor musun?",
+   "en": "Do you speak English?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_intro_6",
+   "kind": "phrase",
+   "target": "Vi ses snart!",
+   "tr": "Yakında görüşürüz!",
+   "en": "See you soon!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_shopping",
+   "kind": "scenario_title",
+   "tr": "Kıyafet alışverişi",
+   "en": "Clothes shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_shopping",
+   "kind": "grammar_rule",
+   "tr": "Danca \"the\" anlamını ayrı bir kelimeyle değil, ismin sonuna eklenen bir ekle gösterir: trøje (kazak) -> trøjen (o kazak).",
+   "en": "Danish shows \"the\" by adding a suffix to the noun instead of a separate word: trøje (sweater) becomes trøjen (the sweater).",
+   "context": "Jeg tager trøjen. / ✗ Jeg tager den trøje.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You pick up a piece of clothing.",
+   "context": "Må jeg prøve den her?",
+   "have": []
+  },
+  {
+   "key": "tp.da_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "It is too small.",
+   "context": "Har I den i en større størrelse?",
+   "have": []
+  },
+  {
+   "key": "tp.da_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You do not like the color.",
+   "context": "Har I den i en anden farve?",
+   "have": []
+  },
+  {
+   "key": "tp.da_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "You check the price tag.",
+   "context": "Den er for dyr.",
+   "have": []
+  },
+  {
+   "key": "tp.da_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You look for a better price.",
+   "context": "Er der rabat på den her?",
+   "have": []
+  },
+  {
+   "key": "tp.da_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You decide to buy it.",
+   "context": "Jeg tager trøjen.",
+   "have": []
+  },
+  {
+   "key": "tp.da_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You go to the register.",
+   "context": "Kan jeg betale med kort?",
+   "have": []
+  },
+  {
+   "key": "p.da_shopping_0",
+   "kind": "phrase",
+   "target": "Må jeg prøve den her?",
+   "tr": "Bunu deneyebilir miyim?",
+   "en": "Can I try this on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_shopping_1",
+   "kind": "phrase",
+   "target": "Har I den i en større størrelse?",
+   "tr": "Bunun daha büyük bedeni var mı?",
+   "en": "Do you have it in a bigger size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_shopping_2",
+   "kind": "phrase",
+   "target": "Har I den i en anden farve?",
+   "tr": "Bunun başka rengi var mı?",
+   "en": "Do you have it in another color?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_shopping_3",
+   "kind": "phrase",
+   "target": "Den er for dyr.",
+   "tr": "Bu çok pahalı.",
+   "en": "It's too expensive.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_shopping_4",
+   "kind": "phrase",
+   "target": "Er der rabat på den her?",
+   "tr": "Bunda indirim var mı?",
+   "en": "Is there a discount on this?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_shopping_5",
+   "kind": "phrase",
+   "target": "Jeg tager trøjen.",
+   "tr": "Kazağı alıyorum.",
+   "en": "I'll take the sweater.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_shopping_6",
+   "kind": "phrase",
+   "target": "Kan jeg betale med kort?",
+   "tr": "Kartla ödeyebilir miyim?",
+   "en": "Can I pay by card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers & time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "Saat söylerken \"det er\" değil \"klokken er\" (saat...) ifadesi kullanılır.",
+   "en": "When telling time, Danish says \"klokken er\" (the clock is), not \"det er\" (it is).",
+   "context": "Klokken er to. / ✗ Det er to.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You practice counting.",
+   "context": "En, to, tre, fire, fem.",
+   "have": []
+  },
+  {
+   "key": "tp.da_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "You want to know the time.",
+   "context": "Hvad er klokken?",
+   "have": []
+  },
+  {
+   "key": "tp.da_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "Someone asks you the time.",
+   "context": "Klokken er to.",
+   "have": []
+  },
+  {
+   "key": "tp.da_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "They tell you it is not quite ten yet.",
+   "context": "Klokken er halv ti.",
+   "have": []
+  },
+  {
+   "key": "tp.da_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "You tell a friend the price.",
+   "context": "Det koster ti kroner.",
+   "have": []
+  },
+  {
+   "key": "tp.da_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "Someone asks how many children you have.",
+   "context": "Jeg har to børn.",
+   "have": []
+  },
+  {
+   "key": "tp.da_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You arrange when to meet.",
+   "context": "Vi mødes klokken tre.",
+   "have": []
+  },
+  {
+   "key": "p.da_numbers_time_0",
+   "kind": "phrase",
+   "target": "En, to, tre, fire, fem.",
+   "tr": "Bir, iki, üç, dört, beş.",
+   "en": "One, two, three, four, five.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_numbers_time_1",
+   "kind": "phrase",
+   "target": "Hvad er klokken?",
+   "tr": "Saat kaç?",
+   "en": "What time is it?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_numbers_time_2",
+   "kind": "phrase",
+   "target": "Klokken er to.",
+   "tr": "Saat iki.",
+   "en": "It is two o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_numbers_time_3",
+   "kind": "phrase",
+   "target": "Klokken er halv ti.",
+   "tr": "Saat dokuz buçuk.",
+   "en": "It is half past nine.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_numbers_time_4",
+   "kind": "phrase",
+   "target": "Det koster ti kroner.",
+   "tr": "On kron tutuyor.",
+   "en": "It costs ten kroner.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_numbers_time_5",
+   "kind": "phrase",
+   "target": "Jeg har to børn.",
+   "tr": "İki çocuğum var.",
+   "en": "I have two children.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_numbers_time_6",
+   "kind": "phrase",
+   "target": "Vi mødes klokken tre.",
+   "tr": "Saat üçte buluşuyoruz.",
+   "en": "We'll meet at three o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_family",
+   "kind": "grammar_rule",
+   "tr": "İyelik zamiri ismin cinsine ve sayısına göre değişir: tekil \"en\"-kelime için \"min\", tekil \"et\"-kelime için \"mit\", çoğul için \"mine\" kullanılır.",
+   "en": "The possessive pronoun changes form depending on the noun: min for en-words, mit for et-words, mine for plurals.",
+   "context": "Mine forældre bor på landet. / ✗ Min forældre bor på landet.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a photo.",
+   "context": "Det her er min mor.",
+   "have": []
+  },
+  {
+   "key": "tp.da_family.1",
+   "kind": "speaking_prompt",
+   "en": "They ask about your father.",
+   "context": "Min far er læge.",
+   "have": []
+  },
+  {
+   "key": "tp.da_family.2",
+   "kind": "speaking_prompt",
+   "en": "They ask if you have siblings.",
+   "context": "Jeg har to søskende.",
+   "have": []
+  },
+  {
+   "key": "tp.da_family.3",
+   "kind": "speaking_prompt",
+   "en": "They ask where your brother lives.",
+   "context": "Min bror bor i København.",
+   "have": []
+  },
+  {
+   "key": "tp.da_family.4",
+   "kind": "speaking_prompt",
+   "en": "They ask about your sister.",
+   "context": "Min søster er yngre end mig.",
+   "have": []
+  },
+  {
+   "key": "tp.da_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask about your parents.",
+   "context": "Mine forældre bor på landet.",
+   "have": []
+  },
+  {
+   "key": "tp.da_family.6",
+   "kind": "speaking_prompt",
+   "en": "You ask them the same question.",
+   "context": "Har du børn?",
+   "have": []
+  },
+  {
+   "key": "p.da_family_0",
+   "kind": "phrase",
+   "target": "Det her er min mor.",
+   "tr": "Bu benim annem.",
+   "en": "This is my mother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_family_1",
+   "kind": "phrase",
+   "target": "Min far er læge.",
+   "tr": "Babam doktor.",
+   "en": "My father is a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_family_2",
+   "kind": "phrase",
+   "target": "Jeg har to søskende.",
+   "tr": "İki kardeşim var.",
+   "en": "I have two siblings.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_family_3",
+   "kind": "phrase",
+   "target": "Min bror bor i København.",
+   "tr": "Erkek kardeşim Kopenhag'da yaşıyor.",
+   "en": "My brother lives in Copenhagen.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_family_4",
+   "kind": "phrase",
+   "target": "Min søster er yngre end mig.",
+   "tr": "Kız kardeşim benden daha küçük.",
+   "en": "My sister is younger than me.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_family_5",
+   "kind": "phrase",
+   "target": "Mine forældre bor på landet.",
+   "tr": "Ailem kırsalda yaşıyor.",
+   "en": "My parents live in the countryside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_family_6",
+   "kind": "phrase",
+   "target": "Har du børn?",
+   "tr": "Çocuğun var mı?",
+   "en": "Do you have children?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_weather",
+   "kind": "grammar_rule",
+   "tr": "Hava durumu cümlelerinde bile bir özne olmalıdır; gerçek bir şeye işaret etmese de \"det\" kullanılır.",
+   "en": "Weather sentences need the dummy subject \"det\", even though it doesn't refer to anything real.",
+   "context": "Det regner. / ✗ Regner.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You start small talk.",
+   "context": "Hvordan er vejret i dag?",
+   "have": []
+  },
+  {
+   "key": "tp.da_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You step outside.",
+   "context": "Det er koldt udenfor.",
+   "have": []
+  },
+  {
+   "key": "tp.da_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You look up at the sky.",
+   "context": "Solen skinner.",
+   "have": []
+  },
+  {
+   "key": "tp.da_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You look out the window.",
+   "context": "Det regner.",
+   "have": []
+  },
+  {
+   "key": "tp.da_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You check tomorrow's forecast.",
+   "context": "I morgen bliver det varmt.",
+   "have": []
+  },
+  {
+   "key": "tp.da_weather.5",
+   "kind": "speaking_prompt",
+   "en": "You plan to go outside.",
+   "context": "Blæser det meget i dag?",
+   "have": []
+  },
+  {
+   "key": "tp.da_weather.6",
+   "kind": "speaking_prompt",
+   "en": "You warn a friend before they leave.",
+   "context": "Tag en paraply med.",
+   "have": []
+  },
+  {
+   "key": "p.da_weather_0",
+   "kind": "phrase",
+   "target": "Hvordan er vejret i dag?",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_weather_1",
+   "kind": "phrase",
+   "target": "Det er koldt udenfor.",
+   "tr": "Dışarısı soğuk.",
+   "en": "It's cold outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_weather_2",
+   "kind": "phrase",
+   "target": "Solen skinner.",
+   "tr": "Güneş parlıyor.",
+   "en": "The sun is shining.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_weather_3",
+   "kind": "phrase",
+   "target": "Det regner.",
+   "tr": "Yağmur yağıyor.",
+   "en": "It's raining.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_weather_4",
+   "kind": "phrase",
+   "target": "I morgen bliver det varmt.",
+   "tr": "Yarın hava sıcak olacak.",
+   "en": "Tomorrow it will be warm.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_weather_5",
+   "kind": "phrase",
+   "target": "Blæser det meget i dag?",
+   "tr": "Bugün çok mu rüzgarlı?",
+   "en": "Is it very windy today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_weather_6",
+   "kind": "phrase",
+   "target": "Tag en paraply med.",
+   "tr": "Yanına şemsiye al.",
+   "en": "Take an umbrella with you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Getting around",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_transport",
+   "kind": "grammar_rule",
+   "tr": "Hangi ulaşım aracının kullanıldığı \"med\" + ismin \"the\" ekli hali ile söylenir: \"med bussen\" (otobüsle).",
+   "en": "Say which transport you take with \"med\" plus the noun with its \"the\" suffix: \"med bussen\" (by the bus).",
+   "context": "Jeg tager med bussen. / ✗ Jeg tager med bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You are lost near a train station.",
+   "context": "Hvordan kommer jeg til stationen?",
+   "have": []
+  },
+  {
+   "key": "tp.da_transport.1",
+   "kind": "speaking_prompt",
+   "en": "They ask how you get to work.",
+   "context": "Jeg tager med bussen på arbejde.",
+   "have": []
+  },
+  {
+   "key": "tp.da_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You need a ticket.",
+   "context": "Hvor køber jeg en billet?",
+   "have": []
+  },
+  {
+   "key": "tp.da_transport.3",
+   "kind": "speaking_prompt",
+   "en": "You check the departure board.",
+   "context": "Næste tog kører klokken ni.",
+   "have": []
+  },
+  {
+   "key": "tp.da_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You are not sure you are in the right place.",
+   "context": "Er det her det rigtige spor?",
+   "have": []
+  },
+  {
+   "key": "tp.da_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You are heading to catch a flight.",
+   "context": "Jeg vil gerne til lufthavnen.",
+   "have": []
+  },
+  {
+   "key": "tp.da_transport.6",
+   "kind": "speaking_prompt",
+   "en": "You look for the bus.",
+   "context": "Hvor er nærmeste stoppested?",
+   "have": []
+  },
+  {
+   "key": "p.da_transport_0",
+   "kind": "phrase",
+   "target": "Hvordan kommer jeg til stationen?",
+   "tr": "İstasyona nasıl giderim?",
+   "en": "How do I get to the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_transport_1",
+   "kind": "phrase",
+   "target": "Jeg tager med bussen på arbejde.",
+   "tr": "İşe otobüsle gidiyorum.",
+   "en": "I take the bus to work.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_transport_2",
+   "kind": "phrase",
+   "target": "Hvor køber jeg en billet?",
+   "tr": "Bileti nereden alırım?",
+   "en": "Where do I buy a ticket?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_transport_3",
+   "kind": "phrase",
+   "target": "Næste tog kører klokken ni.",
+   "tr": "Sonraki tren saat dokuzda kalkıyor.",
+   "en": "The next train leaves at nine o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_transport_4",
+   "kind": "phrase",
+   "target": "Er det her det rigtige spor?",
+   "tr": "Bu doğru peron mu?",
+   "en": "Is this the right platform?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_transport_5",
+   "kind": "phrase",
+   "target": "Jeg vil gerne til lufthavnen.",
+   "tr": "Havalimanına gitmek istiyorum.",
+   "en": "I would like to go to the airport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_transport_6",
+   "kind": "phrase",
+   "target": "Hvor er nærmeste stoppested?",
+   "tr": "En yakın durak nerede?",
+   "en": "Where is the nearest stop?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_emergency",
+   "kind": "grammar_rule",
+   "tr": "Emir kipi, fiilin şimdiki zamandaki -r ekini atarak sadece fiil kökü ile yapılır: ringer (arıyor) -> ring (ara!).",
+   "en": "The command form is just the bare verb stem, without the present-tense -r: ringer (calls) becomes ring (call!).",
+   "context": "Ring til politiet! / ✗ Ringer til politiet!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something just happened.",
+   "context": "Hjælp!",
+   "have": []
+  },
+  {
+   "key": "tp.da_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Someone is badly hurt.",
+   "context": "Ring efter en ambulance!",
+   "have": []
+  },
+  {
+   "key": "tp.da_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You are not feeling well.",
+   "context": "Jeg har brug for en læge.",
+   "have": []
+  },
+  {
+   "key": "tp.da_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You need medical help fast.",
+   "context": "Hvor er det nærmeste hospital?",
+   "have": []
+  },
+  {
+   "key": "tp.da_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You see a crime happening.",
+   "context": "Ring til politiet!",
+   "have": []
+  },
+  {
+   "key": "tp.da_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "You cannot find your way.",
+   "context": "Jeg er faret vild.",
+   "have": []
+  },
+  {
+   "key": "tp.da_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You need someone who can translate.",
+   "context": "Er der nogen her, der taler engelsk?",
+   "have": []
+  },
+  {
+   "key": "p.da_emergency_0",
+   "kind": "phrase",
+   "target": "Hjælp!",
+   "tr": "İmdat!",
+   "en": "Help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_emergency_1",
+   "kind": "phrase",
+   "target": "Ring efter en ambulance!",
+   "tr": "Ambulans çağır!",
+   "en": "Call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_emergency_2",
+   "kind": "phrase",
+   "target": "Jeg har brug for en læge.",
+   "tr": "Doktora ihtiyacım var.",
+   "en": "I need a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_emergency_3",
+   "kind": "phrase",
+   "target": "Hvor er det nærmeste hospital?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_emergency_4",
+   "kind": "phrase",
+   "target": "Ring til politiet!",
+   "tr": "Polisi ara!",
+   "en": "Call the police!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_emergency_5",
+   "kind": "phrase",
+   "target": "Jeg er faret vild.",
+   "tr": "Kayboldum.",
+   "en": "I am lost.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_emergency_6",
+   "kind": "phrase",
+   "target": "Er der nogen her, der taler engelsk?",
+   "tr": "Burada İngilizce konuşan biri var mı?",
+   "en": "Is there anyone here who speaks English?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_routine",
+   "kind": "grammar_rule",
+   "tr": "\"altid\" (her zaman) gibi bir zarf, çekimli fiilden hemen sonra gelir, önce değil.",
+   "en": "An adverb like \"altid\" (always) goes right after the conjugated verb, not before it.",
+   "context": "Jeg står altid tidligt op. / ✗ Jeg altid står tidligt op.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your mornings.",
+   "context": "Jeg står altid tidligt op.",
+   "have": []
+  },
+  {
+   "key": "tp.da_routine.1",
+   "kind": "speaking_prompt",
+   "en": "They ask what you eat.",
+   "context": "Jeg spiser morgenmad derhjemme.",
+   "have": []
+  },
+  {
+   "key": "tp.da_routine.2",
+   "kind": "speaking_prompt",
+   "en": "They ask when you leave the house.",
+   "context": "Jeg forlader huset klokken otte.",
+   "have": []
+  },
+  {
+   "key": "tp.da_routine.3",
+   "kind": "speaking_prompt",
+   "en": "They ask about your morning habits.",
+   "context": "Jeg tager i bad hver morgen.",
+   "have": []
+  },
+  {
+   "key": "tp.da_routine.4",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do before bed.",
+   "context": "Jeg læser en bog før jeg sover.",
+   "have": []
+  },
+  {
+   "key": "tp.da_routine.5",
+   "kind": "speaking_prompt",
+   "en": "They ask when you sleep.",
+   "context": "Jeg går i seng klokken elleve.",
+   "have": []
+  },
+  {
+   "key": "tp.da_routine.6",
+   "kind": "speaking_prompt",
+   "en": "They ask if your days are different.",
+   "context": "Jeg gør det samme hver dag.",
+   "have": []
+  },
+  {
+   "key": "p.da_routine_0",
+   "kind": "phrase",
+   "target": "Jeg står altid tidligt op.",
+   "tr": "Her zaman erken kalkarım.",
+   "en": "I always get up early.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_routine_1",
+   "kind": "phrase",
+   "target": "Jeg spiser morgenmad derhjemme.",
+   "tr": "Evde kahvaltı yaparım.",
+   "en": "I eat breakfast at home.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_routine_2",
+   "kind": "phrase",
+   "target": "Jeg forlader huset klokken otte.",
+   "tr": "Evden saat sekizde çıkarım.",
+   "en": "I leave the house at eight o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_routine_3",
+   "kind": "phrase",
+   "target": "Jeg tager i bad hver morgen.",
+   "tr": "Her sabah duş alırım.",
+   "en": "I take a shower every morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_routine_4",
+   "kind": "phrase",
+   "target": "Jeg læser en bog før jeg sover.",
+   "tr": "Uyumadan önce kitap okurum.",
+   "en": "I read a book before I sleep.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_routine_5",
+   "kind": "phrase",
+   "target": "Jeg går i seng klokken elleve.",
+   "tr": "Saat on birde yatarım.",
+   "en": "I go to bed at eleven o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_routine_6",
+   "kind": "phrase",
+   "target": "Jeg gør det samme hver dag.",
+   "tr": "Her gün aynı şeyi yaparım.",
+   "en": "I do the same thing every day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_past_story",
+   "kind": "scenario_title",
+   "tr": "Bir günü anlatmak",
+   "en": "Telling a story about your day",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_past_story",
+   "kind": "grammar_rule",
+   "tr": "Düzenli fiillerin geçmiş zamanı -ede veya -te eki ile yapılır: møde (buluşmak) -> mødte (buluştum).",
+   "en": "Regular verbs form the past tense by adding -ede or -te: møde (to meet) becomes mødte (met).",
+   "context": "Jeg mødte min ven. / ✗ Jeg møder min ven i går.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks what you did yesterday.",
+   "context": "I går tog jeg til byen.",
+   "have": []
+  },
+  {
+   "key": "tp.da_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "They ask if you saw anyone.",
+   "context": "Jeg mødte min ven på en café.",
+   "have": []
+  },
+  {
+   "key": "tp.da_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what you did together.",
+   "context": "Vi spiste frokost sammen.",
+   "have": []
+  },
+  {
+   "key": "tp.da_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "They ask what happened next.",
+   "context": "Bagefter gik vi en tur i parken.",
+   "have": []
+  },
+  {
+   "key": "tp.da_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "They ask about the weather that day.",
+   "context": "Vejret var solrigt.",
+   "have": []
+  },
+  {
+   "key": "tp.da_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "They ask when you got home.",
+   "context": "Jeg kom hjem om aftenen.",
+   "have": []
+  },
+  {
+   "key": "tp.da_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "They ask how the day was.",
+   "context": "Det var en god dag.",
+   "have": []
+  },
+  {
+   "key": "p.da_past_story_0",
+   "kind": "phrase",
+   "target": "I går tog jeg til byen.",
+   "tr": "Dün şehre gittim.",
+   "en": "Yesterday I went to the city.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_past_story_1",
+   "kind": "phrase",
+   "target": "Jeg mødte min ven på en café.",
+   "tr": "Arkadaşımla kafede buluştum.",
+   "en": "I met my friend at a café.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_past_story_2",
+   "kind": "phrase",
+   "target": "Vi spiste frokost sammen.",
+   "tr": "Birlikte öğle yemeği yedik.",
+   "en": "We ate lunch together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_past_story_3",
+   "kind": "phrase",
+   "target": "Bagefter gik vi en tur i parken.",
+   "tr": "Sonra parkta yürüyüş yaptık.",
+   "en": "Afterwards we took a walk in the park.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_past_story_4",
+   "kind": "phrase",
+   "target": "Vejret var solrigt.",
+   "tr": "Hava güneşliydi.",
+   "en": "The weather was sunny.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_past_story_5",
+   "kind": "phrase",
+   "target": "Jeg kom hjem om aftenen.",
+   "tr": "Akşam eve geldim.",
+   "en": "I came home in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_past_story_6",
+   "kind": "phrase",
+   "target": "Det var en god dag.",
+   "tr": "Güzel bir gündü.",
+   "en": "It was a good day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "En kaffe, tak.",
+   "have": []
+  },
+  {
+   "key": "tp.da_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "Jeg har en reservation.",
+   "have": []
+  },
+  {
+   "key": "tp.da_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "Undskyld, hvor er stationen?",
+   "have": []
+  },
+  {
+   "key": "tp.da_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "Hej, jeg hedder Deniz.",
+   "have": []
+  },
+  {
+   "key": "p.da_a2_route_0",
+   "kind": "phrase",
+   "target": "En kaffe, tak.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_a2_route_1",
+   "kind": "phrase",
+   "target": "Jeg har en reservation.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_a2_route_2",
+   "kind": "phrase",
+   "target": "Undskyld, hvor er stationen?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_a2_route_3",
+   "kind": "phrase",
+   "target": "Hej, jeg hedder Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.da_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "Er morgenmad inkluderet?",
+   "have": []
+  },
+  {
+   "key": "tp.da_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "Jeg forstår ikke.",
+   "have": []
+  },
+  {
+   "key": "tp.da_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "Jeg leder efter en lejlighed.",
+   "have": []
+  },
+  {
+   "key": "tp.da_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "Hvad koster huslejen?",
+   "have": []
+  },
+  {
+   "key": "tp.da_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "Tager I kort?",
+   "have": []
+  },
+  {
+   "key": "p.da_b1_solve_0",
+   "kind": "phrase",
+   "target": "Er morgenmad inkluderet?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_b1_solve_1",
+   "kind": "phrase",
+   "target": "Jeg forstår ikke.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_b1_solve_2",
+   "kind": "phrase",
+   "target": "Jeg leder efter en lejlighed.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_b1_solve_3",
+   "kind": "phrase",
+   "target": "Hvad koster huslejen?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.da_b1_solve_4",
+   "kind": "phrase",
+   "target": "Tager I kort?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.da_exp_job_interview",
+   "kind": "scenario_title",
+   "tr": "İş görüşmesi",
+   "en": "Job interview",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_exp_job_interview",
+   "kind": "grammar_rule",
+   "tr": "\"Må jeg spørge...\" nadir ve nazik bir ricadır; şirket ortamında doğaldır.",
+   "en": null,
+   "context": "Må jeg spørge til lønspændet? / ✗ Sig lønnen.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.da_exp_job_interview.0",
+   "kind": "speaking_prompt",
+   "en": "Hvorfor vil du arbejde her?",
+   "context": "Jeres tilgang til kunden matcher det, jeg er god til.",
+   "have": []
+  },
+  {
+   "key": "tp.da_exp_job_interview.1",
+   "kind": "speaking_prompt",
+   "en": "Hvordan håndterer du en presset release-uge?",
+   "context": "Jeg skærer i scope og skriver risiciene ned.",
+   "have": []
+  },
+  {
+   "key": "p.da_exp_interview_0",
+   "kind": "phrase",
+   "target": "Tak fordi I inviterede mig til samtalen.",
+   "tr": "Görüşmeye davet ettiğiniz için teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_interview_1",
+   "kind": "phrase",
+   "target": "Jeg har arbejdet i produktteams i cirka fem år.",
+   "tr": "Yaklaşık beş yıldır ürün ekiplerinde çalışıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_interview_2",
+   "kind": "phrase",
+   "target": "Jeg prioriterer at forstå kundens behov ordentligt.",
+   "tr": "Müşterinin ihtiyaçlarını doğru anlamaya öncelik veririm.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_interview_3",
+   "kind": "phrase",
+   "target": "Min svaghed er, at jeg kan hænge fast i detaljer; jeg bruger en tjekliste.",
+   "tr": "Zayıf yönüm detaylara takılmam; bunu kontrol listesiyle yönetiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_interview_4",
+   "kind": "phrase",
+   "target": "Må jeg spørge til lønspændet?",
+   "tr": "Maaş aralığını sorabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_interview_5",
+   "kind": "phrase",
+   "target": "Bliver der også en samtale med teamet?",
+   "tr": "Ekiple de bir görüşme olacak mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.da_exp_team_meeting",
+   "kind": "scenario_title",
+   "tr": "Ekip toplantısı",
+   "en": "Team meeting",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_exp_team_meeting",
+   "kind": "grammar_rule",
+   "tr": "Beklemek: vente på + isim; \"vente design\" gibi isim tek başına eksik kalır.",
+   "en": null,
+   "context": "Jeg venter på godkendelse. / ✗ Jeg venter godkendelse.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.da_exp_team_meeting.0",
+   "kind": "speaking_prompt",
+   "en": "Er der nogen, der er blokeret?",
+   "context": "Jeg venter på designgodkendelse; jeg rykker i morgen.",
+   "have": []
+  },
+  {
+   "key": "tp.da_exp_team_meeting.1",
+   "kind": "speaking_prompt",
+   "en": "Så ejer du opgaven.",
+   "context": "Fint, jeg opdaterer teamet fredag.",
+   "have": []
+  },
+  {
+   "key": "p.da_exp_meeting_0",
+   "kind": "phrase",
+   "target": "Vi går direkte til dagsordenen.",
+   "tr": "Doğrudan gündeme geçelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_meeting_1",
+   "kind": "phrase",
+   "target": "Jeg har en API-blokering; i morgen giver jeg en dato.",
+   "tr": "API tarafında bir engelim var; yarın tarih vereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_meeting_2",
+   "kind": "phrase",
+   "target": "Kan vi spare det her punkt til sidst?",
+   "tr": "Bu maddeyi sona bırakabilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_meeting_3",
+   "kind": "phrase",
+   "target": "Jeg noterer: torsdag kl. 16.",
+   "tr": "Not ediyorum: perşembe saat 16.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_meeting_4",
+   "kind": "phrase",
+   "target": "Ingen indvendinger, men vi logger risikoen.",
+   "tr": "İtirazım yok ama riski kaydedelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_meeting_5",
+   "kind": "phrase",
+   "target": "Skal vi trække fem minutter over?",
+   "tr": "Beş dakika uzatmamız gerekiyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.da_exp_bank",
+   "kind": "scenario_title",
+   "tr": "Bankada hesap",
+   "en": "Bank account",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_exp_bank",
+   "kind": "grammar_rule",
+   "tr": "Nazik istek: jeg vil gerne; \"jeg vil\" emre yaklaşır.",
+   "en": null,
+   "context": "Jeg vil gerne åbne en konto. / ✗ Åbn en konto nu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.da_exp_bank.0",
+   "kind": "speaking_prompt",
+   "en": "Privatkonto til løn?",
+   "context": "Ja, til lønudbetaling.",
+   "have": []
+  },
+  {
+   "key": "tp.da_exp_bank.1",
+   "kind": "speaking_prompt",
+   "en": "Vil du underskrive her?",
+   "context": "Ja, selvfølgelig.",
+   "have": []
+  },
+  {
+   "key": "p.da_exp_bank_0",
+   "kind": "phrase",
+   "target": "Jeg vil gerne åbne en lønkonto.",
+   "tr": "Bir maaş hesabı açmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_bank_1",
+   "kind": "phrase",
+   "target": "Jeg har pas og bopælsdokument med.",
+   "tr": "Pasaportum ve ikametgahım yanımda.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_bank_2",
+   "kind": "phrase",
+   "target": "Hvad koster kortet om året?",
+   "tr": "Kartın yıllık ücreti ne kadar?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_bank_3",
+   "kind": "phrase",
+   "target": "Jeg vil også have netbank, tak.",
+   "tr": "İnternet bankacılığını da istiyorum lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_bank_4",
+   "kind": "phrase",
+   "target": "Hvad er dagsgrænsen for overførsler?",
+   "tr": "Havale için günlük limit nedir?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_bank_5",
+   "kind": "phrase",
+   "target": "Kan jeg få kvitteringen på mail?",
+   "tr": "Dekontu e-posta ile alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.da_exp_apartment",
+   "kind": "scenario_title",
+   "tr": "Ev bakma",
+   "en": "Apartment viewing",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_exp_apartment",
+   "kind": "grammar_rule",
+   "tr": "Hâlâ boş olup olmadığını sormak için \"stadig ledig\" kullanılır.",
+   "en": null,
+   "context": "Er lejligheden stadig ledig? / ✗ Er den ledig altid endnu?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.da_exp_apartment.0",
+   "kind": "speaking_prompt",
+   "en": "Hvornår vil du flytte ind?",
+   "context": "Først i næste måned; jeg har få ting.",
+   "have": []
+  },
+  {
+   "key": "tp.da_exp_apartment.1",
+   "kind": "speaking_prompt",
+   "en": "Udlejer tillader ikke husdyr.",
+   "context": "Det er fint, jeg har ikke husdyr.",
+   "have": []
+  },
+  {
+   "key": "p.da_exp_apartment_0",
+   "kind": "phrase",
+   "target": "Jeg så annoncen; er lejligheden stadig ledig?",
+   "tr": "İlanı gördüm; daire hâlâ boş mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_apartment_1",
+   "kind": "phrase",
+   "target": "Er varme inkluderet i huslejen?",
+   "tr": "Isınma kiraya dahil mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_apartment_2",
+   "kind": "phrase",
+   "target": "Hvor mange måneders depositum er det?",
+   "tr": "Depozito kaç aylık kiraya denk geliyor?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_apartment_3",
+   "kind": "phrase",
+   "target": "Er kontrakten på et år, eller kan den være kortere?",
+   "tr": "Sözleşme bir yıllık mı, yoksa daha kısa olabilir mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_apartment_4",
+   "kind": "phrase",
+   "target": "Jeg arbejder hjemme, så jeg har brug for ro.",
+   "tr": "Evden çalışıyorum, bu yüzden sessizliğe ihtiyacım var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_apartment_5",
+   "kind": "phrase",
+   "target": "Jeg vender tilbage i morgen.",
+   "tr": "Yarın dönüş yapacağım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.da_exp_doctor",
+   "kind": "scenario_title",
+   "tr": "Doktorda",
+   "en": "At the doctor's",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_exp_doctor",
+   "kind": "grammar_rule",
+   "tr": "Süre belirtmek için \"i tre dage\" kullanılır; kendi kendine teşhis koymaktan kaçının.",
+   "en": null,
+   "context": "Jeg har haft feber i tre dage. / ✗ Jeg har lungebetændelse, tror jeg.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.da_exp_doctor.0",
+   "kind": "speaking_prompt",
+   "en": "Hvor gør det ondt? Kom det pludseligt?",
+   "context": "Højre side af brystet, siden i går aftes.",
+   "have": []
+  },
+  {
+   "key": "tp.da_exp_doctor.1",
+   "kind": "speaking_prompt",
+   "en": "Jeg vil tage blodprøver.",
+   "context": "Okay, hvor skal jeg gå hen?",
+   "have": []
+  },
+  {
+   "key": "p.da_exp_doctor_0",
+   "kind": "phrase",
+   "target": "Jeg har haft feber i tre dage og hoster om natten.",
+   "tr": "Üç gündür ateşim var, geceleri öksürüyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_doctor_1",
+   "kind": "phrase",
+   "target": "Jeg har ingen kendt penicillinallergi.",
+   "tr": "Bilinen bir penisilin alerjim yok.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_doctor_2",
+   "kind": "phrase",
+   "target": "Gør medicinen én døsig?",
+   "tr": "Bu ilaç uyku hâli yapar mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_doctor_3",
+   "kind": "phrase",
+   "target": "Skal jeg bruge en lægeerklæring til arbejdet?",
+   "tr": "İş için doktor raporuna ihtiyacım var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_doctor_4",
+   "kind": "phrase",
+   "target": "Hvornår skal jeg komme til kontrol?",
+   "tr": "Kontrol için ne zaman gelmeliyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_doctor_5",
+   "kind": "phrase",
+   "target": "Ligger apoteket uden for bygningen?",
+   "tr": "Eczane bina dışında mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.da_exp_business_lunch",
+   "kind": "scenario_title",
+   "tr": "İş yemeği",
+   "en": "Business lunch",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_exp_business_lunch",
+   "kind": "grammar_rule",
+   "tr": "Hesabı üstlenmek: vi giver regningen.",
+   "en": null,
+   "context": "Vi giver regningen. / ✗ Du betaler det hele.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.da_exp_business_lunch.0",
+   "kind": "speaking_prompt",
+   "en": "Prisen føles stadig høj.",
+   "context": "Vi kan dele det i to faser.",
+   "have": []
+  },
+  {
+   "key": "tp.da_exp_business_lunch.1",
+   "kind": "speaking_prompt",
+   "en": "Vi tænker over det.",
+   "context": "Selvfølgelig, jeg følger op på fredag.",
+   "have": []
+  },
+  {
+   "key": "p.da_exp_lunch_0",
+   "kind": "phrase",
+   "target": "Jeg bookede stedet efter dit tip.",
+   "tr": "Mekanı sizin önerinize göre ayarladım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_lunch_1",
+   "kind": "phrase",
+   "target": "Har du allergier eller ønsker?",
+   "tr": "Alerjiniz veya tercihiniz var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_lunch_2",
+   "kind": "phrase",
+   "target": "Før vi bestiller, skal vi ramme hovedpunkterne?",
+   "tr": "Sipariş vermeden önce ana noktaları netleştirelim mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_lunch_3",
+   "kind": "phrase",
+   "target": "Vi går ikke i tal ved bordet; jeg sender bagefter.",
+   "tr": "Masada rakamlara girmeyelim; sonra gönderirim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_lunch_4",
+   "kind": "phrase",
+   "target": "Den her gang giver vi regningen.",
+   "tr": "Bu sefer hesabı biz alıyoruz.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_lunch_5",
+   "kind": "phrase",
+   "target": "Det var et produktivt møde, tak.",
+   "tr": "Çok verimli bir toplantıydı, teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.da_exp_complaint",
+   "kind": "scenario_title",
+   "tr": "Şikâyet",
+   "en": "Complaint",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_exp_complaint",
+   "kind": "grammar_rule",
+   "tr": "Kanıt dili \"skriftlig\" (yazılı) kullanılmalı; \"bare SMS\" yeterli değildir.",
+   "en": null,
+   "context": "En skriftlig bekræftelse. / ✗ Bare skriv på Messenger.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.da_exp_complaint.0",
+   "kind": "speaking_prompt",
+   "en": "Beklager ulejligheden; jeg tjekker forsendelsen.",
+   "context": "Tak. Notér også klokkeslættet.",
+   "have": []
+  },
+  {
+   "key": "tp.da_exp_complaint.1",
+   "kind": "speaking_prompt",
+   "en": "Levering i morgen inden kl. 14.",
+   "context": "Godt, jeg venter på den.",
+   "have": []
+  },
+  {
+   "key": "p.da_exp_complaint_0",
+   "kind": "phrase",
+   "target": "Ordrenummer 1842 er stadig ikke kommet.",
+   "tr": "1842 numaralı sipariş hâlâ gelmedi.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_complaint_1",
+   "kind": "phrase",
+   "target": "Den lovede dato var i går.",
+   "tr": "Söz verilen tarih dündü.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_complaint_2",
+   "kind": "phrase",
+   "target": "Som løsning vil jeg have fragten refunderet.",
+   "tr": "Çözüm olarak kargo ücretinin iadesini istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_complaint_3",
+   "kind": "phrase",
+   "target": "Skal jeg tale med en leder, eller kan du løse det?",
+   "tr": "Bir yöneticiyle mi konuşmalıyım, yoksa siz çözebilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_complaint_4",
+   "kind": "phrase",
+   "target": "Må jeg få en skriftlig bekræftelse?",
+   "tr": "Yazılı bir teyit alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_complaint_5",
+   "kind": "phrase",
+   "target": "Jeg er tålmodig, men jeg skal bruge et tidspunkt i dag.",
+   "tr": "Sabırlıyım ama bugün net bir zaman lazım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.da_exp_business_trip",
+   "kind": "scenario_title",
+   "tr": "İş seyahati",
+   "en": "Business trip",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_exp_business_trip",
+   "kind": "grammar_rule",
+   "tr": "Aktarmaya yetişmek: nå forbindelsen; \"misse\" ise kaçırmak anlamına gelir.",
+   "en": null,
+   "context": "Når jeg forbindelsen? / ✗ Mister jeg lufthavnen?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.da_exp_business_trip.0",
+   "kind": "speaking_prompt",
+   "en": "Vindue eller midtergang?",
+   "context": "Midtergang, gerne tæt på udgangen.",
+   "have": []
+  },
+  {
+   "key": "tp.da_exp_business_trip.1",
+   "kind": "speaking_prompt",
+   "en": "Gate 12 om cirka fyrre minutter.",
+   "context": "Tak, jeg går derhen nu.",
+   "have": []
+  },
+  {
+   "key": "p.da_exp_trip_0",
+   "kind": "phrase",
+   "target": "Her er min PNR; boardingkort, tak.",
+   "tr": "İşte rezervasyon kodum; biniş kartı lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_trip_1",
+   "kind": "phrase",
+   "target": "Er håndbagagen inden for målene?",
+   "tr": "El bagajı ölçülere uyuyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_trip_2",
+   "kind": "phrase",
+   "target": "Når jeg forbindelsen, hvis vi er forsinket?",
+   "tr": "Gecikirsek aktarmaya yetişir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_trip_3",
+   "kind": "phrase",
+   "target": "Fakturaen skal udstedes til virksomheden.",
+   "tr": "Fatura şirket adına kesilmeli.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_trip_4",
+   "kind": "phrase",
+   "target": "Hvor er indgangen til loungen?",
+   "tr": "Lounge girişi nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_trip_5",
+   "kind": "phrase",
+   "target": "Jeg skal gemme taxakvitteringen til udlæg.",
+   "tr": "Masraf için taksi fişini saklamalıyım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.da_exp_client_call",
+   "kind": "scenario_title",
+   "tr": "Müşteri telefonu",
+   "en": "Client phone call",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_exp_client_call",
+   "kind": "grammar_rule",
+   "tr": "Yanlış anlamayı teyit etmek için \"hvis jeg har misforstået\" kullanılır.",
+   "en": null,
+   "context": "Hvis jeg har misforstået, så ret mig. / ✗ Hvis jeg ville misforstår…",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.da_exp_client_call.0",
+   "kind": "speaking_prompt",
+   "en": "Uden den funktion kan vi ikke gå live.",
+   "context": "Så rykker vi andet og tager det her først.",
+   "have": []
+  },
+  {
+   "key": "tp.da_exp_client_call.1",
+   "kind": "speaking_prompt",
+   "en": "Okay, skriv det ned.",
+   "context": "Jeg sender det skriftligt nu.",
+   "have": []
+  },
+  {
+   "key": "p.da_exp_call_0",
+   "kind": "phrase",
+   "target": "Har du fem minutter nu?",
+   "tr": "Şu an beş dakikanız var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_call_1",
+   "kind": "phrase",
+   "target": "Punkt tre i gårdsdagens mail er uklar.",
+   "tr": "Dünkü mailin üçüncü maddesi net değil.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_call_2",
+   "kind": "phrase",
+   "target": "Er det ekstra, eller ligger det i scopet?",
+   "tr": "Bu ek iş mi yoksa kapsamda mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_call_3",
+   "kind": "phrase",
+   "target": "Hvis jeg har misforstået, så ret mig.",
+   "tr": "Yanlış anladıysam lütfen düzeltin.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_call_4",
+   "kind": "phrase",
+   "target": "Kort: udkast fredag, kommentarer mandag.",
+   "tr": "Özet: taslak cuma, yorumlar pazartesi.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_call_5",
+   "kind": "phrase",
+   "target": "Jeg sender en bekræftelsesmail nu.",
+   "tr": "Şimdi bir teyit maili gönderiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.da_exp_hr_salary",
+   "kind": "scenario_title",
+   "tr": "Maaş görüşmesi",
+   "en": "Salary conversation",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_exp_hr_salary",
+   "kind": "grammar_rule",
+   "tr": "Hedef belirtirken \"jeg sigter efter\" kullanılır; \"jeg kræver\" kapıyı kapatır.",
+   "en": null,
+   "context": "Jeg sigter efter femten procent. / ✗ Jeg kræver femten nu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.da_exp_hr_salary.0",
+   "kind": "speaking_prompt",
+   "en": "Årets budget er stramt.",
+   "context": "Jeg forstår. Kan bonus eller niveau diskuteres?",
+   "have": []
+  },
+  {
+   "key": "tp.da_exp_hr_salary.1",
+   "kind": "speaking_prompt",
+   "en": "Vi vender tilbage i marts.",
+   "context": "Så lægger vi marts i kalenderen og spænder kriterier i dag.",
+   "have": []
+  },
+  {
+   "key": "p.da_exp_salary_0",
+   "kind": "phrase",
+   "target": "Jeg vil gerne tale performance og marked.",
+   "tr": "Performansım ve piyasa seviyesi hakkında konuşmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_salary_1",
+   "kind": "phrase",
+   "target": "På seks måneder leverede jeg tre projekter til tiden.",
+   "tr": "Altı ayda üç projeyi zamanında teslim ettim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_salary_2",
+   "kind": "phrase",
+   "target": "Jeg sigter efter femten procent og kan vise belæg.",
+   "tr": "Yüzde on beş bekliyorum, bunu kanıtlayabilirim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_salary_3",
+   "kind": "phrase",
+   "target": "Titlen afspejler ikke ansvaret i dag.",
+   "tr": "Unvan şu anki sorumluluğu yansıtmıyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_salary_4",
+   "kind": "phrase",
+   "target": "Hvis der ikke er budget, lad os sætte en dato.",
+   "tr": "Bütçe yoksa bir tarih belirleyelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_salary_5",
+   "kind": "phrase",
+   "target": "Jeg vil gerne have beslutningen skriftligt.",
+   "tr": "Kararı yazılı almak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.da_exp_daily_errands",
+   "kind": "scenario_title",
+   "tr": "Market ve kargo",
+   "en": "Errands and deliveries",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_exp_daily_errands",
+   "kind": "grammar_rule",
+   "tr": "Hizmet ricalarında cümle sonuna \"tak\" eklenir: kvitteringen, tak.",
+   "en": null,
+   "context": "Kvitteringen, tak. / ✗ Giv kvittering.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.da_exp_daily_errands.0",
+   "kind": "speaking_prompt",
+   "en": "Har du medlemskort?",
+   "context": "Nej, ikke denne gang.",
+   "have": []
+  },
+  {
+   "key": "tp.da_exp_daily_errands.1",
+   "kind": "speaking_prompt",
+   "en": "Jeg har ikke byttepenge, jeg trækker kortet.",
+   "context": "Fint, ingen problem.",
+   "have": []
+  },
+  {
+   "key": "p.da_exp_errands_0",
+   "kind": "phrase",
+   "target": "To af det her brød og kvitteringen, tak.",
+   "tr": "Bu ekmekten iki tane ve fiş lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_errands_1",
+   "kind": "phrase",
+   "target": "Hvor er den glutenfri hylde?",
+   "tr": "Glütensiz reyon nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_errands_2",
+   "kind": "phrase",
+   "target": "Læg ikke pakken hos naboen; en seddel på døren.",
+   "tr": "Paketi komşuya bırakmayın; kapıya not bırakın.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_errands_3",
+   "kind": "phrase",
+   "target": "Jeg har ingen kontanter; går kort?",
+   "tr": "Nakit param yok; kart geçer mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_errands_4",
+   "kind": "phrase",
+   "target": "Retur inden fjorten dage, ikke?",
+   "tr": "İade on dört gün içinde, değil mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_errands_5",
+   "kind": "phrase",
+   "target": "Ingen pose, jeg har egen taske.",
+   "tr": "Poşete gerek yok, kendi çantam var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.da_exp_networking",
+   "kind": "scenario_title",
+   "tr": "Networking",
+   "en": "Networking",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.da_exp_networking",
+   "kind": "grammar_rule",
+   "tr": "Kimlik tanıtımı: jeg hedder X og er Y.",
+   "en": null,
+   "context": "Jeg er product manager i fintech. / ✗ Jeg laver lidt produkt-ting.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.da_exp_networking.0",
+   "kind": "speaking_prompt",
+   "en": "Hvad løser produktet konkret?",
+   "context": "Vi forenkler fakturering og opkrævning for små virksomheder.",
+   "have": []
+  },
+  {
+   "key": "tp.da_exp_networking.1",
+   "kind": "speaking_prompt",
+   "en": "Spændende, send en mail.",
+   "context": "Det gør jeg i morgen.",
+   "have": []
+  },
+  {
+   "key": "p.da_exp_networking_0",
+   "kind": "phrase",
+   "target": "Jeg hedder Mette og er product manager i fintech.",
+   "tr": "Benim adım Mette, fintech alanında ürün yöneticisiyim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_networking_1",
+   "kind": "phrase",
+   "target": "Dit eksempel om betalinger var meget klart.",
+   "tr": "Ödemeler hakkındaki örneğiniz çok netti.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_networking_2",
+   "kind": "phrase",
+   "target": "Har I samme type friktion?",
+   "tr": "Sizde de aynı tür sorunlar oluyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_networking_3",
+   "kind": "phrase",
+   "target": "Visitkortene er slut; må jeg skrive på LinkedIn?",
+   "tr": "Kartvizitlerim bitti; LinkedIn’den yazabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_networking_4",
+   "kind": "phrase",
+   "target": "Har du to minutter? Jeg er kort.",
+   "tr": "İki dakikanız var mı? Kısa keseceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.da_exp_networking_5",
+   "kind": "phrase",
+   "target": "Jeg kan gerne introducere nogen, der måske kan hjælpe.",
+   "tr": "Yardımcı olabilecek birini tanıştırabilirim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.da_restaurant",
+   "kind": "story_title",
+   "target": "På restaurant",
+   "tr": "Restoranda",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_restaurant.0",
+   "kind": "story_sentence",
+   "target": "I aften går jeg på restaurant med en kollega.",
+   "tr": "Bu akşam bir iş arkadaşımla restorana gidiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_restaurant.1",
+   "kind": "story_sentence",
+   "target": "Vi bestiller den danske mad.",
+   "tr": "Danimarka yemekleri söylüyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_restaurant.2",
+   "kind": "story_sentence",
+   "target": "Jeg tager en stor fisk med kartofler.",
+   "tr": "Ben büyük bir balık patatesli alıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_restaurant.3",
+   "kind": "story_sentence",
+   "target": "Kaffen og kagen er meget gode.",
+   "tr": "Kahve ve pasta çok iyi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_restaurant.4",
+   "kind": "story_sentence",
+   "target": "Vi snakker om arbejde og familie.",
+   "tr": "İş ve aileden konuşuyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_restaurant.5",
+   "kind": "story_sentence",
+   "target": "Det er en dejlig aften.",
+   "tr": "Güzel bir akşam.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.da_neighbor",
+   "kind": "story_title",
+   "target": "Min nabo",
+   "tr": "Komşum",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_neighbor.0",
+   "kind": "story_sentence",
+   "target": "Min nabo hedder Jens.",
+   "tr": "Komşumun adı Jens.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_neighbor.1",
+   "kind": "story_sentence",
+   "target": "Han bor i huset ved siden af mig.",
+   "tr": "Yanımdaki evde oturuyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_neighbor.2",
+   "kind": "story_sentence",
+   "target": "Jens er en meget venlig mand.",
+   "tr": "Jens çok nazik bir adam.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_neighbor.3",
+   "kind": "story_sentence",
+   "target": "Når jeg er på arbejde, vander han min hund.",
+   "tr": "Ben işteyken o köpeğimi yürütür.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_neighbor.4",
+   "kind": "story_sentence",
+   "target": "På lørdag laver vi mad sammen.",
+   "tr": "Cumartesi birlikte yemek pişiririz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_neighbor.5",
+   "kind": "story_sentence",
+   "target": "Vi drikker altid en kop kaffe til sidst.",
+   "tr": "Sonunda her zaman bir fincan kahve içeriz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.da_forest_walk",
+   "kind": "story_title",
+   "target": "Tur i skoven",
+   "tr": "Ormanda Yürüyüş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_forest_walk.0",
+   "kind": "story_sentence",
+   "target": "I morgen går jeg en lang tur i skoven.",
+   "tr": "Yarın ormanda uzun bir yürüyüş yapacağım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_forest_walk.1",
+   "kind": "story_sentence",
+   "target": "Jeg tager min vandflaske og lidt mad med.",
+   "tr": "Yanıma su şişesi ve biraz yiyecek alıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_forest_walk.2",
+   "kind": "story_sentence",
+   "target": "Om efteråret er træerne gule og røde.",
+   "tr": "Sonbaharda ağaçlar sarı ve kırmızı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_forest_walk.3",
+   "kind": "story_sentence",
+   "target": "Jeg ser mange fugle og små dyr.",
+   "tr": "Birçok kuş ve küçük hayvan görüyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_forest_walk.4",
+   "kind": "story_sentence",
+   "target": "Jeg spiser min mad ved en sø.",
+   "tr": "Bir gölün yanında yemeğimi yiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.da_forest_walk.5",
+   "kind": "story_sentence",
+   "target": "Den friske luft er den bedste pause.",
+   "tr": "Taze hava en iyi mola.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.A.n",
+   "kind": "alphabet_letter_name",
+   "target": "A",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.A.s",
+   "kind": "alphabet_sound",
+   "target": "A",
+   "tr": "a",
+   "context": "And",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.A.m",
+   "kind": "alphabet_example",
+   "target": "And",
+   "tr": "Ördek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.B.n",
+   "kind": "alphabet_letter_name",
+   "target": "B",
+   "tr": "Be",
+   "en": "Be",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.B.s",
+   "kind": "alphabet_sound",
+   "target": "B",
+   "tr": "b",
+   "context": "Bog",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.B.m",
+   "kind": "alphabet_example",
+   "target": "Bog",
+   "tr": "Kitap",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.C.n",
+   "kind": "alphabet_letter_name",
+   "target": "C",
+   "tr": "Se",
+   "en": "Se",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.C.s",
+   "kind": "alphabet_sound",
+   "target": "C",
+   "tr": "s/k",
+   "context": "Cykel",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.C.m",
+   "kind": "alphabet_example",
+   "target": "Cykel",
+   "tr": "Bisiklet",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.D.n",
+   "kind": "alphabet_letter_name",
+   "target": "D",
+   "tr": "De",
+   "en": "De",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.D.s",
+   "kind": "alphabet_sound",
+   "target": "D",
+   "tr": "d",
+   "context": "Dag",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.D.m",
+   "kind": "alphabet_example",
+   "target": "Dag",
+   "tr": "Gün",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.E.n",
+   "kind": "alphabet_letter_name",
+   "target": "E",
+   "tr": "E",
+   "en": "E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.E.s",
+   "kind": "alphabet_sound",
+   "target": "E",
+   "tr": "e",
+   "context": "Efter",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.E.m",
+   "kind": "alphabet_example",
+   "target": "Efter",
+   "tr": "Sonra",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.F.n",
+   "kind": "alphabet_letter_name",
+   "target": "F",
+   "tr": "Ef",
+   "en": "Ef",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.F.s",
+   "kind": "alphabet_sound",
+   "target": "F",
+   "tr": "f",
+   "context": "Fisk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.F.m",
+   "kind": "alphabet_example",
+   "target": "Fisk",
+   "tr": "Balık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.G.n",
+   "kind": "alphabet_letter_name",
+   "target": "G",
+   "tr": "Ge",
+   "en": "Ge",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.G.s",
+   "kind": "alphabet_sound",
+   "target": "G",
+   "tr": "g",
+   "context": "Glas",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.G.m",
+   "kind": "alphabet_example",
+   "target": "Glas",
+   "tr": "Bardak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.H.n",
+   "kind": "alphabet_letter_name",
+   "target": "H",
+   "tr": "Ha",
+   "en": "Ha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.H.s",
+   "kind": "alphabet_sound",
+   "target": "H",
+   "tr": "h",
+   "context": "Hus",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.H.m",
+   "kind": "alphabet_example",
+   "target": "Hus",
+   "tr": "Ev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.I.n",
+   "kind": "alphabet_letter_name",
+   "target": "I",
+   "tr": "İ",
+   "en": "I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.I.s",
+   "kind": "alphabet_sound",
+   "target": "I",
+   "tr": "i",
+   "context": "Is",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.I.m",
+   "kind": "alphabet_example",
+   "target": "Is",
+   "tr": "Buz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.J.n",
+   "kind": "alphabet_letter_name",
+   "target": "J",
+   "tr": "Yod",
+   "en": "Yod",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.J.s",
+   "kind": "alphabet_sound",
+   "target": "J",
+   "tr": "y",
+   "context": "Jul",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.J.m",
+   "kind": "alphabet_example",
+   "target": "Jul",
+   "tr": "Noel",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.K.n",
+   "kind": "alphabet_letter_name",
+   "target": "K",
+   "tr": "Ka",
+   "en": "Ka",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.K.s",
+   "kind": "alphabet_sound",
+   "target": "K",
+   "tr": "k",
+   "context": "Kat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.K.m",
+   "kind": "alphabet_example",
+   "target": "Kat",
+   "tr": "Kedi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.L.n",
+   "kind": "alphabet_letter_name",
+   "target": "L",
+   "tr": "El",
+   "en": "El",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.L.s",
+   "kind": "alphabet_sound",
+   "target": "L",
+   "tr": "l",
+   "context": "Lampe",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.L.m",
+   "kind": "alphabet_example",
+   "target": "Lampe",
+   "tr": "Lamba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.M.n",
+   "kind": "alphabet_letter_name",
+   "target": "M",
+   "tr": "Em",
+   "en": "Em",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.M.s",
+   "kind": "alphabet_sound",
+   "target": "M",
+   "tr": "m",
+   "context": "Mand",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.M.m",
+   "kind": "alphabet_example",
+   "target": "Mand",
+   "tr": "Adam",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.N.n",
+   "kind": "alphabet_letter_name",
+   "target": "N",
+   "tr": "En",
+   "en": "En",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.N.s",
+   "kind": "alphabet_sound",
+   "target": "N",
+   "tr": "n",
+   "context": "Nat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.N.m",
+   "kind": "alphabet_example",
+   "target": "Nat",
+   "tr": "Gece",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.O.n",
+   "kind": "alphabet_letter_name",
+   "target": "O",
+   "tr": "O",
+   "en": "O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.O.s",
+   "kind": "alphabet_sound",
+   "target": "O",
+   "tr": "o",
+   "context": "Ost",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.O.m",
+   "kind": "alphabet_example",
+   "target": "Ost",
+   "tr": "Peynir",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.P.n",
+   "kind": "alphabet_letter_name",
+   "target": "P",
+   "tr": "Pe",
+   "en": "Pe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.P.s",
+   "kind": "alphabet_sound",
+   "target": "P",
+   "tr": "p",
+   "context": "Pige",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.P.m",
+   "kind": "alphabet_example",
+   "target": "Pige",
+   "tr": "Kız",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.R.n",
+   "kind": "alphabet_letter_name",
+   "target": "R",
+   "tr": "Er",
+   "en": "Er",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.R.s",
+   "kind": "alphabet_sound",
+   "target": "R",
+   "tr": "r (gırtlak)",
+   "context": "Regn",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.R.m",
+   "kind": "alphabet_example",
+   "target": "Regn",
+   "tr": "Yağmur",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.S.n",
+   "kind": "alphabet_letter_name",
+   "target": "S",
+   "tr": "Es",
+   "en": "Es",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.S.s",
+   "kind": "alphabet_sound",
+   "target": "S",
+   "tr": "s",
+   "context": "Sol",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.S.m",
+   "kind": "alphabet_example",
+   "target": "Sol",
+   "tr": "Güneş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.T.n",
+   "kind": "alphabet_letter_name",
+   "target": "T",
+   "tr": "Te",
+   "en": "Te",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.T.s",
+   "kind": "alphabet_sound",
+   "target": "T",
+   "tr": "t",
+   "context": "Træ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.T.m",
+   "kind": "alphabet_example",
+   "target": "Træ",
+   "tr": "Ağaç",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.U.n",
+   "kind": "alphabet_letter_name",
+   "target": "U",
+   "tr": "U",
+   "en": "U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.U.s",
+   "kind": "alphabet_sound",
+   "target": "U",
+   "tr": "u",
+   "context": "Ur",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.U.m",
+   "kind": "alphabet_example",
+   "target": "Ur",
+   "tr": "Saat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.V.n",
+   "kind": "alphabet_letter_name",
+   "target": "V",
+   "tr": "Ve",
+   "en": "Ve",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.V.s",
+   "kind": "alphabet_sound",
+   "target": "V",
+   "tr": "v",
+   "context": "Vand",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.V.m",
+   "kind": "alphabet_example",
+   "target": "Vand",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.Y.n",
+   "kind": "alphabet_letter_name",
+   "target": "Y",
+   "tr": "Y",
+   "en": "Y",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.Y.s",
+   "kind": "alphabet_sound",
+   "target": "Y",
+   "tr": "ü (ince)",
+   "context": "Yngel",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.Y.m",
+   "kind": "alphabet_example",
+   "target": "Yngel",
+   "tr": "Yavru",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.Æ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Æ",
+   "tr": "Ae",
+   "en": "Ae",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.Æ.s",
+   "kind": "alphabet_sound",
+   "target": "Æ",
+   "tr": "e (açık)",
+   "context": "Æble",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.Æ.m",
+   "kind": "alphabet_example",
+   "target": "Æble",
+   "tr": "Elma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.Ø.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ø",
+   "tr": "Ö",
+   "en": "Oe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.Ø.s",
+   "kind": "alphabet_sound",
+   "target": "Ø",
+   "tr": "ö",
+   "context": "Øje",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.Ø.m",
+   "kind": "alphabet_example",
+   "target": "Øje",
+   "tr": "Göz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.Å.n",
+   "kind": "alphabet_letter_name",
+   "target": "Å",
+   "tr": "Yuvarlak A",
+   "en": "Ring A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.da.Å.s",
+   "kind": "alphabet_sound",
+   "target": "Å",
+   "tr": "o",
+   "context": "År",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.da.Å.m",
+   "kind": "alphabet_example",
+   "target": "År",
+   "tr": "Yıl",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.da.0.h",
+   "kind": "pronunciation_heard",
+   "target": "d (yumuşak)",
+   "tr": "ð veya yutulur",
+   "context": "d → th veya kaybolur.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.da.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "mad, god",
+   "tr": "mað · goð",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.da.1.h",
+   "kind": "pronunciation_heard",
+   "target": "stød",
+   "tr": "gırtlak durağı",
+   "context": "Kısa gırtlak kapanması.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.da.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "hun, hund",
+   "tr": "hun · hunˀ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.da.2.h",
+   "kind": "pronunciation_heard",
+   "target": "å",
+   "tr": "o",
+   "context": "İsveççe ile aynı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.da.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "gå, år",
+   "tr": "go · or",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

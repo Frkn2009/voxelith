@@ -1,0 +1,120 @@
+{
+  "_nasil": "1) 'girdiler' altındaki boş (\"\") alanları doldur. 2) python3 tools/apply_config.py çalıştır — değerleri doğru dosyalara yazar. 3) 'yapay_zeka_isleri' komutlarını sırayla çalıştır. 4) 'sunucu_isleri'ni yap. 5) Claude Code'a 'hazır' de. API anahtarlarını BU DOSYAYA YAZMA — yalnızca ortam değişkeni olarak ver.",
+  "girdiler": {
+    "sirket": {
+      "sirket_adi": "",
+      "ulke": "Türkiye",
+      "alan_adi": "voxelith.app",
+      "destek_eposta": "",
+      "gizlilik_eposta": "",
+      "_not": "Repodaki destek@/gizlilik@voxelith.app adresleri kodda YER TUTUCU olarak işaretli; gerçekten e-posta aldığını onaylayıp buraya yaz."
+    },
+    "admob": {
+      "_not": "AdMob panelinden. App ID'ler '~', reklam birimleri '/' içerir.",
+      "yayinci_kimligi": "pub-",
+      "android_app_id": "ca-app-pub-",
+      "ios_app_id": "ca-app-pub-",
+      "odullu_android": "ca-app-pub-",
+      "odullu_ios": "ca-app-pub-",
+      "gecis_android": "ca-app-pub-",
+      "gecis_ios": "ca-app-pub-"
+    },
+    "revenuecat": {
+      "_not": "RevenueCat → Project settings → API keys: 'Public app-specific' anahtar (Secret key DEĞİL). Bu public anahtar uygulamaya gömülür; yine de git'e yazmamak için build komutunda verilir.",
+      "entitlement_id": "plus"
+    },
+    "supabase": {
+      "_not": "İsteğe bağlı — boş kalırsa uygulama tamamen yerel çalışır (liderlik/klan/hesap yedeği kapalı). Publishable (anon) anahtar build komutunda verilir, dosyaya yazılmaz.",
+      "proje_url": "https://qkhmtmwfwyscvtveiwui.supabase.co",
+      "_kaynak": "Repoda bulundu: docs/DURUM_RAPORU.md ve AI_PROMPT.md (ikisi aynı)."
+    },
+    "apple": {
+      "team_id": ""
+    },
+    "magaza_urunleri": {
+      "_not": "App Store Connect + Play Console + RevenueCat'te bu kimliklerle oluştur. Fiyatı mağazada sen belirlersin; uygulama mağazadan okur. Business planı kapalı — oluşturma.",
+      "voxelo_plus_monthly": {
+        "fiyat_tl": 240,
+        "ucretsiz_deneme_gun": 0
+      },
+      "voxelo_plus_yearly": {
+        "fiyat_tl": 2600,
+        "ucretsiz_deneme_gun": 0
+      },
+      "voxelo_plus_family": {
+        "fiyat_tl": 8000,
+        "ucretsiz_deneme_gun": 0
+      }
+    }
+  },
+  "yapay_zeka_isleri": {
+    "_ortam": "export AI_BASE_URL=<servis>/v1 AI_API_KEY=<anahtar> AI_MODEL=<model>   (OpenAI, Gemini, DeepSeek, OpenRouter — hangisi olursa)",
+    "sira": [
+      {
+        "id": "ui",
+        "komut": "python3 tools/content_ai.py translate-ui",
+        "amac": "Arayüz metinlerinin 30 dilin hepsinde dolması (kapsama testi bununla geçer)",
+        "hedef_dosyalar": [
+          "lib/core/l10n/i18n_ui.dart",
+          "lib/core/l10n/i18n_store.dart"
+        ]
+      },
+      {
+        "id": "icerik",
+        "komut": "python3 tools/content_ai.py fill-all",
+        "amac": "Her dilde A1 24 / A2 16 / B1 12 / B2 8 senaryo + seviye başına 3–4 hikâye",
+        "hedef_dosyalar": [
+          "assets/content/packs/<dil>.json"
+        ]
+      },
+      {
+        "id": "ceviri",
+        "komut": "python3 tools/content_ai.py translate-all",
+        "amac": "Tüm ders içeriği (cümle, başlık, yönerge, gramer, hikâye, alfabe, telaffuz) 30 dilde",
+        "hedef_dosyalar": [
+          "assets/content/i18n/<dil>.json"
+        ]
+      },
+      {
+        "id": "magaza",
+        "komut": "python3 tools/content_ai.py store",
+        "amac": "28 dilin mağaza metni (İngilizce kaynaktan, AI/premium ses vaadi olmadan)",
+        "hedef_dosyalar": [
+          "docs/STORE_METADATA_ALL.md"
+        ]
+      },
+      {
+        "id": "durum",
+        "komut": "python3 tools/content_ai.py status",
+        "amac": "Kapsama raporu",
+        "hedef_dosyalar": [
+          "docs/content_tasks/STATUS.md"
+        ]
+      }
+    ],
+    "elle_alternatif": "Her iş için: python3 tools/content_ai.py prompt <translate-ui|generate|stories|store|translate> ... > prompt.txt → yapay zekâya yapıştır → cevabı cevap.json kaydet → python3 tools/content_ai.py import cevap.json --ui <dil> | --pack <dil> | --store"
+  },
+  "sunucu_isleri": [
+    {
+      "id": "migration",
+      "ne": "supabase/migrations/20260929120001_voxelith_fallback_names.sql dosyasını Supabase'e uygula (SQL editor veya 'supabase db push')."
+    },
+    {
+      "id": "fonksiyonlar",
+      "ne": "Yalnızca revenuecat-webhook fonksiyonunu deploy et. ai-feedback, chat, tts, translate, interpreter-translate DEPLOY ETME — kapalılar; deploy edilse bile VOXELITH_PAID_APIS secret'ı olmadan 410 döner."
+    },
+    {
+      "id": "site",
+      "ne": "site/ klasörünü alan adının köküne yayınla (GitHub Pages / Netlify / Cloudflare Pages ücretsiz). privacy.html, terms.html, delete-account.html, app-ads.txt erişilebilir olmalı."
+    },
+    {
+      "id": "firebase",
+      "ne": "İSTEĞE BAĞLI — Crashlytics için Firebase projesi aç, google-services.json + GoogleService-Info.plist'i ver. Verilmezse Crashlytics eklenmez."
+    }
+  ],
+  "build": {
+    "_not": "tools/apply_config.py çalıştıktan sonra tam komutu ekrana basar.",
+    "android": "flutter build appbundle --release --dart-define=VOXELITH_ADMOB_REWARDED_ANDROID=... --dart-define=VOXELITH_ADMOB_INTERSTITIAL_ANDROID=... --dart-define=VOXELO_REVENUECAT_API_KEY=$REVENUECAT_PUBLIC_KEY --dart-define=VOXELO_REVENUECAT_ENTITLEMENT_ID=plus",
+    "ios": "flutter build ipa --release (aynı dart-define'lar, _IOS birimleriyle)"
+  }
+}

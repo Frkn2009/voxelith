@@ -1,5 +1,17 @@
+import '../../../core/l10n/i18n.dart';
+import '../../../core/l10n/i18n_ui.dart';
+import '../../../data/models/models.dart';
 import '../domain/ai_feedback.dart';
 import 'ai_service.dart';
+
+/// Kullanıcıya gösterilen geri bildirim metinleri için `nativeLanguage`
+/// kodunu (UiLang adı) I18n'e çevirir; bilinmeyen kodda İngilizce.
+I18n aiFeedbackI18n(String nativeLanguage) => I18n(
+  UiLang.values.firstWhere(
+    (u) => u.name == nativeLanguage,
+    orElse: () => UiLang.en,
+  ),
+);
 
 /// Offline çalışan sahte AI — API bağlanana kadar kullanılır
 class FakeAiService implements AiService {
@@ -11,6 +23,7 @@ class FakeAiService implements AiService {
     required String nativeLanguage,
   }) async {
     await Future.delayed(const Duration(milliseconds: 500));
+    final i18n = aiFeedbackI18n(nativeLanguage);
 
     final source = sourceText.toLowerCase().trim();
     final answer = userAnswer.toLowerCase().trim();
@@ -31,20 +44,20 @@ class FakeAiService implements AiService {
 
     final tips = <String>[];
     if (score < 60) {
-      tips.add('Cümleyi yavaşça tekrar dinle ve kelime kelime takip et.');
-      tips.add('Önce ana fiili bul, sonra cümleyi kur.');
+      tips.add(i18n.fakeTipSlowListen);
+      tips.add(i18n.fakeTipFindVerb);
     } else if (score < 80) {
-      tips.add('İyi gidiyorsun! Kelime sırasına dikkat et.');
-      tips.add('Telaffuzu daha yavaş tekrarla.');
+      tips.add(i18n.fakeTipWordOrder);
+      tips.add(i18n.fakeTipSlowerPronunciation);
     } else {
-      tips.add('Harika! Neredeyse mükemmel.');
+      tips.add(i18n.fakeTipAlmostPerfect);
     }
 
     final encouragement = score >= 80
-        ? '🌟 Muhteşem! Devam et!'
+        ? i18n.fakeEncouragementHigh
         : score >= 60
-        ? '💪 İyi çalışıyorsun, biraz daha pratik!'
-        : '🎯 Endişelenme, tekrar güçlendirir!';
+        ? i18n.fakeEncouragementMid
+        : i18n.fakeEncouragementLow;
 
     return AiFeedback(
       userAnswer: userAnswer,

@@ -1,0 +1,3 @@
+"NSMicrophoneUsageDescription" = "VOXELITH uses the microphone during speaking practice so it can check your pronunciation. Recordings are not stored.";
+"NSSpeechRecognitionUsageDescription" = "VOXELITH uses Apple speech recognition to turn what you say into text and give you feedback on your answer.";
+"NSUserTrackingUsageDescription" = "Your data will be used to show you more relevant ads in the free version. You can still use VOXELITH if you decline.";

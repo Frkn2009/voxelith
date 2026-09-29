@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/events/analytics_events.dart';
 import '../../data/supabase/supa_service.dart';
@@ -34,8 +35,9 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
   Future<void> _go() async {
     final mail = _mail.text.trim();
     final pass = _pass.text;
+    final i18n = ref.read(i18nProvider);
     if (mail.isEmpty || pass.length < 6) {
-      setState(() => _err = 'E-posta ve en az 6 haneli şifre gir.');
+      setState(() => _err = i18n.authErrInvalidInput);
       return;
     }
     setState(() {
@@ -47,10 +49,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
       if (_signup) {
         final hasSession = await Supa.signUp(mail, pass);
         if (!hasSession) {
-          setState(
-            () => _info =
-                'Doğrulama e-postası gönderildi. Linke tıkla, sonra buradan giriş yap.',
-          );
+          setState(() => _info = i18n.authVerifySent);
           return;
         }
         await _afterLogin();
@@ -64,14 +63,14 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
       final s = e.toString().toLowerCase();
       setState(() {
         if (s.contains('invalid login')) {
-          _err = 'E-posta veya şifre hatalı.';
+          _err = i18n.authErrWrongCredentials;
         } else if (s.contains('already registered') ||
             s.contains('already exists')) {
-          _err = 'Bu e-posta zaten kayıtlı. Giriş yapmayı dene.';
+          _err = i18n.authErrAlreadyRegistered;
         } else if (s.contains('weak password')) {
-          _err = 'Şifre çok zayıf. En az 6 karakter gir.';
+          _err = i18n.authErrWeakPassword;
         } else {
-          _err = 'Bir şey ters gitti. İnternetini kontrol et, tekrar dene.';
+          _err = i18n.authErrGeneric;
         }
       });
     } finally {
@@ -94,42 +93,43 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final i18n = ref.watch(i18nProvider);
     return Scaffold(
       backgroundColor: Voxelith.cream,
       appBar: VoxelithAppBar(
         backgroundColor: Voxelith.cream,
-        pageTitle: const Text('Hesap'),
+        pageTitle: Text(i18n.accountTitle),
       ),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.fromLTRB(22, 8, 22, 28),
           children: [
-            const Text(
-              'İlerlemeni buluta taşı',
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700),
+            Text(
+              i18n.authHeadline,
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w700),
             ),
             const SizedBox(height: 6),
-            const Text(
-              'Giriş yapınca dil seçimin, seri ve öğrendiğin kalıplar sunucuya yedeklenir. Yeni telefonda aynı hesapla girince kaldığın yerden devam edersin.',
-              style: TextStyle(color: Voxelith.muted, height: 1.45),
+            Text(
+              i18n.authBody,
+              style: const TextStyle(color: Voxelith.muted, height: 1.45),
             ),
             const SizedBox(height: 20),
             TextField(
               controller: _mail,
               keyboardType: TextInputType.emailAddress,
               autocorrect: false,
-              decoration: const InputDecoration(
-                labelText: 'E-posta',
-                border: OutlineInputBorder(),
+              decoration: InputDecoration(
+                labelText: i18n.emailLabel,
+                border: const OutlineInputBorder(),
               ),
             ),
             const SizedBox(height: 12),
             TextField(
               controller: _pass,
               obscureText: true,
-              decoration: const InputDecoration(
-                labelText: 'Şifre (en az 6 karakter)',
-                border: OutlineInputBorder(),
+              decoration: InputDecoration(
+                labelText: i18n.passwordLabel,
+                border: const OutlineInputBorder(),
               ),
             ),
             if (_err != null) ...[
@@ -156,7 +156,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         color: Voxelith.cream,
                       ),
                     )
-                  : Text(_signup ? 'Kayıt ol' : 'Giriş yap'),
+                  : Text(_signup ? i18n.commonSignUp : i18n.commonSignIn),
             ),
             TextButton(
               onPressed: _busy
@@ -167,15 +167,17 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       _info = null;
                     }),
               child: Text(
-                _signup
-                    ? 'Zaten hesabın var mı? Giriş yap'
-                    : 'Hesabın yok mu? Kayıt ol',
+                _signup ? i18n.haveAccountSignIn : i18n.noAccountSignUp,
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
-              'Şifren yalnızca Supabase sunucusunda saklanır. Uygulama şifreni cihazda tutmaz.',
-              style: TextStyle(color: Voxelith.soft, fontSize: 13, height: 1.4),
+            Text(
+              i18n.authPasswordNote,
+              style: const TextStyle(
+                color: Voxelith.soft,
+                fontSize: 13,
+                height: 1.4,
+              ),
             ),
           ],
         ),

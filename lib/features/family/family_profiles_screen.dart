@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/models/models.dart';
 import '../../state/session.dart';
@@ -13,28 +15,30 @@ class FamilyProfilesScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final active = ref.watch(sessionProvider);
+    final i18n = ref.watch(i18nProvider);
     final controller = ref.read(sessionProvider.notifier);
     final profiles = controller.familyProfiles();
     return Scaffold(
-      appBar: VoxelithAppBar(pageTitle: const Text('Aile profilleri')),
+      appBar: VoxelithAppBar(pageTitle: Text(i18n.familyProfilesTitle)),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.fromLTRB(22, 16, 22, 30),
           children: [
             Text(
-              'Kimin sırası?',
+              i18n.whoseTurn,
               style: Theme.of(context).textTheme.displayMedium,
             ),
             const SizedBox(height: 7),
-            const Text(
-              'Her profil kendi dilini, XP’sini, serisini ve tekrarlarını saklar.',
-              style: TextStyle(color: Voxelith.muted, height: 1.4),
+            Text(
+              i18n.familyIntro,
+              style: const TextStyle(color: Voxelith.muted, height: 1.4),
             ),
             const SizedBox(height: 20),
             for (final profile in profiles) ...[
               _profileCard(
                 context,
                 ref,
+                i18n,
                 profile,
                 active.profileId == profile.profileId,
               ),
@@ -44,7 +48,7 @@ class FamilyProfilesScreen extends ConsumerWidget {
               const SizedBox(height: 6),
               OutlinedButton.icon(
                 onPressed: active.isPlus
-                    ? () => _addProfile(context, ref)
+                    ? () => _addProfile(context, ref, i18n)
                     : () => context.push('/paywall'),
                 icon: Icon(
                   active.isPlus
@@ -52,13 +56,15 @@ class FamilyProfilesScreen extends ConsumerWidget {
                       : Icons.lock_outline,
                 ),
                 label: Text(
-                  active.isPlus ? 'Profil ekle' : 'Aile profilleri · Plus',
+                  active.isPlus
+                      ? i18n.addProfile
+                      : '${i18n.familyProfilesTitle} · Plus',
                 ),
               ),
             ],
             const SizedBox(height: 12),
             Text(
-              '${profiles.length} / 4 profil',
+              i18n.profileCount(profiles.length),
               textAlign: TextAlign.center,
               style: const TextStyle(color: Voxelith.muted, fontSize: 12),
             ),
@@ -71,6 +77,7 @@ class FamilyProfilesScreen extends ConsumerWidget {
   Widget _profileCard(
     BuildContext context,
     WidgetRef ref,
+    I18n i18n,
     UserProfile profile,
     bool selected,
   ) => VoxelithCard(
@@ -86,7 +93,11 @@ class FamilyProfilesScreen extends ConsumerWidget {
           radius: 24,
           backgroundColor: selected ? Voxelith.mintDark : Voxelith.cloud,
           child: Text(
-            profile.profileName.characters.first.toUpperCase(),
+            i18n
+                .profileDisplayName(profile.profileName)
+                .characters
+                .first
+                .toUpperCase(),
             style: TextStyle(
               color: selected ? Colors.white : Voxelith.ink,
               fontWeight: FontWeight.w700,
@@ -99,7 +110,7 @@ class FamilyProfilesScreen extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                profile.profileName,
+                i18n.profileDisplayName(profile.profileName),
                 style: const TextStyle(
                   fontWeight: FontWeight.w700,
                   fontSize: 16,
@@ -107,7 +118,7 @@ class FamilyProfilesScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 3),
               Text(
-                '${profile.learnLang.flag()} ${profile.totalXp} XP · ${profile.streak} gün',
+                '${profile.learnLang.flag()} ${profile.totalXp} XP · ${i18n.dayCount(profile.streak)}',
                 style: const TextStyle(color: Voxelith.muted, fontSize: 12),
               ),
             ],
@@ -117,7 +128,7 @@ class FamilyProfilesScreen extends ConsumerWidget {
           const Icon(Icons.check_circle, color: Voxelith.mintDark)
         else if (profile.profileId != 'main')
           IconButton(
-            tooltip: 'Profili sil',
+            tooltip: i18n.deleteProfileTooltip,
             onPressed: () => ref
                 .read(sessionProvider.notifier)
                 .deleteFamilyProfile(profile.profileId),
@@ -127,26 +138,30 @@ class FamilyProfilesScreen extends ConsumerWidget {
     ),
   );
 
-  Future<void> _addProfile(BuildContext context, WidgetRef ref) async {
+  Future<void> _addProfile(
+    BuildContext context,
+    WidgetRef ref,
+    I18n i18n,
+  ) async {
     final text = TextEditingController();
     final name = await showDialog<String>(
       context: context,
       builder: (dialogContext) => AlertDialog(
-        title: const Text('Yeni aile profili'),
+        title: Text(i18n.newFamilyProfile),
         content: TextField(
           controller: text,
           autofocus: true,
           maxLength: 24,
-          decoration: const InputDecoration(labelText: 'Profil adı'),
+          decoration: InputDecoration(labelText: i18n.profileNameLabel),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(dialogContext),
-            child: const Text('Vazgeç'),
+            child: Text(i18n.cancelCta),
           ),
           FilledButton(
             onPressed: () => Navigator.pop(dialogContext, text.text),
-            child: const Text('Ekle'),
+            child: Text(i18n.commonAdd),
           ),
         ],
       ),

@@ -34,6 +34,11 @@ interface HistoryTurn {
 
 Deno.serve(async (request) => {
   if (request.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
+  // Sıfır maliyet: ücretli dış API'ler varsayılan olarak kapalı. Açmak için
+  // Supabase secret: VOXELITH_PAID_APIS=true (bkz. lib/core/features.dart).
+  if (Deno.env.get('VOXELITH_PAID_APIS') !== 'true') {
+    return json({ error: 'feature_disabled' }, 410);
+  }
   if (request.method !== 'POST') return json({ error: 'method_not_allowed' }, 405);
 
   const authorization = request.headers.get('Authorization');

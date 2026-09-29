@@ -1,5 +1,5 @@
 -- ============================================================
--- NURA — Supabase kurulumu (v2)
+-- VOXELITH — Supabase kurulumu (v2)
 -- SQL Editor → New query → BUNU yapıştır → RUN
 --
 -- Eski profiles tablosu farklı yapıdaysa (user_id kolonu yoksa)
@@ -173,7 +173,7 @@ language sql security definer stable set search_path = public as $$
   with ranked as (
     select dense_rank() over (order by board.xp desc, board.updated_at asc) as rank,
       board.user_id,
-      coalesce(nullif(trim(profile.display_name), ''), 'NURA ' || upper(left(board.user_id::text, 4))) as player_name,
+      coalesce(nullif(trim(profile.display_name), ''), 'VOXELITH ' || upper(left(board.user_id::text, 4))) as player_name,
       board.xp
     from public.leaderboard board
     left join public.profiles profile on profile.user_id = board.user_id
@@ -310,7 +310,7 @@ language sql security definer stable set search_path = public as $$
       and points.week_start = date_trunc('week', timezone('utc', now()))::date
   )
   select clan.id, clan.name, clan.join_code, ranked.rank, ranked.user_id,
-    coalesce(nullif(trim(profile.display_name), ''), 'NURA ' || upper(left(ranked.user_id::text, 4))),
+    coalesce(nullif(trim(profile.display_name), ''), 'VOXELITH ' || upper(left(ranked.user_id::text, 4))),
     ranked.xp, ranked.user_id = auth.uid(), clan.owner_id = ranked.user_id
   from ranked
   join public.clans clan on clan.id = ranked.clan_id

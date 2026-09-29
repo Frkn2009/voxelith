@@ -8,11 +8,13 @@ import 'package:uuid/uuid.dart';
 
 import '../core/l10n/i18n.dart';
 import '../data/content/catalog.dart';
+import '../data/content/content_store.dart';
 import '../data/events/analytics_events.dart';
 import '../data/events/weekly_event.dart';
 import '../data/models/achievements.dart';
 import '../data/models/models.dart';
 import '../data/supabase/supa_service.dart';
+import 'streak_rules.dart';
 
 final prefsProvider = Provider<SharedPreferences>((ref) {
   throw UnimplementedError('prefs override in main');
@@ -66,15 +68,6 @@ class SessionController extends Notifier<UserProfile> {
     return '${now.year}-${two(now.month)}-${two(now.day)}';
   }
 
-  bool _isYesterday(String dayKey) {
-    final parts = dayKey.split('-').map(int.tryParse).toList();
-    if (parts.length != 3 || parts.any((part) => part == null)) return false;
-    final previous = DateTime(parts[0]!, parts[1]!, parts[2]!);
-    final now = DateTime.now();
-    final today = DateTime(now.year, now.month, now.day);
-    return today.difference(previous).inDays == 1;
-  }
-
   UserProfile _rollDay(UserProfile p) {
     final today = _today();
     var rolled = p;
@@ -102,6 +95,18 @@ class SessionController extends Notifier<UserProfile> {
     }
     if (rolled.xpDayKey != today) {
       rolled = rolled.copyWith(dailyXp: 0, xpDayKey: today);
+    }
+    final refill = StreakRules.refillForPlus(
+      isPlus: rolled.isPlus,
+      freezes: rolled.streakFreezes,
+      lastRefillWeekKey: rolled.freezeRefillWeekKey,
+      today: DateTime.now(),
+    );
+    if (refill.weekKey != rolled.freezeRefillWeekKey) {
+      rolled = rolled.copyWith(
+        streakFreezes: refill.freezes,
+        freezeRefillWeekKey: refill.weekKey,
+      );
     }
     if (rolled.lastAdEpoch == 0) {
       rolled = rolled.copyWith(
@@ -145,7 +150,13 @@ class SessionController extends Notifier<UserProfile> {
     }
   }
 
-  Future<void> setUi(UiLang ui) => _save(state.copyWith(uiLang: ui));
+  Future<void> setUi(UiLang ui) async {
+    // Yeni dilin içerik çevirileri (assets/content/i18n) ekran yenilenmeden
+    // önce hazır olsun.
+    await ContentStore.ensureLanguage(ui);
+    await _save(state.copyWith(uiLang: ui));
+  }
+
   Future<void> setLearn(LearnLang l) => _save(state.copyWith(learnLang: l));
   Future<void> setMotive(Motive m) => _save(state.copyWith(motive: m));
   Future<void> setCefr(Cefr c) => _save(state.copyWith(cefr: c));
@@ -157,9 +168,11 @@ class SessionController extends Notifier<UserProfile> {
   /// Plan önizlemesinde de değiştirilebilir olduğu için 5/10/15 dışına
   /// düşerse en yakın geçerli değere yuvarlar.
   Future<void> setDailyGoalMin(int minutes) {
-    final clamped = [5, 10, 15].reduce(
-      (a, b) => (minutes - a).abs() <= (minutes - b).abs() ? a : b,
-    );
+    final clamped = [
+      5,
+      10,
+      15,
+    ].reduce((a, b) => (minutes - a).abs() <= (minutes - b).abs() ? a : b);
     return _save(state.copyWith(dailyGoalMin: clamped));
   }
 
@@ -298,17 +311,19 @@ class SessionController extends Notifier<UserProfile> {
         ? amount * WeeklyEvent.current().multiplier
         : amount;
     final today = _today();
-    var nextStreak = profile.streak;
-    if (profile.lastPracticeDayKey != today) {
-      nextStreak = _isYesterday(profile.lastPracticeDayKey)
-          ? (profile.streak <= 0 ? 1 : profile.streak + 1)
-          : 1;
-    }
+    // Kaçırılan günler seri koruma hakkıyla kapatılır (bkz. StreakRules).
+    final next = StreakRules.onPractice(
+      streak: profile.streak,
+      lastDayKey: profile.lastPracticeDayKey,
+      freezes: profile.streakFreezes,
+      today: DateTime.now(),
+    );
     await _save(
       profile.copyWith(
         totalXp: profile.totalXp + effectiveAmount,
         dailyXp: profile.dailyXp + effectiveAmount,
-        streak: nextStreak,
+        streak: next.streak,
+        streakFreezes: next.freezes,
         lastPracticeDayKey: today,
       ),
     );

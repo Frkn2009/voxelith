@@ -52,7 +52,8 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'hi_intro_2',
-        target: 'मैं एक शिक्षक हूँ। आप क्या काम करते हैं?', // TODO: native review
+        target:
+            'मैं एक शिक्षक हूँ। आप क्या काम करते हैं?', // TODO: native review
         gloss: {
           UiLang.tr: 'Ben öğretmenim. Siz ne iş yapıyorsunuz?',
           UiLang.en: 'I am a teacher. What do you do?',
@@ -222,12 +223,16 @@ final List<Scenario> catalogExtraBatchH = [
     lang: LearnLang.hi,
     cefr: Cefr.a1,
     minutes: 7,
-    titles: {UiLang.tr: 'Sayılar ve saat', UiLang.en: 'Numbers and telling time'},
+    titles: {
+      UiLang.tr: 'Sayılar ve saat',
+      UiLang.en: 'Numbers and telling time',
+    },
     clipLine: 'अभी क्या समय है?',
     grammarNote: GrammarNote(
       rule: {
         UiLang.tr: 'Saat söylerken "बजे" her zaman sayının SONRASINA gelir.',
-        UiLang.en: '"बजे" (o\'clock) always comes AFTER the number, never before.',
+        UiLang.en:
+            '"बजे" (o\'clock) always comes AFTER the number, never before.',
       },
       goodExample: 'तीन बजे',
       badExample: 'बजे तीन',
@@ -280,7 +285,8 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'hi_numbers_time_6',
-        target: 'क्या आप मुझे आज की तारीख़ बता सकते हैं?', // TODO: native review
+        target:
+            'क्या आप मुझे आज की तारीख़ बता सकते हैं?', // TODO: native review
         gloss: {
           UiLang.tr: 'Bugünün tarihini söyleyebilir misiniz?',
           UiLang.en: 'Can you tell me the date today?',
@@ -288,13 +294,19 @@ final List<Scenario> catalogExtraBatchH = [
       ),
     ],
     turns: [
-      SpeakTurn(prompt: 'You want to know the time.', expected: 'अभी क्या समय है?'),
+      SpeakTurn(
+        prompt: 'You want to know the time.',
+        expected: 'अभी क्या समय है?',
+      ),
       SpeakTurn(prompt: 'Someone answers.', expected: 'तीन बज रहे हैं।'),
       SpeakTurn(
         prompt: "You're at the station.",
         expected: 'ट्रेन कितने बजे जाती है?',
       ),
-      SpeakTurn(prompt: 'The clerk answers.', expected: 'यह साढ़े चार बजे जाती है।'),
+      SpeakTurn(
+        prompt: 'The clerk answers.',
+        expected: 'यह साढ़े चार बजे जाती है।',
+      ),
       SpeakTurn(
         prompt: 'You mention your schedule.',
         expected: 'मेरी सुबह दस बजे मीटिंग है।',
@@ -479,7 +491,10 @@ final List<Scenario> catalogExtraBatchH = [
     ],
     turns: [
       SpeakTurn(prompt: 'You start small talk.', expected: 'आज मौसम कैसा है?'),
-      SpeakTurn(prompt: 'You comment on the heat.', expected: 'आज बहुत गर्मी है।'),
+      SpeakTurn(
+        prompt: 'You comment on the heat.',
+        expected: 'आज बहुत गर्मी है।',
+      ),
       SpeakTurn(prompt: 'You look outside.', expected: 'बाहर बारिश हो रही है।'),
       SpeakTurn(prompt: 'You warn a friend.', expected: 'ठंड है, जैकेट ले लो।'),
       SpeakTurn(prompt: 'You check the forecast.', expected: 'कल धूप निकलेगी।'),
@@ -511,7 +526,8 @@ final List<Scenario> catalogExtraBatchH = [
     phrases: [
       Phrase(
         id: 'hi_transport_0',
-        target: 'शहर के केंद्र के लिए कौन सी बस जाती है?', // TODO: native review
+        target:
+            'शहर के केंद्र के लिए कौन सी बस जाती है?', // TODO: native review
         gloss: {
           UiLang.tr: 'Şehir merkezine hangi otobüs gidiyor?',
           UiLang.en: 'Which bus goes to the city center?',
@@ -560,7 +576,10 @@ final List<Scenario> catalogExtraBatchH = [
       Phrase(
         id: 'hi_transport_6',
         target: 'कृपया यहाँ रोकिए।', // TODO: native review
-        gloss: {UiLang.tr: 'Lütfen burada durun.', UiLang.en: 'Please stop here.'},
+        gloss: {
+          UiLang.tr: 'Lütfen burada durun.',
+          UiLang.en: 'Please stop here.',
+        },
       ),
     ],
     turns: [
@@ -572,8 +591,14 @@ final List<Scenario> catalogExtraBatchH = [
         prompt: 'You ask a stranger.',
         expected: 'मैं एयरपोर्ट कैसे पहुँच सकता हूँ?',
       ),
-      SpeakTurn(prompt: 'You decide how to travel.', expected: 'मैं टैक्सी से जाऊँगा।'),
-      SpeakTurn(prompt: 'You check an empty seat.', expected: 'क्या यह सीट खाली है?'),
+      SpeakTurn(
+        prompt: 'You decide how to travel.',
+        expected: 'मैं टैक्सी से जाऊँगा।',
+      ),
+      SpeakTurn(
+        prompt: 'You check an empty seat.',
+        expected: 'क्या यह सीट खाली है?',
+      ),
       SpeakTurn(prompt: 'You need a ticket.', expected: 'टिकट कहाँ मिलेगा?'),
       SpeakTurn(
         prompt: "You're waiting at the platform.",
@@ -663,8 +688,14 @@ final List<Scenario> catalogExtraBatchH = [
         prompt: 'Someone is badly hurt.',
         expected: 'कृपया एम्बुलेंस बुलाइए!',
       ),
-      SpeakTurn(prompt: 'You check your bag.', expected: 'मेरा पासपोर्ट खो गया है।'),
-      SpeakTurn(prompt: 'You witness a crime.', expected: 'कृपया पुलिस को बुलाइए!'),
+      SpeakTurn(
+        prompt: 'You check your bag.',
+        expected: 'मेरा पासपोर्ट खो गया है।',
+      ),
+      SpeakTurn(
+        prompt: 'You witness a crime.',
+        expected: 'कृपया पुलिस को बुलाइए!',
+      ),
       SpeakTurn(
         prompt: 'You need medical help.',
         expected: 'सबसे नज़दीकी अस्पताल कहाँ है?',
@@ -673,7 +704,10 @@ final List<Scenario> catalogExtraBatchH = [
         prompt: 'Someone asks how you feel.',
         expected: 'मुझे बहुत तबीयत ख़राब लग रही है।',
       ),
-      SpeakTurn(prompt: 'You plead for help.', expected: 'कृपया, मुझे अभी मदद चाहिए।'),
+      SpeakTurn(
+        prompt: 'You plead for help.',
+        expected: 'कृपया, मुझे अभी मदद चाहिए।',
+      ),
     ],
   ),
   Scenario(
@@ -747,7 +781,10 @@ final List<Scenario> catalogExtraBatchH = [
       Phrase(
         id: 'hi_routine_6',
         target: 'मैं ग्यारह बजे सो जाता हूँ।', // TODO: native review
-        gloss: {UiLang.tr: 'On birde yatarım.', UiLang.en: 'I go to bed at eleven.'},
+        gloss: {
+          UiLang.tr: 'On birde yatarım.',
+          UiLang.en: 'I go to bed at eleven.',
+        },
       ),
     ],
     turns: [
@@ -759,7 +796,10 @@ final List<Scenario> catalogExtraBatchH = [
         prompt: 'You describe your habit.',
         expected: 'मैं पहले अपने दाँत साफ़ करता हूँ।',
       ),
-      SpeakTurn(prompt: 'You continue the routine.', expected: 'मैं सात बजे नाश्ता करता हूँ।'),
+      SpeakTurn(
+        prompt: 'You continue the routine.',
+        expected: 'मैं सात बजे नाश्ता करता हूँ।',
+      ),
       SpeakTurn(
         prompt: 'They ask how you commute.',
         expected: 'मैं बस से काम पर जाता हूँ।',
@@ -783,7 +823,10 @@ final List<Scenario> catalogExtraBatchH = [
     lang: LearnLang.hi,
     cefr: Cefr.a1,
     minutes: 7,
-    titles: {UiLang.tr: 'Geçmişte bir gün', UiLang.en: 'Telling a story in the past'},
+    titles: {
+      UiLang.tr: 'Geçmişte bir gün',
+      UiLang.en: 'Telling a story in the past',
+    },
     clipLine: 'कल मैं बाज़ार गया।',
     grammarNote: GrammarNote(
       rule: {
@@ -856,13 +899,25 @@ final List<Scenario> catalogExtraBatchH = [
       ),
     ],
     turns: [
-      SpeakTurn(prompt: 'You start telling a story.', expected: 'कल मैं बाज़ार गया।'),
-      SpeakTurn(prompt: 'You continue.', expected: 'मैंने कुछ सब्ज़ियाँ खरीदीं।'),
-      SpeakTurn(prompt: 'You continue.', expected: 'फिर मैं अपने दोस्त से मिला।'),
+      SpeakTurn(
+        prompt: 'You start telling a story.',
+        expected: 'कल मैं बाज़ार गया।',
+      ),
+      SpeakTurn(
+        prompt: 'You continue.',
+        expected: 'मैंने कुछ सब्ज़ियाँ खरीदीं।',
+      ),
+      SpeakTurn(
+        prompt: 'You continue.',
+        expected: 'फिर मैं अपने दोस्त से मिला।',
+      ),
       SpeakTurn(prompt: 'You continue.', expected: 'हमने साथ में कॉफ़ी पी।'),
       SpeakTurn(prompt: 'You continue.', expected: 'उसके बाद मैं घर गया।'),
       SpeakTurn(prompt: 'You continue.', expected: 'मैंने रात का खाना बनाया।'),
-      SpeakTurn(prompt: 'You finish the story.', expected: 'यह एक अच्छा दिन था।'),
+      SpeakTurn(
+        prompt: 'You finish the story.',
+        expected: 'यह एक अच्छा दिन था।',
+      ),
     ],
   ),
 
@@ -873,33 +928,34 @@ final List<Scenario> catalogExtraBatchH = [
     cefr: Cefr.a1,
     minutes: 7,
     titles: {UiLang.tr: 'Tanışma', UiLang.en: 'Getting to know someone'},
-    clipLine: 'สวัสดีครับ ยินดีที่ได้รู้จัก',
+    clipLine: 'สวัสดีค่ะ ยินดีที่ได้รู้จัก',
     grammarNote: GrammarNote(
       rule: {
         UiLang.tr:
             'Cümle sonu kibarlık parçacığı konuşanın cinsiyetine göre '
-            'değişir: erkek "ครับ" der, kadın "ค่ะ" der.',
+            'değişir: erkek "ครับ" der, kadın "ค่ะ" der. Bu derste kadın sesi '
+            'kullanıldığı için cümleler "ค่ะ" ile biter.',
         UiLang.en:
             'The sentence-final politeness particle changes with the '
             "speaker's gender: men say ครับ, women say ค่ะ.",
       },
-      goodExample: 'สวัสดีครับ',
-      badExample: 'สวัสดีค่ะ (erkek konuşmacı için yanlış)',
+      goodExample: 'สวัสดีค่ะ (kadın konuşmacı)',
+      badExample: 'สวัสดีครับ (kadın konuşmacı için yanlış)',
     ),
     phrases: [
       Phrase(
         id: 'th_intro_0',
-        target: 'สวัสดีครับ ยินดีที่ได้รู้จัก', // TODO: native review
+        target: 'สวัสดีค่ะ ยินดีที่ได้รู้จัก', // TODO: native review
         ipa: 'sà-wàt-dii khráp yin-dii thîi dâai rúu-jàk',
         gloss: {
           UiLang.tr: 'Merhaba, tanıştığımıza memnun oldum.',
           UiLang.en: 'Hello, nice to meet you.',
         },
-        hint: 'Erkek konuşmacı formu (ครับ); kadın konuşmacı ค่ะ kullanır.',
+        hint: 'Erkek konuşmacı formu (ค่ะ); kadın konuşmacı ค่ะ kullanır.',
       ),
       Phrase(
         id: 'th_intro_1',
-        target: 'ผมชื่อไอเช่ครับ คุณชื่ออะไร?', // TODO: native review
+        target: 'ฉันชื่อไอเช่ค่ะ คุณชื่ออะไร?', // TODO: native review
         gloss: {
           UiLang.tr: 'Benim adım Ayşe, senin adın ne?',
           UiLang.en: "My name is Ayşe, what's your name?",
@@ -907,7 +963,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_intro_2',
-        target: 'ผมเป็นครูครับ คุณทำงานอะไร?', // TODO: native review
+        target: 'ฉันเป็นครูค่ะ คุณทำงานอะไร?', // TODO: native review
         gloss: {
           UiLang.tr: 'Ben öğretmenim. Sen ne iş yapıyorsun?',
           UiLang.en: 'I am a teacher. What do you do?',
@@ -920,7 +976,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_intro_4',
-        target: 'ผมอายุสามสิบปีครับ', // TODO: native review
+        target: 'ฉันอายุสามสิบปีค่ะ', // TODO: native review
         gloss: {
           UiLang.tr: 'Otuz yaşındayım.',
           UiLang.en: 'I am thirty years old.',
@@ -936,7 +992,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_intro_6',
-        target: 'นี่เบอร์ผมครับ แล้วเจอกันนะ!', // TODO: native review
+        target: 'นี่เบอร์ฉันค่ะ แล้วเจอกันนะ!', // TODO: native review
         gloss: {
           UiLang.tr: 'İşte numaram, sonra görüşürüz!',
           UiLang.en: 'Here is my number, see you later!',
@@ -946,22 +1002,25 @@ final List<Scenario> catalogExtraBatchH = [
     turns: [
       SpeakTurn(
         prompt: 'Someone greets you.',
-        expected: 'สวัสดีครับ ยินดีที่ได้รู้จัก',
+        expected: 'สวัสดีค่ะ ยินดีที่ได้รู้จัก',
       ),
-      SpeakTurn(prompt: 'They ask your name.', expected: 'ผมชื่อไอเช่ครับ คุณชื่ออะไร?'),
+      SpeakTurn(
+        prompt: 'They ask your name.',
+        expected: 'ฉันชื่อไอเช่ค่ะ คุณชื่ออะไร?',
+      ),
       SpeakTurn(
         prompt: 'They ask what you do.',
-        expected: 'ผมเป็นครูครับ คุณทำงานอะไร?',
+        expected: 'ฉันเป็นครูค่ะ คุณทำงานอะไร?',
       ),
       SpeakTurn(prompt: 'They ask your age.', expected: 'คุณอายุเท่าไหร่?'),
-      SpeakTurn(prompt: 'You answer.', expected: 'ผมอายุสามสิบปีครับ'),
+      SpeakTurn(prompt: 'You answer.', expected: 'ฉันอายุสามสิบปีค่ะ'),
       SpeakTurn(
         prompt: 'They ask for your number.',
         expected: 'คุณมีเบอร์โทรศัพท์ไหม?',
       ),
       SpeakTurn(
         prompt: 'You hand it over and say goodbye.',
-        expected: 'นี่เบอร์ผมครับ แล้วเจอกันนะ!',
+        expected: 'นี่เบอร์ฉันค่ะ แล้วเจอกันนะ!',
       ),
     ],
   ),
@@ -971,7 +1030,7 @@ final List<Scenario> catalogExtraBatchH = [
     cefr: Cefr.a1,
     minutes: 7,
     titles: {UiLang.tr: 'Alışveriş', UiLang.en: 'Shopping for clothes'},
-    clipLine: 'ขอโทษครับ เสื้อตัวนี้ราคาเท่าไหร่?',
+    clipLine: 'ขอโทษค่ะ เสื้อตัวนี้ราคาเท่าไหร่?',
     grammarNote: GrammarNote(
       rule: {
         UiLang.tr:
@@ -987,7 +1046,7 @@ final List<Scenario> catalogExtraBatchH = [
     phrases: [
       Phrase(
         id: 'th_shopping_0',
-        target: 'ขอโทษครับ เสื้อตัวนี้ราคาเท่าไหร่?', // TODO: native review
+        target: 'ขอโทษค่ะ เสื้อตัวนี้ราคาเท่าไหร่?', // TODO: native review
         ipa: 'khɔ̌ɔ-thôot khráp',
         gloss: {
           UiLang.tr: 'Affedersiniz, bu gömlek ne kadar?',
@@ -1004,11 +1063,8 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_shopping_2',
-        target: 'ผมลองใส่ได้ไหมครับ?', // TODO: native review
-        gloss: {
-          UiLang.tr: 'Deneyebilir miyim?',
-          UiLang.en: 'Can I try it on?',
-        },
+        target: 'ฉันลองใส่ได้ไหมคะ?', // TODO: native review
+        gloss: {UiLang.tr: 'Deneyebilir miyim?', UiLang.en: 'Can I try it on?'},
       ),
       Phrase(
         id: 'th_shopping_3',
@@ -1020,7 +1076,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_shopping_4',
-        target: 'ผมเอาตัวนี้ครับ', // TODO: native review
+        target: 'ฉันเอาตัวนี้ค่ะ', // TODO: native review
         gloss: {UiLang.tr: 'Bunu alacağım.', UiLang.en: "I'll take this one."},
       ),
       Phrase(
@@ -1033,7 +1089,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_shopping_6',
-        target: 'ขอถุงด้วยครับ', // TODO: native review
+        target: 'ขอถุงด้วยค่ะ', // TODO: native review
         gloss: {
           UiLang.tr: 'Bir poşet alabilir miyim?',
           UiLang.en: 'Can I get a bag, please?',
@@ -1043,17 +1099,17 @@ final List<Scenario> catalogExtraBatchH = [
     turns: [
       SpeakTurn(
         prompt: 'You see a shirt you like.',
-        expected: 'ขอโทษครับ เสื้อตัวนี้ราคาเท่าไหร่?',
+        expected: 'ขอโทษค่ะ เสื้อตัวนี้ราคาเท่าไหร่?',
       ),
       SpeakTurn(prompt: "It's too big.", expected: 'มีไซส์เล็กกว่านี้ไหม?'),
-      SpeakTurn(prompt: 'You want to try it.', expected: 'ผมลองใส่ได้ไหมครับ?'),
+      SpeakTurn(prompt: 'You want to try it.', expected: 'ฉันลองใส่ได้ไหมคะ?'),
       SpeakTurn(
         prompt: 'You look for a place to change.',
         expected: 'ห้องลองเสื้ออยู่ที่ไหน?',
       ),
-      SpeakTurn(prompt: 'You decide to buy it.', expected: 'ผมเอาตัวนี้ครับ'),
+      SpeakTurn(prompt: 'You decide to buy it.', expected: 'ฉันเอาตัวนี้ค่ะ'),
       SpeakTurn(prompt: "You're ready to pay.", expected: 'รับบัตรเครดิตไหม?'),
-      SpeakTurn(prompt: 'You need to carry it home.', expected: 'ขอถุงด้วยครับ'),
+      SpeakTurn(prompt: 'You need to carry it home.', expected: 'ขอถุงด้วยค่ะ'),
     ],
   ),
   Scenario(
@@ -1061,7 +1117,10 @@ final List<Scenario> catalogExtraBatchH = [
     lang: LearnLang.th,
     cefr: Cefr.a1,
     minutes: 7,
-    titles: {UiLang.tr: 'Sayılar ve saat', UiLang.en: 'Numbers and telling time'},
+    titles: {
+      UiLang.tr: 'Sayılar ve saat',
+      UiLang.en: 'Numbers and telling time',
+    },
     clipLine: 'ตอนนี้กี่โมงแล้ว?',
     grammarNote: GrammarNote(
       rule: {
@@ -1110,7 +1169,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_numbers_time_4',
-        target: 'ผมมีประชุมตอนสิบโมงเช้า', // TODO: native review
+        target: 'ฉันมีประชุมตอนสิบโมงเช้า', // TODO: native review
         gloss: {
           UiLang.tr: 'Sabah saat onda toplantım var.',
           UiLang.en: 'I have a meeting at ten in the morning.',
@@ -1135,16 +1194,25 @@ final List<Scenario> catalogExtraBatchH = [
       ),
     ],
     turns: [
-      SpeakTurn(prompt: 'You want to know the time.', expected: 'ตอนนี้กี่โมงแล้ว?'),
+      SpeakTurn(
+        prompt: 'You want to know the time.',
+        expected: 'ตอนนี้กี่โมงแล้ว?',
+      ),
       SpeakTurn(prompt: 'Someone answers.', expected: 'บ่ายสามโมงแล้ว'),
       SpeakTurn(prompt: "You're at the station.", expected: 'รถไฟออกกี่โมง?'),
-      SpeakTurn(prompt: 'The clerk answers.', expected: 'ออกตอนบ่ายสี่โมงครึ่ง'),
+      SpeakTurn(
+        prompt: 'The clerk answers.',
+        expected: 'ออกตอนบ่ายสี่โมงครึ่ง',
+      ),
       SpeakTurn(
         prompt: 'You mention your schedule.',
-        expected: 'ผมมีประชุมตอนสิบโมงเช้า',
+        expected: 'ฉันมีประชุมตอนสิบโมงเช้า',
       ),
       SpeakTurn(prompt: 'You arrange to meet.', expected: 'เจอกันหนึ่งทุ่มนะ'),
-      SpeakTurn(prompt: "You want today's date.", expected: 'วันนี้วันที่เท่าไหร่?'),
+      SpeakTurn(
+        prompt: "You want today's date.",
+        expected: 'วันนี้วันที่เท่าไหร่?',
+      ),
     ],
   ),
   Scenario(
@@ -1153,7 +1221,7 @@ final List<Scenario> catalogExtraBatchH = [
     cefr: Cefr.a1,
     minutes: 7,
     titles: {UiLang.tr: 'Aile', UiLang.en: 'Talking about family'},
-    clipLine: 'นี่คือแม่ของผม',
+    clipLine: 'นี่คือแม่ของฉัน',
     grammarNote: GrammarNote(
       rule: {
         UiLang.tr: 'İnsanları sayarken sınıflayıcı olarak "คน" kullanılır.',
@@ -1165,17 +1233,17 @@ final List<Scenario> catalogExtraBatchH = [
     phrases: [
       Phrase(
         id: 'th_family_0',
-        target: 'นี่คือแม่ของผม', // TODO: native review
+        target: 'นี่คือแม่ของฉัน', // TODO: native review
         gloss: {UiLang.tr: 'Bu benim annem.', UiLang.en: 'This is my mother.'},
       ),
       Phrase(
         id: 'th_family_1',
-        target: 'นี่คือพ่อของผม', // TODO: native review
+        target: 'นี่คือพ่อของฉัน', // TODO: native review
         gloss: {UiLang.tr: 'Bu benim babam.', UiLang.en: 'This is my father.'},
       ),
       Phrase(
         id: 'th_family_2',
-        target: 'ผมมีพี่น้องสองคน', // TODO: native review
+        target: 'ฉันมีพี่น้องสองคน', // TODO: native review
         gloss: {
           UiLang.tr: 'İki kardeşim var.',
           UiLang.en: 'I have two siblings.',
@@ -1183,7 +1251,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_family_3',
-        target: 'นี่คือน้องชายของผม', // TODO: native review
+        target: 'นี่คือน้องชายของฉัน', // TODO: native review
         gloss: {
           UiLang.tr: 'Bu benim küçük erkek kardeşim.',
           UiLang.en: 'This is my younger brother.',
@@ -1191,7 +1259,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_family_4',
-        target: 'นี่คือพี่สาวของผม', // TODO: native review
+        target: 'นี่คือพี่สาวของฉัน', // TODO: native review
         gloss: {
           UiLang.tr: 'Bu benim büyük ablam.',
           UiLang.en: 'This is my older sister.',
@@ -1200,14 +1268,11 @@ final List<Scenario> catalogExtraBatchH = [
       Phrase(
         id: 'th_family_5',
         target: 'เธอเป็นภรรยาคุณใช่ไหม?', // TODO: native review
-        gloss: {
-          UiLang.tr: 'O senin eşin mi?',
-          UiLang.en: 'Is she your wife?',
-        },
+        gloss: {UiLang.tr: 'O senin eşin mi?', UiLang.en: 'Is she your wife?'},
       ),
       Phrase(
         id: 'th_family_6',
-        target: 'ลูกชายผมอายุห้าขวบ', // TODO: native review
+        target: 'ลูกชายฉันอายุห้าขวบ', // TODO: native review
         gloss: {
           UiLang.tr: 'Oğlum beş yaşında.',
           UiLang.en: 'My son is five years old.',
@@ -1216,18 +1281,24 @@ final List<Scenario> catalogExtraBatchH = [
       ),
     ],
     turns: [
-      SpeakTurn(prompt: 'You show a photo.', expected: 'นี่คือแม่ของผม'),
-      SpeakTurn(prompt: 'You point to another person.', expected: 'นี่คือพ่อของผม'),
-      SpeakTurn(prompt: 'Someone asks about siblings.', expected: 'ผมมีพี่น้องสองคน'),
-      SpeakTurn(prompt: 'You introduce him.', expected: 'นี่คือน้องชายของผม'),
-      SpeakTurn(prompt: 'You introduce her.', expected: 'นี่คือพี่สาวของผม'),
+      SpeakTurn(prompt: 'You show a photo.', expected: 'นี่คือแม่ของฉัน'),
+      SpeakTurn(
+        prompt: 'You point to another person.',
+        expected: 'นี่คือพ่อของฉัน',
+      ),
+      SpeakTurn(
+        prompt: 'Someone asks about siblings.',
+        expected: 'ฉันมีพี่น้องสองคน',
+      ),
+      SpeakTurn(prompt: 'You introduce him.', expected: 'นี่คือน้องชายของฉัน'),
+      SpeakTurn(prompt: 'You introduce her.', expected: 'นี่คือพี่สาวของฉัน'),
       SpeakTurn(
         prompt: 'Someone asks about her.',
         expected: 'เธอเป็นภรรยาคุณใช่ไหม?',
       ),
       SpeakTurn(
         prompt: 'Someone asks about your son.',
-        expected: 'ลูกชายผมอายุห้าขวบ',
+        expected: 'ลูกชายฉันอายุห้าขวบ',
       ),
     ],
   ),
@@ -1299,7 +1370,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_weather_6',
-        target: 'ผมชอบหน้าหนาวมากกว่าหน้าร้อน', // TODO: native review
+        target: 'ฉันชอบหน้าหนาวมากกว่าหน้าร้อน', // TODO: native review
         gloss: {
           UiLang.tr: 'Yazdan çok kışı severim.',
           UiLang.en: 'I like winter more than summer.',
@@ -1307,18 +1378,24 @@ final List<Scenario> catalogExtraBatchH = [
       ),
     ],
     turns: [
-      SpeakTurn(prompt: 'You start small talk.', expected: 'วันนี้อากาศเป็นยังไง?'),
+      SpeakTurn(
+        prompt: 'You start small talk.',
+        expected: 'วันนี้อากาศเป็นยังไง?',
+      ),
       SpeakTurn(prompt: 'You comment on the heat.', expected: 'วันนี้ร้อนมาก'),
       SpeakTurn(prompt: 'You look outside.', expected: 'ข้างนอกฝนตก'),
       SpeakTurn(
         prompt: 'You warn a friend.',
         expected: 'อากาศหนาว เอาเสื้อกันหนาวไปด้วยนะ',
       ),
-      SpeakTurn(prompt: 'You check the forecast.', expected: 'พรุ่งนี้แดดจะออก'),
+      SpeakTurn(
+        prompt: 'You check the forecast.',
+        expected: 'พรุ่งนี้แดดจะออก',
+      ),
       SpeakTurn(prompt: 'You feel the wind.', expected: 'ลมแรงมาก'),
       SpeakTurn(
         prompt: 'You share your preference.',
-        expected: 'ผมชอบหน้าหนาวมากกว่าหน้าร้อน',
+        expected: 'ฉันชอบหน้าหนาวมากกว่าหน้าร้อน',
       ),
     ],
   ),
@@ -1337,8 +1414,8 @@ final List<Scenario> catalogExtraBatchH = [
             'The future/intention marker "จะ" goes directly BEFORE the '
             'verb.',
       },
-      goodExample: 'ผมจะนั่งแท็กซี่',
-      badExample: 'ผมนั่งจะแท็กซี่',
+      goodExample: 'ฉันจะนั่งแท็กซี่',
+      badExample: 'ฉันนั่งจะแท็กซี่',
     ),
     phrases: [
       Phrase(
@@ -1359,7 +1436,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_transport_2',
-        target: 'ผมจะนั่งแท็กซี่', // TODO: native review
+        target: 'ฉันจะนั่งแท็กซี่', // TODO: native review
         gloss: {
           UiLang.tr: 'Taksiye bineceğim.',
           UiLang.en: 'I will take a taxi.',
@@ -1391,8 +1468,11 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_transport_6',
-        target: 'จอดตรงนี้ด้วยครับ', // TODO: native review
-        gloss: {UiLang.tr: 'Lütfen burada durun.', UiLang.en: 'Please stop here.'},
+        target: 'จอดตรงนี้ด้วยค่ะ', // TODO: native review
+        gloss: {
+          UiLang.tr: 'Lütfen burada durun.',
+          UiLang.en: 'Please stop here.',
+        },
       ),
     ],
     turns: [
@@ -1401,14 +1481,20 @@ final List<Scenario> catalogExtraBatchH = [
         expected: 'รถเมล์สายไหนไปใจกลางเมือง?',
       ),
       SpeakTurn(prompt: 'You ask a stranger.', expected: 'ไปสนามบินยังไง?'),
-      SpeakTurn(prompt: 'You decide how to travel.', expected: 'ผมจะนั่งแท็กซี่'),
-      SpeakTurn(prompt: 'You check an empty seat.', expected: 'ที่นั่งนี้มีคนนั่งไหม?'),
+      SpeakTurn(
+        prompt: 'You decide how to travel.',
+        expected: 'ฉันจะนั่งแท็กซี่',
+      ),
+      SpeakTurn(
+        prompt: 'You check an empty seat.',
+        expected: 'ที่นั่งนี้มีคนนั่งไหม?',
+      ),
       SpeakTurn(prompt: 'You need a ticket.', expected: 'ซื้อตั๋วได้ที่ไหน?'),
       SpeakTurn(
         prompt: "You're waiting at the platform.",
         expected: 'รถไฟเที่ยวต่อไปออกกี่โมง?',
       ),
-      SpeakTurn(prompt: "You're in the taxi.", expected: 'จอดตรงนี้ด้วยครับ'),
+      SpeakTurn(prompt: "You're in the taxi.", expected: 'จอดตรงนี้ด้วยค่ะ'),
     ],
   ),
   Scenario(
@@ -1447,7 +1533,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_emergency_2',
-        target: 'ผมทำพาสปอร์ตหาย', // TODO: native review
+        target: 'ฉันทำพาสปอร์ตหาย', // TODO: native review
         gloss: {
           UiLang.tr: 'Pasaportumu kaybettim.',
           UiLang.en: 'I lost my passport.',
@@ -1471,7 +1557,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_emergency_5',
-        target: 'ผมรู้สึกไม่สบายมาก', // TODO: native review
+        target: 'ฉันรู้สึกไม่สบายมาก', // TODO: native review
         gloss: {
           UiLang.tr: 'Kendimi çok kötü hissediyorum.',
           UiLang.en: 'I feel very sick.',
@@ -1479,7 +1565,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_emergency_6',
-        target: 'ได้โปรด ผมต้องการความช่วยเหลือตอนนี้', // TODO: native review
+        target: 'ได้โปรด ฉันต้องการความช่วยเหลือตอนนี้', // TODO: native review
         gloss: {
           UiLang.tr: 'Lütfen, şimdi yardıma ihtiyacım var.',
           UiLang.en: 'Please, I need help now.',
@@ -1488,17 +1574,26 @@ final List<Scenario> catalogExtraBatchH = [
     ],
     turns: [
       SpeakTurn(prompt: 'Something just happened.', expected: 'ช่วยด้วย!'),
-      SpeakTurn(prompt: 'Someone is badly hurt.', expected: 'ช่วยเรียกรถพยาบาลด้วย!'),
-      SpeakTurn(prompt: 'You check your bag.', expected: 'ผมทำพาสปอร์ตหาย'),
-      SpeakTurn(prompt: 'You witness a crime.', expected: 'ช่วยเรียกตำรวจด้วย!'),
+      SpeakTurn(
+        prompt: 'Someone is badly hurt.',
+        expected: 'ช่วยเรียกรถพยาบาลด้วย!',
+      ),
+      SpeakTurn(prompt: 'You check your bag.', expected: 'ฉันทำพาสปอร์ตหาย'),
+      SpeakTurn(
+        prompt: 'You witness a crime.',
+        expected: 'ช่วยเรียกตำรวจด้วย!',
+      ),
       SpeakTurn(
         prompt: 'You need medical help.',
         expected: 'โรงพยาบาลที่ใกล้ที่สุดอยู่ที่ไหน?',
       ),
-      SpeakTurn(prompt: 'Someone asks how you feel.', expected: 'ผมรู้สึกไม่สบายมาก'),
+      SpeakTurn(
+        prompt: 'Someone asks how you feel.',
+        expected: 'ฉันรู้สึกไม่สบายมาก',
+      ),
       SpeakTurn(
         prompt: 'You plead for help.',
-        expected: 'ได้โปรด ผมต้องการความช่วยเหลือตอนนี้',
+        expected: 'ได้โปรด ฉันต้องการความช่วยเหลือตอนนี้',
       ),
     ],
   ),
@@ -1508,7 +1603,7 @@ final List<Scenario> catalogExtraBatchH = [
     cefr: Cefr.a1,
     minutes: 7,
     titles: {UiLang.tr: 'Günlük rutin', UiLang.en: 'Daily routine'},
-    clipLine: 'ผมมักจะตื่นนอนตอนหกโมง',
+    clipLine: 'ฉันมักจะตื่นนอนตอนหกโมง',
     grammarNote: GrammarNote(
       rule: {
         UiLang.tr:
@@ -1518,13 +1613,13 @@ final List<Scenario> catalogExtraBatchH = [
             'The completion marker "แล้ว" comes AFTER the verb phrase — '
             'never before it.',
       },
-      goodExample: 'ผมกินข้าวแล้ว',
-      badExample: 'ผมแล้วกินข้าว',
+      goodExample: 'ฉันกินข้าวแล้ว',
+      badExample: 'ฉันแล้วกินข้าว',
     ),
     phrases: [
       Phrase(
         id: 'th_routine_0',
-        target: 'ผมมักจะตื่นนอนตอนหกโมง', // TODO: native review
+        target: 'ฉันมักจะตื่นนอนตอนหกโมง', // TODO: native review
         gloss: {
           UiLang.tr: 'Genelde altıda kalkarım.',
           UiLang.en: 'I usually wake up at six.',
@@ -1532,7 +1627,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_routine_1',
-        target: 'ผมแปรงฟันก่อน', // TODO: native review
+        target: 'ฉันแปรงฟันก่อน', // TODO: native review
         gloss: {
           UiLang.tr: 'Önce dişlerimi fırçalarım.',
           UiLang.en: 'I brush my teeth first.',
@@ -1540,7 +1635,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_routine_2',
-        target: 'ผมกินข้าวเช้าตอนเจ็ดโมง', // TODO: native review
+        target: 'ฉันกินข้าวเช้าตอนเจ็ดโมง', // TODO: native review
         gloss: {
           UiLang.tr: 'Yedide kahvaltı yaparım.',
           UiLang.en: 'I have breakfast at seven.',
@@ -1548,7 +1643,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_routine_3',
-        target: 'ผมไปทำงานโดยรถเมล์', // TODO: native review
+        target: 'ฉันไปทำงานโดยรถเมล์', // TODO: native review
         gloss: {
           UiLang.tr: 'İşe otobüsle giderim.',
           UiLang.en: 'I go to work by bus.',
@@ -1556,7 +1651,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_routine_4',
-        target: 'ผมมักจะกินข้าวเที่ยงตอนเที่ยง', // TODO: native review
+        target: 'ฉันมักจะกินข้าวเที่ยงตอนเที่ยง', // TODO: native review
         gloss: {
           UiLang.tr: 'Genelde öğlen yemek yerim.',
           UiLang.en: 'I usually eat lunch at noon.',
@@ -1564,7 +1659,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_routine_5',
-        target: 'หลังอาหารเย็นผมดูทีวี', // TODO: native review
+        target: 'หลังอาหารเย็นฉันดูทีวี', // TODO: native review
         gloss: {
           UiLang.tr: 'Akşam yemeğinden sonra televizyon izlerim.',
           UiLang.en: 'After dinner I watch TV.',
@@ -1572,28 +1667,40 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_routine_6',
-        target: 'ผมเข้านอนตอนห้าทุ่ม', // TODO: native review
-        gloss: {UiLang.tr: 'On birde yatarım.', UiLang.en: 'I go to bed at eleven.'},
+        target: 'ฉันเข้านอนตอนห้าทุ่ม', // TODO: native review
+        gloss: {
+          UiLang.tr: 'On birde yatarım.',
+          UiLang.en: 'I go to bed at eleven.',
+        },
         hint: '23:00 Thai saat sisteminde "ห้าทุ่ม" (akşamın 5. saati).',
       ),
     ],
     turns: [
       SpeakTurn(
         prompt: 'Someone asks about your morning.',
-        expected: 'ผมมักจะตื่นนอนตอนหกโมง',
+        expected: 'ฉันมักจะตื่นนอนตอนหกโมง',
       ),
-      SpeakTurn(prompt: 'You describe your habit.', expected: 'ผมแปรงฟันก่อน'),
+      SpeakTurn(prompt: 'You describe your habit.', expected: 'ฉันแปรงฟันก่อน'),
       SpeakTurn(
         prompt: 'You continue the routine.',
-        expected: 'ผมกินข้าวเช้าตอนเจ็ดโมง',
+        expected: 'ฉันกินข้าวเช้าตอนเจ็ดโมง',
       ),
-      SpeakTurn(prompt: 'They ask how you commute.', expected: 'ผมไปทำงานโดยรถเมล์'),
+      SpeakTurn(
+        prompt: 'They ask how you commute.',
+        expected: 'ฉันไปทำงานโดยรถเมล์',
+      ),
       SpeakTurn(
         prompt: 'They ask about lunch.',
-        expected: 'ผมมักจะกินข้าวเที่ยงตอนเที่ยง',
+        expected: 'ฉันมักจะกินข้าวเที่ยงตอนเที่ยง',
       ),
-      SpeakTurn(prompt: 'They ask about the evening.', expected: 'หลังอาหารเย็นผมดูทีวี'),
-      SpeakTurn(prompt: 'They ask when you sleep.', expected: 'ผมเข้านอนตอนห้าทุ่ม'),
+      SpeakTurn(
+        prompt: 'They ask about the evening.',
+        expected: 'หลังอาหารเย็นฉันดูทีวี',
+      ),
+      SpeakTurn(
+        prompt: 'They ask when you sleep.',
+        expected: 'ฉันเข้านอนตอนห้าทุ่ม',
+      ),
     ],
   ),
   Scenario(
@@ -1601,8 +1708,11 @@ final List<Scenario> catalogExtraBatchH = [
     lang: LearnLang.th,
     cefr: Cefr.a1,
     minutes: 7,
-    titles: {UiLang.tr: 'Geçmişte bir gün', UiLang.en: 'Telling a story in the past'},
-    clipLine: 'เมื่อวานผมไปตลาด',
+    titles: {
+      UiLang.tr: 'Geçmişte bir gün',
+      UiLang.en: 'Telling a story in the past',
+    },
+    clipLine: 'เมื่อวานฉันไปตลาด',
     grammarNote: GrammarNote(
       rule: {
         UiLang.tr:
@@ -1612,13 +1722,13 @@ final List<Scenario> catalogExtraBatchH = [
             'Thai verbs never conjugate for tense — time words like '
             '"เมื่อวาน" (yesterday) carry the past meaning instead.',
       },
-      goodExample: 'เมื่อวานผมไปตลาด',
-      badExample: 'เมื่อวานผมจะไปตลาด',
+      goodExample: 'เมื่อวานฉันไปตลาด',
+      badExample: 'เมื่อวานฉันจะไปตลาด',
     ),
     phrases: [
       Phrase(
         id: 'th_past_story_0',
-        target: 'เมื่อวานผมไปตลาด', // TODO: native review
+        target: 'เมื่อวานฉันไปตลาด', // TODO: native review
         gloss: {
           UiLang.tr: 'Dün pazara gittim.',
           UiLang.en: 'Yesterday I went to the market.',
@@ -1626,7 +1736,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_past_story_1',
-        target: 'ผมซื้อผัก', // TODO: native review
+        target: 'ฉันซื้อผัก', // TODO: native review
         gloss: {
           UiLang.tr: 'Biraz sebze aldım.',
           UiLang.en: 'I bought some vegetables.',
@@ -1634,7 +1744,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_past_story_2',
-        target: 'แล้วผมก็เจอเพื่อน', // TODO: native review
+        target: 'แล้วฉันก็เจอเพื่อน', // TODO: native review
         gloss: {
           UiLang.tr: 'Sonra arkadaşımla buluştum.',
           UiLang.en: 'Then I met my friend.',
@@ -1650,7 +1760,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_past_story_4',
-        target: 'หลังจากนั้นผมก็กลับบ้าน', // TODO: native review
+        target: 'หลังจากนั้นฉันก็กลับบ้าน', // TODO: native review
         gloss: {
           UiLang.tr: 'Ondan sonra eve gittim.',
           UiLang.en: 'After that I went home.',
@@ -1658,7 +1768,7 @@ final List<Scenario> catalogExtraBatchH = [
       ),
       Phrase(
         id: 'th_past_story_5',
-        target: 'ผมทำอาหารเย็น', // TODO: native review
+        target: 'ฉันทำอาหารเย็น', // TODO: native review
         gloss: {
           UiLang.tr: 'Akşam yemeği pişirdim.',
           UiLang.en: 'I cooked dinner.',
@@ -1671,12 +1781,15 @@ final List<Scenario> catalogExtraBatchH = [
       ),
     ],
     turns: [
-      SpeakTurn(prompt: 'You start telling a story.', expected: 'เมื่อวานผมไปตลาด'),
-      SpeakTurn(prompt: 'You continue.', expected: 'ผมซื้อผัก'),
-      SpeakTurn(prompt: 'You continue.', expected: 'แล้วผมก็เจอเพื่อน'),
+      SpeakTurn(
+        prompt: 'You start telling a story.',
+        expected: 'เมื่อวานฉันไปตลาด',
+      ),
+      SpeakTurn(prompt: 'You continue.', expected: 'ฉันซื้อผัก'),
+      SpeakTurn(prompt: 'You continue.', expected: 'แล้วฉันก็เจอเพื่อน'),
       SpeakTurn(prompt: 'You continue.', expected: 'เราดื่มกาแฟด้วยกัน'),
-      SpeakTurn(prompt: 'You continue.', expected: 'หลังจากนั้นผมก็กลับบ้าน'),
-      SpeakTurn(prompt: 'You continue.', expected: 'ผมทำอาหารเย็น'),
+      SpeakTurn(prompt: 'You continue.', expected: 'หลังจากนั้นฉันก็กลับบ้าน'),
+      SpeakTurn(prompt: 'You continue.', expected: 'ฉันทำอาหารเย็น'),
       SpeakTurn(prompt: 'You finish the story.', expected: 'เป็นวันที่ดีมาก'),
     ],
   ),
@@ -1822,10 +1935,7 @@ final List<Scenario> catalogExtraBatchH = [
       Phrase(
         id: 'vi_shopping_2',
         target: 'Tôi mặc thử được không?', // TODO: native review
-        gloss: {
-          UiLang.tr: 'Deneyebilir miyim?',
-          UiLang.en: 'Can I try it on?',
-        },
+        gloss: {UiLang.tr: 'Deneyebilir miyim?', UiLang.en: 'Can I try it on?'},
       ),
       Phrase(
         id: 'vi_shopping_3',
@@ -1863,7 +1973,10 @@ final List<Scenario> catalogExtraBatchH = [
         expected: 'Xin lỗi, cái áo này bao nhiêu tiền?',
       ),
       SpeakTurn(prompt: "It's too big.", expected: 'Có size nhỏ hơn không?'),
-      SpeakTurn(prompt: 'You want to try it.', expected: 'Tôi mặc thử được không?'),
+      SpeakTurn(
+        prompt: 'You want to try it.',
+        expected: 'Tôi mặc thử được không?',
+      ),
       SpeakTurn(
         prompt: 'You look for a place to change.',
         expected: 'Phòng thử đồ ở đâu?',
@@ -1884,7 +1997,10 @@ final List<Scenario> catalogExtraBatchH = [
     lang: LearnLang.vi,
     cefr: Cefr.a1,
     minutes: 7,
-    titles: {UiLang.tr: 'Sayılar ve saat', UiLang.en: 'Numbers and telling time'},
+    titles: {
+      UiLang.tr: 'Sayılar ve saat',
+      UiLang.en: 'Numbers and telling time',
+    },
     clipLine: 'Bây giờ là mấy giờ?',
     grammarNote: GrammarNote(
       rule: {
@@ -1954,9 +2070,15 @@ final List<Scenario> catalogExtraBatchH = [
       ),
     ],
     turns: [
-      SpeakTurn(prompt: 'You want to know the time.', expected: 'Bây giờ là mấy giờ?'),
+      SpeakTurn(
+        prompt: 'You want to know the time.',
+        expected: 'Bây giờ là mấy giờ?',
+      ),
       SpeakTurn(prompt: 'Someone answers.', expected: 'Bây giờ là ba giờ.'),
-      SpeakTurn(prompt: "You're at the station.", expected: 'Tàu chạy lúc mấy giờ?'),
+      SpeakTurn(
+        prompt: "You're at the station.",
+        expected: 'Tàu chạy lúc mấy giờ?',
+      ),
       SpeakTurn(
         prompt: 'The clerk answers.',
         expected: 'Tàu chạy lúc bốn giờ rưỡi.',
@@ -1969,7 +2091,10 @@ final List<Scenario> catalogExtraBatchH = [
         prompt: 'You arrange to meet.',
         expected: 'Hẹn gặp lúc bảy giờ tối nhé.',
       ),
-      SpeakTurn(prompt: "You want today's date.", expected: 'Hôm nay là ngày mấy?'),
+      SpeakTurn(
+        prompt: "You want today's date.",
+        expected: 'Hôm nay là ngày mấy?',
+      ),
     ],
   ),
   Scenario(
@@ -2029,10 +2154,7 @@ final List<Scenario> catalogExtraBatchH = [
       Phrase(
         id: 'vi_family_5',
         target: 'Cô ấy là vợ của bạn phải không?', // TODO: native review
-        gloss: {
-          UiLang.tr: 'O senin eşin mi?',
-          UiLang.en: 'Is she your wife?',
-        },
+        gloss: {UiLang.tr: 'O senin eşin mi?', UiLang.en: 'Is she your wife?'},
       ),
       Phrase(
         id: 'vi_family_6',
@@ -2053,8 +2175,14 @@ final List<Scenario> catalogExtraBatchH = [
         prompt: 'Someone asks about siblings.',
         expected: 'Tôi có hai anh chị em.',
       ),
-      SpeakTurn(prompt: 'You introduce him.', expected: 'Đây là em trai của tôi.'),
-      SpeakTurn(prompt: 'You introduce her.', expected: 'Đây là chị gái của tôi.'),
+      SpeakTurn(
+        prompt: 'You introduce him.',
+        expected: 'Đây là em trai của tôi.',
+      ),
+      SpeakTurn(
+        prompt: 'You introduce her.',
+        expected: 'Đây là chị gái của tôi.',
+      ),
       SpeakTurn(
         prompt: 'Someone asks about her.',
         expected: 'Cô ấy là vợ của bạn phải không?',
@@ -2144,13 +2272,22 @@ final List<Scenario> catalogExtraBatchH = [
         prompt: 'You start small talk.',
         expected: 'Hôm nay thời tiết thế nào?',
       ),
-      SpeakTurn(prompt: 'You comment on the heat.', expected: 'Hôm nay trời nóng lắm.'),
-      SpeakTurn(prompt: 'You look outside.', expected: 'Bên ngoài trời đang mưa.'),
+      SpeakTurn(
+        prompt: 'You comment on the heat.',
+        expected: 'Hôm nay trời nóng lắm.',
+      ),
+      SpeakTurn(
+        prompt: 'You look outside.',
+        expected: 'Bên ngoài trời đang mưa.',
+      ),
       SpeakTurn(
         prompt: 'You warn a friend.',
         expected: 'Trời lạnh, mang áo khoác theo nhé.',
       ),
-      SpeakTurn(prompt: 'You check the forecast.', expected: 'Ngày mai trời sẽ nắng.'),
+      SpeakTurn(
+        prompt: 'You check the forecast.',
+        expected: 'Ngày mai trời sẽ nắng.',
+      ),
       SpeakTurn(prompt: 'You feel the wind.', expected: 'Gió thổi mạnh lắm.'),
       SpeakTurn(
         prompt: 'You share your preference.',
@@ -2169,8 +2306,7 @@ final List<Scenario> catalogExtraBatchH = [
       rule: {
         UiLang.tr:
             'Gelecek zaman belirteci "sẽ", doğrudan ana fiilin ÖNÜNE gelir.',
-        UiLang.en:
-            'The future marker "sẽ" goes directly BEFORE the main verb.',
+        UiLang.en: 'The future marker "sẽ" goes directly BEFORE the main verb.',
       },
       goodExample: 'Tôi sẽ đi bằng taxi.',
       badExample: 'Tôi đi sẽ bằng taxi.',
@@ -2227,7 +2363,10 @@ final List<Scenario> catalogExtraBatchH = [
       Phrase(
         id: 'vi_transport_6',
         target: 'Làm ơn dừng ở đây.', // TODO: native review
-        gloss: {UiLang.tr: 'Lütfen burada durun.', UiLang.en: 'Please stop here.'},
+        gloss: {
+          UiLang.tr: 'Lütfen burada durun.',
+          UiLang.en: 'Please stop here.',
+        },
       ),
     ],
     turns: [
@@ -2235,9 +2374,18 @@ final List<Scenario> catalogExtraBatchH = [
         prompt: "You're lost downtown.",
         expected: 'Xe buýt nào đi trung tâm thành phố?',
       ),
-      SpeakTurn(prompt: 'You ask a stranger.', expected: 'Làm sao để đến sân bay?'),
-      SpeakTurn(prompt: 'You decide how to travel.', expected: 'Tôi sẽ đi bằng taxi.'),
-      SpeakTurn(prompt: 'You check an empty seat.', expected: 'Chỗ này có ai ngồi chưa?'),
+      SpeakTurn(
+        prompt: 'You ask a stranger.',
+        expected: 'Làm sao để đến sân bay?',
+      ),
+      SpeakTurn(
+        prompt: 'You decide how to travel.',
+        expected: 'Tôi sẽ đi bằng taxi.',
+      ),
+      SpeakTurn(
+        prompt: 'You check an empty seat.',
+        expected: 'Chỗ này có ai ngồi chưa?',
+      ),
       SpeakTurn(prompt: 'You need a ticket.', expected: 'Mua vé ở đâu?'),
       SpeakTurn(
         prompt: "You're waiting at the platform.",
@@ -2322,9 +2470,18 @@ final List<Scenario> catalogExtraBatchH = [
     ],
     turns: [
       SpeakTurn(prompt: 'Something just happened.', expected: 'Cứu tôi với!'),
-      SpeakTurn(prompt: 'Someone is badly hurt.', expected: 'Làm ơn gọi xe cấp cứu!'),
-      SpeakTurn(prompt: 'You check your bag.', expected: 'Tôi bị mất hộ chiếu.'),
-      SpeakTurn(prompt: 'You witness a crime.', expected: 'Làm ơn gọi cảnh sát!'),
+      SpeakTurn(
+        prompt: 'Someone is badly hurt.',
+        expected: 'Làm ơn gọi xe cấp cứu!',
+      ),
+      SpeakTurn(
+        prompt: 'You check your bag.',
+        expected: 'Tôi bị mất hộ chiếu.',
+      ),
+      SpeakTurn(
+        prompt: 'You witness a crime.',
+        expected: 'Làm ơn gọi cảnh sát!',
+      ),
       SpeakTurn(
         prompt: 'You need medical help.',
         expected: 'Bệnh viện gần nhất ở đâu?',
@@ -2348,8 +2505,7 @@ final List<Scenario> catalogExtraBatchH = [
     clipLine: 'Tôi thường dậy lúc sáu giờ.',
     grammarNote: GrammarNote(
       rule: {
-        UiLang.tr:
-            'Alışkanlık zarfı "thường" (genelde), fiilin ÖNÜNE gelir.',
+        UiLang.tr: 'Alışkanlık zarfı "thường" (genelde), fiilin ÖNÜNE gelir.',
         UiLang.en:
             'The habitual adverb "thường" (usually) is placed BEFORE the '
             'verb.',
@@ -2409,7 +2565,10 @@ final List<Scenario> catalogExtraBatchH = [
       Phrase(
         id: 'vi_routine_6',
         target: 'Tôi đi ngủ lúc mười một giờ.', // TODO: native review
-        gloss: {UiLang.tr: 'On birde yatarım.', UiLang.en: 'I go to bed at eleven.'},
+        gloss: {
+          UiLang.tr: 'On birde yatarım.',
+          UiLang.en: 'I go to bed at eleven.',
+        },
       ),
     ],
     turns: [
@@ -2417,12 +2576,18 @@ final List<Scenario> catalogExtraBatchH = [
         prompt: 'Someone asks about your morning.',
         expected: 'Tôi thường dậy lúc sáu giờ.',
       ),
-      SpeakTurn(prompt: 'You describe your habit.', expected: 'Tôi đánh răng trước.'),
+      SpeakTurn(
+        prompt: 'You describe your habit.',
+        expected: 'Tôi đánh răng trước.',
+      ),
       SpeakTurn(
         prompt: 'You continue the routine.',
         expected: 'Tôi ăn sáng lúc bảy giờ.',
       ),
-      SpeakTurn(prompt: 'They ask how you commute.', expected: 'Tôi đi làm bằng xe buýt.'),
+      SpeakTurn(
+        prompt: 'They ask how you commute.',
+        expected: 'Tôi đi làm bằng xe buýt.',
+      ),
       SpeakTurn(
         prompt: 'They ask about lunch.',
         expected: 'Tôi thường ăn trưa lúc giữa trưa.',
@@ -2442,7 +2607,10 @@ final List<Scenario> catalogExtraBatchH = [
     lang: LearnLang.vi,
     cefr: Cefr.a1,
     minutes: 7,
-    titles: {UiLang.tr: 'Geçmişte bir gün', UiLang.en: 'Telling a story in the past'},
+    titles: {
+      UiLang.tr: 'Geçmişte bir gün',
+      UiLang.en: 'Telling a story in the past',
+    },
     clipLine: 'Hôm qua tôi đã đi chợ.',
     grammarNote: GrammarNote(
       rule: {
@@ -2511,13 +2679,25 @@ final List<Scenario> catalogExtraBatchH = [
       ),
     ],
     turns: [
-      SpeakTurn(prompt: 'You start telling a story.', expected: 'Hôm qua tôi đã đi chợ.'),
+      SpeakTurn(
+        prompt: 'You start telling a story.',
+        expected: 'Hôm qua tôi đã đi chợ.',
+      ),
       SpeakTurn(prompt: 'You continue.', expected: 'Tôi đã mua ít rau.'),
-      SpeakTurn(prompt: 'You continue.', expected: 'Sau đó tôi đã gặp bạn tôi.'),
-      SpeakTurn(prompt: 'You continue.', expected: 'Chúng tôi đã uống cà phê cùng nhau.'),
+      SpeakTurn(
+        prompt: 'You continue.',
+        expected: 'Sau đó tôi đã gặp bạn tôi.',
+      ),
+      SpeakTurn(
+        prompt: 'You continue.',
+        expected: 'Chúng tôi đã uống cà phê cùng nhau.',
+      ),
       SpeakTurn(prompt: 'You continue.', expected: 'Sau đó tôi đã về nhà.'),
       SpeakTurn(prompt: 'You continue.', expected: 'Tôi đã nấu bữa tối.'),
-      SpeakTurn(prompt: 'You finish the story.', expected: 'Đó là một ngày tốt lành.'),
+      SpeakTurn(
+        prompt: 'You finish the story.',
+        expected: 'Đó là một ngày tốt lành.',
+      ),
     ],
   ),
 ];

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/ads/ad_service.dart';
 import '../../data/events/weekly_event.dart';
+import '../../data/models/models.dart';
 import '../../state/session.dart';
 import '../../ui/widgets.dart';
 
@@ -31,11 +33,12 @@ class _WeeklyEventScreenState extends ConsumerState<WeeklyEventScreen> {
     if (!profile.isPlus) watched = await AdService.showRewarded();
     if (!mounted) return;
     if (!profile.isPlus && !watched) {
+      final i18n = ref.read(i18nProvider);
       setState(() {
         busy = false;
         error = AdService.supported
-            ? 'Reklam tamamlanmadı. Tekrar deneyebilirsin.'
-            : 'Video reklamlar yalnızca iOS ve Android uygulamasında çalışır.';
+            ? i18n.eventAdNotCompleted
+            : i18n.eventAdsMobileOnly;
       });
       return;
     }
@@ -48,10 +51,12 @@ class _WeeklyEventScreenState extends ConsumerState<WeeklyEventScreen> {
   @override
   Widget build(BuildContext context) {
     final profile = ref.watch(sessionProvider);
+    final i18n = ref.watch(i18nProvider);
     final event = WeeklyEvent.current();
     final joined = event.isJoined(profile);
+    final eventLang = event.language.label(profile.uiLang);
     return Scaffold(
-      appBar: VoxelithAppBar(pageTitle: const Text('Haftalık etkinlik')),
+      appBar: VoxelithAppBar(pageTitle: Text(i18n.weeklyEventScreenTitle)),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.fromLTRB(22, 18, 22, 30),
@@ -71,7 +76,7 @@ class _WeeklyEventScreenState extends ConsumerState<WeeklyEventScreen> {
                   const VoxelithMascot(size: 100, mood: MascotMood.celebrate),
                   const SizedBox(height: 12),
                   Text(
-                    event.title,
+                    i18n.weeklyEventName(eventLang),
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 27,
@@ -80,7 +85,7 @@ class _WeeklyEventScreenState extends ConsumerState<WeeklyEventScreen> {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    event.description,
+                    i18n.weeklyEventDesc(eventLang),
                     textAlign: TextAlign.center,
                     style: const TextStyle(color: Colors.white70, height: 1.45),
                   ),
@@ -92,25 +97,22 @@ class _WeeklyEventScreenState extends ConsumerState<WeeklyEventScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Eyebrow('Nasıl çalışır?'),
+                  Eyebrow(i18n.howItWorks),
                   const SizedBox(height: 10),
                   _line(
                     Icons.play_circle_outline,
                     profile.isPlus
-                        ? 'Plus üyeler reklamsız katılır'
-                        : 'Bir ödüllü video izle',
+                        ? i18n.eventPlusNoAds
+                        : i18n.eventWatchOneVideo,
                   ),
                   _line(
                     Icons.language_outlined,
-                    'Öğrenme dilini İspanyolca seç',
+                    i18n.eventPickLanguage(eventLang),
                   ),
-                  _line(
-                    Icons.bolt_outlined,
-                    'Sahne, doğru cevap ve oyun XP’sini ikiye katla',
-                  ),
+                  _line(Icons.bolt_outlined, i18n.eventDoubleXp),
                   const SizedBox(height: 8),
                   Text(
-                    'Etkinlik haftası: ${WeeklyEvent.weekKey()}',
+                    i18n.eventWeek(WeeklyEvent.weekKey()),
                     style: const TextStyle(color: Voxelith.muted, fontSize: 12),
                   ),
                 ],
@@ -132,20 +134,20 @@ class _WeeklyEventScreenState extends ConsumerState<WeeklyEventScreen> {
               ),
               label: Text(
                 joined
-                    ? 'Etkinliğe katıldın'
+                    ? i18n.eventJoined
                     : busy
-                    ? 'Video hazırlanıyor…'
+                    ? i18n.videoPreparing
                     : (profile.isPlus
-                          ? 'Reklamsız katıl'
-                          : 'Video izle ve katıl'),
+                          ? i18n.eventJoinNoAds
+                          : i18n.eventWatchAndJoin),
               ),
             ),
             if (joined && profile.learnLang != event.language) ...[
               const SizedBox(height: 10),
-              const Text(
-                '×2 XP için profilinden öğrenme dilini İspanyolca seç.',
+              Text(
+                i18n.eventSwitchLanguageHint(eventLang),
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Voxelith.muted),
+                style: const TextStyle(color: Voxelith.muted),
               ),
             ],
           ],

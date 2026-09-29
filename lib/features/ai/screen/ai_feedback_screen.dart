@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../core/l10n/i18n_ui.dart';
 import '../../../core/theme/tokens.dart';
 import '../../../data/ads/ad_service.dart';
+import '../../../state/session.dart';
 import '../../../ui/widgets.dart';
 import '../domain/ai_feedback.dart';
 import '../state/ai_controller.dart';
@@ -68,20 +70,23 @@ class _AiFeedbackScreenState extends ConsumerState<AiFeedbackScreen> {
     final earned = await AdService.showRewarded();
     if (!mounted) return;
     if (!earned) {
+      final i18n = ref.read(i18nProvider);
       setState(() {
         _watchingAd = false;
         _adError = AdService.supported
-            ? 'Reklam tamamlanmadı. Ödül için videoyu sonuna kadar izle.'
-            : 'Video reklamlar telefonda çalışır.';
+            ? i18n.adNotCompletedWatchToEnd
+            : i18n.adsPhoneOnly;
       });
       return;
     }
-    final bonus = await ref.read(claudeAiServiceProvider).claimFeedbackAdBonus();
+    final bonus = await ref
+        .read(claudeAiServiceProvider)
+        .claimFeedbackAdBonus();
     if (!mounted) return;
     if (bonus == null) {
       setState(() {
         _watchingAd = false;
-        _adError = 'Bağlantı hatası, tekrar dene.';
+        _adError = ref.read(i18nProvider).connectionErrorRetry;
       });
       return;
     }
@@ -101,8 +106,9 @@ class _AiFeedbackScreenState extends ConsumerState<AiFeedbackScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final i18n = ref.watch(i18nProvider);
     return Scaffold(
-      appBar: AppBar(title: const Text('🧠 AI Analiz')),
+      appBar: AppBar(title: Text(i18n.aiAnalysisTitle)),
       body: SafeArea(
         child: loading
             ? const Center(child: CircularProgressIndicator())
@@ -155,7 +161,7 @@ class _AiFeedbackScreenState extends ConsumerState<AiFeedbackScreen> {
                   const SizedBox(height: 24),
 
                   // Beklenen vs Senin cevabın
-                  const Eyebrow('Beklenen cevap'),
+                  Eyebrow(i18n.expectedAnswer),
                   const SizedBox(height: 8),
                   VoxelithCard(
                     color: Voxelith.mint.withValues(alpha: 0.1),
@@ -169,12 +175,12 @@ class _AiFeedbackScreenState extends ConsumerState<AiFeedbackScreen> {
                     ),
                   ),
                   const SizedBox(height: 12),
-                  const Eyebrow('Senin cevabın'),
+                  Eyebrow(i18n.yourAnswer),
                   const SizedBox(height: 8),
                   VoxelithCard(
                     child: Text(
                       feedback!.userAnswer.isEmpty
-                          ? '(ses algılanamadı)'
+                          ? i18n.noAudioDetected
                           : feedback!.userAnswer,
                       style: TextStyle(
                         fontSize: 18,
@@ -188,7 +194,7 @@ class _AiFeedbackScreenState extends ConsumerState<AiFeedbackScreen> {
                   const SizedBox(height: 20),
 
                   // İpuçları
-                  const Eyebrow('💡 İpuçları'),
+                  Eyebrow(i18n.tipsHeading),
                   const SizedBox(height: 8),
                   for (final tip in feedback!.tips)
                     Padding(
@@ -225,7 +231,9 @@ class _AiFeedbackScreenState extends ConsumerState<AiFeedbackScreen> {
                             context.push('/paywall');
                           }
                         : () => Navigator.pop(context),
-                    child: Text(_isPaywallNudge ? 'Plus\'a Geç' : 'Devam Et'),
+                    child: Text(
+                      _isPaywallNudge ? i18n.goPlusCta : i18n.continueAction,
+                    ),
                   ),
                   if (_isPaywallNudge && !_adBonusExhausted) ...[
                     const SizedBox(height: 10),
@@ -234,17 +242,17 @@ class _AiFeedbackScreenState extends ConsumerState<AiFeedbackScreen> {
                       icon: const Icon(Icons.play_circle_outline),
                       label: Text(
                         _watchingAd
-                            ? 'Video hazırlanıyor…'
-                            : 'Reklam izle, +1 hak kazan (günde 5\'e kadar)',
+                            ? i18n.videoPreparing
+                            : i18n.watchAdForBonus,
                       ),
                     ),
                   ],
                   if (_adBonusExhausted) ...[
                     const SizedBox(height: 10),
-                    const Text(
-                      'Bugünkü 5 reklam hakkına da ulaştın.',
+                    Text(
+                      i18n.adBonusExhausted,
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Voxelith.coral),
+                      style: const TextStyle(color: Voxelith.coral),
                     ),
                   ],
                   if (_adError != null) ...[

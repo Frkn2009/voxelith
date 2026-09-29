@@ -1,23 +1,26 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/content/library.dart';
 import '../../data/models/models.dart';
 import '../../data/speech/premium_tts_service.dart';
 import '../../data/speech/speech_controller.dart';
+import '../../state/session.dart';
 import '../../ui/widgets.dart';
 
-class StoryReaderScreen extends StatefulWidget {
+class StoryReaderScreen extends ConsumerStatefulWidget {
   const StoryReaderScreen({super.key, required this.story});
   final LibraryStory story;
 
   @override
-  State<StoryReaderScreen> createState() => _StoryReaderScreenState();
+  ConsumerState<StoryReaderScreen> createState() => _StoryReaderScreenState();
 }
 
-class _StoryReaderScreenState extends State<StoryReaderScreen> {
+class _StoryReaderScreenState extends ConsumerState<StoryReaderScreen> {
   final _speech = SpeechController();
   int? _playingIndex;
   bool _playingAll = false;
@@ -90,8 +93,12 @@ class _StoryReaderScreenState extends State<StoryReaderScreen> {
   Widget build(BuildContext context) {
     final story = widget.story;
     final rtl = story.lang.isRtl;
+    final uiLang = ref.watch(sessionProvider).uiLang;
+    final i18n = ref.watch(i18nProvider);
+    // Çeviri yoksa (assets/content/i18n) hedef dildeki başlık gösterilir ve
+    // cümle çevirisi gizlenir — başka dilde kullanıcıya Türkçe gösterilmez.
     return Scaffold(
-      appBar: VoxelithAppBar(pageTitle: Text(story.titleTr)),
+      appBar: VoxelithAppBar(pageTitle: Text(story.displayTitle(uiLang))),
       body: SafeArea(
         child: Column(
           children: [
@@ -109,7 +116,7 @@ class _StoryReaderScreenState extends State<StoryReaderScreen> {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    '${story.level.name.toUpperCase()} · ${story.lang.label(UiLang.tr)}',
+                    '${story.level.name.toUpperCase()} · ${story.lang.label(uiLang)}',
                     style: const TextStyle(color: Voxelith.muted, fontSize: 12),
                   ),
                   const SizedBox(height: 18),
@@ -117,6 +124,7 @@ class _StoryReaderScreenState extends State<StoryReaderScreen> {
                     _SentenceCard(
                       sentence: story.sentences[i],
                       rtl: rtl,
+                      gloss: story.sentenceGloss(i, uiLang),
                       playing: _playingIndex == i,
                       onSpeak: () => _speakOne(i),
                     ),
@@ -132,7 +140,7 @@ class _StoryReaderScreenState extends State<StoryReaderScreen> {
                 child: FilledButton.icon(
                   onPressed: _playingAll ? _stopAll : _playAll,
                   icon: Icon(_playingAll ? Icons.stop : Icons.play_arrow),
-                  label: Text(_playingAll ? 'Durdur' : 'Tümünü Oynat'),
+                  label: Text(_playingAll ? i18n.stopCta : i18n.playAll),
                 ),
               ),
             ),
@@ -147,12 +155,14 @@ class _SentenceCard extends StatelessWidget {
   const _SentenceCard({
     required this.sentence,
     required this.rtl,
+    required this.gloss,
     required this.playing,
     required this.onSpeak,
   });
 
   final LibrarySentence sentence;
   final bool rtl;
+  final String? gloss;
   final bool playing;
   final VoidCallback onSpeak;
 
@@ -178,11 +188,13 @@ class _SentenceCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 4),
-                Text(
-                  sentence.glossTr,
-                  style: const TextStyle(color: Voxelith.muted, fontSize: 13),
-                ),
+                if (gloss != null) ...[
+                  const SizedBox(height: 4),
+                  Text(
+                    gloss!,
+                    style: const TextStyle(color: Voxelith.muted, fontSize: 13),
+                  ),
+                ],
               ],
             ),
           ),

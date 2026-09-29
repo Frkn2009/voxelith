@@ -18,11 +18,11 @@ class VoxelithHomeWidgetProvider : HomeWidgetProvider() {
             val dailyXp = widgetData.getInt("daily_xp", 0)
             val goal = widgetData.getInt("goal", 100)
             val streak = widgetData.getInt("streak", 0)
-            val lesson = widgetData.getString("lesson", "Bugünün pratiği")
+            val lesson = widgetData.getString("lesson", null) ?: "VOXELITH"
             val views = RemoteViews(context.packageName, R.layout.voxelith_home_widget).apply {
                 setTextViewText(R.id.widget_lesson, lesson)
                 setTextViewText(R.id.widget_xp, "$dailyXp / $goal XP")
-                setTextViewText(R.id.widget_streak, "$streak gün")
+                setTextViewText(R.id.widget_streak, widgetData.getString("streak_text", null) ?: "🔥 $streak")
                 setOnClickPendingIntent(
                     R.id.widget_container,
                     HomeWidgetLaunchIntent.getActivity(context, MainActivity::class.java),

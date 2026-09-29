@@ -1,0 +1,4234 @@
+{
+ "lang": "el",
+ "scenarios": [
+  {
+   "id": "el_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "el_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "el_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "el_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "el_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "el_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "el_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "el_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "el_intro",
+   "cefr": "a1",
+   "title": "Meeting someone"
+  },
+  {
+   "id": "el_shopping",
+   "cefr": "a1",
+   "title": "Shopping"
+  },
+  {
+   "id": "el_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers & time"
+  },
+  {
+   "id": "el_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "el_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "el_transport",
+   "cefr": "a1",
+   "title": "Transport"
+  },
+  {
+   "id": "el_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "el_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "el_past_story",
+   "cefr": "a1",
+   "title": "Telling a story about your day"
+  },
+  {
+   "id": "el_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "el_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  },
+  {
+   "id": "el_exp_job_interview",
+   "cefr": "b1",
+   "title": "Job interview"
+  },
+  {
+   "id": "el_exp_team_meeting",
+   "cefr": "b1",
+   "title": "Team meeting"
+  },
+  {
+   "id": "el_exp_bank",
+   "cefr": "a2",
+   "title": "Bank account"
+  },
+  {
+   "id": "el_exp_apartment",
+   "cefr": "a2",
+   "title": "Apartment viewing"
+  },
+  {
+   "id": "el_exp_doctor",
+   "cefr": "a2",
+   "title": "At the doctor's"
+  },
+  {
+   "id": "el_exp_business_lunch",
+   "cefr": "b1",
+   "title": "Business lunch"
+  },
+  {
+   "id": "el_exp_complaint",
+   "cefr": "b1",
+   "title": "Complaint"
+  },
+  {
+   "id": "el_exp_business_trip",
+   "cefr": "a2",
+   "title": "Business trip"
+  },
+  {
+   "id": "el_exp_client_call",
+   "cefr": "b1",
+   "title": "Client phone call"
+  },
+  {
+   "id": "el_exp_hr_salary",
+   "cefr": "b2",
+   "title": "Salary conversation"
+  },
+  {
+   "id": "el_exp_daily_errands",
+   "cefr": "a2",
+   "title": "Errands and deliveries"
+  },
+  {
+   "id": "el_exp_networking",
+   "cefr": "b1",
+   "title": "Networking"
+  }
+ ],
+ "stories": [
+  {
+   "id": "el_family",
+   "level": "a1",
+   "title": "Η οικογένειά μου"
+  },
+  {
+   "id": "el_my_job",
+   "level": "a1",
+   "title": "Η δουλειά μου"
+  },
+  {
+   "id": "el_market",
+   "level": "a1",
+   "title": "Η αγορά"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.el_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "Έναν καφέ, παρακαλώ.",
+   "have": []
+  },
+  {
+   "key": "tp.el_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "Πόσο κοστίζει;",
+   "have": []
+  },
+  {
+   "key": "p.el_cafe_0",
+   "kind": "phrase",
+   "target": "Έναν καφέ, παρακαλώ.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_cafe_1",
+   "kind": "phrase",
+   "target": "Πόσο κοστίζει;",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_cafe_2",
+   "kind": "phrase",
+   "target": "Ευχαριστώ πολύ.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "Έχω κράτηση.",
+   "have": []
+  },
+  {
+   "key": "tp.el_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "Το πρωινό περιλαμβάνεται;",
+   "have": []
+  },
+  {
+   "key": "p.el_hotel_0",
+   "kind": "phrase",
+   "target": "Έχω κράτηση.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_hotel_1",
+   "kind": "phrase",
+   "target": "Το πρωινό περιλαμβάνεται;",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_hotel_2",
+   "kind": "phrase",
+   "target": "Ευχαριστώ πολύ.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "Συγγνώμη, πού είναι ο σταθμός;",
+   "have": []
+  },
+  {
+   "key": "tp.el_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "Ευχαριστώ πολύ.",
+   "have": []
+  },
+  {
+   "key": "p.el_dir_0",
+   "kind": "phrase",
+   "target": "Συγγνώμη, πού είναι ο σταθμός;",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_dir_1",
+   "kind": "phrase",
+   "target": "Ευχαριστώ πολύ.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_dir_2",
+   "kind": "phrase",
+   "target": "Δεν καταλαβαίνω.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "Γεια, με λένε Ντενίζ.",
+   "have": []
+  },
+  {
+   "key": "tp.el_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "Είμαι από την Τουρκία.",
+   "have": []
+  },
+  {
+   "key": "p.el_hi_0",
+   "kind": "phrase",
+   "target": "Γεια, με λένε Ντενίζ.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_hi_1",
+   "kind": "phrase",
+   "target": "Είμαι από την Τουρκία.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_hi_2",
+   "kind": "phrase",
+   "target": "Ευχαριστώ πολύ.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "Ψάχνω διαμέρισμα.",
+   "have": []
+  },
+  {
+   "key": "tp.el_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "Πόσο είναι το ενοίκιο;",
+   "have": []
+  },
+  {
+   "key": "p.el_flat_0",
+   "kind": "phrase",
+   "target": "Ψάχνω διαμέρισμα.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_flat_1",
+   "kind": "phrase",
+   "target": "Πόσο είναι το ενοίκιο;",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_flat_2",
+   "kind": "phrase",
+   "target": "Μπορείτε να με βοηθήσετε;",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "Πόσο κοστίζει αυτό;",
+   "have": []
+  },
+  {
+   "key": "tp.el_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "Θα πάρω αυτό.",
+   "have": []
+  },
+  {
+   "key": "p.el_shop_0",
+   "kind": "phrase",
+   "target": "Πόσο κοστίζει αυτό;",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_shop_1",
+   "kind": "phrase",
+   "target": "Θα πάρω αυτό.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_shop_2",
+   "kind": "phrase",
+   "target": "Δέχεστε κάρτα;",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "Τον λογαριασμό, παρακαλώ.",
+   "have": []
+  },
+  {
+   "key": "tp.el_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "Θέλουμε να πληρώσουμε μαζί.",
+   "have": []
+  },
+  {
+   "key": "p.el_bill_0",
+   "kind": "phrase",
+   "target": "Τον λογαριασμό, παρακαλώ.",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_bill_1",
+   "kind": "phrase",
+   "target": "Θέλουμε να πληρώσουμε μαζί.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_bill_2",
+   "kind": "phrase",
+   "target": "Κρατήστε τα ρέστα.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "Έχω κράτηση.",
+   "have": []
+  },
+  {
+   "key": "tp.el_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "Θέση στο παράθυρο.",
+   "have": []
+  },
+  {
+   "key": "p.el_airport_0",
+   "kind": "phrase",
+   "target": "Έχω κράτηση.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_airport_1",
+   "kind": "phrase",
+   "target": "Θέση στο παράθυρο.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_airport_2",
+   "kind": "phrase",
+   "target": "Είναι αυτή η ουρά για επιβίβαση;",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Meeting someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_intro",
+   "kind": "grammar_rule",
+   "tr": "Adını söylerken \"με λένε X\" (beni X diye çağırıyorlar) kullanılır; buradaki \"με\" (beni) nesne halindeki zamirdir, \"εγώ\" (ben) özne zamiri değil.",
+   "en": "To give your name, Greek says \"με λένε X\" (literally \"they call me X\"); \"με\" (me) is the object pronoun here, not the subject pronoun \"εγώ\" (I).",
+   "context": "Με λένε Μαρία. / ✗ Εγώ λένε Μαρία.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_intro.0",
+   "kind": "speaking_prompt",
+   "en": "You meet someone new.",
+   "context": "Γεια σου, με λένε Μαρία.",
+   "have": []
+  },
+  {
+   "key": "tp.el_intro.1",
+   "kind": "speaking_prompt",
+   "en": "They shake your hand.",
+   "context": "Χάρηκα πολύ.",
+   "have": []
+  },
+  {
+   "key": "tp.el_intro.2",
+   "kind": "speaking_prompt",
+   "en": "You ask their name.",
+   "context": "Πώς σε λένε;",
+   "have": []
+  },
+  {
+   "key": "tp.el_intro.3",
+   "kind": "speaking_prompt",
+   "en": "You ask where they are from.",
+   "context": "Από πού είσαι;",
+   "have": []
+  },
+  {
+   "key": "tp.el_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask where you are from.",
+   "context": "Είμαι από την Αθήνα.",
+   "have": []
+  },
+  {
+   "key": "tp.el_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You ask their age.",
+   "context": "Πόσων χρονών είσαι;",
+   "have": []
+  },
+  {
+   "key": "tp.el_intro.6",
+   "kind": "speaking_prompt",
+   "en": "They ask your age.",
+   "context": "Είμαι είκοσι πέντε χρονών.",
+   "have": []
+  },
+  {
+   "key": "p.el_intro_0",
+   "kind": "phrase",
+   "target": "Γεια σου, με λένε Μαρία.",
+   "tr": "Merhaba, adım Maria.",
+   "en": "Hi, my name is Maria.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_intro_1",
+   "kind": "phrase",
+   "target": "Χάρηκα πολύ.",
+   "tr": "Memnun oldum.",
+   "en": "Nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_intro_2",
+   "kind": "phrase",
+   "target": "Πώς σε λένε;",
+   "tr": "Adın ne?",
+   "en": "What is your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_intro_3",
+   "kind": "phrase",
+   "target": "Από πού είσαι;",
+   "tr": "Nerelisin?",
+   "en": "Where are you from?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_intro_4",
+   "kind": "phrase",
+   "target": "Είμαι από την Αθήνα.",
+   "tr": "Atina'danım.",
+   "en": "I am from Athens.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_intro_5",
+   "kind": "phrase",
+   "target": "Πόσων χρονών είσαι;",
+   "tr": "Kaç yaşındasın?",
+   "en": "How old are you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_intro_6",
+   "kind": "phrase",
+   "target": "Είμαι είκοσι πέντε χρονών.",
+   "tr": "Yirmi beş yaşındayım.",
+   "en": "I am twenty-five years old.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_shopping",
+   "kind": "scenario_title",
+   "tr": "Alışveriş",
+   "en": "Shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_shopping",
+   "kind": "grammar_rule",
+   "tr": "Yunancada isimden önceki artikel ve isimle uyuşan sıfat, ismin cinsiyetine (eril ο, dişil η, nötr το) göre değişir.",
+   "en": "In Greek, the article before a noun and any agreeing adjective change with the noun's grammatical gender (masculine ο, feminine η, neuter το).",
+   "context": "Έχετε άλλο χρώμα; / ✗ Έχετε άλλος χρώμα;",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You point at an item.",
+   "context": "Πόσο κάνει αυτό;",
+   "have": []
+  },
+  {
+   "key": "tp.el_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "The price is high.",
+   "context": "Είναι πολύ ακριβό.",
+   "have": []
+  },
+  {
+   "key": "tp.el_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want a lower price.",
+   "context": "Υπάρχει έκπτωση;",
+   "have": []
+  },
+  {
+   "key": "tp.el_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "You decide to buy it.",
+   "context": "Θα το πάρω αυτό.",
+   "have": []
+  },
+  {
+   "key": "tp.el_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You reach for your wallet.",
+   "context": "Μπορώ να πληρώσω με κάρτα;",
+   "have": []
+  },
+  {
+   "key": "tp.el_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You do not like the color.",
+   "context": "Έχετε άλλο χρώμα;",
+   "have": []
+  },
+  {
+   "key": "tp.el_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "The purchase is done.",
+   "context": "Μου δίνετε την απόδειξη;",
+   "have": []
+  },
+  {
+   "key": "p.el_shopping_0",
+   "kind": "phrase",
+   "target": "Πόσο κάνει αυτό;",
+   "tr": "Bu ne kadar?",
+   "en": "How much is this?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_shopping_1",
+   "kind": "phrase",
+   "target": "Είναι πολύ ακριβό.",
+   "tr": "Çok pahalı.",
+   "en": "That is too expensive.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_shopping_2",
+   "kind": "phrase",
+   "target": "Υπάρχει έκπτωση;",
+   "tr": "İndirim var mı?",
+   "en": "Is there a discount?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_shopping_3",
+   "kind": "phrase",
+   "target": "Θα το πάρω αυτό.",
+   "tr": "Bunu alıyorum.",
+   "en": "I will take this.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_shopping_4",
+   "kind": "phrase",
+   "target": "Μπορώ να πληρώσω με κάρτα;",
+   "tr": "Kart ile ödeyebilir miyim?",
+   "en": "Can I pay by card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_shopping_5",
+   "kind": "phrase",
+   "target": "Έχετε άλλο χρώμα;",
+   "tr": "Başka bir renk var mı?",
+   "en": "Do you have another color?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_shopping_6",
+   "kind": "phrase",
+   "target": "Μου δίνετε την απόδειξη;",
+   "tr": "Fişimi alabilir miyim?",
+   "en": "Can I get the receipt?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers & time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "Yunancada 1, 3 ve 4 sayıları, önündeki ismin cinsiyetine göre değişir: \"τρεις ώρες\" (dişil ισim) ama \"τρία λεπτά\" (nötr isim).",
+   "en": "The Greek numbers 1, 3 and 4 change form to match the gender of the noun they count: \"τρεις ώρες\" (feminine noun) but \"τρία λεπτά\" (neuter noun).",
+   "context": "Είναι τρεις η ώρα. / ✗ Είναι τρία η ώρα.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You ask the time.",
+   "context": "Τι ώρα είναι;",
+   "have": []
+  },
+  {
+   "key": "tp.el_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "A clock shows 3:00.",
+   "context": "Είναι τρεις η ώρα.",
+   "have": []
+  },
+  {
+   "key": "tp.el_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "A clock shows 9:10.",
+   "context": "Είναι εννιά και δέκα.",
+   "have": []
+  },
+  {
+   "key": "tp.el_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "You confirm a meeting time.",
+   "context": "Η συνάντησή μας είναι στις πέντε.",
+   "have": []
+  },
+  {
+   "key": "tp.el_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "You count along with a child.",
+   "context": "Ένα, δύο, τρία, τέσσερα, πέντε.",
+   "have": []
+  },
+  {
+   "key": "tp.el_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "You are running late.",
+   "context": "Έρχομαι σε μισή ώρα.",
+   "have": []
+  },
+  {
+   "key": "tp.el_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You ask today's date.",
+   "context": "Τι ημερομηνία είναι σήμερα;",
+   "have": []
+  },
+  {
+   "key": "p.el_numbers_time_0",
+   "kind": "phrase",
+   "target": "Τι ώρα είναι;",
+   "tr": "Saat kaç?",
+   "en": "What time is it?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_numbers_time_1",
+   "kind": "phrase",
+   "target": "Είναι τρεις η ώρα.",
+   "tr": "Saat üç.",
+   "en": "It is three o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_numbers_time_2",
+   "kind": "phrase",
+   "target": "Είναι εννιά και δέκα.",
+   "tr": "Saat dokuzu on geçiyor.",
+   "en": "It is ten past nine.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_numbers_time_3",
+   "kind": "phrase",
+   "target": "Η συνάντησή μας είναι στις πέντε.",
+   "tr": "Buluşmamız saat beşte.",
+   "en": "Our meeting is at five.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_numbers_time_4",
+   "kind": "phrase",
+   "target": "Ένα, δύο, τρία, τέσσερα, πέντε.",
+   "tr": "Bir, iki, üç, dört, beş.",
+   "en": "One, two, three, four, five.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_numbers_time_5",
+   "kind": "phrase",
+   "target": "Έρχομαι σε μισή ώρα.",
+   "tr": "Yarım saat sonra geliyorum.",
+   "en": "I am coming in half an hour.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_numbers_time_6",
+   "kind": "phrase",
+   "target": "Τι ημερομηνία είναι σήμερα;",
+   "tr": "Bugün ayın kaçı?",
+   "en": "What is today's date?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_family",
+   "kind": "grammar_rule",
+   "tr": "İyelik zamiri μου (benim) isimden SONRA gelir; isimden önceki artikel (ο/η/το) yine ismin cinsiyetine göre değişmeden kalır.",
+   "en": "The possessive pronoun μου (my) is placed AFTER the noun; the article before the noun (ο/η/το) still agrees with the noun's gender as usual.",
+   "context": "Ο πατέρας μου είναι δάσκαλος. / ✗ Μου πατέρας είναι δάσκαλος.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a photo.",
+   "context": "Αυτή είναι η μητέρα μου.",
+   "have": []
+  },
+  {
+   "key": "tp.el_family.1",
+   "kind": "speaking_prompt",
+   "en": "They ask about your father.",
+   "context": "Ο πατέρας μου είναι δάσκαλος.",
+   "have": []
+  },
+  {
+   "key": "tp.el_family.2",
+   "kind": "speaking_prompt",
+   "en": "They ask about siblings.",
+   "context": "Έχω μια αδερφή.",
+   "have": []
+  },
+  {
+   "key": "tp.el_family.3",
+   "kind": "speaking_prompt",
+   "en": "They ask about a brother.",
+   "context": "Δεν έχω αδερφό.",
+   "have": []
+  },
+  {
+   "key": "tp.el_family.4",
+   "kind": "speaking_prompt",
+   "en": "They ask who lives with you.",
+   "context": "Η γιαγιά μου ζει μαζί μας.",
+   "have": []
+  },
+  {
+   "key": "tp.el_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask about your family size.",
+   "context": "Η οικογένειά μου είναι μεγάλη.",
+   "have": []
+  },
+  {
+   "key": "tp.el_family.6",
+   "kind": "speaking_prompt",
+   "en": "You ask about their family.",
+   "context": "Πόσα αδέρφια έχεις;",
+   "have": []
+  },
+  {
+   "key": "p.el_family_0",
+   "kind": "phrase",
+   "target": "Αυτή είναι η μητέρα μου.",
+   "tr": "Bu benim annem.",
+   "en": "This is my mother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_family_1",
+   "kind": "phrase",
+   "target": "Ο πατέρας μου είναι δάσκαλος.",
+   "tr": "Babam öğretmen.",
+   "en": "My father is a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_family_2",
+   "kind": "phrase",
+   "target": "Έχω μια αδερφή.",
+   "tr": "Bir kız kardeşim var.",
+   "en": "I have a sister.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_family_3",
+   "kind": "phrase",
+   "target": "Δεν έχω αδερφό.",
+   "tr": "Erkek kardeşim yok.",
+   "en": "I do not have a brother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_family_4",
+   "kind": "phrase",
+   "target": "Η γιαγιά μου ζει μαζί μας.",
+   "tr": "Büyükannem bizimle yaşıyor.",
+   "en": "My grandmother lives with us.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_family_5",
+   "kind": "phrase",
+   "target": "Η οικογένειά μου είναι μεγάλη.",
+   "tr": "Ailem kalabalık.",
+   "en": "My family is big.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_family_6",
+   "kind": "phrase",
+   "target": "Πόσα αδέρφια έχεις;",
+   "tr": "Kaç kardeşin var?",
+   "en": "How many siblings do you have?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_weather",
+   "kind": "grammar_rule",
+   "tr": "Yunancada gelecek zaman, fiilden önce gelen ve hiç çekimlenmeyen θα parçacığı ile kurulur; fiil kişiye göre çekimlenir, θα değişmez.",
+   "en": "Greek forms the future tense with the invariant particle θα placed before the verb; the verb itself is conjugated, but θα never changes.",
+   "context": "Αύριο θα χιονίσει. / ✗ Αύριο χιονίσει θα.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You look outside.",
+   "context": "Σήμερα ο καιρός είναι πολύ ωραίος.",
+   "have": []
+  },
+  {
+   "key": "tp.el_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You feel a chill.",
+   "context": "Έξω κάνει κρύο.",
+   "have": []
+  },
+  {
+   "key": "tp.el_weather.2",
+   "kind": "speaking_prompt",
+   "en": "Drops start falling.",
+   "context": "Βρέχει.",
+   "have": []
+  },
+  {
+   "key": "tp.el_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You check tomorrow's forecast.",
+   "context": "Αύριο θα χιονίσει.",
+   "have": []
+  },
+  {
+   "key": "tp.el_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You wipe your forehead.",
+   "context": "Κάνει πολλή ζέστη.",
+   "have": []
+  },
+  {
+   "key": "tp.el_weather.5",
+   "kind": "speaking_prompt",
+   "en": "You warn a friend before they leave.",
+   "context": "Πάρε την ομπρέλα σου.",
+   "have": []
+  },
+  {
+   "key": "tp.el_weather.6",
+   "kind": "speaking_prompt",
+   "en": "You look up at the sky.",
+   "context": "Ο ουρανός είναι συννεφιασμένος.",
+   "have": []
+  },
+  {
+   "key": "p.el_weather_0",
+   "kind": "phrase",
+   "target": "Σήμερα ο καιρός είναι πολύ ωραίος.",
+   "tr": "Bugün hava çok güzel.",
+   "en": "The weather is very nice today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_weather_1",
+   "kind": "phrase",
+   "target": "Έξω κάνει κρύο.",
+   "tr": "Dışarısı soğuk.",
+   "en": "It is cold outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_weather_2",
+   "kind": "phrase",
+   "target": "Βρέχει.",
+   "tr": "Yağmur yağıyor.",
+   "en": "It is raining.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_weather_3",
+   "kind": "phrase",
+   "target": "Αύριο θα χιονίσει.",
+   "tr": "Yarın kar yağacak.",
+   "en": "It will snow tomorrow.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_weather_4",
+   "kind": "phrase",
+   "target": "Κάνει πολλή ζέστη.",
+   "tr": "Hava çok sıcak.",
+   "en": "It is very hot.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_weather_5",
+   "kind": "phrase",
+   "target": "Πάρε την ομπρέλα σου.",
+   "tr": "Şemsiyeni al.",
+   "en": "Take your umbrella.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_weather_6",
+   "kind": "phrase",
+   "target": "Ο ουρανός είναι συννεφιασμένος.",
+   "tr": "Gökyüzü bulutlu.",
+   "en": "The sky is cloudy.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Transport",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_transport",
+   "kind": "grammar_rule",
+   "tr": "Edat σε (-e/-de), önündeki artikelle kaynaşır: στο (nötr), στη(ν) (dişil), στο(ν) (eril) — seçim ismin cinsiyetine göre yapılır.",
+   "en": "The preposition σε (to/at) fuses with the article that follows it: στο (neuter), στη(ν) (feminine), στο(ν) (masculine) — chosen by the noun's gender.",
+   "context": "Αυτό το λεωφορείο πάει στο κέντρο; / ✗ Αυτό το λεωφορείο πάει στη κέντρο;",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You need directions.",
+   "context": "Πού είναι η στάση του λεωφορείου;",
+   "have": []
+  },
+  {
+   "key": "tp.el_transport.1",
+   "kind": "speaking_prompt",
+   "en": "At the ticket counter.",
+   "context": "Ένα εισιτήριο, παρακαλώ.",
+   "have": []
+  },
+  {
+   "key": "tp.el_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You are not sure of the route.",
+   "context": "Αυτό το λεωφορείο πάει στο κέντρο;",
+   "have": []
+  },
+  {
+   "key": "tp.el_transport.3",
+   "kind": "speaking_prompt",
+   "en": "You want to signal the driver.",
+   "context": "Κατεβαίνω στην επόμενη στάση.",
+   "have": []
+  },
+  {
+   "key": "tp.el_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You need a ride.",
+   "context": "Μπορείτε να καλέσετε ταξί;",
+   "have": []
+  },
+  {
+   "key": "tp.el_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You ask about travel time.",
+   "context": "Πόση ώρα χρειάζεται για το αεροδρόμιο;",
+   "have": []
+  },
+  {
+   "key": "tp.el_transport.6",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about the metro.",
+   "context": "Ο σταθμός του μετρό είναι πολύ κοντά.",
+   "have": []
+  },
+  {
+   "key": "p.el_transport_0",
+   "kind": "phrase",
+   "target": "Πού είναι η στάση του λεωφορείου;",
+   "tr": "Otobüs durağı nerede?",
+   "en": "Where is the bus stop?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_transport_1",
+   "kind": "phrase",
+   "target": "Ένα εισιτήριο, παρακαλώ.",
+   "tr": "Bir bilet lütfen.",
+   "en": "One ticket, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_transport_2",
+   "kind": "phrase",
+   "target": "Αυτό το λεωφορείο πάει στο κέντρο;",
+   "tr": "Bu otobüs merkeze gidiyor mu?",
+   "en": "Does this bus go to the center?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_transport_3",
+   "kind": "phrase",
+   "target": "Κατεβαίνω στην επόμενη στάση.",
+   "tr": "Bir sonraki durakta iniyorum.",
+   "en": "I am getting off at the next stop.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_transport_4",
+   "kind": "phrase",
+   "target": "Μπορείτε να καλέσετε ταξί;",
+   "tr": "Taksi çağırabilir misiniz?",
+   "en": "Could you call a taxi?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_transport_5",
+   "kind": "phrase",
+   "target": "Πόση ώρα χρειάζεται για το αεροδρόμιο;",
+   "tr": "Havalimanına ne kadar sürer?",
+   "en": "How long does it take to the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_transport_6",
+   "kind": "phrase",
+   "target": "Ο σταθμός του μετρό είναι πολύ κοντά.",
+   "tr": "Metro istasyonu çok yakın.",
+   "en": "The metro station is very close.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_emergency",
+   "kind": "grammar_rule",
+   "tr": "Bir yabancıya resmi/çoğul seslenirken emir kipi fiili -στε ile biter (καλέστε = arayın!); tanıdık birine söylenen tekil emir farklı bir ekle biter.",
+   "en": "When addressing a stranger formally, the imperative verb ends in -στε (καλέστε = call!); the informal singular imperative used with someone you know ends differently.",
+   "context": "Καλέστε ασθενοφόρο! / ✗ Κάλεσε ασθενοφόρο!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something goes wrong.",
+   "context": "Βοήθεια!",
+   "have": []
+  },
+  {
+   "key": "tp.el_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Someone is hurt.",
+   "context": "Καλέστε ασθενοφόρο!",
+   "have": []
+  },
+  {
+   "key": "tp.el_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You cannot find your way.",
+   "context": "Χάθηκα.",
+   "have": []
+  },
+  {
+   "key": "tp.el_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You notice your wallet is gone.",
+   "context": "Μου έκλεψαν το πορτοφόλι.",
+   "have": []
+  },
+  {
+   "key": "tp.el_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You need medical care.",
+   "context": "Πού είναι το πλησιέστερο νοσοκομείο;",
+   "have": []
+  },
+  {
+   "key": "tp.el_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "You need the authorities.",
+   "context": "Μπορείτε να καλέσετε την αστυνομία;",
+   "have": []
+  },
+  {
+   "key": "tp.el_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You feel sick.",
+   "context": "Δεν αισθάνομαι καλά.",
+   "have": []
+  },
+  {
+   "key": "p.el_emergency_0",
+   "kind": "phrase",
+   "target": "Βοήθεια!",
+   "tr": "Yardım edin!",
+   "en": "Help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_emergency_1",
+   "kind": "phrase",
+   "target": "Καλέστε ασθενοφόρο!",
+   "tr": "Ambulans çağırın!",
+   "en": "Call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_emergency_2",
+   "kind": "phrase",
+   "target": "Χάθηκα.",
+   "tr": "Kayboldum.",
+   "en": "I am lost.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_emergency_3",
+   "kind": "phrase",
+   "target": "Μου έκλεψαν το πορτοφόλι.",
+   "tr": "Cüzdanım çalındı.",
+   "en": "My wallet was stolen.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_emergency_4",
+   "kind": "phrase",
+   "target": "Πού είναι το πλησιέστερο νοσοκομείο;",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_emergency_5",
+   "kind": "phrase",
+   "target": "Μπορείτε να καλέσετε την αστυνομία;",
+   "tr": "Polis çağırır mısınız?",
+   "en": "Could you call the police?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_emergency_6",
+   "kind": "phrase",
+   "target": "Δεν αισθάνομαι καλά.",
+   "tr": "İyi değilim.",
+   "en": "I do not feel well.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_routine",
+   "kind": "grammar_rule",
+   "tr": "Yunancada \"ben\" özneli düzenli fiiller şimdiki zamanda -ω ile biter (τρώω = yerim, πηγαίνω = giderim).",
+   "en": "Regular Greek verbs in the present tense end in -ω for the \"I\" form (τρώω = I eat, πηγαίνω = I go).",
+   "context": "Τρώω πρωινό. / ✗ Τρώει πρωινό.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_routine.0",
+   "kind": "speaking_prompt",
+   "en": "They ask about your morning.",
+   "context": "Κάθε πρωί ξυπνάω στις εφτά.",
+   "have": []
+  },
+  {
+   "key": "tp.el_routine.1",
+   "kind": "speaking_prompt",
+   "en": "Next step after waking up.",
+   "context": "Βουρτσίζω τα δόντια μου.",
+   "have": []
+  },
+  {
+   "key": "tp.el_routine.2",
+   "kind": "speaking_prompt",
+   "en": "Before leaving home.",
+   "context": "Τρώω πρωινό.",
+   "have": []
+  },
+  {
+   "key": "tp.el_routine.3",
+   "kind": "speaking_prompt",
+   "en": "They ask how you commute.",
+   "context": "Πηγαίνω στη δουλειά με το λεωφορείο.",
+   "have": []
+  },
+  {
+   "key": "tp.el_routine.4",
+   "kind": "speaking_prompt",
+   "en": "At midday.",
+   "context": "Τρώω μεσημεριανό στις δώδεκα.",
+   "have": []
+  },
+  {
+   "key": "tp.el_routine.5",
+   "kind": "speaking_prompt",
+   "en": "They ask about your evening.",
+   "context": "Κάνω γυμναστική το βράδυ.",
+   "have": []
+  },
+  {
+   "key": "tp.el_routine.6",
+   "kind": "speaking_prompt",
+   "en": "Before sleeping.",
+   "context": "Κοιμάμαι νωρίς το βράδυ.",
+   "have": []
+  },
+  {
+   "key": "p.el_routine_0",
+   "kind": "phrase",
+   "target": "Κάθε πρωί ξυπνάω στις εφτά.",
+   "tr": "Her sabah yedide kalkarım.",
+   "en": "I wake up at seven every morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_routine_1",
+   "kind": "phrase",
+   "target": "Βουρτσίζω τα δόντια μου.",
+   "tr": "Dişlerimi fırçalarım.",
+   "en": "I brush my teeth.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_routine_2",
+   "kind": "phrase",
+   "target": "Τρώω πρωινό.",
+   "tr": "Kahvaltı yaparım.",
+   "en": "I eat breakfast.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_routine_3",
+   "kind": "phrase",
+   "target": "Πηγαίνω στη δουλειά με το λεωφορείο.",
+   "tr": "İşe otobüsle giderim.",
+   "en": "I go to work by bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_routine_4",
+   "kind": "phrase",
+   "target": "Τρώω μεσημεριανό στις δώδεκα.",
+   "tr": "Öğlen yemek yerim.",
+   "en": "I eat lunch at noon.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_routine_5",
+   "kind": "phrase",
+   "target": "Κάνω γυμναστική το βράδυ.",
+   "tr": "Akşam spor yaparım.",
+   "en": "I exercise in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_routine_6",
+   "kind": "phrase",
+   "target": "Κοιμάμαι νωρίς το βράδυ.",
+   "tr": "Gece erken yatarım.",
+   "en": "I go to bed early at night.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_past_story",
+   "kind": "scenario_title",
+   "tr": "Bir günü anlatmak",
+   "en": "Telling a story about your day",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_past_story",
+   "kind": "grammar_rule",
+   "tr": "Yunancada geçmiş zaman (aoristos) genellikle fiil kökünün değişmesiyle kurulur: πηγαίνω (giderim) → πήγα (gittim), βλέπω (görürüm) → είδα (gördüm).",
+   "en": "Greek past tense (aorist) is usually formed with a changed verb stem: πηγαίνω (I go) → πήγα (I went), βλέπω (I see) → είδα (I saw).",
+   "context": "Χθες πήγα σινεμά. / ✗ Χθες πηγαίνω σινεμά.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "They ask about yesterday.",
+   "context": "Χθες πήγα σινεμά.",
+   "have": []
+  },
+  {
+   "key": "tp.el_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "They ask what you did there.",
+   "context": "Είδα μια ωραία ταινία.",
+   "have": []
+  },
+  {
+   "key": "tp.el_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what happened next.",
+   "context": "Μετά συνάντησα τον φίλο μου.",
+   "have": []
+  },
+  {
+   "key": "tp.el_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "They ask what you two did.",
+   "context": "Ήπιαμε έναν καφέ.",
+   "have": []
+  },
+  {
+   "key": "tp.el_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "They ask when you got home.",
+   "context": "Γύρισα σπίτι πολύ αργά.",
+   "have": []
+  },
+  {
+   "key": "tp.el_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "They ask how you felt.",
+   "context": "Ήμουν κουρασμένος αλλά χαρούμενος.",
+   "have": []
+  },
+  {
+   "key": "tp.el_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "You sum up the day.",
+   "context": "Ήταν μια υπέροχη μέρα.",
+   "have": []
+  },
+  {
+   "key": "p.el_past_story_0",
+   "kind": "phrase",
+   "target": "Χθες πήγα σινεμά.",
+   "tr": "Dün sinemaya gittim.",
+   "en": "Yesterday I went to the cinema.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_past_story_1",
+   "kind": "phrase",
+   "target": "Είδα μια ωραία ταινία.",
+   "tr": "Güzel bir film izledim.",
+   "en": "I watched a nice film.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_past_story_2",
+   "kind": "phrase",
+   "target": "Μετά συνάντησα τον φίλο μου.",
+   "tr": "Sonra arkadaşımla buluştum.",
+   "en": "Then I met up with my friend.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_past_story_3",
+   "kind": "phrase",
+   "target": "Ήπιαμε έναν καφέ.",
+   "tr": "Bir kahve içtik.",
+   "en": "We had a coffee.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_past_story_4",
+   "kind": "phrase",
+   "target": "Γύρισα σπίτι πολύ αργά.",
+   "tr": "Çok geç eve döndüm.",
+   "en": "I got home very late.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_past_story_5",
+   "kind": "phrase",
+   "target": "Ήμουν κουρασμένος αλλά χαρούμενος.",
+   "tr": "Yorgun ama mutluydum.",
+   "en": "I was tired but happy.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_past_story_6",
+   "kind": "phrase",
+   "target": "Ήταν μια υπέροχη μέρα.",
+   "tr": "Harika bir gündü.",
+   "en": "It was a great day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "Έναν καφέ, παρακαλώ.",
+   "have": []
+  },
+  {
+   "key": "tp.el_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "Έχω κράτηση.",
+   "have": []
+  },
+  {
+   "key": "tp.el_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "Συγγνώμη, πού είναι ο σταθμός;",
+   "have": []
+  },
+  {
+   "key": "tp.el_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "Γεια, με λένε Ντενίζ.",
+   "have": []
+  },
+  {
+   "key": "p.el_a2_route_0",
+   "kind": "phrase",
+   "target": "Έναν καφέ, παρακαλώ.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_a2_route_1",
+   "kind": "phrase",
+   "target": "Έχω κράτηση.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_a2_route_2",
+   "kind": "phrase",
+   "target": "Συγγνώμη, πού είναι ο σταθμός;",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_a2_route_3",
+   "kind": "phrase",
+   "target": "Γεια, με λένε Ντενίζ.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.el_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "Το πρωινό περιλαμβάνεται;",
+   "have": []
+  },
+  {
+   "key": "tp.el_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "Δεν καταλαβαίνω.",
+   "have": []
+  },
+  {
+   "key": "tp.el_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "Ψάχνω διαμέρισμα.",
+   "have": []
+  },
+  {
+   "key": "tp.el_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "Πόσο είναι το ενοίκιο;",
+   "have": []
+  },
+  {
+   "key": "tp.el_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "Δέχεστε κάρτα;",
+   "have": []
+  },
+  {
+   "key": "p.el_b1_solve_0",
+   "kind": "phrase",
+   "target": "Το πρωινό περιλαμβάνεται;",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_b1_solve_1",
+   "kind": "phrase",
+   "target": "Δεν καταλαβαίνω.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_b1_solve_2",
+   "kind": "phrase",
+   "target": "Ψάχνω διαμέρισμα.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_b1_solve_3",
+   "kind": "phrase",
+   "target": "Πόσο είναι το ενοίκιο;",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.el_b1_solve_4",
+   "kind": "phrase",
+   "target": "Δέχεστε κάρτα;",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.el_exp_job_interview",
+   "kind": "scenario_title",
+   "tr": "İş görüşmesi",
+   "en": "Job interview",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_exp_job_interview",
+   "kind": "grammar_rule",
+   "tr": "Resmî \"εσείς\" ile \"θα μπορούσατε\" kullanılır; doğrudan emir kaba kaçar.",
+   "en": null,
+   "context": "Θα μπορούσατε να μοιραστείτε το εύρος; / ✗ Πες τον μισθό.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.el_exp_job_interview.0",
+   "kind": "speaking_prompt",
+   "en": "Γιατί θέλετε να εργαστείτε σε εμάς;",
+   "context": "Η προσέγγισή σας στον πελάτη ταιριάζει με αυτό που κάνω καλά.",
+   "have": []
+  },
+  {
+   "key": "tp.el_exp_job_interview.1",
+   "kind": "speaking_prompt",
+   "en": "Πώς διαχειρίζεστε μια δύσκολη εβδομάδα παράδοσης;",
+   "context": "Μειώνω το εύρος και καταγράφω τους κινδύνους γραπτώς.",
+   "have": []
+  },
+  {
+   "key": "p.el_exp_interview_0",
+   "kind": "phrase",
+   "target": "Σας ευχαριστώ για την πρόσκληση στη συνέντευξη.",
+   "tr": "Görüşmeye davet ettiğiniz için teşekkür ederim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_interview_1",
+   "kind": "phrase",
+   "target": "Εργάζομαι σε ομάδες προϊόντος εδώ και πέντε χρόνια.",
+   "tr": "Beş yıldır ürün ekiplerinde çalışıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_interview_2",
+   "kind": "phrase",
+   "target": "Προτεραιότητά μου είναι να κατανοώ καλά την ανάγκη του πελάτη.",
+   "tr": "Önceliğim müşterinin ihtiyacını iyi anlamaktır.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_interview_3",
+   "kind": "phrase",
+   "target": "Το αδύναμο σημείο μου είναι οι λεπτομέρειες· χρησιμοποιώ λίστα ελέγχου.",
+   "tr": "Zayıf yönüm detaylardır; bir kontrol listesi kullanıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_interview_4",
+   "kind": "phrase",
+   "target": "Θα μπορούσατε να μοιραστείτε το εύρος αποδοχών;",
+   "tr": "Maaş aralığını paylaşabilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_interview_5",
+   "kind": "phrase",
+   "target": "Προβλέπεται και συνάντηση με την ομάδα;",
+   "tr": "Ekiple de bir görüşme öngörülüyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.el_exp_team_meeting",
+   "kind": "scenario_title",
+   "tr": "Ekip toplantısı",
+   "en": "Team meeting",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_exp_team_meeting",
+   "kind": "grammar_rule",
+   "tr": "\"περιμένω\" doğrudan nesne alır: περιμένω έγκριση.",
+   "en": null,
+   "context": "Περιμένω έγκριση σχεδιασμού. / ✗ Περιμένω ο σχεδιασμός.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.el_exp_team_meeting.0",
+   "kind": "speaking_prompt",
+   "en": "Έχει κανείς μπλοκάρισμα;",
+   "context": "Περιμένω έγκριση σχεδιασμού· αύριο θα υπενθυμίσω.",
+   "have": []
+  },
+  {
+   "key": "tp.el_exp_team_meeting.1",
+   "kind": "speaking_prompt",
+   "en": "Τότε το θέμα μένει σε εσένα.",
+   "context": "Εντάξει, θα ενημερώσω την ομάδα την Παρασκευή.",
+   "have": []
+  },
+  {
+   "key": "p.el_exp_meeting_0",
+   "kind": "phrase",
+   "target": "Πάμε κατευθείαν στην ημερήσια διάταξη.",
+   "tr": "Doğrudan gündeme geçelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_meeting_1",
+   "kind": "phrase",
+   "target": "Έχω μπλοκάρισμα στο API· αύριο θα δώσω ημερομηνία.",
+   "tr": "API tarafında bir engelim var; yarın tarih vereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_meeting_2",
+   "kind": "phrase",
+   "target": "Μπορούμε να αφήσουμε αυτό το θέμα για το τέλος;",
+   "tr": "Bu maddeyi sona bırakabilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_meeting_3",
+   "kind": "phrase",
+   "target": "Καταγράφω την απόφαση: Πέμπτη στις 16:00.",
+   "tr": "Kararı kaydediyorum: perşembe saat 16:00.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_meeting_4",
+   "kind": "phrase",
+   "target": "Δεν έχω ένσταση, αλλά ας σημειώσουμε τον κίνδυνο.",
+   "tr": "İtirazım yok ama riski not edelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_meeting_5",
+   "kind": "phrase",
+   "target": "Χρειαζόμαστε παράταση πέντε λεπτών;",
+   "tr": "Beş dakika uzatmaya ihtiyacımız var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.el_exp_bank",
+   "kind": "scenario_title",
+   "tr": "Bankada hesap",
+   "en": "Bank account",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_exp_bank",
+   "kind": "grammar_rule",
+   "tr": "Nazik istek: θα ήθελα να + υποτακτική.",
+   "en": null,
+   "context": "Θα ήθελα να ανοίξω λογαριασμό. / ✗ Άνοιξε λογαριασμό.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.el_exp_bank.0",
+   "kind": "speaking_prompt",
+   "en": "Προσωπικός λογαριασμός μισθοδοσίας;",
+   "context": "Ναι, για κατάθεση μισθού.",
+   "have": []
+  },
+  {
+   "key": "tp.el_exp_bank.1",
+   "kind": "speaking_prompt",
+   "en": "Υπογράψτε εδώ, παρακαλώ.",
+   "context": "Βεβαίως, ορίστε.",
+   "have": []
+  },
+  {
+   "key": "p.el_exp_bank_0",
+   "kind": "phrase",
+   "target": "Θα ήθελα να ανοίξω έναν τρεχούμενο λογαριασμό.",
+   "tr": "Bir vadesiz hesap açmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_bank_1",
+   "kind": "phrase",
+   "target": "Έχω ταυτότητα και αποδεικτικό διεύθυνσης.",
+   "tr": "Kimliğim ve ikametgahım yanımda.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_bank_2",
+   "kind": "phrase",
+   "target": "Πόσο είναι η ετήσια συνδρομή της κάρτας;",
+   "tr": "Kartın yıllık ücreti ne kadar?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_bank_3",
+   "kind": "phrase",
+   "target": "Θέλω και e-banking, παρακαλώ.",
+   "tr": "İnternet bankacılığını da istiyorum lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_bank_4",
+   "kind": "phrase",
+   "target": "Ποιο είναι το ημερήσιο όριο εμβασμάτων;",
+   "tr": "Havale için günlük limit nedir?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_bank_5",
+   "kind": "phrase",
+   "target": "Μπορώ να λάβω την απόδειξη με email;",
+   "tr": "Dekontu e-posta ile alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.el_exp_apartment",
+   "kind": "scenario_title",
+   "tr": "Ev bakma",
+   "en": "Apartment viewing",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_exp_apartment",
+   "kind": "grammar_rule",
+   "tr": "Hâlâ müsait olup olmadığını sormak için \"ακόμα\" kullanılır.",
+   "en": null,
+   "context": "Είναι ακόμα διαθέσιμο; / ✗ Είναι διαθέσιμο πάντα ακόμα;",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.el_exp_apartment.0",
+   "kind": "speaking_prompt",
+   "en": "Πότε θέλετε να μετακομίσετε;",
+   "context": "Αρχές του μήνα· έχω λίγα πράγματα.",
+   "have": []
+  },
+  {
+   "key": "tp.el_exp_apartment.1",
+   "kind": "speaking_prompt",
+   "en": "Ο ιδιοκτήτης δεν δέχεται κατοικίδια.",
+   "context": "Κατανοώ, δεν έχω κατοικίδιο.",
+   "have": []
+  },
+  {
+   "key": "p.el_exp_apartment_0",
+   "kind": "phrase",
+   "target": "Είδα την αγγελία· είναι ακόμα διαθέσιμο το διαμέρισμα;",
+   "tr": "İlanı gördüm; daire hâlâ müsait mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_apartment_1",
+   "kind": "phrase",
+   "target": "Τα κοινόχρηστα περιλαμβάνουν θέρμανση;",
+   "tr": "Aidat ısınmayı da kapsıyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_apartment_2",
+   "kind": "phrase",
+   "target": "Η εγγύηση είναι πόσων ενοικίων;",
+   "tr": "Depozito kaç aylık kiraya denk geliyor?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_apartment_3",
+   "kind": "phrase",
+   "target": "Το συμβόλαιο είναι ετήσιο ή γίνεται πιο σύντομο;",
+   "tr": "Sözleşme bir yıllık mı, yoksa daha kısa olabilir mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_apartment_4",
+   "kind": "phrase",
+   "target": "Δουλεύω από το σπίτι, χρειάζομαι ησυχία.",
+   "tr": "Evden çalışıyorum, sessizliğe ihtiyacım var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_apartment_5",
+   "kind": "phrase",
+   "target": "Θα σας απαντήσω αύριο.",
+   "tr": "Yarın size dönüş yapacağım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.el_exp_doctor",
+   "kind": "scenario_title",
+   "tr": "Doktorda",
+   "en": "At the doctor's",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_exp_doctor",
+   "kind": "grammar_rule",
+   "tr": "Devam eden süre için \"εδώ και\" kullanılır; kendi kendine teşhis koymayın.",
+   "en": null,
+   "context": "Έχω πυρετό εδώ και τρεις μέρες. / ✗ Έχω πνευμονία μάλλον.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.el_exp_doctor.0",
+   "kind": "speaking_prompt",
+   "en": "Πού πονάτε; Ξεκίνησε απότομα;",
+   "context": "Δεξιά στο στήθος, από χθες το βράδυ.",
+   "have": []
+  },
+  {
+   "key": "tp.el_exp_doctor.1",
+   "kind": "speaking_prompt",
+   "en": "Θα ζητήσω εξετάσεις αίματος.",
+   "context": "Εντάξει, πού πρέπει να πάω;",
+   "have": []
+  },
+  {
+   "key": "p.el_exp_doctor_0",
+   "kind": "phrase",
+   "target": "Έχω πυρετό εδώ και τρεις μέρες και βήχω τη νύχτα.",
+   "tr": "Üç gündür ateşim var ve geceleri öksürüyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_doctor_1",
+   "kind": "phrase",
+   "target": "Δεν έχω γνωστή αλλεργία στην πενικιλίνη.",
+   "tr": "Penisiline bilinen bir alerjim yok.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_doctor_2",
+   "kind": "phrase",
+   "target": "Αυτό το φάρμακο προκαλεί υπνηλία;",
+   "tr": "Bu ilaç uyku hâli yapar mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_doctor_3",
+   "kind": "phrase",
+   "target": "Χρειάζομαι ιατρικό πιστοποιητικό για τη δουλειά;",
+   "tr": "İş için rapora ihtiyacım var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_doctor_4",
+   "kind": "phrase",
+   "target": "Πότε να ξανάρθω για επανέλεγχο;",
+   "tr": "Kontrol için ne zaman gelmeliyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_doctor_5",
+   "kind": "phrase",
+   "target": "Το φαρμακείο είναι έξω από το κτίριο;",
+   "tr": "Eczane bina dışında mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.el_exp_business_lunch",
+   "kind": "scenario_title",
+   "tr": "İş yemeği",
+   "en": "Business lunch",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_exp_business_lunch",
+   "kind": "grammar_rule",
+   "tr": "Vurgu için nesne tekrarı doğaldır: το λογαριασμό τον αναλαμβάνουμε.",
+   "en": null,
+   "context": "Το λογαριασμό τον αναλαμβάνουμε εμείς. / ✗ Πληρώστε εσείς τα πάντα.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.el_exp_business_lunch.0",
+   "kind": "speaking_prompt",
+   "en": "Η τιμή μου φαίνεται ακόμα υψηλή.",
+   "context": "Μπορούμε να χωρίσουμε το έργο σε δύο φάσεις.",
+   "have": []
+  },
+  {
+   "key": "tp.el_exp_business_lunch.1",
+   "kind": "speaking_prompt",
+   "en": "Θα το σκεφτούμε.",
+   "context": "Βεβαίως, θα σας καλέσω την Παρασκευή.",
+   "have": []
+  },
+  {
+   "key": "p.el_exp_lunch_0",
+   "kind": "phrase",
+   "target": "Διάλεξα το εστιατόριο σύμφωνα με την πρότασή σας.",
+   "tr": "Restoranı sizin önerinize göre seçtim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_lunch_1",
+   "kind": "phrase",
+   "target": "Έχετε αλλεργίες ή προτιμήσεις;",
+   "tr": "Alerjiniz veya tercihiniz var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_lunch_2",
+   "kind": "phrase",
+   "target": "Πριν παραγγείλουμε, να ξεκαθαρίσουμε τα κύρια σημεία;",
+   "tr": "Sipariş vermeden önce ana noktaları netleştirelim mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_lunch_3",
+   "kind": "phrase",
+   "target": "Δεν μπαίνουμε σε αριθμούς στο τραπέζι· θα στείλω μετά.",
+   "tr": "Masada rakamlara girmeyelim; sonra göndereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_lunch_4",
+   "kind": "phrase",
+   "target": "Αυτή τη φορά το λογαριασμό τον αναλαμβάνουμε εμείς.",
+   "tr": "Bu sefer hesabı biz üstleniyoruz.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_lunch_5",
+   "kind": "phrase",
+   "target": "Ήταν μια παραγωγική συνάντηση, ευχαριστώ.",
+   "tr": "Çok verimli bir toplantıydı, teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.el_exp_complaint",
+   "kind": "scenario_title",
+   "tr": "Şikâyet",
+   "en": "Complaint",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_exp_complaint",
+   "kind": "grammar_rule",
+   "tr": "Kanıt dili \"γραπτή\" kullanılır; sadece mesaj yeterli değildir.",
+   "en": null,
+   "context": "Γραπτή επιβεβαίωση. / ✗ Στείλε μόνο στο Viber.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.el_exp_complaint.0",
+   "kind": "speaking_prompt",
+   "en": "Ζητούμε συγγνώμη· ελέγχω την αποστολή.",
+   "context": "Ευχαριστώ. Καταγράψτε και την ώρα της κλήσης.",
+   "have": []
+  },
+  {
+   "key": "tp.el_exp_complaint.1",
+   "kind": "speaking_prompt",
+   "en": "Παράδοση αύριο έως τις 14:00.",
+   "context": "Εντάξει, περιμένω.",
+   "have": []
+  },
+  {
+   "key": "p.el_exp_complaint_0",
+   "kind": "phrase",
+   "target": "Ο αριθμός παραγγελίας είναι 1842 και δεν έχει φτάσει ακόμη.",
+   "tr": "Sipariş numaram 1842 ve hâlâ ulaşmadı.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_complaint_1",
+   "kind": "phrase",
+   "target": "Η συμφωνημένη ημερομηνία ήταν χθες.",
+   "tr": "Kararlaştırılan tarih dündü.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_complaint_2",
+   "kind": "phrase",
+   "target": "Ως λύση ζητώ επιστροφή των εξόδων αποστολής.",
+   "tr": "Çözüm olarak kargo ücretinin iadesini talep ediyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_complaint_3",
+   "kind": "phrase",
+   "target": "Πρέπει να μιλήσω με προϊστάμενο ή μπορείτε να το λύσετε;",
+   "tr": "Bir yöneticiyle mi konuşmalıyım, yoksa siz çözebilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_complaint_4",
+   "kind": "phrase",
+   "target": "Μπορώ να λάβω γραπτή επιβεβαίωση;",
+   "tr": "Yazılı bir teyit alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_complaint_5",
+   "kind": "phrase",
+   "target": "Έχω υπομονή, αλλά σήμερα χρειάζομαι συγκεκριμένη ώρα.",
+   "tr": "Sabırlıyım ama bugün net bir saat lazım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.el_exp_business_trip",
+   "kind": "scenario_title",
+   "tr": "İş seyahati",
+   "en": "Business trip",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_exp_business_trip",
+   "kind": "grammar_rule",
+   "tr": "Aktarmaya yetişmek: προλαβαίνω; \"χάνω την ανταπόκριση\" kaçırmaktır.",
+   "en": null,
+   "context": "Θα προλάβω την ανταπόκριση; / ✗ Θα χάσω το αεροδρόμιο;",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.el_exp_business_trip.0",
+   "kind": "speaking_prompt",
+   "en": "Παράθυρο ή διάδρομος;",
+   "context": "Διάδρομος, κοντά στην έξοδο αν γίνεται.",
+   "have": []
+  },
+  {
+   "key": "tp.el_exp_business_trip.1",
+   "kind": "speaking_prompt",
+   "en": "Πύλη 12, σε περίπου σαράντα λεπτά.",
+   "context": "Ευχαριστώ, πηγαίνω τώρα.",
+   "have": []
+  },
+  {
+   "key": "p.el_exp_trip_0",
+   "kind": "phrase",
+   "target": "Ορίστε το PNR μου· κάρτα επιβίβασης, παρακαλώ.",
+   "tr": "İşte rezervasyon kodum; biniş kartı lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_trip_1",
+   "kind": "phrase",
+   "target": "Η χειραποσκευή είναι εντός διαστάσεων;",
+   "tr": "El bagajı ölçülere uyuyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_trip_2",
+   "kind": "phrase",
+   "target": "Με την καθυστέρηση θα προλάβω την ανταπόκριση;",
+   "tr": "Gecikmeyle aktarmaya yetişebilecek miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_trip_3",
+   "kind": "phrase",
+   "target": "Το τιμολόγιο στο όνομα της εταιρείας, παρακαλώ.",
+   "tr": "Fatura şirket adına lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_trip_4",
+   "kind": "phrase",
+   "target": "Πού είναι η είσοδος του lounge;",
+   "tr": "Lounge girişi nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_trip_5",
+   "kind": "phrase",
+   "target": "Πρέπει να κρατήσω την απόδειξη του ταξί.",
+   "tr": "Taksi fişini saklamam gerekiyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.el_exp_client_call",
+   "kind": "scenario_title",
+   "tr": "Müşteri telefonu",
+   "en": "Client phone call",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_exp_client_call",
+   "kind": "grammar_rule",
+   "tr": "Yanlış anlamayı teyit etmek için \"αν κατάλαβα λάθος\" kullanılır.",
+   "en": null,
+   "context": "Αν κατάλαβα λάθος, διορθώστε με. / ✗ Αν θα καταλάβαινα λάθος…",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.el_exp_client_call.0",
+   "kind": "speaking_prompt",
+   "en": "Χωρίς αυτή τη λειτουργία δεν βγαίνουμε live.",
+   "context": "Τότε μεταθέτουμε άλλο θέμα και αυτό το προχωράμε.",
+   "have": []
+  },
+  {
+   "key": "tp.el_exp_client_call.1",
+   "kind": "speaking_prompt",
+   "en": "Εντάξει, γράψτε το.",
+   "context": "Στέλνω επιβεβαίωση τώρα.",
+   "have": []
+  },
+  {
+   "key": "p.el_exp_call_0",
+   "kind": "phrase",
+   "target": "Έχετε πέντε λεπτά τώρα;",
+   "tr": "Şu an beş dakikanız var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_call_1",
+   "kind": "phrase",
+   "target": "Το τρίτο σημείο του χθεσινού email δεν είναι σαφές.",
+   "tr": "Dünkü mailin üçüncü maddesi net değil.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_call_2",
+   "kind": "phrase",
+   "target": "Το θεωρούμε επιπλέον ή εντός συμφωνίας;",
+   "tr": "Bunu ek iş mi sayalım yoksa kapsamda mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_call_3",
+   "kind": "phrase",
+   "target": "Αν κατάλαβα λάθος, διορθώστε με.",
+   "tr": "Yanlış anladıysam lütfen düzeltin.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_call_4",
+   "kind": "phrase",
+   "target": "Σύνοψη: προσχέδιο Παρασκευή, σχόλια Δευτέρα.",
+   "tr": "Özet: taslak cuma, yorumlar pazartesi.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_call_5",
+   "kind": "phrase",
+   "target": "Στέλνω αμέσως email επιβεβαίωσης.",
+   "tr": "Hemen bir teyit maili gönderiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.el_exp_hr_salary",
+   "kind": "scenario_title",
+   "tr": "Maaş görüşmesi",
+   "en": "Salary conversation",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_exp_hr_salary",
+   "kind": "grammar_rule",
+   "tr": "Rakamı yumuşak sunmak için \"η προσδοκία μου είναι\" kullanılır; \"απαιτώ\" kapıyı kapatır.",
+   "en": null,
+   "context": "Η προσδοκία μου είναι 15%. / ✗ Απαιτώ 15% τώρα.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.el_exp_hr_salary.0",
+   "kind": "speaking_prompt",
+   "en": "Φέτος ο προϋπολογισμός είναι στενός.",
+   "context": "Κατανοώ. Μπορούμε να μιλήσουμε για μπόνους ή βαθμίδα;",
+   "have": []
+  },
+  {
+   "key": "tp.el_exp_hr_salary.1",
+   "kind": "speaking_prompt",
+   "en": "Να το ξαναδούμε τον Μάρτιο.",
+   "context": "Ας βάλουμε τον Μάρτιο στο ημερολόγιο και σήμερα τα κριτήρια.",
+   "have": []
+  },
+  {
+   "key": "p.el_exp_salary_0",
+   "kind": "phrase",
+   "target": "Θα ήθελα να μιλήσουμε για απόδοση και αγορά.",
+   "tr": "Performansım ve piyasa seviyesi hakkında konuşmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_salary_1",
+   "kind": "phrase",
+   "target": "Σε έξι μήνες παρέδωσα τρία έργα στην ώρα τους.",
+   "tr": "Altı ayda üç projeyi zamanında teslim ettim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_salary_2",
+   "kind": "phrase",
+   "target": "Η προσδοκία μου είναι δεκαπέντε τοις εκατό· έχω τεκμήρια.",
+   "tr": "Beklentim yüzde on beş; kanıtlarım var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_salary_3",
+   "kind": "phrase",
+   "target": "Ο σημερινός τίτλος δεν αντικατοπτρίζει τις αρμοδιότητες.",
+   "tr": "Mevcut unvan sorumlulukları yansıtmıyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_salary_4",
+   "kind": "phrase",
+   "target": "Αν δεν υπάρχει προϋπολογισμός, ας ορίσουμε ημερομηνία.",
+   "tr": "Bütçe yoksa bir tarih belirleyelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_salary_5",
+   "kind": "phrase",
+   "target": "Προτιμώ την απόφαση γραπτώς.",
+   "tr": "Kararı yazılı olarak tercih ederim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.el_exp_daily_errands",
+   "kind": "scenario_title",
+   "tr": "Market ve kargo",
+   "en": "Errands and deliveries",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_exp_daily_errands",
+   "kind": "grammar_rule",
+   "tr": "Hizmet ricalarında cümle sonuna \"παρακαλώ\" eklenir.",
+   "en": null,
+   "context": "Την απόδειξη, παρακαλώ. / ✗ Δώσε απόδειξη.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.el_exp_daily_errands.0",
+   "kind": "speaking_prompt",
+   "en": "Έχετε κάρτα μέλους;",
+   "context": "Όχι, αυτή τη φορά όχι.",
+   "have": []
+  },
+  {
+   "key": "tp.el_exp_daily_errands.1",
+   "kind": "speaking_prompt",
+   "en": "Δεν έχω ρέστα, θα χρεώσω κάρτα.",
+   "context": "Εντάξει, δεν πειράζει.",
+   "have": []
+  },
+  {
+   "key": "p.el_exp_errands_0",
+   "kind": "phrase",
+   "target": "Δύο από αυτό το ψωμί και την απόδειξη, παρακαλώ.",
+   "tr": "Bu ekmekten iki tane ve fiş lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_errands_1",
+   "kind": "phrase",
+   "target": "Πού είναι το ράφι χωρίς γλουτένη;",
+   "tr": "Glütensiz reyon nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_errands_2",
+   "kind": "phrase",
+   "target": "Μην αφήνετε το δέμα στον γείτονα· σημείωμα στην πόρτα.",
+   "tr": "Paketi komşuya bırakmayın; kapıya not bırakın.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_errands_3",
+   "kind": "phrase",
+   "target": "Δεν έχω μετρητά· περνάει κάρτα;",
+   "tr": "Nakit param yok; kart geçer mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_errands_4",
+   "kind": "phrase",
+   "target": "Η επιστροφή είναι εντός δεκατεσσάρων ημερών, σωστά;",
+   "tr": "İade on dört gün içinde, değil mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_errands_5",
+   "kind": "phrase",
+   "target": "Δεν χρειάζομαι σακούλα, έχω τσάντα.",
+   "tr": "Poşete gerek yok, çantam var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.el_exp_networking",
+   "kind": "scenario_title",
+   "tr": "Networking",
+   "en": "Networking",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.el_exp_networking",
+   "kind": "grammar_rule",
+   "tr": "Meslek tanıtımı: με λένε / είμαι + επάγγελμα.",
+   "en": null,
+   "context": "Είμαι product manager στη fintech. / ✗ Κάνω κάτι με προϊόντα.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.el_exp_networking.0",
+   "kind": "speaking_prompt",
+   "en": "Τι λύνει συγκεκριμένα η εφαρμογή;",
+   "context": "Απλοποιούμε τιμολόγηση και είσπραξη για ΜμΕ.",
+   "have": []
+  },
+  {
+   "key": "tp.el_exp_networking.1",
+   "kind": "speaking_prompt",
+   "en": "Ενδιαφέρον, στείλτε μου email.",
+   "context": "Βεβαίως, θα σας στείλω αύριο.",
+   "have": []
+  },
+  {
+   "key": "p.el_exp_networking_0",
+   "kind": "phrase",
+   "target": "Με λένε Ελένη, είμαι product manager στη fintech.",
+   "tr": "Benim adım Eleni, fintech alanında ürün yöneticisiyim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_networking_1",
+   "kind": "phrase",
+   "target": "Το παράδειγμα για τις πληρωμές ήταν πολύ σαφές.",
+   "tr": "Ödemeler hakkındaki örneğiniz çok netti.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_networking_2",
+   "kind": "phrase",
+   "target": "Αντιμετωπίζετε κι εσείς τέτοια τριβή;",
+   "tr": "Sizde de böyle sürtüşmeler oluyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_networking_3",
+   "kind": "phrase",
+   "target": "Τελείωσαν οι κάρτες· να σας γράψω στο LinkedIn;",
+   "tr": "Kartvizitlerim bitti; LinkedIn’den yazabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_networking_4",
+   "kind": "phrase",
+   "target": "Έχετε δύο λεπτά; Θα είμαι σύντομη.",
+   "tr": "İki dakikanız var mı? Kısa keseceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.el_exp_networking_5",
+   "kind": "phrase",
+   "target": "Χαίρομαι να σας συστήσω κάποιον σχετικό.",
+   "tr": "Sizi ilgili birisiyle tanıştırmaktan memnuniyet duyarım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.el_family",
+   "kind": "story_title",
+   "target": "Η οικογένειά μου",
+   "tr": "Ailem",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_family.0",
+   "kind": "story_sentence",
+   "target": "Ο πατέρας μου είναι γιατρός.",
+   "tr": "Babam doktor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_family.1",
+   "kind": "story_sentence",
+   "target": "Η μητέρα μου δουλεύει σε ένα σχολείο.",
+   "tr": "Annem bir okulda çalışıyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_family.2",
+   "kind": "story_sentence",
+   "target": "Έχω μια αδερφή.",
+   "tr": "Bir kız kardeşim var.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_family.3",
+   "kind": "story_sentence",
+   "target": "Το σπίτι μας είναι μικρό, αλλά όμορφο.",
+   "tr": "Evimiz küçük ama güzel.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_family.4",
+   "kind": "story_sentence",
+   "target": "Το απόγευμα της Κυριακής μαγειρεύουμε μαζί.",
+   "tr": "Pazar öğleden sonraları birlikte yemek yapıyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_family.5",
+   "kind": "story_sentence",
+   "target": "Στο τέλος της ημέρας τρώμε όλοι μαζί.",
+   "tr": "Günün sonunda hepimiz birlikte yemek yiyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.el_my_job",
+   "kind": "story_title",
+   "target": "Η δουλειά μου",
+   "tr": "Benim İşim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_my_job.0",
+   "kind": "story_sentence",
+   "target": "Δουλεύω σε ένα γραφείο κοντά στον σταθμό.",
+   "tr": "İstasyona yakın bir ofiste çalışıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_my_job.1",
+   "kind": "story_sentence",
+   "target": "Το πρωί πίνω ένα καφέ και ξεκινώ στις εννιά.",
+   "tr": "Sabah bir kahve içiyorum ve dokuzda işe başlıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_my_job.2",
+   "kind": "story_sentence",
+   "target": "Συχνά μιλάω με τους πελάτες.",
+   "tr": "Sık sık müşterilerle konuşuyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_my_job.3",
+   "kind": "story_sentence",
+   "target": "Για μεσημέρι τρώω ένα σάντουιτς.",
+   "tr": "Öğle yemeğinde bir sandviç yiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_my_job.4",
+   "kind": "story_sentence",
+   "target": "Στις έξι τελειώνω και γυρίζω στο σπίτι.",
+   "tr": "Altıda bitirip eve dönüyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_my_job.5",
+   "kind": "story_sentence",
+   "target": "Το απόγευμα διαβάζω ή βλέπω τηλεόραση.",
+   "tr": "Öğleden sonra kitap okuyorum ya da televizyon izliyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.el_market",
+   "kind": "story_title",
+   "target": "Η αγορά",
+   "tr": "Haftalık Alışveriş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_market.0",
+   "kind": "story_sentence",
+   "target": "Κάθε Κυριακή πηγαίνω στην αγορά.",
+   "tr": "Her pazar pazar yerine gidiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_market.1",
+   "kind": "story_sentence",
+   "target": "Αγοράζω λαχανικά, φρούτα και ψωμί.",
+   "tr": "Sebze, meyve ve ekmek alıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_market.2",
+   "kind": "story_sentence",
+   "target": "Στην αγορά υπάρχουν πολλά χρώματα.",
+   "tr": "Pazar yerinde çok renk var.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_market.3",
+   "kind": "story_sentence",
+   "target": "Χθες αγόρασα ντομάτες και αγγούρια.",
+   "tr": "Dün domates ve salatalık aldım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_market.4",
+   "kind": "story_sentence",
+   "target": "Σαν βράδυ έφτιαξα μια σαλάτα.",
+   "tr": "Akşam bir salata yaptım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.el_market.5",
+   "kind": "story_sentence",
+   "target": "Όλοι την φάγαμε με πολλή όρεξη.",
+   "tr": "Hepimiz iştahla yedik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Α.n",
+   "kind": "alphabet_letter_name",
+   "target": "Α",
+   "tr": "Alfa",
+   "en": "Alpha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Α.s",
+   "kind": "alphabet_sound",
+   "target": "Α",
+   "tr": "a",
+   "context": "Αθήνα",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Α.m",
+   "kind": "alphabet_example",
+   "target": "Αθήνα",
+   "tr": "Atina",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Β.n",
+   "kind": "alphabet_letter_name",
+   "target": "Β",
+   "tr": "Vita",
+   "en": "Beta",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Β.s",
+   "kind": "alphabet_sound",
+   "target": "Β",
+   "tr": "v",
+   "context": "Βιβλίο",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Β.m",
+   "kind": "alphabet_example",
+   "target": "Βιβλίο",
+   "tr": "Kitap",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Γ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Γ",
+   "tr": "Gamma",
+   "en": "Gamma",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Γ.s",
+   "kind": "alphabet_sound",
+   "target": "Γ",
+   "tr": "g/y",
+   "context": "Γάλα",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Γ.m",
+   "kind": "alphabet_example",
+   "target": "Γάλα",
+   "tr": "Süt",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Δ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Δ",
+   "tr": "Delta",
+   "en": "Delta",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Δ.s",
+   "kind": "alphabet_sound",
+   "target": "Δ",
+   "tr": "dh",
+   "context": "Δρόμος",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Δ.m",
+   "kind": "alphabet_example",
+   "target": "Δρόμος",
+   "tr": "Yol",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ε.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ε",
+   "tr": "Epsilon",
+   "en": "Epsilon",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Ε.s",
+   "kind": "alphabet_sound",
+   "target": "Ε",
+   "tr": "e",
+   "context": "Εγώ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ε.m",
+   "kind": "alphabet_example",
+   "target": "Εγώ",
+   "tr": "Ben",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ζ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ζ",
+   "tr": "Zita",
+   "en": "Zeta",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Ζ.s",
+   "kind": "alphabet_sound",
+   "target": "Ζ",
+   "tr": "z",
+   "context": "Ζωή",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ζ.m",
+   "kind": "alphabet_example",
+   "target": "Ζωή",
+   "tr": "Hayat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Η.n",
+   "kind": "alphabet_letter_name",
+   "target": "Η",
+   "tr": "İta",
+   "en": "Eta",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Η.s",
+   "kind": "alphabet_sound",
+   "target": "Η",
+   "tr": "i",
+   "context": "Ήλιος",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Η.m",
+   "kind": "alphabet_example",
+   "target": "Ήλιος",
+   "tr": "Güneş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Θ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Θ",
+   "tr": "Thita",
+   "en": "Theta",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Θ.s",
+   "kind": "alphabet_sound",
+   "target": "Θ",
+   "tr": "th",
+   "context": "Θάλασσα",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Θ.m",
+   "kind": "alphabet_example",
+   "target": "Θάλασσα",
+   "tr": "Deniz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ι.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ι",
+   "tr": "İota",
+   "en": "Iota",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Ι.s",
+   "kind": "alphabet_sound",
+   "target": "Ι",
+   "tr": "i",
+   "context": "Ιδέα",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ι.m",
+   "kind": "alphabet_example",
+   "target": "Ιδέα",
+   "tr": "Fikir",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Κ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Κ",
+   "tr": "Kappa",
+   "en": "Kappa",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Κ.s",
+   "kind": "alphabet_sound",
+   "target": "Κ",
+   "tr": "k",
+   "context": "Καφές",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Κ.m",
+   "kind": "alphabet_example",
+   "target": "Καφές",
+   "tr": "Kahve",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Λ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Λ",
+   "tr": "Lambda",
+   "en": "Lambda",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Λ.s",
+   "kind": "alphabet_sound",
+   "target": "Λ",
+   "tr": "l",
+   "context": "Λόγος",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Λ.m",
+   "kind": "alphabet_example",
+   "target": "Λόγος",
+   "tr": "Söz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Μ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Μ",
+   "tr": "Mi",
+   "en": "Mu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Μ.s",
+   "kind": "alphabet_sound",
+   "target": "Μ",
+   "tr": "m",
+   "context": "Μάνα",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Μ.m",
+   "kind": "alphabet_example",
+   "target": "Μάνα",
+   "tr": "Anne",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ν.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ν",
+   "tr": "Ni",
+   "en": "Nu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Ν.s",
+   "kind": "alphabet_sound",
+   "target": "Ν",
+   "tr": "n",
+   "context": "Νερό",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ν.m",
+   "kind": "alphabet_example",
+   "target": "Νερό",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ξ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ξ",
+   "tr": "Ksi",
+   "en": "Xi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Ξ.s",
+   "kind": "alphabet_sound",
+   "target": "Ξ",
+   "tr": "ks",
+   "context": "Ξένος",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ξ.m",
+   "kind": "alphabet_example",
+   "target": "Ξένος",
+   "tr": "Yabancı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ο.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ο",
+   "tr": "Omikron",
+   "en": "Omicron",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Ο.s",
+   "kind": "alphabet_sound",
+   "target": "Ο",
+   "tr": "o",
+   "context": "Όνομα",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ο.m",
+   "kind": "alphabet_example",
+   "target": "Όνομα",
+   "tr": "İsim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Π.n",
+   "kind": "alphabet_letter_name",
+   "target": "Π",
+   "tr": "Pi",
+   "en": "Pi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Π.s",
+   "kind": "alphabet_sound",
+   "target": "Π",
+   "tr": "p",
+   "context": "Πόλη",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Π.m",
+   "kind": "alphabet_example",
+   "target": "Πόλη",
+   "tr": "Şehir",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ρ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ρ",
+   "tr": "Ro",
+   "en": "Rho",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Ρ.s",
+   "kind": "alphabet_sound",
+   "target": "Ρ",
+   "tr": "r",
+   "context": "Ρόδο",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ρ.m",
+   "kind": "alphabet_example",
+   "target": "Ρόδο",
+   "tr": "Gül",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Σ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Σ",
+   "tr": "Sigma",
+   "en": "Sigma",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Σ.s",
+   "kind": "alphabet_sound",
+   "target": "Σ",
+   "tr": "s",
+   "context": "Σπίτι",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Σ.m",
+   "kind": "alphabet_example",
+   "target": "Σπίτι",
+   "tr": "Ev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Τ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Τ",
+   "tr": "Taf",
+   "en": "Tau",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Τ.s",
+   "kind": "alphabet_sound",
+   "target": "Τ",
+   "tr": "t",
+   "context": "Τραπέζι",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Τ.m",
+   "kind": "alphabet_example",
+   "target": "Τραπέζι",
+   "tr": "Masa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Υ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Υ",
+   "tr": "İpsilon",
+   "en": "Upsilon",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Υ.s",
+   "kind": "alphabet_sound",
+   "target": "Υ",
+   "tr": "i",
+   "context": "Ύπνος",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Υ.m",
+   "kind": "alphabet_example",
+   "target": "Ύπνος",
+   "tr": "Uyku",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Φ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Φ",
+   "tr": "Fi",
+   "en": "Phi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Φ.s",
+   "kind": "alphabet_sound",
+   "target": "Φ",
+   "tr": "f",
+   "context": "Φως",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Φ.m",
+   "kind": "alphabet_example",
+   "target": "Φως",
+   "tr": "Işık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Χ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Χ",
+   "tr": "Hi",
+   "en": "Chi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Χ.s",
+   "kind": "alphabet_sound",
+   "target": "Χ",
+   "tr": "h",
+   "context": "Χέρι",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Χ.m",
+   "kind": "alphabet_example",
+   "target": "Χέρι",
+   "tr": "El",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ψ.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ψ",
+   "tr": "Psi",
+   "en": "Psi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Ψ.s",
+   "kind": "alphabet_sound",
+   "target": "Ψ",
+   "tr": "ps",
+   "context": "Ψωμί",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ψ.m",
+   "kind": "alphabet_example",
+   "target": "Ψωμί",
+   "tr": "Ekmek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ω.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ω",
+   "tr": "Omega",
+   "en": "Omega",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.el.Ω.s",
+   "kind": "alphabet_sound",
+   "target": "Ω",
+   "tr": "o",
+   "context": "Ώρα",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.el.Ω.m",
+   "kind": "alphabet_example",
+   "target": "Ώρα",
+   "tr": "Saat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.el.0.h",
+   "kind": "pronunciation_heard",
+   "target": "μπ",
+   "tr": "b",
+   "context": "İki harf = tek ses.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.el.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "μπίρα",
+   "tr": "bira",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.el.1.h",
+   "kind": "pronunciation_heard",
+   "target": "ντ",
+   "tr": "d",
+   "context": "n+t = d.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.el.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "ντομάτα",
+   "tr": "domata",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.el.2.h",
+   "kind": "pronunciation_heard",
+   "target": "γγ",
+   "tr": "ng",
+   "context": "Çift gamma = ng.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.el.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "αγγλικά",
+   "tr": "anglika",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

@@ -1,6 +1,9 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../../core/features.dart';
 import '../data/ai_service.dart';
 import '../data/claude_ai_service.dart';
+import '../data/fake_ai_service.dart';
 import '../domain/ai_feedback.dart';
 
 /// Gerçek Claude API'ye bağlı servis. `VOXELITH_ANTHROPIC_API_KEY`
@@ -12,6 +15,8 @@ final claudeAiServiceProvider = Provider<ClaudeAiService>((ref) {
 });
 
 final aiServiceProvider = Provider<AiService>((ref) {
+  // Ücretli AI kapalıyken (varsayılan) cihaz içi şablon servis kullanılır.
+  if (!Features.paidCloudApis) return FakeAiService();
   return ref.watch(claudeAiServiceProvider);
 });
 

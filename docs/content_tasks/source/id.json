@@ -1,0 +1,3160 @@
+{
+ "lang": "id",
+ "scenarios": [
+  {
+   "id": "id_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "id_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "id_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "id_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "id_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "id_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "id_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "id_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "id_intro",
+   "cefr": "a1",
+   "title": "Meeting someone"
+  },
+  {
+   "id": "id_shopping",
+   "cefr": "a1",
+   "title": "Shopping"
+  },
+  {
+   "id": "id_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers and time"
+  },
+  {
+   "id": "id_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "id_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "id_transport",
+   "cefr": "a1",
+   "title": "Getting around"
+  },
+  {
+   "id": "id_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "id_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "id_past_story",
+   "cefr": "a1",
+   "title": "Telling a story"
+  },
+  {
+   "id": "id_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "id_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  }
+ ],
+ "stories": [
+  {
+   "id": "id_housework",
+   "level": "a1",
+   "title": "Berbenah di rumah"
+  },
+  {
+   "id": "id_concert",
+   "level": "a1",
+   "title": "Konser di teater"
+  },
+  {
+   "id": "id_birthday",
+   "level": "a1",
+   "title": "Ulang tahun adiku"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.id_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "Kopi satu, tolong.",
+   "have": []
+  },
+  {
+   "key": "tp.id_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "Berapa harganya?",
+   "have": []
+  },
+  {
+   "key": "p.id_cafe_0",
+   "kind": "phrase",
+   "target": "Kopi satu, tolong.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_cafe_1",
+   "kind": "phrase",
+   "target": "Berapa harganya?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_cafe_2",
+   "kind": "phrase",
+   "target": "Terima kasih banyak.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "Saya punya reservasi.",
+   "have": []
+  },
+  {
+   "key": "tp.id_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "Apakah sarapan termasuk?",
+   "have": []
+  },
+  {
+   "key": "p.id_hotel_0",
+   "kind": "phrase",
+   "target": "Saya punya reservasi.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_hotel_1",
+   "kind": "phrase",
+   "target": "Apakah sarapan termasuk?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_hotel_2",
+   "kind": "phrase",
+   "target": "Terima kasih banyak.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "Permisi, di mana stasiun?",
+   "have": []
+  },
+  {
+   "key": "tp.id_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "Terima kasih banyak.",
+   "have": []
+  },
+  {
+   "key": "p.id_dir_0",
+   "kind": "phrase",
+   "target": "Permisi, di mana stasiun?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_dir_1",
+   "kind": "phrase",
+   "target": "Terima kasih banyak.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_dir_2",
+   "kind": "phrase",
+   "target": "Saya tidak mengerti.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "Halo, nama saya Deniz.",
+   "have": []
+  },
+  {
+   "key": "tp.id_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "Saya dari Turki.",
+   "have": []
+  },
+  {
+   "key": "p.id_hi_0",
+   "kind": "phrase",
+   "target": "Halo, nama saya Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_hi_1",
+   "kind": "phrase",
+   "target": "Saya dari Turki.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_hi_2",
+   "kind": "phrase",
+   "target": "Terima kasih banyak.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "Saya mencari apartemen.",
+   "have": []
+  },
+  {
+   "key": "tp.id_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "Berapa sewanya?",
+   "have": []
+  },
+  {
+   "key": "p.id_flat_0",
+   "kind": "phrase",
+   "target": "Saya mencari apartemen.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_flat_1",
+   "kind": "phrase",
+   "target": "Berapa sewanya?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_flat_2",
+   "kind": "phrase",
+   "target": "Bisa tolong bantu saya?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "Berapa harganya?",
+   "have": []
+  },
+  {
+   "key": "tp.id_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "Saya ambil yang ini.",
+   "have": []
+  },
+  {
+   "key": "p.id_shop_0",
+   "kind": "phrase",
+   "target": "Berapa harganya?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_shop_1",
+   "kind": "phrase",
+   "target": "Saya ambil yang ini.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_shop_2",
+   "kind": "phrase",
+   "target": "Bisa bayar pakai kartu?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "Minta bon, tolong.",
+   "have": []
+  },
+  {
+   "key": "tp.id_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "Kami mau bayar bareng.",
+   "have": []
+  },
+  {
+   "key": "p.id_bill_0",
+   "kind": "phrase",
+   "target": "Minta bon, tolong.",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_bill_1",
+   "kind": "phrase",
+   "target": "Kami mau bayar bareng.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_bill_2",
+   "kind": "phrase",
+   "target": "Simpan kembaliannya.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "Saya punya reservasi.",
+   "have": []
+  },
+  {
+   "key": "tp.id_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "Kursi dekat jendela, tolong.",
+   "have": []
+  },
+  {
+   "key": "p.id_airport_0",
+   "kind": "phrase",
+   "target": "Saya punya reservasi.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_airport_1",
+   "kind": "phrase",
+   "target": "Kursi dekat jendela, tolong.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_airport_2",
+   "kind": "phrase",
+   "target": "Ini antrean boarding?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Meeting someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.id_intro",
+   "kind": "grammar_rule",
+   "tr": "\"Boleh\" nazik bir istekte fiilden önce, cümlenin en başına gelir.",
+   "en": "\"Boleh\" (may/can) goes at the very start of a polite request, before the verb.",
+   "context": "Boleh minta nomor WhatsApp-mu? / ✗ Minta boleh nomor WhatsApp-mu?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_intro.0",
+   "kind": "speaking_prompt",
+   "en": "You're meeting someone new and want to break the ice.",
+   "context": "Halo, kenalin, nama saya Budi.",
+   "have": []
+  },
+  {
+   "key": "tp.id_intro.1",
+   "kind": "speaking_prompt",
+   "en": "You want to know their name.",
+   "context": "Siapa nama kamu?",
+   "have": []
+  },
+  {
+   "key": "tp.id_intro.2",
+   "kind": "speaking_prompt",
+   "en": "They ask for your name back.",
+   "context": "Nama saya Sari, kalau kamu?",
+   "have": []
+  },
+  {
+   "key": "tp.id_intro.3",
+   "kind": "speaking_prompt",
+   "en": "You're curious about their job.",
+   "context": "Kerjaannya apa?",
+   "have": []
+  },
+  {
+   "key": "tp.id_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do.",
+   "context": "Saya kerja sebagai guru.",
+   "have": []
+  },
+  {
+   "key": "tp.id_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You want to stay in touch.",
+   "context": "Boleh minta nomor WhatsApp-mu?",
+   "have": []
+  },
+  {
+   "key": "tp.id_intro.6",
+   "kind": "speaking_prompt",
+   "en": "You're saying goodbye.",
+   "context": "Sampai ketemu lagi, ya!",
+   "have": []
+  },
+  {
+   "key": "p.id_intro_0",
+   "kind": "phrase",
+   "target": "Halo, kenalin, nama saya Budi.",
+   "tr": "Merhaba, tanışalım, adım Budi.",
+   "en": "Hi, let me introduce myself, I'm Budi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_intro_1",
+   "kind": "phrase",
+   "target": "Siapa nama kamu?",
+   "tr": "Senin adın ne?",
+   "en": "What's your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_intro_2",
+   "kind": "phrase",
+   "target": "Nama saya Sari, kalau kamu?",
+   "tr": "Benim adım Sari, ya senin?",
+   "en": "I'm Sari, and you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_intro_3",
+   "kind": "phrase",
+   "target": "Kerjaannya apa?",
+   "tr": "İşin ne?",
+   "en": "What do you do for work?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_intro_4",
+   "kind": "phrase",
+   "target": "Saya kerja sebagai guru.",
+   "tr": "Öğretmen olarak çalışıyorum.",
+   "en": "I work as a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_intro_5",
+   "kind": "phrase",
+   "target": "Boleh minta nomor WhatsApp-mu?",
+   "tr": "WhatsApp numaranı alabilir miyim?",
+   "en": "Can I get your WhatsApp number?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_intro_6",
+   "kind": "phrase",
+   "target": "Sampai ketemu lagi, ya!",
+   "tr": "Tekrar görüşmek üzere!",
+   "en": "See you again!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_shopping",
+   "kind": "scenario_title",
+   "tr": "Alışveriş",
+   "en": "Shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.id_shopping",
+   "kind": "grammar_rule",
+   "tr": "Satıcıya hitap ederken \"kamu\" yerine \"Bu\" (hanımefendi) veya \"Pak\" (beyefendi) kullanılır — saygı ifade eder.",
+   "en": "Address a shopkeeper with \"Bu\" (ma'am) or \"Pak\" (sir) instead of \"kamu\" (you) — it shows respect.",
+   "context": "Ini berapa, Bu? / ✗ Ini berapa, kamu?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "A clerk asks if you need help.",
+   "context": "Lihat-lihat dulu, ya.",
+   "have": []
+  },
+  {
+   "key": "tp.id_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "You're pointing at an item's price.",
+   "context": "Ini berapa, Bu?",
+   "have": []
+  },
+  {
+   "key": "tp.id_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want to test the fit.",
+   "context": "Boleh coba dulu?",
+   "have": []
+  },
+  {
+   "key": "tp.id_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "It doesn't fit.",
+   "context": "Ada ukuran yang lebih kecil?",
+   "have": []
+  },
+  {
+   "key": "tp.id_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You're trying to bargain a little.",
+   "context": "Boleh kurang, Bu?",
+   "have": []
+  },
+  {
+   "key": "tp.id_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You're ready to pay.",
+   "context": "Bayarnya bisa pakai kartu?",
+   "have": []
+  },
+  {
+   "key": "tp.id_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You think the price is high.",
+   "context": "Kemahalan, Pak.",
+   "have": []
+  },
+  {
+   "key": "tp.id_shopping.7",
+   "kind": "speaking_prompt",
+   "en": "You've decided to buy it after all.",
+   "context": "Ya udah, saya ambil ini.",
+   "have": []
+  },
+  {
+   "key": "p.id_shopping_0",
+   "kind": "phrase",
+   "target": "Lihat-lihat dulu, ya.",
+   "tr": "Sadece bakıyorum.",
+   "en": "I'm just looking, thanks.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_shopping_1",
+   "kind": "phrase",
+   "target": "Ini berapa, Bu?",
+   "tr": "Bu ne kadar, hanımefendi?",
+   "en": "How much is this, ma'am?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_shopping_2",
+   "kind": "phrase",
+   "target": "Boleh coba dulu?",
+   "tr": "Deneyebilir miyim?",
+   "en": "Can I try it on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_shopping_3",
+   "kind": "phrase",
+   "target": "Ada ukuran yang lebih kecil?",
+   "tr": "Daha küçük bedeni var mı?",
+   "en": "Do you have a smaller size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_shopping_4",
+   "kind": "phrase",
+   "target": "Boleh kurang, Bu?",
+   "tr": "İndirim olur mu, hanımefendi?",
+   "en": "Can you lower the price, ma'am?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_shopping_5",
+   "kind": "phrase",
+   "target": "Bayarnya bisa pakai kartu?",
+   "tr": "Kartla ödeme yapılabilir mi?",
+   "en": "Can I pay by card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_shopping_6",
+   "kind": "phrase",
+   "target": "Kemahalan, Pak.",
+   "tr": "Çok pahalı, beyefendi.",
+   "en": "That's too expensive, sir.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_shopping_7",
+   "kind": "phrase",
+   "target": "Ya udah, saya ambil ini.",
+   "tr": "Tamam, bunu alıyorum.",
+   "en": "Okay, I'll take this.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers and time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.id_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "\"Setengah\" (yarım) ile saat söylenirken bir sonraki saat kullanılır: \"setengah empat\" saat 3:30 demektir, 4:30 değil.",
+   "en": "With \"setengah\" (half), Indonesian names the NEXT hour: \"setengah empat\" (half four) means 3:30, not 4:30.",
+   "context": "Sekarang jam setengah empat. / ✗ Sekarang jam empat setengah.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You don't know the time.",
+   "context": "Sekarang jam berapa?",
+   "have": []
+  },
+  {
+   "key": "tp.id_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks you the time.",
+   "context": "Sekarang jam setengah empat.",
+   "have": []
+  },
+  {
+   "key": "tp.id_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "You're checking the schedule.",
+   "context": "Keretanya berangkat jam sembilan.",
+   "have": []
+  },
+  {
+   "key": "tp.id_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "At the ticket counter.",
+   "context": "Saya punya dua tiket.",
+   "have": []
+  },
+  {
+   "key": "tp.id_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "The clerk tells you the price.",
+   "context": "Semuanya dua belas ribu rupiah.",
+   "have": []
+  },
+  {
+   "key": "tp.id_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "You're planning to meet a friend.",
+   "context": "Kita ketemu jam lima, ya?",
+   "have": []
+  },
+  {
+   "key": "tp.id_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You're running a bit late.",
+   "context": "Saya sampai sepuluh menit lagi.",
+   "have": []
+  },
+  {
+   "key": "p.id_numbers_time_0",
+   "kind": "phrase",
+   "target": "Sekarang jam berapa?",
+   "tr": "Şimdi saat kaç?",
+   "en": "What time is it now?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_numbers_time_1",
+   "kind": "phrase",
+   "target": "Sekarang jam setengah empat.",
+   "tr": "Şimdi saat üç buçuk.",
+   "en": "It's half past three.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_numbers_time_2",
+   "kind": "phrase",
+   "target": "Keretanya berangkat jam sembilan.",
+   "tr": "Tren dokuzda kalkıyor.",
+   "en": "The train leaves at nine.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_numbers_time_3",
+   "kind": "phrase",
+   "target": "Saya punya dua tiket.",
+   "tr": "İki biletim var.",
+   "en": "I have two tickets.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_numbers_time_4",
+   "kind": "phrase",
+   "target": "Semuanya dua belas ribu rupiah.",
+   "tr": "Toplam on iki bin rupi.",
+   "en": "That'll be twelve thousand rupiah.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_numbers_time_5",
+   "kind": "phrase",
+   "target": "Kita ketemu jam lima, ya?",
+   "tr": "Saat beşte buluşalım mı?",
+   "en": "Shall we meet at five?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_numbers_time_6",
+   "kind": "phrase",
+   "target": "Saya sampai sepuluh menit lagi.",
+   "tr": "On dakikaya varırım.",
+   "en": "I'll get there in ten minutes.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.id_family",
+   "kind": "grammar_rule",
+   "tr": "İyelik genelde ayrı bir kelime değil, isme eklenen \"-ku/-mu/-nya\" (benim/senin/onun) ekiyle gösterilir.",
+   "en": "Possession is usually shown by attaching \"-ku/-mu/-nya\" (my/your/his-her) to the noun, not a separate word.",
+   "context": "Ibuku dokter. / ✗ Ibu punya saya dokter.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_family.0",
+   "kind": "speaking_prompt",
+   "en": "You're showing a photo.",
+   "context": "Ini keluarga saya.",
+   "have": []
+  },
+  {
+   "key": "tp.id_family.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your siblings.",
+   "context": "Saya punya dua adik laki-laki dan satu kakak perempuan.",
+   "have": []
+  },
+  {
+   "key": "tp.id_family.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what your mother does.",
+   "context": "Ibuku dokter.",
+   "have": []
+  },
+  {
+   "key": "tp.id_family.3",
+   "kind": "speaking_prompt",
+   "en": "You're talking about your sister.",
+   "context": "Dia sayang banget sama adiknya.",
+   "have": []
+  },
+  {
+   "key": "tp.id_family.4",
+   "kind": "speaking_prompt",
+   "en": "You want to know a friend's kid's age.",
+   "context": "Anakmu umur berapa?",
+   "have": []
+  },
+  {
+   "key": "tp.id_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask where your parents live.",
+   "context": "Orang tua saya tinggal di Bandung.",
+   "have": []
+  },
+  {
+   "key": "tp.id_family.6",
+   "kind": "speaking_prompt",
+   "en": "You're asking a new friend.",
+   "context": "Kamu udah punya anak?",
+   "have": []
+  },
+  {
+   "key": "p.id_family_0",
+   "kind": "phrase",
+   "target": "Ini keluarga saya.",
+   "tr": "Bu benim ailem.",
+   "en": "This is my family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_family_1",
+   "kind": "phrase",
+   "target": "Saya punya dua adik laki-laki dan satu kakak perempuan.",
+   "tr": "İki küçük erkek kardeşim ve bir büyük kız kardeşim var.",
+   "en": "I have two younger brothers and one older sister.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_family_2",
+   "kind": "phrase",
+   "target": "Ibuku dokter.",
+   "tr": "Annem doktor.",
+   "en": "My mom's a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_family_3",
+   "kind": "phrase",
+   "target": "Dia sayang banget sama adiknya.",
+   "tr": "Kardeşini çok seviyor.",
+   "en": "She really loves her little sibling.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_family_4",
+   "kind": "phrase",
+   "target": "Anakmu umur berapa?",
+   "tr": "Çocuğun kaç yaşında?",
+   "en": "How old is your kid?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_family_5",
+   "kind": "phrase",
+   "target": "Orang tua saya tinggal di Bandung.",
+   "tr": "Ailem Bandung'da yaşıyor.",
+   "en": "My parents live in Bandung.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_family_6",
+   "kind": "phrase",
+   "target": "Kamu udah punya anak?",
+   "tr": "Çocuğun var mı?",
+   "en": "Do you have kids yet?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.id_weather",
+   "kind": "grammar_rule",
+   "tr": "Hava durumu cümlelerinde İngilizce'deki \"it\" gibi bir özne yoktur; \"lagi\" sürmekte olan bir durumu gösterir.",
+   "en": "Weather sentences have no dummy subject like English \"it\"; \"lagi\" marks something happening right now.",
+   "context": "Lagi hujan nih. / ✗ Itu lagi hujan nih.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You're about to go outside.",
+   "context": "Cuaca hari ini gimana?",
+   "have": []
+  },
+  {
+   "key": "tp.id_weather.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about the weather.",
+   "context": "Lagi hujan nih.",
+   "have": []
+  },
+  {
+   "key": "tp.id_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You step outside.",
+   "context": "Panas banget di luar.",
+   "have": []
+  },
+  {
+   "key": "tp.id_weather.3",
+   "kind": "speaking_prompt",
+   "en": "Your friend is leaving the house.",
+   "context": "Bawa payung, kayaknya mau hujan.",
+   "have": []
+  },
+  {
+   "key": "tp.id_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You wake up and check the window.",
+   "context": "Dingin banget pagi ini.",
+   "have": []
+  },
+  {
+   "key": "tp.id_weather.5",
+   "kind": "speaking_prompt",
+   "en": "You're talking about your favorite weather.",
+   "context": "Saya suka hari yang cerah.",
+   "have": []
+  },
+  {
+   "key": "tp.id_weather.6",
+   "kind": "speaking_prompt",
+   "en": "You're deciding what to wear.",
+   "context": "Anginnya kencang, ya, hari ini?",
+   "have": []
+  },
+  {
+   "key": "p.id_weather_0",
+   "kind": "phrase",
+   "target": "Cuaca hari ini gimana?",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_weather_1",
+   "kind": "phrase",
+   "target": "Lagi hujan nih.",
+   "tr": "Şu an yağmur yağıyor.",
+   "en": "It's raining right now.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_weather_2",
+   "kind": "phrase",
+   "target": "Panas banget di luar.",
+   "tr": "Dışarısı çok sıcak.",
+   "en": "It's really hot outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_weather_3",
+   "kind": "phrase",
+   "target": "Bawa payung, kayaknya mau hujan.",
+   "tr": "Şemsiye al, yağmur yağacak gibi.",
+   "en": "Bring an umbrella, looks like it might rain.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_weather_4",
+   "kind": "phrase",
+   "target": "Dingin banget pagi ini.",
+   "tr": "Bu sabah çok soğuk.",
+   "en": "It's really cold this morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_weather_5",
+   "kind": "phrase",
+   "target": "Saya suka hari yang cerah.",
+   "tr": "Güneşli günleri severim.",
+   "en": "I love sunny days.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_weather_6",
+   "kind": "phrase",
+   "target": "Anginnya kencang, ya, hari ini?",
+   "tr": "Bugün rüzgar çok mu sert?",
+   "en": "Is the wind really strong today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Getting around",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.id_transport",
+   "kind": "grammar_rule",
+   "tr": "Bir ulaşım aracına binmek için doğrudan \"naik\" + araç kullanılır, İngilizce'deki \"by\" gibi bir edat gerekmez.",
+   "en": "\"naik\" + vehicle means \"take/ride [vehicle]\" — no preposition needed, unlike English \"by bus\".",
+   "context": "Saya naik ojek ke kantor. / ✗ Saya naik dengan ojek ke kantor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You need to find a bus.",
+   "context": "Halte bus terdekat di mana, ya?",
+   "have": []
+  },
+  {
+   "key": "tp.id_transport.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks how you commute.",
+   "context": "Saya naik ojek ke kantor.",
+   "have": []
+  },
+  {
+   "key": "tp.id_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You're running late and need a ride now.",
+   "context": "Saya pesan ojek online aja.",
+   "have": []
+  },
+  {
+   "key": "tp.id_transport.3",
+   "kind": "speaking_prompt",
+   "en": "You're on the bus, unsure where to get off.",
+   "context": "Turun di mana, ya, biar deket stasiun?",
+   "have": []
+  },
+  {
+   "key": "tp.id_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You're not sure of the route.",
+   "context": "Ini kereta berhenti di bandara, nggak?",
+   "have": []
+  },
+  {
+   "key": "tp.id_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You missed the last bus.",
+   "context": "Saya butuh taksi.",
+   "have": []
+  },
+  {
+   "key": "tp.id_transport.6",
+   "kind": "speaking_prompt",
+   "en": "You're asking about travel time.",
+   "context": "Berapa lama perjalanannya?",
+   "have": []
+  },
+  {
+   "key": "tp.id_transport.7",
+   "kind": "speaking_prompt",
+   "en": "It's a short distance.",
+   "context": "Saya lebih suka jalan kaki aja.",
+   "have": []
+  },
+  {
+   "key": "p.id_transport_0",
+   "kind": "phrase",
+   "target": "Halte bus terdekat di mana, ya?",
+   "tr": "En yakın otobüs durağı nerede?",
+   "en": "Where's the nearest bus stop?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_transport_1",
+   "kind": "phrase",
+   "target": "Saya naik ojek ke kantor.",
+   "tr": "Ofise motosiklet taksiyle gidiyorum.",
+   "en": "I take a motorbike taxi to the office.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_transport_2",
+   "kind": "phrase",
+   "target": "Saya pesan ojek online aja.",
+   "tr": "Ben online motosiklet taksi çağırayım.",
+   "en": "I'll just book a ride-hailing motorbike.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_transport_3",
+   "kind": "phrase",
+   "target": "Turun di mana, ya, biar deket stasiun?",
+   "tr": "Nerede insem istasyona yakın olur?",
+   "en": "Where should I get off to be close to the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_transport_4",
+   "kind": "phrase",
+   "target": "Ini kereta berhenti di bandara, nggak?",
+   "tr": "Bu tren havalimanında duruyor mu?",
+   "en": "Does this train stop at the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_transport_5",
+   "kind": "phrase",
+   "target": "Saya butuh taksi.",
+   "tr": "Taksiye ihtiyacım var.",
+   "en": "I need a taxi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_transport_6",
+   "kind": "phrase",
+   "target": "Berapa lama perjalanannya?",
+   "tr": "Yolculuk ne kadar sürüyor?",
+   "en": "How long does the trip take?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_transport_7",
+   "kind": "phrase",
+   "target": "Saya lebih suka jalan kaki aja.",
+   "tr": "Yürümeyi tercih ederim.",
+   "en": "I'd rather just walk.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.id_emergency",
+   "kind": "grammar_rule",
+   "tr": "Acil yardım isterken cümle \"Tolong\" ile başlar ve fiil özne olmadan buyurma kipinde kullanılır.",
+   "en": "Urgent requests start with \"Tolong\" (please/help), followed by the bare verb with no subject.",
+   "context": "Tolong panggil ambulans! / ✗ Kamu tolong panggil ambulans!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "You see someone collapse.",
+   "context": "Tolong! Panggil ambulans!",
+   "have": []
+  },
+  {
+   "key": "tp.id_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "You call emergency services.",
+   "context": "Ada kecelakaan di sini.",
+   "have": []
+  },
+  {
+   "key": "tp.id_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You describe the urgency.",
+   "context": "Saya butuh dokter sekarang.",
+   "have": []
+  },
+  {
+   "key": "tp.id_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You need directions fast.",
+   "context": "Rumah sakit terdekat di mana?",
+   "have": []
+  },
+  {
+   "key": "tp.id_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You're reporting a theft.",
+   "context": "Tas saya dicopet!",
+   "have": []
+  },
+  {
+   "key": "tp.id_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "A doctor asks about allergies.",
+   "context": "Saya alergi obat penisilin.",
+   "have": []
+  },
+  {
+   "key": "tp.id_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You need official help.",
+   "context": "Tolong hubungi polisi.",
+   "have": []
+  },
+  {
+   "key": "tp.id_emergency.7",
+   "kind": "speaking_prompt",
+   "en": "You don't know where you are.",
+   "context": "Saya kesasar, bisa bantu saya?",
+   "have": []
+  },
+  {
+   "key": "p.id_emergency_0",
+   "kind": "phrase",
+   "target": "Tolong! Panggil ambulans!",
+   "tr": "İmdat! Ambulans çağırın!",
+   "en": "Help! Call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_emergency_1",
+   "kind": "phrase",
+   "target": "Ada kecelakaan di sini.",
+   "tr": "Burada bir kaza oldu.",
+   "en": "There's been an accident here.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_emergency_2",
+   "kind": "phrase",
+   "target": "Saya butuh dokter sekarang.",
+   "tr": "Şimdi bir doktora ihtiyacım var.",
+   "en": "I need a doctor now.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_emergency_3",
+   "kind": "phrase",
+   "target": "Rumah sakit terdekat di mana?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where's the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_emergency_4",
+   "kind": "phrase",
+   "target": "Tas saya dicopet!",
+   "tr": "Çantam çalındı!",
+   "en": "My bag got stolen!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_emergency_5",
+   "kind": "phrase",
+   "target": "Saya alergi obat penisilin.",
+   "tr": "Penisiline alerjim var.",
+   "en": "I'm allergic to penicillin.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_emergency_6",
+   "kind": "phrase",
+   "target": "Tolong hubungi polisi.",
+   "tr": "Lütfen polisi arayın.",
+   "en": "Please call the police.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_emergency_7",
+   "kind": "phrase",
+   "target": "Saya kesasar, bisa bantu saya?",
+   "tr": "Kayboldum, bana yardım edebilir misiniz?",
+   "en": "I'm lost, can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.id_routine",
+   "kind": "grammar_rule",
+   "tr": "\"Mandi\" (duş almak) gibi günlük rutin fiilleri tek başına kullanılır, İngilizce'deki gibi bir nesne ya da \"kendini\" almaz.",
+   "en": "Everyday routine verbs like \"mandi\" (to shower) stand alone — no object or reflexive pronoun needed, unlike English \"take a shower\".",
+   "context": "Dia mandi tiap pagi. / ✗ Dia mandi dirinya tiap pagi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your morning.",
+   "context": "Saya biasanya bangun jam tujuh.",
+   "have": []
+  },
+  {
+   "key": "tp.id_routine.1",
+   "kind": "speaking_prompt",
+   "en": "You describe your sister's routine.",
+   "context": "Dia mandi tiap pagi.",
+   "have": []
+  },
+  {
+   "key": "tp.id_routine.2",
+   "kind": "speaking_prompt",
+   "en": "You talk about your family's mornings.",
+   "context": "Kita sarapan bareng-bareng.",
+   "have": []
+  },
+  {
+   "key": "tp.id_routine.3",
+   "kind": "speaking_prompt",
+   "en": "You describe your brother's commute.",
+   "context": "Dia ke kantor naik motor.",
+   "have": []
+  },
+  {
+   "key": "tp.id_routine.4",
+   "kind": "speaking_prompt",
+   "en": "You're talking about hygiene habits.",
+   "context": "Saya selalu gosok gigi dua kali sehari.",
+   "have": []
+  },
+  {
+   "key": "tp.id_routine.5",
+   "kind": "speaking_prompt",
+   "en": "You describe your roommates.",
+   "context": "Mereka biasanya tidur larut.",
+   "have": []
+  },
+  {
+   "key": "tp.id_routine.6",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your weekend.",
+   "context": "Hari Minggu saya bangun siang.",
+   "have": []
+  },
+  {
+   "key": "p.id_routine_0",
+   "kind": "phrase",
+   "target": "Saya biasanya bangun jam tujuh.",
+   "tr": "Genelde saat yedide kalkarım.",
+   "en": "I usually wake up at seven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_routine_1",
+   "kind": "phrase",
+   "target": "Dia mandi tiap pagi.",
+   "tr": "Her sabah duş alır.",
+   "en": "She showers every morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_routine_2",
+   "kind": "phrase",
+   "target": "Kita sarapan bareng-bareng.",
+   "tr": "Birlikte kahvaltı yaparız.",
+   "en": "We have breakfast together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_routine_3",
+   "kind": "phrase",
+   "target": "Dia ke kantor naik motor.",
+   "tr": "Ofise motosikletle gider.",
+   "en": "He goes to the office by motorbike.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_routine_4",
+   "kind": "phrase",
+   "target": "Saya selalu gosok gigi dua kali sehari.",
+   "tr": "Her zaman günde iki kez dişlerimi fırçalarım.",
+   "en": "I always brush my teeth twice a day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_routine_5",
+   "kind": "phrase",
+   "target": "Mereka biasanya tidur larut.",
+   "tr": "Genelde geç yatarlar.",
+   "en": "They usually go to bed late.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_routine_6",
+   "kind": "phrase",
+   "target": "Hari Minggu saya bangun siang.",
+   "tr": "Pazar günleri geç kalkarım.",
+   "en": "On Sundays I sleep in.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_past_story",
+   "kind": "scenario_title",
+   "tr": "Bir olayı anlatmak",
+   "en": "Telling a story",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.id_past_story",
+   "kind": "grammar_rule",
+   "tr": "Geçmiş zaman fiil değişimiyle değil, \"kemarin\" (dün) gibi zaman belirteçleriyle gösterilir.",
+   "en": "Past time is shown with time words like \"kemarin\" (yesterday), not by changing the verb.",
+   "context": "Kemarin saya pergi ke pasar. / ✗ Kemarin saya pergilah ke pasar.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "You're telling a friend about your day.",
+   "context": "Kemarin saya pergi ke pasar.",
+   "have": []
+  },
+  {
+   "key": "tp.id_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "You continue the story.",
+   "context": "Saya beli sayur segar.",
+   "have": []
+  },
+  {
+   "key": "tp.id_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "Something unexpected happened.",
+   "context": "Terus, saya ketemu teman lama.",
+   "have": []
+  },
+  {
+   "key": "tp.id_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "You describe the encounter.",
+   "context": "Kita ngobrol sejam-an.",
+   "have": []
+  },
+  {
+   "key": "tp.id_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "Something went wrong.",
+   "context": "Dompet saya hilang di jalan pulang.",
+   "have": []
+  },
+  {
+   "key": "tp.id_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "It has a happy ending.",
+   "context": "Untungnya, ada yang nemuin.",
+   "have": []
+  },
+  {
+   "key": "tp.id_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "You're wrapping up the story.",
+   "context": "Gila juga, deh, hari itu!",
+   "have": []
+  },
+  {
+   "key": "p.id_past_story_0",
+   "kind": "phrase",
+   "target": "Kemarin saya pergi ke pasar.",
+   "tr": "Dün pazara gittim.",
+   "en": "Yesterday I went to the market.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_past_story_1",
+   "kind": "phrase",
+   "target": "Saya beli sayur segar.",
+   "tr": "Taze sebze aldım.",
+   "en": "I bought some fresh vegetables.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_past_story_2",
+   "kind": "phrase",
+   "target": "Terus, saya ketemu teman lama.",
+   "tr": "Sonra eski bir arkadaşımla karşılaştım.",
+   "en": "Then I ran into an old friend.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_past_story_3",
+   "kind": "phrase",
+   "target": "Kita ngobrol sejam-an.",
+   "tr": "Bir saat kadar sohbet ettik.",
+   "en": "We chatted for about an hour.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_past_story_4",
+   "kind": "phrase",
+   "target": "Dompet saya hilang di jalan pulang.",
+   "tr": "Eve dönerken cüzdanımı kaybettim.",
+   "en": "I lost my wallet on the way home.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_past_story_5",
+   "kind": "phrase",
+   "target": "Untungnya, ada yang nemuin.",
+   "tr": "Neyse ki biri buldu.",
+   "en": "Luckily, someone found it.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_past_story_6",
+   "kind": "phrase",
+   "target": "Gila juga, deh, hari itu!",
+   "tr": "O gün çılgıncaydı!",
+   "en": "That day was crazy!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "Kopi satu, tolong.",
+   "have": []
+  },
+  {
+   "key": "tp.id_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "Saya punya reservasi.",
+   "have": []
+  },
+  {
+   "key": "tp.id_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "Permisi, di mana stasiun?",
+   "have": []
+  },
+  {
+   "key": "tp.id_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "Halo, nama saya Deniz.",
+   "have": []
+  },
+  {
+   "key": "p.id_a2_route_0",
+   "kind": "phrase",
+   "target": "Kopi satu, tolong.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_a2_route_1",
+   "kind": "phrase",
+   "target": "Saya punya reservasi.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_a2_route_2",
+   "kind": "phrase",
+   "target": "Permisi, di mana stasiun?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_a2_route_3",
+   "kind": "phrase",
+   "target": "Halo, nama saya Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.id_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.id_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "Apakah sarapan termasuk?",
+   "have": []
+  },
+  {
+   "key": "tp.id_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "Saya tidak mengerti.",
+   "have": []
+  },
+  {
+   "key": "tp.id_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "Saya mencari apartemen.",
+   "have": []
+  },
+  {
+   "key": "tp.id_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "Berapa sewanya?",
+   "have": []
+  },
+  {
+   "key": "tp.id_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "Bisa bayar pakai kartu?",
+   "have": []
+  },
+  {
+   "key": "p.id_b1_solve_0",
+   "kind": "phrase",
+   "target": "Apakah sarapan termasuk?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_b1_solve_1",
+   "kind": "phrase",
+   "target": "Saya tidak mengerti.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_b1_solve_2",
+   "kind": "phrase",
+   "target": "Saya mencari apartemen.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_b1_solve_3",
+   "kind": "phrase",
+   "target": "Berapa sewanya?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.id_b1_solve_4",
+   "kind": "phrase",
+   "target": "Bisa bayar pakai kartu?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "st.id_housework",
+   "kind": "story_title",
+   "target": "Berbenah di rumah",
+   "tr": "Evde Düzen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_housework.0",
+   "kind": "story_sentence",
+   "target": "Setiap pagi saya mengepel lantai.",
+   "tr": "Her sabah zemini silerim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_housework.1",
+   "kind": "story_sentence",
+   "target": "Sebelum matahari panas, saya menyapu halaman.",
+   "tr": "Güneş ısınmadan önce avluyu süpürürüm.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_housework.2",
+   "kind": "story_sentence",
+   "target": "Setelah itu, saya mencuci piring di dapur.",
+   "tr": "Sonra mutfakta tabakları yıkarım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_housework.3",
+   "kind": "story_sentence",
+   "target": "Suami saya menyiram tanaman di belakang rumah.",
+   "tr": "Kocam arka bahçedeki bitkilere su verir.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_housework.4",
+   "kind": "story_sentence",
+   "target": "Rumah selalu rapi dan bersih.",
+   "tr": "Ev her zaman düzenli ve temiz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_housework.5",
+   "kind": "story_sentence",
+   "target": "Saya senang dengan rumah bersih.",
+   "tr": "Temiz evden memnunum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.id_concert",
+   "kind": "story_title",
+   "target": "Konser di teater",
+   "tr": "Tiyatroda Konser",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_concert.0",
+   "kind": "story_sentence",
+   "target": "Sabtu depan ada konser di teater.",
+   "tr": "Önümüzdeki cumartesi tiyatroda konser var.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_concert.1",
+   "kind": "story_sentence",
+   "target": "Saya dan sahabatku membeli dua tiket.",
+   "tr": "Ben ve en yakın arkadaşım iki bilet aldık.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_concert.2",
+   "kind": "story_sentence",
+   "target": "Kami akan datang lebih awal dan duduk di baris depan.",
+   "tr": "Erken gelip ön sıraya otururuz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_concert.3",
+   "kind": "story_sentence",
+   "target": "Musiknya lembut dan indah.",
+   "tr": "Müzik yumuşak ve güzel.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_concert.4",
+   "kind": "story_sentence",
+   "target": "Saya tidak menari, saya hanya mendengarkan.",
+   "tr": "Dans etmiyorum, sadece dinliyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_concert.5",
+   "kind": "story_sentence",
+   "target": "Musik itu membuat saya tenang.",
+   "tr": "O müzik beni rahatlatıyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.id_birthday",
+   "kind": "story_title",
+   "target": "Ulang tahun adiku",
+   "tr": "Kardeşimin Doğum Günü",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_birthday.0",
+   "kind": "story_sentence",
+   "target": "Hari ini ulang tahun adiku.",
+   "tr": "Bugün kardeşimin doğum günü.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_birthday.1",
+   "kind": "story_sentence",
+   "target": "Keluarga kami berkumpul di rumah.",
+   "tr": "Ailemiz evde toplanıyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_birthday.2",
+   "kind": "story_sentence",
+   "target": "Kami memasak makan malam besar bersama.",
+   "tr": "Birlikte büyük bir akşam yemeği pişiriyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_birthday.3",
+   "kind": "story_sentence",
+   "target": "Adikku meniup lilin di kue, lalu kami minum jus.",
+   "tr": "Kardeşim pastadaki mumları üflüyor, sonra meyve suyu içiyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_birthday.4",
+   "kind": "story_sentence",
+   "target": "Kami menyanyikan lagu ulang tahun.",
+   "tr": "Doğum günü şarkısı söylüyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.id_birthday.5",
+   "kind": "story_sentence",
+   "target": "Kami semua sangat bahagia.",
+   "tr": "Hepimiz çok mutlu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.A.n",
+   "kind": "alphabet_letter_name",
+   "target": "A",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.A.s",
+   "kind": "alphabet_sound",
+   "target": "A",
+   "tr": "a",
+   "context": "Apple",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.A.m",
+   "kind": "alphabet_example",
+   "target": "Apple",
+   "tr": "Elma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.B.n",
+   "kind": "alphabet_letter_name",
+   "target": "B",
+   "tr": "Be",
+   "en": "Bee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.B.s",
+   "kind": "alphabet_sound",
+   "target": "B",
+   "tr": "b",
+   "context": "Book",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.B.m",
+   "kind": "alphabet_example",
+   "target": "Book",
+   "tr": "Kitap",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.C.n",
+   "kind": "alphabet_letter_name",
+   "target": "C",
+   "tr": "Ce",
+   "en": "See",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.C.s",
+   "kind": "alphabet_sound",
+   "target": "C",
+   "tr": "c/s",
+   "context": "Cat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.C.m",
+   "kind": "alphabet_example",
+   "target": "Cat",
+   "tr": "Kedi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.D.n",
+   "kind": "alphabet_letter_name",
+   "target": "D",
+   "tr": "De",
+   "en": "Dee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.D.s",
+   "kind": "alphabet_sound",
+   "target": "D",
+   "tr": "d",
+   "context": "Dog",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.D.m",
+   "kind": "alphabet_example",
+   "target": "Dog",
+   "tr": "Köpek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.E.n",
+   "kind": "alphabet_letter_name",
+   "target": "E",
+   "tr": "E",
+   "en": "Ee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.E.s",
+   "kind": "alphabet_sound",
+   "target": "E",
+   "tr": "e",
+   "context": "Egg",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.E.m",
+   "kind": "alphabet_example",
+   "target": "Egg",
+   "tr": "Yumurta",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.F.n",
+   "kind": "alphabet_letter_name",
+   "target": "F",
+   "tr": "Fe",
+   "en": "Ef",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.F.s",
+   "kind": "alphabet_sound",
+   "target": "F",
+   "tr": "f",
+   "context": "Fish",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.F.m",
+   "kind": "alphabet_example",
+   "target": "Fish",
+   "tr": "Balık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.G.n",
+   "kind": "alphabet_letter_name",
+   "target": "G",
+   "tr": "Ge",
+   "en": "Jee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.G.s",
+   "kind": "alphabet_sound",
+   "target": "G",
+   "tr": "g",
+   "context": "Good",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.G.m",
+   "kind": "alphabet_example",
+   "target": "Good",
+   "tr": "İyi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.H.n",
+   "kind": "alphabet_letter_name",
+   "target": "H",
+   "tr": "He",
+   "en": "Aych",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.H.s",
+   "kind": "alphabet_sound",
+   "target": "H",
+   "tr": "h",
+   "context": "Hello",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.H.m",
+   "kind": "alphabet_example",
+   "target": "Hello",
+   "tr": "Merhaba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.I.n",
+   "kind": "alphabet_letter_name",
+   "target": "I",
+   "tr": "I",
+   "en": "Ay",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.I.s",
+   "kind": "alphabet_sound",
+   "target": "I",
+   "tr": "i/ay",
+   "context": "Ice",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.I.m",
+   "kind": "alphabet_example",
+   "target": "Ice",
+   "tr": "Buz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.J.n",
+   "kind": "alphabet_letter_name",
+   "target": "J",
+   "tr": "Je",
+   "en": "Jay",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.J.s",
+   "kind": "alphabet_sound",
+   "target": "J",
+   "tr": "j",
+   "context": "Juice",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.J.m",
+   "kind": "alphabet_example",
+   "target": "Juice",
+   "tr": "Meyve suyu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.K.n",
+   "kind": "alphabet_letter_name",
+   "target": "K",
+   "tr": "Ke",
+   "en": "Kay",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.K.s",
+   "kind": "alphabet_sound",
+   "target": "K",
+   "tr": "k",
+   "context": "Key",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.K.m",
+   "kind": "alphabet_example",
+   "target": "Key",
+   "tr": "Anahtar",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.L.n",
+   "kind": "alphabet_letter_name",
+   "target": "L",
+   "tr": "Le",
+   "en": "El",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.L.s",
+   "kind": "alphabet_sound",
+   "target": "L",
+   "tr": "l",
+   "context": "Love",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.L.m",
+   "kind": "alphabet_example",
+   "target": "Love",
+   "tr": "Aşk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.M.n",
+   "kind": "alphabet_letter_name",
+   "target": "M",
+   "tr": "Me",
+   "en": "Em",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.M.s",
+   "kind": "alphabet_sound",
+   "target": "M",
+   "tr": "m",
+   "context": "Moon",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.M.m",
+   "kind": "alphabet_example",
+   "target": "Moon",
+   "tr": "Ay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.N.n",
+   "kind": "alphabet_letter_name",
+   "target": "N",
+   "tr": "Ne",
+   "en": "En",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.N.s",
+   "kind": "alphabet_sound",
+   "target": "N",
+   "tr": "n",
+   "context": "Name",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.N.m",
+   "kind": "alphabet_example",
+   "target": "Name",
+   "tr": "İsim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.O.n",
+   "kind": "alphabet_letter_name",
+   "target": "O",
+   "tr": "O",
+   "en": "Oh",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.O.s",
+   "kind": "alphabet_sound",
+   "target": "O",
+   "tr": "o",
+   "context": "Open",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.O.m",
+   "kind": "alphabet_example",
+   "target": "Open",
+   "tr": "Açmak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.P.n",
+   "kind": "alphabet_letter_name",
+   "target": "P",
+   "tr": "Pe",
+   "en": "Pee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.P.s",
+   "kind": "alphabet_sound",
+   "target": "P",
+   "tr": "p",
+   "context": "Pen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.P.m",
+   "kind": "alphabet_example",
+   "target": "Pen",
+   "tr": "Kalem",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.Q.n",
+   "kind": "alphabet_letter_name",
+   "target": "Q",
+   "tr": "Qu",
+   "en": "Kyu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.Q.s",
+   "kind": "alphabet_sound",
+   "target": "Q",
+   "tr": "kv",
+   "context": "Queen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.Q.m",
+   "kind": "alphabet_example",
+   "target": "Queen",
+   "tr": "Kraliçe",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.R.n",
+   "kind": "alphabet_letter_name",
+   "target": "R",
+   "tr": "Re",
+   "en": "Ar",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.R.s",
+   "kind": "alphabet_sound",
+   "target": "R",
+   "tr": "r",
+   "context": "Rain",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.R.m",
+   "kind": "alphabet_example",
+   "target": "Rain",
+   "tr": "Yağmur",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.S.n",
+   "kind": "alphabet_letter_name",
+   "target": "S",
+   "tr": "Se",
+   "en": "Es",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.S.s",
+   "kind": "alphabet_sound",
+   "target": "S",
+   "tr": "s",
+   "context": "Sun",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.S.m",
+   "kind": "alphabet_example",
+   "target": "Sun",
+   "tr": "Güneş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.T.n",
+   "kind": "alphabet_letter_name",
+   "target": "T",
+   "tr": "Te",
+   "en": "Tee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.T.s",
+   "kind": "alphabet_sound",
+   "target": "T",
+   "tr": "t",
+   "context": "Tree",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.T.m",
+   "kind": "alphabet_example",
+   "target": "Tree",
+   "tr": "Ağaç",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.U.n",
+   "kind": "alphabet_letter_name",
+   "target": "U",
+   "tr": "U",
+   "en": "Yu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.U.s",
+   "kind": "alphabet_sound",
+   "target": "U",
+   "tr": "u/yu",
+   "context": "Up",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.U.m",
+   "kind": "alphabet_example",
+   "target": "Up",
+   "tr": "Yukarı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.V.n",
+   "kind": "alphabet_letter_name",
+   "target": "V",
+   "tr": "Ve",
+   "en": "Vee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.V.s",
+   "kind": "alphabet_sound",
+   "target": "V",
+   "tr": "v",
+   "context": "Very",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.V.m",
+   "kind": "alphabet_example",
+   "target": "Very",
+   "tr": "Çok",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.W.n",
+   "kind": "alphabet_letter_name",
+   "target": "W",
+   "tr": "W",
+   "en": "Double-yu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.W.s",
+   "kind": "alphabet_sound",
+   "target": "W",
+   "tr": "w",
+   "context": "Water",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.W.m",
+   "kind": "alphabet_example",
+   "target": "Water",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.X.n",
+   "kind": "alphabet_letter_name",
+   "target": "X",
+   "tr": "X",
+   "en": "Eks",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.X.s",
+   "kind": "alphabet_sound",
+   "target": "X",
+   "tr": "ks",
+   "context": "Box",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.X.m",
+   "kind": "alphabet_example",
+   "target": "Box",
+   "tr": "Kutu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.Y.n",
+   "kind": "alphabet_letter_name",
+   "target": "Y",
+   "tr": "Ye",
+   "en": "Way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.Y.s",
+   "kind": "alphabet_sound",
+   "target": "Y",
+   "tr": "y",
+   "context": "Yes",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.Y.m",
+   "kind": "alphabet_example",
+   "target": "Yes",
+   "tr": "Evet",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.Z.n",
+   "kind": "alphabet_letter_name",
+   "target": "Z",
+   "tr": "Ze",
+   "en": "Zee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.id.Z.s",
+   "kind": "alphabet_sound",
+   "target": "Z",
+   "tr": "z",
+   "context": "Zoo",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.id.Z.m",
+   "kind": "alphabet_example",
+   "target": "Zoo",
+   "tr": "Hayvanat bahçesi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.id.0.h",
+   "kind": "pronunciation_heard",
+   "target": "c",
+   "tr": "ç",
+   "context": "Her zaman ç.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.id.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "cari",
+   "tr": "çari",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.id.1.h",
+   "kind": "pronunciation_heard",
+   "target": "ng",
+   "tr": "ŋ (nazal)",
+   "context": "n+g değil, tek nazal.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.id.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "dengan",
+   "tr": "dıŋan",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.id.2.h",
+   "kind": "pronunciation_heard",
+   "target": "ny",
+   "tr": "ñ/ny",
+   "context": "Burundan y.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.id.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "nyaman",
+   "tr": "nyaman",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

@@ -244,7 +244,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'id_numbers_time_0',
         target: 'Sekarang jam berapa?',
-        gloss: {UiLang.tr: 'Şimdi saat kaç?', UiLang.en: 'What time is it now?'},
+        gloss: {
+          UiLang.tr: 'Şimdi saat kaç?',
+          UiLang.en: 'What time is it now?',
+        },
       ),
       Phrase(
         id: 'id_numbers_time_1',
@@ -265,7 +268,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'id_numbers_time_3',
         target: 'Saya punya dua tiket.',
-        gloss: {UiLang.tr: 'İki biletim var.', UiLang.en: 'I have two tickets.'},
+        gloss: {
+          UiLang.tr: 'İki biletim var.',
+          UiLang.en: 'I have two tickets.',
+        },
       ),
       Phrase(
         id: 'id_numbers_time_4',
@@ -305,7 +311,10 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: "You're checking the schedule.",
         expected: 'Keretanya berangkat jam sembilan.',
       ),
-      SpeakTurn(prompt: 'At the ticket counter.', expected: 'Saya punya dua tiket.'),
+      SpeakTurn(
+        prompt: 'At the ticket counter.',
+        expected: 'Saya punya dua tiket.',
+      ),
       SpeakTurn(
         prompt: 'The clerk tells you the price.',
         expected: 'Semuanya dua belas ribu rupiah.',
@@ -367,7 +376,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'id_family_4',
         target: 'Anakmu umur berapa?',
-        gloss: {UiLang.tr: 'Çocuğun kaç yaşında?', UiLang.en: "How old is your kid?"},
+        gloss: {
+          UiLang.tr: 'Çocuğun kaç yaşında?',
+          UiLang.en: "How old is your kid?",
+        },
       ),
       Phrase(
         id: 'id_family_5',
@@ -380,11 +392,17 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'id_family_6',
         target: 'Kamu udah punya anak?',
-        gloss: {UiLang.tr: 'Çocuğun var mı?', UiLang.en: 'Do you have kids yet?'},
+        gloss: {
+          UiLang.tr: 'Çocuğun var mı?',
+          UiLang.en: 'Do you have kids yet?',
+        },
       ),
     ],
     turns: [
-      SpeakTurn(prompt: "You're showing a photo.", expected: 'Ini keluarga saya.'),
+      SpeakTurn(
+        prompt: "You're showing a photo.",
+        expected: 'Ini keluarga saya.',
+      ),
       SpeakTurn(
         prompt: 'Someone asks about your siblings.',
         expected: 'Saya punya dua adik laki-laki dan satu kakak perempuan.',
@@ -575,7 +593,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'id_transport_5',
         target: 'Saya butuh taksi.',
-        gloss: {UiLang.tr: 'Taksiye ihtiyacım var.', UiLang.en: 'I need a taxi.'},
+        gloss: {
+          UiLang.tr: 'Taksiye ihtiyacım var.',
+          UiLang.en: 'I need a taxi.',
+        },
       ),
       Phrase(
         id: 'id_transport_6',
@@ -615,7 +636,10 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: "You're not sure of the route.",
         expected: 'Ini kereta berhenti di bandara, nggak?',
       ),
-      SpeakTurn(prompt: 'You missed the last bus.', expected: 'Saya butuh taksi.'),
+      SpeakTurn(
+        prompt: 'You missed the last bus.',
+        expected: 'Saya butuh taksi.',
+      ),
       SpeakTurn(
         prompt: "You're asking about travel time.",
         expected: 'Berapa lama perjalanannya?',
@@ -723,7 +747,10 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: 'You need directions fast.',
         expected: 'Rumah sakit terdekat di mana?',
       ),
-      SpeakTurn(prompt: "You're reporting a theft.", expected: 'Tas saya dicopet!'),
+      SpeakTurn(
+        prompt: "You're reporting a theft.",
+        expected: 'Tas saya dicopet!',
+      ),
       SpeakTurn(
         prompt: 'A doctor asks about allergies.',
         expected: 'Saya alergi obat penisilin.',
@@ -1000,7 +1027,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_intro_3',
         target: 'Unafanya kazi gani?', // TODO: native review
-        gloss: {UiLang.tr: 'Ne iş yapıyorsun?', UiLang.en: 'What work do you do?'},
+        gloss: {
+          UiLang.tr: 'Ne iş yapıyorsun?',
+          UiLang.en: 'What work do you do?',
+        },
       ),
       Phrase(
         id: 'sw_intro_4',
@@ -1026,7 +1056,10 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: "You're meeting someone new and want to break the ice.",
         expected: 'Habari, jina langu ni Amani.',
       ),
-      SpeakTurn(prompt: 'You want to know their name.', expected: 'Jina lako nani?'),
+      SpeakTurn(
+        prompt: 'You want to know their name.',
+        expected: 'Jina lako nani?',
+      ),
       SpeakTurn(
         prompt: 'They ask for your name back.',
         expected: 'Naitwa Fatuma, na wewe?',
@@ -1093,7 +1126,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_shopping_4',
         target: 'Mnapokea kadi?', // TODO: native review
-        gloss: {UiLang.tr: 'Kart kabul ediyor musunuz?', UiLang.en: 'Do you accept cards?'},
+        gloss: {
+          UiLang.tr: 'Kart kabul ediyor musunuz?',
+          UiLang.en: 'Do you accept cards?',
+        },
       ),
       Phrase(
         id: 'sw_shopping_5',
@@ -1111,7 +1147,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_shopping_7',
         target: 'Sawa, nitachukua hii.', // TODO: native review
-        gloss: {UiLang.tr: 'Tamam, bunu alıyorum.', UiLang.en: "Okay, I'll take this."},
+        gloss: {
+          UiLang.tr: 'Tamam, bunu alıyorum.',
+          UiLang.en: "Okay, I'll take this.",
+        },
       ),
     ],
     turns: [
@@ -1123,13 +1162,19 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: 'You found something you like.',
         expected: 'Una hii kwa size arobaini?',
       ),
-      SpeakTurn(prompt: 'You want to test the fit.', expected: 'Naweza kujaribu?'),
+      SpeakTurn(
+        prompt: 'You want to test the fit.',
+        expected: 'Naweza kujaribu?',
+      ),
       SpeakTurn(
         prompt: "You're checking the price.",
         expected: 'Viatu hivi bei gani?',
       ),
       SpeakTurn(prompt: "You're ready to pay.", expected: 'Mnapokea kadi?'),
-      SpeakTurn(prompt: 'You think the price is high.', expected: 'Ni ghali sana.'),
+      SpeakTurn(
+        prompt: 'You think the price is high.',
+        expected: 'Ni ghali sana.',
+      ),
       SpeakTurn(
         prompt: "You're trying to bargain a little.",
         expected: 'Punguza bei kidogo, tafadhali.',
@@ -1161,12 +1206,18 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_numbers_time_0',
         target: 'Sasa ni saa ngapi?', // TODO: native review
-        gloss: {UiLang.tr: 'Şimdi saat kaç?', UiLang.en: 'What time is it now?'},
+        gloss: {
+          UiLang.tr: 'Şimdi saat kaç?',
+          UiLang.en: 'What time is it now?',
+        },
       ),
       Phrase(
         id: 'sw_numbers_time_1',
         target: 'Ni saa tisa na nusu.', // TODO: native review
-        gloss: {UiLang.tr: 'Saat üç buçuk.', UiLang.en: "It's half past three."},
+        gloss: {
+          UiLang.tr: 'Saat üç buçuk.',
+          UiLang.en: "It's half past three.",
+        },
       ),
       Phrase(
         id: 'sw_numbers_time_2',
@@ -1179,7 +1230,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_numbers_time_3',
         target: 'Nina tiketi mbili.', // TODO: native review
-        gloss: {UiLang.tr: 'İki biletim var.', UiLang.en: 'I have two tickets.'},
+        gloss: {
+          UiLang.tr: 'İki biletim var.',
+          UiLang.en: 'I have two tickets.',
+        },
       ),
       Phrase(
         id: 'sw_numbers_time_4',
@@ -1207,7 +1261,10 @@ final List<Scenario> catalogExtraBatchK = [
       ),
     ],
     turns: [
-      SpeakTurn(prompt: "You don't know the time.", expected: 'Sasa ni saa ngapi?'),
+      SpeakTurn(
+        prompt: "You don't know the time.",
+        expected: 'Sasa ni saa ngapi?',
+      ),
       SpeakTurn(
         prompt: 'Someone asks you the time.',
         expected: 'Ni saa tisa na nusu.',
@@ -1265,7 +1322,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_family_2',
         target: 'Mama yangu ni daktari.', // TODO: native review
-        gloss: {UiLang.tr: 'Annem doktor.', UiLang.en: 'My mother is a doctor.'},
+        gloss: {
+          UiLang.tr: 'Annem doktor.',
+          UiLang.en: 'My mother is a doctor.',
+        },
       ),
       Phrase(
         id: 'sw_family_3',
@@ -1294,11 +1354,17 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_family_6',
         target: 'Una watoto?', // TODO: native review
-        gloss: {UiLang.tr: 'Çocuğun var mı?', UiLang.en: 'Do you have children?'},
+        gloss: {
+          UiLang.tr: 'Çocuğun var mı?',
+          UiLang.en: 'Do you have children?',
+        },
       ),
     ],
     turns: [
-      SpeakTurn(prompt: "You're showing a photo.", expected: 'Hii ni familia yangu.'),
+      SpeakTurn(
+        prompt: "You're showing a photo.",
+        expected: 'Hii ni familia yangu.',
+      ),
       SpeakTurn(
         prompt: 'Someone asks about your siblings.',
         expected: 'Nina kaka wawili na dada mmoja.',
@@ -1351,12 +1417,18 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_weather_1',
         target: 'Kuna mvua leo.', // TODO: native review
-        gloss: {UiLang.tr: 'Bugün yağmur var.', UiLang.en: "There's rain today."},
+        gloss: {
+          UiLang.tr: 'Bugün yağmur var.',
+          UiLang.en: "There's rain today.",
+        },
       ),
       Phrase(
         id: 'sw_weather_2',
         target: 'Kuna joto sana nje.', // TODO: native review
-        gloss: {UiLang.tr: 'Dışarısı çok sıcak.', UiLang.en: "It's very hot outside."},
+        gloss: {
+          UiLang.tr: 'Dışarısı çok sıcak.',
+          UiLang.en: "It's very hot outside.",
+        },
       ),
       Phrase(
         id: 'sw_weather_3',
@@ -1377,12 +1449,18 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_weather_5',
         target: 'Napenda siku za jua.', // TODO: native review
-        gloss: {UiLang.tr: 'Güneşli günleri severim.', UiLang.en: 'I love sunny days.'},
+        gloss: {
+          UiLang.tr: 'Güneşli günleri severim.',
+          UiLang.en: 'I love sunny days.',
+        },
       ),
       Phrase(
         id: 'sw_weather_6',
         target: 'Kuna upepo mkali leo?', // TODO: native review
-        gloss: {UiLang.tr: 'Bugün rüzgar sert mi?', UiLang.en: 'Is the wind strong today?'},
+        gloss: {
+          UiLang.tr: 'Bugün rüzgar sert mi?',
+          UiLang.en: 'Is the wind strong today?',
+        },
       ),
     ],
     turns: [
@@ -1390,7 +1468,10 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: "You're about to go outside.",
         expected: 'Hali ya hewa ikoje leo?',
       ),
-      SpeakTurn(prompt: 'Someone asks about the weather.', expected: 'Kuna mvua leo.'),
+      SpeakTurn(
+        prompt: 'Someone asks about the weather.',
+        expected: 'Kuna mvua leo.',
+      ),
       SpeakTurn(prompt: 'You step outside.', expected: 'Kuna joto sana nje.'),
       SpeakTurn(
         prompt: 'Your friend is leaving the house.',
@@ -1430,7 +1511,8 @@ final List<Scenario> catalogExtraBatchK = [
     phrases: [
       Phrase(
         id: 'sw_transport_0',
-        target: 'Kituo cha basi kilicho karibu kiko wapi?', // TODO: native review
+        target:
+            'Kituo cha basi kilicho karibu kiko wapi?', // TODO: native review
         gloss: {
           UiLang.tr: 'En yakın otobüs durağı nerede?',
           UiLang.en: "Where's the nearest bus stop?",
@@ -1468,7 +1550,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_transport_5',
         target: 'Nahitaji teksi.', // TODO: native review
-        gloss: {UiLang.tr: 'Taksiye ihtiyacım var.', UiLang.en: 'I need a taxi.'},
+        gloss: {
+          UiLang.tr: 'Taksiye ihtiyacım var.',
+          UiLang.en: 'I need a taxi.',
+        },
       ),
       Phrase(
         id: 'sw_transport_6',
@@ -1496,7 +1581,10 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: 'Someone asks how you commute.',
         expected: 'Napanda daladala kwenda kazini.',
       ),
-      SpeakTurn(prompt: "You're at the train station.", expected: 'Ni jukwaa gani?'),
+      SpeakTurn(
+        prompt: "You're at the train station.",
+        expected: 'Ni jukwaa gani?',
+      ),
       SpeakTurn(
         prompt: 'At the ticket counter.',
         expected: 'Tiketi moja kwenda mjini, tafadhali.',
@@ -1505,12 +1593,18 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: "You're not sure of the route.",
         expected: 'Treni hii inasimama uwanja wa ndege?',
       ),
-      SpeakTurn(prompt: 'You missed the last bus.', expected: 'Nahitaji teksi.'),
+      SpeakTurn(
+        prompt: 'You missed the last bus.',
+        expected: 'Nahitaji teksi.',
+      ),
       SpeakTurn(
         prompt: "You're asking about travel time.",
         expected: 'Safari inachukua muda gani?',
       ),
-      SpeakTurn(prompt: "It's a short distance.", expected: 'Napendelea kutembea tu.'),
+      SpeakTurn(
+        prompt: "It's a short distance.",
+        expected: 'Napendelea kutembea tu.',
+      ),
     ],
   ),
   Scenario(
@@ -1566,7 +1660,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_emergency_4',
         target: 'Mtu ameiba mkoba wangu!', // TODO: native review
-        gloss: {UiLang.tr: 'Biri çantamı çaldı!', UiLang.en: 'Someone stole my bag!'},
+        gloss: {
+          UiLang.tr: 'Biri çantamı çaldı!',
+          UiLang.en: 'Someone stole my bag!',
+        },
       ),
       Phrase(
         id: 'sw_emergency_5',
@@ -1610,7 +1707,10 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: 'You need directions fast.',
         expected: 'Hospitali iliyo karibu iko wapi?',
       ),
-      SpeakTurn(prompt: "You're reporting a theft.", expected: 'Mtu ameiba mkoba wangu!'),
+      SpeakTurn(
+        prompt: "You're reporting a theft.",
+        expected: 'Mtu ameiba mkoba wangu!',
+      ),
       SpeakTurn(
         prompt: 'A doctor asks about allergies.',
         expected: 'Nina mzio wa penicillin.',
@@ -1740,8 +1840,10 @@ final List<Scenario> catalogExtraBatchK = [
     clipLine: 'Jana nilienda sokoni.',
     grammarNote: GrammarNote(
       rule: {
-        UiLang.tr: 'Geçmiş zaman, fiildeki "-na-" yerine gelen "-li-" ekiyle gösterilir.',
-        UiLang.en: 'Past tense is marked by replacing "-na-" with "-li-" inside the verb.',
+        UiLang.tr:
+            'Geçmiş zaman, fiildeki "-na-" yerine gelen "-li-" ekiyle gösterilir.',
+        UiLang.en:
+            'Past tense is marked by replacing "-na-" with "-li-" inside the verb.',
       },
       goodExample: 'Jana nilienda sokoni.',
       badExample: 'Jana ninaenda sokoni.',
@@ -1774,11 +1876,15 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_past_story_3',
         target: 'Tulizungumza kwa saa moja.', // TODO: native review
-        gloss: {UiLang.tr: 'Bir saat konuştuk.', UiLang.en: 'We talked for an hour.'},
+        gloss: {
+          UiLang.tr: 'Bir saat konuştuk.',
+          UiLang.en: 'We talked for an hour.',
+        },
       ),
       Phrase(
         id: 'sw_past_story_4',
-        target: 'Nilipoteza mkoba wangu njiani kurudi nyumbani.', // TODO: native review
+        target:
+            'Nilipoteza mkoba wangu njiani kurudi nyumbani.', // TODO: native review
         gloss: {
           UiLang.tr: 'Eve dönerken çantamı kaybettim.',
           UiLang.en: 'I lost my bag on the way home.',
@@ -1787,12 +1893,18 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'sw_past_story_5',
         target: 'Kwa bahati nzuri, mtu aliupata.', // TODO: native review
-        gloss: {UiLang.tr: 'Neyse ki biri onu buldu.', UiLang.en: 'Luckily, someone found it.'},
+        gloss: {
+          UiLang.tr: 'Neyse ki biri onu buldu.',
+          UiLang.en: 'Luckily, someone found it.',
+        },
       ),
       Phrase(
         id: 'sw_past_story_6',
         target: 'Ilikuwa siku ya ajabu!', // TODO: native review
-        gloss: {UiLang.tr: 'Çılgın bir gündü!', UiLang.en: 'It was a crazy day!'},
+        gloss: {
+          UiLang.tr: 'Çılgın bir gündü!',
+          UiLang.en: 'It was a crazy day!',
+        },
       ),
     ],
     turns: [
@@ -1800,7 +1912,10 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: "You're telling a friend about your day.",
         expected: 'Jana nilienda sokoni.',
       ),
-      SpeakTurn(prompt: 'You continue the story.', expected: 'Nilinunua mboga safi.'),
+      SpeakTurn(
+        prompt: 'You continue the story.',
+        expected: 'Nilinunua mboga safi.',
+      ),
       SpeakTurn(
         prompt: 'Something unexpected happened.',
         expected: 'Kisha nilikutana na rafiki wa zamani.',
@@ -1835,12 +1950,12 @@ final List<Scenario> catalogExtraBatchK = [
     grammarNote: GrammarNote(
       rule: {
         UiLang.tr:
-            'Fiil çekimi özneyi zaten gösterdiği için kişi zamiri ("én" - ben) genelde cümleden çıkarılır.',
+            'Fiil kişiye göre çekimlenir: "ben" = vagyok. "van" yalnızca üçüncü şahıs içindir (ve "o bir öğretmen" derken hiç söylenmez). Zamir "én" genelde düşer: "Tanár vagyok."',
         UiLang.en:
-            'The verb ending already shows the subject, so the personal pronoun ("én" - I) is usually dropped.',
+            'The verb is conjugated for the person: "I am" = vagyok; "van" is only third person. The pronoun "én" is usually dropped: "Tanár vagyok."',
       },
       goodExample: 'Tanár vagyok.',
-      badExample: 'Én vagyok tanár.',
+      badExample: 'Én tanár van.',
     ),
     phrases: [
       Phrase(
@@ -1859,7 +1974,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'hu_intro_2',
         target: 'Kata vagyok, és téged?',
-        gloss: {UiLang.tr: 'Ben Kata, ya sen?', UiLang.en: "I'm Kata, and you?"},
+        gloss: {
+          UiLang.tr: 'Ben Kata, ya sen?',
+          UiLang.en: "I'm Kata, and you?",
+        },
       ),
       Phrase(
         id: 'hu_intro_3',
@@ -1890,7 +2008,10 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: 'You just met someone new.',
         expected: 'Szia, örülök, hogy megismerhetlek.',
       ),
-      SpeakTurn(prompt: 'You want to know their name.', expected: 'Hogy hívnak?'),
+      SpeakTurn(
+        prompt: 'You want to know their name.',
+        expected: 'Hogy hívnak?',
+      ),
       SpeakTurn(
         prompt: 'They ask for your name back.',
         expected: 'Kata vagyok, és téged?',
@@ -1904,7 +2025,10 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: 'You want to stay in touch.',
         expected: 'Elkérhetem a számod?',
       ),
-      SpeakTurn(prompt: "You're saying goodbye.", expected: 'Hamarosan találkozunk!'),
+      SpeakTurn(
+        prompt: "You're saying goodbye.",
+        expected: 'Hamarosan találkozunk!',
+      ),
     ],
   ),
   Scenario(
@@ -1965,7 +2089,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'hu_shopping_5',
         target: 'Ez túl drága.',
-        gloss: {UiLang.tr: 'Bu çok pahalı.', UiLang.en: 'This is too expensive.'},
+        gloss: {
+          UiLang.tr: 'Bu çok pahalı.',
+          UiLang.en: 'This is too expensive.',
+        },
       ),
       Phrase(
         id: 'hu_shopping_6',
@@ -1990,13 +2117,22 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: 'You found something you like.',
         expected: 'Megvan ez 40-es méretben?',
       ),
-      SpeakTurn(prompt: 'You want to test the fit.', expected: 'Felpróbálhatom?'),
+      SpeakTurn(
+        prompt: 'You want to test the fit.',
+        expected: 'Felpróbálhatom?',
+      ),
       SpeakTurn(
         prompt: "You're checking the price.",
         expected: 'Mennyibe kerül ez a cipő?',
       ),
-      SpeakTurn(prompt: "You're ready to pay.", expected: 'Fizethetek kártyával?'),
-      SpeakTurn(prompt: 'You think the price is high.', expected: 'Ez túl drága.'),
+      SpeakTurn(
+        prompt: "You're ready to pay.",
+        expected: 'Fizethetek kártyával?',
+      ),
+      SpeakTurn(
+        prompt: 'You think the price is high.',
+        expected: 'Ez túl drága.',
+      ),
       SpeakTurn(prompt: "It doesn't fit.", expected: 'Van kisebb méret?'),
       SpeakTurn(prompt: "You've decided to buy it.", expected: 'Ezt elviszem.'),
     ],
@@ -2022,7 +2158,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'hu_numbers_time_0',
         target: 'Hány óra van most?',
-        gloss: {UiLang.tr: 'Şimdi saat kaç?', UiLang.en: 'What time is it now?'},
+        gloss: {
+          UiLang.tr: 'Şimdi saat kaç?',
+          UiLang.en: 'What time is it now?',
+        },
       ),
       Phrase(
         id: 'hu_numbers_time_1',
@@ -2043,7 +2182,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'hu_numbers_time_3',
         target: 'Két jegyem van.',
-        gloss: {UiLang.tr: 'İki biletim var.', UiLang.en: 'I have two tickets.'},
+        gloss: {
+          UiLang.tr: 'İki biletim var.',
+          UiLang.en: 'I have two tickets.',
+        },
       ),
       Phrase(
         id: 'hu_numbers_time_4',
@@ -2071,7 +2213,10 @@ final List<Scenario> catalogExtraBatchK = [
       ),
     ],
     turns: [
-      SpeakTurn(prompt: "You don't know the time.", expected: 'Hány óra van most?'),
+      SpeakTurn(
+        prompt: "You don't know the time.",
+        expected: 'Hány óra van most?',
+      ),
       SpeakTurn(
         prompt: 'Someone asks you the time.',
         expected: 'Most fél négy van.',
@@ -2129,7 +2274,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'hu_family_2',
         target: 'Anyám orvos.',
-        gloss: {UiLang.tr: 'Annem doktor.', UiLang.en: 'My mother is a doctor.'},
+        gloss: {
+          UiLang.tr: 'Annem doktor.',
+          UiLang.en: 'My mother is a doctor.',
+        },
       ),
       Phrase(
         id: 'hu_family_3',
@@ -2162,7 +2310,10 @@ final List<Scenario> catalogExtraBatchK = [
       ),
     ],
     turns: [
-      SpeakTurn(prompt: "You're showing a photo.", expected: 'Ez itt a családom.'),
+      SpeakTurn(
+        prompt: "You're showing a photo.",
+        expected: 'Ez itt a családom.',
+      ),
       SpeakTurn(
         prompt: 'Someone asks about your siblings.',
         expected: 'Két öcsém és egy nővérem van.',
@@ -2183,7 +2334,10 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: 'They ask where your parents live.',
         expected: 'A szüleim Szegeden élnek.',
       ),
-      SpeakTurn(prompt: "You're asking a new friend.", expected: 'Vannak gyerekeid?'),
+      SpeakTurn(
+        prompt: "You're asking a new friend.",
+        expected: 'Vannak gyerekeid?',
+      ),
     ],
   ),
   Scenario(
@@ -2215,7 +2369,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'hu_weather_1',
         target: 'Esik ma.',
-        gloss: {UiLang.tr: 'Bugün yağmur yağıyor.', UiLang.en: "It's raining today."},
+        gloss: {
+          UiLang.tr: 'Bugün yağmur yağıyor.',
+          UiLang.en: "It's raining today.",
+        },
       ),
       Phrase(
         id: 'hu_weather_2',
@@ -2252,7 +2409,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'hu_weather_6',
         target: 'Szeles van ma?',
-        gloss: {UiLang.tr: 'Bugün rüzgarlı mı?', UiLang.en: 'Is it windy today?'},
+        gloss: {
+          UiLang.tr: 'Bugün rüzgarlı mı?',
+          UiLang.en: 'Is it windy today?',
+        },
       ),
     ],
     turns: [
@@ -2260,8 +2420,14 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: "You're about to go outside.",
         expected: 'Milyen ma az idő?',
       ),
-      SpeakTurn(prompt: 'Someone asks about the weather.', expected: 'Esik ma.'),
-      SpeakTurn(prompt: 'You step outside.', expected: 'Nagyon meleg van kint.'),
+      SpeakTurn(
+        prompt: 'Someone asks about the weather.',
+        expected: 'Esik ma.',
+      ),
+      SpeakTurn(
+        prompt: 'You step outside.',
+        expected: 'Nagyon meleg van kint.',
+      ),
       SpeakTurn(
         prompt: 'Your friend is leaving the house.',
         expected: 'Vigyél esernyőt, lehet, hogy esik.',
@@ -2274,7 +2440,10 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: "You're talking about your favorite weather.",
         expected: 'Szeretem a napos napokat.',
       ),
-      SpeakTurn(prompt: "You're deciding what to wear.", expected: 'Szeles van ma?'),
+      SpeakTurn(
+        prompt: "You're deciding what to wear.",
+        expected: 'Szeles van ma?',
+      ),
     ],
   ),
   Scenario(
@@ -2338,7 +2507,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'hu_transport_5',
         target: 'Taxira van szükségem.',
-        gloss: {UiLang.tr: 'Taksiye ihtiyacım var.', UiLang.en: 'I need a taxi.'},
+        gloss: {
+          UiLang.tr: 'Taksiye ihtiyacım var.',
+          UiLang.en: 'I need a taxi.',
+        },
       ),
       Phrase(
         id: 'hu_transport_6',
@@ -2378,12 +2550,18 @@ final List<Scenario> catalogExtraBatchK = [
         prompt: "You're not sure of the route.",
         expected: 'Ez a vonat megáll a reptérnél?',
       ),
-      SpeakTurn(prompt: 'You missed the last bus.', expected: 'Taxira van szükségem.'),
+      SpeakTurn(
+        prompt: 'You missed the last bus.',
+        expected: 'Taxira van szükségem.',
+      ),
       SpeakTurn(
         prompt: "You're asking about travel time.",
         expected: 'Mennyi ideig tart az út?',
       ),
-      SpeakTurn(prompt: "It's a short distance.", expected: 'Inkább gyalog megyek.'),
+      SpeakTurn(
+        prompt: "It's a short distance.",
+        expected: 'Inkább gyalog megyek.',
+      ),
     ],
   ),
   Scenario(
@@ -2620,7 +2798,8 @@ final List<Scenario> catalogExtraBatchK = [
     grammarNote: GrammarNote(
       rule: {
         UiLang.tr: 'Geçmiş zaman, fiil köküne eklenen "-t/-tt" ekiyle kurulur.',
-        UiLang.en: 'The past tense is formed by adding the suffix "-t/-tt" to the verb stem.',
+        UiLang.en:
+            'The past tense is formed by adding the suffix "-t/-tt" to the verb stem.',
       },
       goodExample: 'Tegnap elmentem a piacra.',
       badExample: 'Tegnap elmegyek a piacra.',
@@ -2653,7 +2832,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'hu_past_story_3',
         target: 'Egy órát beszélgettünk.',
-        gloss: {UiLang.tr: 'Bir saat konuştuk.', UiLang.en: 'We talked for an hour.'},
+        gloss: {
+          UiLang.tr: 'Bir saat konuştuk.',
+          UiLang.en: 'We talked for an hour.',
+        },
       ),
       Phrase(
         id: 'hu_past_story_4',
@@ -2674,7 +2856,10 @@ final List<Scenario> catalogExtraBatchK = [
       Phrase(
         id: 'hu_past_story_6',
         target: 'Ez egy őrült nap volt!',
-        gloss: {UiLang.tr: 'Çılgın bir gündü!', UiLang.en: 'It was a crazy day!'},
+        gloss: {
+          UiLang.tr: 'Çılgın bir gündü!',
+          UiLang.en: 'It was a crazy day!',
+        },
       ),
     ],
     turns: [

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA0000050000000000000000 /* NuraHomeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000010000000000000000 /* NuraHomeWidget.swift */; };
-		AA0000060000000000000000 /* NuraHomeWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA0000040000000000000000 /* NuraHomeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA0000050000000000000000 /* VoxelithHomeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000010000000000000000 /* VoxelithHomeWidget.swift */; };
+		AA0000060000000000000000 /* VoxelithHomeWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA0000040000000000000000 /* VoxelithHomeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C807B294A618700263BE5 /* RunnerTests.swift */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
@@ -18,6 +18,8 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		BB0000030000000000000000 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = BB0000010000000000000000 /* PrivacyInfo.xcprivacy */; };
+		BB0000040000000000000000 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0000050000000000000000 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +28,7 @@
 			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AA00000B0000000000000000;
-			remoteInfo = NuraHomeWidget;
+			remoteInfo = VoxelithHomeWidget;
 		};
 		331C8085294A63A400263BE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -43,7 +45,7 @@
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
-			files = (AA0000060000000000000000 /* NuraHomeWidget.appex in Embed App Extensions */, );
+			files = (AA0000060000000000000000 /* VoxelithHomeWidget.appex in Embed App Extensions */, );
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,10 +62,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AA0000010000000000000000 /* NuraHomeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuraHomeWidget.swift; sourceTree = "<group>"; };
-		AA0000020000000000000000 /* NuraHomeWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NuraHomeWidget.entitlements; sourceTree = "<group>"; };
+		AA0000010000000000000000 /* VoxelithHomeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelithHomeWidget.swift; sourceTree = "<group>"; };
+		AA0000020000000000000000 /* VoxelithHomeWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoxelithHomeWidget.entitlements; sourceTree = "<group>"; };
 		AA0000030000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA0000040000000000000000 /* NuraHomeWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NuraHomeWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000040000000000000000 /* VoxelithHomeWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VoxelithHomeWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		331C807B294A618700263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
@@ -81,6 +83,9 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0000010000000000000000 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		BB0000020000000000000000 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB0000060000000000000000 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +101,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AA0000070000000000000000 /* NuraHomeWidget */ = {
+		AA0000070000000000000000 /* VoxelithHomeWidget */ = {
 			isa = PBXGroup;
-			children = (AA0000010000000000000000 /* NuraHomeWidget.swift */, AA0000020000000000000000 /* NuraHomeWidget.entitlements */, AA0000030000000000000000 /* Info.plist */, );
-			path = NuraHomeWidget;
+			children = (AA0000010000000000000000 /* VoxelithHomeWidget.swift */, AA0000020000000000000000 /* VoxelithHomeWidget.entitlements */, AA0000030000000000000000 /* Info.plist */, );
+			path = VoxelithHomeWidget;
 			sourceTree = "<group>";
 		};
 		331C8082294A63A400263BE5 /* RunnerTests */ = {
@@ -127,7 +132,7 @@
 			children = (
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
-				AA0000070000000000000000 /* NuraHomeWidget */,
+				AA0000070000000000000000 /* VoxelithHomeWidget */,
 				97C146EF1CF9000F007C117D /* Products */,
 				331C8082294A63A400263BE5 /* RunnerTests */,
 			);
@@ -138,7 +143,7 @@
 			children = (
 				97C146EE1CF9000F007C117D /* Runner.app */,
 				331C8081294A63A400263BE5 /* RunnerTests.xctest */,
-				AA0000040000000000000000 /* NuraHomeWidget.appex */,
+				AA0000040000000000000000 /* VoxelithHomeWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +155,8 @@
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
 				97C147021CF9000F007C117D /* Info.plist */,
+				BB0000010000000000000000 /* PrivacyInfo.xcprivacy */,
+				BB0000050000000000000000 /* InfoPlist.strings */,
 				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
@@ -162,12 +169,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA00000B0000000000000000 /* NuraHomeWidget */ = {
+		AA00000B0000000000000000 /* VoxelithHomeWidget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA00000C0000000000000000 /* Build configuration list for PBXNativeTarget "NuraHomeWidget" */;
+			buildConfigurationList = AA00000C0000000000000000 /* Build configuration list for PBXNativeTarget "VoxelithHomeWidget" */;
 			buildPhases = (AA0000080000000000000000 /* Sources */, AA0000090000000000000000 /* Frameworks */, AA00000A0000000000000000 /* Resources */, );
-			buildRules = ( ); dependencies = ( ); name = NuraHomeWidget; productName = NuraHomeWidget;
-			productReference = AA0000040000000000000000 /* NuraHomeWidget.appex */;
+			buildRules = ( ); dependencies = ( ); name = VoxelithHomeWidget; productName = VoxelithHomeWidget;
+			productReference = AA0000040000000000000000 /* VoxelithHomeWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		331C8080294A63A400263BE5 /* RunnerTests */ = {
@@ -239,6 +246,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				tr,
 				Base,
 			);
 			mainGroup = 97C146E51CF9000F007C117D;
@@ -250,7 +258,7 @@
 			projectRoot = "";
 			targets = (
 				97C146ED1CF9000F007C117D /* Runner */,
-				AA00000B0000000000000000 /* NuraHomeWidget */,
+				AA00000B0000000000000000 /* VoxelithHomeWidget */,
 				331C8080294A63A400263BE5 /* RunnerTests */,
 			);
 		};
@@ -269,6 +277,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0000030000000000000000 /* PrivacyInfo.xcprivacy in Resources */,
+				BB0000040000000000000000 /* InfoPlist.strings in Resources */,
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
@@ -313,7 +323,7 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AA0000080000000000000000 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (AA0000050000000000000000 /* NuraHomeWidget.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		AA0000080000000000000000 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (AA0000050000000000000000 /* VoxelithHomeWidget.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
 		331C807D294A63A400263BE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,7 +345,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AA0000120000000000000000 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = AA00000B0000000000000000 /* NuraHomeWidget */; targetProxy = AA0000110000000000000000 /* PBXContainerItemProxy */; };
+		AA0000120000000000000000 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = AA00000B0000000000000000 /* VoxelithHomeWidget */; targetProxy = AA0000110000000000000000 /* PBXContainerItemProxy */; };
 		331C8086294A63A400263BE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 97C146ED1CF9000F007C117D /* Runner */;
@@ -360,12 +370,21 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		BB0000050000000000000000 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB0000020000000000000000 /* en */,
+				BB0000060000000000000000 /* tr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AA00000D0000000000000000 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = NuraHomeWidget/NuraHomeWidget.entitlements; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = NuraHomeWidget/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.nura.nura.NuraHomeWidget; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
-		AA00000E0000000000000000 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = NuraHomeWidget/NuraHomeWidget.entitlements; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = NuraHomeWidget/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.nura.nura.NuraHomeWidget; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
-		AA00000F0000000000000000 /* Profile */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = NuraHomeWidget/NuraHomeWidget.entitlements; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = NuraHomeWidget/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.nura.nura.NuraHomeWidget; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Profile; };
+		AA00000D0000000000000000 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = VoxelithHomeWidget/VoxelithHomeWidget.entitlements; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = VoxelithHomeWidget/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.voxelith.voxelith.HomeWidget; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		AA00000E0000000000000000 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = VoxelithHomeWidget/VoxelithHomeWidget.entitlements; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = VoxelithHomeWidget/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.voxelith.voxelith.HomeWidget; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+		AA00000F0000000000000000 /* Profile */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = VoxelithHomeWidget/VoxelithHomeWidget.entitlements; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = VoxelithHomeWidget/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.voxelith.voxelith.HomeWidget; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Profile; };
 		249021D3217E4FDB00AE95B9 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -432,7 +451,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nura.nura;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voxelith.voxelith;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -449,7 +468,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nura.nura.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voxelith.voxelith.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -466,7 +485,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nura.nura.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voxelith.voxelith.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
@@ -481,7 +500,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nura.nura.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voxelith.voxelith.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
@@ -614,7 +633,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nura.nura;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voxelith.voxelith;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -637,7 +656,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nura.nura;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voxelith.voxelith;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -649,7 +668,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA00000C0000000000000000 /* Build configuration list for PBXNativeTarget "NuraHomeWidget" */ = {isa = XCConfigurationList; buildConfigurations = (AA00000D0000000000000000 /* Debug */, AA00000E0000000000000000 /* Release */, AA00000F0000000000000000 /* Profile */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		AA00000C0000000000000000 /* Build configuration list for PBXNativeTarget "VoxelithHomeWidget" */ = {isa = XCConfigurationList; buildConfigurations = (AA00000D0000000000000000 /* Debug */, AA00000E0000000000000000 /* Release */, AA00000F0000000000000000 /* Profile */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
 		331C8087294A63A400263BE5 /* Build configuration list for PBXNativeTarget "RunnerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

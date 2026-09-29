@@ -1,7 +1,7 @@
 name: voxelith
 description: VOXELITH — konuşarak öğren. EN ES DE FR NL AR.
 publish_to: "none"
-version: 0.2.1+3
+version: 1.0.0+4
 
 environment:
   sdk: ^3.9.0
@@ -31,6 +31,8 @@ dependencies:
   google_fonts: ^8.2.1
   phosphor_flutter: ^2.1.0
   lottie: ^3.5.1
+  app_tracking_transparency: ^2.0.7
+  in_app_review: ^2.0.12
 
 dev_dependencies:
   flutter_test:
@@ -55,6 +57,8 @@ flutter_launcher_icons:
   ios: true
   remove_alpha_ios: true
   image_path: "assets/icon_source.png"
+  adaptive_icon_background: "#46A302"
+  adaptive_icon_foreground: "assets/icon_foreground.png"
   min_sdk_android: 23
   web:
     generate: true
@@ -64,6 +68,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/content/
+    - assets/content/i18n/
+    - assets/content/packs/
   fonts:
     - family: Inter
       fonts:

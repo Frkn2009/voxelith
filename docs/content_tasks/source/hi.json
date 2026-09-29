@@ -1,0 +1,4798 @@
+{
+ "lang": "hi",
+ "scenarios": [
+  {
+   "id": "hi_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "hi_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "hi_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "hi_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "hi_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "hi_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "hi_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "hi_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "hi_intro",
+   "cefr": "a1",
+   "title": "Getting to know someone"
+  },
+  {
+   "id": "hi_shopping",
+   "cefr": "a1",
+   "title": "Shopping for clothes"
+  },
+  {
+   "id": "hi_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers and telling time"
+  },
+  {
+   "id": "hi_family",
+   "cefr": "a1",
+   "title": "Talking about family"
+  },
+  {
+   "id": "hi_weather",
+   "cefr": "a1",
+   "title": "Talking about the weather"
+  },
+  {
+   "id": "hi_transport",
+   "cefr": "a1",
+   "title": "Getting around"
+  },
+  {
+   "id": "hi_emergency",
+   "cefr": "a1",
+   "title": "Emergency situations"
+  },
+  {
+   "id": "hi_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "hi_past_story",
+   "cefr": "a1",
+   "title": "Telling a story in the past"
+  },
+  {
+   "id": "hi_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "hi_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  },
+  {
+   "id": "hi_exp_job_interview",
+   "cefr": "b1",
+   "title": "Job interview"
+  },
+  {
+   "id": "hi_exp_team_meeting",
+   "cefr": "b1",
+   "title": "Team meeting"
+  },
+  {
+   "id": "hi_exp_bank",
+   "cefr": "a2",
+   "title": "Bank account"
+  },
+  {
+   "id": "hi_exp_apartment",
+   "cefr": "a2",
+   "title": "Apartment viewing"
+  },
+  {
+   "id": "hi_exp_doctor",
+   "cefr": "a2",
+   "title": "At the doctor's"
+  },
+  {
+   "id": "hi_exp_business_lunch",
+   "cefr": "b1",
+   "title": "Business lunch"
+  },
+  {
+   "id": "hi_exp_complaint",
+   "cefr": "b1",
+   "title": "Complaint"
+  },
+  {
+   "id": "hi_exp_business_trip",
+   "cefr": "a2",
+   "title": "Business trip"
+  },
+  {
+   "id": "hi_exp_client_call",
+   "cefr": "b1",
+   "title": "Client phone call"
+  },
+  {
+   "id": "hi_exp_hr_salary",
+   "cefr": "b2",
+   "title": "Salary conversation"
+  },
+  {
+   "id": "hi_exp_daily_errands",
+   "cefr": "a2",
+   "title": "Errands and deliveries"
+  },
+  {
+   "id": "hi_exp_networking",
+   "cefr": "b1",
+   "title": "Networking"
+  }
+ ],
+ "stories": [
+  {
+   "id": "hi_my_weekend",
+   "level": "a1",
+   "title": "मेरा वीकेंड"
+  },
+  {
+   "id": "hi_my_job",
+   "level": "a1",
+   "title": "मेरा काम"
+  },
+  {
+   "id": "hi_shopping",
+   "level": "a1",
+   "title": "खरीदारी"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.hi_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "एक कॉफ़ी दीजिए।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "यह कितने का है?",
+   "have": []
+  },
+  {
+   "key": "p.hi_cafe_0",
+   "kind": "phrase",
+   "target": "एक कॉफ़ी दीजिए।",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_cafe_1",
+   "kind": "phrase",
+   "target": "यह कितने का है?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_cafe_2",
+   "kind": "phrase",
+   "target": "बहुत-बहुत धन्यवाद।",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "मेरा आरक्षण है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "क्या नाश्ता शामिल है?",
+   "have": []
+  },
+  {
+   "key": "p.hi_hotel_0",
+   "kind": "phrase",
+   "target": "मेरा आरक्षण है।",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_hotel_1",
+   "kind": "phrase",
+   "target": "क्या नाश्ता शामिल है?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_hotel_2",
+   "kind": "phrase",
+   "target": "बहुत-बहुत धन्यवाद।",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "माफ़ कीजिए, स्टेशन कहाँ है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "बहुत-बहुत धन्यवाद।",
+   "have": []
+  },
+  {
+   "key": "p.hi_dir_0",
+   "kind": "phrase",
+   "target": "माफ़ कीजिए, स्टेशन कहाँ है?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_dir_1",
+   "kind": "phrase",
+   "target": "बहुत-बहुत धन्यवाद।",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_dir_2",
+   "kind": "phrase",
+   "target": "मुझे समझ नहीं आया।",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "नमस्ते, मेरा नाम डेनिज़ है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "मैं तुर्की से हूँ।",
+   "have": []
+  },
+  {
+   "key": "p.hi_hi_0",
+   "kind": "phrase",
+   "target": "नमस्ते, मेरा नाम डेनिज़ है।",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_hi_1",
+   "kind": "phrase",
+   "target": "मैं तुर्की से हूँ।",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_hi_2",
+   "kind": "phrase",
+   "target": "बहुत-बहुत धन्यवाद।",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "मुझे एक फ़्लैट चाहिए।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "किराया कितना है?",
+   "have": []
+  },
+  {
+   "key": "p.hi_flat_0",
+   "kind": "phrase",
+   "target": "मुझे एक फ़्लैट चाहिए।",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_flat_1",
+   "kind": "phrase",
+   "target": "किराया कितना है?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_flat_2",
+   "kind": "phrase",
+   "target": "क्या आप मेरी मदद कर सकते हैं?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "यह कितने का है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "मैं यह लूँगा।",
+   "have": []
+  },
+  {
+   "key": "p.hi_shop_0",
+   "kind": "phrase",
+   "target": "यह कितने का है?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_shop_1",
+   "kind": "phrase",
+   "target": "मैं यह लूँगा।",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_shop_2",
+   "kind": "phrase",
+   "target": "क्या कार्ड चलेगा?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "बिल दीजिए।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "हम साथ में भुगतान करना चाहते हैं।",
+   "have": []
+  },
+  {
+   "key": "p.hi_bill_0",
+   "kind": "phrase",
+   "target": "बिल दीजिए।",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_bill_1",
+   "kind": "phrase",
+   "target": "हम साथ में भुगतान करना चाहते हैं।",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_bill_2",
+   "kind": "phrase",
+   "target": "बाकी रहने दीजिए।",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "मेरा आरक्षण है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "खिड़की वाली सीट दीजिए।",
+   "have": []
+  },
+  {
+   "key": "p.hi_airport_0",
+   "kind": "phrase",
+   "target": "मेरा आरक्षण है।",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_airport_1",
+   "kind": "phrase",
+   "target": "खिड़की वाली सीट दीजिए।",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_airport_2",
+   "kind": "phrase",
+   "target": "क्या यह बोर्डिंग की लाइन है?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Getting to know someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_intro",
+   "kind": "grammar_rule",
+   "tr": "Hintçede \"sahip olmak\" fiili yoktur — \"birinde bir şey var\" demek için \"X के पास ... है\" (X'in yanında ... var) kalıbı kullanılır.",
+   "en": "Hindi has no verb \"to have\" — possession is expressed with \"X के पास ... है\" (near X there is ...), not with \"मैं\" as a direct subject.",
+   "context": "मेरे पास एक किताब है। / ✗ मैं एक किताब है।",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_intro.0",
+   "kind": "speaking_prompt",
+   "en": "Someone greets you.",
+   "context": "नमस्ते, आपसे मिलकर अच्छा लगा।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_intro.1",
+   "kind": "speaking_prompt",
+   "en": "They ask your name.",
+   "context": "मेरा नाम आयशे है, आपका नाम क्या है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_intro.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do.",
+   "context": "मैं एक शिक्षक हूँ। आप क्या काम करते हैं?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_intro.3",
+   "kind": "speaking_prompt",
+   "en": "They ask your age.",
+   "context": "आपकी उम्र क्या है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_intro.4",
+   "kind": "speaking_prompt",
+   "en": "You answer.",
+   "context": "मैं तीस साल का हूँ।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_intro.5",
+   "kind": "speaking_prompt",
+   "en": "They ask for your number.",
+   "context": "क्या आपके पास फ़ोन नंबर है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_intro.6",
+   "kind": "speaking_prompt",
+   "en": "You hand it over and say goodbye.",
+   "context": "यह रहा मेरा नंबर, फिर मिलेंगे!",
+   "have": []
+  },
+  {
+   "key": "p.hi_intro_0",
+   "kind": "phrase",
+   "target": "नमस्ते, आपसे मिलकर अच्छा लगा।",
+   "tr": "Merhaba, tanıştığımıza memnun oldum.",
+   "en": "Hello, nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_intro_1",
+   "kind": "phrase",
+   "target": "मेरा नाम आयशे है, आपका नाम क्या है?",
+   "tr": "Benim adım Ayşe, sizin adınız ne?",
+   "en": "My name is Ayşe, what is your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_intro_2",
+   "kind": "phrase",
+   "target": "मैं एक शिक्षक हूँ। आप क्या काम करते हैं?",
+   "tr": "Ben öğretmenim. Siz ne iş yapıyorsunuz?",
+   "en": "I am a teacher. What do you do?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_intro_3",
+   "kind": "phrase",
+   "target": "आपकी उम्र क्या है?",
+   "tr": "Kaç yaşındasınız?",
+   "en": "How old are you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_intro_4",
+   "kind": "phrase",
+   "target": "मैं तीस साल का हूँ।",
+   "tr": "Otuz yaşındayım.",
+   "en": "I am thirty years old.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_intro_5",
+   "kind": "phrase",
+   "target": "क्या आपके पास फ़ोन नंबर है?",
+   "tr": "Telefon numaranız var mı?",
+   "en": "Do you have a phone number?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_intro_6",
+   "kind": "phrase",
+   "target": "यह रहा मेरा नंबर, फिर मिलेंगे!",
+   "tr": "İşte numaram, sonra görüşürüz!",
+   "en": "Here is my number, see you later!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_shopping",
+   "kind": "scenario_title",
+   "tr": "Alışveriş",
+   "en": "Shopping for clothes",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_shopping",
+   "kind": "grammar_rule",
+   "tr": "Bir şey isterken özne \"मैं\" değil, \"मुझे\" (bana) datif hâlidir — \"मुझे ... चाहिए / मिल सकता है\" kalıbı kullanılır.",
+   "en": "When asking to receive or need something, the experiencer subject is \"मुझे\" (to me), not the plain nominative \"मैं\".",
+   "context": "क्या मुझे एक थैला मिल सकता है? / ✗ क्या मैं एक थैला मिल सकता है?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You see a shirt you like.",
+   "context": "माफ़ कीजिए, यह शर्ट कितने की है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "It's too big.",
+   "context": "क्या आपके पास छोटा साइज़ है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want to try it.",
+   "context": "क्या मैं इसे पहन कर देख सकता हूँ?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "You look for a place to change.",
+   "context": "चेंजिंग रूम कहाँ है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You decide to buy it.",
+   "context": "मैं यह ले लूँगा।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You're ready to pay.",
+   "context": "क्या आप क्रेडिट कार्ड लेते हैं?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You need to carry it home.",
+   "context": "क्या मुझे एक थैला मिल सकता है?",
+   "have": []
+  },
+  {
+   "key": "p.hi_shopping_0",
+   "kind": "phrase",
+   "target": "माफ़ कीजिए, यह शर्ट कितने की है?",
+   "tr": "Affedersiniz, bu gömlek ne kadar?",
+   "en": "Excuse me, how much is this shirt?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_shopping_1",
+   "kind": "phrase",
+   "target": "क्या आपके पास छोटा साइज़ है?",
+   "tr": "Daha küçük beden var mı?",
+   "en": "Do you have a smaller size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_shopping_2",
+   "kind": "phrase",
+   "target": "क्या मैं इसे पहन कर देख सकता हूँ?",
+   "tr": "Bunu deneyebilir miyim?",
+   "en": "Can I try it on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_shopping_3",
+   "kind": "phrase",
+   "target": "चेंजिंग रूम कहाँ है?",
+   "tr": "Deneme kabini nerede?",
+   "en": "Where is the fitting room?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_shopping_4",
+   "kind": "phrase",
+   "target": "मैं यह ले लूँगा।",
+   "tr": "Bunu alacağım.",
+   "en": "I'll take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_shopping_5",
+   "kind": "phrase",
+   "target": "क्या आप क्रेडिट कार्ड लेते हैं?",
+   "tr": "Kredi kartı geçiyor mu?",
+   "en": "Do you accept credit cards?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_shopping_6",
+   "kind": "phrase",
+   "target": "क्या मुझे एक थैला मिल सकता है?",
+   "tr": "Bir poşet alabilir miyim?",
+   "en": "Can I get a bag, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers and telling time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "Saat söylerken \"बजे\" her zaman sayının SONRASINA gelir.",
+   "en": "\"बजे\" (o'clock) always comes AFTER the number, never before.",
+   "context": "तीन बजे / ✗ बजे तीन",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You want to know the time.",
+   "context": "अभी क्या समय है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "Someone answers.",
+   "context": "तीन बज रहे हैं।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "You're at the station.",
+   "context": "ट्रेन कितने बजे जाती है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "The clerk answers.",
+   "context": "यह साढ़े चार बजे जाती है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "You mention your schedule.",
+   "context": "मेरी सुबह दस बजे मीटिंग है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "You arrange to meet.",
+   "context": "शाम को सात बजे मिलते हैं।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You want today's date.",
+   "context": "क्या आप मुझे आज की तारीख़ बता सकते हैं?",
+   "have": []
+  },
+  {
+   "key": "p.hi_numbers_time_0",
+   "kind": "phrase",
+   "target": "अभी क्या समय है?",
+   "tr": "Şu an saat kaç?",
+   "en": "What time is it now?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_numbers_time_1",
+   "kind": "phrase",
+   "target": "तीन बज रहे हैं।",
+   "tr": "Saat üç.",
+   "en": "It's three o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_numbers_time_2",
+   "kind": "phrase",
+   "target": "ट्रेन कितने बजे जाती है?",
+   "tr": "Tren saat kaçta kalkıyor?",
+   "en": "What time does the train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_numbers_time_3",
+   "kind": "phrase",
+   "target": "यह साढ़े चार बजे जाती है।",
+   "tr": "Dört buçukta kalkıyor.",
+   "en": "It leaves at half past four.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_numbers_time_4",
+   "kind": "phrase",
+   "target": "मेरी सुबह दस बजे मीटिंग है।",
+   "tr": "Sabah saat onda toplantım var.",
+   "en": "I have a meeting at ten in the morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_numbers_time_5",
+   "kind": "phrase",
+   "target": "शाम को सात बजे मिलते हैं।",
+   "tr": "Akşam yedide görüşürüz.",
+   "en": "See you at seven in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_numbers_time_6",
+   "kind": "phrase",
+   "target": "क्या आप मुझे आज की तारीख़ बता सकते हैं?",
+   "tr": "Bugünün tarihini söyleyebilir misiniz?",
+   "en": "Can you tell me the date today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Talking about family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_family",
+   "kind": "grammar_rule",
+   "tr": "İyelik sıfatı \"मेरा/मेरी/मेरे\" sahibine değil, sahip olunan ismin cinsiyetine göre çekimlenir.",
+   "en": "The possessive \"मेरा/मेरी/मेरे\" agrees with the gender of the possessed noun, not with the possessor.",
+   "context": "मेरी बहन / ✗ मेरा बहन",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a photo.",
+   "context": "यह मेरी माँ है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_family.1",
+   "kind": "speaking_prompt",
+   "en": "You point to another person.",
+   "context": "यह मेरे पिता जी हैं।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_family.2",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about siblings.",
+   "context": "मेरे दो भाई-बहन हैं।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_family.3",
+   "kind": "speaking_prompt",
+   "en": "You introduce him.",
+   "context": "यह मेरा छोटा भाई है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_family.4",
+   "kind": "speaking_prompt",
+   "en": "You introduce her.",
+   "context": "यह मेरी बड़ी बहन है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_family.5",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about her.",
+   "context": "क्या वह आपकी पत्नी हैं?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_family.6",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your son.",
+   "context": "मेरा बेटा पाँच साल का है।",
+   "have": []
+  },
+  {
+   "key": "p.hi_family_0",
+   "kind": "phrase",
+   "target": "यह मेरी माँ है।",
+   "tr": "Bu benim annem.",
+   "en": "This is my mother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_family_1",
+   "kind": "phrase",
+   "target": "यह मेरे पिता जी हैं।",
+   "tr": "Bu benim babam.",
+   "en": "This is my father.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_family_2",
+   "kind": "phrase",
+   "target": "मेरे दो भाई-बहन हैं।",
+   "tr": "İki kardeşim var.",
+   "en": "I have two siblings.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_family_3",
+   "kind": "phrase",
+   "target": "यह मेरा छोटा भाई है।",
+   "tr": "Bu benim küçük kardeşim.",
+   "en": "This is my younger brother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_family_4",
+   "kind": "phrase",
+   "target": "यह मेरी बड़ी बहन है।",
+   "tr": "Bu benim büyük ablam.",
+   "en": "This is my older sister.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_family_5",
+   "kind": "phrase",
+   "target": "क्या वह आपकी पत्नी हैं?",
+   "tr": "O sizin eşiniz mi?",
+   "en": "Is she your wife?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_family_6",
+   "kind": "phrase",
+   "target": "मेरा बेटा पाँच साल का है।",
+   "tr": "Oğlum beş yaşında.",
+   "en": "My son is five years old.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Talking about the weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_weather",
+   "kind": "grammar_rule",
+   "tr": "Hava durumu, bir sıfat değil bir isim + \"है\" ile anlatılır — \"गर्मी है\" (sıcaklık var) demek, \"यह गर्म है\" gibi doğrudan İngilizce kalıbın çevirisinden daha doğaldır.",
+   "en": "Weather is described with a NOUN + है (\"heat is [present]\"), not by translating the English adjective pattern directly.",
+   "context": "आज गर्मी है। / ✗ आज यह गर्म है।",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You start small talk.",
+   "context": "आज मौसम कैसा है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You comment on the heat.",
+   "context": "आज बहुत गर्मी है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You look outside.",
+   "context": "बाहर बारिश हो रही है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You warn a friend.",
+   "context": "ठंड है, जैकेट ले लो।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You check the forecast.",
+   "context": "कल धूप निकलेगी।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_weather.5",
+   "kind": "speaking_prompt",
+   "en": "You feel the wind.",
+   "context": "बहुत हवा चल रही है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_weather.6",
+   "kind": "speaking_prompt",
+   "en": "You share your preference.",
+   "context": "मुझे गर्मी से ज़्यादा सर्दी पसंद है।",
+   "have": []
+  },
+  {
+   "key": "p.hi_weather_0",
+   "kind": "phrase",
+   "target": "आज मौसम कैसा है?",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_weather_1",
+   "kind": "phrase",
+   "target": "आज बहुत गर्मी है।",
+   "tr": "Bugün çok sıcak.",
+   "en": "It's very hot today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_weather_2",
+   "kind": "phrase",
+   "target": "बाहर बारिश हो रही है।",
+   "tr": "Dışarıda yağmur yağıyor.",
+   "en": "It's raining outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_weather_3",
+   "kind": "phrase",
+   "target": "ठंड है, जैकेट ले लो।",
+   "tr": "Hava soğuk, ceket al.",
+   "en": "It's cold, take a jacket.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_weather_4",
+   "kind": "phrase",
+   "target": "कल धूप निकलेगी।",
+   "tr": "Yarın güneşli olacak.",
+   "en": "Tomorrow it will be sunny.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_weather_5",
+   "kind": "phrase",
+   "target": "बहुत हवा चल रही है।",
+   "tr": "Çok rüzgar var.",
+   "en": "It's very windy.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_weather_6",
+   "kind": "phrase",
+   "target": "मुझे गर्मी से ज़्यादा सर्दी पसंद है।",
+   "tr": "Yazdan çok kışı severim.",
+   "en": "I like winter more than summer.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Getting around",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_transport",
+   "kind": "grammar_rule",
+   "tr": "Ulaşım aracı \"से\" (ile) edatıyla, isimden SONRA belirtilir.",
+   "en": "The mode of transport is marked with the postposition \"से\" (\"by\"), placed AFTER the noun.",
+   "context": "मैं टैक्सी से जाऊँगा। / ✗ मैं से टैक्सी जाऊँगा।",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You're lost downtown.",
+   "context": "शहर के केंद्र के लिए कौन सी बस जाती है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_transport.1",
+   "kind": "speaking_prompt",
+   "en": "You ask a stranger.",
+   "context": "मैं एयरपोर्ट कैसे पहुँच सकता हूँ?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You decide how to travel.",
+   "context": "मैं टैक्सी से जाऊँगा।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_transport.3",
+   "kind": "speaking_prompt",
+   "en": "You check an empty seat.",
+   "context": "क्या यह सीट खाली है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You need a ticket.",
+   "context": "टिकट कहाँ मिलेगा?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You're waiting at the platform.",
+   "context": "अगली ट्रेन कितने बजे जाएगी?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_transport.6",
+   "kind": "speaking_prompt",
+   "en": "You're in the taxi.",
+   "context": "कृपया यहाँ रोकिए।",
+   "have": []
+  },
+  {
+   "key": "p.hi_transport_0",
+   "kind": "phrase",
+   "target": "शहर के केंद्र के लिए कौन सी बस जाती है?",
+   "tr": "Şehir merkezine hangi otobüs gidiyor?",
+   "en": "Which bus goes to the city center?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_transport_1",
+   "kind": "phrase",
+   "target": "मैं एयरपोर्ट कैसे पहुँच सकता हूँ?",
+   "tr": "Havaalanına nasıl gidebilirim?",
+   "en": "How do I get to the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_transport_2",
+   "kind": "phrase",
+   "target": "मैं टैक्सी से जाऊँगा।",
+   "tr": "Taksiyle gideceğim.",
+   "en": "I will go by taxi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_transport_3",
+   "kind": "phrase",
+   "target": "क्या यह सीट खाली है?",
+   "tr": "Bu koltuk boş mu?",
+   "en": "Is this seat taken?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_transport_4",
+   "kind": "phrase",
+   "target": "टिकट कहाँ मिलेगा?",
+   "tr": "Bilet nereden alınır?",
+   "en": "Where do I buy a ticket?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_transport_5",
+   "kind": "phrase",
+   "target": "अगली ट्रेन कितने बजे जाएगी?",
+   "tr": "Bir sonraki tren saat kaçta kalkıyor?",
+   "en": "What time does the next train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_transport_6",
+   "kind": "phrase",
+   "target": "कृपया यहाँ रोकिए।",
+   "tr": "Lütfen burada durun.",
+   "en": "Please stop here.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency situations",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_emergency",
+   "kind": "grammar_rule",
+   "tr": "Yabancılardan yardım isterken kibar emir eki \"-इए\" (कीजिए/बुलाइए) kullanılır — sade fiil kökü kaba kaçar.",
+   "en": "When asking strangers for urgent help, use the polite imperative suffix \"-इए\" (कीजिए/बुलाइए) — the bare verb stem sounds rude.",
+   "context": "एम्बुलेंस बुलाइए! / ✗ एम्बुलेंस बुला!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something just happened.",
+   "context": "बचाओ!",
+   "have": []
+  },
+  {
+   "key": "tp.hi_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Someone is badly hurt.",
+   "context": "कृपया एम्बुलेंस बुलाइए!",
+   "have": []
+  },
+  {
+   "key": "tp.hi_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You check your bag.",
+   "context": "मेरा पासपोर्ट खो गया है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You witness a crime.",
+   "context": "कृपया पुलिस को बुलाइए!",
+   "have": []
+  },
+  {
+   "key": "tp.hi_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You need medical help.",
+   "context": "सबसे नज़दीकी अस्पताल कहाँ है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "Someone asks how you feel.",
+   "context": "मुझे बहुत तबीयत ख़राब लग रही है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You plead for help.",
+   "context": "कृपया, मुझे अभी मदद चाहिए।",
+   "have": []
+  },
+  {
+   "key": "p.hi_emergency_0",
+   "kind": "phrase",
+   "target": "बचाओ!",
+   "tr": "İmdat!",
+   "en": "Help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_emergency_1",
+   "kind": "phrase",
+   "target": "कृपया एम्बुलेंस बुलाइए!",
+   "tr": "Lütfen ambulans çağırın!",
+   "en": "Please call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_emergency_2",
+   "kind": "phrase",
+   "target": "मेरा पासपोर्ट खो गया है।",
+   "tr": "Pasaportumu kaybettim.",
+   "en": "I lost my passport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_emergency_3",
+   "kind": "phrase",
+   "target": "कृपया पुलिस को बुलाइए!",
+   "tr": "Lütfen polisi arayın!",
+   "en": "Call the police, please!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_emergency_4",
+   "kind": "phrase",
+   "target": "सबसे नज़दीकी अस्पताल कहाँ है?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_emergency_5",
+   "kind": "phrase",
+   "target": "मुझे बहुत तबीयत ख़राब लग रही है।",
+   "tr": "Kendimi çok kötü hissediyorum.",
+   "en": "I feel very sick.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_emergency_6",
+   "kind": "phrase",
+   "target": "कृपया, मुझे अभी मदद चाहिए।",
+   "tr": "Lütfen, şimdi yardıma ihtiyacım var.",
+   "en": "Please, I need help now.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_routine",
+   "kind": "grammar_rule",
+   "tr": "İki parçalı edat \"के बाद\" (sonra), ismi ARASINA alır — isim önce, \"के बाद\" sonra gelir.",
+   "en": "The compound postposition \"के बाद\" (\"after\") sandwiches the noun — the noun comes first, \"के बाद\" comes after it.",
+   "context": "खाने के बाद / ✗ के बाद खाने",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your morning.",
+   "context": "मैं आम तौर पर छह बजे उठता हूँ।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_routine.1",
+   "kind": "speaking_prompt",
+   "en": "You describe your habit.",
+   "context": "मैं पहले अपने दाँत साफ़ करता हूँ।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_routine.2",
+   "kind": "speaking_prompt",
+   "en": "You continue the routine.",
+   "context": "मैं सात बजे नाश्ता करता हूँ।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_routine.3",
+   "kind": "speaking_prompt",
+   "en": "They ask how you commute.",
+   "context": "मैं बस से काम पर जाता हूँ।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_routine.4",
+   "kind": "speaking_prompt",
+   "en": "They ask about lunch.",
+   "context": "मैं आम तौर पर दोपहर को खाना खाता हूँ।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_routine.5",
+   "kind": "speaking_prompt",
+   "en": "They ask about the evening.",
+   "context": "रात के खाने के बाद मैं टीवी देखता हूँ।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_routine.6",
+   "kind": "speaking_prompt",
+   "en": "They ask when you sleep.",
+   "context": "मैं ग्यारह बजे सो जाता हूँ।",
+   "have": []
+  },
+  {
+   "key": "p.hi_routine_0",
+   "kind": "phrase",
+   "target": "मैं आम तौर पर छह बजे उठता हूँ।",
+   "tr": "Genelde altıda kalkarım.",
+   "en": "I usually wake up at six.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_routine_1",
+   "kind": "phrase",
+   "target": "मैं पहले अपने दाँत साफ़ करता हूँ।",
+   "tr": "Önce dişlerimi fırçalarım.",
+   "en": "I brush my teeth first.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_routine_2",
+   "kind": "phrase",
+   "target": "मैं सात बजे नाश्ता करता हूँ।",
+   "tr": "Yedide kahvaltı yaparım.",
+   "en": "I have breakfast at seven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_routine_3",
+   "kind": "phrase",
+   "target": "मैं बस से काम पर जाता हूँ।",
+   "tr": "İşe otobüsle giderim.",
+   "en": "I go to work by bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_routine_4",
+   "kind": "phrase",
+   "target": "मैं आम तौर पर दोपहर को खाना खाता हूँ।",
+   "tr": "Genelde öğlen yemek yerim.",
+   "en": "I usually eat lunch at noon.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_routine_5",
+   "kind": "phrase",
+   "target": "रात के खाने के बाद मैं टीवी देखता हूँ।",
+   "tr": "Akşam yemeğinden sonra televizyon izlerim.",
+   "en": "After dinner I watch TV.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_routine_6",
+   "kind": "phrase",
+   "target": "मैं ग्यारह बजे सो जाता हूँ।",
+   "tr": "On birde yatarım.",
+   "en": "I go to bed at eleven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_past_story",
+   "kind": "scenario_title",
+   "tr": "Geçmişte bir gün",
+   "en": "Telling a story in the past",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_past_story",
+   "kind": "grammar_rule",
+   "tr": "Geçmiş zamanda fiil, \"did/etti\" gibi ayrı bir yardımcı fiil almaz — fiil sonu özneye göre cinsiyet uyumlu olarak değişir (erkek: -आ, kadın: -ई).",
+   "en": "Simple past needs no separate \"did\" auxiliary — the verb ending itself changes to agree with the subject's gender (male: -आ, female: -ई).",
+   "context": "मैं बाज़ार गया। / ✗ मैं बाज़ार जाता हूँ।",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "You start telling a story.",
+   "context": "कल मैं बाज़ार गया।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "मैंने कुछ सब्ज़ियाँ खरीदीं।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "फिर मैं अपने दोस्त से मिला।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "हमने साथ में कॉफ़ी पी।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "उसके बाद मैं घर गया।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "मैंने रात का खाना बनाया।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "You finish the story.",
+   "context": "यह एक अच्छा दिन था।",
+   "have": []
+  },
+  {
+   "key": "p.hi_past_story_0",
+   "kind": "phrase",
+   "target": "कल मैं बाज़ार गया।",
+   "tr": "Dün pazara gittim.",
+   "en": "Yesterday I went to the market.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_past_story_1",
+   "kind": "phrase",
+   "target": "मैंने कुछ सब्ज़ियाँ खरीदीं।",
+   "tr": "Biraz sebze aldım.",
+   "en": "I bought some vegetables.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_past_story_2",
+   "kind": "phrase",
+   "target": "फिर मैं अपने दोस्त से मिला।",
+   "tr": "Sonra arkadaşımla buluştum.",
+   "en": "Then I met my friend.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_past_story_3",
+   "kind": "phrase",
+   "target": "हमने साथ में कॉफ़ी पी।",
+   "tr": "Birlikte kahve içtik.",
+   "en": "We drank coffee together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_past_story_4",
+   "kind": "phrase",
+   "target": "उसके बाद मैं घर गया।",
+   "tr": "Ondan sonra eve gittim.",
+   "en": "After that I went home.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_past_story_5",
+   "kind": "phrase",
+   "target": "मैंने रात का खाना बनाया।",
+   "tr": "Akşam yemeği pişirdim.",
+   "en": "I cooked dinner.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_past_story_6",
+   "kind": "phrase",
+   "target": "यह एक अच्छा दिन था।",
+   "tr": "Güzel bir gündü.",
+   "en": "It was a good day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "एक कॉफ़ी दीजिए।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "मेरा आरक्षण है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "माफ़ कीजिए, स्टेशन कहाँ है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "नमस्ते, मेरा नाम डेनिज़ है।",
+   "have": []
+  },
+  {
+   "key": "p.hi_a2_route_0",
+   "kind": "phrase",
+   "target": "एक कॉफ़ी दीजिए।",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_a2_route_1",
+   "kind": "phrase",
+   "target": "मेरा आरक्षण है।",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_a2_route_2",
+   "kind": "phrase",
+   "target": "माफ़ कीजिए, स्टेशन कहाँ है?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_a2_route_3",
+   "kind": "phrase",
+   "target": "नमस्ते, मेरा नाम डेनिज़ है।",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.hi_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "क्या नाश्ता शामिल है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "मुझे समझ नहीं आया।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "मुझे एक फ़्लैट चाहिए।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "किराया कितना है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "क्या कार्ड चलेगा?",
+   "have": []
+  },
+  {
+   "key": "p.hi_b1_solve_0",
+   "kind": "phrase",
+   "target": "क्या नाश्ता शामिल है?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_b1_solve_1",
+   "kind": "phrase",
+   "target": "मुझे समझ नहीं आया।",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_b1_solve_2",
+   "kind": "phrase",
+   "target": "मुझे एक फ़्लैट चाहिए।",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_b1_solve_3",
+   "kind": "phrase",
+   "target": "किराया कितना है?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.hi_b1_solve_4",
+   "kind": "phrase",
+   "target": "क्या कार्ड चलेगा?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.hi_exp_job_interview",
+   "kind": "scenario_title",
+   "tr": "İş görüşmesi",
+   "en": "Job interview",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_exp_job_interview",
+   "kind": "grammar_rule",
+   "tr": "İş görüşmelerinde \"आप\" hitabı kullanılır; तू/तुम kaba kaçar.",
+   "en": null,
+   "context": "क्या वेतन सीमा बता सकते हैं? / ✗ सैलरी बता।",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hi_exp_job_interview.0",
+   "kind": "speaking_prompt",
+   "en": "आप हमारे यहाँ क्यों काम करना चाहते हैं?",
+   "context": "ग्राहक के प्रति आपका तरीका मेरी ताकत से मेल खाता है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_job_interview.1",
+   "kind": "speaking_prompt",
+   "en": "तनाव वाले रिलीज़ हफ्ते को कैसे संभालते हैं?",
+   "context": "पहले प्राथमिकता तय करता हूँ, फिर जोखिम लिखित रूप में बताता हूँ।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_job_interview.2",
+   "kind": "speaking_prompt",
+   "en": "आपका कोई सवाल है?",
+   "context": "हाँ, मुझे कब से शुरू करना होगा?",
+   "have": []
+  },
+  {
+   "key": "p.hi_exp_interview_0",
+   "kind": "phrase",
+   "target": "साक्षात्कार के लिए बुलाने का धन्यवाद।",
+   "tr": "Görüşmeye davet için teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_interview_1",
+   "kind": "phrase",
+   "target": "मैं पाँच साल से प्रोडक्ट टीम में काम कर रहा/रही हूँ।",
+   "tr": "Beş yıldır ürün ekibinde çalışıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_interview_2",
+   "kind": "phrase",
+   "target": "मेरी प्राथमिकता ग्राहक की ज़रूरत समझना है।",
+   "tr": "Önceliğim müşterinin ihtiyacını anlamaktır.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_interview_3",
+   "kind": "phrase",
+   "target": "कमज़ोरी यह है कि कभी विवरण में उलझ जाता/जाती हूँ; चेकलिस्ट चलाता/चलाती हूँ।",
+   "tr": "Zayıf yönüm bazen detaylara takılmam; kontrol listesi kullanıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_interview_4",
+   "kind": "phrase",
+   "target": "क्या वेतन सीमा बता सकते हैं?",
+   "tr": "Maaş aralığını söyleyebilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_interview_5",
+   "kind": "phrase",
+   "target": "आपको कब तक किसी को शुरू करना है?",
+   "tr": "Ne zamana kadar birinin başlaması gerekiyor?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hi_exp_team_meeting",
+   "kind": "scenario_title",
+   "tr": "Ekip toplantısı",
+   "en": "Team meeting",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_exp_team_meeting",
+   "kind": "grammar_rule",
+   "tr": "\"इंतज़ार\" + \"का\" kullanılır: मंज़ूरी का इंतज़ार; \"इंतज़ार मंज़ूरी\" yanlıştır.",
+   "en": null,
+   "context": "डिज़ाइन मंज़ूरी का इंतज़ार है। / ✗ इंतज़ार डिज़ाइन।",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hi_exp_team_meeting.0",
+   "kind": "speaking_prompt",
+   "en": "किसी का ब्लॉकर है?",
+   "context": "डिज़ाइन मंज़ूरी का इंतज़ार है; कल याद दिलाऊँगा/दिलाऊँगी।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_team_meeting.1",
+   "kind": "speaking_prompt",
+   "en": "तो यह काम आपके पास रहता है।",
+   "context": "ठीक है, शुक्रवार तक टीम को बताऊँगा/बताऊँगी।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_team_meeting.2",
+   "kind": "speaking_prompt",
+   "en": "कोई और मुद्दा है?",
+   "context": "नहीं, आज इतना ही।",
+   "have": []
+  },
+  {
+   "key": "p.hi_exp_meeting_0",
+   "kind": "phrase",
+   "target": "सीधे एजेंडे पर चलते हैं।",
+   "tr": "Doğrudan gündeme geçelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_meeting_1",
+   "kind": "phrase",
+   "target": "मेरी तरफ़ एपीआई ब्लॉकर है; कल तारीख दूँगा/दूँगी।",
+   "tr": "Benim tarafımda API engeli var; yarın tarih vereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_meeting_2",
+   "kind": "phrase",
+   "target": "इस बिंदु को अंत में रख सकते हैं?",
+   "tr": "Bu maddeyi sona bırakabilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_meeting_3",
+   "kind": "phrase",
+   "target": "फ़ैसला नोट कर रहा/रही हूँ: गुरुवार चार बजे।",
+   "tr": "Kararı not ediyorum: perşembe saat dört.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_meeting_4",
+   "kind": "phrase",
+   "target": "आपत्ति नहीं, लेकिन जोखिम लिख लें।",
+   "tr": "İtirazım yok ama riski yazalım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_meeting_5",
+   "kind": "phrase",
+   "target": "पाँच मिनट बढ़ाना होगा क्या?",
+   "tr": "Beş dakika uzatmamız gerekiyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hi_exp_bank",
+   "kind": "scenario_title",
+   "tr": "Bankada hesap",
+   "en": "Bank account",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_exp_bank",
+   "kind": "grammar_rule",
+   "tr": "Nazik talep \"चाहता/चाहती हूँ\" ile cinsiyet uyumuna dikkat edilir; emir kipi kullanılmaz.",
+   "en": null,
+   "context": "खाता खोलना चाहता हूँ। / ✗ खाता खोल।",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hi_exp_bank.0",
+   "kind": "speaking_prompt",
+   "en": "वेतन के लिए व्यक्तिगत खाता?",
+   "context": "हाँ, सैलरी आने के लिए।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_bank.1",
+   "kind": "speaking_prompt",
+   "en": "यहाँ हस्ताक्षर कर दीजिए।",
+   "context": "ठीक है, अभी करता/करती हूँ।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_bank.2",
+   "kind": "speaking_prompt",
+   "en": "क्या आपको डेबिट कार्ड भी चाहिए?",
+   "context": "हाँ, वो भी चाहिए।",
+   "have": []
+  },
+  {
+   "key": "p.hi_exp_bank_0",
+   "kind": "phrase",
+   "target": "मैं बचत खाता खोलना चाहता/चाहती हूँ।",
+   "tr": "Bir hesap açmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_bank_1",
+   "kind": "phrase",
+   "target": "पहचान पत्र और पते का प्रमाण साथ है।",
+   "tr": "Kimliğim ve ikametgah belgem yanımda.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_bank_2",
+   "kind": "phrase",
+   "target": "कार्ड का वार्षिक शुल्क कितना है?",
+   "tr": "Kartın yıllık ücreti ne kadar?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_bank_3",
+   "kind": "phrase",
+   "target": "नेट बैंकिंग भी चालू कर दीजिए।",
+   "tr": "İnternet bankacılığını da açar mısınız.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_bank_4",
+   "kind": "phrase",
+   "target": "दैनिक ट्रांसफ़र सीमा क्या है?",
+   "tr": "Günlük transfer limiti nedir?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_bank_5",
+   "kind": "phrase",
+   "target": "रसीद ईमेल पर मिल सकती है?",
+   "tr": "Dekont e-posta ile gelebilir mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hi_exp_apartment",
+   "kind": "scenario_title",
+   "tr": "Ev bakma",
+   "en": "Apartment viewing",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_exp_apartment",
+   "kind": "grammar_rule",
+   "tr": "Hâlâ boş olup olmadığını sormak için \"अभी\" kullanılır.",
+   "en": null,
+   "context": "फ़्लैट अभी खाली है? / ✗ हमेशा अभी खाली?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hi_exp_apartment.0",
+   "kind": "speaking_prompt",
+   "en": "कब शिफ़्ट करना है?",
+   "context": "महीने की शुरुआत में; सामान कम है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_apartment.1",
+   "kind": "speaking_prompt",
+   "en": "मालिक पालतू जानवर नहीं चाहते।",
+   "context": "ठीक है, मेरे पास कोई पालतू नहीं है।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_apartment.2",
+   "kind": "speaking_prompt",
+   "en": "और कोई सवाल?",
+   "context": "हाँ, कब देख सकता/सकती हूँ?",
+   "have": []
+  },
+  {
+   "key": "p.hi_exp_apartment_0",
+   "kind": "phrase",
+   "target": "विज्ञापन देखकर आई हूँ; फ़्लैट अभी खाली है?",
+   "tr": "İlanı görüp geldim; daire hâlâ boş mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_apartment_1",
+   "kind": "phrase",
+   "target": "मेंटेनेंस में हीटिंग शामिल है?",
+   "tr": "Aidata ısınma dahil mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_apartment_2",
+   "kind": "phrase",
+   "target": "सिक्योरिटी कितने महीने का किराया है?",
+   "tr": "Depozito kaç aylık kiraya denk geliyor?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_apartment_3",
+   "kind": "phrase",
+   "target": "कॉन्ट्रैक्ट एक साल का है या कम हो सकता है?",
+   "tr": "Sözleşme bir yıllık mı, daha kısa olabilir mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_apartment_4",
+   "kind": "phrase",
+   "target": "घर से काम करता/करती हूँ, शांति चाहिए।",
+   "tr": "Evden çalışıyorum, sessizliğe ihtiyacım var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_apartment_5",
+   "kind": "phrase",
+   "target": "कल जवाब दूँगा/दूँगी।",
+   "tr": "Yarın cevap vereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hi_exp_doctor",
+   "kind": "scenario_title",
+   "tr": "Doktorda",
+   "en": "At the doctor's",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_exp_doctor",
+   "kind": "grammar_rule",
+   "tr": "Devam eden süre için \"से + süre\" kullanılır; kendi kendine teşhis koymayın.",
+   "en": null,
+   "context": "तीन दिन से बुखार है। / ✗ मुझे निमोनिया है शायद।",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hi_exp_doctor.0",
+   "kind": "speaking_prompt",
+   "en": "दर्द कहाँ है? अचानक शुरू हुआ?",
+   "context": "सीने के दाईं तरफ़, कल शाम से।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_doctor.1",
+   "kind": "speaking_prompt",
+   "en": "खून की जाँच करवाएँगे।",
+   "context": "ठीक है, कहाँ जाना होगा?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_doctor.2",
+   "kind": "speaking_prompt",
+   "en": "कोई दवा अभी ले रहे हैं?",
+   "context": "नहीं, कोई दवा नहीं ले रहा/रही हूँ।",
+   "have": []
+  },
+  {
+   "key": "p.hi_exp_doctor_0",
+   "kind": "phrase",
+   "target": "तीन दिन से बुखार है, रात को खाँसी होती है।",
+   "tr": "Üç gündür ateşim var, geceleri öksürüyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_doctor_1",
+   "kind": "phrase",
+   "target": "पेंसिलिन से एलर्जी नहीं है।",
+   "tr": "Penisiline alerjim yok.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_doctor_2",
+   "kind": "phrase",
+   "target": "यह दवाई नींद लाती है क्या?",
+   "tr": "Bu ilaç uyku hâli yapar mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_doctor_3",
+   "kind": "phrase",
+   "target": "ऑफ़िस के लिए मेडिकल सर्टिफ़िकेट चाहिए?",
+   "tr": "İş için rapora ihtiyacım var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_doctor_4",
+   "kind": "phrase",
+   "target": "फ़ॉलो-अप कब आऊँ?",
+   "tr": "Kontrol için ne zaman geleyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_doctor_5",
+   "kind": "phrase",
+   "target": "फ़ार्मेसी बिल्डिंग के बाहर है?",
+   "tr": "Eczane bina dışında mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hi_exp_business_lunch",
+   "kind": "scenario_title",
+   "tr": "İş yemeği",
+   "en": "Business lunch",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_exp_business_lunch",
+   "kind": "grammar_rule",
+   "tr": "Hesabı üstlenmek: बिल हमारा है; \"आप दो\" kaba kaçar.",
+   "en": null,
+   "context": "इस बार बिल हमारा है। / ✗ आप पूरा दो।",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hi_exp_business_lunch.0",
+   "kind": "speaking_prompt",
+   "en": "कीमत अभी भी ज़्यादा लगती है।",
+   "context": "प्रोजेक्ट दो चरणों में बाँट सकते हैं।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_business_lunch.1",
+   "kind": "speaking_prompt",
+   "en": "सोचेंगे।",
+   "context": "ठीक है, शुक्रवार को कॉल करूँगा/करूँगी।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_business_lunch.2",
+   "kind": "speaking_prompt",
+   "en": "कोई और सवाल है?",
+   "context": "नहीं, समय देने के लिए धन्यवाद।",
+   "have": []
+  },
+  {
+   "key": "p.hi_exp_lunch_0",
+   "kind": "phrase",
+   "target": "आपकी सलाह से जगह चुनी।",
+   "tr": "Mekanı sizin önerinizle seçtim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_lunch_1",
+   "kind": "phrase",
+   "target": "कोई एलर्जी या पसंद?",
+   "tr": "Alerjiniz veya tercihiniz var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_lunch_2",
+   "kind": "phrase",
+   "target": "ऑर्डर से पहले मुख्य बातें पक्की करें?",
+   "tr": "Sipariş vermeden önce ana noktaları netleştirelim mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_lunch_3",
+   "kind": "phrase",
+   "target": "टेबल पर आंकड़े नहीं; बाद में मेल करूँगा/करूँगी।",
+   "tr": "Masada rakamlara girmeyelim; sonra mail atacağım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_lunch_4",
+   "kind": "phrase",
+   "target": "इस बार बिल हमारा है।",
+   "tr": "Bu sefer hesap bizden.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_lunch_5",
+   "kind": "phrase",
+   "target": "मुलाकात उपयोगी रही, धन्यवाद।",
+   "tr": "Görüşme verimliydi, teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hi_exp_complaint",
+   "kind": "scenario_title",
+   "tr": "Şikâyet",
+   "en": "Complaint",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_exp_complaint",
+   "kind": "grammar_rule",
+   "tr": "Kanıt için \"लिखित\" kullanılır; sadece mesaj yeterli değildir.",
+   "en": null,
+   "context": "लिखित पुष्टि चाहिए। / ✗ सिर्फ़ व्हाट्सऐप लिखो।",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hi_exp_complaint.0",
+   "kind": "speaking_prompt",
+   "en": "असुविधा के लिए माफ़ी; चेक कर रहा हूँ।",
+   "context": "धन्यवाद। कॉल का समय भी नोट करें।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_complaint.1",
+   "kind": "speaking_prompt",
+   "en": "कल दो बजे तक डिलीवरी।",
+   "context": "ठीक है, इंतज़ार करूँगा/करूँगी।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_complaint.2",
+   "kind": "speaking_prompt",
+   "en": "क्या मैं इसकी पुष्टि मेल से भेज दूँ?",
+   "context": "हाँ, कृपया भेज दें।",
+   "have": []
+  },
+  {
+   "key": "p.hi_exp_complaint_0",
+   "kind": "phrase",
+   "target": "ऑर्डर नंबर 1842 अभी तक नहीं आया।",
+   "tr": "1842 numaralı sipariş hâlâ gelmedi.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_complaint_1",
+   "kind": "phrase",
+   "target": "वादा की तारीख कल थी।",
+   "tr": "Söz verilen tarih dündü.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_complaint_2",
+   "kind": "phrase",
+   "target": "हल के तौर पर शिपिंग वापस चाहिए।",
+   "tr": "Çözüm olarak kargo ücretinin iadesini istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_complaint_3",
+   "kind": "phrase",
+   "target": "सुपरवाइज़र से बात करूँ या आप निपटा सकते हैं?",
+   "tr": "Bir yöneticiyle mi konuşmalıyım, yoksa siz çözebilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_complaint_4",
+   "kind": "phrase",
+   "target": "लिखित पुष्टि मिल सकती है?",
+   "tr": "Yazılı bir teyit alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_complaint_5",
+   "kind": "phrase",
+   "target": "सब्र है, लेकिन आज पक्का समय चाहिए।",
+   "tr": "Sabırlıyım ama bugün net bir saat lazım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hi_exp_business_trip",
+   "kind": "scenario_title",
+   "tr": "İş seyahati",
+   "en": "Business trip",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_exp_business_trip",
+   "kind": "grammar_rule",
+   "tr": "Aktarmayı kaçırmak için \"कनेक्शन छूटना\" kullanılır.",
+   "en": null,
+   "context": "कनेक्शन छूट जाएगा क्या? / ✗ एयरपोर्ट छूट जाएगा?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hi_exp_business_trip.0",
+   "kind": "speaking_prompt",
+   "en": "खिड़की या गलियारा?",
+   "context": "गलियारा, निकास के पास हो तो अच्छा।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_business_trip.1",
+   "kind": "speaking_prompt",
+   "en": "गेट 12, लगभग चालीस मिनट में।",
+   "context": "धन्यवाद, अभी जाता/जाती हूँ।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_business_trip.2",
+   "kind": "speaking_prompt",
+   "en": "कोई चेक-इन बैग है?",
+   "context": "नहीं, सिर्फ़ कैबिन बैग है।",
+   "have": []
+  },
+  {
+   "key": "p.hi_exp_trip_0",
+   "kind": "phrase",
+   "target": "मेरा पीएनआर यह है; बोर्डिंग पास दीजिए।",
+   "tr": "İşte rezervasyon kodum; biniş kartı lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_trip_1",
+   "kind": "phrase",
+   "target": "कैबिन बैग माप में है?",
+   "tr": "El bagajı ölçülere uyuyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_trip_2",
+   "kind": "phrase",
+   "target": "देरी से कनेक्शन छूट जाएगा क्या?",
+   "tr": "Gecikme nedeniyle aktarmayı kaçırır mıyım?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_trip_3",
+   "kind": "phrase",
+   "target": "बिल कंपनी के नाम पर काटें।",
+   "tr": "Fatura şirket adına kesilsin.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_trip_4",
+   "kind": "phrase",
+   "target": "लाउंज का गेट कहाँ है?",
+   "tr": "Lounge girişi nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_trip_5",
+   "kind": "phrase",
+   "target": "टैक्सी रसीद खर्च के लिए रखनी है।",
+   "tr": "Masraf için taksi fişini saklamam gerekiyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hi_exp_client_call",
+   "kind": "scenario_title",
+   "tr": "Müşteri telefonu",
+   "en": "Client phone call",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_exp_client_call",
+   "kind": "grammar_rule",
+   "tr": "Yanlış anlamayı teyit etmek için \"अगर … हो तो\" kullanılır.",
+   "en": null,
+   "context": "अगर मैंने गलत समझा हो तो सुधारिए। / ✗ अगर मैं गलत समझूँगा था…",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hi_exp_client_call.0",
+   "kind": "speaking_prompt",
+   "en": "इस फ़ीचर के बिना लाइव नहीं जा सकते।",
+   "context": "तो कुछ और टालें, इसे आगे लाएँ।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_client_call.1",
+   "kind": "speaking_prompt",
+   "en": "ठीक है, लिख दीजिए।",
+   "context": "अभी लिखित रूप में भेजता/भेजती हूँ।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_client_call.2",
+   "kind": "speaking_prompt",
+   "en": "फ़ाइनल वर्ज़न कब तक तैयार होगा?",
+   "context": "शुक्रवार तक तैयार हो जाएगा।",
+   "have": []
+  },
+  {
+   "key": "p.hi_exp_call_0",
+   "kind": "phrase",
+   "target": "अभी पाँच मिनट हैं?",
+   "tr": "Şu an beş dakikanız var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_call_1",
+   "kind": "phrase",
+   "target": "कल के मेल का तीसरा बिंदु साफ़ नहीं।",
+   "tr": "Dünkü mailin üçüncü maddesi net değil.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_call_2",
+   "kind": "phrase",
+   "target": "यह एक्स्ट्रा है या मौजूदा दायरे में?",
+   "tr": "Bu ek iş mi yoksa mevcut kapsamda mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_call_3",
+   "kind": "phrase",
+   "target": "अगर मैंने गलत समझा हो तो सुधारिए।",
+   "tr": "Yanlış anladıysam lütfen düzeltin.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_call_4",
+   "kind": "phrase",
+   "target": "संक्षेप: शुक्रवार ड्राफ़्ट, सोमवार कमेंट।",
+   "tr": "Özetle: cuma taslak, pazartesi yorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_call_5",
+   "kind": "phrase",
+   "target": "अभी पुष्टि मेल भेजता/भेजती हूँ।",
+   "tr": "Şimdi bir teyit maili gönderiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hi_exp_hr_salary",
+   "kind": "scenario_title",
+   "tr": "Maaş görüşmesi",
+   "en": "Salary conversation",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_exp_hr_salary",
+   "kind": "grammar_rule",
+   "tr": "\"उम्मीद है\" beklentiyi yumuşak sunar; talep değildir.",
+   "en": null,
+   "context": "पंद्रह प्रतिशत की उम्मीद है। / ✗ अभी पंद्रह दो।",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hi_exp_hr_salary.0",
+   "kind": "speaking_prompt",
+   "en": "इस साल बजट तंग है।",
+   "context": "समझ गया/गई। बोनस या लेवल हो सकता है?",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_hr_salary.1",
+   "kind": "speaking_prompt",
+   "en": "मार्च में फिर देखेंगे।",
+   "context": "ठीक है, मार्च में फिर बात करते हैं।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_hr_salary.2",
+   "kind": "speaking_prompt",
+   "en": "और कोई सवाल है?",
+   "context": "हाँ, ट्रेनिंग बजट के बारे में भी।",
+   "have": []
+  },
+  {
+   "key": "p.hi_exp_salary_0",
+   "kind": "phrase",
+   "target": "प्रदर्शन और बाज़ार स्तर पर बात करनी है।",
+   "tr": "Performansım ve piyasa seviyesi hakkında konuşmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_salary_1",
+   "kind": "phrase",
+   "target": "छह महीने में तीन प्रोजेक्ट समय पर दिए।",
+   "tr": "Altı ayda üç projeyi zamanında teslim ettim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_salary_2",
+   "kind": "phrase",
+   "target": "पंद्रह प्रतिशत की उम्मीद है; आधार दिखा सकता/सकती हूँ।",
+   "tr": "Yüzde on beş bekliyorum; kanıtımı gösterebilirim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_salary_3",
+   "kind": "phrase",
+   "target": "मौजूदा पदनाम ज़िम्मेदारी नहीं दिखाता।",
+   "tr": "Mevcut unvan sorumluluğu yansıtmıyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_salary_4",
+   "kind": "phrase",
+   "target": "अगर बजट नहीं, तारीख तय कर लें।",
+   "tr": "Bütçe yoksa bir tarih belirleyelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_salary_5",
+   "kind": "phrase",
+   "target": "फ़ैसला लिखित चाहिए।",
+   "tr": "Kararı yazılı istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hi_exp_daily_errands",
+   "kind": "scenario_title",
+   "tr": "Market ve kargo",
+   "en": "Errands and deliveries",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_exp_daily_errands",
+   "kind": "grammar_rule",
+   "tr": "Hizmet ricalarında \"कृपया\" kullanılır, emir çıplak bırakılmaz.",
+   "en": null,
+   "context": "बिल, कृपया। / ✗ बिल दे।",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hi_exp_daily_errands.0",
+   "kind": "speaking_prompt",
+   "en": "मेंबरशिप कार्ड है?",
+   "context": "इस बार नहीं, धन्यवाद।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_daily_errands.1",
+   "kind": "speaking_prompt",
+   "en": "ख़ुर्दा नहीं, कार्ड से काटूँ?",
+   "context": "हाँ, कार्ड से कर दीजिए।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_daily_errands.2",
+   "kind": "speaking_prompt",
+   "en": "कुछ और चाहिए?",
+   "context": "नहीं, इतना ही काफ़ी है।",
+   "have": []
+  },
+  {
+   "key": "p.hi_exp_errands_0",
+   "kind": "phrase",
+   "target": "यह ब्रेड दो और बिल, कृपया।",
+   "tr": "Bu ekmekten iki tane ve fiş lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_errands_1",
+   "kind": "phrase",
+   "target": "ग्लूटेन-फ़्री रैक कहाँ है?",
+   "tr": "Glütensiz reyon nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_errands_2",
+   "kind": "phrase",
+   "target": "पड़ोसियों के पास न छोड़ें; दरवाज़े पर नोट लगाएँ।",
+   "tr": "Komşuya bırakmayın; kapıya not bırakın.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_errands_3",
+   "kind": "phrase",
+   "target": "नकद नहीं है; कार्ड चलेगा?",
+   "tr": "Nakit param yok; kart geçer mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_errands_4",
+   "kind": "phrase",
+   "target": "वापसी चौदह दिन में है न?",
+   "tr": "İade on dört gün içinde, değil mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_errands_5",
+   "kind": "phrase",
+   "target": "थैला नहीं चाहिए, अपना बैग है।",
+   "tr": "Poşete gerek yok, kendi çantam var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.hi_exp_networking",
+   "kind": "scenario_title",
+   "tr": "Networking",
+   "en": "Networking",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.hi_exp_networking",
+   "kind": "grammar_rule",
+   "tr": "Kimlik tanıtımı: मैं … हूँ + पद.",
+   "en": null,
+   "context": "मैं प्रोडक्ट मैनेजर हूँ। / ✗ मैं प्रोडक्ट वाला काम वगैरह करती हूँ।",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.hi_exp_networking.0",
+   "kind": "speaking_prompt",
+   "en": "ऐप असल में क्या सुलझाता है?",
+   "context": "छोटे व्यापार के बिल और वसूली आसान करते हैं।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_networking.1",
+   "kind": "speaking_prompt",
+   "en": "दिलचस्प, मेल भेजिए।",
+   "context": "ज़रूर, कल भेज दूँगा/दूँगी।",
+   "have": []
+  },
+  {
+   "key": "tp.hi_exp_networking.2",
+   "kind": "speaking_prompt",
+   "en": "आप किस बाज़ार में सक्रिय हैं?",
+   "context": "मुख्य रूप से दक्षिण एशिया में।",
+   "have": []
+  },
+  {
+   "key": "p.hi_exp_networking_0",
+   "kind": "phrase",
+   "target": "मैं अनन्या हूँ, फ़िनटेक में प्रोडक्ट मैनेजर।",
+   "tr": "Benim adım Ananya, fintech alanında ürün yöneticisiyim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_networking_1",
+   "kind": "phrase",
+   "target": "पेमेंट वाला उदाहरण बहुत साफ़ था।",
+   "tr": "Ödemeler hakkındaki örneğiniz çok netti.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_networking_2",
+   "kind": "phrase",
+   "target": "आपके यहाँ भी ऐसी दिक्कत है?",
+   "tr": "Sizde de böyle sorunlar oluyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_networking_3",
+   "kind": "phrase",
+   "target": "विज़िटिंग कार्ड खत्म; लिंक्डइन पर लिखूँ?",
+   "tr": "Kartvizitlerim bitti; LinkedIn’den yazabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_networking_4",
+   "kind": "phrase",
+   "target": "दो मिनट हैं? संक्षेप में पूछूँगी/पूछूँगा।",
+   "tr": "İki dakikanız var mı? Kısa keseceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.hi_exp_networking_5",
+   "kind": "phrase",
+   "target": "किसी संबंधित व्यक्ति से मिलवा सकती/सकता हूँ।",
+   "tr": "İlgili birisiyle tanıştırabilirim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.hi_my_weekend",
+   "kind": "story_title",
+   "target": "मेरा वीकेंड",
+   "tr": "Benim Hafta Sonum",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_my_weekend.0",
+   "kind": "story_sentence",
+   "target": "शनिवार की सुबह मैं पार्क गया।",
+   "tr": "Cumartesi sabahı parka gittim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_my_weekend.1",
+   "kind": "story_sentence",
+   "target": "मैंने दोस्तों के साथ सैर की।",
+   "tr": "Arkadaşlarımla yürüyüş yaptım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_my_weekend.2",
+   "kind": "story_sentence",
+   "target": "पार्क में फूल और पक्षी थे।",
+   "tr": "Parkta çiçekler ve kuşlar vardı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_my_weekend.3",
+   "kind": "story_sentence",
+   "target": "दोपहर में हमने चावल और सब्ज़ी खाई।",
+   "tr": "Öğlen pirinç ve sebze yedik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_my_weekend.4",
+   "kind": "story_sentence",
+   "target": "सब खुश थे।",
+   "tr": "Herkes mutluydu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_my_weekend.5",
+   "kind": "story_sentence",
+   "target": "यह एक अच्छा वीकेंड था।",
+   "tr": "Bu güzel bir hafta sonuydu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.hi_my_job",
+   "kind": "story_title",
+   "target": "मेरा काम",
+   "tr": "Benim İşim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_my_job.0",
+   "kind": "story_sentence",
+   "target": "मैं एक अस्पताल में काम करता हूँ।",
+   "tr": "Bir hastanede çalışıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_my_job.1",
+   "kind": "story_sentence",
+   "target": "मैं हर सुबह नौ बजे काम पर जाता हूँ।",
+   "tr": "Her sabah dokuzda işe gidiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_my_job.2",
+   "kind": "story_sentence",
+   "target": "मेरा काम मरीज़ों की मदद करना है।",
+   "tr": "İşim hastalara yardım etmek.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_my_job.3",
+   "kind": "story_sentence",
+   "target": "दोपहर में मैं अस्पताल में खाना खाता हूँ।",
+   "tr": "Öğlen hastanede yemek yiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_my_job.4",
+   "kind": "story_sentence",
+   "target": "शाम को मैं घर लौटता हूँ।",
+   "tr": "Akşam eve dönüyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_my_job.5",
+   "kind": "story_sentence",
+   "target": "काम थका देता है, लेकिन मुझे यह पसंद है।",
+   "tr": "İş yoruyor, ama seviyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.hi_shopping",
+   "kind": "story_title",
+   "target": "खरीदारी",
+   "tr": "Alışveriş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_shopping.0",
+   "kind": "story_sentence",
+   "target": "आज मौसम अच्छा था, इसलिए मैं सुपरमार्क गया।",
+   "tr": "Bugün hava güzeldi, o yüzden süpermarkete gittim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_shopping.1",
+   "kind": "story_sentence",
+   "target": "सुपरमार्क में बहुत लोग थे।",
+   "tr": "Süpermarkette çok insan vardı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_shopping.2",
+   "kind": "story_sentence",
+   "target": "मैंने सब्ज़ियाँ, फल और रोटी खरीदीं।",
+   "tr": "Sebze, meyve ve ekmek aldım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_shopping.3",
+   "kind": "story_sentence",
+   "target": "सब चीज़ें ताज़ी थीं।",
+   "tr": "Her şey taze idi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_shopping.4",
+   "kind": "story_sentence",
+   "target": "दोपहर में मैंने घर पर खाना बनाया।",
+   "tr": "Öğleden sonra evde yemek yaptım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.hi_shopping.5",
+   "kind": "story_sentence",
+   "target": "शाम को मैंने अपने परिवार के साथ खाना खाया।",
+   "tr": "Akşam ailemle birlikte yemek yedim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.अ.n",
+   "kind": "alphabet_letter_name",
+   "target": "अ",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.अ.s",
+   "kind": "alphabet_sound",
+   "target": "अ",
+   "tr": "a",
+   "context": "अनार",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.अ.m",
+   "kind": "alphabet_example",
+   "target": "अनार",
+   "tr": "Nar",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.आ.n",
+   "kind": "alphabet_letter_name",
+   "target": "आ",
+   "tr": "Aa",
+   "en": "Aa",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.आ.s",
+   "kind": "alphabet_sound",
+   "target": "आ",
+   "tr": "aa",
+   "context": "आम",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.आ.m",
+   "kind": "alphabet_example",
+   "target": "आम",
+   "tr": "Mango",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.क.n",
+   "kind": "alphabet_letter_name",
+   "target": "क",
+   "tr": "Ka",
+   "en": "Ka",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.क.s",
+   "kind": "alphabet_sound",
+   "target": "क",
+   "tr": "ka",
+   "context": "कमल",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.क.m",
+   "kind": "alphabet_example",
+   "target": "कमल",
+   "tr": "Nilüfer",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ख.n",
+   "kind": "alphabet_letter_name",
+   "target": "ख",
+   "tr": "Kha",
+   "en": "Kha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ख.s",
+   "kind": "alphabet_sound",
+   "target": "ख",
+   "tr": "kha",
+   "context": "खरगोश",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ख.m",
+   "kind": "alphabet_example",
+   "target": "खरगोश",
+   "tr": "Tavşan",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.इ.n",
+   "kind": "alphabet_letter_name",
+   "target": "इ",
+   "tr": "İ",
+   "en": "I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.इ.s",
+   "kind": "alphabet_sound",
+   "target": "इ",
+   "tr": "i",
+   "context": "इमली",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.इ.m",
+   "kind": "alphabet_example",
+   "target": "इमली",
+   "tr": "Demirhindi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ई.n",
+   "kind": "alphabet_letter_name",
+   "target": "ई",
+   "tr": "İi",
+   "en": "Ii",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ई.s",
+   "kind": "alphabet_sound",
+   "target": "ई",
+   "tr": "ii",
+   "context": "ईख",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ई.m",
+   "kind": "alphabet_example",
+   "target": "ईख",
+   "tr": "Şeker kamışı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.उ.n",
+   "kind": "alphabet_letter_name",
+   "target": "उ",
+   "tr": "U",
+   "en": "U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.उ.s",
+   "kind": "alphabet_sound",
+   "target": "उ",
+   "tr": "u",
+   "context": "उल्लू",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.उ.m",
+   "kind": "alphabet_example",
+   "target": "उल्लू",
+   "tr": "Baykuş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ऊ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ऊ",
+   "tr": "Uu",
+   "en": "Uu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ऊ.s",
+   "kind": "alphabet_sound",
+   "target": "ऊ",
+   "tr": "uu",
+   "context": "ऊन",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ऊ.m",
+   "kind": "alphabet_example",
+   "target": "ऊन",
+   "tr": "Yün",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ए.n",
+   "kind": "alphabet_letter_name",
+   "target": "ए",
+   "tr": "E",
+   "en": "E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ए.s",
+   "kind": "alphabet_sound",
+   "target": "ए",
+   "tr": "e",
+   "context": "एक",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ए.m",
+   "kind": "alphabet_example",
+   "target": "एक",
+   "tr": "Bir (sayı)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ऐ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ऐ",
+   "tr": "Ai",
+   "en": "Ai",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ऐ.s",
+   "kind": "alphabet_sound",
+   "target": "ऐ",
+   "tr": "ai",
+   "context": "ऐनक",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ऐ.m",
+   "kind": "alphabet_example",
+   "target": "ऐनक",
+   "tr": "Gözlük",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ओ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ओ",
+   "tr": "O",
+   "en": "O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ओ.s",
+   "kind": "alphabet_sound",
+   "target": "ओ",
+   "tr": "o",
+   "context": "ओखली",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ओ.m",
+   "kind": "alphabet_example",
+   "target": "ओखली",
+   "tr": "Havan",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.औ.n",
+   "kind": "alphabet_letter_name",
+   "target": "औ",
+   "tr": "Au",
+   "en": "Au",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.औ.s",
+   "kind": "alphabet_sound",
+   "target": "औ",
+   "tr": "au",
+   "context": "औरत",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.औ.m",
+   "kind": "alphabet_example",
+   "target": "औरत",
+   "tr": "Kadın",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ग.n",
+   "kind": "alphabet_letter_name",
+   "target": "ग",
+   "tr": "Ga",
+   "en": "Ga",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ग.s",
+   "kind": "alphabet_sound",
+   "target": "ग",
+   "tr": "ga",
+   "context": "घर",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ग.m",
+   "kind": "alphabet_example",
+   "target": "घर",
+   "tr": "Ev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.घ.n",
+   "kind": "alphabet_letter_name",
+   "target": "घ",
+   "tr": "Gha",
+   "en": "Gha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.घ.s",
+   "kind": "alphabet_sound",
+   "target": "घ",
+   "tr": "gha",
+   "context": "घड़ी",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.घ.m",
+   "kind": "alphabet_example",
+   "target": "घड़ी",
+   "tr": "Saat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.च.n",
+   "kind": "alphabet_letter_name",
+   "target": "च",
+   "tr": "Ça",
+   "en": "Cha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.च.s",
+   "kind": "alphabet_sound",
+   "target": "च",
+   "tr": "ça",
+   "context": "चाय",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.च.m",
+   "kind": "alphabet_example",
+   "target": "चाय",
+   "tr": "Çay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.छ.n",
+   "kind": "alphabet_letter_name",
+   "target": "छ",
+   "tr": "Çha",
+   "en": "Chha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.छ.s",
+   "kind": "alphabet_sound",
+   "target": "छ",
+   "tr": "çha",
+   "context": "छत",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.छ.m",
+   "kind": "alphabet_example",
+   "target": "छत",
+   "tr": "Çatı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ज.n",
+   "kind": "alphabet_letter_name",
+   "target": "ज",
+   "tr": "Ca",
+   "en": "Ja",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ज.s",
+   "kind": "alphabet_sound",
+   "target": "ज",
+   "tr": "ca",
+   "context": "जल",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ज.m",
+   "kind": "alphabet_example",
+   "target": "जल",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.झ.n",
+   "kind": "alphabet_letter_name",
+   "target": "झ",
+   "tr": "Cha",
+   "en": "Jha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.झ.s",
+   "kind": "alphabet_sound",
+   "target": "झ",
+   "tr": "cha",
+   "context": "झाड़ू",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.झ.m",
+   "kind": "alphabet_example",
+   "target": "झाड़ू",
+   "tr": "Süpürge",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ट.n",
+   "kind": "alphabet_letter_name",
+   "target": "ट",
+   "tr": "Tı",
+   "en": "Ta (retro)",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ट.s",
+   "kind": "alphabet_sound",
+   "target": "ट",
+   "tr": "t (kalın)",
+   "context": "टमाटर",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ट.m",
+   "kind": "alphabet_example",
+   "target": "टमाटर",
+   "tr": "Domates",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ठ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ठ",
+   "tr": "Thı",
+   "en": "Tha (retro)",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ठ.s",
+   "kind": "alphabet_sound",
+   "target": "ठ",
+   "tr": "th (kalın)",
+   "context": "ठंडा",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ठ.m",
+   "kind": "alphabet_example",
+   "target": "ठंडा",
+   "tr": "Soğuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ड.n",
+   "kind": "alphabet_letter_name",
+   "target": "ड",
+   "tr": "Dı",
+   "en": "Da (retro)",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ड.s",
+   "kind": "alphabet_sound",
+   "target": "ड",
+   "tr": "d (kalın)",
+   "context": "डमरू",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ड.m",
+   "kind": "alphabet_example",
+   "target": "डमरू",
+   "tr": "Küçük davul",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ढ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ढ",
+   "tr": "Dhı",
+   "en": "Dha (retro)",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ढ.s",
+   "kind": "alphabet_sound",
+   "target": "ढ",
+   "tr": "dh (kalın)",
+   "context": "ढोल",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ढ.m",
+   "kind": "alphabet_example",
+   "target": "ढोल",
+   "tr": "Davul",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.त.n",
+   "kind": "alphabet_letter_name",
+   "target": "त",
+   "tr": "Ta",
+   "en": "Ta",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.त.s",
+   "kind": "alphabet_sound",
+   "target": "त",
+   "tr": "ta",
+   "context": "तल",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.त.m",
+   "kind": "alphabet_example",
+   "target": "तल",
+   "tr": "Alt/taban",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.थ.n",
+   "kind": "alphabet_letter_name",
+   "target": "थ",
+   "tr": "Tha",
+   "en": "Tha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.थ.s",
+   "kind": "alphabet_sound",
+   "target": "थ",
+   "tr": "tha",
+   "context": "थाली",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.थ.m",
+   "kind": "alphabet_example",
+   "target": "थाली",
+   "tr": "Tabak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.द.n",
+   "kind": "alphabet_letter_name",
+   "target": "द",
+   "tr": "Da",
+   "en": "Da",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.द.s",
+   "kind": "alphabet_sound",
+   "target": "द",
+   "tr": "da",
+   "context": "दूध",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.द.m",
+   "kind": "alphabet_example",
+   "target": "दूध",
+   "tr": "Süt",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ध.n",
+   "kind": "alphabet_letter_name",
+   "target": "ध",
+   "tr": "Dha",
+   "en": "Dha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ध.s",
+   "kind": "alphabet_sound",
+   "target": "ध",
+   "tr": "dha",
+   "context": "धन",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ध.m",
+   "kind": "alphabet_example",
+   "target": "धन",
+   "tr": "Servet",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.न.n",
+   "kind": "alphabet_letter_name",
+   "target": "न",
+   "tr": "Na",
+   "en": "Na",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.न.s",
+   "kind": "alphabet_sound",
+   "target": "न",
+   "tr": "na",
+   "context": "नल",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.न.m",
+   "kind": "alphabet_example",
+   "target": "नल",
+   "tr": "Musluk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.प.n",
+   "kind": "alphabet_letter_name",
+   "target": "प",
+   "tr": "Pa",
+   "en": "Pa",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.प.s",
+   "kind": "alphabet_sound",
+   "target": "प",
+   "tr": "pa",
+   "context": "पानी",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.प.m",
+   "kind": "alphabet_example",
+   "target": "पानी",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.फ.n",
+   "kind": "alphabet_letter_name",
+   "target": "फ",
+   "tr": "Pha",
+   "en": "Pha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.फ.s",
+   "kind": "alphabet_sound",
+   "target": "फ",
+   "tr": "pha",
+   "context": "फल",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.फ.m",
+   "kind": "alphabet_example",
+   "target": "फल",
+   "tr": "Meyve",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ब.n",
+   "kind": "alphabet_letter_name",
+   "target": "ब",
+   "tr": "Ba",
+   "en": "Ba",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ब.s",
+   "kind": "alphabet_sound",
+   "target": "ब",
+   "tr": "ba",
+   "context": "बकरी",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ब.m",
+   "kind": "alphabet_example",
+   "target": "बकरी",
+   "tr": "Keçi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.भ.n",
+   "kind": "alphabet_letter_name",
+   "target": "भ",
+   "tr": "Bha",
+   "en": "Bha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.भ.s",
+   "kind": "alphabet_sound",
+   "target": "भ",
+   "tr": "bha",
+   "context": "भारत",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.भ.m",
+   "kind": "alphabet_example",
+   "target": "भारत",
+   "tr": "Hindistan",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.म.n",
+   "kind": "alphabet_letter_name",
+   "target": "म",
+   "tr": "Ma",
+   "en": "Ma",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.म.s",
+   "kind": "alphabet_sound",
+   "target": "म",
+   "tr": "ma",
+   "context": "माता",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.म.m",
+   "kind": "alphabet_example",
+   "target": "माता",
+   "tr": "Anne",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.य.n",
+   "kind": "alphabet_letter_name",
+   "target": "य",
+   "tr": "Ya",
+   "en": "Ya",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.य.s",
+   "kind": "alphabet_sound",
+   "target": "य",
+   "tr": "ya",
+   "context": "योग",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.य.m",
+   "kind": "alphabet_example",
+   "target": "योग",
+   "tr": "Yoga",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.र.n",
+   "kind": "alphabet_letter_name",
+   "target": "र",
+   "tr": "Ra",
+   "en": "Ra",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.र.s",
+   "kind": "alphabet_sound",
+   "target": "र",
+   "tr": "ra",
+   "context": "रात",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.र.m",
+   "kind": "alphabet_example",
+   "target": "रात",
+   "tr": "Gece",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ल.n",
+   "kind": "alphabet_letter_name",
+   "target": "ल",
+   "tr": "La",
+   "en": "La",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ल.s",
+   "kind": "alphabet_sound",
+   "target": "ल",
+   "tr": "la",
+   "context": "लड़का",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ल.m",
+   "kind": "alphabet_example",
+   "target": "लड़का",
+   "tr": "Erkek çocuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.व.n",
+   "kind": "alphabet_letter_name",
+   "target": "व",
+   "tr": "Va",
+   "en": "Va",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.व.s",
+   "kind": "alphabet_sound",
+   "target": "व",
+   "tr": "va",
+   "context": "वन",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.व.m",
+   "kind": "alphabet_example",
+   "target": "वन",
+   "tr": "Orman",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.श.n",
+   "kind": "alphabet_letter_name",
+   "target": "श",
+   "tr": "Şa",
+   "en": "Sha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.श.s",
+   "kind": "alphabet_sound",
+   "target": "श",
+   "tr": "şa",
+   "context": "शहर",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.श.m",
+   "kind": "alphabet_example",
+   "target": "शहर",
+   "tr": "Şehir",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ष.n",
+   "kind": "alphabet_letter_name",
+   "target": "ष",
+   "tr": "Şha",
+   "en": "Ssha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ष.s",
+   "kind": "alphabet_sound",
+   "target": "ष",
+   "tr": "şha",
+   "context": "षट्कोण",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ष.m",
+   "kind": "alphabet_example",
+   "target": "षट्कोण",
+   "tr": "Altıgen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.स.n",
+   "kind": "alphabet_letter_name",
+   "target": "स",
+   "tr": "Sa",
+   "en": "Sa",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.स.s",
+   "kind": "alphabet_sound",
+   "target": "स",
+   "tr": "sa",
+   "context": "सब",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.स.m",
+   "kind": "alphabet_example",
+   "target": "सब",
+   "tr": "Hepsi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ह.n",
+   "kind": "alphabet_letter_name",
+   "target": "ह",
+   "tr": "Ha",
+   "en": "Ha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.hi.ह.s",
+   "kind": "alphabet_sound",
+   "target": "ह",
+   "tr": "ha",
+   "context": "हाथ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.hi.ह.m",
+   "kind": "alphabet_example",
+   "target": "हाथ",
+   "tr": "El",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.hi.0.h",
+   "kind": "pronunciation_heard",
+   "target": "क vs ख",
+   "tr": "k vs kh",
+   "context": "Nefesli/nefessiz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.hi.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "कम, खाना",
+   "tr": "kam · khaana",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.hi.1.h",
+   "kind": "pronunciation_heard",
+   "target": "retroflex",
+   "tr": "dili geriye kıvır",
+   "context": "İngilizce t/d'den farklı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.hi.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "ट, ड",
+   "tr": "ṭ · ḍ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.hi.2.h",
+   "kind": "pronunciation_heard",
+   "target": "anusvara ं",
+   "tr": "burun sesi",
+   "context": "m/n burun sesi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.hi.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "हिंदी",
+   "tr": "hindii",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

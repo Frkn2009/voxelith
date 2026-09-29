@@ -1,0 +1,4564 @@
+{
+ "lang": "cs",
+ "scenarios": [
+  {
+   "id": "cs_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "cs_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "cs_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "cs_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "cs_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "cs_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "cs_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "cs_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "cs_intro",
+   "cefr": "a1",
+   "title": "Meeting someone"
+  },
+  {
+   "id": "cs_shopping",
+   "cefr": "a1",
+   "title": "Shopping"
+  },
+  {
+   "id": "cs_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers & time"
+  },
+  {
+   "id": "cs_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "cs_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "cs_transport",
+   "cefr": "a1",
+   "title": "Transport"
+  },
+  {
+   "id": "cs_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "cs_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "cs_past_story",
+   "cefr": "a1",
+   "title": "Telling a story about your day"
+  },
+  {
+   "id": "cs_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "cs_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  },
+  {
+   "id": "cs_exp_job_interview",
+   "cefr": "b1",
+   "title": "Job interview"
+  },
+  {
+   "id": "cs_exp_team_meeting",
+   "cefr": "b1",
+   "title": "Team meeting"
+  },
+  {
+   "id": "cs_exp_bank",
+   "cefr": "a2",
+   "title": "Bank account"
+  },
+  {
+   "id": "cs_exp_apartment",
+   "cefr": "a2",
+   "title": "Apartment viewing"
+  },
+  {
+   "id": "cs_exp_doctor",
+   "cefr": "a2",
+   "title": "At the doctor's"
+  },
+  {
+   "id": "cs_exp_business_lunch",
+   "cefr": "b1",
+   "title": "Business lunch"
+  },
+  {
+   "id": "cs_exp_complaint",
+   "cefr": "b1",
+   "title": "Complaint"
+  },
+  {
+   "id": "cs_exp_business_trip",
+   "cefr": "a2",
+   "title": "Business trip"
+  },
+  {
+   "id": "cs_exp_client_call",
+   "cefr": "b1",
+   "title": "Client phone call"
+  },
+  {
+   "id": "cs_exp_hr_salary",
+   "cefr": "b2",
+   "title": "Salary conversation"
+  },
+  {
+   "id": "cs_exp_daily_errands",
+   "cefr": "a2",
+   "title": "Errands and deliveries"
+  },
+  {
+   "id": "cs_exp_networking",
+   "cefr": "b1",
+   "title": "Networking"
+  }
+ ],
+ "stories": [
+  {
+   "id": "cs_library",
+   "level": "a1",
+   "title": "Stará knihovna"
+  },
+  {
+   "id": "cs_pet",
+   "level": "a1",
+   "title": "Můj pes"
+  },
+  {
+   "id": "cs_restaurant",
+   "level": "a1",
+   "title": "V neděli v restauraci"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.cs_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "Kávu, prosím.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "Kolik to stojí?",
+   "have": []
+  },
+  {
+   "key": "p.cs_cafe_0",
+   "kind": "phrase",
+   "target": "Kávu, prosím.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_cafe_1",
+   "kind": "phrase",
+   "target": "Kolik to stojí?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_cafe_2",
+   "kind": "phrase",
+   "target": "Děkuji mockrát.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "Mám rezervaci.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "Je snídaně v ceně?",
+   "have": []
+  },
+  {
+   "key": "p.cs_hotel_0",
+   "kind": "phrase",
+   "target": "Mám rezervaci.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_hotel_1",
+   "kind": "phrase",
+   "target": "Je snídaně v ceně?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_hotel_2",
+   "kind": "phrase",
+   "target": "Děkuji mockrát.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "Promiňte, kde je stanice?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "Děkuji mockrát.",
+   "have": []
+  },
+  {
+   "key": "p.cs_dir_0",
+   "kind": "phrase",
+   "target": "Promiňte, kde je stanice?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_dir_1",
+   "kind": "phrase",
+   "target": "Děkuji mockrát.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_dir_2",
+   "kind": "phrase",
+   "target": "Nerozumím.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "Ahoj, jmenuji se Deniz.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "Jsem z Turecka.",
+   "have": []
+  },
+  {
+   "key": "p.cs_hi_0",
+   "kind": "phrase",
+   "target": "Ahoj, jmenuji se Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_hi_1",
+   "kind": "phrase",
+   "target": "Jsem z Turecka.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_hi_2",
+   "kind": "phrase",
+   "target": "Děkuji mockrát.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "Hledám byt.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "Kolik je nájem?",
+   "have": []
+  },
+  {
+   "key": "p.cs_flat_0",
+   "kind": "phrase",
+   "target": "Hledám byt.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_flat_1",
+   "kind": "phrase",
+   "target": "Kolik je nájem?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_flat_2",
+   "kind": "phrase",
+   "target": "Můžete mi pomoci?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "Kolik to stojí?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "Vezmu si to.",
+   "have": []
+  },
+  {
+   "key": "p.cs_shop_0",
+   "kind": "phrase",
+   "target": "Kolik to stojí?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_shop_1",
+   "kind": "phrase",
+   "target": "Vezmu si to.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_shop_2",
+   "kind": "phrase",
+   "target": "Mohu platit kartou?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "Účet, prosím.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "Chtěli bychom platit dohromady.",
+   "have": []
+  },
+  {
+   "key": "p.cs_bill_0",
+   "kind": "phrase",
+   "target": "Účet, prosím.",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_bill_1",
+   "kind": "phrase",
+   "target": "Chtěli bychom platit dohromady.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_bill_2",
+   "kind": "phrase",
+   "target": "Nechte si drobné.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "Mám rezervaci.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "Místo u okna, prosím.",
+   "have": []
+  },
+  {
+   "key": "p.cs_airport_0",
+   "kind": "phrase",
+   "target": "Mám rezervaci.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_airport_1",
+   "kind": "phrase",
+   "target": "Místo u okna, prosím.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_airport_2",
+   "kind": "phrase",
+   "target": "Je to fronta na nástup?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Meeting someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_intro",
+   "kind": "grammar_rule",
+   "tr": "Edat z (-den/-dan) her zaman ismin GENİTİF (2. hal) çekimini gerektirir: Praha (yalın hal) → z Prahy (genitif).",
+   "en": "The Czech preposition z (from) always requires the genitive case: Praha (basic form) → z Prahy (genitive).",
+   "context": "Jsem z Prahy. / ✗ Jsem z Praha.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_intro.0",
+   "kind": "speaking_prompt",
+   "en": "You meet someone new.",
+   "context": "Ahoj, jmenuji se Petr.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_intro.1",
+   "kind": "speaking_prompt",
+   "en": "They shake your hand.",
+   "context": "Těší mě.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_intro.2",
+   "kind": "speaking_prompt",
+   "en": "You ask their name.",
+   "context": "Jak se jmenuješ?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_intro.3",
+   "kind": "speaking_prompt",
+   "en": "You ask where they are from.",
+   "context": "Odkud jsi?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask where you are from.",
+   "context": "Jsem z Prahy.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You ask their age.",
+   "context": "Kolik je ti let?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_intro.6",
+   "kind": "speaking_prompt",
+   "en": "They ask your age.",
+   "context": "Je mi dvacet pět let.",
+   "have": []
+  },
+  {
+   "key": "p.cs_intro_0",
+   "kind": "phrase",
+   "target": "Ahoj, jmenuji se Petr.",
+   "tr": "Merhaba, adım Petr.",
+   "en": "Hi, my name is Petr.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_intro_1",
+   "kind": "phrase",
+   "target": "Těší mě.",
+   "tr": "Memnun oldum.",
+   "en": "Nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_intro_2",
+   "kind": "phrase",
+   "target": "Jak se jmenuješ?",
+   "tr": "Adın ne?",
+   "en": "What is your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_intro_3",
+   "kind": "phrase",
+   "target": "Odkud jsi?",
+   "tr": "Nerelisin?",
+   "en": "Where are you from?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_intro_4",
+   "kind": "phrase",
+   "target": "Jsem z Prahy.",
+   "tr": "Prag'danım.",
+   "en": "I am from Prague.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_intro_5",
+   "kind": "phrase",
+   "target": "Kolik je ti let?",
+   "tr": "Kaç yaşındasın?",
+   "en": "How old are you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_intro_6",
+   "kind": "phrase",
+   "target": "Je mi dvacet pět let.",
+   "tr": "Yirmi beş yaşındayım.",
+   "en": "I am twenty-five years old.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_shopping",
+   "kind": "scenario_title",
+   "tr": "Alışveriş",
+   "en": "Shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_shopping",
+   "kind": "grammar_rule",
+   "tr": "Bir şeyi hangi araçla/aletle yaptığını belirtirken isim İNSTRUMENTAL (7. hal) halinde çekimlenir: karta (yalın hal) → kartou (instrumental, \"kart ile\").",
+   "en": "To say what you use to do something, the noun takes the instrumental case: karta (basic form) → kartou (instrumental, \"by card\").",
+   "context": "Můžu platit kartou? / ✗ Můžu platit karta?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You point at an item.",
+   "context": "Kolik to stojí?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "The price is high.",
+   "context": "Je to moc drahé.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want a lower price.",
+   "context": "Máte slevu?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "You decide to buy it.",
+   "context": "Vezmu si tohle.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You reach for your wallet.",
+   "context": "Můžu platit kartou?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You do not like the color.",
+   "context": "Máte jinou barvu?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "The purchase is done.",
+   "context": "Můžu dostat účtenku?",
+   "have": []
+  },
+  {
+   "key": "p.cs_shopping_0",
+   "kind": "phrase",
+   "target": "Kolik to stojí?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_shopping_1",
+   "kind": "phrase",
+   "target": "Je to moc drahé.",
+   "tr": "Çok pahalı.",
+   "en": "It is too expensive.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_shopping_2",
+   "kind": "phrase",
+   "target": "Máte slevu?",
+   "tr": "İndirim var mı?",
+   "en": "Do you have a discount?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_shopping_3",
+   "kind": "phrase",
+   "target": "Vezmu si tohle.",
+   "tr": "Bunu alıyorum.",
+   "en": "I will take this.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_shopping_4",
+   "kind": "phrase",
+   "target": "Můžu platit kartou?",
+   "tr": "Kart ile ödeyebilir miyim?",
+   "en": "Can I pay by card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_shopping_5",
+   "kind": "phrase",
+   "target": "Máte jinou barvu?",
+   "tr": "Başka bir renk var mı?",
+   "en": "Do you have another color?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_shopping_6",
+   "kind": "phrase",
+   "target": "Můžu dostat účtenku?",
+   "tr": "Fişimi alabilir miyim?",
+   "en": "Can I get a receipt?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers & time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "Sayı 5 ve üzeri kullanıldığında isim çoğul GENİTİF halinde olur (pět hodin); ama 2, 3, 4 sayılarından sonra normal çoğul (nominatif) kullanılır (tři hodiny).",
+   "en": "With numbers 5 and above, the noun takes the genitive plural (pět hodin = five o'clock); with 2, 3 or 4 it takes the ordinary nominative plural (tři hodiny = three o'clock).",
+   "context": "Kolik je hodin? / ✗ Kolik je hodiny?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You ask the time.",
+   "context": "Kolik je hodin?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "A clock shows 3:00.",
+   "context": "Jsou tři hodiny.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "A clock shows 9:10.",
+   "context": "Je devět deset.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "You confirm a meeting time.",
+   "context": "Naše schůzka je v pět hodin.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "You count along with a child.",
+   "context": "Jedna, dva, tři, čtyři, pět.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "You are running late.",
+   "context": "Přijdu za půl hodiny.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You ask today's date.",
+   "context": "Kolikátého je dnes?",
+   "have": []
+  },
+  {
+   "key": "p.cs_numbers_time_0",
+   "kind": "phrase",
+   "target": "Kolik je hodin?",
+   "tr": "Saat kaç?",
+   "en": "What time is it?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_numbers_time_1",
+   "kind": "phrase",
+   "target": "Jsou tři hodiny.",
+   "tr": "Saat üç.",
+   "en": "It is three o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_numbers_time_2",
+   "kind": "phrase",
+   "target": "Je devět deset.",
+   "tr": "Saat dokuzu on geçiyor.",
+   "en": "It is nine ten.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_numbers_time_3",
+   "kind": "phrase",
+   "target": "Naše schůzka je v pět hodin.",
+   "tr": "Buluşmamız saat beşte.",
+   "en": "Our meeting is at five.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_numbers_time_4",
+   "kind": "phrase",
+   "target": "Jedna, dva, tři, čtyři, pět.",
+   "tr": "Bir, iki, üç, dört, beş.",
+   "en": "One, two, three, four, five.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_numbers_time_5",
+   "kind": "phrase",
+   "target": "Přijdu za půl hodiny.",
+   "tr": "Yarım saat sonra geliyorum.",
+   "en": "I am coming in half an hour.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_numbers_time_6",
+   "kind": "phrase",
+   "target": "Kolikátého je dnes?",
+   "tr": "Bugün ayın kaçı?",
+   "en": "What is today's date?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_family",
+   "kind": "grammar_rule",
+   "tr": "Eril canlı (animate) isimlerde tekil accusative hali genitif ile aynı ekle biter: bratr (yalın hal) → bratra (accusative/genitif); cansız eril isimlerde ise accusative nominatifle aynı kalır.",
+   "en": "For masculine animate nouns, the singular accusative takes the same ending as the genitive: bratr (basic form) → bratra (accusative); masculine inanimate nouns keep the accusative the same as the nominative.",
+   "context": "Nemám bratra. / ✗ Nemám bratr.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a photo.",
+   "context": "To je moje maminka.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_family.1",
+   "kind": "speaking_prompt",
+   "en": "They ask about your father.",
+   "context": "Můj táta je učitel.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_family.2",
+   "kind": "speaking_prompt",
+   "en": "They ask about siblings.",
+   "context": "Mám sestru.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_family.3",
+   "kind": "speaking_prompt",
+   "en": "They ask about a brother.",
+   "context": "Nemám bratra.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_family.4",
+   "kind": "speaking_prompt",
+   "en": "They ask who lives with you.",
+   "context": "Moje babička bydlí s námi.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask about your family size.",
+   "context": "Moje rodina je velká.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_family.6",
+   "kind": "speaking_prompt",
+   "en": "You ask about their family.",
+   "context": "Kolik máš sourozenců?",
+   "have": []
+  },
+  {
+   "key": "p.cs_family_0",
+   "kind": "phrase",
+   "target": "To je moje maminka.",
+   "tr": "Bu benim annem.",
+   "en": "This is my mom.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_family_1",
+   "kind": "phrase",
+   "target": "Můj táta je učitel.",
+   "tr": "Babam öğretmen.",
+   "en": "My dad is a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_family_2",
+   "kind": "phrase",
+   "target": "Mám sestru.",
+   "tr": "Bir kız kardeşim var.",
+   "en": "I have a sister.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_family_3",
+   "kind": "phrase",
+   "target": "Nemám bratra.",
+   "tr": "Erkek kardeşim yok.",
+   "en": "I do not have a brother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_family_4",
+   "kind": "phrase",
+   "target": "Moje babička bydlí s námi.",
+   "tr": "Büyükannem bizimle yaşıyor.",
+   "en": "My grandmother lives with us.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_family_5",
+   "kind": "phrase",
+   "target": "Moje rodina je velká.",
+   "tr": "Ailem kalabalık.",
+   "en": "My family is big.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_family_6",
+   "kind": "phrase",
+   "target": "Kolik máš sourozenců?",
+   "tr": "Kaç kardeşin var?",
+   "en": "How many siblings do you have?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_weather",
+   "kind": "grammar_rule",
+   "tr": "Hava durumu fiilleri (pršet, sněžit) öznesiz, sadece 3. tekil şahıs formunda kullanılır — İngilizcedeki gibi bir \"it\" özne zamiri eklenmez.",
+   "en": "Czech weather verbs (pršet, sněžit) are used without a subject, only in the 3rd person singular form — no dummy \"it\" pronoun is added, unlike in English.",
+   "context": "Prší. / ✗ Ono prší.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You look outside.",
+   "context": "Dnes je venku hezky.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You feel a chill.",
+   "context": "Venku je zima.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_weather.2",
+   "kind": "speaking_prompt",
+   "en": "Drops start falling.",
+   "context": "Prší.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You check tomorrow's forecast.",
+   "context": "Zítra bude sněžit.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You wipe your forehead.",
+   "context": "Je hrozné horko.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_weather.5",
+   "kind": "speaking_prompt",
+   "en": "You warn a friend before they leave.",
+   "context": "Vezmi si deštník.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_weather.6",
+   "kind": "speaking_prompt",
+   "en": "You look up at the sky.",
+   "context": "Obloha je zatažená.",
+   "have": []
+  },
+  {
+   "key": "p.cs_weather_0",
+   "kind": "phrase",
+   "target": "Dnes je venku hezky.",
+   "tr": "Bugün dışarısı çok güzel.",
+   "en": "It is nice outside today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_weather_1",
+   "kind": "phrase",
+   "target": "Venku je zima.",
+   "tr": "Dışarısı soğuk.",
+   "en": "It is cold outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_weather_2",
+   "kind": "phrase",
+   "target": "Prší.",
+   "tr": "Yağmur yağıyor.",
+   "en": "It is raining.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_weather_3",
+   "kind": "phrase",
+   "target": "Zítra bude sněžit.",
+   "tr": "Yarın kar yağacak.",
+   "en": "It will snow tomorrow.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_weather_4",
+   "kind": "phrase",
+   "target": "Je hrozné horko.",
+   "tr": "Hava çok sıcak.",
+   "en": "It is terribly hot.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_weather_5",
+   "kind": "phrase",
+   "target": "Vezmi si deštník.",
+   "tr": "Şemsiyeni al.",
+   "en": "Take your umbrella.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_weather_6",
+   "kind": "phrase",
+   "target": "Obloha je zatažená.",
+   "tr": "Gökyüzü bulutlu.",
+   "en": "The sky is cloudy.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Transport",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_transport",
+   "kind": "grammar_rule",
+   "tr": "Edat do (-e doğru/içine) her zaman GENİTİF hali gerektirir: centrum (yalın hal) → do centra (genitif).",
+   "en": "The Czech preposition do (to/into) always requires the genitive case: centrum (basic form) → do centra (genitive).",
+   "context": "Jede tenhle autobus do centra? / ✗ Jede tenhle autobus do centrum?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You need directions.",
+   "context": "Kde je autobusová zastávka?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_transport.1",
+   "kind": "speaking_prompt",
+   "en": "At the ticket counter.",
+   "context": "Jednu jízdenku, prosím.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You are not sure of the route.",
+   "context": "Jede tenhle autobus do centra?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_transport.3",
+   "kind": "speaking_prompt",
+   "en": "You want to signal the driver.",
+   "context": "Vystupuji na příští zastávce.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You need a ride.",
+   "context": "Můžete zavolat taxi?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You ask about travel time.",
+   "context": "Jak dlouho to trvá na letiště?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_transport.6",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about the metro.",
+   "context": "Stanice metra je velmi blízko.",
+   "have": []
+  },
+  {
+   "key": "p.cs_transport_0",
+   "kind": "phrase",
+   "target": "Kde je autobusová zastávka?",
+   "tr": "Otobüs durağı nerede?",
+   "en": "Where is the bus stop?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_transport_1",
+   "kind": "phrase",
+   "target": "Jednu jízdenku, prosím.",
+   "tr": "Bir bilet lütfen.",
+   "en": "One ticket, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_transport_2",
+   "kind": "phrase",
+   "target": "Jede tenhle autobus do centra?",
+   "tr": "Bu otobüs merkeze gidiyor mu?",
+   "en": "Does this bus go to the center?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_transport_3",
+   "kind": "phrase",
+   "target": "Vystupuji na příští zastávce.",
+   "tr": "Bir sonraki durakta iniyorum.",
+   "en": "I am getting off at the next stop.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_transport_4",
+   "kind": "phrase",
+   "target": "Můžete zavolat taxi?",
+   "tr": "Taksi çağırabilir misiniz?",
+   "en": "Could you call a taxi?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_transport_5",
+   "kind": "phrase",
+   "target": "Jak dlouho to trvá na letiště?",
+   "tr": "Havalimanına ne kadar sürer?",
+   "en": "How long does it take to the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_transport_6",
+   "kind": "phrase",
+   "target": "Stanice metra je velmi blízko.",
+   "tr": "Metro istasyonu çok yakın.",
+   "en": "The metro station is very close.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_emergency",
+   "kind": "grammar_rule",
+   "tr": "Geçmiş zaman (l-participle) fiili, öznenin cinsiyetine göre değişir: erkek konuşan \"ztratil jsem se\" der, kadın konuşan \"ztratila jsem se\" der.",
+   "en": "The Czech past-tense (l-participle) verb agrees with the speaker's gender: a male speaker says \"ztratil jsem se\", a female speaker says \"ztratila jsem se\".",
+   "context": "Ztratila jsem se. / ✗ Ztratil jsem se.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something goes wrong.",
+   "context": "Pomoc!",
+   "have": []
+  },
+  {
+   "key": "tp.cs_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Someone is hurt.",
+   "context": "Zavolejte sanitku!",
+   "have": []
+  },
+  {
+   "key": "tp.cs_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You cannot find your way.",
+   "context": "Ztratil jsem se.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You notice your wallet is gone.",
+   "context": "Ukradli mi peněženku.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You need medical care.",
+   "context": "Kde je nejbližší nemocnice?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "You need the authorities.",
+   "context": "Můžete zavolat policii?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You feel sick.",
+   "context": "Necítím se dobře.",
+   "have": []
+  },
+  {
+   "key": "p.cs_emergency_0",
+   "kind": "phrase",
+   "target": "Pomoc!",
+   "tr": "Yardım edin!",
+   "en": "Help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_emergency_1",
+   "kind": "phrase",
+   "target": "Zavolejte sanitku!",
+   "tr": "Ambulans çağırın!",
+   "en": "Call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_emergency_2",
+   "kind": "phrase",
+   "target": "Ztratil jsem se.",
+   "tr": "Kayboldum.",
+   "en": "I am lost.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_emergency_3",
+   "kind": "phrase",
+   "target": "Ukradli mi peněženku.",
+   "tr": "Cüzdanım çalındı.",
+   "en": "My wallet was stolen.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_emergency_4",
+   "kind": "phrase",
+   "target": "Kde je nejbližší nemocnice?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_emergency_5",
+   "kind": "phrase",
+   "target": "Můžete zavolat policii?",
+   "tr": "Polis çağırır mısınız?",
+   "en": "Could you call the police?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_emergency_6",
+   "kind": "phrase",
+   "target": "Necítím se dobře.",
+   "tr": "İyi değilim.",
+   "en": "I do not feel well.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_routine",
+   "kind": "grammar_rule",
+   "tr": "Düzenli -at fiilleri şimdiki zamanda \"ben\" formunda -ám ile biter (vstávat → vstávám); -it fiilleri ise -ím ile biter (cvičit → cvičím).",
+   "en": "Regular -at verbs end in -ám for the \"I\" form in the present tense (vstávat → vstávám); -it verbs end in -ím (cvičit → cvičím).",
+   "context": "Každé ráno vstávám v sedm. / ✗ Každé ráno vstávat v sedm.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_routine.0",
+   "kind": "speaking_prompt",
+   "en": "They ask about your morning.",
+   "context": "Každé ráno vstávám v sedm.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_routine.1",
+   "kind": "speaking_prompt",
+   "en": "Next step after waking up.",
+   "context": "Čistím si zuby.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_routine.2",
+   "kind": "speaking_prompt",
+   "en": "Before leaving home.",
+   "context": "Snídám.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_routine.3",
+   "kind": "speaking_prompt",
+   "en": "They ask how you commute.",
+   "context": "Jezdím do práce autobusem.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_routine.4",
+   "kind": "speaking_prompt",
+   "en": "At midday.",
+   "context": "V poledne obědvám.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_routine.5",
+   "kind": "speaking_prompt",
+   "en": "They ask about your evening.",
+   "context": "Večer cvičím.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_routine.6",
+   "kind": "speaking_prompt",
+   "en": "Before sleeping.",
+   "context": "V noci chodím brzy spát.",
+   "have": []
+  },
+  {
+   "key": "p.cs_routine_0",
+   "kind": "phrase",
+   "target": "Každé ráno vstávám v sedm.",
+   "tr": "Her sabah yedide kalkarım.",
+   "en": "I get up at seven every morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_routine_1",
+   "kind": "phrase",
+   "target": "Čistím si zuby.",
+   "tr": "Dişlerimi fırçalarım.",
+   "en": "I brush my teeth.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_routine_2",
+   "kind": "phrase",
+   "target": "Snídám.",
+   "tr": "Kahvaltı yaparım.",
+   "en": "I have breakfast.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_routine_3",
+   "kind": "phrase",
+   "target": "Jezdím do práce autobusem.",
+   "tr": "İşe otobüsle giderim.",
+   "en": "I go to work by bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_routine_4",
+   "kind": "phrase",
+   "target": "V poledne obědvám.",
+   "tr": "Öğlen yemek yerim.",
+   "en": "I have lunch at noon.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_routine_5",
+   "kind": "phrase",
+   "target": "Večer cvičím.",
+   "tr": "Akşam spor yaparım.",
+   "en": "I exercise in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_routine_6",
+   "kind": "phrase",
+   "target": "V noci chodím brzy spát.",
+   "tr": "Gece erken yatarım.",
+   "en": "I go to bed early at night.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_past_story",
+   "kind": "scenario_title",
+   "tr": "Bir günü anlatmak",
+   "en": "Telling a story about your day",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_past_story",
+   "kind": "grammar_rule",
+   "tr": "Geçmiş zaman, değişmeyen jsem/jsi gibi yardımcı fiil ile kurulur ve bu yardımcı fiil cümlede genelde İKİNCİ konumda (klitik) yer alır, başta değil.",
+   "en": "The past tense is formed with the clitic auxiliary jsem/jsi/etc., which normally sits in the SECOND position of the sentence, not the first.",
+   "context": "Včera jsem šel do kina. / ✗ Jsem včera šel do kina.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "They ask about yesterday.",
+   "context": "Včera jsem šel do kina.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "They ask what you did there.",
+   "context": "Viděl jsem hezký film.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what happened next.",
+   "context": "Pak jsem se setkal s kamarádem.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "They ask what you two did.",
+   "context": "Dali jsme si kávu.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "They ask when you got home.",
+   "context": "Vrátil jsem se domů velmi pozdě.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "They ask how you felt.",
+   "context": "Byl jsem unavený, ale šťastný.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "You sum up the day.",
+   "context": "Byl to skvělý den.",
+   "have": []
+  },
+  {
+   "key": "p.cs_past_story_0",
+   "kind": "phrase",
+   "target": "Včera jsem šel do kina.",
+   "tr": "Dün sinemaya gittim.",
+   "en": "Yesterday I went to the cinema.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_past_story_1",
+   "kind": "phrase",
+   "target": "Viděl jsem hezký film.",
+   "tr": "Güzel bir film izledim.",
+   "en": "I watched a nice film.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_past_story_2",
+   "kind": "phrase",
+   "target": "Pak jsem se setkal s kamarádem.",
+   "tr": "Sonra arkadaşımla buluştum.",
+   "en": "Then I met up with my friend.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_past_story_3",
+   "kind": "phrase",
+   "target": "Dali jsme si kávu.",
+   "tr": "Bir kahve içtik.",
+   "en": "We had a coffee.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_past_story_4",
+   "kind": "phrase",
+   "target": "Vrátil jsem se domů velmi pozdě.",
+   "tr": "Çok geç eve döndüm.",
+   "en": "I got home very late.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_past_story_5",
+   "kind": "phrase",
+   "target": "Byl jsem unavený, ale šťastný.",
+   "tr": "Yorgun ama mutluydum.",
+   "en": "I was tired but happy.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_past_story_6",
+   "kind": "phrase",
+   "target": "Byl to skvělý den.",
+   "tr": "Harika bir gündü.",
+   "en": "It was a great day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "Kávu, prosím.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "Mám rezervaci.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "Promiňte, kde je stanice?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "Ahoj, jmenuji se Deniz.",
+   "have": []
+  },
+  {
+   "key": "p.cs_a2_route_0",
+   "kind": "phrase",
+   "target": "Kávu, prosím.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_a2_route_1",
+   "kind": "phrase",
+   "target": "Mám rezervaci.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_a2_route_2",
+   "kind": "phrase",
+   "target": "Promiňte, kde je stanice?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_a2_route_3",
+   "kind": "phrase",
+   "target": "Ahoj, jmenuji se Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.cs_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "Je snídaně v ceně?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "Nerozumím.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "Hledám byt.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "Kolik je nájem?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "Mohu platit kartou?",
+   "have": []
+  },
+  {
+   "key": "p.cs_b1_solve_0",
+   "kind": "phrase",
+   "target": "Je snídaně v ceně?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_b1_solve_1",
+   "kind": "phrase",
+   "target": "Nerozumím.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_b1_solve_2",
+   "kind": "phrase",
+   "target": "Hledám byt.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_b1_solve_3",
+   "kind": "phrase",
+   "target": "Kolik je nájem?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.cs_b1_solve_4",
+   "kind": "phrase",
+   "target": "Mohu platit kartou?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.cs_exp_job_interview",
+   "kind": "scenario_title",
+   "tr": "İş görüşmesi",
+   "en": "Job interview",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_exp_job_interview",
+   "kind": "grammar_rule",
+   "tr": "Resmî hitap \"vykání\" kullanılır: můžete + 2. çoğul; \"řekni plat\" kaba kaçar.",
+   "en": null,
+   "context": "Můžete sdělit platové rozpětí? / ✗ Řekni plat.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.cs_exp_job_interview.0",
+   "kind": "speaking_prompt",
+   "en": "Proč chcete pracovat právě u nás?",
+   "context": "Váš přístup k zákazníkovi odpovídá tomu, v čem jsem silný.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_exp_job_interview.1",
+   "kind": "speaking_prompt",
+   "en": "Jak zvládáte náročný týden nasazení?",
+   "context": "Zúžím rozsah a rizika sepíšu písemně.",
+   "have": []
+  },
+  {
+   "key": "p.cs_exp_interview_0",
+   "kind": "phrase",
+   "target": "Děkuji za pozvání na pohovor.",
+   "tr": "Görüşmeye davet için teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_interview_1",
+   "kind": "phrase",
+   "target": "V produktových týmech pracuji už pět let.",
+   "tr": "Beş yıldır ürün ekiplerinde çalışıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_interview_2",
+   "kind": "phrase",
+   "target": "Záleží mi na tom, abych pochopil potřebu zákazníka.",
+   "tr": "Müşterinin ihtiyacını anlamak benim için önemli.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_interview_3",
+   "kind": "phrase",
+   "target": "Slabina je ulpívání na detailech; používám checklist.",
+   "tr": "Zayıf yönüm detaylara takılmam; kontrol listesi kullanıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_interview_4",
+   "kind": "phrase",
+   "target": "Můžete sdělit platové rozpětí?",
+   "tr": "Maaş aralığını söyleyebilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_interview_5",
+   "kind": "phrase",
+   "target": "Je v plánu i schůzka s týmem?",
+   "tr": "Ekiple de bir görüşme planlanıyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.cs_exp_team_meeting",
+   "kind": "scenario_title",
+   "tr": "Ekip toplantısı",
+   "en": "Team meeting",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_exp_team_meeting",
+   "kind": "grammar_rule",
+   "tr": "\"čekat na\" 4. hâl alır: čekám na schválení.",
+   "en": null,
+   "context": "Čekám na schválení. / ✗ Čekám schválení design.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.cs_exp_team_meeting.0",
+   "kind": "speaking_prompt",
+   "en": "Má někdo blocker?",
+   "context": "Čekám na schválení designu; zítra připomenu.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_exp_team_meeting.1",
+   "kind": "speaking_prompt",
+   "en": "Takže vlastník úkolu jsi ty.",
+   "context": "Dobře, aktualizuji tým v pátek.",
+   "have": []
+  },
+  {
+   "key": "p.cs_exp_meeting_0",
+   "kind": "phrase",
+   "target": "Pojďme rovnou k agendě.",
+   "tr": "Doğrudan gündeme geçelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_meeting_1",
+   "kind": "phrase",
+   "target": "Mám blokaci API; zítra dám termín.",
+   "tr": "API tarafında bir engelim var; yarın tarih vereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_meeting_2",
+   "kind": "phrase",
+   "target": "Můžeme ten bod nechat na konec?",
+   "tr": "Bu maddeyi sona bırakabilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_meeting_3",
+   "kind": "phrase",
+   "target": "Zapisuji rozhodnutí: čtvrtek v 16:00.",
+   "tr": "Kararı yazıyorum: perşembe saat 16:00.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_meeting_4",
+   "kind": "phrase",
+   "target": "Nemám námitky, ale zapišme i riziko.",
+   "tr": "İtirazım yok ama riski de yazalım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_meeting_5",
+   "kind": "phrase",
+   "target": "Potřebujeme prodloužit o pět minut?",
+   "tr": "Beş dakika uzatmamız gerekiyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.cs_exp_bank",
+   "kind": "scenario_title",
+   "tr": "Bankada hesap",
+   "en": "Bank account",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_exp_bank",
+   "kind": "grammar_rule",
+   "tr": "Gişede kondiсional nazik olur: chtěl bych; cinsiyete göre chtěl/chtěla.",
+   "en": null,
+   "context": "Chtěl bych si založit účet. / ✗ Založ mi účet.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.cs_exp_bank.0",
+   "kind": "speaking_prompt",
+   "en": "Osobní účet na výplatu?",
+   "context": "Ano, pro zasílání mzdy.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_exp_bank.1",
+   "kind": "speaking_prompt",
+   "en": "Podepište se prosím tady.",
+   "context": "Samozřejmě, tady je podpis.",
+   "have": []
+  },
+  {
+   "key": "p.cs_exp_bank_0",
+   "kind": "phrase",
+   "target": "Chtěl bych si založit běžný účet.",
+   "tr": "Bir vadesiz hesap açmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_bank_1",
+   "kind": "phrase",
+   "target": "Mám doklad totožnosti a potvrzení o adrese.",
+   "tr": "Kimliğim ve ikametgah belgem yanımda.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_bank_2",
+   "kind": "phrase",
+   "target": "Kolik činí roční poplatek za kartu?",
+   "tr": "Kartın yıllık ücreti ne kadar?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_bank_3",
+   "kind": "phrase",
+   "target": "Chci také internetové bankovnictví, prosím.",
+   "tr": "İnternet bankacılığını da istiyorum lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_bank_4",
+   "kind": "phrase",
+   "target": "Jaký je denní limit převodů?",
+   "tr": "Havale için günlük limit nedir?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_bank_5",
+   "kind": "phrase",
+   "target": "Mohu dostat potvrzení e-mailem?",
+   "tr": "Dekontu e-posta ile alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.cs_exp_apartment",
+   "kind": "scenario_title",
+   "tr": "Ev bakma",
+   "en": "Apartment viewing",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_exp_apartment",
+   "kind": "grammar_rule",
+   "tr": "Hâlâ boş olup olmadığını sormak için \"ještě\" kullanılır.",
+   "en": null,
+   "context": "Je byt ještě volný? / ✗ Je volný vždy ještě?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.cs_exp_apartment.0",
+   "kind": "speaking_prompt",
+   "en": "Kdy byste se chtěl nastěhovat?",
+   "context": "Začátkem měsíce; mám málo věcí.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_exp_apartment.1",
+   "kind": "speaking_prompt",
+   "en": "Majitel zvířata nepovoluje.",
+   "context": "Rozumím, žádné zvíře nemám.",
+   "have": []
+  },
+  {
+   "key": "p.cs_exp_apartment_0",
+   "kind": "phrase",
+   "target": "Viděl jsem inzerát; je byt ještě volný?",
+   "tr": "İlanı gördüm; daire hâlâ boş mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_apartment_1",
+   "kind": "phrase",
+   "target": "Zahrnují poplatky topení?",
+   "tr": "Aidat ısınmayı da kapsıyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_apartment_2",
+   "kind": "phrase",
+   "target": "Kauce je kolik nájmů?",
+   "tr": "Depozito kaç aylık kiraya denk geliyor?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_apartment_3",
+   "kind": "phrase",
+   "target": "Smlouva na rok, nebo jde kratší?",
+   "tr": "Sözleşme bir yıllık mı, yoksa daha kısa olabilir mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_apartment_4",
+   "kind": "phrase",
+   "target": "Pracuji z domova, potřebuji klid.",
+   "tr": "Evden çalışıyorum, sessizliğe ihtiyacım var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_apartment_5",
+   "kind": "phrase",
+   "target": "Ozvu se zítra.",
+   "tr": "Yarın dönüş yapacağım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.cs_exp_doctor",
+   "kind": "scenario_title",
+   "tr": "Doktorda",
+   "en": "At the doctor's",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_exp_doctor",
+   "kind": "grammar_rule",
+   "tr": "Devam eden süre için \"už + zaman\" kullanılır; kendi kendine teşhis koymayın.",
+   "en": null,
+   "context": "Už tři dny mám horečku. / ✗ Mám zápal plic, asi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.cs_exp_doctor.0",
+   "kind": "speaking_prompt",
+   "en": "Kde to bolí? Začalo to náhle?",
+   "context": "Na pravé straně hrudníku, od včerejšího večera.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_exp_doctor.1",
+   "kind": "speaking_prompt",
+   "en": "Pošlu vás na krevní testy.",
+   "context": "Dobře, kam mám jít?",
+   "have": []
+  },
+  {
+   "key": "p.cs_exp_doctor_0",
+   "kind": "phrase",
+   "target": "Už tři dny mám horečku a v noci kašlu.",
+   "tr": "Üç gündür ateşim var ve geceleri öksürüyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_doctor_1",
+   "kind": "phrase",
+   "target": "Na penicilin alergii nemám.",
+   "tr": "Penisiline alerjim yok.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_doctor_2",
+   "kind": "phrase",
+   "target": "Způsobuje ten lék ospalost?",
+   "tr": "Bu ilaç uyku hâli yapar mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_doctor_3",
+   "kind": "phrase",
+   "target": "Potřebuji neschopenku do práce?",
+   "tr": "İş için rapora ihtiyacım var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_doctor_4",
+   "kind": "phrase",
+   "target": "Kdy mám přijít na kontrolu?",
+   "tr": "Kontrol için ne zaman gelmeliyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_doctor_5",
+   "kind": "phrase",
+   "target": "Je lékárna mimo budovu?",
+   "tr": "Eczane bina dışında mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.cs_exp_business_lunch",
+   "kind": "scenario_title",
+   "tr": "İş yemeği",
+   "en": "Business lunch",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_exp_business_lunch",
+   "kind": "grammar_rule",
+   "tr": "Hesabı üstlenmek: účet bereme na nás.",
+   "en": null,
+   "context": "Účet bereme na nás. / ✗ Zaplaťte všechno vy.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.cs_exp_business_lunch.0",
+   "kind": "speaking_prompt",
+   "en": "Cena mi stále přijde vysoká.",
+   "context": "Můžeme projekt rozdělit do dvou fází.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_exp_business_lunch.1",
+   "kind": "speaking_prompt",
+   "en": "Promyslíme to.",
+   "context": "Samozřejmě, zavolám v pátek.",
+   "have": []
+  },
+  {
+   "key": "p.cs_exp_lunch_0",
+   "kind": "phrase",
+   "target": "Vybral jsem místo podle vašeho tipu.",
+   "tr": "Mekanı sizin önerinize göre seçtim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_lunch_1",
+   "kind": "phrase",
+   "target": "Máte alergie nebo preference?",
+   "tr": "Alerjiniz veya tercihiniz var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_lunch_2",
+   "kind": "phrase",
+   "target": "Než objednáme, ujasníme hlavní body?",
+   "tr": "Sipariş vermeden önce ana noktaları netleştirelim mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_lunch_3",
+   "kind": "phrase",
+   "target": "U stolu nebudeme do čísel; pošlu je později.",
+   "tr": "Masada rakamlara girmeyelim; sonra göndereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_lunch_4",
+   "kind": "phrase",
+   "target": "Tentokrát účet bereme na nás.",
+   "tr": "Bu sefer hesabı biz alıyoruz.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_lunch_5",
+   "kind": "phrase",
+   "target": "Bylo to produktivní setkání, děkuji.",
+   "tr": "Çok verimli bir toplantıydı, teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.cs_exp_complaint",
+   "kind": "scenario_title",
+   "tr": "Şikâyet",
+   "en": "Complaint",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_exp_complaint",
+   "kind": "grammar_rule",
+   "tr": "Kanıt dili \"písemné\" kullanılır; sadece mesaj yeterli değildir.",
+   "en": null,
+   "context": "Písemné potvrzení. / ✗ Napište jen na WhatsApp.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.cs_exp_complaint.0",
+   "kind": "speaking_prompt",
+   "en": "Omlouváme se; kontroluji zásilku.",
+   "context": "Děkuji. Zapište i čas hovoru.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_exp_complaint.1",
+   "kind": "speaking_prompt",
+   "en": "Doručení zítra do 14:00.",
+   "context": "Dobře, čekám na to.",
+   "have": []
+  },
+  {
+   "key": "p.cs_exp_complaint_0",
+   "kind": "phrase",
+   "target": "Číslo objednávky 1842; zásilka ještě nedorazila.",
+   "tr": "1842 numaralı sipariş; kargo hâlâ gelmedi.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_complaint_1",
+   "kind": "phrase",
+   "target": "Sjednaný termín byl včera.",
+   "tr": "Kararlaştırılan tarih dündü.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_complaint_2",
+   "kind": "phrase",
+   "target": "Jako řešení žádám vrácení poštovného.",
+   "tr": "Çözüm olarak kargo ücretinin iadesini talep ediyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_complaint_3",
+   "kind": "phrase",
+   "target": "Musím mluvit s nadřízeným, nebo to vyřídíte?",
+   "tr": "Bir yöneticiyle mi konuşmalıyım, yoksa siz çözebilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_complaint_4",
+   "kind": "phrase",
+   "target": "Mohu dostat písemné potvrzení?",
+   "tr": "Yazılı bir teyit alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_complaint_5",
+   "kind": "phrase",
+   "target": "Jsem trpělivý, ale dnes potřebuji konkrétní čas.",
+   "tr": "Sabırlıyım ama bugün net bir zaman lazım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.cs_exp_business_trip",
+   "kind": "scenario_title",
+   "tr": "İş seyahati",
+   "en": "Business trip",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_exp_business_trip",
+   "kind": "grammar_rule",
+   "tr": "Aktarmaya yetişmek: stihnout přestup; zmeškat = kaçırmak.",
+   "en": null,
+   "context": "Stihnu přestup? / ✗ Zmeškám letiště?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.cs_exp_business_trip.0",
+   "kind": "speaking_prompt",
+   "en": "Okno, nebo ulička?",
+   "context": "Ulička, ideálně blízko východu.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_exp_business_trip.1",
+   "kind": "speaking_prompt",
+   "en": "Gate 12, za asi čtyřicet minut.",
+   "context": "Děkuji, jdu tam teď.",
+   "have": []
+  },
+  {
+   "key": "p.cs_exp_trip_0",
+   "kind": "phrase",
+   "target": "Tady je mé PNR; palubní vstupenku, prosím.",
+   "tr": "İşte rezervasyon kodum; biniş kartı lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_trip_1",
+   "kind": "phrase",
+   "target": "Vejde se příruční zavazadlo do rozměrů?",
+   "tr": "El bagajı ölçülere uyuyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_trip_2",
+   "kind": "phrase",
+   "target": "Stihnu přestup, pokud máme zpoždění?",
+   "tr": "Gecikirsek aktarmaya yetişir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_trip_3",
+   "kind": "phrase",
+   "target": "Fakturu prosím na firmu.",
+   "tr": "Fatura şirket adına lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_trip_4",
+   "kind": "phrase",
+   "target": "Kde je vchod do lounge?",
+   "tr": "Lounge girişi nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_trip_5",
+   "kind": "phrase",
+   "target": "Účtenku z taxíku si musím nechat na vyúčtování.",
+   "tr": "Masraf için taksi fişini saklamam gerekiyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.cs_exp_client_call",
+   "kind": "scenario_title",
+   "tr": "Müşteri telefonu",
+   "en": "Client phone call",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_exp_client_call",
+   "kind": "grammar_rule",
+   "tr": "Yanlış anlamayı teyit etmek için \"pokud jsem to pochopil špatně\" kullanılır.",
+   "en": null,
+   "context": "Pokud jsem to pochopil špatně, opravte mě. / ✗ Pokud bych špatně rozumět…",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.cs_exp_client_call.0",
+   "kind": "speaking_prompt",
+   "en": "Bez této funkce nemůžeme jít live.",
+   "context": "Pak posuneme jiné a toto urychlíme.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_exp_client_call.1",
+   "kind": "speaking_prompt",
+   "en": "Dobře, sepište to.",
+   "context": "Posílám to písemně hned.",
+   "have": []
+  },
+  {
+   "key": "p.cs_exp_call_0",
+   "kind": "phrase",
+   "target": "Máte teď pět minut?",
+   "tr": "Şu an beş dakikanız var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_call_1",
+   "kind": "phrase",
+   "target": "Třetí bod včerejšího mailu není jasný.",
+   "tr": "Dünkü mailin üçüncü maddesi net değil.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_call_2",
+   "kind": "phrase",
+   "target": "Je to navíc, nebo se vejde do rozsahu?",
+   "tr": "Bu ek iş mi yoksa kapsamda mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_call_3",
+   "kind": "phrase",
+   "target": "Pokud jsem to pochopil špatně, opravte mě.",
+   "tr": "Yanlış anladıysam lütfen düzeltin.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_call_4",
+   "kind": "phrase",
+   "target": "Shrnutí: koncept v pátek, komentáře v pondělí.",
+   "tr": "Özet: taslak cuma, yorumlar pazartesi.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_call_5",
+   "kind": "phrase",
+   "target": "Hned posílám potvrzovací e-mail.",
+   "tr": "Hemen bir teyit maili gönderiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.cs_exp_hr_salary",
+   "kind": "scenario_title",
+   "tr": "Maaş görüşmesi",
+   "en": "Salary conversation",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_exp_hr_salary",
+   "kind": "grammar_rule",
+   "tr": "Yumuşak beklenti için \"očekávám\" kullanılır; \"požaduji\" kapıyı kapatır.",
+   "en": null,
+   "context": "Očekávám patnáct procent. / ✗ Požaduji patnáct hned.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.cs_exp_hr_salary.0",
+   "kind": "speaking_prompt",
+   "en": "Letos je rozpočet velmi utažený.",
+   "context": "Chápu. Lze mluvit o bonusu nebo stupni?",
+   "have": []
+  },
+  {
+   "key": "tp.cs_exp_hr_salary.1",
+   "kind": "speaking_prompt",
+   "en": "Vrátíme se k tomu v březnu.",
+   "context": "Dejme březen do kalendáře a dnes kritéria.",
+   "have": []
+  },
+  {
+   "key": "p.cs_exp_salary_0",
+   "kind": "phrase",
+   "target": "Chtěl bych probrat výsledky a tržní úroveň.",
+   "tr": "Sonuçlarım ve piyasa seviyesi hakkında konuşmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_salary_1",
+   "kind": "phrase",
+   "target": "Za šest měsíců jsem včas dodal tři projekty.",
+   "tr": "Altı ayda üç projeyi zamanında teslim ettim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_salary_2",
+   "kind": "phrase",
+   "target": "Očekávám patnáct procent; mohu ukázat podklady.",
+   "tr": "Yüzde on beş bekliyorum; kanıtlarımı gösterebilirim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_salary_3",
+   "kind": "phrase",
+   "target": "Současný titul neodráží rozsah práce.",
+   "tr": "Mevcut unvan iş kapsamını yansıtmıyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_salary_4",
+   "kind": "phrase",
+   "target": "Pokud není rozpočet, stanovme datum revize.",
+   "tr": "Bütçe yoksa bir değerlendirme tarihi belirleyelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_salary_5",
+   "kind": "phrase",
+   "target": "Rozhodnutí bych rád dostal písemně.",
+   "tr": "Kararı yazılı olarak almak isterim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.cs_exp_daily_errands",
+   "kind": "scenario_title",
+   "tr": "Market ve kargo",
+   "en": "Errands and deliveries",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_exp_daily_errands",
+   "kind": "grammar_rule",
+   "tr": "Hizmet ricalarında cümle sonuna \"prosím\" eklenir.",
+   "en": null,
+   "context": "Účtenku, prosím. / ✗ Dej účtenku.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.cs_exp_daily_errands.0",
+   "kind": "speaking_prompt",
+   "en": "Máte věrnostní kartu?",
+   "context": "Ne, tentokrát ne.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_exp_daily_errands.1",
+   "kind": "speaking_prompt",
+   "en": "Nemám drobné, strhnu z karty.",
+   "context": "Dobře, žádný problém.",
+   "have": []
+  },
+  {
+   "key": "p.cs_exp_errands_0",
+   "kind": "phrase",
+   "target": "Dva taková pečiva a účtenku, prosím.",
+   "tr": "Bu ekmekten iki tane ve fiş lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_errands_1",
+   "kind": "phrase",
+   "target": "Kde je bezlepková polička?",
+   "tr": "Glütensiz reyon nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_errands_2",
+   "kind": "phrase",
+   "target": "Nenechávejte balík u souseda; vzkaz na dveře.",
+   "tr": "Paketi komşuya bırakmayın; kapıya not bırakın.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_errands_3",
+   "kind": "phrase",
+   "target": "Nemám hotovost; berete kartu?",
+   "tr": "Nakit param yok; kart geçer mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_errands_4",
+   "kind": "phrase",
+   "target": "Vrácení do čtrnácti dnů, že?",
+   "tr": "İade on dört gün içinde, değil mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_errands_5",
+   "kind": "phrase",
+   "target": "Tašku nepotřebuji, mám vlastní.",
+   "tr": "Poşete gerek yok, kendi çantam var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.cs_exp_networking",
+   "kind": "scenario_title",
+   "tr": "Networking",
+   "en": "Networking",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.cs_exp_networking",
+   "kind": "grammar_rule",
+   "tr": "Meslek tanıtımı: jmenuji se / jsem + povolání.",
+   "en": null,
+   "context": "Jsem product manager ve fintechu. / ✗ Dělám tak nějak produkt.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.cs_exp_networking.0",
+   "kind": "speaking_prompt",
+   "en": "Co aplikace konkrétně řeší?",
+   "context": "Zjednodušujeme fakturaci a inkaso pro malé firmy.",
+   "have": []
+  },
+  {
+   "key": "tp.cs_exp_networking.1",
+   "kind": "speaking_prompt",
+   "en": "Zajímavé, napište e-mail.",
+   "context": "Napíšu zítra.",
+   "have": []
+  },
+  {
+   "key": "p.cs_exp_networking_0",
+   "kind": "phrase",
+   "target": "Jmenuji se Anna, jsem product manager ve fintechu.",
+   "tr": "Benim adım Anna, fintech alanında ürün yöneticisiyim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_networking_1",
+   "kind": "phrase",
+   "target": "Příklad o platbách byl velmi srozumitelný.",
+   "tr": "Ödemeler hakkındaki örneğiniz çok anlaşılırdı.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_networking_2",
+   "kind": "phrase",
+   "target": "Řešíte u vás podobné tření?",
+   "tr": "Sizde de benzer sürtüşmeler oluyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_networking_3",
+   "kind": "phrase",
+   "target": "Došly vizitky; mohu napsat na LinkedIn?",
+   "tr": "Kartvizitlerim bitti; LinkedIn’den yazabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_networking_4",
+   "kind": "phrase",
+   "target": "Máte dvě minuty? Budu stručná.",
+   "tr": "İki dakikanız var mı? Kısa keseceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.cs_exp_networking_5",
+   "kind": "phrase",
+   "target": "Ráda představím někoho z příbuzného oboru.",
+   "tr": "Yardımcı olabilecek birini tanıştırmaktan memnuniyet duyarım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.cs_library",
+   "kind": "story_title",
+   "target": "Stará knihovna",
+   "tr": "Eski Kütüphane",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_library.0",
+   "kind": "story_sentence",
+   "target": "V našem městě je stará, krásná knihovna.",
+   "tr": "Şehrimizde eski ve güzel bir kütüphane var.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_library.1",
+   "kind": "story_sentence",
+   "target": "V knihovně je velký sál a malý dětský koutek.",
+   "tr": "Kütüphanede büyük bir salon ve küçük bir çocuk köşesi var.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_library.2",
+   "kind": "story_sentence",
+   "target": "Každý pátek odpoledne chodím tam s dcerou.",
+   "tr": "Her cuma öğleden sonra kızım oraya gider.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_library.3",
+   "kind": "story_sentence",
+   "target": "Moje dcera tam čte obrázkové knížky.",
+   "tr": "Kızım orada resimli kitaplar okur.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_library.4",
+   "kind": "story_sentence",
+   "target": "Paní knihovnice je velmi přátelská.",
+   "tr": "Kütüphaneci çok güler yüzlüdür.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_library.5",
+   "kind": "story_sentence",
+   "target": "Knihovna je jako tichý domov.",
+   "tr": "Kütüphane sessiz bir ev gibidir.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.cs_pet",
+   "kind": "story_title",
+   "target": "Můj pes",
+   "tr": "Köpeğim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_pet.0",
+   "kind": "story_sentence",
+   "target": "Mám psa. Jmenuje se Max.",
+   "tr": "Bir köpeğim var. Adı Max.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_pet.1",
+   "kind": "story_sentence",
+   "target": "Max je velký a černý.",
+   "tr": "Max büyük ve siyah.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_pet.2",
+   "kind": "story_sentence",
+   "target": "Každý večer s ním chodím na procházku.",
+   "tr": "Her akşam onunla yürüyüşe çıkarım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_pet.3",
+   "kind": "story_sentence",
+   "target": "Rád chytá míč a přináší mi ho.",
+   "tr": "Topu yakalayıp bana getirmeyi sever.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_pet.4",
+   "kind": "story_sentence",
+   "target": "V zimě rád leží u ohně.",
+   "tr": "Kışın soba başında yatmayı sever.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_pet.5",
+   "kind": "story_sentence",
+   "target": "Bez Maxe je můj domov tichý.",
+   "tr": "Max olmadan evim sessizdir.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.cs_restaurant",
+   "kind": "story_title",
+   "target": "V neděli v restauraci",
+   "tr": "Pazar Restoranı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_restaurant.0",
+   "kind": "story_sentence",
+   "target": "Každou neděli chodíme s rodinou do restaurace.",
+   "tr": "Her pazar aileyle restorana gideriz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_restaurant.1",
+   "kind": "story_sentence",
+   "target": "Náš favorit je v starém měste.",
+   "tr": "Favorimiz eski şehirde.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_restaurant.2",
+   "kind": "story_sentence",
+   "target": "Otec si dá guláš se knedlíky.",
+   "tr": "Babam knedlíkli gulyaş ister.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_restaurant.3",
+   "kind": "story_sentence",
+   "target": "Máma si dá kuře s rýží.",
+   "tr": "Annem pirincli tavuk ister.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_restaurant.4",
+   "kind": "story_sentence",
+   "target": "Jíme pomalu a povídáme si.",
+   "tr": "Yavaşça yiyip sohbet ederiz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.cs_restaurant.5",
+   "kind": "story_sentence",
+   "target": "Na závěr pijeme kávu a jíme dort.",
+   "tr": "Sonunda kahve içip pasta yeriz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.A.n",
+   "kind": "alphabet_letter_name",
+   "target": "A",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.A.s",
+   "kind": "alphabet_sound",
+   "target": "A",
+   "tr": "a",
+   "context": "Auto",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.A.m",
+   "kind": "alphabet_example",
+   "target": "Auto",
+   "tr": "Araba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Á.n",
+   "kind": "alphabet_letter_name",
+   "target": "Á",
+   "tr": "Uzun A",
+   "en": "Long A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Á.s",
+   "kind": "alphabet_sound",
+   "target": "Á",
+   "tr": "aa",
+   "context": "Máma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Á.m",
+   "kind": "alphabet_example",
+   "target": "Máma",
+   "tr": "Anne",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.B.n",
+   "kind": "alphabet_letter_name",
+   "target": "B",
+   "tr": "Be",
+   "en": "Be",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.B.s",
+   "kind": "alphabet_sound",
+   "target": "B",
+   "tr": "b",
+   "context": "Brambora",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.B.m",
+   "kind": "alphabet_example",
+   "target": "Brambora",
+   "tr": "Patates",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.C.n",
+   "kind": "alphabet_letter_name",
+   "target": "C",
+   "tr": "Tse",
+   "en": "Tse",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.C.s",
+   "kind": "alphabet_sound",
+   "target": "C",
+   "tr": "ts",
+   "context": "Cukr",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.C.m",
+   "kind": "alphabet_example",
+   "target": "Cukr",
+   "tr": "Şeker",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Č.n",
+   "kind": "alphabet_letter_name",
+   "target": "Č",
+   "tr": "Çe",
+   "en": "Che",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Č.s",
+   "kind": "alphabet_sound",
+   "target": "Č",
+   "tr": "ç",
+   "context": "Čas",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Č.m",
+   "kind": "alphabet_example",
+   "target": "Čas",
+   "tr": "Zaman",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.D.n",
+   "kind": "alphabet_letter_name",
+   "target": "D",
+   "tr": "De",
+   "en": "De",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.D.s",
+   "kind": "alphabet_sound",
+   "target": "D",
+   "tr": "d",
+   "context": "Dům",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.D.m",
+   "kind": "alphabet_example",
+   "target": "Dům",
+   "tr": "Ev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.E.n",
+   "kind": "alphabet_letter_name",
+   "target": "E",
+   "tr": "E",
+   "en": "E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.E.s",
+   "kind": "alphabet_sound",
+   "target": "E",
+   "tr": "e",
+   "context": "Efekt",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.E.m",
+   "kind": "alphabet_example",
+   "target": "Efekt",
+   "tr": "Etki",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.É.n",
+   "kind": "alphabet_letter_name",
+   "target": "É",
+   "tr": "Uzun E",
+   "en": "Long E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.É.s",
+   "kind": "alphabet_sound",
+   "target": "É",
+   "tr": "ee",
+   "context": "Léto",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.É.m",
+   "kind": "alphabet_example",
+   "target": "Léto",
+   "tr": "Yaz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ě.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ě",
+   "tr": "Yumuşak E",
+   "en": "Soft E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Ě.s",
+   "kind": "alphabet_sound",
+   "target": "Ě",
+   "tr": "ye",
+   "context": "Měsíc",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ě.m",
+   "kind": "alphabet_example",
+   "target": "Měsíc",
+   "tr": "Ay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.F.n",
+   "kind": "alphabet_letter_name",
+   "target": "F",
+   "tr": "Ef",
+   "en": "Ef",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.F.s",
+   "kind": "alphabet_sound",
+   "target": "F",
+   "tr": "f",
+   "context": "Film",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.F.m",
+   "kind": "alphabet_example",
+   "target": "Film",
+   "tr": "Film",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.G.n",
+   "kind": "alphabet_letter_name",
+   "target": "G",
+   "tr": "Ge",
+   "en": "Ge",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.G.s",
+   "kind": "alphabet_sound",
+   "target": "G",
+   "tr": "g",
+   "context": "Guma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.G.m",
+   "kind": "alphabet_example",
+   "target": "Guma",
+   "tr": "Lastik",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.H.n",
+   "kind": "alphabet_letter_name",
+   "target": "H",
+   "tr": "Ha",
+   "en": "Ha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.H.s",
+   "kind": "alphabet_sound",
+   "target": "H",
+   "tr": "h",
+   "context": "Hlava",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.H.m",
+   "kind": "alphabet_example",
+   "target": "Hlava",
+   "tr": "Baş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ch.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ch",
+   "tr": "Ha (kalın)",
+   "en": "Kh",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Ch.s",
+   "kind": "alphabet_sound",
+   "target": "Ch",
+   "tr": "kh",
+   "context": "Chleba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ch.m",
+   "kind": "alphabet_example",
+   "target": "Chleba",
+   "tr": "Ekmek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.I.n",
+   "kind": "alphabet_letter_name",
+   "target": "I",
+   "tr": "İ",
+   "en": "I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.I.s",
+   "kind": "alphabet_sound",
+   "target": "I",
+   "tr": "i",
+   "context": "Internet",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.I.m",
+   "kind": "alphabet_example",
+   "target": "Internet",
+   "tr": "İnternet",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Í.n",
+   "kind": "alphabet_letter_name",
+   "target": "Í",
+   "tr": "Uzun İ",
+   "en": "Long I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Í.s",
+   "kind": "alphabet_sound",
+   "target": "Í",
+   "tr": "ii",
+   "context": "Míč",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Í.m",
+   "kind": "alphabet_example",
+   "target": "Míč",
+   "tr": "Top",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.J.n",
+   "kind": "alphabet_letter_name",
+   "target": "J",
+   "tr": "Yot",
+   "en": "Yot",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.J.s",
+   "kind": "alphabet_sound",
+   "target": "J",
+   "tr": "y",
+   "context": "Jaro",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.J.m",
+   "kind": "alphabet_example",
+   "target": "Jaro",
+   "tr": "İlkbahar",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.K.n",
+   "kind": "alphabet_letter_name",
+   "target": "K",
+   "tr": "Ka",
+   "en": "Ka",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.K.s",
+   "kind": "alphabet_sound",
+   "target": "K",
+   "tr": "k",
+   "context": "Kočka",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.K.m",
+   "kind": "alphabet_example",
+   "target": "Kočka",
+   "tr": "Kedi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.L.n",
+   "kind": "alphabet_letter_name",
+   "target": "L",
+   "tr": "El",
+   "en": "El",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.L.s",
+   "kind": "alphabet_sound",
+   "target": "L",
+   "tr": "l",
+   "context": "Les",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.L.m",
+   "kind": "alphabet_example",
+   "target": "Les",
+   "tr": "Orman",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.M.n",
+   "kind": "alphabet_letter_name",
+   "target": "M",
+   "tr": "Em",
+   "en": "Em",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.M.s",
+   "kind": "alphabet_sound",
+   "target": "M",
+   "tr": "m",
+   "context": "Moře",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.M.m",
+   "kind": "alphabet_example",
+   "target": "Moře",
+   "tr": "Deniz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.N.n",
+   "kind": "alphabet_letter_name",
+   "target": "N",
+   "tr": "En",
+   "en": "En",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.N.s",
+   "kind": "alphabet_sound",
+   "target": "N",
+   "tr": "n",
+   "context": "Noc",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.N.m",
+   "kind": "alphabet_example",
+   "target": "Noc",
+   "tr": "Gece",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ň.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ň",
+   "tr": "Yumuşak N",
+   "en": "Soft N",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Ň.s",
+   "kind": "alphabet_sound",
+   "target": "Ň",
+   "tr": "ny",
+   "context": "Kůň",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ň.m",
+   "kind": "alphabet_example",
+   "target": "Kůň",
+   "tr": "At",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.O.n",
+   "kind": "alphabet_letter_name",
+   "target": "O",
+   "tr": "O",
+   "en": "O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.O.s",
+   "kind": "alphabet_sound",
+   "target": "O",
+   "tr": "o",
+   "context": "Oko",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.O.m",
+   "kind": "alphabet_example",
+   "target": "Oko",
+   "tr": "Göz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.P.n",
+   "kind": "alphabet_letter_name",
+   "target": "P",
+   "tr": "Pe",
+   "en": "Pe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.P.s",
+   "kind": "alphabet_sound",
+   "target": "P",
+   "tr": "p",
+   "context": "Pes",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.P.m",
+   "kind": "alphabet_example",
+   "target": "Pes",
+   "tr": "Köpek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.R.n",
+   "kind": "alphabet_letter_name",
+   "target": "R",
+   "tr": "Er",
+   "en": "Er",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.R.s",
+   "kind": "alphabet_sound",
+   "target": "R",
+   "tr": "r",
+   "context": "Ruka",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.R.m",
+   "kind": "alphabet_example",
+   "target": "Ruka",
+   "tr": "El",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ř.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ř",
+   "tr": "Titrek R",
+   "en": "Trilled Rzh",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Ř.s",
+   "kind": "alphabet_sound",
+   "target": "Ř",
+   "tr": "rj",
+   "context": "Řeka",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ř.m",
+   "kind": "alphabet_example",
+   "target": "Řeka",
+   "tr": "Nehir",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.S.n",
+   "kind": "alphabet_letter_name",
+   "target": "S",
+   "tr": "Es",
+   "en": "Es",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.S.s",
+   "kind": "alphabet_sound",
+   "target": "S",
+   "tr": "s",
+   "context": "Slunce",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.S.m",
+   "kind": "alphabet_example",
+   "target": "Slunce",
+   "tr": "Güneş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Š.n",
+   "kind": "alphabet_letter_name",
+   "target": "Š",
+   "tr": "Şe",
+   "en": "Sh",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Š.s",
+   "kind": "alphabet_sound",
+   "target": "Š",
+   "tr": "ş",
+   "context": "Škola",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Š.m",
+   "kind": "alphabet_example",
+   "target": "Škola",
+   "tr": "Okul",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.T.n",
+   "kind": "alphabet_letter_name",
+   "target": "T",
+   "tr": "Te",
+   "en": "Te",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.T.s",
+   "kind": "alphabet_sound",
+   "target": "T",
+   "tr": "t",
+   "context": "Táta",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.T.m",
+   "kind": "alphabet_example",
+   "target": "Táta",
+   "tr": "Baba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.U.n",
+   "kind": "alphabet_letter_name",
+   "target": "U",
+   "tr": "U",
+   "en": "U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.U.s",
+   "kind": "alphabet_sound",
+   "target": "U",
+   "tr": "u",
+   "context": "Ucho",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.U.m",
+   "kind": "alphabet_example",
+   "target": "Ucho",
+   "tr": "Kulak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ů.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ů",
+   "tr": "Uzun U",
+   "en": "Long U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Ů.s",
+   "kind": "alphabet_sound",
+   "target": "Ů",
+   "tr": "uu",
+   "context": "Růže",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ů.m",
+   "kind": "alphabet_example",
+   "target": "Růže",
+   "tr": "Gül",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.V.n",
+   "kind": "alphabet_letter_name",
+   "target": "V",
+   "tr": "Ve",
+   "en": "Ve",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.V.s",
+   "kind": "alphabet_sound",
+   "target": "V",
+   "tr": "v",
+   "context": "Voda",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.V.m",
+   "kind": "alphabet_example",
+   "target": "Voda",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Y.n",
+   "kind": "alphabet_letter_name",
+   "target": "Y",
+   "tr": "İpsilon",
+   "en": "Ypsilon",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Y.s",
+   "kind": "alphabet_sound",
+   "target": "Y",
+   "tr": "ı",
+   "context": "Ryba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Y.m",
+   "kind": "alphabet_example",
+   "target": "Ryba",
+   "tr": "Balık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ý.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ý",
+   "tr": "Uzun İpsilon",
+   "en": "Long Ypsilon",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Ý.s",
+   "kind": "alphabet_sound",
+   "target": "Ý",
+   "tr": "ıı",
+   "context": "Starý",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ý.m",
+   "kind": "alphabet_example",
+   "target": "Starý",
+   "tr": "Yaşlı/eski",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Z.n",
+   "kind": "alphabet_letter_name",
+   "target": "Z",
+   "tr": "Zet",
+   "en": "Zet",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Z.s",
+   "kind": "alphabet_sound",
+   "target": "Z",
+   "tr": "z",
+   "context": "Zima",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Z.m",
+   "kind": "alphabet_example",
+   "target": "Zima",
+   "tr": "Kış",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ž.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ž",
+   "tr": "Je",
+   "en": "Zh",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.cs.Ž.s",
+   "kind": "alphabet_sound",
+   "target": "Ž",
+   "tr": "j",
+   "context": "Žena",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.cs.Ž.m",
+   "kind": "alphabet_example",
+   "target": "Žena",
+   "tr": "Kadın",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.cs.0.h",
+   "kind": "pronunciation_heard",
+   "target": "ř",
+   "tr": "titreşimli rj",
+   "context": "Dünyada tek. Dili titret + j.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.cs.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "řeka, Dvořák",
+   "tr": "rjeka · dvorjak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.cs.1.h",
+   "kind": "pronunciation_heard",
+   "target": "š",
+   "tr": "ş",
+   "context": "Türkçe ş.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.cs.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "škola",
+   "tr": "şkola",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.cs.2.h",
+   "kind": "pronunciation_heard",
+   "target": "č",
+   "tr": "ç",
+   "context": "Türkçe ç.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.cs.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "čas",
+   "tr": "ças",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

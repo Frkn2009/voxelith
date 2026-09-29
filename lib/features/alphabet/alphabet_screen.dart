@@ -1,18 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
+import '../../data/models/models.dart';
 import '../../data/speech/premium_tts_service.dart';
+import '../../state/session.dart';
 import '../../ui/widgets.dart';
 import 'alphabet_engine.dart';
 
-class AlphabetScreen extends StatefulWidget {
+class AlphabetScreen extends ConsumerStatefulWidget {
   const AlphabetScreen({super.key, required this.languageCode});
   final String languageCode;
 
   @override
-  State<AlphabetScreen> createState() => _AlphabetScreenState();
+  ConsumerState<AlphabetScreen> createState() => _AlphabetScreenState();
 }
 
-class _AlphabetScreenState extends State<AlphabetScreen> {
+class _AlphabetScreenState extends ConsumerState<AlphabetScreen> {
   late VoxelithAlphabet _alphabet;
   final Set<String> _learned = {};
   bool _stepMode = false;
@@ -56,8 +62,48 @@ class _AlphabetScreenState extends State<AlphabetScreen> {
     }
   }
 
+  /// Alfabe verisi yalnızca TR (+ harf adı için EN) yazılı. Diğer arayüz
+  /// dillerinin karşılıkları içerik çeviri hattından gelir
+  /// (`assets/content/i18n/<ui>.json`, anahtar `al.<dil>.<harf>.<n|s|m>`).
+  String? _overlay(VoxelithLetter letter, String field, UiLang ui) =>
+      ContentOverlay.lookup(
+        'al.${widget.languageCode}.${letter.character}.$field',
+        ui,
+      );
+
+  /// Harf adı.
+  String _letterName(VoxelithLetter letter, UiLang ui) => ui == UiLang.tr
+      ? letter.nameTr
+      : _overlay(letter, 'n', ui) ?? letter.nameEn;
+
+  /// Ses ipucu — Türkçe okunuşa göre yazılmış; çevirisi yoksa gizlenir.
+  String? _sound(VoxelithLetter letter, UiLang ui) =>
+      ui == UiLang.tr ? letter.sound : _overlay(letter, 's', ui);
+
+  String _nameAndSound(
+    VoxelithLetter letter,
+    UiLang ui, {
+    bool quoted = false,
+  }) {
+    final sound = _sound(letter, ui);
+    if (sound == null || sound.isEmpty) return _letterName(letter, ui);
+    return '${_letterName(letter, ui)}  ·  ${quoted ? '"$sound"' : sound}';
+  }
+
+  /// Örnek kelime + anlamı (anlam çevirisi yoksa yalnızca kelime).
+  String _example(VoxelithLetter letter, UiLang ui) {
+    final meaning = ui == UiLang.tr
+        ? letter.exampleMeaning
+        : _overlay(letter, 'm', ui);
+    return meaning == null || meaning.isEmpty
+        ? letter.exampleWord
+        : '${letter.exampleWord}  →  $meaning';
+  }
+
   @override
   Widget build(BuildContext context) {
+    final i18n = ref.watch(i18nProvider);
+    final ui = ref.watch(sessionProvider).uiLang;
     final progress = _alphabet.letters.isEmpty
         ? 0.0
         : _learned.length / _alphabet.letters.length;
@@ -65,7 +111,7 @@ class _AlphabetScreenState extends State<AlphabetScreen> {
     return Scaffold(
       appBar: VoxelithAppBar(
         pageTitle: Text(
-          _alphabet.name,
+          i18n.alphabetName(widget.languageCode),
           style: const TextStyle(fontWeight: FontWeight.w800),
         ),
         actions: [
@@ -74,7 +120,7 @@ class _AlphabetScreenState extends State<AlphabetScreen> {
               _stepMode ? Icons.view_list : Icons.school,
               color: VoxelithTokens.accent,
             ),
-            tooltip: _stepMode ? 'Liste görünümü' : 'Adım adım ders',
+            tooltip: _stepMode ? i18n.listView : i18n.stepByStepLesson,
             onPressed: () => setState(() => _stepMode = !_stepMode),
           ),
           Padding(
@@ -91,11 +137,13 @@ class _AlphabetScreenState extends State<AlphabetScreen> {
           ),
         ],
       ),
-      body: SafeArea(child: _stepMode ? _buildStepMode() : _buildListMode()),
+      body: SafeArea(
+        child: _stepMode ? _buildStepMode(i18n, ui) : _buildListMode(ui),
+      ),
     );
   }
 
-  Widget _buildStepMode() {
+  Widget _buildStepMode(I18n i18n, UiLang ui) {
     return Column(
       children: [
         Padding(
@@ -158,7 +206,7 @@ class _AlphabetScreenState extends State<AlphabetScreen> {
                     ),
                     const SizedBox(height: 20),
                     Text(
-                      '${letter.nameTr}  ·  "${letter.sound}"',
+                      _nameAndSound(letter, ui, quoted: true),
                       style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w800,
@@ -168,7 +216,7 @@ class _AlphabetScreenState extends State<AlphabetScreen> {
                     GestureDetector(
                       onTap: () => _speakWord(letter.exampleWord),
                       child: Text(
-                        '${letter.exampleWord}  →  ${letter.exampleMeaning}',
+                        _example(letter, ui),
                         style: const TextStyle(
                           fontSize: 18,
                           color: VoxelithTokens.textSecondary,
@@ -190,8 +238,8 @@ class _AlphabetScreenState extends State<AlphabetScreen> {
                         onPressed: () => _learnStep(letter.character),
                         label: Text(
                           index == _alphabet.letters.length - 1
-                              ? 'Bitir'
-                              : 'Öğrendim, sıradaki',
+                              ? i18n.commonFinish
+                              : i18n.learnedNext,
                           style: const TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.w800,
@@ -210,7 +258,7 @@ class _AlphabetScreenState extends State<AlphabetScreen> {
     );
   }
 
-  Widget _buildListMode() {
+  Widget _buildListMode(UiLang ui) {
     final progress = _alphabet.letters.isEmpty
         ? 0.0
         : _learned.length / _alphabet.letters.length;
@@ -238,10 +286,14 @@ class _AlphabetScreenState extends State<AlphabetScreen> {
                 margin: const EdgeInsets.only(bottom: 10),
                 decoration: BoxDecoration(
                   color: VoxelithTokens.surface,
-                  borderRadius: BorderRadius.circular(VoxelithTokens.radiusMedium),
+                  borderRadius: BorderRadius.circular(
+                    VoxelithTokens.radiusMedium,
+                  ),
                   boxShadow: VoxelithTokens.softShadow,
                   border: Border.all(
-                    color: isLearned ? VoxelithTokens.primary : Colors.transparent,
+                    color: isLearned
+                        ? VoxelithTokens.primary
+                        : Colors.transparent,
                     width: 2,
                   ),
                 ),
@@ -274,14 +326,14 @@ class _AlphabetScreenState extends State<AlphabetScreen> {
                     ),
                   ),
                   title: Text(
-                    '${letter.nameTr}  ·  ${letter.sound}',
+                    _nameAndSound(letter, ui),
                     style: const TextStyle(
                       fontWeight: FontWeight.w800,
                       fontSize: 16,
                     ),
                   ),
                   subtitle: Text(
-                    '${letter.exampleWord}  →  ${letter.exampleMeaning}',
+                    _example(letter, ui),
                     style: const TextStyle(color: VoxelithTokens.textSecondary),
                   ),
                   trailing: Row(

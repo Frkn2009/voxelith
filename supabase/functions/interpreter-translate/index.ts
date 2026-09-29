@@ -35,6 +35,11 @@ function decodeHtml(value: string) {
 // sınırsız kalmaması.
 Deno.serve(async (request) => {
   if (request.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
+  // Sıfır maliyet: ücretli dış API'ler varsayılan olarak kapalı. Açmak için
+  // Supabase secret: VOXELITH_PAID_APIS=true (bkz. lib/core/features.dart).
+  if (Deno.env.get('VOXELITH_PAID_APIS') !== 'true') {
+    return json({ error: 'feature_disabled' }, 410);
+  }
   if (request.method !== 'POST') return json({ error: 'method_not_allowed' }, 405);
 
   const authorization = request.headers.get('Authorization');
@@ -71,7 +76,10 @@ Deno.serve(async (request) => {
     ? new Date(subscription.current_period_end).getTime()
     : 0;
   const isPlus = Boolean(subscription) && periodEnd > Date.now();
-  const FREE_DAILY_LIMIT = 10;
+  // Sıfır maliyet kuralı: uygulama bu fonksiyonu artık çağırmıyor; ücretsiz
+  // (anonim) kullanıcının doğrudan çağırıp Google Translate faturası
+  // oluşturmasını engellemek için ücretsiz hak 0. Kullanılmıyorsa hiç deploy etme.
+  const FREE_DAILY_LIMIT = 0;
   const PLUS_DAILY_LIMIT = 15;
 
   const { data: allowed, error: usageError } = await admin.rpc('try_consume_ai_usage', {

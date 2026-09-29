@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/content/language_guides.dart';
 import '../../data/models/models.dart';
@@ -16,6 +17,7 @@ class LanguageGuideScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final p = ref.watch(sessionProvider);
+    final i18n = ref.watch(i18nProvider);
     final g = LanguageGuide.of(lang ?? p.learnLang);
 
     return Scaffold(
@@ -49,7 +51,7 @@ class LanguageGuideScreen extends ConsumerWidget {
             ),
           ),
           const SizedBox(height: 22),
-          const Eyebrow('Yazıldı  →  okundu'),
+          Eyebrow(i18n.writtenHeard),
           const SizedBox(height: 10),
           for (final r in g.rules)
             Padding(
@@ -122,7 +124,7 @@ class LanguageGuideScreen extends ConsumerWidget {
               ),
             ),
           const SizedBox(height: 8),
-          const Eyebrow('Bu dilde dikkat'),
+          Eyebrow(i18n.watchOutInLanguage),
           const SizedBox(height: 10),
           for (final t in g.traps)
             Padding(
@@ -166,19 +168,20 @@ class LanguageGuideScreen extends ConsumerWidget {
 }
 
 /// Onboarding içine gömülü, app bar’sız.
-class LanguageGuideBody extends StatelessWidget {
+class LanguageGuideBody extends ConsumerWidget {
   const LanguageGuideBody({super.key, required this.lang});
   final LearnLang lang;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final i18n = ref.watch(i18nProvider);
     final g = LanguageGuide.of(lang);
     return ListView(
       children: [
         Text(g.headline, style: Theme.of(context).textTheme.displayMedium),
         const SizedBox(height: 8),
         Text(
-          'Konuşmadan önce 2 dakika. Yazıldığı gibi okunmaz.',
+          i18n.guideTwoMinutes,
           style: TextStyle(
             color: Theme.of(context).colorScheme.onSurfaceVariant,
           ),
@@ -224,7 +227,7 @@ class LanguageGuideBody extends StatelessWidget {
             ),
           ),
         Text(
-          'Kalan kurallar ve tuzaklar uygulama içinde. Dil rehberi her zaman Sen sekmesinde.',
+          i18n.guideMoreInApp,
           style: TextStyle(
             color: Theme.of(context).colorScheme.outline,
             fontSize: 12,

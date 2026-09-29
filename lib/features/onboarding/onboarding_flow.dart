@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/content/catalog.dart';
 import '../../data/events/analytics_events.dart';
@@ -79,14 +80,16 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
     final pages = [
       _native(i18n, p),
       _learn(i18n, p),
-      LanguageGuideBody(lang: p.learnLang),
+      // Telaffuz rehberi içeriği (lib/data/content/language_guides.dart)
+      // yalnızca Türkçe yazılmış; diğer arayüz dillerinde bu adım atlanır.
+      if (p.uiLang == UiLang.tr) LanguageGuideBody(lang: p.learnLang),
       _why(i18n, p),
       _style(i18n, p),
       _level(i18n, p),
-      _struggle(p),
-      _duration(p),
-      _schedule(p),
-      _planPreview(p),
+      _struggle(i18n, p),
+      _duration(i18n, p),
+      _schedule(i18n, p),
+      _planPreview(i18n, p),
     ];
     final scheduleIndex = pages.length - 2;
     final planIndex = pages.length - 1;
@@ -142,11 +145,11 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
                   child: VoxelithMascot(size: 96, mood: MascotMood.wave),
                 ),
                 const SizedBox(height: 8),
-                const Center(
+                Center(
                   child: Text(
-                    'Merhaba, ben Voxelith. Konuşma yolculuğunda yanındayım.',
+                    i18n.onbMascotHello,
                     textAlign: TextAlign.center,
-                    style: TextStyle(color: Voxelith.muted, fontSize: 13),
+                    style: const TextStyle(color: Voxelith.muted, fontSize: 13),
                   ),
                 ),
                 const SizedBox(height: 14),
@@ -159,11 +162,10 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
                   transitionBuilder: (child, animation) => FadeTransition(
                     opacity: animation,
                     child: SlideTransition(
-                      position:
-                          Tween<Offset>(
-                            begin: const Offset(0, 0.04),
-                            end: Offset.zero,
-                          ).animate(animation),
+                      position: Tween<Offset>(
+                        begin: const Offset(0, 0.04),
+                        end: Offset.zero,
+                      ).animate(animation),
                       child: child,
                     ),
                   ),
@@ -171,7 +173,7 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
                 ),
               ),
               ForestButton(
-                label: step == planIndex ? 'Planımı kaydet' : i18n.continueCta,
+                label: step == planIndex ? i18n.onbSavePlan : i18n.continueCta,
                 onPressed: scheduleIncomplete
                     ? null
                     : () async {
@@ -193,7 +195,7 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
                 Center(
                   child: TextButton(
                     onPressed: () => context.push('/auth'),
-                    child: const Text('Hesap oluştur'),
+                    child: Text(i18n.createAccountCta),
                   ),
                 ),
               ],
@@ -212,9 +214,9 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
           style: Theme.of(context).textTheme.displayMedium,
         ),
         const SizedBox(height: 8),
-        const Text(
-          'Açıklamalar ve hatalar bu dilde gelir.',
-          style: TextStyle(color: Voxelith.muted),
+        Text(
+          i18n.onbNativeSubtitle,
+          style: const TextStyle(color: Voxelith.muted),
         ),
         const SizedBox(height: 20),
         for (final u in UiLang.values)
@@ -235,9 +237,9 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
       children: [
         Text(i18n.learnTitle, style: Theme.of(context).textTheme.displayMedium),
         const SizedBox(height: 8),
-        const Text(
-          'İlk dili seç. Sonra profilinden ekleyebilirsin.',
-          style: TextStyle(color: Voxelith.muted),
+        Text(
+          i18n.onbLearnSubtitle,
+          style: const TextStyle(color: Voxelith.muted),
         ),
         const SizedBox(height: 20),
         for (final l in LearnLang.values)
@@ -273,87 +275,68 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
   }
 
   Widget _style(I18n i18n, UserProfile p) {
-    const options = {
-      LearningStyle.balanced: (
-        'Dengeli',
-        'Önce dinle, gölgele, sonra konuş. Yeni başlayanlar için önerilir.',
-      ),
-      LearningStyle.speakingFirst: (
-        'Konuşma odaklı',
-        'Dinlemeyi atla, doğrudan konuşarak öğren. Kendine güvenen ve '
-            'hızlı ilerlemek isteyenler için.',
-      ),
-      LearningStyle.listeningHeavy: (
-        'Dinleme ağırlıklı',
-        'Konuşmadan önce cümleyi iki kez dinle. Kulağını alıştırmak '
-            'isteyenler için.',
-      ),
+    return ListView(
+      children: [
+        Text(
+          i18n.onbStyleTitle,
+          style: Theme.of(context).textTheme.displayMedium,
+        ),
+        const SizedBox(height: 8),
+        Text(
+          i18n.onbChangeAnytime,
+          style: const TextStyle(color: Voxelith.muted),
+        ),
+        const SizedBox(height: 20),
+        for (final style in LearningStyle.values)
+          ChoiceTile(
+            title: i18n.learningStyleLabel(style),
+            subtitle: i18n.learningStyleDescription(style),
+            selected: p.learningStyle == style,
+            onTap: () {
+              ref.read(sessionProvider.notifier).setLearningStyle(style);
+              _logAnswer('learning_style', style.name);
+            },
+          ),
+      ],
+    );
+  }
+
+  Widget _struggle(I18n i18n, UserProfile p) {
+    return ListView(
+      children: [
+        Text(
+          i18n.onbStruggleTitle,
+          style: Theme.of(context).textTheme.displayMedium,
+        ),
+        const SizedBox(height: 8),
+        Text(
+          i18n.onbStruggleSubtitle,
+          style: const TextStyle(color: Voxelith.muted),
+        ),
+        const SizedBox(height: 20),
+        for (final point in StrugglePoint.values)
+          ChoiceTile(
+            title: i18n.strugglePointLabel(point),
+            selected: p.strugglePoint == point,
+            onTap: () {
+              ref.read(sessionProvider.notifier).setStrugglePoint(point);
+              _logAnswer('struggle_point', point.name);
+            },
+          ),
+      ],
+    );
+  }
+
+  Widget _duration(I18n i18n, UserProfile p) {
+    final options = {
+      5: i18n.minutesOption('5'),
+      10: i18n.minutesOption('10'),
+      15: i18n.minutesOption('15+'),
     };
     return ListView(
       children: [
         Text(
-          'Nasıl çalışmak istersin?',
-          style: Theme.of(context).textTheme.displayMedium,
-        ),
-        const SizedBox(height: 8),
-        const Text(
-          'İstediğin zaman profilinden değiştirebilirsin.',
-          style: TextStyle(color: Voxelith.muted),
-        ),
-        const SizedBox(height: 20),
-        for (final entry in options.entries)
-          ChoiceTile(
-            title: entry.value.$1,
-            subtitle: entry.value.$2,
-            selected: p.learningStyle == entry.key,
-            onTap: () {
-              ref.read(sessionProvider.notifier).setLearningStyle(entry.key);
-              _logAnswer('learning_style', entry.key.name);
-            },
-          ),
-      ],
-    );
-  }
-
-  static const _struggleLabels = {
-    StrugglePoint.vocabulary: 'Kelime hatırlamakta',
-    StrugglePoint.speaking: 'Konuşurken çekiniyorum',
-    StrugglePoint.grammar: 'Dilbilgisi kafamı karıştırıyor',
-    StrugglePoint.listening: 'Dinlediğimi anlamıyorum',
-  };
-
-  Widget _struggle(UserProfile p) {
-    return ListView(
-      children: [
-        Text(
-          'En çok nerede zorlanıyorsun?',
-          style: Theme.of(context).textTheme.displayMedium,
-        ),
-        const SizedBox(height: 8),
-        const Text(
-          'İlk derslerini buna göre ayarlarız.',
-          style: TextStyle(color: Voxelith.muted),
-        ),
-        const SizedBox(height: 20),
-        for (final entry in _struggleLabels.entries)
-          ChoiceTile(
-            title: entry.value,
-            selected: p.strugglePoint == entry.key,
-            onTap: () {
-              ref.read(sessionProvider.notifier).setStrugglePoint(entry.key);
-              _logAnswer('struggle_point', entry.key.name);
-            },
-          ),
-      ],
-    );
-  }
-
-  Widget _duration(UserProfile p) {
-    const options = {5: '5 dakika', 10: '10 dakika', 15: '15+ dakika'};
-    return ListView(
-      children: [
-        Text(
-          'Günde ne kadar zaman ayırabilirsin?',
+          i18n.onbDurationTitle,
           style: Theme.of(context).textTheme.displayMedium,
         ),
         const SizedBox(height: 20),
@@ -370,17 +353,11 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
     );
   }
 
-  static const _timeOfDayLabels = {
-    PracticeTimeOfDay.morning: 'Sabah',
-    PracticeTimeOfDay.afternoon: 'Öğlen',
-    PracticeTimeOfDay.evening: 'Akşam',
-  };
-
-  Widget _schedule(UserProfile p) {
+  Widget _schedule(I18n i18n, UserProfile p) {
     return ListView(
       children: [
         Text(
-          'Hangi günler ve ne zaman pratik yapmak istersin?',
+          i18n.onbScheduleTitle,
           style: Theme.of(context).textTheme.displayMedium,
         ),
         const SizedBox(height: 20),
@@ -390,7 +367,7 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
           children: [
             for (final day in Weekday.values)
               _DayChip(
-                label: day.shortLabelTr,
+                label: i18n.weekdayShort(day),
                 selected: p.practiceDays.contains(day),
                 onTap: () {
                   // `p` gelir build-time anlık görüntüsüdür; art arda hızlı
@@ -400,50 +377,46 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
                   final next = {...current};
                   if (!next.remove(day)) next.add(day);
                   ref.read(sessionProvider.notifier).setPracticeDays(next);
-                  _logAnswer('practice_days', next.map((d) => d.name).join(','));
+                  _logAnswer(
+                    'practice_days',
+                    next.map((d) => d.name).join(','),
+                  );
                 },
               ),
           ],
         ),
         const SizedBox(height: 24),
-        for (final entry in _timeOfDayLabels.entries)
+        for (final time in PracticeTimeOfDay.values)
           ChoiceTile(
-            title: entry.value,
-            selected: p.practiceTimeOfDay == entry.key,
+            title: i18n.timeOfDayLabel(time),
+            selected: p.practiceTimeOfDay == time,
             onTap: () {
-              ref
-                  .read(sessionProvider.notifier)
-                  .setPracticeTimeOfDay(entry.key);
-              _logAnswer('practice_time_of_day', entry.key.name);
+              ref.read(sessionProvider.notifier).setPracticeTimeOfDay(time);
+              _logAnswer('practice_time_of_day', time.name);
             },
           ),
       ],
     );
   }
 
-  Widget _planPreview(UserProfile p) {
+  Widget _planPreview(I18n i18n, UserProfile p) {
     final plan = PlanGenerator.generate(p);
     final days = Weekday.values
         .where((d) => p.practiceDays.contains(d))
-        .map((d) => d.shortLabelTr)
+        .map(i18n.weekdayShort)
         .join(' / ');
-    final timeLabel = p.practiceTimeOfDay == null
-        ? ''
-        : _timeOfDayLabels[p.practiceTimeOfDay]!.toLowerCase();
-    final goalLabel = switch (p.motive) {
-      Motive.travel => 'Seyahat',
-      Motive.work => 'İş / Kariyer',
-      Motive.exam => 'Sınav / Okul',
-      Motive.life => 'Hobi / Merak',
-    };
-    final summary =
-        '$goalLabel için ${p.learnLang.label(p.uiLang)} öğreniyorsun, '
-        'günde ${p.dailyGoalMin} dakika, $days ${timeLabel}ları.';
+    final summary = i18n.planSummary(
+      motive: p.motive,
+      lang: p.learnLang.label(p.uiLang),
+      minutes: p.dailyGoalMin,
+      days: days,
+      time: p.practiceTimeOfDay,
+    );
 
     return ListView(
       children: [
         Text(
-          'İşte senin planın',
+          i18n.onbPlanTitle,
           style: Theme.of(context).textTheme.displayMedium,
         ),
         const SizedBox(height: 12),
@@ -461,7 +434,7 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
           children: [
             for (final minutes in [5, 10, 15])
               _DayChip(
-                label: '$minutes dk',
+                label: i18n.minutesShort(minutes),
                 selected: p.dailyGoalMin == minutes,
                 onTap: () {
                   ref.read(sessionProvider.notifier).setDailyGoalMin(minutes);
@@ -478,37 +451,31 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
           child: Column(
             key: ValueKey(plan.previewLessonTitles.join(',')),
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              for (final title in plan.previewLessonTitles)
-                VoxelithCard(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 16,
-                    vertical: 14,
-                  ),
-                  child: Row(
-                    children: [
-                      const Icon(Icons.play_circle_outline, size: 20),
-                      const SizedBox(width: 10),
-                      Expanded(child: Text(title)),
-                    ],
-                  ),
-                ),
-            ].expand((w) sync* {
-              yield w;
-              yield const SizedBox(height: 10);
-            }).toList(),
+            children:
+                [
+                  for (final title in plan.previewLessonTitles)
+                    VoxelithCard(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 14,
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(Icons.play_circle_outline, size: 20),
+                          const SizedBox(width: 10),
+                          Expanded(child: Text(title)),
+                        ],
+                      ),
+                    ),
+                ].expand((w) sync* {
+                  yield w;
+                  yield const SizedBox(height: 10);
+                }).toList(),
           ),
         ),
       ],
     );
   }
-
-  static const _levelLabels = {
-    Cefr.a1: 'A1 · sıfır / temel',
-    Cefr.a2: 'A2 · günlük cümleler',
-    Cefr.b1: 'B1 · sohbet',
-    Cefr.b2: 'B2 · iş / akıcılık',
-  };
 
   Widget _level(I18n i18n, UserProfile p) {
     if (_placementForLang != p.learnLang) {
@@ -533,13 +500,15 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
     return ListView(
       children: [
         Text(
-          'Seviyeni ölçelim',
+          i18n.onbPlacementTitle,
           style: Theme.of(context).textTheme.displayMedium,
         ),
         const SizedBox(height: 8),
         Text(
-          'Soru ${_placementIndex + 1} / ${_placementQuestions.length} · '
-          'Bu cümle ne anlama geliyor?',
+          i18n.onbPlacementQuestion(
+            _placementIndex + 1,
+            _placementQuestions.length,
+          ),
           style: const TextStyle(color: Voxelith.muted),
         ),
         const SizedBox(height: 18),
@@ -613,17 +582,16 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
         const SizedBox(height: 8),
         if (computed != null) ...[
           Text(
-            'Seviyen: ${_levelLabels[computed]}',
+            i18n.onbYourLevel(i18n.onboardingLevelLabel(computed)),
             style: const TextStyle(
               color: Voxelith.terr,
               fontWeight: FontWeight.w600,
             ),
           ),
           const SizedBox(height: 6),
-          const Text(
-            'Kısa testine göre önerdik. Yanlış olduğunu düşünüyorsan '
-            'aşağıdan değiştirebilirsin.',
-            style: TextStyle(color: Voxelith.muted),
+          Text(
+            i18n.onbPlacementNote,
+            style: const TextStyle(color: Voxelith.muted),
           ),
         ] else
           Text(
@@ -636,7 +604,7 @@ class _OnboardingFlowState extends ConsumerState<OnboardingFlow> {
         const SizedBox(height: 20),
         for (final c in Cefr.values)
           ChoiceTile(
-            title: _levelLabels[c]!,
+            title: i18n.onboardingLevelLabel(c),
             selected: p.cefr == c,
             onTap: () {
               ref.read(sessionProvider.notifier).setCefr(c);

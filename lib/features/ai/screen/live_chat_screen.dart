@@ -6,6 +6,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../core/l10n/i18n.dart';
+import '../../../core/l10n/i18n_ui.dart';
+import '../../../core/legal_info.dart';
 import '../../../core/theme/tokens.dart';
 import '../../../data/models/models.dart';
 import '../../../data/speech/premium_tts_service.dart';
@@ -120,23 +123,25 @@ class _LiveChatScreenState extends ConsumerState<LiveChatScreen> {
       unawaited(_speakReply(reply, p.learnLang.code));
     } on LiveChatException catch (e) {
       if (!mounted) return;
+      final i18n = ref.read(i18nProvider);
       setState(() {
         _sending = false;
-        _errorIsLimit = e.code == 'plus_required' || e.code == 'daily_limit_reached';
+        _errorIsLimit =
+            e.code == 'plus_required' || e.code == 'daily_limit_reached';
         _error = switch (e.code) {
-          'plus_required' => 'Canlı sohbet Plus özelliğidir.',
-          'authentication_required' => 'Önce giriş yapmalısın.',
-          'daily_limit_reached' =>
-            'Hay aksi, bugünkü sohbet hakkını doldurdun. Yarın devam edebilirsin.',
-          _ => 'Şu an bağlanamadım, birazdan tekrar dene.',
+          'plus_required' => i18n.liveChatPlusOnly,
+          'authentication_required' => i18n.liveChatSignInFirst,
+          'daily_limit_reached' => i18n.liveChatDailyLimit,
+          _ => i18n.liveChatConnectFailed,
         };
       });
     } catch (_) {
       if (!mounted) return;
+      final i18n = ref.read(i18nProvider);
       setState(() {
         _sending = false;
         _errorIsLimit = false;
-        _error = 'Şu an bağlanamadım, birazdan tekrar dene.';
+        _error = i18n.liveChatConnectFailed;
       });
     }
   }
@@ -144,8 +149,12 @@ class _LiveChatScreenState extends ConsumerState<LiveChatScreen> {
   @override
   Widget build(BuildContext context) {
     final p = ref.watch(sessionProvider);
+    final i18n = ref.watch(i18nProvider);
     if (!p.isPlus) {
-      return _LockedChatView(onUpgrade: () => context.push('/paywall'));
+      return _LockedChatView(
+        i18n: i18n,
+        onUpgrade: () => context.push('/paywall'),
+      );
     }
 
     final learnLabel = p.learnLang.label(p.uiLang);
@@ -165,10 +174,10 @@ class _LiveChatScreenState extends ConsumerState<LiveChatScreen> {
       child: SafeArea(
         child: Column(
           children: [
-            _ChatHeader(learnLabel: learnLabel),
+            _ChatHeader(subtitle: i18n.liveChatOnline(learnLabel)),
             Expanded(
               child: _messages.isEmpty && !_sending
-                  ? _EmptyState(learnLabel: learnLabel)
+                  ? _EmptyState(i18n: i18n, learnLabel: learnLabel)
                   : ListView.builder(
                       controller: _scroll,
                       padding: const EdgeInsets.fromLTRB(14, 8, 14, 12),
@@ -208,18 +217,22 @@ class _LiveChatScreenState extends ConsumerState<LiveChatScreen> {
                     Expanded(
                       child: Text(
                         _error!,
-                        style: const TextStyle(color: Voxelith.coral, fontSize: 13),
+                        style: const TextStyle(
+                          color: Voxelith.coral,
+                          fontSize: 13,
+                        ),
                       ),
                     ),
                     if (_errorIsLimit)
                       TextButton(
                         onPressed: () => context.push('/paywall'),
-                        child: const Text('Plus\'a geç'),
+                        child: Text(i18n.goPlusCta),
                       ),
                   ],
                 ),
               ),
             _ChatInputBar(
+              hint: i18n.typeSomething,
               controller: _input,
               listening: _listening,
               sending: _sending,
@@ -234,7 +247,8 @@ class _LiveChatScreenState extends ConsumerState<LiveChatScreen> {
 }
 
 class _LockedChatView extends StatelessWidget {
-  const _LockedChatView({required this.onUpgrade});
+  const _LockedChatView({required this.i18n, required this.onUpgrade});
+  final I18n i18n;
   final VoidCallback onUpgrade;
 
   @override
@@ -248,22 +262,22 @@ class _LockedChatView extends StatelessWidget {
             children: [
               const VoxelithMascot(size: 76, mood: MascotMood.wave),
               const SizedBox(height: 12),
-              const Text(
-                'Voxelith ile serbest konuş',
+              Text(
+                i18n.liveChatLockedTitle,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 19, fontWeight: FontWeight.w700),
+                style: const TextStyle(
+                  fontSize: 19,
+                  fontWeight: FontWeight.w700,
+                ),
               ),
               const SizedBox(height: 8),
-              const Text(
-                'Script yok, kural yok — gerçek zamanlı serbest sohbet Plus üyelere özel.',
+              Text(
+                i18n.liveChatLockedBody,
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Voxelith.muted),
+                style: const TextStyle(color: Voxelith.muted),
               ),
               const SizedBox(height: 16),
-              FilledButton(
-                onPressed: onUpgrade,
-                child: const Text('Plus\'a geç'),
-              ),
+              FilledButton(onPressed: onUpgrade, child: Text(i18n.goPlusCta)),
             ],
           ),
         ),
@@ -273,8 +287,8 @@ class _LockedChatView extends StatelessWidget {
 }
 
 class _ChatHeader extends StatefulWidget {
-  const _ChatHeader({required this.learnLabel});
-  final String learnLabel;
+  const _ChatHeader({required this.subtitle});
+  final String subtitle;
 
   @override
   State<_ChatHeader> createState() => _ChatHeaderState();
@@ -310,7 +324,7 @@ class _ChatHeaderState extends State<_ChatHeader>
                   style: TextStyle(fontWeight: FontWeight.w700, fontSize: 15),
                 ),
                 Text(
-                  '${widget.learnLabel} pratiği · çevrimiçi',
+                  widget.subtitle,
                   style: const TextStyle(fontSize: 12, color: Voxelith.muted),
                 ),
               ],
@@ -343,7 +357,8 @@ class _ChatHeaderState extends State<_ChatHeader>
 }
 
 class _EmptyState extends StatelessWidget {
-  const _EmptyState({required this.learnLabel});
+  const _EmptyState({required this.i18n, required this.learnLabel});
+  final I18n i18n;
   final String learnLabel;
 
   @override
@@ -357,15 +372,19 @@ class _EmptyState extends StatelessWidget {
             const VoxelithMascot(size: 88, mood: MascotMood.encourage),
             const SizedBox(height: 18),
             Text(
-              '$learnLabel pratiği için bir şeyler yaz\nveya mikrofona konuş.',
+              i18n.liveChatEmpty(learnLabel),
               textAlign: TextAlign.center,
               style: const TextStyle(color: Voxelith.muted, height: 1.4),
             ),
             const SizedBox(height: 10),
-            const Text(
-              'Uygunsuz bir cevap görürsen, üzerine basılı tutarak bildirebilirsin.',
+            Text(
+              i18n.liveChatReportHint,
               textAlign: TextAlign.center,
-              style: TextStyle(color: Voxelith.soft, fontSize: 12, height: 1.4),
+              style: const TextStyle(
+                color: Voxelith.soft,
+                fontSize: 12,
+                height: 1.4,
+              ),
             ),
           ],
         ),
@@ -474,22 +493,23 @@ class _ChatBubble extends StatelessWidget {
 }
 
 Future<void> _reportAiMessage(BuildContext context, String text) async {
+  final i18n = ProviderScope.containerOf(
+    context,
+    listen: false,
+  ).read(i18nProvider);
   final confirmed = await showDialog<bool>(
     context: context,
     builder: (ctx) => AlertDialog(
-      title: const Text('Mesajı bildir'),
-      content: Text(
-        'Bu AI cevabını uygunsuz veya hatalı olarak bildirmek ister misin? '
-        'E-posta uygulaman açılacak.',
-      ),
+      title: Text(i18n.reportMessageTitle),
+      content: Text(i18n.reportAiBody),
       actions: [
         TextButton(
           onPressed: () => Navigator.pop(ctx, false),
-          child: const Text('Vazgeç'),
+          child: Text(i18n.cancelCta),
         ),
         FilledButton(
           onPressed: () => Navigator.pop(ctx, true),
-          child: const Text('Bildir'),
+          child: Text(i18n.reportCta),
         ),
       ],
     ),
@@ -497,7 +517,7 @@ Future<void> _reportAiMessage(BuildContext context, String text) async {
   if (confirmed != true || !context.mounted) return;
   final uri = Uri(
     scheme: 'mailto',
-    path: 'destek@voxelith.app',
+    path: LegalInfo.supportEmail,
     query:
         'subject=${Uri.encodeComponent('VOXELITH Sohbet - içerik bildirimi')}'
         '&body=${Uri.encodeComponent('Bildirilen AI cevabı:\n\n$text')}',
@@ -633,6 +653,7 @@ class _CircleButton extends StatelessWidget {
 
 class _ChatInputBar extends StatefulWidget {
   const _ChatInputBar({
+    required this.hint,
     required this.controller,
     required this.listening,
     required this.sending,
@@ -640,6 +661,7 @@ class _ChatInputBar extends StatefulWidget {
     required this.onSend,
   });
 
+  final String hint;
   final TextEditingController controller;
   final bool listening;
   final bool sending;
@@ -677,7 +699,9 @@ class _ChatInputBarState extends State<_ChatInputBar>
             AnimatedBuilder(
               animation: _breathe,
               builder: (_, _) {
-                final glowColor = widget.listening ? Voxelith.coral : Voxelith.mintDark;
+                final glowColor = widget.listening
+                    ? Voxelith.coral
+                    : Voxelith.mintDark;
                 final t = widget.listening
                     ? _breathe.value
                     : _breathe.value * .35;
@@ -696,7 +720,9 @@ class _ChatInputBarState extends State<_ChatInputBar>
                   ],
                   child: Icon(
                     widget.listening ? Icons.mic : Icons.mic_none,
-                    color: widget.listening ? Voxelith.coral : Voxelith.mintDark,
+                    color: widget.listening
+                        ? Voxelith.coral
+                        : Voxelith.mintDark,
                   ),
                 );
               },
@@ -726,10 +752,10 @@ class _ChatInputBarState extends State<_ChatInputBar>
                   controller: widget.controller,
                   minLines: 1,
                   maxLines: 4,
-                  decoration: const InputDecoration(
-                    hintText: 'Bir şey yaz...',
+                  decoration: InputDecoration(
+                    hintText: widget.hint,
                     border: InputBorder.none,
-                    contentPadding: EdgeInsets.symmetric(
+                    contentPadding: const EdgeInsets.symmetric(
                       horizontal: 14,
                       vertical: 12,
                     ),

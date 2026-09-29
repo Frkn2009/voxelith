@@ -53,7 +53,9 @@ class _VoxelithMascotState extends State<VoxelithMascot>
 
   @override
   Widget build(BuildContext context) => Semantics(
-    label: 'Voxelith, VOXELITH rehberi',
+    // Marka/maskot adı; dil bağımsız (bu widget ProviderScope dışında da
+    // kullanılabildiği için I18n'e bağlanmadı).
+    label: 'Voxelith',
     image: true,
     child: AnimatedBuilder(
       animation: controller,

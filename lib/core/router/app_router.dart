@@ -2,25 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../data/content/library.dart';
+import '../../data/models/models.dart';
 import '../../features/achievements/achievements_screen.dart';
+import '../../features/ads/ad_gate_screen.dart';
 import '../../features/ai/screen/live_chat_screen.dart';
 import '../../features/alphabet/alphabet_screen.dart';
-import '../../features/games/daily_wheel_screen.dart';
-import '../../features/ads/ad_gate_screen.dart';
 import '../../features/auth/auth_screen.dart';
-import '../../features/clips/clips_screen.dart';
 import '../../features/clan/clan_screen.dart';
 import '../../features/clan/peer_correction_screen.dart';
+import '../../features/clips/clips_screen.dart';
 import '../../features/events/weekly_event_screen.dart';
 import '../../features/family/family_profiles_screen.dart';
+import '../../features/games/daily_wheel_screen.dart';
+import '../../features/games/games_screen.dart';
+import '../../features/guide/language_guide_screen.dart';
+import '../../features/home/home_screen.dart';
+import '../../features/leaderboard/leaderboard_screen.dart';
 import '../../features/legal/privacy_screen.dart';
 import '../../features/legal/terms_screen.dart';
-import '../../features/leaderboard/leaderboard_screen.dart';
-import '../../features/guide/language_guide_screen.dart';
-import '../../features/games/games_screen.dart';
-import '../../features/home/home_screen.dart';
-import '../../data/models/models.dart';
-import '../../data/content/library.dart';
 import '../../features/library/library_screen.dart';
 import '../../features/library/story_reader_screen.dart';
 import '../../features/onboarding/onboarding_flow.dart';
@@ -31,6 +31,7 @@ import '../../features/shell/app_shell.dart';
 import '../../features/speak/speak_screens.dart';
 import '../../features/translate/translate_screen.dart';
 import '../../state/session.dart';
+import '../features.dart';
 
 final _root = GlobalKey<NavigatorState>();
 
@@ -155,7 +156,12 @@ final routerProvider = Provider<GoRouter>((ref) {
             builder: (_, _) => const SpeakHubScreen(),
           ),
           GoRoute(path: '/app/games', builder: (_, _) => const GamesScreen()),
-          GoRoute(path: '/app/chat', builder: (_, _) => const LiveChatScreen()),
+          GoRoute(
+            path: '/app/chat',
+            // Ücretli AI kapalıyken eski bağlantılar ana sayfaya döner.
+            redirect: (_, _) => Features.paidCloudApis ? null : '/app',
+            builder: (_, _) => const LiveChatScreen(),
+          ),
           GoRoute(
             path: '/app/translate',
             builder: (_, _) => const TranslateScreen(),

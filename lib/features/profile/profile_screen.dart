@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/models/models.dart';
 import '../../data/supabase/supa_service.dart';
@@ -39,13 +40,15 @@ class ProfileScreen extends ConsumerWidget {
                 ),
                 const SizedBox(height: 6),
                 Text(
-                  p.isPlus ? 'Sınırsız konuşma · reklamsız' : i18n.freeMinute,
+                  p.isPlus ? i18n.profilePlusSubtitle : i18n.freeMinute,
                   style: const TextStyle(color: Color(0xFFB8C8C0)),
                 ),
                 const SizedBox(height: 14),
                 if (!p.isPlus)
                   FilledButton(
-                    style: FilledButton.styleFrom(backgroundColor: Voxelith.terr),
+                    style: FilledButton.styleFrom(
+                      backgroundColor: Voxelith.terr,
+                    ),
                     onPressed: () => context.push('/paywall'),
                     child: Text(i18n.plusCta),
                   ),
@@ -70,7 +73,7 @@ class ProfileScreen extends ConsumerWidget {
                     ),
                     const Spacer(),
                     Text(
-                      p.xpRank.label,
+                      i18n.xpRankLabel(p.xpRank),
                       style: const TextStyle(
                         color: Voxelith.mintDark,
                         fontWeight: FontWeight.w700,
@@ -83,8 +86,11 @@ class ProfileScreen extends ConsumerWidget {
                 const SizedBox(height: 7),
                 Text(
                   p.nextXpRank == null
-                      ? 'En yüksek seviye'
-                      : '${p.nextXpRank!.label} için ${p.nextXpRank!.minimumXp - p.totalXp} XP',
+                      ? i18n.profileMaxRank
+                      : i18n.profileXpToNext(
+                          i18n.xpRankLabel(p.nextXpRank!),
+                          p.nextXpRank!.minimumXp - p.totalXp,
+                        ),
                   style: const TextStyle(color: Voxelith.muted, fontSize: 12),
                 ),
               ],
@@ -99,7 +105,7 @@ class ProfileScreen extends ConsumerWidget {
                 const SizedBox(width: 12),
                 Expanded(
                   child: Text(
-                    'Profil · ${p.profileName}',
+                    '${i18n.profileLabel} · ${i18n.profileDisplayName(p.profileName)}',
                     style: const TextStyle(fontWeight: FontWeight.w600),
                   ),
                 ),
@@ -116,7 +122,7 @@ class ProfileScreen extends ConsumerWidget {
                 const SizedBox(width: 12),
                 Expanded(
                   child: Text(
-                    'Başarımlar · ${p.achievements.length} / 10',
+                    '${i18n.achievementsTitle} · ${p.achievements.length} / 10',
                     style: const TextStyle(fontWeight: FontWeight.w600),
                   ),
                 ),
@@ -126,22 +132,22 @@ class ProfileScreen extends ConsumerWidget {
           ),
           const SizedBox(height: 18),
           if (cloudOn) ...[
-            const Eyebrow('VOXELITH Hesap'),
+            Eyebrow(i18n.accountSection),
             const SizedBox(height: 8),
             if (email == null)
               VoxelithCard(
                 onTap: () => context.push('/auth'),
-                child: const Row(
+                child: Row(
                   children: [
-                    IconChip(VoxelithIcon.cloud),
-                    SizedBox(width: 12),
+                    const IconChip(VoxelithIcon.cloud),
+                    const SizedBox(width: 12),
                     Expanded(
                       child: Text(
-                        'Hesap oluştur / giriş yap',
-                        style: TextStyle(fontWeight: FontWeight.w600),
+                        i18n.signInOrCreate,
+                        style: const TextStyle(fontWeight: FontWeight.w600),
                       ),
                     ),
-                    Icon(Icons.chevron_right, color: Voxelith.soft),
+                    const Icon(Icons.chevron_right, color: Voxelith.soft),
                   ],
                 ),
               )
@@ -163,22 +169,25 @@ class ProfileScreen extends ConsumerWidget {
                       ],
                     ),
                     const SizedBox(height: 6),
-                    const Text(
-                      'İlerlemen buluta yedekleniyor. Yeni cihazda giriş yapınca geri gelir.',
-                      style: TextStyle(color: Voxelith.muted, fontSize: 13),
+                    Text(
+                      i18n.cloudBackupNote,
+                      style: const TextStyle(
+                        color: Voxelith.muted,
+                        fontSize: 13,
+                      ),
                     ),
                     const SizedBox(height: 10),
                     TextButton(
                       onPressed: () =>
                           ref.read(authEmailProvider.notifier).logout(),
-                      child: const Text('Çıkış yap'),
+                      child: Text(i18n.signOut),
                     ),
                   ],
                 ),
               ),
             const SizedBox(height: 16),
           ],
-          const Eyebrow('Öğrendiğin dil'),
+          Eyebrow(i18n.learningLanguageSection),
           const SizedBox(height: 8),
           for (final l in LearnLang.values)
             ChoiceTile(
@@ -187,25 +196,33 @@ class ProfileScreen extends ConsumerWidget {
               selected: p.learnLang == l,
               onTap: () => ref.read(sessionProvider.notifier).setLearn(l),
             ),
-          const SizedBox(height: 8),
-          VoxelithCard(
-            onTap: () => context.push('/guide'),
-            child: Row(
-              children: [
-                Text(p.learnLang.flag(), style: const TextStyle(fontSize: 22)),
-                const SizedBox(width: 12),
-                const Expanded(
-                  child: Text(
-                    'Yazım ve okunuş rehberi',
-                    style: TextStyle(fontWeight: FontWeight.w600),
+          // Telaffuz rehberi içeriği yalnızca Türkçe yazılmış
+          // (lib/data/content/language_guides.dart); diğer arayüz
+          // dillerinde giriş noktası gizlenir.
+          if (p.uiLang == UiLang.tr) ...[
+            const SizedBox(height: 8),
+            VoxelithCard(
+              onTap: () => context.push('/guide'),
+              child: Row(
+                children: [
+                  Text(
+                    p.learnLang.flag(),
+                    style: const TextStyle(fontSize: 22),
                   ),
-                ),
-                const Icon(Icons.chevron_right, color: Voxelith.soft),
-              ],
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      i18n.spellingGuide,
+                      style: const TextStyle(fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  const Icon(Icons.chevron_right, color: Voxelith.soft),
+                ],
+              ),
             ),
-          ),
+          ],
           const SizedBox(height: 16),
-          const Eyebrow('Ana dil / arayüz'),
+          Eyebrow(i18n.uiLanguageSection),
           const SizedBox(height: 8),
           for (final u in UiLang.values)
             ChoiceTile(
@@ -214,42 +231,42 @@ class ProfileScreen extends ConsumerWidget {
               onTap: () => ref.read(sessionProvider.notifier).setUi(u),
             ),
           const SizedBox(height: 16),
-          const Eyebrow('Görünüm'),
+          Eyebrow(i18n.appearanceSection),
           const SizedBox(height: 8),
           Wrap(
             spacing: 8,
             runSpacing: 8,
             children: [
-              for (final option in const [
+              for (final option in [
                 (
                   value: AppThemePreference.system,
                   icon: Icons.brightness_auto_outlined,
-                  label: 'Sistem',
+                  label: i18n.themeSystem,
                 ),
                 (
                   value: AppThemePreference.light,
                   icon: Icons.light_mode_outlined,
-                  label: 'Açık',
+                  label: i18n.themeLight,
                 ),
                 (
                   value: AppThemePreference.dark,
                   icon: Icons.dark_mode_outlined,
-                  label: 'Koyu',
+                  label: i18n.themeDark,
                 ),
                 (
                   value: AppThemePreference.amber,
                   icon: Icons.wb_twilight_outlined,
-                  label: 'Bal',
+                  label: i18n.themeAmber,
                 ),
                 (
                   value: AppThemePreference.legendary,
                   icon: Icons.auto_awesome,
-                  label: 'Efsane',
+                  label: i18n.themeLegendary,
                 ),
                 (
                   value: AppThemePreference.legendaryLight,
                   icon: Icons.auto_awesome_outlined,
-                  label: 'Efsane (Açık)',
+                  label: i18n.themeLegendaryLight,
                 ),
               ])
                 ChoiceChip(
@@ -263,27 +280,27 @@ class ProfileScreen extends ConsumerWidget {
             ],
           ),
           const SizedBox(height: 16),
-          const Eyebrow('Çalışma yöntemi'),
+          Eyebrow(i18n.studyMethodSection),
           const SizedBox(height: 6),
           Wrap(
             spacing: 8,
             runSpacing: 8,
             children: [
-              for (final option in const [
+              for (final option in [
                 (
                   value: LearningStyle.balanced,
                   icon: Icons.balance_outlined,
-                  label: 'Dengeli',
+                  label: i18n.styleBalanced,
                 ),
                 (
                   value: LearningStyle.speakingFirst,
                   icon: Icons.record_voice_over_outlined,
-                  label: 'Konuşma odaklı',
+                  label: i18n.styleSpeakingFirst,
                 ),
                 (
                   value: LearningStyle.listeningHeavy,
                   icon: Icons.hearing_outlined,
-                  label: 'Dinleme ağırlıklı',
+                  label: i18n.styleListeningHeavy,
                 ),
               ])
                 ChoiceChip(
@@ -297,12 +314,12 @@ class ProfileScreen extends ConsumerWidget {
             ],
           ),
           const SizedBox(height: 16),
-          const Eyebrow('Hatırlatmalar'),
+          Eyebrow(i18n.remindersSection),
           const SizedBox(height: 6),
           SwitchListTile(
             contentPadding: EdgeInsets.zero,
-            title: const Text('Günlük pratik bildirimi'),
-            subtitle: const Text('Günde yalnızca bir kez'),
+            title: Text(i18n.dailyPracticeNotification),
+            subtitle: Text(i18n.onceADay),
             value: p.notificationsEnabled,
             activeThumbColor: Voxelith.mintDark,
             onChanged: (value) => ref
@@ -314,16 +331,16 @@ class ProfileScreen extends ConsumerWidget {
             SizedBox(
               width: double.infinity,
               child: SegmentedButton<int>(
-                segments: const [
+                segments: [
                   ButtonSegment(
                     value: 10,
-                    label: Text('Sabah 10.00'),
-                    icon: Icon(Icons.light_mode_outlined),
+                    label: Text(i18n.reminderMorning10),
+                    icon: const Icon(Icons.light_mode_outlined),
                   ),
                   ButtonSegment(
                     value: 19,
-                    label: Text('Akşam 19.00'),
-                    icon: Icon(Icons.nightlight_outlined),
+                    label: Text(i18n.reminderEvening19),
+                    icon: const Icon(Icons.nightlight_outlined),
                   ),
                 ],
                 selected: {p.reminderHour},
@@ -335,45 +352,45 @@ class ProfileScreen extends ConsumerWidget {
           ],
           const SizedBox(height: 16),
           SwitchListTile(
-            title: const Text('Plus’ı aç (geliştirici)'),
-            subtitle: const Text('Mağaza bağlanınca RevenueCat alır'),
+            title: Text(i18n.devPlusToggle),
+            subtitle: Text(i18n.devPlusToggleSubtitle),
             value: p.isPlus,
             activeThumbColor: Voxelith.forest,
             onChanged: (v) => ref.read(sessionProvider.notifier).setPlus(v),
           ),
           ListTile(
-            title: const Text('Gizlilik politikası'),
+            title: Text(i18n.privacyPolicy),
             trailing: const Icon(Icons.chevron_right),
             onTap: () => context.push('/privacy'),
           ),
           ListTile(
-            title: const Text(
-              'Hesabı sil',
-              style: TextStyle(color: Voxelith.terr),
+            title: Text(
+              i18n.deleteAccount,
+              style: const TextStyle(color: Voxelith.terr),
             ),
             subtitle: Text(
               email != null
-                  ? 'Sunucudaki hesabın ve bu cihazdaki ilerleme silinir'
-                  : 'Bu telefondaki tüm ilerleme silinir',
+                  ? i18n.deleteAccountSubtitleCloud
+                  : i18n.deleteAccountSubtitleLocal,
             ),
             onTap: () async {
               final ok = await showDialog<bool>(
                 context: context,
                 builder: (c) => AlertDialog(
-                  title: const Text('Hesabı sil?'),
+                  title: Text(i18n.deleteAccountQuestion),
                   content: Text(
                     email != null
-                        ? 'Hesabın sunucudan, dil ve kalıplar bu cihazdan silinir. Geri alınmaz.'
-                        : 'Dil, seri ve kalıplar bu cihazdan gider. Geri alınmaz.',
+                        ? i18n.deleteAccountBodyCloud
+                        : i18n.deleteAccountBodyLocal,
                   ),
                   actions: [
                     TextButton(
                       onPressed: () => Navigator.pop(c, false),
-                      child: const Text('Vazgeç'),
+                      child: Text(i18n.cancelCta),
                     ),
                     TextButton(
                       onPressed: () => Navigator.pop(c, true),
-                      child: const Text('Sil'),
+                      child: Text(i18n.commonDelete),
                     ),
                   ],
                 ),
@@ -394,9 +411,7 @@ class ProfileScreen extends ConsumerWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            cloudOn
-                ? 'Ekonomi USD kilitli. Ses mümkün olduğunca cihazda.'
-                : 'Bulut senkron kapalı: lib/core/supabase_config.dart içine anahtarları girince açılır.',
+            cloudOn ? i18n.profileFooterCloud : i18n.profileFooterLocal,
             style: const TextStyle(
               color: Voxelith.muted,
               fontSize: 13,

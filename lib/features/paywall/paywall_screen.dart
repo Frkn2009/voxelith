@@ -2,12 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/l10n/i18n_store.dart';
+import '../../core/features.dart';
 import '../../state/session.dart';
 import '../../ui/widgets.dart';
 import '../plus/domain/entitlement.dart';
 import '../plus/state/plus_controller.dart';
 
-const _plusPlans = [voxelithPlusMonthly, voxelithPlusYearly, voxelithPlusFamily];
+const _plusPlans = [
+  voxelithPlusMonthly,
+  voxelithPlusYearly,
+  voxelithPlusFamily,
+];
 const _businessPlans = [voxelithBusinessMonthly, voxelithBusinessYearly];
 
 class PaywallScreen extends ConsumerStatefulWidget {
@@ -20,7 +26,8 @@ class PaywallScreen extends ConsumerStatefulWidget {
 }
 
 class _PaywallScreenState extends ConsumerState<PaywallScreen> {
-  late bool business = widget.business;
+  // Business yalnızca ücretli AI/ses haklarını artırıyordu; kapalıyken yok.
+  late bool business = widget.business && Features.businessPlan;
   int plan = 1;
   int businessPlan = 0;
   bool _restoring = false;
@@ -35,9 +42,9 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
     } catch (e) {
       if (!mounted) return;
       setState(() => _purchasing = false);
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text('Satın alma tamamlanamadı: $e')));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(ref.read(i18nProvider).purchaseFailed)),
+      );
     }
   }
 
@@ -58,8 +65,8 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
       SnackBar(
         content: Text(
           restored
-              ? 'Satın alımların geri yüklendi.'
-              : 'Geri yüklenecek bir satın alma bulunamadı.',
+              ? ref.read(i18nProvider).restoreSuccess
+              : ref.read(i18nProvider).restoreNone,
         ),
       ),
     );
@@ -70,11 +77,39 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
   Widget build(BuildContext context) {
     final i18n = ref.watch(i18nProvider);
     final scheme = Theme.of(context).colorScheme;
+    final products = ref.watch(storeProductsProvider);
+    String price(BillingProduct p) => products.when(
+      data: (m) => m[p.id]?.priceString ?? '—',
+      loading: () => '…',
+      error: (_, _) => '—',
+    );
+    // Deneme vaadi yalnızca mağaza ürününde gerçekten ücretsiz deneme
+    // tanımlıysa gösterilir.
+    int? trialDays(BillingProduct p) =>
+        products.asData?.value[p.id]?.freeTrialDays;
+    String cta(BillingProduct p) {
+      final days = trialDays(p);
+      return days == null ? i18n.subscribeCta : i18n.trialCta(days);
+    }
+
+    Widget trialNote(BillingProduct p) {
+      final days = trialDays(p);
+      if (days == null) return const SizedBox.shrink();
+      return Padding(
+        padding: const EdgeInsets.only(top: 8),
+        child: Text(
+          i18n.trialThenPrice(days, price(p)),
+          textAlign: TextAlign.center,
+          style: TextStyle(color: scheme.onSurfaceVariant, fontSize: 12),
+        ),
+      );
+    }
+
     return Scaffold(
       appBar: VoxelithAppBar(
         leading: IconButton(
           icon: const Icon(Icons.close),
-          tooltip: 'Kapat',
+          tooltip: i18n.closeLabel,
           onPressed: () => context.pop(),
         ),
       ),
@@ -99,50 +134,49 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              'Sınırsız AI konuşma, telaffuz, çevrimdışı klip.',
+              i18n.paywallSubtitle,
               textAlign: TextAlign.center,
               style: TextStyle(color: scheme.onSurfaceVariant),
             ),
             const SizedBox(height: 18),
-            SegmentedButton<bool>(
-              segments: const [
-                ButtonSegment(value: false, label: Text('Plus')),
-                ButtonSegment(value: true, label: Text('Business')),
-              ],
-              selected: {business},
-              onSelectionChanged: (v) => setState(() => business = v.first),
-            ),
+            if (Features.businessPlan)
+              SegmentedButton<bool>(
+                segments: const [
+                  ButtonSegment(value: false, label: Text('Plus')),
+                  ButtonSegment(value: true, label: Text('Business')),
+                ],
+                selected: {business},
+                onSelectionChanged: (v) => setState(() => business = v.first),
+              ),
             const SizedBox(height: 16),
             if (!business) ...[
-              _plan(0, 'Aylık', '240 TL / ay', '≈ \$6.00 USD'),
+              _plan(
+                0,
+                i18n.planMonthly,
+                price(voxelithPlusMonthly),
+                i18n.billedMonthly,
+              ),
               _plan(
                 1,
-                'Yıllık · en iyi değer',
-                '2.600 TL / yıl',
-                '\$65 USD / yıl · ≈ \$5.42 USD / ay',
+                i18n.planYearlyBest,
+                price(voxelithPlusYearly),
+                i18n.billedYearly,
               ),
               _plan(
                 2,
-                'Aile',
-                '8.000 TL / yıl',
-                '4 profil · \$200 USD / yıl · ≈ \$16.67 USD / ay',
+                i18n.planFamily,
+                price(voxelithPlusFamily),
+                i18n.familyProfilesYearly,
               ),
               const SizedBox(height: 12),
-              for (final f in [
-                'Sınırsız konuşma',
-                'CEFR yolu A1–B2',
-                '30 dilin tamamı',
-                'Voxelith ile canlı sohbet',
-                'Çevir + SRS kaydet',
-                'Reklamsız',
-              ])
+              for (final f in i18n.plusFeatures)
                 Padding(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Row(
                     children: [
                       Icon(Icons.check_circle, color: scheme.primary, size: 20),
                       const SizedBox(width: 8),
-                      Text(f),
+                      Expanded(child: Text(f)),
                     ],
                   ),
                 ),
@@ -160,29 +194,31 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
                           color: Colors.white,
                         ),
                       )
-                    : Text(i18n.plusCta),
+                    : Text(cta(_plusPlans[plan])),
               ),
+              trialNote(_plusPlans[plan]),
             ] else ...[
-              _businessPlanCard(0, 'Aylık', '699 TL / ay', '≈ \$17.30 USD'),
+              _businessPlanCard(
+                0,
+                i18n.planMonthly,
+                price(voxelithBusinessMonthly),
+                i18n.billedMonthly,
+              ),
               _businessPlanCard(
                 1,
-                'Yıllık · en iyi değer',
-                '8.000 TL / yıl',
-                'Tek profil · \$200 USD / yıl · ≈ \$16.67 USD / ay',
+                i18n.planYearlyBest,
+                price(voxelithBusinessYearly),
+                i18n.singleProfileYearly,
               ),
               const SizedBox(height: 12),
-              for (final f in [
-                'Tüm Plus özellikleri',
-                'Günlük AI analiz, sohbet, ses ve çeviri hakkı ~3 kat daha yüksek',
-                'Öncelikli destek',
-              ])
+              for (final f in i18n.businessFeatures)
                 Padding(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Row(
                     children: [
                       Icon(Icons.check_circle, color: scheme.primary, size: 20),
                       const SizedBox(width: 8),
-                      Text(f),
+                      Expanded(child: Text(f)),
                     ],
                   ),
                 ),
@@ -200,8 +236,9 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
                           color: Colors.white,
                         ),
                       )
-                    : Text(i18n.plusCta),
+                    : Text(cta(_businessPlans[businessPlan])),
               ),
+              trialNote(_businessPlans[businessPlan]),
             ],
             const SizedBox(height: 10),
             Center(
@@ -213,12 +250,22 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
                         height: 16,
                         child: CircularProgressIndicator(strokeWidth: 2),
                       )
-                    : const Text('Satın alımları geri yükle'),
+                    : Text(i18n.restorePurchases),
               ),
             ),
             const SizedBox(height: 4),
+            if (products.hasError ||
+                (products.hasValue && products.requireValue.isEmpty))
+              Padding(
+                padding: const EdgeInsets.only(bottom: 6),
+                child: Text(
+                  i18n.priceUnavailable,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: scheme.error, fontSize: 12),
+                ),
+              ),
             Text(
-              'İstediğin an iptal. Fiyatlar mağazada yerelleşir; ekonomi USD kilitlidir.',
+              i18n.autoRenewDisclosure,
               textAlign: TextAlign.center,
               style: TextStyle(color: scheme.outline, fontSize: 12),
             ),
@@ -228,15 +275,18 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
               children: [
                 TextButton(
                   onPressed: () => context.push('/terms'),
-                  child: const Text(
-                    'Kullanım Koşulları',
-                    style: TextStyle(fontSize: 12),
+                  child: Text(
+                    i18n.termsTitle,
+                    style: const TextStyle(fontSize: 12),
                   ),
                 ),
                 Text('·', style: TextStyle(color: scheme.outline)),
                 TextButton(
                   onPressed: () => context.push('/privacy'),
-                  child: const Text('Gizlilik', style: TextStyle(fontSize: 12)),
+                  child: Text(
+                    i18n.privacyTitle,
+                    style: const TextStyle(fontSize: 12),
+                  ),
                 ),
               ],
             ),

@@ -19,15 +19,15 @@ olmayan bir özellik iddia edilmiyor.
 VOXELITH ile konuşarak öğren — ezberle değil.
 
 Her gün sana özel kısa bir konuşma sahnesi: dinle, gölgele (shadowing), konuş.
-Telaffuzunu gerçek zamanlı değerlendiren yapay zeka sana anında geri bildirim
+Cihazındaki akıllı telaffuz puanlaması sana anında geri bildirim
 verir. 30 dilde alfabe, kelime ve gramer takibi FSRS-5 tabanlı akıllı tekrar
 sistemiyle (SRS) tam zamanında karşına çıkar — unutmadan önce hatırlatır.
 
 NELER VAR:
 • Konuşma pratiği: gerçek senaryolar (kafe, havalimanı, iş görüşmesi, NIE/kira
   randevusu gibi İspanya'ya özel sahneler dahil)
-• 30 dilde tam alfabe: Arapça, İbranice, Rusça, Çince, Japonca, Korece ve
-  daha fazlası, her dilin kendi gerçek alfabesiyle
+• Alfabe ve telaffuz: Arapça, İbranice, Rusça, Korece, Hintçe, Tayca ve
+  daha fazlası kendi alfabesiyle; Japoncada Hiragana, Çincede Pinyin
 • Okuma kitaplığı: seviyene uygun kısa hikayeler, sesli okuma ile
   30 dilin tamamında
 • Akıllı tekrar sistemi: FSRS-5 algoritmasıyla kelimeleri tam unutmadan önce
@@ -36,14 +36,14 @@ NELER VAR:
   zorlandığını gösterir
 • Klan sistemi: arkadaşlarınla haftalık XP yarışması
 • Günlük hedefler, seri (streak) takibi, rozetler
-• VOXELITH Plus: sınırsız konuşma pratiği, reklamsız, premium doğal ses,
-  canlı AI sohbet partneri
+• VOXELITH Plus: sınırsız konuşma pratiği, tüm diller, reklamsız, 4 kişilik
+  aile planı
 
 30 arayüz dili, öğrenmek istediğin herhangi bir dille eşleştirilebilir.
 Çevrimdışı çalışır — internet olmadan da pratik yapabilirsin, bulut senkronu
 isteğe bağlı bir ek özelliktir.
 
-Ücretsiz kullanımda günde 60 saniye konuşma pratiği (ödüllü video ile
+Ücretsiz kullanımda günde 30 saniye konuşma pratiği (ödüllü video ile
 uzatılabilir). VOXELITH Plus ile sınırsız.
 
 Gizliliğin bizim için önemli — sahte yorum ya da teşvikli puan
@@ -56,7 +56,7 @@ kullanmıyoruz, gerçek geri bildirimlerle büyüyoruz.
 
 **Başlık (30 karakter):** `VOXELITH: İngilizce Konuş`
 
-**Alt başlık (30 karakter):** `İspanyolca Almanca AI`
+**Alt başlık (30 karakter):** `Konuşarak İspanyolca, Almanca`
 
 **Anahtar kelimeler (100 karakter, gizli alan):**
 `konuşma,ispanyolca,almanca,fransızca,flemenkce,NIE,telaffuz,ogretmen,pratik,seyahat`
@@ -66,8 +66,8 @@ yazılmış, anahtar kelime yığını değil):**
 
 ```
 Dil öğrenmeyi konuşarak öğren. VOXELITH, her gün sana özel bir konuşma sahnesi
-sunar: dinle, tekrar et (shadowing), kendi sesinle konuş. Yapay zeka
-telaffuzunu anında değerlendirir.
+sunar: dinle, tekrar et (shadowing), kendi sesinle konuş. Akıllı
+telaffuz puanı anında geri bildirim verir.
 
 30 dilde tam alfabe — her biri kendi gerçek yazı sistemiyle. Kısa hikayelerle
 okuma pratiği. FSRS-5 tabanlı akıllı tekrar sistemi, öğrendiğin kelimeleri
@@ -79,8 +79,8 @@ sahneleri var — turist İspanyolcası değil, ihtiyacın olan İspanyolca.
 Arkadaşlarınla klan kur, haftalık XP yarışmasına katıl. Günlük hedeflerle
 seriyi (streak) sürdür.
 
-VOXELITH Plus: sınırsız konuşma pratiği, reklamsız deneyim, doğal premium ses,
-canlı AI sohbet partneri ile serbest konuşma.
+VOXELITH Plus: sınırsız konuşma pratiği, tüm diller, reklamsız deneyim ve
+4 kişilik aile planı.
 
 Çevrimdışı çalışır. Verilerin sana ait — gerçek kullanıcı geri bildirimiyle
 büyüyoruz, satın alınmış yorum kullanmıyoruz.

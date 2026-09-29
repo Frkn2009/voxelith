@@ -1,0 +1,3160 @@
+{
+ "lang": "sw",
+ "scenarios": [
+  {
+   "id": "sw_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "sw_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "sw_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "sw_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "sw_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "sw_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "sw_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "sw_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "sw_intro",
+   "cefr": "a1",
+   "title": "Meeting someone"
+  },
+  {
+   "id": "sw_shopping",
+   "cefr": "a1",
+   "title": "Shopping"
+  },
+  {
+   "id": "sw_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers and time"
+  },
+  {
+   "id": "sw_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "sw_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "sw_transport",
+   "cefr": "a1",
+   "title": "Getting around"
+  },
+  {
+   "id": "sw_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "sw_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "sw_past_story",
+   "cefr": "a1",
+   "title": "Telling a story"
+  },
+  {
+   "id": "sw_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "sw_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  }
+ ],
+ "stories": [
+  {
+   "id": "sw_doctor",
+   "level": "a1",
+   "title": "Kutembea daktari"
+  },
+  {
+   "id": "sw_sport",
+   "level": "a1",
+   "title": "Michezo ya Jumatate"
+  },
+  {
+   "id": "sw_restaurant",
+   "level": "a1",
+   "title": "Kituo cha chakula"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.sw_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "Kahawa moja, tafadhali.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "Ni bei gani?",
+   "have": []
+  },
+  {
+   "key": "p.sw_cafe_0",
+   "kind": "phrase",
+   "target": "Kahawa moja, tafadhali.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_cafe_1",
+   "kind": "phrase",
+   "target": "Ni bei gani?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_cafe_2",
+   "kind": "phrase",
+   "target": "Asante sana.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "Nina uhifadhi.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "Kifungua kinywa kimejumuishwa?",
+   "have": []
+  },
+  {
+   "key": "p.sw_hotel_0",
+   "kind": "phrase",
+   "target": "Nina uhifadhi.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_hotel_1",
+   "kind": "phrase",
+   "target": "Kifungua kinywa kimejumuishwa?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_hotel_2",
+   "kind": "phrase",
+   "target": "Asante sana.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "Samahani, kituo kiko wapi?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "Asante sana.",
+   "have": []
+  },
+  {
+   "key": "p.sw_dir_0",
+   "kind": "phrase",
+   "target": "Samahani, kituo kiko wapi?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_dir_1",
+   "kind": "phrase",
+   "target": "Asante sana.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_dir_2",
+   "kind": "phrase",
+   "target": "Sielewi.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "Habari, jina langu ni Deniz.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "Ninatoka Uturuki.",
+   "have": []
+  },
+  {
+   "key": "p.sw_hi_0",
+   "kind": "phrase",
+   "target": "Habari, jina langu ni Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_hi_1",
+   "kind": "phrase",
+   "target": "Ninatoka Uturuki.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_hi_2",
+   "kind": "phrase",
+   "target": "Asante sana.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "Ninatafuta nyumba.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "Kodi ni kiasi gani?",
+   "have": []
+  },
+  {
+   "key": "p.sw_flat_0",
+   "kind": "phrase",
+   "target": "Ninatafuta nyumba.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_flat_1",
+   "kind": "phrase",
+   "target": "Kodi ni kiasi gani?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_flat_2",
+   "kind": "phrase",
+   "target": "Unaweza kunisaidia?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "Hii ni bei gani?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "Nitachukua hii.",
+   "have": []
+  },
+  {
+   "key": "p.sw_shop_0",
+   "kind": "phrase",
+   "target": "Hii ni bei gani?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_shop_1",
+   "kind": "phrase",
+   "target": "Nitachukua hii.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_shop_2",
+   "kind": "phrase",
+   "target": "Mnakubali kadi?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "Bili, tafadhali.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "Tunataka kulipa pamoja.",
+   "have": []
+  },
+  {
+   "key": "p.sw_bill_0",
+   "kind": "phrase",
+   "target": "Bili, tafadhali.",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_bill_1",
+   "kind": "phrase",
+   "target": "Tunataka kulipa pamoja.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_bill_2",
+   "kind": "phrase",
+   "target": "Weka chenji.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "Nina uhifadhi.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "Kiti karibu na dirisha.",
+   "have": []
+  },
+  {
+   "key": "p.sw_airport_0",
+   "kind": "phrase",
+   "target": "Nina uhifadhi.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_airport_1",
+   "kind": "phrase",
+   "target": "Kiti karibu na dirisha.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_airport_2",
+   "kind": "phrase",
+   "target": "Hii ni foleni ya kupanda?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Meeting someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.sw_intro",
+   "kind": "grammar_rule",
+   "tr": "Swahili fiillerinde özne, ayrı bir zamir olarak değil, fiilin başına eklenen bir önek olarak gösterilir.",
+   "en": "Swahili verbs mark the subject as a prefix attached to the verb stem, not as a separate pronoun word.",
+   "context": "Ninafanya kazi. / ✗ Mimi fanya kazi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_intro.0",
+   "kind": "speaking_prompt",
+   "en": "You're meeting someone new and want to break the ice.",
+   "context": "Habari, jina langu ni Amani.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_intro.1",
+   "kind": "speaking_prompt",
+   "en": "You want to know their name.",
+   "context": "Jina lako nani?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_intro.2",
+   "kind": "speaking_prompt",
+   "en": "They ask for your name back.",
+   "context": "Naitwa Fatuma, na wewe?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_intro.3",
+   "kind": "speaking_prompt",
+   "en": "You're curious about their job.",
+   "context": "Unafanya kazi gani?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do.",
+   "context": "Mimi ni mwalimu.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You want to stay in touch.",
+   "context": "Naweza kupata namba yako?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_intro.6",
+   "kind": "speaking_prompt",
+   "en": "You're saying goodbye.",
+   "context": "Tuonane baadaye!",
+   "have": []
+  },
+  {
+   "key": "p.sw_intro_0",
+   "kind": "phrase",
+   "target": "Habari, jina langu ni Amani.",
+   "tr": "Merhaba, benim adım Amani.",
+   "en": "Hi, my name is Amani.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_intro_1",
+   "kind": "phrase",
+   "target": "Jina lako nani?",
+   "tr": "Senin adın ne?",
+   "en": "What's your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_intro_2",
+   "kind": "phrase",
+   "target": "Naitwa Fatuma, na wewe?",
+   "tr": "Benim adım Fatuma, ya sen?",
+   "en": "I'm called Fatuma, and you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_intro_3",
+   "kind": "phrase",
+   "target": "Unafanya kazi gani?",
+   "tr": "Ne iş yapıyorsun?",
+   "en": "What work do you do?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_intro_4",
+   "kind": "phrase",
+   "target": "Mimi ni mwalimu.",
+   "tr": "Ben öğretmenim.",
+   "en": "I'm a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_intro_5",
+   "kind": "phrase",
+   "target": "Naweza kupata namba yako?",
+   "tr": "Numaranı alabilir miyim?",
+   "en": "Can I get your number?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_intro_6",
+   "kind": "phrase",
+   "target": "Tuonane baadaye!",
+   "tr": "Sonra görüşürüz!",
+   "en": "See you later!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_shopping",
+   "kind": "scenario_title",
+   "tr": "Alışveriş",
+   "en": "Shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.sw_shopping",
+   "kind": "grammar_rule",
+   "tr": "Şimdiki zaman olumsuzlaması, özne önekinin başına eklenen \"ha-\" öneki ile yapılır.",
+   "en": "Present-tense negation adds the prefix \"ha-\" before the subject marker on the verb.",
+   "context": "Sina pesa za kutosha. / ✗ Nina siyo pesa za kutosha.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "A clerk asks if you need help.",
+   "context": "Naangalia tu, asante.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "You found something you like.",
+   "context": "Una hii kwa size arobaini?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want to test the fit.",
+   "context": "Naweza kujaribu?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "You're checking the price.",
+   "context": "Viatu hivi bei gani?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You're ready to pay.",
+   "context": "Mnapokea kadi?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You think the price is high.",
+   "context": "Ni ghali sana.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You're trying to bargain a little.",
+   "context": "Punguza bei kidogo, tafadhali.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_shopping.7",
+   "kind": "speaking_prompt",
+   "en": "You've decided to buy it.",
+   "context": "Sawa, nitachukua hii.",
+   "have": []
+  },
+  {
+   "key": "p.sw_shopping_0",
+   "kind": "phrase",
+   "target": "Naangalia tu, asante.",
+   "tr": "Sadece bakıyorum, teşekkürler.",
+   "en": "I'm just looking, thanks.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_shopping_1",
+   "kind": "phrase",
+   "target": "Una hii kwa size arobaini?",
+   "tr": "Bunun 40 numarası var mı?",
+   "en": "Do you have this in size 40?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_shopping_2",
+   "kind": "phrase",
+   "target": "Naweza kujaribu?",
+   "tr": "Deneyebilir miyim?",
+   "en": "Can I try it on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_shopping_3",
+   "kind": "phrase",
+   "target": "Viatu hivi bei gani?",
+   "tr": "Bu ayakkabılar kaç para?",
+   "en": "How much are these shoes?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_shopping_4",
+   "kind": "phrase",
+   "target": "Mnapokea kadi?",
+   "tr": "Kart kabul ediyor musunuz?",
+   "en": "Do you accept cards?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_shopping_5",
+   "kind": "phrase",
+   "target": "Ni ghali sana.",
+   "tr": "Çok pahalı.",
+   "en": "It's too expensive.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_shopping_6",
+   "kind": "phrase",
+   "target": "Punguza bei kidogo, tafadhali.",
+   "tr": "Biraz indirim yapın lütfen.",
+   "en": "Please lower the price a bit.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_shopping_7",
+   "kind": "phrase",
+   "target": "Sawa, nitachukua hii.",
+   "tr": "Tamam, bunu alıyorum.",
+   "en": "Okay, I'll take this.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers and time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.sw_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "Svahili saatleri gün doğumundan itibaren sayılır: \"saa moja\" (saat bir) sabah 07:00 demektir, sabah 01:00 değil.",
+   "en": "Swahili clock time counts from sunrise: \"saa moja\" (hour one) means 7 AM, not 1 AM — it runs six hours behind Western time.",
+   "context": "Treni linaondoka saa tatu asubuhi. / ✗ Treni linaondoka saa tisa asubuhi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You don't know the time.",
+   "context": "Sasa ni saa ngapi?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks you the time.",
+   "context": "Ni saa tisa na nusu.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "You're checking the schedule.",
+   "context": "Treni linaondoka saa tatu asubuhi.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "At the counter.",
+   "context": "Nina tiketi mbili.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "The clerk tells you the price.",
+   "context": "Ni shilingi elfu kumi na mbili.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "You're planning to meet a friend.",
+   "context": "Tuonane saa kumi na moja jioni?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You're running a bit late.",
+   "context": "Nitafika baada ya dakika kumi.",
+   "have": []
+  },
+  {
+   "key": "p.sw_numbers_time_0",
+   "kind": "phrase",
+   "target": "Sasa ni saa ngapi?",
+   "tr": "Şimdi saat kaç?",
+   "en": "What time is it now?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_numbers_time_1",
+   "kind": "phrase",
+   "target": "Ni saa tisa na nusu.",
+   "tr": "Saat üç buçuk.",
+   "en": "It's half past three.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_numbers_time_2",
+   "kind": "phrase",
+   "target": "Treni linaondoka saa tatu asubuhi.",
+   "tr": "Tren sabah dokuzda kalkıyor.",
+   "en": "The train leaves at nine in the morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_numbers_time_3",
+   "kind": "phrase",
+   "target": "Nina tiketi mbili.",
+   "tr": "İki biletim var.",
+   "en": "I have two tickets.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_numbers_time_4",
+   "kind": "phrase",
+   "target": "Ni shilingi elfu kumi na mbili.",
+   "tr": "On iki bin şilin tutuyor.",
+   "en": "That comes to twelve thousand shillings.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_numbers_time_5",
+   "kind": "phrase",
+   "target": "Tuonane saa kumi na moja jioni?",
+   "tr": "Akşam beşte buluşalım mı?",
+   "en": "Shall we meet at five in the evening?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_numbers_time_6",
+   "kind": "phrase",
+   "target": "Nitafika baada ya dakika kumi.",
+   "tr": "On dakika sonra varırım.",
+   "en": "I'll arrive in ten minutes.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.sw_family",
+   "kind": "grammar_rule",
+   "tr": "İyelik eki (\"wangu\" - benim), ismin ait olduğu sınıfa göre değişir: \"mtoto wangu\" (çocuğum) ama \"kitabu changu\" (kitabım).",
+   "en": "The possessive (\"my\") changes form to match the noun's class: \"mtoto wangu\" (my child) but \"kitabu changu\" (my book).",
+   "context": "Huyu ni mtoto wangu. / ✗ Huyu ni mtoto changu.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_family.0",
+   "kind": "speaking_prompt",
+   "en": "You're showing a photo.",
+   "context": "Hii ni familia yangu.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_family.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your siblings.",
+   "context": "Nina kaka wawili na dada mmoja.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_family.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what your mother does.",
+   "context": "Mama yangu ni daktari.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_family.3",
+   "kind": "speaking_prompt",
+   "en": "You're talking about your sister.",
+   "context": "Anampenda sana kaka yake.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_family.4",
+   "kind": "speaking_prompt",
+   "en": "You want to know a friend's daughter's age.",
+   "context": "Binti yako ana miaka mingapi?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask where your parents live.",
+   "context": "Wazazi wangu wanaishi Arusha.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_family.6",
+   "kind": "speaking_prompt",
+   "en": "You're asking a new friend.",
+   "context": "Una watoto?",
+   "have": []
+  },
+  {
+   "key": "p.sw_family_0",
+   "kind": "phrase",
+   "target": "Hii ni familia yangu.",
+   "tr": "Bu benim ailem.",
+   "en": "This is my family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_family_1",
+   "kind": "phrase",
+   "target": "Nina kaka wawili na dada mmoja.",
+   "tr": "İki erkek kardeşim ve bir kız kardeşim var.",
+   "en": "I have two brothers and one sister.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_family_2",
+   "kind": "phrase",
+   "target": "Mama yangu ni daktari.",
+   "tr": "Annem doktor.",
+   "en": "My mother is a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_family_3",
+   "kind": "phrase",
+   "target": "Anampenda sana kaka yake.",
+   "tr": "Erkek kardeşini çok seviyor.",
+   "en": "She loves her brother a lot.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_family_4",
+   "kind": "phrase",
+   "target": "Binti yako ana miaka mingapi?",
+   "tr": "Kızın kaç yaşında?",
+   "en": "How old is your daughter?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_family_5",
+   "kind": "phrase",
+   "target": "Wazazi wangu wanaishi Arusha.",
+   "tr": "Ailem Arusha'da yaşıyor.",
+   "en": "My parents live in Arusha.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_family_6",
+   "kind": "phrase",
+   "target": "Una watoto?",
+   "tr": "Çocuğun var mı?",
+   "en": "Do you have children?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.sw_weather",
+   "kind": "grammar_rule",
+   "tr": "Hava durumu ifadeleri \"kuna\" (var) yapısını kullanır; İngilizce'deki \"it\" gibi bir özneye gerek yoktur.",
+   "en": "Weather expressions use the existential \"kuna\" (there is), with no subject like English \"it\".",
+   "context": "Kuna mvua leo. / ✗ Ni mvua leo.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You're about to go outside.",
+   "context": "Hali ya hewa ikoje leo?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_weather.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about the weather.",
+   "context": "Kuna mvua leo.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You step outside.",
+   "context": "Kuna joto sana nje.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_weather.3",
+   "kind": "speaking_prompt",
+   "en": "Your friend is leaving the house.",
+   "context": "Chukua mwavuli, huenda ikanyesha.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You wake up and check the window.",
+   "context": "Kuna baridi sana asubuhi hii.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_weather.5",
+   "kind": "speaking_prompt",
+   "en": "You're talking about your favorite weather.",
+   "context": "Napenda siku za jua.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_weather.6",
+   "kind": "speaking_prompt",
+   "en": "You're deciding what to wear.",
+   "context": "Kuna upepo mkali leo?",
+   "have": []
+  },
+  {
+   "key": "p.sw_weather_0",
+   "kind": "phrase",
+   "target": "Hali ya hewa ikoje leo?",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_weather_1",
+   "kind": "phrase",
+   "target": "Kuna mvua leo.",
+   "tr": "Bugün yağmur var.",
+   "en": "There's rain today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_weather_2",
+   "kind": "phrase",
+   "target": "Kuna joto sana nje.",
+   "tr": "Dışarısı çok sıcak.",
+   "en": "It's very hot outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_weather_3",
+   "kind": "phrase",
+   "target": "Chukua mwavuli, huenda ikanyesha.",
+   "tr": "Şemsiye al, yağmur yağabilir.",
+   "en": "Take an umbrella, it might rain.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_weather_4",
+   "kind": "phrase",
+   "target": "Kuna baridi sana asubuhi hii.",
+   "tr": "Bu sabah çok soğuk.",
+   "en": "It's very cold this morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_weather_5",
+   "kind": "phrase",
+   "target": "Napenda siku za jua.",
+   "tr": "Güneşli günleri severim.",
+   "en": "I love sunny days.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_weather_6",
+   "kind": "phrase",
+   "target": "Kuna upepo mkali leo?",
+   "tr": "Bugün rüzgar sert mi?",
+   "en": "Is the wind strong today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Getting around",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.sw_transport",
+   "kind": "grammar_rule",
+   "tr": "Bir araca binmek için \"kupanda\" (binmek) fiili doğrudan aracın adıyla kullanılır, edat gerekmez.",
+   "en": "\"kupanda\" (to board) is used directly with the vehicle name to mean \"take/ride\" — no preposition needed.",
+   "context": "Napanda daladala kwenda kazini. / ✗ Napanda kwa daladala kwenda kazini.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You need to find a bus.",
+   "context": "Kituo cha basi kilicho karibu kiko wapi?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_transport.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks how you commute.",
+   "context": "Napanda daladala kwenda kazini.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You're at the train station.",
+   "context": "Ni jukwaa gani?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_transport.3",
+   "kind": "speaking_prompt",
+   "en": "At the ticket counter.",
+   "context": "Tiketi moja kwenda mjini, tafadhali.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You're not sure of the route.",
+   "context": "Treni hii inasimama uwanja wa ndege?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You missed the last bus.",
+   "context": "Nahitaji teksi.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_transport.6",
+   "kind": "speaking_prompt",
+   "en": "You're asking about travel time.",
+   "context": "Safari inachukua muda gani?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_transport.7",
+   "kind": "speaking_prompt",
+   "en": "It's a short distance.",
+   "context": "Napendelea kutembea tu.",
+   "have": []
+  },
+  {
+   "key": "p.sw_transport_0",
+   "kind": "phrase",
+   "target": "Kituo cha basi kilicho karibu kiko wapi?",
+   "tr": "En yakın otobüs durağı nerede?",
+   "en": "Where's the nearest bus stop?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_transport_1",
+   "kind": "phrase",
+   "target": "Napanda daladala kwenda kazini.",
+   "tr": "İşe minibüsle gidiyorum.",
+   "en": "I take a daladala (minibus) to work.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_transport_2",
+   "kind": "phrase",
+   "target": "Ni jukwaa gani?",
+   "tr": "Hangi peron?",
+   "en": "Which platform is it?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_transport_3",
+   "kind": "phrase",
+   "target": "Tiketi moja kwenda mjini, tafadhali.",
+   "tr": "Şehir merkezine bir bilet lütfen.",
+   "en": "One ticket to town, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_transport_4",
+   "kind": "phrase",
+   "target": "Treni hii inasimama uwanja wa ndege?",
+   "tr": "Bu tren havalimanında duruyor mu?",
+   "en": "Does this train stop at the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_transport_5",
+   "kind": "phrase",
+   "target": "Nahitaji teksi.",
+   "tr": "Taksiye ihtiyacım var.",
+   "en": "I need a taxi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_transport_6",
+   "kind": "phrase",
+   "target": "Safari inachukua muda gani?",
+   "tr": "Yolculuk ne kadar sürüyor?",
+   "en": "How long does the trip take?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_transport_7",
+   "kind": "phrase",
+   "target": "Napendelea kutembea tu.",
+   "tr": "Yürümeyi tercih ederim.",
+   "en": "I prefer to just walk.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.sw_emergency",
+   "kind": "grammar_rule",
+   "tr": "Birden fazla kişiye ya da saygıyla emir verirken fiil \"-eni\" ekiyle biter, tekilde sadece \"-a\" kalır.",
+   "en": "Commanding a group (or a respectful \"you\") adds the ending \"-eni\" to the verb, unlike the plain singular form.",
+   "context": "Pigeni simu ambulansi! / ✗ Piga simu ambulansi, watu wote!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "You see someone collapse.",
+   "context": "Msaada! Pigeni simu ambulansi!",
+   "have": []
+  },
+  {
+   "key": "tp.sw_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "You call emergency services.",
+   "context": "Kumetokea ajali hapa.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You describe the urgency.",
+   "context": "Nahitaji daktari sasa hivi.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You need directions fast.",
+   "context": "Hospitali iliyo karibu iko wapi?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You're reporting a theft.",
+   "context": "Mtu ameiba mkoba wangu!",
+   "have": []
+  },
+  {
+   "key": "tp.sw_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "A doctor asks about allergies.",
+   "context": "Nina mzio wa penicillin.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You need official help.",
+   "context": "Tafadhali mwiteni polisi.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_emergency.7",
+   "kind": "speaking_prompt",
+   "en": "You don't know where you are.",
+   "context": "Nimepotea, unaweza kunisaidia?",
+   "have": []
+  },
+  {
+   "key": "p.sw_emergency_0",
+   "kind": "phrase",
+   "target": "Msaada! Pigeni simu ambulansi!",
+   "tr": "İmdat! Ambulans çağırın!",
+   "en": "Help! Call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_emergency_1",
+   "kind": "phrase",
+   "target": "Kumetokea ajali hapa.",
+   "tr": "Burada bir kaza oldu.",
+   "en": "There's been an accident here.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_emergency_2",
+   "kind": "phrase",
+   "target": "Nahitaji daktari sasa hivi.",
+   "tr": "Şimdi bir doktora ihtiyacım var.",
+   "en": "I need a doctor right now.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_emergency_3",
+   "kind": "phrase",
+   "target": "Hospitali iliyo karibu iko wapi?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where's the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_emergency_4",
+   "kind": "phrase",
+   "target": "Mtu ameiba mkoba wangu!",
+   "tr": "Biri çantamı çaldı!",
+   "en": "Someone stole my bag!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_emergency_5",
+   "kind": "phrase",
+   "target": "Nina mzio wa penicillin.",
+   "tr": "Penisiline alerjim var.",
+   "en": "I'm allergic to penicillin.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_emergency_6",
+   "kind": "phrase",
+   "target": "Tafadhali mwiteni polisi.",
+   "tr": "Lütfen polisi çağırın.",
+   "en": "Please call the police.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_emergency_7",
+   "kind": "phrase",
+   "target": "Nimepotea, unaweza kunisaidia?",
+   "tr": "Kayboldum, bana yardım edebilir misiniz?",
+   "en": "I'm lost, can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.sw_routine",
+   "kind": "grammar_rule",
+   "tr": "Fiilin içindeki \"-na-\" eki (özne öneki ile fiil kökü arasında), alışkanlık ya da şu anki eylemi gösterir.",
+   "en": "The infix \"-na-\" inside the verb (between subject marker and root) marks habitual or ongoing action.",
+   "context": "Ninaamka saa moja asubuhi. / ✗ Niamka saa moja asubuhi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your morning.",
+   "context": "Ninaamka saa moja asubuhi.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_routine.1",
+   "kind": "speaking_prompt",
+   "en": "You describe your sister's routine.",
+   "context": "Anaoga kila asubuhi.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_routine.2",
+   "kind": "speaking_prompt",
+   "en": "You talk about your family's mornings.",
+   "context": "Tunakula kifungua kinywa pamoja.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_routine.3",
+   "kind": "speaking_prompt",
+   "en": "You describe your brother's commute.",
+   "context": "Anaenda kazini kwa baiskeli.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_routine.4",
+   "kind": "speaking_prompt",
+   "en": "You're talking about hygiene habits.",
+   "context": "Ninapiga mswaki mara mbili kwa siku.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_routine.5",
+   "kind": "speaking_prompt",
+   "en": "You describe your roommates.",
+   "context": "Kawaida wanalala usiku sana.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_routine.6",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your weekend.",
+   "context": "Jumapili ninaamka mchana.",
+   "have": []
+  },
+  {
+   "key": "p.sw_routine_0",
+   "kind": "phrase",
+   "target": "Ninaamka saa moja asubuhi.",
+   "tr": "Genelde sabah saat yedide kalkarım.",
+   "en": "I usually wake up at seven in the morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_routine_1",
+   "kind": "phrase",
+   "target": "Anaoga kila asubuhi.",
+   "tr": "Her sabah duş alır.",
+   "en": "She showers every morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_routine_2",
+   "kind": "phrase",
+   "target": "Tunakula kifungua kinywa pamoja.",
+   "tr": "Birlikte kahvaltı yaparız.",
+   "en": "We have breakfast together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_routine_3",
+   "kind": "phrase",
+   "target": "Anaenda kazini kwa baiskeli.",
+   "tr": "İşe bisikletle gider.",
+   "en": "He goes to work by bicycle.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_routine_4",
+   "kind": "phrase",
+   "target": "Ninapiga mswaki mara mbili kwa siku.",
+   "tr": "Günde iki kez dişlerimi fırçalarım.",
+   "en": "I brush my teeth twice a day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_routine_5",
+   "kind": "phrase",
+   "target": "Kawaida wanalala usiku sana.",
+   "tr": "Genelde geç yatarlar.",
+   "en": "They usually go to bed late.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_routine_6",
+   "kind": "phrase",
+   "target": "Jumapili ninaamka mchana.",
+   "tr": "Pazar günleri geç kalkarım.",
+   "en": "On Sundays I wake up late.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_past_story",
+   "kind": "scenario_title",
+   "tr": "Bir olayı anlatmak",
+   "en": "Telling a story",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.sw_past_story",
+   "kind": "grammar_rule",
+   "tr": "Geçmiş zaman, fiildeki \"-na-\" yerine gelen \"-li-\" ekiyle gösterilir.",
+   "en": "Past tense is marked by replacing \"-na-\" with \"-li-\" inside the verb.",
+   "context": "Jana nilienda sokoni. / ✗ Jana ninaenda sokoni.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "You're telling a friend about your day.",
+   "context": "Jana nilienda sokoni.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "You continue the story.",
+   "context": "Nilinunua mboga safi.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "Something unexpected happened.",
+   "context": "Kisha nilikutana na rafiki wa zamani.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "You describe the encounter.",
+   "context": "Tulizungumza kwa saa moja.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "Something went wrong.",
+   "context": "Nilipoteza mkoba wangu njiani kurudi nyumbani.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "It has a happy ending.",
+   "context": "Kwa bahati nzuri, mtu aliupata.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "You're wrapping up the story.",
+   "context": "Ilikuwa siku ya ajabu!",
+   "have": []
+  },
+  {
+   "key": "p.sw_past_story_0",
+   "kind": "phrase",
+   "target": "Jana nilienda sokoni.",
+   "tr": "Dün pazara gittim.",
+   "en": "Yesterday I went to the market.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_past_story_1",
+   "kind": "phrase",
+   "target": "Nilinunua mboga safi.",
+   "tr": "Taze sebze aldım.",
+   "en": "I bought fresh vegetables.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_past_story_2",
+   "kind": "phrase",
+   "target": "Kisha nilikutana na rafiki wa zamani.",
+   "tr": "Sonra eski bir arkadaşımla karşılaştım.",
+   "en": "Then I met an old friend.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_past_story_3",
+   "kind": "phrase",
+   "target": "Tulizungumza kwa saa moja.",
+   "tr": "Bir saat konuştuk.",
+   "en": "We talked for an hour.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_past_story_4",
+   "kind": "phrase",
+   "target": "Nilipoteza mkoba wangu njiani kurudi nyumbani.",
+   "tr": "Eve dönerken çantamı kaybettim.",
+   "en": "I lost my bag on the way home.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_past_story_5",
+   "kind": "phrase",
+   "target": "Kwa bahati nzuri, mtu aliupata.",
+   "tr": "Neyse ki biri onu buldu.",
+   "en": "Luckily, someone found it.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_past_story_6",
+   "kind": "phrase",
+   "target": "Ilikuwa siku ya ajabu!",
+   "tr": "Çılgın bir gündü!",
+   "en": "It was a crazy day!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "Kahawa moja, tafadhali.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "Nina uhifadhi.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "Samahani, kituo kiko wapi?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "Habari, jina langu ni Deniz.",
+   "have": []
+  },
+  {
+   "key": "p.sw_a2_route_0",
+   "kind": "phrase",
+   "target": "Kahawa moja, tafadhali.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_a2_route_1",
+   "kind": "phrase",
+   "target": "Nina uhifadhi.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_a2_route_2",
+   "kind": "phrase",
+   "target": "Samahani, kituo kiko wapi?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_a2_route_3",
+   "kind": "phrase",
+   "target": "Habari, jina langu ni Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.sw_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.sw_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "Kifungua kinywa kimejumuishwa?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "Sielewi.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "Ninatafuta nyumba.",
+   "have": []
+  },
+  {
+   "key": "tp.sw_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "Kodi ni kiasi gani?",
+   "have": []
+  },
+  {
+   "key": "tp.sw_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "Mnakubali kadi?",
+   "have": []
+  },
+  {
+   "key": "p.sw_b1_solve_0",
+   "kind": "phrase",
+   "target": "Kifungua kinywa kimejumuishwa?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_b1_solve_1",
+   "kind": "phrase",
+   "target": "Sielewi.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_b1_solve_2",
+   "kind": "phrase",
+   "target": "Ninatafuta nyumba.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_b1_solve_3",
+   "kind": "phrase",
+   "target": "Kodi ni kiasi gani?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.sw_b1_solve_4",
+   "kind": "phrase",
+   "target": "Mnakubali kadi?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "st.sw_doctor",
+   "kind": "story_title",
+   "target": "Kutembea daktari",
+   "tr": "Doktor Randevusu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_doctor.0",
+   "kind": "story_sentence",
+   "target": "Kesho nitaenda kwa daktari saa nane asubuhi.",
+   "tr": "Yarın sabah sekizde doktora gideceğim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_doctor.1",
+   "kind": "story_sentence",
+   "target": "Nina maumivu ya kichwa kidogo.",
+   "tr": "Hafif bir baş ağrım var.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_doctor.2",
+   "kind": "story_sentence",
+   "target": "Daktari ananipa chombo cha kupima joto.",
+   "tr": "Doktor bana termometre veriyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_doctor.3",
+   "kind": "story_sentence",
+   "target": "Anasema niache michezo wiki hii.",
+   "tr": "Bu hafta spor yapmamamı söylüyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_doctor.4",
+   "kind": "story_sentence",
+   "target": "Ananipa dawa na maji mengi.",
+   "tr": "Bana ilaç ve bol su veriyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_doctor.5",
+   "kind": "story_sentence",
+   "target": "Nitarudi nyumbani, na hali ni nzuri.",
+   "tr": "Eve iyi durumda döneceğim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.sw_sport",
+   "kind": "story_title",
+   "target": "Michezo ya Jumatate",
+   "tr": "Cumartesi Maçları",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_sport.0",
+   "kind": "story_sentence",
+   "target": "Jumatate, watoto wanacheza soka katika paki.",
+   "tr": "Cumartesi, çocuklar parkta futbol oynar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_sport.1",
+   "kind": "story_sentence",
+   "target": "Mchezaji mzuri wa timu ni Juma.",
+   "tr": "Takımın en iyi oyuncusu Juma’dır.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_sport.2",
+   "kind": "story_sentence",
+   "target": "Wanacheza kwa saa moja.",
+   "tr": "Bir saat oynarlar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_sport.3",
+   "kind": "story_sentence",
+   "target": "Baada ya michezo, wanachoka kahawa.",
+   "tr": "Maçtan sonra kahve içerler.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_sport.4",
+   "kind": "story_sentence",
+   "target": "Michezo inawafanya watu wa kuogelea.",
+   "tr": "Spor insanı dinlendirir.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_sport.5",
+   "kind": "story_sentence",
+   "target": "Siku ya Jumatate ni siku ya furaha.",
+   "tr": "Cumartesi eğlenceli bir gündür.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.sw_restaurant",
+   "kind": "story_title",
+   "target": "Kituo cha chakula",
+   "tr": "Restoranda",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_restaurant.0",
+   "kind": "story_sentence",
+   "target": "Usiku huu nitaenda kituo cha chakula na mrithi wa kazi.",
+   "tr": "Bu akşam bir iş arkadaşımla restorana gidiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_restaurant.1",
+   "kind": "story_sentence",
+   "target": "Tunachagua chakula cha Kenya.",
+   "tr": "Kenyalı yemekleri seçiyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_restaurant.2",
+   "kind": "story_sentence",
+   "target": "Ninachagua samaki mkubwa na viazi.",
+   "tr": "Ben büyük bir balık patatesli alıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_restaurant.3",
+   "kind": "story_sentence",
+   "target": "Kahawa na keki ni nzuri sana.",
+   "tr": "Kahve ve pasta çok iyi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_restaurant.4",
+   "kind": "story_sentence",
+   "target": "Tunazungumza kuhusu kazi na familia.",
+   "tr": "İş ve aileden konuşuyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.sw_restaurant.5",
+   "kind": "story_sentence",
+   "target": "Ni usiku mzuri.",
+   "tr": "Güzel bir akşam.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.A.n",
+   "kind": "alphabet_letter_name",
+   "target": "A",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.A.s",
+   "kind": "alphabet_sound",
+   "target": "A",
+   "tr": "a",
+   "context": "Apple",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.A.m",
+   "kind": "alphabet_example",
+   "target": "Apple",
+   "tr": "Elma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.B.n",
+   "kind": "alphabet_letter_name",
+   "target": "B",
+   "tr": "Be",
+   "en": "Bee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.B.s",
+   "kind": "alphabet_sound",
+   "target": "B",
+   "tr": "b",
+   "context": "Book",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.B.m",
+   "kind": "alphabet_example",
+   "target": "Book",
+   "tr": "Kitap",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.C.n",
+   "kind": "alphabet_letter_name",
+   "target": "C",
+   "tr": "Ce",
+   "en": "See",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.C.s",
+   "kind": "alphabet_sound",
+   "target": "C",
+   "tr": "c/s",
+   "context": "Cat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.C.m",
+   "kind": "alphabet_example",
+   "target": "Cat",
+   "tr": "Kedi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.D.n",
+   "kind": "alphabet_letter_name",
+   "target": "D",
+   "tr": "De",
+   "en": "Dee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.D.s",
+   "kind": "alphabet_sound",
+   "target": "D",
+   "tr": "d",
+   "context": "Dog",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.D.m",
+   "kind": "alphabet_example",
+   "target": "Dog",
+   "tr": "Köpek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.E.n",
+   "kind": "alphabet_letter_name",
+   "target": "E",
+   "tr": "E",
+   "en": "Ee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.E.s",
+   "kind": "alphabet_sound",
+   "target": "E",
+   "tr": "e",
+   "context": "Egg",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.E.m",
+   "kind": "alphabet_example",
+   "target": "Egg",
+   "tr": "Yumurta",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.F.n",
+   "kind": "alphabet_letter_name",
+   "target": "F",
+   "tr": "Fe",
+   "en": "Ef",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.F.s",
+   "kind": "alphabet_sound",
+   "target": "F",
+   "tr": "f",
+   "context": "Fish",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.F.m",
+   "kind": "alphabet_example",
+   "target": "Fish",
+   "tr": "Balık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.G.n",
+   "kind": "alphabet_letter_name",
+   "target": "G",
+   "tr": "Ge",
+   "en": "Jee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.G.s",
+   "kind": "alphabet_sound",
+   "target": "G",
+   "tr": "g",
+   "context": "Good",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.G.m",
+   "kind": "alphabet_example",
+   "target": "Good",
+   "tr": "İyi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.H.n",
+   "kind": "alphabet_letter_name",
+   "target": "H",
+   "tr": "He",
+   "en": "Aych",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.H.s",
+   "kind": "alphabet_sound",
+   "target": "H",
+   "tr": "h",
+   "context": "Hello",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.H.m",
+   "kind": "alphabet_example",
+   "target": "Hello",
+   "tr": "Merhaba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.I.n",
+   "kind": "alphabet_letter_name",
+   "target": "I",
+   "tr": "I",
+   "en": "Ay",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.I.s",
+   "kind": "alphabet_sound",
+   "target": "I",
+   "tr": "i/ay",
+   "context": "Ice",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.I.m",
+   "kind": "alphabet_example",
+   "target": "Ice",
+   "tr": "Buz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.J.n",
+   "kind": "alphabet_letter_name",
+   "target": "J",
+   "tr": "Je",
+   "en": "Jay",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.J.s",
+   "kind": "alphabet_sound",
+   "target": "J",
+   "tr": "j",
+   "context": "Juice",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.J.m",
+   "kind": "alphabet_example",
+   "target": "Juice",
+   "tr": "Meyve suyu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.K.n",
+   "kind": "alphabet_letter_name",
+   "target": "K",
+   "tr": "Ke",
+   "en": "Kay",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.K.s",
+   "kind": "alphabet_sound",
+   "target": "K",
+   "tr": "k",
+   "context": "Key",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.K.m",
+   "kind": "alphabet_example",
+   "target": "Key",
+   "tr": "Anahtar",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.L.n",
+   "kind": "alphabet_letter_name",
+   "target": "L",
+   "tr": "Le",
+   "en": "El",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.L.s",
+   "kind": "alphabet_sound",
+   "target": "L",
+   "tr": "l",
+   "context": "Love",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.L.m",
+   "kind": "alphabet_example",
+   "target": "Love",
+   "tr": "Aşk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.M.n",
+   "kind": "alphabet_letter_name",
+   "target": "M",
+   "tr": "Me",
+   "en": "Em",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.M.s",
+   "kind": "alphabet_sound",
+   "target": "M",
+   "tr": "m",
+   "context": "Moon",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.M.m",
+   "kind": "alphabet_example",
+   "target": "Moon",
+   "tr": "Ay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.N.n",
+   "kind": "alphabet_letter_name",
+   "target": "N",
+   "tr": "Ne",
+   "en": "En",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.N.s",
+   "kind": "alphabet_sound",
+   "target": "N",
+   "tr": "n",
+   "context": "Name",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.N.m",
+   "kind": "alphabet_example",
+   "target": "Name",
+   "tr": "İsim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.O.n",
+   "kind": "alphabet_letter_name",
+   "target": "O",
+   "tr": "O",
+   "en": "Oh",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.O.s",
+   "kind": "alphabet_sound",
+   "target": "O",
+   "tr": "o",
+   "context": "Open",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.O.m",
+   "kind": "alphabet_example",
+   "target": "Open",
+   "tr": "Açmak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.P.n",
+   "kind": "alphabet_letter_name",
+   "target": "P",
+   "tr": "Pe",
+   "en": "Pee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.P.s",
+   "kind": "alphabet_sound",
+   "target": "P",
+   "tr": "p",
+   "context": "Pen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.P.m",
+   "kind": "alphabet_example",
+   "target": "Pen",
+   "tr": "Kalem",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.Q.n",
+   "kind": "alphabet_letter_name",
+   "target": "Q",
+   "tr": "Qu",
+   "en": "Kyu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.Q.s",
+   "kind": "alphabet_sound",
+   "target": "Q",
+   "tr": "kv",
+   "context": "Queen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.Q.m",
+   "kind": "alphabet_example",
+   "target": "Queen",
+   "tr": "Kraliçe",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.R.n",
+   "kind": "alphabet_letter_name",
+   "target": "R",
+   "tr": "Re",
+   "en": "Ar",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.R.s",
+   "kind": "alphabet_sound",
+   "target": "R",
+   "tr": "r",
+   "context": "Rain",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.R.m",
+   "kind": "alphabet_example",
+   "target": "Rain",
+   "tr": "Yağmur",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.S.n",
+   "kind": "alphabet_letter_name",
+   "target": "S",
+   "tr": "Se",
+   "en": "Es",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.S.s",
+   "kind": "alphabet_sound",
+   "target": "S",
+   "tr": "s",
+   "context": "Sun",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.S.m",
+   "kind": "alphabet_example",
+   "target": "Sun",
+   "tr": "Güneş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.T.n",
+   "kind": "alphabet_letter_name",
+   "target": "T",
+   "tr": "Te",
+   "en": "Tee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.T.s",
+   "kind": "alphabet_sound",
+   "target": "T",
+   "tr": "t",
+   "context": "Tree",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.T.m",
+   "kind": "alphabet_example",
+   "target": "Tree",
+   "tr": "Ağaç",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.U.n",
+   "kind": "alphabet_letter_name",
+   "target": "U",
+   "tr": "U",
+   "en": "Yu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.U.s",
+   "kind": "alphabet_sound",
+   "target": "U",
+   "tr": "u/yu",
+   "context": "Up",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.U.m",
+   "kind": "alphabet_example",
+   "target": "Up",
+   "tr": "Yukarı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.V.n",
+   "kind": "alphabet_letter_name",
+   "target": "V",
+   "tr": "Ve",
+   "en": "Vee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.V.s",
+   "kind": "alphabet_sound",
+   "target": "V",
+   "tr": "v",
+   "context": "Very",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.V.m",
+   "kind": "alphabet_example",
+   "target": "Very",
+   "tr": "Çok",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.W.n",
+   "kind": "alphabet_letter_name",
+   "target": "W",
+   "tr": "W",
+   "en": "Double-yu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.W.s",
+   "kind": "alphabet_sound",
+   "target": "W",
+   "tr": "w",
+   "context": "Water",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.W.m",
+   "kind": "alphabet_example",
+   "target": "Water",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.X.n",
+   "kind": "alphabet_letter_name",
+   "target": "X",
+   "tr": "X",
+   "en": "Eks",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.X.s",
+   "kind": "alphabet_sound",
+   "target": "X",
+   "tr": "ks",
+   "context": "Box",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.X.m",
+   "kind": "alphabet_example",
+   "target": "Box",
+   "tr": "Kutu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.Y.n",
+   "kind": "alphabet_letter_name",
+   "target": "Y",
+   "tr": "Ye",
+   "en": "Way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.Y.s",
+   "kind": "alphabet_sound",
+   "target": "Y",
+   "tr": "y",
+   "context": "Yes",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.Y.m",
+   "kind": "alphabet_example",
+   "target": "Yes",
+   "tr": "Evet",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.Z.n",
+   "kind": "alphabet_letter_name",
+   "target": "Z",
+   "tr": "Ze",
+   "en": "Zee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.sw.Z.s",
+   "kind": "alphabet_sound",
+   "target": "Z",
+   "tr": "z",
+   "context": "Zoo",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.sw.Z.m",
+   "kind": "alphabet_example",
+   "target": "Zoo",
+   "tr": "Hayvanat bahçesi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.sw.0.h",
+   "kind": "pronunciation_heard",
+   "target": "ng",
+   "tr": "ŋ (nazal)",
+   "context": "Tek nazal ses.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.sw.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "ngombe",
+   "tr": "ŋombe",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.sw.1.h",
+   "kind": "pronunciation_heard",
+   "target": "dh",
+   "tr": "ð (peltek d)",
+   "context": "İngilizce th gibi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.sw.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "dhahabu",
+   "tr": "ðahabu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.sw.2.h",
+   "kind": "pronunciation_heard",
+   "target": "ny",
+   "tr": "ñ",
+   "context": "Burundan y.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.sw.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "nyumba",
+   "tr": "ñumba",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

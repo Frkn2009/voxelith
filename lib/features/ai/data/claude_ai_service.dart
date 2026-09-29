@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../../../core/l10n/i18n_ui.dart';
 import '../../../core/supabase_config.dart';
 import '../domain/ai_feedback.dart';
 import 'ai_service.dart';
@@ -22,7 +23,8 @@ import 'fake_ai_service.dart';
 /// bile olsa) gömer — anahtar APK/IPA'dan ters mühendislikle çıkarılabilir
 /// ve başkası hesabımıza fatura çıkarabilir. Anahtar SADECE sunucuda kalır.
 class ClaudeAiService implements AiService {
-  ClaudeAiService({AiService? fallback}) : _fallback = fallback ?? FakeAiService();
+  ClaudeAiService({AiService? fallback})
+    : _fallback = fallback ?? FakeAiService();
 
   final AiService _fallback;
 
@@ -90,6 +92,7 @@ class ClaudeAiService implements AiService {
       'targetLanguage': targetLanguage,
       'nativeLanguage': nativeLanguage,
     });
+    final i18n = aiFeedbackI18n(nativeLanguage);
     if (remote.error == 'plus_required') {
       // Ücretsiz kullanıcı günlük tadımlık hakkını kullandı — sessizce
       // sahteye düşmek yerine özelliğin gerçek olduğunu ve Plus'ta
@@ -98,11 +101,9 @@ class ClaudeAiService implements AiService {
         userAnswer: userAnswer,
         correctedAnswer: sourceText,
         score: 0,
-        tips: const [
-          'Bugünkü ücretsiz AI analiz hakkını kullandın.',
-          'Plus ile günde 15 kez sınırsız AI analizi alabilirsin.',
-        ],
-        encouragement: '🔒 Hay aksi, hakkın bitti! Yarın tekrar dene ya da Plus\'a geç',
+        tips: [i18n.aiFreeUsedTip1, i18n.aiFreeUsedTip2],
+        // '🔒' öneki AiFeedbackScreen'in paywall yönlendirmesini tetikler.
+        encouragement: i18n.aiFreeUsedEncouragement,
       );
     }
     if (remote.error == 'daily_limit_reached') {
@@ -114,11 +115,9 @@ class ClaudeAiService implements AiService {
         userAnswer: userAnswer,
         correctedAnswer: sourceText,
         score: 0,
-        tips: const [
-          'Bugünkü AI analiz hakkın (15/gün) doldu.',
-          'Yarın aynı saatlerde sıfırlanır.',
-        ],
-        encouragement: '⏳ Yarın tekrar dene',
+        tips: [i18n.aiDailyLimitTip1, i18n.aiDailyLimitTip2],
+        // '⏳' öneki AiFeedbackScreen'in limit durumunu tetikler.
+        encouragement: i18n.aiDailyLimitEncouragement,
       );
     }
     final data = remote.data;
@@ -132,7 +131,7 @@ class ClaudeAiService implements AiService {
         correctedAnswer:
             (data['correctedAnswer'] as Object?)?.toString() ?? sourceText,
         score: _asScore(data['score']),
-        tips: tips.isEmpty ? ['Tekrar dene!'] : tips,
+        tips: tips.isEmpty ? [i18n.aiTryAgainTip] : tips,
         encouragement: (data['encouragement'] as Object?)?.toString() ?? '',
       );
     }
@@ -168,8 +167,7 @@ class ClaudeAiService implements AiService {
               AiDialogueLine(
                 speaker: (item['speaker'] as Object?)?.toString() ?? '',
                 text: (item['text'] as Object?)?.toString() ?? '',
-                translation:
-                    (item['translation'] as Object?)?.toString() ?? '',
+                translation: (item['translation'] as Object?)?.toString() ?? '',
               ),
             );
           }
@@ -183,8 +181,7 @@ class ClaudeAiService implements AiService {
             vocabulary.add(
               AiVocabItem(
                 word: (item['word'] as Object?)?.toString() ?? '',
-                translation:
-                    (item['translation'] as Object?)?.toString() ?? '',
+                translation: (item['translation'] as Object?)?.toString() ?? '',
                 example: (item['example'] as Object?)?.toString() ?? '',
               ),
             );

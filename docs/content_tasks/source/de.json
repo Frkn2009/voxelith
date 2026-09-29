@@ -1,0 +1,4204 @@
+{
+ "lang": "de",
+ "scenarios": [
+  {
+   "id": "de_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "de_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "de_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "de_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "de_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "de_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "de_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "de_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "de_intro",
+   "cefr": "a1",
+   "title": "Introductions"
+  },
+  {
+   "id": "de_shopping",
+   "cefr": "a1",
+   "title": "Shopping"
+  },
+  {
+   "id": "de_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers & time"
+  },
+  {
+   "id": "de_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "de_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "de_transport",
+   "cefr": "a1",
+   "title": "Transport"
+  },
+  {
+   "id": "de_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "de_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "de_past_story",
+   "cefr": "a1",
+   "title": "Telling a story in the past"
+  },
+  {
+   "id": "de_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "de_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  },
+  {
+   "id": "de_pro_interview",
+   "cefr": "b1",
+   "title": "Job interview: Introducing yourself"
+  },
+  {
+   "id": "de_pro_meeting_request",
+   "cefr": "b1",
+   "title": "Requesting a meeting"
+  },
+  {
+   "id": "de_pro_update",
+   "cefr": "b1",
+   "title": "Presenting a project update"
+  },
+  {
+   "id": "de_pro_feedback",
+   "cefr": "b2",
+   "title": "Giving constructive feedback"
+  },
+  {
+   "id": "de_pro_deadline",
+   "cefr": "b1",
+   "title": "Negotiating a deadline"
+  },
+  {
+   "id": "de_pro_networking",
+   "cefr": "a2",
+   "title": "Networking small talk"
+  },
+  {
+   "id": "de_pro_client_call",
+   "cefr": "b2",
+   "title": "Handling a client complaint call"
+  },
+  {
+   "id": "de_pro_raise",
+   "cefr": "b2",
+   "title": "Asking for a raise"
+  }
+ ],
+ "stories": [
+  {
+   "id": "de_regentag",
+   "level": "a1",
+   "title": "Der Regentag"
+  },
+  {
+   "id": "de_reise",
+   "level": "a1",
+   "title": "Die Reise"
+  },
+  {
+   "id": "de_markt",
+   "level": "a1",
+   "title": "Der Wochenmarkt"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.de_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "Einen Kaffee, bitte.",
+   "have": []
+  },
+  {
+   "key": "tp.de_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "Was kostet das?",
+   "have": []
+  },
+  {
+   "key": "p.de_cafe_0",
+   "kind": "phrase",
+   "target": "Einen Kaffee, bitte.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_cafe_1",
+   "kind": "phrase",
+   "target": "Was kostet das?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_cafe_2",
+   "kind": "phrase",
+   "target": "Vielen Dank.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "Ich habe eine Reservierung.",
+   "have": []
+  },
+  {
+   "key": "tp.de_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "Ist Frühstück inklusive?",
+   "have": []
+  },
+  {
+   "key": "p.de_hotel_0",
+   "kind": "phrase",
+   "target": "Ich habe eine Reservierung.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_hotel_1",
+   "kind": "phrase",
+   "target": "Ist Frühstück inklusive?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_hotel_2",
+   "kind": "phrase",
+   "target": "Vielen Dank.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "Entschuldigung, wo ist der Bahnhof?",
+   "have": []
+  },
+  {
+   "key": "tp.de_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "Vielen Dank.",
+   "have": []
+  },
+  {
+   "key": "p.de_dir_0",
+   "kind": "phrase",
+   "target": "Entschuldigung, wo ist der Bahnhof?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_dir_1",
+   "kind": "phrase",
+   "target": "Vielen Dank.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_dir_2",
+   "kind": "phrase",
+   "target": "Ich verstehe nicht.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "Hallo, ich heiße Deniz.",
+   "have": []
+  },
+  {
+   "key": "tp.de_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "Ich komme aus der Türkei.",
+   "have": []
+  },
+  {
+   "key": "p.de_hi_0",
+   "kind": "phrase",
+   "target": "Hallo, ich heiße Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_hi_1",
+   "kind": "phrase",
+   "target": "Ich komme aus der Türkei.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_hi_2",
+   "kind": "phrase",
+   "target": "Vielen Dank.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "Ich suche eine Wohnung.",
+   "have": []
+  },
+  {
+   "key": "tp.de_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "Wie hoch ist die Miete?",
+   "have": []
+  },
+  {
+   "key": "p.de_flat_0",
+   "kind": "phrase",
+   "target": "Ich suche eine Wohnung.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_flat_1",
+   "kind": "phrase",
+   "target": "Wie hoch ist die Miete?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_flat_2",
+   "kind": "phrase",
+   "target": "Können Sie mir helfen?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "Was kostet das?",
+   "have": []
+  },
+  {
+   "key": "tp.de_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "Ich nehme das hier.",
+   "have": []
+  },
+  {
+   "key": "p.de_shop_0",
+   "kind": "phrase",
+   "target": "Was kostet das?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_shop_1",
+   "kind": "phrase",
+   "target": "Ich nehme das hier.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_shop_2",
+   "kind": "phrase",
+   "target": "Kann ich mit Karte zahlen?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "Die Rechnung, bitte.",
+   "have": []
+  },
+  {
+   "key": "tp.de_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "Wir möchten zusammen zahlen.",
+   "have": []
+  },
+  {
+   "key": "p.de_bill_0",
+   "kind": "phrase",
+   "target": "Die Rechnung, bitte.",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_bill_1",
+   "kind": "phrase",
+   "target": "Wir möchten zusammen zahlen.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_bill_2",
+   "kind": "phrase",
+   "target": "Stimmt so.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "Ich habe eine Reservierung.",
+   "have": []
+  },
+  {
+   "key": "tp.de_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "Ein Fensterplatz, bitte.",
+   "have": []
+  },
+  {
+   "key": "p.de_airport_0",
+   "kind": "phrase",
+   "target": "Ich habe eine Reservierung.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_airport_1",
+   "kind": "phrase",
+   "target": "Ein Fensterplatz, bitte.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_airport_2",
+   "kind": "phrase",
+   "target": "Ist das die Schlange zum Boarding?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Introductions",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.de_intro",
+   "kind": "grammar_rule",
+   "tr": "Almanca'da fiil her zaman ikinci sırada gelir — cümle bir zaman ifadesiyle başlarsa özne fiilden sonraya kayar.",
+   "en": "In German the verb always stays in second position — if a sentence opens with a time expression, the subject moves after the verb.",
+   "context": "Seit drei Tagen bin ich hier. / ✗ Seit drei Tagen ich bin hier.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_intro.0",
+   "kind": "speaking_prompt",
+   "en": "Greet someone and give your name.",
+   "context": "Hallo, ich heiße Elif.",
+   "have": []
+  },
+  {
+   "key": "tp.de_intro.1",
+   "kind": "speaking_prompt",
+   "en": "Ask their name.",
+   "context": "Wie heißen Sie?",
+   "have": []
+  },
+  {
+   "key": "tp.de_intro.2",
+   "kind": "speaking_prompt",
+   "en": "Say where you're from.",
+   "context": "Ich komme aus der Türkei.",
+   "have": []
+  },
+  {
+   "key": "tp.de_intro.3",
+   "kind": "speaking_prompt",
+   "en": "Ask where they are from.",
+   "context": "Und woher kommen Sie?",
+   "have": []
+  },
+  {
+   "key": "tp.de_intro.4",
+   "kind": "speaking_prompt",
+   "en": "Say how long you've been here.",
+   "context": "Seit drei Tagen bin ich hier.",
+   "have": []
+  },
+  {
+   "key": "tp.de_intro.5",
+   "kind": "speaking_prompt",
+   "en": "Say it was nice meeting them.",
+   "context": "Freut mich, Sie kennenzulernen.",
+   "have": []
+  },
+  {
+   "key": "tp.de_intro.6",
+   "kind": "speaking_prompt",
+   "en": "Ask how they are doing.",
+   "context": "Wie geht es Ihnen?",
+   "have": []
+  },
+  {
+   "key": "tp.de_intro.7",
+   "kind": "speaking_prompt",
+   "en": "Answer that you're doing well.",
+   "context": "Mir geht es gut, danke.",
+   "have": []
+  },
+  {
+   "key": "p.de_intro_0",
+   "kind": "phrase",
+   "target": "Hallo, ich heiße Elif.",
+   "tr": "Merhaba, adım Elif.",
+   "en": "Hi, my name is Elif.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_intro_1",
+   "kind": "phrase",
+   "target": "Wie heißen Sie?",
+   "tr": "Adınız ne?",
+   "en": "What is your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_intro_2",
+   "kind": "phrase",
+   "target": "Ich komme aus der Türkei.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_intro_3",
+   "kind": "phrase",
+   "target": "Und woher kommen Sie?",
+   "tr": "Peki siz nerelisiniz?",
+   "en": "And where are you from?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_intro_4",
+   "kind": "phrase",
+   "target": "Seit drei Tagen bin ich hier.",
+   "tr": "Üç gündür buradayım.",
+   "en": "I've been here for three days.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_intro_5",
+   "kind": "phrase",
+   "target": "Freut mich, Sie kennenzulernen.",
+   "tr": "Tanıştığımıza memnun oldum.",
+   "en": "Nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_intro_6",
+   "kind": "phrase",
+   "target": "Wie geht es Ihnen?",
+   "tr": "Nasılsınız?",
+   "en": "How are you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_intro_7",
+   "kind": "phrase",
+   "target": "Mir geht es gut, danke.",
+   "tr": "İyiyim, teşekkürler.",
+   "en": "I'm fine, thanks.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_shopping",
+   "kind": "scenario_title",
+   "tr": "Alışveriş",
+   "en": "Shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.de_shopping",
+   "kind": "grammar_rule",
+   "tr": "Almanca'da bir ismi olumsuzlarken 'nicht' değil, 'kein/keine' kullanılır.",
+   "en": "In German you negate a noun with 'kein/keine', not 'nicht'.",
+   "context": "Ich habe keine Kreditkarte. / ✗ Ich habe nicht eine Kreditkarte.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "Say you'd like this item.",
+   "context": "Ich hätte gern das hier.",
+   "have": []
+  },
+  {
+   "key": "tp.de_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "Ask about your size.",
+   "context": "Haben Sie das in Größe M?",
+   "have": []
+  },
+  {
+   "key": "tp.de_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "Ask to try it on.",
+   "context": "Kann ich das anprobieren?",
+   "have": []
+  },
+  {
+   "key": "tp.de_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "Say you'll pay cash, not card.",
+   "context": "Ich habe keine Kreditkarte, nur Bargeld.",
+   "have": []
+  },
+  {
+   "key": "tp.de_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "Ask if there's a discount.",
+   "context": "Gibt es einen Rabatt?",
+   "have": []
+  },
+  {
+   "key": "tp.de_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "Say it's too expensive.",
+   "context": "Das ist zu teuer für mich.",
+   "have": []
+  },
+  {
+   "key": "tp.de_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "Decide to buy it.",
+   "context": "Ich nehme es.",
+   "have": []
+  },
+  {
+   "key": "tp.de_shopping.7",
+   "kind": "speaking_prompt",
+   "en": "Ask for a bag.",
+   "context": "Kann ich eine Tüte haben?",
+   "have": []
+  },
+  {
+   "key": "p.de_shopping_0",
+   "kind": "phrase",
+   "target": "Ich hätte gern das hier.",
+   "tr": "Bunu istiyorum, lütfen.",
+   "en": "I'd like this one, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_shopping_1",
+   "kind": "phrase",
+   "target": "Haben Sie das in Größe M?",
+   "tr": "Bunun M bedeni var mı?",
+   "en": "Do you have this in size M?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_shopping_2",
+   "kind": "phrase",
+   "target": "Kann ich das anprobieren?",
+   "tr": "Bunu deneyebilir miyim?",
+   "en": "Can I try this on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_shopping_3",
+   "kind": "phrase",
+   "target": "Ich habe keine Kreditkarte, nur Bargeld.",
+   "tr": "Kredi kartım yok, sadece nakit.",
+   "en": "I don't have a credit card, only cash.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_shopping_4",
+   "kind": "phrase",
+   "target": "Gibt es einen Rabatt?",
+   "tr": "İndirim var mı?",
+   "en": "Is there a discount?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_shopping_5",
+   "kind": "phrase",
+   "target": "Das ist zu teuer für mich.",
+   "tr": "Bu benim için çok pahalı.",
+   "en": "That's too expensive for me.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_shopping_6",
+   "kind": "phrase",
+   "target": "Ich nehme es.",
+   "tr": "Alıyorum.",
+   "en": "I'll take it.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_shopping_7",
+   "kind": "phrase",
+   "target": "Kann ich eine Tüte haben?",
+   "tr": "Bir poşet alabilir miyim?",
+   "en": "Can I get a bag?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar & saat",
+   "en": "Numbers & time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.de_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "Saat ifadelerinde saatten önce 'um' edatı kullanılır.",
+   "en": "Clock times take the preposition 'um' before the hour.",
+   "context": "Der Zug fährt um acht Uhr. / ✗ Der Zug fährt acht Uhr.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You want to know the time.",
+   "context": "Wie spät ist es?",
+   "have": []
+  },
+  {
+   "key": "tp.de_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "Tell them the time.",
+   "context": "Es ist Viertel nach neun.",
+   "have": []
+  },
+  {
+   "key": "tp.de_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "Tell a friend when the train leaves.",
+   "context": "Der Zug fährt um acht Uhr.",
+   "have": []
+  },
+  {
+   "key": "tp.de_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "Suggest a meeting time.",
+   "context": "Wir treffen uns um halb sieben.",
+   "have": []
+  },
+  {
+   "key": "tp.de_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "Tell the customer the total.",
+   "context": "Das macht fünfzehn Euro fünfzig.",
+   "have": []
+  },
+  {
+   "key": "tp.de_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "Ask for a little more time.",
+   "context": "Ich brauche noch zehn Minuten.",
+   "have": []
+  },
+  {
+   "key": "tp.de_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "Tell the host how many people.",
+   "context": "Wir sind zu dritt.",
+   "have": []
+  },
+  {
+   "key": "tp.de_numbers_time.7",
+   "kind": "speaking_prompt",
+   "en": "Tell them the appointment date.",
+   "context": "Der Termin ist am zweiten März.",
+   "have": []
+  },
+  {
+   "key": "p.de_numbers_time_0",
+   "kind": "phrase",
+   "target": "Wie spät ist es?",
+   "tr": "Saat kaç?",
+   "en": "What time is it?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_numbers_time_1",
+   "kind": "phrase",
+   "target": "Es ist Viertel nach neun.",
+   "tr": "Saat dokuzu çeyrek geçiyor.",
+   "en": "It's a quarter past nine.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_numbers_time_2",
+   "kind": "phrase",
+   "target": "Der Zug fährt um acht Uhr.",
+   "tr": "Tren saat sekizde kalkıyor.",
+   "en": "The train leaves at eight o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_numbers_time_3",
+   "kind": "phrase",
+   "target": "Wir treffen uns um halb sieben.",
+   "tr": "Altı buçukta buluşuyoruz.",
+   "en": "We're meeting at half past six.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_numbers_time_4",
+   "kind": "phrase",
+   "target": "Das macht fünfzehn Euro fünfzig.",
+   "tr": "Bu on beş euro elli sent tutuyor.",
+   "en": "That comes to fifteen euros fifty.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_numbers_time_5",
+   "kind": "phrase",
+   "target": "Ich brauche noch zehn Minuten.",
+   "tr": "On dakikaya daha ihtiyacım var.",
+   "en": "I need ten more minutes.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_numbers_time_6",
+   "kind": "phrase",
+   "target": "Wir sind zu dritt.",
+   "tr": "Üç kişiyiz.",
+   "en": "There are three of us.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_numbers_time_7",
+   "kind": "phrase",
+   "target": "Der Termin ist am zweiten März.",
+   "tr": "Randevu iki Mart'ta.",
+   "en": "The appointment is on the second of March.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.de_family",
+   "kind": "grammar_rule",
+   "tr": "İyelik zamiri ('mein/meine') ismin cinsiyetine göre değişir.",
+   "en": "The possessive ('mein/meine') agrees with the noun's gender.",
+   "context": "Das ist mein Bruder. / ✗ Das ist meine Bruder.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_family.0",
+   "kind": "speaking_prompt",
+   "en": "Introduce your brother.",
+   "context": "Das ist mein Bruder.",
+   "have": []
+  },
+  {
+   "key": "tp.de_family.1",
+   "kind": "speaking_prompt",
+   "en": "Introduce your sister.",
+   "context": "Das ist meine Schwester.",
+   "have": []
+  },
+  {
+   "key": "tp.de_family.2",
+   "kind": "speaking_prompt",
+   "en": "Say how many children you have.",
+   "context": "Ich habe zwei Kinder.",
+   "have": []
+  },
+  {
+   "key": "tp.de_family.3",
+   "kind": "speaking_prompt",
+   "en": "Say where your parents live.",
+   "context": "Meine Eltern wohnen in Izmir.",
+   "have": []
+  },
+  {
+   "key": "tp.de_family.4",
+   "kind": "speaking_prompt",
+   "en": "Ask if they have siblings.",
+   "context": "Haben Sie Geschwister?",
+   "have": []
+  },
+  {
+   "key": "tp.de_family.5",
+   "kind": "speaking_prompt",
+   "en": "Say what your husband does.",
+   "context": "Mein Mann arbeitet als Arzt.",
+   "have": []
+  },
+  {
+   "key": "tp.de_family.6",
+   "kind": "speaking_prompt",
+   "en": "Describe your family size.",
+   "context": "Wir sind eine große Familie.",
+   "have": []
+  },
+  {
+   "key": "tp.de_family.7",
+   "kind": "speaking_prompt",
+   "en": "Say your daughter is still young.",
+   "context": "Meine Tochter ist noch klein.",
+   "have": []
+  },
+  {
+   "key": "p.de_family_0",
+   "kind": "phrase",
+   "target": "Das ist mein Bruder.",
+   "tr": "Bu benim erkek kardeşim.",
+   "en": "This is my brother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_family_1",
+   "kind": "phrase",
+   "target": "Das ist meine Schwester.",
+   "tr": "Bu benim kız kardeşim.",
+   "en": "This is my sister.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_family_2",
+   "kind": "phrase",
+   "target": "Ich habe zwei Kinder.",
+   "tr": "İki çocuğum var.",
+   "en": "I have two children.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_family_3",
+   "kind": "phrase",
+   "target": "Meine Eltern wohnen in Izmir.",
+   "tr": "Anne babam İzmir'de yaşıyor.",
+   "en": "My parents live in Izmir.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_family_4",
+   "kind": "phrase",
+   "target": "Haben Sie Geschwister?",
+   "tr": "Kardeşiniz var mı?",
+   "en": "Do you have siblings?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_family_5",
+   "kind": "phrase",
+   "target": "Mein Mann arbeitet als Arzt.",
+   "tr": "Kocam doktor olarak çalışıyor.",
+   "en": "My husband works as a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_family_6",
+   "kind": "phrase",
+   "target": "Wir sind eine große Familie.",
+   "tr": "Biz kalabalık bir aileyiz.",
+   "en": "We're a big family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_family_7",
+   "kind": "phrase",
+   "target": "Meine Tochter ist noch klein.",
+   "tr": "Kızım henüz küçük.",
+   "en": "My daughter is still little.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.de_weather",
+   "kind": "grammar_rule",
+   "tr": "Hava durumu fiillerinde anlamsız özne 'es' asla düşmez.",
+   "en": "Weather verbs always need the dummy subject 'es' — it can never be dropped.",
+   "context": "Es regnet heute. / ✗ Regnet heute.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_weather.0",
+   "kind": "speaking_prompt",
+   "en": "Ask about today's weather.",
+   "context": "Wie ist das Wetter heute?",
+   "have": []
+  },
+  {
+   "key": "tp.de_weather.1",
+   "kind": "speaking_prompt",
+   "en": "Point out it's raining.",
+   "context": "Es regnet heute.",
+   "have": []
+  },
+  {
+   "key": "tp.de_weather.2",
+   "kind": "speaking_prompt",
+   "en": "Mention tomorrow's forecast.",
+   "context": "Morgen soll es sonnig sein.",
+   "have": []
+  },
+  {
+   "key": "tp.de_weather.3",
+   "kind": "speaking_prompt",
+   "en": "Complain about the cold.",
+   "context": "Es ist sehr kalt draußen.",
+   "have": []
+  },
+  {
+   "key": "tp.de_weather.4",
+   "kind": "speaking_prompt",
+   "en": "Warn them to take an umbrella.",
+   "context": "Nimm einen Regenschirm mit.",
+   "have": []
+  },
+  {
+   "key": "tp.de_weather.5",
+   "kind": "speaking_prompt",
+   "en": "Talk about summer heat.",
+   "context": "Im Sommer ist es hier heiß.",
+   "have": []
+  },
+  {
+   "key": "tp.de_weather.6",
+   "kind": "speaking_prompt",
+   "en": "Mention it's been snowing.",
+   "context": "Es schneit schon seit Stunden.",
+   "have": []
+  },
+  {
+   "key": "tp.de_weather.7",
+   "kind": "speaking_prompt",
+   "en": "Tell them to dress warmly.",
+   "context": "Zieh dich warm an.",
+   "have": []
+  },
+  {
+   "key": "p.de_weather_0",
+   "kind": "phrase",
+   "target": "Wie ist das Wetter heute?",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_weather_1",
+   "kind": "phrase",
+   "target": "Es regnet heute.",
+   "tr": "Bugün yağmur yağıyor.",
+   "en": "It's raining today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_weather_2",
+   "kind": "phrase",
+   "target": "Morgen soll es sonnig sein.",
+   "tr": "Yarın güneşli olacakmış.",
+   "en": "Tomorrow it's supposed to be sunny.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_weather_3",
+   "kind": "phrase",
+   "target": "Es ist sehr kalt draußen.",
+   "tr": "Dışarısı çok soğuk.",
+   "en": "It's very cold outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_weather_4",
+   "kind": "phrase",
+   "target": "Nimm einen Regenschirm mit.",
+   "tr": "Yanına şemsiye al.",
+   "en": "Take an umbrella with you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_weather_5",
+   "kind": "phrase",
+   "target": "Im Sommer ist es hier heiß.",
+   "tr": "Burada yazın hava sıcak oluyor.",
+   "en": "It's hot here in summer.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_weather_6",
+   "kind": "phrase",
+   "target": "Es schneit schon seit Stunden.",
+   "tr": "Saatlerdir kar yağıyor.",
+   "en": "It's been snowing for hours.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_weather_7",
+   "kind": "phrase",
+   "target": "Zieh dich warm an.",
+   "tr": "Sıkı giyin.",
+   "en": "Dress warmly.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Transport",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.de_transport",
+   "kind": "grammar_rule",
+   "tr": "Ayrılabilir fiil 'einsteigen' bölünür: önek ('ein') düz cümlede sona gider.",
+   "en": "The separable verb 'einsteigen' splits: the prefix ('ein') moves to the end of the clause.",
+   "context": "Ich steige hier ein. / ✗ Ich einsteige hier.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_transport.0",
+   "kind": "speaking_prompt",
+   "en": "Ask where the bus stop is.",
+   "context": "Wo ist die nächste Bushaltestelle?",
+   "have": []
+  },
+  {
+   "key": "tp.de_transport.1",
+   "kind": "speaking_prompt",
+   "en": "Ask which line goes downtown.",
+   "context": "Welche Linie fährt zum Zentrum?",
+   "have": []
+  },
+  {
+   "key": "tp.de_transport.2",
+   "kind": "speaking_prompt",
+   "en": "Say you're getting on here.",
+   "context": "Ich steige hier ein.",
+   "have": []
+  },
+  {
+   "key": "tp.de_transport.3",
+   "kind": "speaking_prompt",
+   "en": "Say where you're getting off.",
+   "context": "Ich steige an der nächsten Station aus.",
+   "have": []
+  },
+  {
+   "key": "tp.de_transport.4",
+   "kind": "speaking_prompt",
+   "en": "Buy a ticket.",
+   "context": "Einmal zum Hauptbahnhof, bitte.",
+   "have": []
+  },
+  {
+   "key": "tp.de_transport.5",
+   "kind": "speaking_prompt",
+   "en": "Ask if you need to change trains.",
+   "context": "Muss ich umsteigen?",
+   "have": []
+  },
+  {
+   "key": "tp.de_transport.6",
+   "kind": "speaking_prompt",
+   "en": "Notice the bus is late.",
+   "context": "Der Bus hat Verspätung.",
+   "have": []
+  },
+  {
+   "key": "tp.de_transport.7",
+   "kind": "speaking_prompt",
+   "en": "Ask how long the trip takes.",
+   "context": "Wie lange dauert die Fahrt?",
+   "have": []
+  },
+  {
+   "key": "p.de_transport_0",
+   "kind": "phrase",
+   "target": "Wo ist die nächste Bushaltestelle?",
+   "tr": "En yakın otobüs durağı nerede?",
+   "en": "Where's the nearest bus stop?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_transport_1",
+   "kind": "phrase",
+   "target": "Welche Linie fährt zum Zentrum?",
+   "tr": "Merkeze hangi hat gidiyor?",
+   "en": "Which line goes to the center?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_transport_2",
+   "kind": "phrase",
+   "target": "Ich steige hier ein.",
+   "tr": "Buradan bineceğim.",
+   "en": "I'm getting on here.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_transport_3",
+   "kind": "phrase",
+   "target": "Ich steige an der nächsten Station aus.",
+   "tr": "Bir sonraki durakta ineceğim.",
+   "en": "I'm getting off at the next stop.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_transport_4",
+   "kind": "phrase",
+   "target": "Einmal zum Hauptbahnhof, bitte.",
+   "tr": "Merkez gara bir bilet, lütfen.",
+   "en": "One ticket to the main station, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_transport_5",
+   "kind": "phrase",
+   "target": "Muss ich umsteigen?",
+   "tr": "Aktarma yapmam gerekiyor mu?",
+   "en": "Do I need to change trains?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_transport_6",
+   "kind": "phrase",
+   "target": "Der Bus hat Verspätung.",
+   "tr": "Otobüs gecikti.",
+   "en": "The bus is delayed.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_transport_7",
+   "kind": "phrase",
+   "target": "Wie lange dauert die Fahrt?",
+   "tr": "Yolculuk ne kadar sürüyor?",
+   "en": "How long does the trip take?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.de_emergency",
+   "kind": "grammar_rule",
+   "tr": "Resmi emirde ('Sie' ile) fiil başa gelir, 'Sie' hemen ardından.",
+   "en": "In the formal imperative (with 'Sie') the verb comes first, immediately followed by 'Sie'.",
+   "context": "Rufen Sie einen Krankenwagen! / ✗ Sie rufen einen Krankenwagen!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Call for urgent help.",
+   "context": "Hilfe! Rufen Sie einen Krankenwagen!",
+   "have": []
+  },
+  {
+   "key": "tp.de_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Explain you had an accident.",
+   "context": "Ich hatte einen Unfall.",
+   "have": []
+  },
+  {
+   "key": "tp.de_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "Ask someone to call the police.",
+   "context": "Rufen Sie bitte die Polizei.",
+   "have": []
+  },
+  {
+   "key": "tp.de_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "Say you need a doctor now.",
+   "context": "Ich brauche dringend einen Arzt.",
+   "have": []
+  },
+  {
+   "key": "tp.de_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "Ask where the hospital is.",
+   "context": "Wo ist das nächste Krankenhaus?",
+   "have": []
+  },
+  {
+   "key": "tp.de_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "Describe how you feel.",
+   "context": "Mir ist schwindelig.",
+   "have": []
+  },
+  {
+   "key": "tp.de_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "Ask someone to stay with you.",
+   "context": "Bitte bleiben Sie bei mir.",
+   "have": []
+  },
+  {
+   "key": "tp.de_emergency.7",
+   "kind": "speaking_prompt",
+   "en": "Stress that it's urgent.",
+   "context": "Es ist ein Notfall!",
+   "have": []
+  },
+  {
+   "key": "p.de_emergency_0",
+   "kind": "phrase",
+   "target": "Hilfe! Rufen Sie einen Krankenwagen!",
+   "tr": "İmdat! Bir ambulans çağırın!",
+   "en": "Help! Call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_emergency_1",
+   "kind": "phrase",
+   "target": "Ich hatte einen Unfall.",
+   "tr": "Bir kaza geçirdim.",
+   "en": "I had an accident.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_emergency_2",
+   "kind": "phrase",
+   "target": "Rufen Sie bitte die Polizei.",
+   "tr": "Lütfen polisi arayın.",
+   "en": "Please call the police.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_emergency_3",
+   "kind": "phrase",
+   "target": "Ich brauche dringend einen Arzt.",
+   "tr": "Acilen bir doktora ihtiyacım var.",
+   "en": "I urgently need a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_emergency_4",
+   "kind": "phrase",
+   "target": "Wo ist das nächste Krankenhaus?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where's the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_emergency_5",
+   "kind": "phrase",
+   "target": "Mir ist schwindelig.",
+   "tr": "Başım dönüyor.",
+   "en": "I feel dizzy.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_emergency_6",
+   "kind": "phrase",
+   "target": "Bitte bleiben Sie bei mir.",
+   "tr": "Lütfen yanımda kalın.",
+   "en": "Please stay with me.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_emergency_7",
+   "kind": "phrase",
+   "target": "Es ist ein Notfall!",
+   "tr": "Bu bir acil durum!",
+   "en": "It's an emergency!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.de_routine",
+   "kind": "grammar_rule",
+   "tr": "Dönüşlü zamir ('mich') çekimli fiilden hemen sonra gelir.",
+   "en": "The reflexive pronoun ('mich') goes directly after the conjugated verb.",
+   "context": "Ich dusche mich schnell. / ✗ Ich mich dusche schnell.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Say when you wake up.",
+   "context": "Ich stehe um sieben Uhr auf.",
+   "have": []
+  },
+  {
+   "key": "tp.de_routine.1",
+   "kind": "speaking_prompt",
+   "en": "Describe your morning wash.",
+   "context": "Ich dusche mich schnell.",
+   "have": []
+  },
+  {
+   "key": "tp.de_routine.2",
+   "kind": "speaking_prompt",
+   "en": "Say what comes next.",
+   "context": "Danach frühstücke ich.",
+   "have": []
+  },
+  {
+   "key": "tp.de_routine.3",
+   "kind": "speaking_prompt",
+   "en": "Say how you get to work.",
+   "context": "Ich fahre mit dem Bus zur Arbeit.",
+   "have": []
+  },
+  {
+   "key": "tp.de_routine.4",
+   "kind": "speaking_prompt",
+   "en": "Mention your midday break.",
+   "context": "Mittags mache ich eine Pause.",
+   "have": []
+  },
+  {
+   "key": "tp.de_routine.5",
+   "kind": "speaking_prompt",
+   "en": "Say what you cook in the evening.",
+   "context": "Abends koche ich für die Familie.",
+   "have": []
+  },
+  {
+   "key": "tp.de_routine.6",
+   "kind": "speaking_prompt",
+   "en": "Say when you usually sleep.",
+   "context": "Ich gehe meistens um elf Uhr ins Bett.",
+   "have": []
+  },
+  {
+   "key": "tp.de_routine.7",
+   "kind": "speaking_prompt",
+   "en": "Mention your weekend habit.",
+   "context": "Am Wochenende schlafe ich länger.",
+   "have": []
+  },
+  {
+   "key": "p.de_routine_0",
+   "kind": "phrase",
+   "target": "Ich stehe um sieben Uhr auf.",
+   "tr": "Saat yedide kalkıyorum.",
+   "en": "I get up at seven o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_routine_1",
+   "kind": "phrase",
+   "target": "Ich dusche mich schnell.",
+   "tr": "Hızlıca duş alıyorum.",
+   "en": "I take a quick shower.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_routine_2",
+   "kind": "phrase",
+   "target": "Danach frühstücke ich.",
+   "tr": "Ondan sonra kahvaltı yapıyorum.",
+   "en": "After that I have breakfast.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_routine_3",
+   "kind": "phrase",
+   "target": "Ich fahre mit dem Bus zur Arbeit.",
+   "tr": "İşe otobüsle gidiyorum.",
+   "en": "I go to work by bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_routine_4",
+   "kind": "phrase",
+   "target": "Mittags mache ich eine Pause.",
+   "tr": "Öğlen mola veriyorum.",
+   "en": "At noon I take a break.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_routine_5",
+   "kind": "phrase",
+   "target": "Abends koche ich für die Familie.",
+   "tr": "Akşam aile için yemek yapıyorum.",
+   "en": "In the evenings I cook for the family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_routine_6",
+   "kind": "phrase",
+   "target": "Ich gehe meistens um elf Uhr ins Bett.",
+   "tr": "Genellikle saat on birde yatıyorum.",
+   "en": "I usually go to bed at eleven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_routine_7",
+   "kind": "phrase",
+   "target": "Am Wochenende schlafe ich länger.",
+   "tr": "Hafta sonu daha uzun uyuyorum.",
+   "en": "On weekends I sleep longer.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_past_story",
+   "kind": "scenario_title",
+   "tr": "Geçmişte bir olay anlatmak",
+   "en": "Telling a story in the past",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.de_past_story",
+   "kind": "grammar_rule",
+   "tr": "Perfekt zamanı 'haben/sein' (ikinci sırada) + geçmiş ortaç ile kurulur; ortaç cümlenin en sonuna gider.",
+   "en": "The Perfekt past tense uses 'haben/sein' (in second position) plus a past participle, which goes to the very end of the clause.",
+   "context": "Ich bin gestern ins Kino gegangen. / ✗ Ich bin gestern gegangen ins Kino.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "Start telling what you did yesterday.",
+   "context": "Gestern bin ich ins Kino gegangen.",
+   "have": []
+  },
+  {
+   "key": "tp.de_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "Say who you ran into.",
+   "context": "Ich habe einen alten Freund getroffen.",
+   "have": []
+  },
+  {
+   "key": "tp.de_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "Say what you did together.",
+   "context": "Wir haben zusammen Kaffee getrunken.",
+   "have": []
+  },
+  {
+   "key": "tp.de_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "Say what happened after.",
+   "context": "Danach haben wir lange geredet.",
+   "have": []
+  },
+  {
+   "key": "tp.de_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "Say you liked the movie.",
+   "context": "Der Film hat mir sehr gefallen.",
+   "have": []
+  },
+  {
+   "key": "tp.de_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "Say it got late.",
+   "context": "Es ist spät geworden.",
+   "have": []
+  },
+  {
+   "key": "tp.de_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "Say how you got home.",
+   "context": "Ich bin müde nach Hause gekommen.",
+   "have": []
+  },
+  {
+   "key": "tp.de_past_story.7",
+   "kind": "speaking_prompt",
+   "en": "Wrap up the story.",
+   "context": "Es war ein schöner Abend.",
+   "have": []
+  },
+  {
+   "key": "p.de_past_story_0",
+   "kind": "phrase",
+   "target": "Gestern bin ich ins Kino gegangen.",
+   "tr": "Dün sinemaya gittim.",
+   "en": "Yesterday I went to the cinema.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_past_story_1",
+   "kind": "phrase",
+   "target": "Ich habe einen alten Freund getroffen.",
+   "tr": "Eski bir arkadaşımla karşılaştım.",
+   "en": "I ran into an old friend.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_past_story_2",
+   "kind": "phrase",
+   "target": "Wir haben zusammen Kaffee getrunken.",
+   "tr": "Birlikte kahve içtik.",
+   "en": "We had coffee together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_past_story_3",
+   "kind": "phrase",
+   "target": "Danach haben wir lange geredet.",
+   "tr": "Ondan sonra uzun uzun konuştuk.",
+   "en": "After that we talked for a long time.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_past_story_4",
+   "kind": "phrase",
+   "target": "Der Film hat mir sehr gefallen.",
+   "tr": "Film çok hoşuma gitti.",
+   "en": "I really liked the movie.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_past_story_5",
+   "kind": "phrase",
+   "target": "Es ist spät geworden.",
+   "tr": "Vakit geç oldu.",
+   "en": "It got late.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_past_story_6",
+   "kind": "phrase",
+   "target": "Ich bin müde nach Hause gekommen.",
+   "tr": "Yorgun bir şekilde eve geldim.",
+   "en": "I came home tired.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_past_story_7",
+   "kind": "phrase",
+   "target": "Es war ein schöner Abend.",
+   "tr": "Güzel bir akşamdı.",
+   "en": "It was a nice evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "Einen Kaffee, bitte.",
+   "have": []
+  },
+  {
+   "key": "tp.de_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "Ich habe eine Reservierung.",
+   "have": []
+  },
+  {
+   "key": "tp.de_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "Entschuldigung, wo ist der Bahnhof?",
+   "have": []
+  },
+  {
+   "key": "tp.de_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "Hallo, ich heiße Deniz.",
+   "have": []
+  },
+  {
+   "key": "p.de_a2_route_0",
+   "kind": "phrase",
+   "target": "Einen Kaffee, bitte.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_a2_route_1",
+   "kind": "phrase",
+   "target": "Ich habe eine Reservierung.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_a2_route_2",
+   "kind": "phrase",
+   "target": "Entschuldigung, wo ist der Bahnhof?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_a2_route_3",
+   "kind": "phrase",
+   "target": "Hallo, ich heiße Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.de_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "Ist Frühstück inklusive?",
+   "have": []
+  },
+  {
+   "key": "tp.de_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "Ich verstehe nicht.",
+   "have": []
+  },
+  {
+   "key": "tp.de_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "Ich suche eine Wohnung.",
+   "have": []
+  },
+  {
+   "key": "tp.de_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "Wie hoch ist die Miete?",
+   "have": []
+  },
+  {
+   "key": "tp.de_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "Kann ich mit Karte zahlen?",
+   "have": []
+  },
+  {
+   "key": "p.de_b1_solve_0",
+   "kind": "phrase",
+   "target": "Ist Frühstück inklusive?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_b1_solve_1",
+   "kind": "phrase",
+   "target": "Ich verstehe nicht.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_b1_solve_2",
+   "kind": "phrase",
+   "target": "Ich suche eine Wohnung.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_b1_solve_3",
+   "kind": "phrase",
+   "target": "Wie hoch ist die Miete?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.de_b1_solve_4",
+   "kind": "phrase",
+   "target": "Kann ich mit Karte zahlen?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.de_pro_interview",
+   "kind": "scenario_title",
+   "tr": "İş görüşmesi: Kendini tanıtmak",
+   "en": "Job interview: Introducing yourself",
+   "have": [
+    "tr",
+    "en",
+    "de"
+   ]
+  },
+  {
+   "key": "g.de_pro_interview",
+   "kind": "grammar_rule",
+   "tr": "Almancada hâlen devam eden bir iş için “seit” ve şimdiki zaman kullanılır. Süre belirten isim “seit”ten sonra Dativ alır.",
+   "en": null,
+   "context": "Ich arbeite seit drei Jahren im Projektmanagement. / ✗ Ich arbeite seit drei Jahre im Projektmanagement.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.de_pro_interview.0",
+   "kind": "speaking_prompt",
+   "en": "Erzählen Sie uns etwas über sich.",
+   "context": "Ich würde Ihnen gern einen Überblick über meinen beruflichen Werdegang geben.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_interview.1",
+   "kind": "speaking_prompt",
+   "en": "Welche Berufserfahrung bringen Sie mit?",
+   "context": "Ich arbeite seit drei Jahren im Projektmanagement.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_interview.2",
+   "kind": "speaking_prompt",
+   "en": "Was gefällt Ihnen an Ihrer Arbeit?",
+   "context": "Am meisten Freude macht es mir, auch unter Druck Lösungen zu finden.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_interview.3",
+   "kind": "speaking_prompt",
+   "en": "Haben Sie noch Fragen an uns?",
+   "context": "Könnten Sie mir mehr über das Team erzählen, in dem ich arbeiten würde?",
+   "have": []
+  },
+  {
+   "key": "p.de_pro_interview_0",
+   "kind": "phrase",
+   "target": "Ich würde Ihnen gern einen Überblick über meinen beruflichen Werdegang geben.",
+   "tr": "Geçmişimi sizinle özetlemek isterim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_interview_1",
+   "kind": "phrase",
+   "target": "Ich arbeite seit drei Jahren im Projektmanagement.",
+   "tr": "Son üç yıldır proje yönetiminde çalışıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_interview_2",
+   "kind": "phrase",
+   "target": "Am meisten Freude macht es mir, auch unter Druck Lösungen zu finden.",
+   "tr": "En çok keyif aldığım şey baskı altında sorun çözmek.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_interview_3",
+   "kind": "phrase",
+   "target": "Könnten Sie mir mehr über das Team erzählen, in dem ich arbeiten würde?",
+   "tr": "Katılacağım ekip hakkında biraz daha bilgi verebilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_interview_4",
+   "kind": "phrase",
+   "target": "Das ist eine gute Frage. Lassen Sie mich kurz überlegen.",
+   "tr": "Çok iyi bir soru — bir saniye düşüneyim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_interview_5",
+   "kind": "phrase",
+   "target": "Vielen Dank für Ihre Zeit. Ich freue mich auf Ihre Rückmeldung.",
+   "tr": "Vaktiniz için teşekkürler, sizden haber almayı dört gözle bekliyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.de_pro_meeting_request",
+   "kind": "scenario_title",
+   "tr": "Toplantı talep etmek",
+   "en": "Requesting a meeting",
+   "have": [
+    "tr",
+    "en",
+    "de"
+   ]
+  },
+  {
+   "key": "g.de_pro_meeting_request",
+   "kind": "grammar_rule",
+   "tr": "“Würde … Ihnen passen?” yapısında çekimli “würde” başta, mastar “passen” sonda yer alır; “Ihnen” Dativ biçimidir.",
+   "en": null,
+   "context": "Würde Donnerstag Ihnen passen? / ✗ Würde Donnerstag Sie passen?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.de_pro_meeting_request.0",
+   "kind": "speaking_prompt",
+   "en": "Vereinbaren Sie einen kurzen Abstimmungstermin mit einem Kollegen.",
+   "context": "Hätten Sie diese Woche eine Viertelstunde Zeit für eine kurze Abstimmung?",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_meeting_request.1",
+   "kind": "speaking_prompt",
+   "en": "Er fragt nach dem Anlass.",
+   "context": "Ich würde vor dem Start gern noch ein paar Punkte mit Ihnen besprechen.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_meeting_request.2",
+   "kind": "speaking_prompt",
+   "en": "Schlagen Sie einen konkreten Termin vor.",
+   "context": "Würde Ihnen Donnerstagnachmittag passen?",
+   "have": []
+  },
+  {
+   "key": "p.de_pro_meeting_0",
+   "kind": "phrase",
+   "target": "Hätten Sie diese Woche eine Viertelstunde Zeit für eine kurze Abstimmung?",
+   "tr": "Bu hafta senkron için on beş dakikanız var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_meeting_1",
+   "kind": "phrase",
+   "target": "Ich würde vor dem Start gern noch ein paar Punkte mit Ihnen besprechen.",
+   "tr": "Lansmandan önce birkaç şeyi sizinle konuşmak isterim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_meeting_2",
+   "kind": "phrase",
+   "target": "Würde Ihnen Donnerstagnachmittag passen?",
+   "tr": "Perşembe öğleden sonra sizin için uygun mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_meeting_3",
+   "kind": "phrase",
+   "target": "Verschieben wir es auf nächste Woche, wenn Ihnen das besser passt.",
+   "tr": "Daha kolay olacaksa gelecek haftaya erteleyelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_meeting_4",
+   "kind": "phrase",
+   "target": "Ich schicke Ihnen eine Kalendereinladung mit der Tagesordnung.",
+   "tr": "Gündemle birlikte bir takvim daveti göndereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_meeting_5",
+   "kind": "phrase",
+   "target": "Ich freue mich auf unser Gespräch.",
+   "tr": "Görüşmeyi dört gözle bekliyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.de_pro_update",
+   "kind": "scenario_title",
+   "tr": "Proje güncellemesi sunmak",
+   "en": "Presenting a project update",
+   "have": [
+    "tr",
+    "en",
+    "de"
+   ]
+  },
+  {
+   "key": "g.de_pro_update",
+   "kind": "grammar_rule",
+   "tr": "“um … zu” amaç bildirir; mastar grubunda “zu” gerekir.",
+   "en": null,
+   "context": "Wir brauchen Unterstützung, um den Termin einzuhalten. / ✗ Wir brauchen Unterstützung, um den Termin einhalten.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.de_pro_update.0",
+   "kind": "speaking_prompt",
+   "en": "Leiten Sie Ihren Bericht zum Projektstand ein.",
+   "context": "Wir liegen im Zeitplan und können den Termin voraussichtlich einhalten.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_update.1",
+   "kind": "speaking_prompt",
+   "en": "Sprechen Sie ein Problem an.",
+   "context": "Auf ein Hindernis möchte ich allerdings hinweisen.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_update.2",
+   "kind": "speaking_prompt",
+   "en": "Bitten Sie um die benötigte Unterstützung.",
+   "context": "Wir brauchen eine zusätzliche Kraft, um das Tempo zu halten.",
+   "have": []
+  },
+  {
+   "key": "p.de_pro_update_0",
+   "kind": "phrase",
+   "target": "Wir liegen im Zeitplan und können den Termin voraussichtlich einhalten.",
+   "tr": "Teslim tarihini yakalama konusunda yolundayız.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_update_1",
+   "kind": "phrase",
+   "target": "Auf ein Hindernis möchte ich allerdings hinweisen.",
+   "tr": "Belirtmek istediğim bir engel var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_update_2",
+   "kind": "phrase",
+   "target": "Wir brauchen eine zusätzliche Kraft, um das Tempo zu halten.",
+   "tr": "Hızı korumak için bir kaynağa daha ihtiyacımız var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_update_3",
+   "kind": "phrase",
+   "target": "Hier sehen Sie, was wir seit letzter Woche abgeschlossen haben.",
+   "tr": "Geçen haftadan bu yana tamamladıklarımız bunlar.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_update_4",
+   "kind": "phrase",
+   "target": "Gibt es noch Fragen, bevor ich zur nächsten Folie übergehe?",
+   "tr": "Bir sonraki slayda geçmeden önce sorusu olan var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_update_5",
+   "kind": "phrase",
+   "target": "Die Einzelheiten reiche ich schriftlich nach.",
+   "tr": "Detayları yazılı olarak takip edeceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.de_pro_feedback",
+   "kind": "scenario_title",
+   "tr": "Yapıcı geri bildirim vermek",
+   "en": "Giving constructive feedback",
+   "have": [
+    "tr",
+    "en",
+    "de"
+   ]
+  },
+  {
+   "key": "g.de_pro_feedback",
+   "kind": "grammar_rule",
+   "tr": "“Es wäre hilfreich, … zu …” nazik bir öneridir. Kötü örnek dilbilgisel olarak doğru olsa da emir gibi duyulur.",
+   "en": null,
+   "context": "Es wäre hilfreich, die Zahlen zu ergänzen. / ✗ Sie müssen die Zahlen ergänzen.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.de_pro_feedback.0",
+   "kind": "speaking_prompt",
+   "en": "Fragen Sie, ob es gerade passt, bevor Sie Feedback geben.",
+   "context": "Ich würde Ihnen gern eine Rückmeldung geben. Passt es gerade?",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_feedback.1",
+   "kind": "speaking_prompt",
+   "en": "Sprechen Sie behutsam einen Verbesserungsvorschlag an.",
+   "context": "Beim nächsten Mal wäre es hilfreich, die Zahlen gleich an den Anfang zu stellen.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_feedback.2",
+   "kind": "speaking_prompt",
+   "en": "Würdigen Sie etwas, das gut gelungen ist.",
+   "context": "Ich fand es wirklich gut, wie Sie auf die Fragen des Kunden eingegangen sind.",
+   "have": []
+  },
+  {
+   "key": "p.de_pro_feedback_0",
+   "kind": "phrase",
+   "target": "Ich würde Ihnen gern eine Rückmeldung geben. Passt es gerade?",
+   "tr": "Bir geri bildirim paylaşmak istiyorum, şimdi uygun mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_feedback_1",
+   "kind": "phrase",
+   "target": "Insgesamt war der Bericht gut, aber ein paar Punkte sind mir aufgefallen.",
+   "tr": "Genel olarak rapor sağlamdı ama birkaç şey dikkatimi çekti.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_feedback_2",
+   "kind": "phrase",
+   "target": "Beim nächsten Mal wäre es hilfreich, die Zahlen gleich an den Anfang zu stellen.",
+   "tr": "Bir dahaki sefere rakamları en başa koymak yardımcı olur.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_feedback_3",
+   "kind": "phrase",
+   "target": "Ich fand es wirklich gut, wie Sie auf die Fragen des Kunden eingegangen sind.",
+   "tr": "Müşterinin sorularını ele alış şeklini gerçekten takdir ettim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_feedback_4",
+   "kind": "phrase",
+   "target": "Wie beurteilen Sie selbst das Ergebnis?",
+   "tr": "Sonuç hakkında kendin ne düşünüyorsun?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_feedback_5",
+   "kind": "phrase",
+   "target": "Sprechen wir nach dem nächsten Meilenstein noch einmal darüber.",
+   "tr": "Bir sonraki kilometre taşından sonra tekrar konuşalım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.de_pro_deadline",
+   "kind": "scenario_title",
+   "tr": "Teslim tarihi için pazarlık",
+   "en": "Negotiating a deadline",
+   "have": [
+    "tr",
+    "en",
+    "de"
+   ]
+  },
+  {
+   "key": "g.de_pro_deadline",
+   "kind": "grammar_rule",
+   "tr": "“Es wäre möglich” yapısının ardından gelen mastar “zu” ile kurulur.",
+   "en": null,
+   "context": "Wäre es möglich, die Frist zu verlängern? / ✗ Wäre es möglich, die Frist verlängern?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.de_pro_deadline.0",
+   "kind": "speaking_prompt",
+   "en": "Weisen Sie frühzeitig auf das Risiko hin.",
+   "context": "Ich befürchte, dass wir es bis Freitag nicht schaffen.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_deadline.1",
+   "kind": "speaking_prompt",
+   "en": "Schlagen Sie einen anderen Termin vor.",
+   "context": "Wäre es möglich, die Frist auf Montag zu verschieben?",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_deadline.2",
+   "kind": "speaking_prompt",
+   "en": "Bieten Sie einen Kompromiss an.",
+   "context": "Alternativ könnten wir bis Freitag eine Teilversion liefern.",
+   "have": []
+  },
+  {
+   "key": "p.de_pro_deadline_0",
+   "kind": "phrase",
+   "target": "Ich befürchte, dass wir es bis Freitag nicht schaffen.",
+   "tr": "Cumaya yetiştiremeyeceğimizden endişeliyim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_deadline_1",
+   "kind": "phrase",
+   "target": "Wäre es möglich, die Frist auf Montag zu verschieben?",
+   "tr": "Teslim tarihini pazartesiye taşımak mümkün olur mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_deadline_2",
+   "kind": "phrase",
+   "target": "Alternativ könnten wir bis Freitag eine Teilversion liefern.",
+   "tr": "Bunun yerine cumaya kadar kısmi bir versiyon teslim edebiliriz.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_deadline_3",
+   "kind": "phrase",
+   "target": "Was bräuchten Sie von uns, damit das klappt?",
+   "tr": "Bunun olması için bizden neye ihtiyacınız olur?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_deadline_4",
+   "kind": "phrase",
+   "target": "Einigen wir uns jetzt auf einen realistischen Termin, damit wir später nicht noch einmal verschieben müssen.",
+   "tr": "Daha sonra tekrar kaymaktansa şimdi gerçekçi bir tarihte anlaşalım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_deadline_5",
+   "kind": "phrase",
+   "target": "Montag passt. Ich bestätige Ihnen das schriftlich.",
+   "tr": "Pazartesi uygun. Yazılı olarak teyit edeceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.de_pro_networking",
+   "kind": "scenario_title",
+   "tr": "Networking sohbeti",
+   "en": "Networking small talk",
+   "have": [
+    "tr",
+    "en",
+    "de"
+   ]
+  },
+  {
+   "key": "tp.de_pro_networking.0",
+   "kind": "speaking_prompt",
+   "en": "Beginnen Sie ein Gespräch bei einer Netzwerkveranstaltung.",
+   "context": "Was führt Sie zu dieser Konferenz?",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_networking.1",
+   "kind": "speaking_prompt",
+   "en": "Erklären Sie, warum Sie hier sind.",
+   "context": "Ich bin hauptsächlich hier, um neue Kooperationspartner zu finden.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_networking.2",
+   "kind": "speaking_prompt",
+   "en": "Beenden Sie das Gespräch freundlich.",
+   "context": "Hier ist meine Visitenkarte. Bleiben wir in Kontakt.",
+   "have": []
+  },
+  {
+   "key": "p.de_pro_network_0",
+   "kind": "phrase",
+   "target": "Was führt Sie zu dieser Konferenz?",
+   "tr": "Peki, seni bu konferansa getiren ne?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_network_1",
+   "kind": "phrase",
+   "target": "Ich bin hauptsächlich hier, um neue Kooperationspartner zu finden.",
+   "tr": "Daha çok yeni iş birlikleri araştırmak için buradayım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_network_2",
+   "kind": "phrase",
+   "target": "Das klingt interessant. Erzählen Sie mir mehr über Ihre Arbeit.",
+   "tr": "Bu ilginç, ne yaptığınızdan biraz daha bahseder misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_network_3",
+   "kind": "phrase",
+   "target": "Hier ist meine Visitenkarte. Bleiben wir in Kontakt.",
+   "tr": "İşte kartım — iletişimde kalalım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_network_4",
+   "kind": "phrase",
+   "target": "Ich schicke Ihnen im Anschluss eine Kontaktanfrage auf LinkedIn.",
+   "tr": "Bundan sonra sizinle LinkedIn'de bağlantı kuracağım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.de_pro_client_call",
+   "kind": "scenario_title",
+   "tr": "Müşteri şikayeti telefonu",
+   "en": "Handling a client complaint call",
+   "have": [
+    "tr",
+    "en",
+    "de"
+   ]
+  },
+  {
+   "key": "g.de_pro_client_call",
+   "kind": "grammar_rule",
+   "tr": "İşlevsel dil notu: Önce müşterinin duygusunu kabul edin, ardından incelemeye geçin. Kötü örnek dilbilgisel hata değil, duyguyu küçümseyen bir ifadedir.",
+   "en": null,
+   "context": "Ich verstehe Ihren Ärger. Ich schaue mir das sofort an. / ✗ Es gibt keinen Grund, sich zu ärgern.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.de_pro_client_call.0",
+   "kind": "speaking_prompt",
+   "en": "Der Kunde ist verärgert. Zeigen Sie zunächst Verständnis.",
+   "context": "Ich kann gut verstehen, wie ärgerlich das für Sie ist.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_client_call.1",
+   "kind": "speaking_prompt",
+   "en": "Beginnen Sie mit der Prüfung des Problems.",
+   "context": "Ich rufe kurz Ihr Kundenkonto auf und schaue mir das genauer an.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_client_call.2",
+   "kind": "speaking_prompt",
+   "en": "Kündigen Sie einen konkreten nächsten Schritt an.",
+   "context": "Ich erkläre Ihnen, was ich jetzt tun werde, um das Problem für Sie zu lösen.",
+   "have": []
+  },
+  {
+   "key": "p.de_pro_client_0",
+   "kind": "phrase",
+   "target": "Ich kann gut verstehen, wie ärgerlich das für Sie ist.",
+   "tr": "Bunun ne kadar sinir bozucu olduğunu anlıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_client_1",
+   "kind": "phrase",
+   "target": "Ich rufe kurz Ihr Kundenkonto auf und schaue mir das genauer an.",
+   "tr": "Hesabınızı açıp daha yakından bakayım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_client_2",
+   "kind": "phrase",
+   "target": "Ich sehe jetzt genau, wo der Fehler liegt.",
+   "tr": "İşlerin nerede yanlış gittiğini tam olarak görebiliyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_client_3",
+   "kind": "phrase",
+   "target": "Ich erkläre Ihnen, was ich jetzt tun werde, um das Problem für Sie zu lösen.",
+   "tr": "Bunu sizin için düzeltmek için yapacağım şey bu.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_client_4",
+   "kind": "phrase",
+   "target": "Ich kümmere mich persönlich darum und melde mich bis heute Abend bei Ihnen.",
+   "tr": "Gün sonuna kadar bizzat takip edeceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_client_5",
+   "kind": "phrase",
+   "target": "Vielen Dank für Ihre Geduld, während wir das geklärt haben.",
+   "tr": "Bunu çözerken gösterdiğiniz sabır için teşekkür ederim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.de_pro_raise",
+   "kind": "scenario_title",
+   "tr": "Zam görüşmesi",
+   "en": "Asking for a raise",
+   "have": [
+    "tr",
+    "en",
+    "de"
+   ]
+  },
+  {
+   "key": "g.de_pro_raise",
+   "kind": "grammar_rule",
+   "tr": "“Verantwortung übernehmen” kalıbında Perfekt “haben + übernommen” ile kurulur; “sein” kullanılmaz.",
+   "en": null,
+   "context": "Ich habe mehr Verantwortung übernommen. / ✗ Ich bin mehr Verantwortung übernommen.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.de_pro_raise.0",
+   "kind": "speaking_prompt",
+   "en": "Sprechen Sie das Thema direkt, aber höflich an.",
+   "context": "Ich würde gern über mein Gehalt sprechen.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_raise.1",
+   "kind": "speaking_prompt",
+   "en": "Begründen Sie Ihr Anliegen mit Fakten.",
+   "context": "Ich habe mich informiert: Mein Gehalt liegt derzeit unter dem marktüblichen Niveau für diese Position.",
+   "have": []
+  },
+  {
+   "key": "tp.de_pro_raise.2",
+   "kind": "speaking_prompt",
+   "en": "Nennen Sie einen konkreten Prozentsatz.",
+   "context": "Ich möchte eine Gehaltserhöhung von zehn Prozent ansprechen.",
+   "have": []
+  },
+  {
+   "key": "p.de_pro_raise_0",
+   "kind": "phrase",
+   "target": "Ich würde gern über mein Gehalt sprechen.",
+   "tr": "Maaşım hakkında konuşmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_raise_1",
+   "kind": "phrase",
+   "target": "Im vergangenen Jahr habe ich deutlich mehr Verantwortung übernommen.",
+   "tr": "Geçen yıl boyunca önemli ölçüde daha fazla sorumluluk üstlendim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_raise_2",
+   "kind": "phrase",
+   "target": "Ich habe mich informiert: Mein Gehalt liegt derzeit unter dem marktüblichen Niveau für diese Position.",
+   "tr": "Biraz araştırma yaptım ve pozisyonum şu anda piyasa oranının altında.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_raise_3",
+   "kind": "phrase",
+   "target": "Ich möchte eine Gehaltserhöhung von zehn Prozent ansprechen.",
+   "tr": "Yüzde on zam talep ediyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_raise_4",
+   "kind": "phrase",
+   "target": "Ich verstehe Ihr Anliegen. Ich brauche etwas Zeit, um das zu prüfen.",
+   "tr": "Sizi anlıyorum ve bunu değerlendirmek için biraz zamana ihtiyacım olacak.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.de_pro_raise_5",
+   "kind": "phrase",
+   "target": "Natürlich. Wann könnten wir noch einmal darüber sprechen?",
+   "tr": "Tabii ki, bunu ne zaman tekrar konuşabiliriz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.de_regentag",
+   "kind": "story_title",
+   "target": "Der Regentag",
+   "tr": "Yağmurlu Gün",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_regentag.0",
+   "kind": "story_sentence",
+   "target": "Heute regnet es den ganzen Tag.",
+   "tr": "Bugün bütün gün yağmur yağıyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_regentag.1",
+   "kind": "story_sentence",
+   "target": "Ich bleibe zu Hause und lese ein Buch.",
+   "tr": "Evde kalıp bir kitap okuyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_regentag.2",
+   "kind": "story_sentence",
+   "target": "Meine Katze schläft neben mir auf dem Sofa.",
+   "tr": "Kedim yanımda kanepede uyuyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_regentag.3",
+   "kind": "story_sentence",
+   "target": "Später koche ich eine warme Suppe.",
+   "tr": "Sonra sıcak bir çorba pişiriyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_regentag.4",
+   "kind": "story_sentence",
+   "target": "Regentage sind manchmal sehr gemütlich.",
+   "tr": "Yağmurlu günler bazen çok keyiflidir.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.de_reise",
+   "kind": "story_title",
+   "target": "Die Reise",
+   "tr": "Yolculuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_reise.0",
+   "kind": "story_sentence",
+   "target": "Nächsten Monat fliege ich nach Berlin.",
+   "tr": "Gelecek ay Berlin'e uçuyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_reise.1",
+   "kind": "story_sentence",
+   "target": "Ich habe noch nie eine große Stadt besucht.",
+   "tr": "Daha önce hiç büyük bir şehir ziyaret etmedim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_reise.2",
+   "kind": "story_sentence",
+   "target": "Meine Freundin zeigt mir die schönsten Orte.",
+   "tr": "Arkadaşım bana en güzel yerleri gösterecek.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_reise.3",
+   "kind": "story_sentence",
+   "target": "Wir wollen auch viele Fotos machen.",
+   "tr": "Ayrıca bir sürü fotoğraf çekmek istiyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_reise.4",
+   "kind": "story_sentence",
+   "target": "Ich bin sehr aufgeregt für die Reise.",
+   "tr": "Yolculuk için çok heyecanlıyım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.de_markt",
+   "kind": "story_title",
+   "target": "Der Wochenmarkt",
+   "tr": "Haftalık Pazar",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_markt.0",
+   "kind": "story_sentence",
+   "target": "Am Samstag gehe ich immer auf den Markt.",
+   "tr": "Cumartesi günleri her zaman pazara giderim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_markt.1",
+   "kind": "story_sentence",
+   "target": "Dort kaufe ich frisches Gemüse und Käse.",
+   "tr": "Orada taze sebze ve peynir alırım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_markt.2",
+   "kind": "story_sentence",
+   "target": "Die Verkäuferin kennt mich schon gut.",
+   "tr": "Satıcı beni artık iyi tanıyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_markt.3",
+   "kind": "story_sentence",
+   "target": "Wir sprechen kurz über das Wetter.",
+   "tr": "Kısaca hava durumu hakkında konuşuruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.de_markt.4",
+   "kind": "story_sentence",
+   "target": "Danach trage ich alles nach Hause.",
+   "tr": "Sonra her şeyi eve taşırım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.A.n",
+   "kind": "alphabet_letter_name",
+   "target": "A",
+   "tr": "A",
+   "en": "Ah",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.A.s",
+   "kind": "alphabet_sound",
+   "target": "A",
+   "tr": "a",
+   "context": "Apfel",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.A.m",
+   "kind": "alphabet_example",
+   "target": "Apfel",
+   "tr": "Elma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.B.n",
+   "kind": "alphabet_letter_name",
+   "target": "B",
+   "tr": "Be",
+   "en": "Bay",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.B.s",
+   "kind": "alphabet_sound",
+   "target": "B",
+   "tr": "b",
+   "context": "Buch",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.B.m",
+   "kind": "alphabet_example",
+   "target": "Buch",
+   "tr": "Kitap",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.C.n",
+   "kind": "alphabet_letter_name",
+   "target": "C",
+   "tr": "Tse",
+   "en": "Tsay",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.C.s",
+   "kind": "alphabet_sound",
+   "target": "C",
+   "tr": "ts/k",
+   "context": "Computer",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.C.m",
+   "kind": "alphabet_example",
+   "target": "Computer",
+   "tr": "Bilgisayar",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.D.n",
+   "kind": "alphabet_letter_name",
+   "target": "D",
+   "tr": "De",
+   "en": "Day",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.D.s",
+   "kind": "alphabet_sound",
+   "target": "D",
+   "tr": "d",
+   "context": "Dorf",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.D.m",
+   "kind": "alphabet_example",
+   "target": "Dorf",
+   "tr": "Köy",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.E.n",
+   "kind": "alphabet_letter_name",
+   "target": "E",
+   "tr": "E",
+   "en": "Eh",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.E.s",
+   "kind": "alphabet_sound",
+   "target": "E",
+   "tr": "e",
+   "context": "Ente",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.E.m",
+   "kind": "alphabet_example",
+   "target": "Ente",
+   "tr": "Ördek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.F.n",
+   "kind": "alphabet_letter_name",
+   "target": "F",
+   "tr": "Ef",
+   "en": "Eff",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.F.s",
+   "kind": "alphabet_sound",
+   "target": "F",
+   "tr": "f",
+   "context": "Fisch",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.F.m",
+   "kind": "alphabet_example",
+   "target": "Fisch",
+   "tr": "Balık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.G.n",
+   "kind": "alphabet_letter_name",
+   "target": "G",
+   "tr": "Ge",
+   "en": "Gay",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.G.s",
+   "kind": "alphabet_sound",
+   "target": "G",
+   "tr": "g",
+   "context": "Garten",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.G.m",
+   "kind": "alphabet_example",
+   "target": "Garten",
+   "tr": "Bahçe",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.H.n",
+   "kind": "alphabet_letter_name",
+   "target": "H",
+   "tr": "Ha",
+   "en": "Hah",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.H.s",
+   "kind": "alphabet_sound",
+   "target": "H",
+   "tr": "h",
+   "context": "Haus",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.H.m",
+   "kind": "alphabet_example",
+   "target": "Haus",
+   "tr": "Ev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.I.n",
+   "kind": "alphabet_letter_name",
+   "target": "I",
+   "tr": "İ",
+   "en": "Ee",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.I.s",
+   "kind": "alphabet_sound",
+   "target": "I",
+   "tr": "i",
+   "context": "Insel",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.I.m",
+   "kind": "alphabet_example",
+   "target": "Insel",
+   "tr": "Ada",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.J.n",
+   "kind": "alphabet_letter_name",
+   "target": "J",
+   "tr": "Yot",
+   "en": "Yot",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.J.s",
+   "kind": "alphabet_sound",
+   "target": "J",
+   "tr": "y",
+   "context": "Junge",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.J.m",
+   "kind": "alphabet_example",
+   "target": "Junge",
+   "tr": "Erkek çocuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.K.n",
+   "kind": "alphabet_letter_name",
+   "target": "K",
+   "tr": "Ka",
+   "en": "Kah",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.K.s",
+   "kind": "alphabet_sound",
+   "target": "K",
+   "tr": "k",
+   "context": "Katze",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.K.m",
+   "kind": "alphabet_example",
+   "target": "Katze",
+   "tr": "Kedi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.L.n",
+   "kind": "alphabet_letter_name",
+   "target": "L",
+   "tr": "El",
+   "en": "Ell",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.L.s",
+   "kind": "alphabet_sound",
+   "target": "L",
+   "tr": "l",
+   "context": "Liebe",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.L.m",
+   "kind": "alphabet_example",
+   "target": "Liebe",
+   "tr": "Aşk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.M.n",
+   "kind": "alphabet_letter_name",
+   "target": "M",
+   "tr": "Em",
+   "en": "Emm",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.M.s",
+   "kind": "alphabet_sound",
+   "target": "M",
+   "tr": "m",
+   "context": "Mond",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.M.m",
+   "kind": "alphabet_example",
+   "target": "Mond",
+   "tr": "Ay",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.N.n",
+   "kind": "alphabet_letter_name",
+   "target": "N",
+   "tr": "En",
+   "en": "Enn",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.N.s",
+   "kind": "alphabet_sound",
+   "target": "N",
+   "tr": "n",
+   "context": "Name",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.N.m",
+   "kind": "alphabet_example",
+   "target": "Name",
+   "tr": "İsim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.O.n",
+   "kind": "alphabet_letter_name",
+   "target": "O",
+   "tr": "O",
+   "en": "Oh",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.O.s",
+   "kind": "alphabet_sound",
+   "target": "O",
+   "tr": "o",
+   "context": "Ofen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.O.m",
+   "kind": "alphabet_example",
+   "target": "Ofen",
+   "tr": "Fırın",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.P.n",
+   "kind": "alphabet_letter_name",
+   "target": "P",
+   "tr": "Pe",
+   "en": "Pay",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.P.s",
+   "kind": "alphabet_sound",
+   "target": "P",
+   "tr": "p",
+   "context": "Papier",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.P.m",
+   "kind": "alphabet_example",
+   "target": "Papier",
+   "tr": "Kağıt",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.Q.n",
+   "kind": "alphabet_letter_name",
+   "target": "Q",
+   "tr": "Ku",
+   "en": "Koo",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.Q.s",
+   "kind": "alphabet_sound",
+   "target": "Q",
+   "tr": "kv",
+   "context": "Quelle",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.Q.m",
+   "kind": "alphabet_example",
+   "target": "Quelle",
+   "tr": "Kaynak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.R.n",
+   "kind": "alphabet_letter_name",
+   "target": "R",
+   "tr": "Er",
+   "en": "Air",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.R.s",
+   "kind": "alphabet_sound",
+   "target": "R",
+   "tr": "r",
+   "context": "Regen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.R.m",
+   "kind": "alphabet_example",
+   "target": "Regen",
+   "tr": "Yağmur",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.S.n",
+   "kind": "alphabet_letter_name",
+   "target": "S",
+   "tr": "Es",
+   "en": "Ess",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.S.s",
+   "kind": "alphabet_sound",
+   "target": "S",
+   "tr": "s/z",
+   "context": "Sonne",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.S.m",
+   "kind": "alphabet_example",
+   "target": "Sonne",
+   "tr": "Güneş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.T.n",
+   "kind": "alphabet_letter_name",
+   "target": "T",
+   "tr": "Te",
+   "en": "Tay",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.T.s",
+   "kind": "alphabet_sound",
+   "target": "T",
+   "tr": "t",
+   "context": "Tisch",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.T.m",
+   "kind": "alphabet_example",
+   "target": "Tisch",
+   "tr": "Masa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.U.n",
+   "kind": "alphabet_letter_name",
+   "target": "U",
+   "tr": "U",
+   "en": "Oo",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.U.s",
+   "kind": "alphabet_sound",
+   "target": "U",
+   "tr": "u",
+   "context": "Uhr",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.U.m",
+   "kind": "alphabet_example",
+   "target": "Uhr",
+   "tr": "Saat",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.V.n",
+   "kind": "alphabet_letter_name",
+   "target": "V",
+   "tr": "Fau",
+   "en": "Fow",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.V.s",
+   "kind": "alphabet_sound",
+   "target": "V",
+   "tr": "f",
+   "context": "Vogel",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.V.m",
+   "kind": "alphabet_example",
+   "target": "Vogel",
+   "tr": "Kuş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.W.n",
+   "kind": "alphabet_letter_name",
+   "target": "W",
+   "tr": "Ve",
+   "en": "Vay",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.W.s",
+   "kind": "alphabet_sound",
+   "target": "W",
+   "tr": "v",
+   "context": "Wasser",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.W.m",
+   "kind": "alphabet_example",
+   "target": "Wasser",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.X.n",
+   "kind": "alphabet_letter_name",
+   "target": "X",
+   "tr": "İks",
+   "en": "Iks",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.X.s",
+   "kind": "alphabet_sound",
+   "target": "X",
+   "tr": "ks",
+   "context": "Taxi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.X.m",
+   "kind": "alphabet_example",
+   "target": "Taxi",
+   "tr": "Taksi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.Y.n",
+   "kind": "alphabet_letter_name",
+   "target": "Y",
+   "tr": "Üpsilon",
+   "en": "Upsilon",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.Y.s",
+   "kind": "alphabet_sound",
+   "target": "Y",
+   "tr": "ü",
+   "context": "Yoga",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.Y.m",
+   "kind": "alphabet_example",
+   "target": "Yoga",
+   "tr": "Yoga",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.Z.n",
+   "kind": "alphabet_letter_name",
+   "target": "Z",
+   "tr": "Tset",
+   "en": "Tsett",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.Z.s",
+   "kind": "alphabet_sound",
+   "target": "Z",
+   "tr": "ts",
+   "context": "Zeit",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.Z.m",
+   "kind": "alphabet_example",
+   "target": "Zeit",
+   "tr": "Zaman",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.Ä.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ä",
+   "tr": "Umlaut A",
+   "en": "A-umlaut",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.Ä.s",
+   "kind": "alphabet_sound",
+   "target": "Ä",
+   "tr": "e",
+   "context": "Äpfel",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.Ä.m",
+   "kind": "alphabet_example",
+   "target": "Äpfel",
+   "tr": "Elmalar",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.Ö.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ö",
+   "tr": "Umlaut O",
+   "en": "O-umlaut",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.Ö.s",
+   "kind": "alphabet_sound",
+   "target": "Ö",
+   "tr": "ö",
+   "context": "Öl",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.Ö.m",
+   "kind": "alphabet_example",
+   "target": "Öl",
+   "tr": "Yağ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.Ü.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ü",
+   "tr": "Umlaut U",
+   "en": "U-umlaut",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.Ü.s",
+   "kind": "alphabet_sound",
+   "target": "Ü",
+   "tr": "ü",
+   "context": "Übung",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.Ü.m",
+   "kind": "alphabet_example",
+   "target": "Übung",
+   "tr": "Alıştırma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.ß.n",
+   "kind": "alphabet_letter_name",
+   "target": "ß",
+   "tr": "Eszett",
+   "en": "Eszett",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.de.ß.s",
+   "kind": "alphabet_sound",
+   "target": "ß",
+   "tr": "ss",
+   "context": "Straße",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.de.ß.m",
+   "kind": "alphabet_example",
+   "target": "Straße",
+   "tr": "Cadde",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.de.0.h",
+   "kind": "pronunciation_heard",
+   "target": "ie",
+   "tr": "uzun i",
+   "context": "iye diye okuma.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.de.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "Liebe, hier",
+   "tr": "liibe · hiir",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.de.1.h",
+   "kind": "pronunciation_heard",
+   "target": "ei",
+   "tr": "ay",
+   "context": "ie'nin tersi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.de.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "mein, nein",
+   "tr": "mayn · nayn",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.de.2.h",
+   "kind": "pronunciation_heard",
+   "target": "ch",
+   "tr": "ich = ince hışırtı · ach = kalın",
+   "context": "Türkçe ç değil.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.de.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "ich, Bach",
+   "tr": "ih · bah",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

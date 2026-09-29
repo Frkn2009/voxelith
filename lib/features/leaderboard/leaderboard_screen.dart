@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/models/achievements.dart';
 import '../../data/models/leaderboard.dart';
@@ -17,6 +19,8 @@ class LeaderboardScreen extends ConsumerStatefulWidget {
 }
 
 class _LeaderboardScreenState extends ConsumerState<LeaderboardScreen> {
+  I18n get _i18n => ref.read(i18nProvider);
+
   Future<List<LeaderboardEntry>>? request;
 
   @override
@@ -42,7 +46,7 @@ class _LeaderboardScreenState extends ConsumerState<LeaderboardScreen> {
     final email = ref.watch(authEmailProvider);
     final profile = ref.watch(sessionProvider);
     return Scaffold(
-      appBar: VoxelithAppBar(pageTitle: const Text('Haftalık sıralama')),
+      appBar: VoxelithAppBar(pageTitle: Text(_i18n.homeWeeklyLeaderboard)),
       body: SafeArea(
         child: email == null
             ? _signedOut(context, profile.dailyXp)
@@ -73,13 +77,13 @@ class _LeaderboardScreenState extends ConsumerState<LeaderboardScreen> {
               color: Voxelith.mintDark,
             ),
             const SizedBox(height: 14),
-            const Text(
-              'Sıralamaya katıl',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+            Text(
+              _i18n.joinLeaderboard,
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
             ),
             const SizedBox(height: 8),
             Text(
-              'Bu cihazda bugün $localXp XP kazandın. Haftalık Top 10 ve kendi sıran için hesabına giriş yap.',
+              _i18n.leaderboardSignedOutBody(localXp),
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Theme.of(context).colorScheme.onSurfaceVariant,
@@ -89,7 +93,7 @@ class _LeaderboardScreenState extends ConsumerState<LeaderboardScreen> {
             const SizedBox(height: 18),
             FilledButton(
               onPressed: () => context.push('/auth'),
-              child: const Text('Giriş yap'),
+              child: Text(_i18n.commonSignIn),
             ),
           ],
         ),
@@ -103,12 +107,12 @@ class _LeaderboardScreenState extends ConsumerState<LeaderboardScreen> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Text(
-            'Sıralama şu an alınamadı.',
-            style: TextStyle(fontWeight: FontWeight.w600),
+          Text(
+            _i18n.leaderboardLoadFailed,
+            style: const TextStyle(fontWeight: FontWeight.w600),
           ),
           const SizedBox(height: 12),
-          OutlinedButton(onPressed: _reload, child: const Text('Tekrar dene')),
+          OutlinedButton(onPressed: _reload, child: Text(_i18n.retryCta)),
         ],
       ),
     ),
@@ -128,10 +132,13 @@ class _LeaderboardScreenState extends ConsumerState<LeaderboardScreen> {
         physics: const AlwaysScrollableScrollPhysics(),
         padding: const EdgeInsets.fromLTRB(22, 16, 22, 30),
         children: [
-          Text('Bu hafta', style: Theme.of(context).textTheme.displayMedium),
+          Text(
+            _i18n.thisWeek,
+            style: Theme.of(context).textTheme.displayMedium,
+          ),
           const SizedBox(height: 5),
           Text(
-            'Pazartesi 00.00 UTC’de yenilenir',
+            _i18n.leaderboardResets,
             style: TextStyle(
               color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
@@ -143,10 +150,10 @@ class _LeaderboardScreenState extends ConsumerState<LeaderboardScreen> {
               children: [
                 const Icon(Icons.groups_outlined, color: Voxelith.mintDark),
                 const SizedBox(width: 12),
-                const Expanded(
+                Expanded(
                   child: Text(
-                    'Takım sıralaması ve davet kodu',
-                    style: TextStyle(fontWeight: FontWeight.w600),
+                    _i18n.teamRankingInvite,
+                    style: const TextStyle(fontWeight: FontWeight.w600),
                   ),
                 ),
                 Icon(
@@ -169,13 +176,13 @@ class _LeaderboardScreenState extends ConsumerState<LeaderboardScreen> {
                       size: 36,
                     ),
                     const SizedBox(height: 10),
-                    const Text(
-                      'İlk sırayı sen al.',
-                      style: TextStyle(fontWeight: FontWeight.w700),
+                    Text(
+                      _i18n.takeFirstPlace,
+                      style: const TextStyle(fontWeight: FontWeight.w700),
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      'XP kazandığında burada görüneceksin.',
+                      _i18n.leaderboardEmptyBody,
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.onSurfaceVariant,
                       ),
@@ -198,7 +205,7 @@ class _LeaderboardScreenState extends ConsumerState<LeaderboardScreen> {
             ),
           if (ownOutside != null) ...[
             const SizedBox(height: 22),
-            const Eyebrow('Senin sıran'),
+            Eyebrow(_i18n.yourRank),
             const SizedBox(height: 8),
             VoxelithCard(
               color: Voxelith.mintLight,
@@ -241,7 +248,9 @@ class _LeaderboardScreenState extends ConsumerState<LeaderboardScreen> {
           const SizedBox(width: 12),
           Expanded(
             child: Text(
-              entry.isMe ? '${entry.playerName} · Sen' : entry.playerName,
+              entry.isMe
+                  ? '${_i18n.playerDisplayName(entry.playerName)} · ${_i18n.you}'
+                  : _i18n.playerDisplayName(entry.playerName),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(

@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_ui.dart';
+import '../../core/legal_info.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/models/clan.dart';
 import '../../data/supabase/supa_service.dart';
+import '../../state/session.dart';
 import '../../ui/widgets.dart';
 
-class ClanChatScreen extends StatefulWidget {
+class ClanChatScreen extends ConsumerStatefulWidget {
   const ClanChatScreen({super.key});
 
   @override
-  State<ClanChatScreen> createState() => _ClanChatScreenState();
+  ConsumerState<ClanChatScreen> createState() => _ClanChatScreenState();
 }
 
-class _ClanChatScreenState extends State<ClanChatScreen> {
+class _ClanChatScreenState extends ConsumerState<ClanChatScreen> {
+  I18n get _i18n => ref.read(i18nProvider);
+
   static const _blockedKey = 'voxelith.clan.blocked_user_ids';
 
   final _input = TextEditingController();
@@ -44,7 +51,11 @@ class _ClanChatScreenState extends State<ClanChatScreen> {
     if (!mounted) return;
     setState(() => _blockedUserIds = updated);
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('$playerName artık mesajların gösterilmiyor.')),
+      SnackBar(
+        content: Text(
+          _i18n.blockedUserSnack(_i18n.playerDisplayName(playerName)),
+        ),
+      ),
     );
   }
 
@@ -82,17 +93,19 @@ class _ClanChatScreenState extends State<ClanChatScreen> {
           children: [
             ListTile(
               leading: const Icon(Icons.flag_outlined, color: Voxelith.coral),
-              title: const Text('Mesajı bildir'),
+              title: Text(_i18n.reportMessageTitle),
               onTap: () => Navigator.pop(ctx, 'report'),
             ),
             ListTile(
               leading: const Icon(Icons.block, color: Voxelith.coral),
-              title: Text('${m.playerName} kullanıcısını engelle'),
+              title: Text(
+                _i18n.blockUser(_i18n.playerDisplayName(m.playerName)),
+              ),
               onTap: () => Navigator.pop(ctx, 'block'),
             ),
             ListTile(
               leading: const Icon(Icons.close),
-              title: const Text('Vazgeç'),
+              title: Text(_i18n.cancelCta),
               onTap: () => Navigator.pop(ctx),
             ),
           ],
@@ -105,7 +118,7 @@ class _ClanChatScreenState extends State<ClanChatScreen> {
     } else if (action == 'report') {
       final uri = Uri(
         scheme: 'mailto',
-        path: 'destek@voxelith.app',
+        path: LegalInfo.supportEmail,
         query:
             'subject=${Uri.encodeComponent('VOXELITH Klan Sohbeti - içerik bildirimi')}'
             '&body=${Uri.encodeComponent('Bildirilen kullanıcı: ${m.playerName}\nMesaj:\n\n${m.text}')}',
@@ -116,13 +129,14 @@ class _ClanChatScreenState extends State<ClanChatScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final i18n = ref.watch(i18nProvider);
     return Scaffold(
       appBar: VoxelithAppBar(
-        pageTitle: const Text('Klan Sohbeti'),
+        pageTitle: Text(i18n.clanChatTitle),
         actions: [
           IconButton(
             icon: const Icon(Icons.refresh),
-            tooltip: 'Yenile',
+            tooltip: i18n.refreshTooltip,
             onPressed: () => setState(() => _request = Supa.clanMessages()),
           ),
         ],
@@ -138,10 +152,10 @@ class _ClanChatScreenState extends State<ClanChatScreen> {
                     return const Center(child: CircularProgressIndicator());
                   }
                   if (snapshot.hasError) {
-                    return const Center(
+                    return Center(
                       child: Text(
-                        'Mesajlar yüklenemedi. Yenilemeyi dene.',
-                        style: TextStyle(color: Voxelith.muted),
+                        i18n.clanChatLoadFailed,
+                        style: const TextStyle(color: Voxelith.muted),
                       ),
                     );
                   }
@@ -151,10 +165,10 @@ class _ClanChatScreenState extends State<ClanChatScreen> {
                       )
                       .toList();
                   if (messages.isEmpty) {
-                    return const Center(
+                    return Center(
                       child: Text(
-                        'Henüz mesaj yok. Klanına ilk mesajı sen at.',
-                        style: TextStyle(color: Voxelith.muted),
+                        i18n.clanChatEmpty,
+                        style: const TextStyle(color: Voxelith.muted),
                       ),
                     );
                   }
@@ -179,15 +193,19 @@ class _ClanChatScreenState extends State<ClanChatScreen> {
                               vertical: 10,
                             ),
                             decoration: BoxDecoration(
-                              color: m.isMe ? Voxelith.mintDark : Voxelith.cloud,
-                              borderRadius: BorderRadius.circular(Voxelith.radius),
+                              color: m.isMe
+                                  ? Voxelith.mintDark
+                                  : Voxelith.cloud,
+                              borderRadius: BorderRadius.circular(
+                                Voxelith.radius,
+                              ),
                             ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 if (!m.isMe)
                                   Text(
-                                    m.playerName,
+                                    i18n.playerDisplayName(m.playerName),
                                     style: const TextStyle(
                                       fontSize: 11,
                                       fontWeight: FontWeight.w700,
@@ -219,8 +237,8 @@ class _ClanChatScreenState extends State<ClanChatScreen> {
                     Expanded(
                       child: TextField(
                         controller: _input,
-                        decoration: const InputDecoration(
-                          hintText: 'Klanına bir şey yaz...',
+                        decoration: InputDecoration(
+                          hintText: i18n.clanChatHint,
                         ),
                         onSubmitted: (_) => _send(),
                       ),
@@ -229,7 +247,7 @@ class _ClanChatScreenState extends State<ClanChatScreen> {
                     IconButton.filled(
                       onPressed: _sending ? null : _send,
                       icon: const Icon(Icons.send),
-                      tooltip: 'Gönder',
+                      tooltip: i18n.sendTooltip,
                     ),
                   ],
                 ),

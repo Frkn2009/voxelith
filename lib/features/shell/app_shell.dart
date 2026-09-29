@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/features.dart';
 import '../../core/l10n/i18n.dart';
 import '../../core/theme/tokens.dart';
 import '../../state/session.dart';
@@ -17,21 +18,20 @@ class AppShell extends ConsumerWidget {
   const AppShell({super.key, required this.child});
   final Widget child;
 
+  // Canlı sohbet ücretli AI'a dayanır; kapalıyken sekmesi gösterilmez.
   static const _paths = [
     '/app',
     '/app/speak',
     '/app/games',
-    '/app/chat',
+    if (Features.paidCloudApis) '/app/chat',
     '/app/translate',
     '/app/you',
   ];
 
   int _indexFor(String location) {
-    if (location.startsWith('/app/speak')) return 1;
-    if (location.startsWith('/app/games')) return 2;
-    if (location.startsWith('/app/chat')) return 3;
-    if (location.startsWith('/app/translate')) return 4;
-    if (location.startsWith('/app/you')) return 5;
+    for (var i = _paths.length - 1; i > 0; i--) {
+      if (location.startsWith(_paths[i])) return i;
+    }
     return 0;
   }
 
@@ -55,12 +55,13 @@ class AppShell extends ConsumerWidget {
       color: Voxelith.coral,
       label: i18n.navGames,
     ),
-    (
-      icon: Icons.forum_outlined,
-      selected: Icons.forum,
-      color: Voxelith.coral,
-      label: i18n.navChat,
-    ),
+    if (Features.paidCloudApis)
+      (
+        icon: Icons.forum_outlined,
+        selected: Icons.forum,
+        color: Voxelith.coral,
+        label: i18n.navChat,
+      ),
     (
       icon: Icons.translate_outlined,
       selected: Icons.translate,

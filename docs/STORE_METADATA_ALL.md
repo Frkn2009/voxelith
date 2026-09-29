@@ -1,6 +1,12 @@
 # VOXELITH — Mağaza Metinleri (30 dil, kopyala-yapıştır hazır)
 
-`docs/STORE_METADATA_TR.md`'deki Türkçe metnin 29 dile çevirisi. Aynı kural
+`docs/STORE_METADATA_TR.md`'deki Türkçe metnin 29 dile çevirisi.
+
+> ⚠️ 29 Eylül 2026: TR ve EN'de ücretli AI/ses vaatleri kaldırıldı (bu özellikler
+> kapalı) ve alfabe maddesi düzeltildi ("her dil kendi
+> gerçek alfabesiyle" iddiası Çince (Pinyin) ve Japonca (yalnız Hiragana)
+> için doğru değildi). Diğer 28 dildeki aynı madde yeniden çevrilmeli — bkz.
+> `docs/AI_ICERIK_PROMPTLARI.md` §4. Aynı kural
 geçerli: burada olmayan bir özellik (ör. video mikro-dersler) hiçbir dilde
 mağaza metnine eklenmemeli. Karakter sınırları not edilmiştir (Google Play
 başlık 30, kısa açıklama 80; App Store başlık 30, alt başlık 30, anahtar
@@ -12,22 +18,22 @@ birleşik kelimeli dillerde) birebir çeviri sınırı hafifçe aşabilir, yayı
 
 ## English (en)
 
-**Google Play title:** `VOXELITH: Speak English`
+**Google Play title:** `VOXELITH: Speak Spanish`
 **Google Play short (80):** `1 min/day speaking practice. Spanish, German, French, Dutch. Real scenarios.`
 **Google Play long:**
 ```
-Learn VOXELITH by speaking — not memorizing.
+Learn a language by speaking — not memorizing.
 
 Every day, a short speaking scene made for you: listen, shadow, speak out
-loud. AI evaluates your pronunciation in real time and gives you instant
+loud. On-device smart pronunciation scoring gives you instant
 feedback. A full alphabet, vocabulary and grammar tracked by an FSRS-5
 spaced-repetition system bring words back right before you'd forget them.
 
 WHAT'S INSIDE:
 • Speaking practice: real-life scenes (café, airport, job interview, plus
   Spain-specific scenes like NIE appointments and renting a flat)
-• Full alphabet in 30 languages: Arabic, Hebrew, Russian, Chinese, Japanese,
-  Korean and more, each in its real script
+• Alphabet and pronunciation: Arabic, Hebrew, Russian, Korean, Hindi, Thai
+  and more in their own scripts; Hiragana for Japanese, Pinyin for Chinese
 • Reading library: short stories at your level, read aloud, in all 30
   languages
 • Smart repetition: FSRS-5 brings words back just before you'd forget them
@@ -35,29 +41,30 @@ WHAT'S INSIDE:
   struggle
 • Clans: weekly XP competition with friends
 • Daily goals, streaks, badges
-• VOXELITH Plus: unlimited speaking practice, no ads, premium natural voice,
-  live AI conversation partner
+• VOXELITH Plus: unlimited speaking practice, every language, no ads,
+  family plan for 4
 
 30 interface languages, pairable with any language you want to learn.
 Works offline — practice without internet, cloud sync is optional.
 
-Free tier: 60 seconds of speaking practice a day (extendable with a
+Free tier: 30 seconds of speaking practice a day (extendable with a
 rewarded video). Unlimited with VOXELITH Plus.
 
 Your privacy matters — no fake reviews or incentivized ratings, we grow
 on real feedback.
 ```
 
-**App Store title:** `VOXELITH: Speak English`
-**App Store subtitle:** `Spanish German AI Tutor`
+**App Store title:** `VOXELITH: Speak Spanish`
+**App Store subtitle:** `Speak Spanish & German`
 **App Store keywords (100):** `speaking,spanish,german,french,dutch,pronunciation,tutor,practice,travel,NIE`
 **App Store description:**
 ```
 Learn a language by speaking it. VOXELITH gives you a short speaking scene
-every day: listen, repeat (shadowing), speak in your own voice. AI
-evaluates your pronunciation instantly.
+every day: listen, repeat (shadowing), speak in your own voice. Smart
+pronunciation scoring gives instant feedback.
 
-Full alphabet in 30 languages, each in its real script. Reading practice
+Alphabet and pronunciation practice for 30 languages (Hiragana for
+Japanese, Pinyin for Chinese). Reading practice
 with short stories. FSRS-5 spaced repetition brings back what you learned
 right before you'd forget it.
 
@@ -67,8 +74,8 @@ apartment — not tourist Spanish, the Spanish you actually need.
 Form a clan with friends, join the weekly XP race. Keep your streak with
 daily goals.
 
-VOXELITH Plus: unlimited speaking practice, ad-free, premium natural voice,
-free-form conversation with a live AI partner.
+VOXELITH Plus: unlimited speaking practice, every language, ad-free and a
+family plan for 4.
 
 Works offline. Your data is yours — we grow on real feedback, never
 purchased reviews.
@@ -110,7 +117,7 @@ QUÉ INCLUYE:
 aprender. Funciona sin conexión — practica sin internet, la sincronización
 en la nube es opcional.
 
-Gratis: 60 segundos de práctica oral al día (ampliable con un vídeo
+Gratis: 30 segundos de práctica oral al día (ampliable con un vídeo
 recompensado). Ilimitado con VOXELITH Plus.
 
 Tu privacidad nos importa — no usamos reseñas falsas ni puntuaciones
@@ -176,7 +183,7 @@ INHALT:
 30 Oberflächensprachen, kombinierbar mit jeder Sprache, die du lernen
 willst. Funktioniert offline — üben ohne Internet, Cloud-Sync ist optional.
 
-Kostenlos: 60 Sekunden Sprechpraxis pro Tag (erweiterbar mit
+Kostenlos: 30 Sekunden Sprechpraxis pro Tag (erweiterbar mit
 Belohnungsvideo). Unbegrenzt mit VOXELITH Plus.
 
 Deine Privatsphäre ist uns wichtig — keine gefälschten Bewertungen, wir
@@ -246,7 +253,7 @@ AU PROGRAMME :
 Fonctionne hors ligne — pratique sans internet, la synchro cloud est
 optionnelle.
 
-Gratuit : 60 secondes de pratique orale par jour (extensible avec une
+Gratuit : 30 secondes de pratique orale par jour (extensible avec une
 vidéo récompensée). Illimité avec VOXELITH Plus.
 
 Ta vie privée compte pour nous — pas de faux avis ni de notes
@@ -312,7 +319,7 @@ WAT ZIT ERIN:
 30 interfacetalen, te combineren met elke taal die je wilt leren. Werkt
 offline — oefen zonder internet, cloudsync is optioneel.
 
-Gratis: 60 seconden spreekoefening per dag (uit te breiden met een
+Gratis: 30 seconden spreekoefening per dag (uit te breiden met een
 beloningsvideo). Onbeperkt met VOXELITH Plus.
 
 Jouw privacy is belangrijk voor ons — geen nepreviews of gestimuleerde
@@ -375,7 +382,7 @@ met gekochte reviews.
 ٣٠ لغة واجهة، يمكن دمجها مع أي لغة تريد تعلّمها. يعمل بلا إنترنت —
 تدرّب دون اتصال، والمزامنة السحابية اختيارية.
 
-مجانًا: ٦٠ ثانية تمرين محادثة يوميًا (قابلة للتمديد بمشاهدة فيديو
+مجانًا: ٣٠ ثانية تمرين محادثة يوميًا (قابلة للتمديد بمشاهدة فيديو
 مكافأة). غير محدودة مع VOXELITH Plus.
 
 خصوصيتك تهمنا — لا تقييمات مزيفة ولا حوافز مقابل التقييم، ننمو
@@ -442,7 +449,7 @@ O QUE TEM:
 aprender. Funciona offline — pratique sem internet, a sincronização em
 nuvem é opcional.
 
-Grátis: 60 segundos de prática de fala por dia (ampliável com vídeo
+Grátis: 30 segundos de prática de fala por dia (ampliável com vídeo
 recompensado). Ilimitado com VOXELITH Plus.
 
 Sua privacidade é importante — sem avaliações falsas ou incentivadas,
@@ -513,7 +520,7 @@ COSA C'È:
 imparare. Funziona offline — esercitati senza internet, la sincro cloud
 è opzionale.
 
-Gratis: 60 secondi di pratica orale al giorno (estendibile con un video
+Gratis: 30 secondi di pratica orale al giorno (estendibile con un video
 premiato). Illimitato con VOXELITH Plus.
 
 La tua privacy conta — niente recensioni false o valutazioni
@@ -581,7 +588,7 @@ mai con recensioni comprate.
 30 языков интерфейса, можно сочетать с любым изучаемым языком. Работает
 офлайн — занимайся без интернета, облачная синхронизация опциональна.
 
-Бесплатно: 60 секунд разговорной практики в день (можно увеличить,
+Бесплатно: 30 секунд разговорной практики в день (можно увеличить,
 посмотрев видео за награду). Без ограничений с VOXELITH Plus.
 
 Твоя конфиденциальность важна — никаких поддельных отзывов или
@@ -643,7 +650,7 @@ AI实时评估你的发音并立即给出反馈。基于FSRS-5的间隔重复系
 30种界面语言，可与任何你想学的语言搭配。支持离线使用——无需网络也能
 练习，云同步为可选功能。
 
-免费版：每天60秒口语练习（可通过观看奖励视频延长）。VOXELITH Plus 无限制。
+免费版：每天30秒口语练习（可通过观看奖励视频延长）。VOXELITH Plus 无限制。
 
 我们重视你的隐私——不使用虚假评论或诱导性评分，靠真实反馈成长。
 ```
@@ -701,7 +708,7 @@ VOXELITHは「話すこと」で学ぶ——丸暗記ではなく。
 30のインターフェース言語、学びたい言語と自由に組み合わせ可能。
 オフライン対応——インターネットなしでも練習でき、クラウド同期は任意。
 
-無料：1日60秒の会話練習（リワード動画視聴で延長可能）。VOXELITH Plusなら
+無料：1日30秒の会話練習（リワード動画視聴で延長可能）。VOXELITH Plusなら
 無制限。
 
 プライバシーを大切にしています——偽レビューや誘導的な評価は一切使わ
@@ -763,7 +770,7 @@ FSRS-5 간격 반복 시스템이 잊기 직전에 정확히 단어를 다시 �
 30개 인터페이스 언어, 배우고 싶은 어떤 언어와도 조합 가능. 오프라인
 작동 — 인터넷 없이도 연습, 클라우드 동기화는 선택 사항.
 
-무료: 하루 60초 말하기 연습(보상형 영상으로 연장 가능). VOXELITH Plus로
+무료: 하루 30초 말하기 연습(보상형 영상으로 연장 가능). VOXELITH Plus로
 무제한.
 
 당신의 개인정보를 소중히 여깁니다 — 가짜 리뷰나 유도된 평점 없이,
@@ -833,7 +840,7 @@ CO ZAWIERA:
 się uczyć. Działa offline — ćwicz bez internetu, synchronizacja w
 chmurze jest opcjonalna.
 
-Za darmo: 60 sekund ćwiczeń mówienia dziennie (można przedłużyć,
+Za darmo: 30 sekund ćwiczeń mówienia dziennie (można przedłużyć,
 oglądając nagradzane wideo). Bez limitu z VOXELITH Plus.
 
 Twoja prywatność ma znaczenie — żadnych fałszywych recenzji ani
@@ -898,7 +905,7 @@ VAD SOM INGÅR:
 30 gränssnittsspråk, kombinerbara med vilket språk du vill lära dig.
 Fungerar offline — öva utan internet, molnsynk är valfritt.
 
-Gratis: 60 sekunder talövning per dag (kan förlängas med en
+Gratis: 30 sekunder talövning per dag (kan förlängas med en
 belöningsvideo). Obegränsat med VOXELITH Plus.
 
 Din integritet är viktig för oss — inga falska recensioner eller
@@ -962,7 +969,7 @@ HVAD DU FÅR:
 30 grænsefladesprog, kan kombineres med ethvert sprog, du vil lære.
 Virker offline — øv uden internet, cloud-synk er valgfrit.
 
-Gratis: 60 sekunders taletræning om dagen (kan forlænges med en
+Gratis: 30 sekunders taletræning om dagen (kan forlænges med en
 belønningsvideo). Ubegrænset med VOXELITH Plus.
 
 Dit privatliv betyder noget for os — ingen falske anmeldelser eller
@@ -1027,7 +1034,7 @@ HVA DU FÅR:
 30 grensesnittspråk, kan kombineres med hvilket som helst språk du vil
 lære. Fungerer offline — øv uten internett, skysynk er valgfritt.
 
-Gratis: 60 sekunder taletrening per dag (kan utvides med en
+Gratis: 30 sekunder taletrening per dag (kan utvides med en
 belønningsvideo). Ubegrenset med VOXELITH Plus.
 
 Personvernet ditt betyr noe for oss — ingen falske anmeldelser eller
@@ -1095,7 +1102,7 @@ MITÄ SISÄLTYY:
 kieleen. Toimii offline — harjoittele ilman internetiä, pilvisynkronointi
 on valinnainen.
 
-Ilmaiseksi: 60 sekuntia puheharjoitusta päivässä (laajennettavissa
+Ilmaiseksi: 30 sekuntia puheharjoitusta päivässä (laajennettavissa
 palkintovideolla). Rajattomasti VOXELITH Plussalla.
 
 Yksityisyytesi on meille tärkeää — ei väärennettyjä arvosteluja tai
@@ -1166,7 +1173,7 @@ emme koskaan ostetuilla arvosteluilla.
 Λειτουργεί εκτός σύνδεσης — εξασκήσου χωρίς ίντερνετ, ο συγχρονισμός
 cloud είναι προαιρετικός.
 
-Δωρεάν: 60 δευτερόλεπτα εξάσκησης ομιλίας ημερησίως (επεκτείνεται με
+Δωρεάν: 30 δευτερόλεπτα εξάσκησης ομιλίας ημερησίως (επεκτείνεται με
 βίντεο ανταμοιβής). Απεριόριστο με το VOXELITH Plus.
 
 Το απόρρητό σου μας ενδιαφέρει — καμία ψεύτικη κριτική ή παρακινημένη
@@ -1235,7 +1242,7 @@ CO JE UVNITŘ:
 učit. Funguje offline — cvič bez internetu, cloudová synchronizace je
 volitelná.
 
-Zdarma: 60 sekund mluvní praxe denně (lze prodloužit odměňovaným
+Zdarma: 30 sekund mluvní praxe denně (lze prodloužit odměňovaným
 videem). Neomezeně s VOXELITH Plus.
 
 Tvé soukromí je pro nás důležité — žádné falešné recenze ani
@@ -1305,7 +1312,7 @@ CE CONȚINE:
 Funcționează offline — exersează fără internet, sincronizarea cloud e
 opțională.
 
-Gratuit: 60 de secunde de practică vorbire pe zi (extensibil cu un
+Gratuit: 30 de secunde de practică vorbire pe zi (extensibil cu un
 videoclip recompensat). Nelimitat cu VOXELITH Plus.
 
 Confidențialitatea ta contează — fără recenzii false sau evaluări
@@ -1375,7 +1382,7 @@ MIT KAPSZ:
 30 felületnyelv, bármely tanulni kívánt nyelvvel kombinálható. Offline
 is működik — gyakorolj internet nélkül, a felhőszinkron opcionális.
 
-Ingyenes: napi 60 másodperc beszédgyakorlás (jutalomvideóval
+Ingyenes: napi 30 másodperc beszédgyakorlás (jutalomvideóval
 hosszabbítható). Korlátlan a VOXELITH Plusszal.
 
 Fontos számunkra a magánéleted — nincs hamis értékelés vagy ösztönzött
@@ -1443,7 +1450,7 @@ VOXELITH से बोलकर सीखें — रटकर नहीं।
 हैं। ऑफ़लाइन काम करता है — इंटरनेट के बिना अभ्यास करें, क्लाउड सिंक
 वैकल्पिक है।
 
-मुफ़्त: रोज़ाना 60 सेकंड बोलने का अभ्यास (रिवॉर्ड वीडियो से बढ़ाया जा
+मुफ़्त: रोज़ाना 30 सेकंड बोलने का अभ्यास (रिवॉर्ड वीडियो से बढ़ाया जा
 सकता है)। VOXELITH Plus के साथ असीमित।
 
 आपकी निजता हमारे लिए मायने रखती है — कोई नकली समीक्षा या प्रोत्साहित
@@ -1511,7 +1518,7 @@ VOXELITH Plus: असीमित बोलने का अभ्यास, ब
 ออฟไลน์ได้ — ฝึกได้โดยไม่ต้องใช้อินเทอร์เน็ต การซิงค์คลาวด์เป็นตัวเลือก
 เสริม
 
-ฟรี: ฝึกพูด 60 วินาทีต่อวัน (ขยายเวลาได้ด้วยวิดีโอรางวัล) ไม่จำกัดด้วย
+ฟรี: ฝึกพูด 30 วินาทีต่อวัน (ขยายเวลาได้ด้วยวิดีโอรางวัล) ไม่จำกัดด้วย
 VOXELITH Plus
 
 ความเป็นส่วนตัวของคุณสำคัญกับเรา — ไม่มีรีวิวปลอมหรือคะแนนที่ถูกกระตุ้น
@@ -1576,7 +1583,7 @@ CÓ GÌ BÊN TRONG:
 học. Hoạt động ngoại tuyến — luyện tập không cần internet, đồng bộ
 đám mây là tùy chọn.
 
-Miễn phí: 60 giây luyện nói mỗi ngày (kéo dài thêm bằng video thưởng).
+Miễn phí: 30 giây luyện nói mỗi ngày (kéo dài thêm bằng video thưởng).
 Không giới hạn với VOXELITH Plus.
 
 Quyền riêng tư của bạn rất quan trọng với chúng tôi — không có đánh
@@ -1648,7 +1655,7 @@ YANG ADA DI DALAM:
 kamu pelajari. Bekerja offline — berlatih tanpa internet, sinkronisasi
 cloud bersifat opsional.
 
-Gratis: 60 detik latihan bicara per hari (bisa diperpanjang dengan
+Gratis: 30 detik latihan bicara per hari (bisa diperpanjang dengan
 video berhadiah). Tanpa batas dengan VOXELITH Plus.
 
 Privasimu penting bagi kami — tidak ada ulasan palsu atau rating yang
@@ -1717,7 +1724,7 @@ nyata, tidak pernah dengan ulasan yang dibeli.
 вивчати. Працює офлайн — тренуйся без інтернету, хмарна синхронізація
 опціональна.
 
-Безкоштовно: 60 секунд розмовної практики щодня (можна продовжити,
+Безкоштовно: 30 секунд розмовної практики щодня (можна продовжити,
 переглянувши відео за винагороду). Необмежено з VOXELITH Plus.
 
 Твоя приватність важлива для нас — жодних фальшивих відгуків чи
@@ -1781,7 +1788,7 @@ VOXELITH Plus: необмежена розмовна практика, без р
 30 שפות ממשק, ניתנות לשילוב עם כל שפה שתרצה ללמוד. עובד ללא חיבור
 לאינטרנט — תרגל בלי אינטרנט, סנכרון ענן הוא אופציונלי.
 
-חינם: 60 שניות תרגול דיבור ביום (ניתן להאריך עם סרטון תגמול). ללא
+חינם: 30 שניות תרגול דיבור ביום (ניתן להאריך עם סרטון תגמול). ללא
 הגבלה עם VOXELITH Plus.
 
 הפרטיות שלך חשובה לנו — אין ביקורות מזויפות או דירוגים מתומרצים,
@@ -1846,7 +1853,7 @@ VOXELITH Plus: תרגול דיבור ללא הגבלה, ללא פרסומות, �
 آفلاین کار می‌کند — بدون اینترنت تمرین کن، همگام‌سازی ابری اختیاری
 است.
 
-رایگان: ۶۰ ثانیه تمرین صحبت در روز (با تماشای ویدیوی پاداش قابل تمدید
+رایگان: ۳۰ ثانیه تمرین صحبت در روز (با تماشای ویدیوی پاداش قابل تمدید
 است). نامحدود با VOXELITH Plus.
 
 حریم خصوصی تو برای ما مهم است — بدون نظرات جعلی یا امتیازدهی
@@ -1914,7 +1921,7 @@ Lugha 30 za kiolesura, zinaweza kuunganishwa na lugha yoyote unayotaka
 kujifunza. Inafanya kazi bila mtandao — fanya mazoezi bila intaneti,
 usawazishaji wa wingu ni wa hiari.
 
-Bure: sekunde 60 za mazoezi ya kuzungumza kwa siku (inaweza kuongezwa
+Bure: sekunde 30 za mazoezi ya kuzungumza kwa siku (inaweza kuongezwa
 kwa video ya zawadi). Bila kikomo na VOXELITH Plus.
 
 Faragha yako ni muhimu kwetu — hakuna maoni bandia au ukadiriaji wa

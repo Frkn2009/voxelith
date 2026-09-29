@@ -10,12 +10,14 @@ class FakeBillingService implements BillingService {
 
   @override
   Future<List<BillingProduct>> fetchProducts() async {
-    return const [
-      voxelithPlusMonthly,
-      voxelithPlusYearly,
-      voxelithPlusFamily,
-      voxelithBusinessMonthly,
-      voxelithBusinessYearly,
+    // Geliştirme/test için referans fiyatlar (docs/ECONOMICS.md). Gerçek
+    // fiyat her zaman mağazadan gelir (RevenueCatBillingService).
+    return [
+      voxelithPlusMonthly.withPrice('\$5.99'),
+      voxelithPlusYearly.withPrice('\$64.99'),
+      voxelithPlusFamily.withPrice('\$199.99'),
+      voxelithBusinessMonthly.withPrice('\$17.49'),
+      voxelithBusinessYearly.withPrice('\$199.99'),
     ];
   }
 

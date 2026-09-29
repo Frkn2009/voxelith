@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:in_app_review/in_app_review.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/features.dart';
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/content/catalog.dart';
 import '../../data/events/weekly_event.dart';
@@ -14,6 +17,12 @@ import '../onboarding/coach_tour.dart';
 /// Uygulamayı ilk kez açan kullanıcıya bir kere gösterilen, gerçek ana
 /// sayfa öğelerini işaret eden interaktif tanıtım turu.
 const _tourSeenPrefsKey = 'home_tour_seen_v1';
+const _reviewAskedPrefsKey = 'review_asked_at_streak_v1';
+
+/// Sistemin kendi puan penceresi bu seri günlerinde (bir kez) istenir. Ön
+/// "memnun musun?" sorusu yok — Apple 5.6.1 / Google Play buna izin vermez.
+/// Sistem pencereyi yılda birkaç kezle sınırlar; çağırmak zararsızdır.
+const _reviewStreakMilestones = [3, 14, 45];
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -34,9 +43,29 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     WidgetsBinding.instance.addPostFrameCallback((_) => _maybeStartTour());
   }
 
+  Future<void> _maybeAskForReview(SharedPreferences prefs) async {
+    final streak = ref.read(sessionProvider).streak;
+    final asked = prefs.getInt(_reviewAskedPrefsKey) ?? 0;
+    final milestone = _reviewStreakMilestones.lastWhere(
+      (m) => streak >= m,
+      orElse: () => 0,
+    );
+    if (milestone == 0 || milestone <= asked) return;
+    await prefs.setInt(_reviewAskedPrefsKey, milestone);
+    try {
+      final review = InAppReview.instance;
+      if (await review.isAvailable()) await review.requestReview();
+    } catch (_) {
+      // Desteklenmeyen platform (web vb.) — sessizce geç.
+    }
+  }
+
   Future<void> _maybeStartTour() async {
     final prefs = await SharedPreferences.getInstance();
-    if (prefs.getBool(_tourSeenPrefsKey) == true) return;
+    if (prefs.getBool(_tourSeenPrefsKey) == true) {
+      await _maybeAskForReview(prefs);
+      return;
+    }
     if (!mounted) return;
     await prefs.setBool(_tourSeenPrefsKey, true);
     if (!mounted) return;
@@ -99,7 +128,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             children: [
               Expanded(
                 child: Text(
-                  'Day ${p.streak.clamp(1, 999)} · ${i18n.minutesLeft((p.dailyGoalMin).clamp(1, 60))}',
+                  '${i18n.homeDayNumber(p.streak.clamp(1, 999))} · ${i18n.minutesLeft((p.dailyGoalMin).clamp(1, 60))}',
                   style: Theme.of(context).textTheme.displayMedium,
                 ),
               ),
@@ -154,7 +183,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     ),
                     const Spacer(),
                     Text(
-                      p.xpRank.label,
+                      i18n.xpRankLabel(p.xpRank),
                       style: const TextStyle(
                         color: Voxelith.mintDark,
                         fontWeight: FontWeight.w600,
@@ -204,7 +233,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        WeeklyEvent.current().title,
+                        i18n.weeklyEventName(
+                          WeeklyEvent.current().language.label(p.uiLang),
+                        ),
                         style: const TextStyle(fontWeight: FontWeight.w700),
                       ),
                       Text(
@@ -333,7 +364,15 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           const SizedBox(height: 12),
           Row(
             children: [
-              _stat(VoxelithIcon.fire, '${p.streak}', i18n.streak, Voxelith.terr),
+              _stat(
+                VoxelithIcon.fire,
+                // 🧊 = kaçırılan bir günü kapatacak seri koruma hakkı.
+                p.streakFreezes > 0
+                    ? '${p.streak} · 🧊${p.streakFreezes}'
+                    : '${p.streak}',
+                i18n.streak,
+                Voxelith.terr,
+              ),
               _stat(
                 VoxelithIcon.medal,
                 p.cefr.name.toUpperCase(),
@@ -416,72 +455,83 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             ),
           ),
           const SizedBox(height: 10),
-          VoxelithCard(
-            onTap: () => context.go('/app/chat'),
-            child: Row(
-              children: [
-                const IconChip(VoxelithIcon.chat),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        i18n.homeFreeChatTitle,
-                        style: TextStyle(
-                          fontWeight: FontWeight.w600,
-                          color: Theme.of(context).colorScheme.onSurface,
+          if (Features.paidCloudApis)
+            VoxelithCard(
+              onTap: () => context.go('/app/chat'),
+              child: Row(
+                children: [
+                  const IconChip(VoxelithIcon.chat),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          i18n.homeFreeChatTitle,
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            color: Theme.of(context).colorScheme.onSurface,
+                          ),
                         ),
-                      ),
-                      Text(
-                        p.isPlus
-                            ? i18n.homeFreeChatPlusNote
-                            : i18n.homeFreeChatLockedNote,
-                        style: TextStyle(
-                          color: Theme.of(context).colorScheme.onSurfaceVariant,
-                          fontSize: 12,
+                        Text(
+                          p.isPlus
+                              ? i18n.homeFreeChatPlusNote
+                              : i18n.homeFreeChatLockedNote,
+                          style: TextStyle(
+                            color: Theme.of(
+                              context,
+                            ).colorScheme.onSurfaceVariant,
+                            fontSize: 12,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-                if (!p.isPlus)
-                  Icon(
-                    Icons.lock_outline,
-                    size: 18,
-                    color: Theme.of(context).colorScheme.outline,
-                  )
-                else
+                  if (!p.isPlus)
+                    Icon(
+                      Icons.lock_outline,
+                      size: 18,
+                      color: Theme.of(context).colorScheme.outline,
+                    )
+                  else
+                    Icon(
+                      Icons.chevron_right,
+                      color: Theme.of(context).colorScheme.outline,
+                    ),
+                ],
+              ),
+            ),
+          // Telaffuz rehberi içeriği yalnızca Türkçe yazılmış
+          // (lib/data/content/language_guides.dart); diğer arayüz
+          // dillerinde giriş noktası gizlenir.
+          if (p.uiLang == UiLang.tr) ...[
+            const SizedBox(height: 10),
+            VoxelithCard(
+              onTap: () => context.push('/guide'),
+              child: Row(
+                children: [
+                  Text(
+                    p.learnLang.flag(),
+                    style: const TextStyle(fontSize: 22),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      i18n.pronunciationGuide(p.learnLang.label(p.uiLang)),
+                      style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        color: Theme.of(context).colorScheme.onSurface,
+                      ),
+                    ),
+                  ),
                   Icon(
                     Icons.chevron_right,
                     color: Theme.of(context).colorScheme.outline,
                   ),
-              ],
+                ],
+              ),
             ),
-          ),
-          const SizedBox(height: 10),
-          VoxelithCard(
-            onTap: () => context.push('/guide'),
-            child: Row(
-              children: [
-                Text(p.learnLang.flag(), style: const TextStyle(fontSize: 22)),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Text(
-                    i18n.pronunciationGuide(p.learnLang.label(p.uiLang)),
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      color: Theme.of(context).colorScheme.onSurface,
-                    ),
-                  ),
-                ),
-                Icon(
-                  Icons.chevron_right,
-                  color: Theme.of(context).colorScheme.outline,
-                ),
-              ],
-            ),
-          ),
+          ],
           const SizedBox(height: 10),
           VoxelithCard(
             key: _reviewKey,

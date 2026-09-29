@@ -1,4 +1,5 @@
 import '../models/models.dart';
+import 'content_store.dart';
 
 class LibrarySentence {
   const LibrarySentence({required this.target, required this.glossTr});
@@ -21,17 +22,35 @@ class LibraryStory {
   final String title;
   final String titleTr;
   final List<LibrarySentence> sentences;
+
+  /// Arayüz dilinde başlık; çeviri yoksa hedef dildeki başlık.
+  String displayTitle(UiLang ui) =>
+      ui == UiLang.tr ? titleTr : ContentOverlay.lookup('st.$id', ui) ?? title;
+
+  /// Cümlenin arayüz dilindeki çevirisi; yoksa null (gösterilmez).
+  String? sentenceGloss(int index, UiLang ui) {
+    if (ui == UiLang.tr) {
+      final tr = sentences[index].glossTr;
+      return tr.isEmpty ? null : tr;
+    }
+    return ContentOverlay.lookup('ss.$id.$index', ui);
+  }
 }
 
 /// VOXELITH kitaplığı — seviyeye göre kısa okuma parçaları. Sesler cihaz TTS'i
 /// ile okunur (bkz. StoryReaderScreen); metinler gerçek, dilbilgisi olarak
 /// doğru cümlelerdir, otomatik çeviri değildir.
 class VoxelithLibrary {
-  static List<LibraryStory> forLang(LearnLang lang) =>
-      _all.where((s) => s.lang == lang).toList(growable: false);
+  static List<LibraryStory> forLang(LearnLang lang) => [
+    ..._all.where((s) => s.lang == lang),
+    ...ContentStore.storiesFor(lang),
+  ];
 
   static LibraryStory? byId(String id) {
-    for (final story in _all) {
+    for (final story in [
+      ..._all,
+      for (final l in LearnLang.values) ...ContentStore.storiesFor(l),
+    ]) {
       if (story.id == id) return story;
     }
     return null;

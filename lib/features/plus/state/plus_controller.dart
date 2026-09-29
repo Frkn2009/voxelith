@@ -22,7 +22,8 @@ final plusControllerProvider =
 /// geri kalanı (speak limiti, reklamsız, AI sohbet gate'i vb.) hâlâ oradan
 /// okuyor — iki ayrı "Plus" kaynağı olmasın diye köprü burada kuruluyor.
 class PlusController extends StateNotifier<VoxelithEntitlement> {
-  PlusController(this._billingService, this._ref) : super(VoxelithEntitlement.free);
+  PlusController(this._billingService, this._ref)
+    : super(VoxelithEntitlement.free);
 
   final BillingService _billingService;
   final Ref _ref;
@@ -50,8 +51,19 @@ class PlusController extends StateNotifier<VoxelithEntitlement> {
     // bağlı tüm özellikleri (sınırsız konuşma, reklamsız vb.) kullanabilsin
     // diye isPlus de true set edilir.
     await notifier.setPlus(
-      state == VoxelithEntitlement.plus || state == VoxelithEntitlement.business,
+      state == VoxelithEntitlement.plus ||
+          state == VoxelithEntitlement.business,
     );
     await notifier.setBusiness(state == VoxelithEntitlement.business);
   }
 }
+
+/// Mağazadan gelen ürünler (yerelleştirilmiş fiyatlarıyla), ürün kimliğine
+/// göre. Abonelik ekranı fiyatı yalnızca buradan gösterir — sabit fiyat
+/// yazmak App Store'da ret sebebidir (3.1.2).
+final storeProductsProvider = FutureProvider<Map<String, BillingProduct>>((
+  ref,
+) async {
+  final products = await ref.watch(billingServiceProvider).fetchProducts();
+  return {for (final p in products) p.id: p};
+});

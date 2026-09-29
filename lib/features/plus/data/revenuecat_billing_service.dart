@@ -65,9 +65,24 @@ class RevenueCatBillingService implements BillingService {
             id: pkg.storeProduct.identifier,
             title: pkg.storeProduct.title,
             description: pkg.storeProduct.description,
+            priceString: pkg.storeProduct.priceString,
+            freeTrialDays: _freeTrialDays(pkg.storeProduct.introductoryPrice),
           ),
         )
         .toList(growable: false);
+  }
+
+  static int? _freeTrialDays(IntroductoryPrice? intro) {
+    if (intro == null || intro.price != 0) return null;
+    final unitDays = switch (intro.periodUnit) {
+      PeriodUnit.day => 1,
+      PeriodUnit.week => 7,
+      PeriodUnit.month => 30,
+      PeriodUnit.year => 365,
+      PeriodUnit.unknown => 0,
+    };
+    final days = unitDays * intro.periodNumberOfUnits * intro.cycles;
+    return days > 0 ? days : null;
   }
 
   @override

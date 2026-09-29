@@ -1,0 +1,4114 @@
+{
+ "lang": "fi",
+ "scenarios": [
+  {
+   "id": "fi_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "fi_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "fi_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "fi_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "fi_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "fi_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "fi_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "fi_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "fi_intro",
+   "cefr": "a1",
+   "title": "Getting to know someone"
+  },
+  {
+   "id": "fi_shopping",
+   "cefr": "a1",
+   "title": "Clothes shopping"
+  },
+  {
+   "id": "fi_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers & time"
+  },
+  {
+   "id": "fi_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "fi_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "fi_transport",
+   "cefr": "a1",
+   "title": "Getting around"
+  },
+  {
+   "id": "fi_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "fi_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "fi_past_story",
+   "cefr": "a1",
+   "title": "Telling a story about your day"
+  },
+  {
+   "id": "fi_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "fi_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  },
+  {
+   "id": "fi_exp_job_interview",
+   "cefr": "b1",
+   "title": "Job interview"
+  },
+  {
+   "id": "fi_exp_team_meeting",
+   "cefr": "b1",
+   "title": "Team meeting"
+  },
+  {
+   "id": "fi_exp_bank",
+   "cefr": "a2",
+   "title": "Bank account"
+  },
+  {
+   "id": "fi_exp_apartment",
+   "cefr": "a2",
+   "title": "Apartment viewing"
+  },
+  {
+   "id": "fi_exp_doctor",
+   "cefr": "a2",
+   "title": "At the doctor's"
+  },
+  {
+   "id": "fi_exp_business_lunch",
+   "cefr": "b1",
+   "title": "Business lunch"
+  },
+  {
+   "id": "fi_exp_complaint",
+   "cefr": "b1",
+   "title": "Complaint"
+  },
+  {
+   "id": "fi_exp_business_trip",
+   "cefr": "a2",
+   "title": "Business trip"
+  },
+  {
+   "id": "fi_exp_client_call",
+   "cefr": "b1",
+   "title": "Client phone call"
+  },
+  {
+   "id": "fi_exp_hr_salary",
+   "cefr": "b2",
+   "title": "Salary conversation"
+  },
+  {
+   "id": "fi_exp_daily_errands",
+   "cefr": "a2",
+   "title": "Errands and deliveries"
+  },
+  {
+   "id": "fi_exp_networking",
+   "cefr": "b1",
+   "title": "Networking"
+  }
+ ],
+ "stories": [
+  {
+   "id": "fi_balcony",
+   "level": "a1",
+   "title": "Parvekkeeni"
+  },
+  {
+   "id": "fi_laundry",
+   "level": "a1",
+   "title": "Pesupäivä"
+  },
+  {
+   "id": "fi_birthday",
+   "level": "a1",
+   "title": "Ystäväni syntymäpäivä"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.fi_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "Kahvi, kiitos.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "Paljonko se maksaa?",
+   "have": []
+  },
+  {
+   "key": "p.fi_cafe_0",
+   "kind": "phrase",
+   "target": "Kahvi, kiitos.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_cafe_1",
+   "kind": "phrase",
+   "target": "Paljonko se maksaa?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_cafe_2",
+   "kind": "phrase",
+   "target": "Kiitos paljon.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "Minulla on varaus.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "Sisältyykö aamiainen?",
+   "have": []
+  },
+  {
+   "key": "p.fi_hotel_0",
+   "kind": "phrase",
+   "target": "Minulla on varaus.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_hotel_1",
+   "kind": "phrase",
+   "target": "Sisältyykö aamiainen?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_hotel_2",
+   "kind": "phrase",
+   "target": "Kiitos paljon.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "Anteeksi, missä on asema?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "Kiitos paljon.",
+   "have": []
+  },
+  {
+   "key": "p.fi_dir_0",
+   "kind": "phrase",
+   "target": "Anteeksi, missä on asema?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_dir_1",
+   "kind": "phrase",
+   "target": "Kiitos paljon.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_dir_2",
+   "kind": "phrase",
+   "target": "En ymmärrä.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "Hei, nimeni on Deniz.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "Olen Turkista.",
+   "have": []
+  },
+  {
+   "key": "p.fi_hi_0",
+   "kind": "phrase",
+   "target": "Hei, nimeni on Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_hi_1",
+   "kind": "phrase",
+   "target": "Olen Turkista.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_hi_2",
+   "kind": "phrase",
+   "target": "Kiitos paljon.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "Etsin asuntoa.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "Paljonko vuokra on?",
+   "have": []
+  },
+  {
+   "key": "p.fi_flat_0",
+   "kind": "phrase",
+   "target": "Etsin asuntoa.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_flat_1",
+   "kind": "phrase",
+   "target": "Paljonko vuokra on?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_flat_2",
+   "kind": "phrase",
+   "target": "Voitko auttaa minua?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "Paljonko tämä maksaa?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "Otan tämän.",
+   "have": []
+  },
+  {
+   "key": "p.fi_shop_0",
+   "kind": "phrase",
+   "target": "Paljonko tämä maksaa?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_shop_1",
+   "kind": "phrase",
+   "target": "Otan tämän.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_shop_2",
+   "kind": "phrase",
+   "target": "Voiko maksaa kortilla?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "Saisinko laskun?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "Haluamme maksaa yhdessä.",
+   "have": []
+  },
+  {
+   "key": "p.fi_bill_0",
+   "kind": "phrase",
+   "target": "Saisinko laskun?",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_bill_1",
+   "kind": "phrase",
+   "target": "Haluamme maksaa yhdessä.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_bill_2",
+   "kind": "phrase",
+   "target": "Pidä vaihtorahat.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "Minulla on varaus.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "Ikkunapaikka, kiitos.",
+   "have": []
+  },
+  {
+   "key": "p.fi_airport_0",
+   "kind": "phrase",
+   "target": "Minulla on varaus.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_airport_1",
+   "kind": "phrase",
+   "target": "Ikkunapaikka, kiitos.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_airport_2",
+   "kind": "phrase",
+   "target": "Onko tämä jono lentokoneeseen?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Getting to know someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_intro",
+   "kind": "grammar_rule",
+   "tr": "Fince'de fiil kişiye göre çekimlenir: \"ben\" = olen, \"o\" = on. Bu yüzden \"minä on\" yanlıştır. Çekim kişiyi zaten gösterdiği için \"minä\" genelde söylenmez: \"Olen opettaja.\"",
+   "en": "Finnish verbs change their ending for each person: \"I am\" = olen, \"he/she is\" = on, so \"minä on\" is wrong. Because \"olen\" already means \"I am\", \"minä\" is usually dropped.",
+   "context": "Olen opettaja. / ✗ Minä on opettaja.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_intro.0",
+   "kind": "speaking_prompt",
+   "en": "You meet someone new.",
+   "context": "Hauska tutustua.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_intro.1",
+   "kind": "speaking_prompt",
+   "en": "You want to know their name.",
+   "context": "Mikä sinun nimesi on?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_intro.2",
+   "kind": "speaking_prompt",
+   "en": "They ask your age.",
+   "context": "Olen kolmekymmentä vuotta vanha.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_intro.3",
+   "kind": "speaking_prompt",
+   "en": "You want to know their job.",
+   "context": "Mitä teet työksesi?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do.",
+   "context": "Olen opettaja.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You want to make sure you understand each other.",
+   "context": "Puhutko englantia?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_intro.6",
+   "kind": "speaking_prompt",
+   "en": "It is time to leave.",
+   "context": "Nähdään pian!",
+   "have": []
+  },
+  {
+   "key": "p.fi_intro_0",
+   "kind": "phrase",
+   "target": "Hauska tutustua.",
+   "tr": "Tanıştığımıza memnun oldum.",
+   "en": "Nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_intro_1",
+   "kind": "phrase",
+   "target": "Mikä sinun nimesi on?",
+   "tr": "Adın ne?",
+   "en": "What is your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_intro_2",
+   "kind": "phrase",
+   "target": "Olen kolmekymmentä vuotta vanha.",
+   "tr": "Otuz yaşındayım.",
+   "en": "I am thirty years old.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_intro_3",
+   "kind": "phrase",
+   "target": "Mitä teet työksesi?",
+   "tr": "Ne iş yapıyorsun?",
+   "en": "What do you do for work?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_intro_4",
+   "kind": "phrase",
+   "target": "Olen opettaja.",
+   "tr": "Öğretmenim.",
+   "en": "I am a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_intro_5",
+   "kind": "phrase",
+   "target": "Puhutko englantia?",
+   "tr": "İngilizce konuşuyor musun?",
+   "en": "Do you speak English?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_intro_6",
+   "kind": "phrase",
+   "target": "Nähdään pian!",
+   "tr": "Yakında görüşürüz!",
+   "en": "See you soon!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_shopping",
+   "kind": "scenario_title",
+   "tr": "Kıyafet alışverişi",
+   "en": "Clothes shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_shopping",
+   "kind": "grammar_rule",
+   "tr": "Fince'de \"daha büyük\" gibi karşılaştırma sıfatın sonuna -mpi eki eklenerek yapılır: iso (büyük) -> isompi (daha büyük).",
+   "en": "To say \"bigger\", Finnish adds -mpi to the adjective instead of using a separate word: iso (big) becomes isompi (bigger).",
+   "context": "Onko teillä tätä isommassa koossa? / ✗ Onko teillä tätä iso koossa?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You pick up a piece of clothing.",
+   "context": "Saanko sovittaa tätä?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "It is too small.",
+   "context": "Onko teillä tätä isommassa koossa?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You do not like the color.",
+   "context": "Onko tätä toisessa värissä?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "You check the price tag.",
+   "context": "Tämä on liian kallis.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You look for a better price.",
+   "context": "Onko tämä alennuksessa?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You decide to buy it.",
+   "context": "Otan tämän värin.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You go to the register.",
+   "context": "Voinko maksaa kortilla?",
+   "have": []
+  },
+  {
+   "key": "p.fi_shopping_0",
+   "kind": "phrase",
+   "target": "Saanko sovittaa tätä?",
+   "tr": "Bunu deneyebilir miyim?",
+   "en": "Can I try this on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_shopping_1",
+   "kind": "phrase",
+   "target": "Onko teillä tätä isommassa koossa?",
+   "tr": "Bunun daha büyük bedeni var mı?",
+   "en": "Do you have this in a bigger size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_shopping_2",
+   "kind": "phrase",
+   "target": "Onko tätä toisessa värissä?",
+   "tr": "Bunun başka rengi var mı?",
+   "en": "Is this available in another color?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_shopping_3",
+   "kind": "phrase",
+   "target": "Tämä on liian kallis.",
+   "tr": "Bu çok pahalı.",
+   "en": "This is too expensive.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_shopping_4",
+   "kind": "phrase",
+   "target": "Onko tämä alennuksessa?",
+   "tr": "Bu indirimde mi?",
+   "en": "Is this on discount?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_shopping_5",
+   "kind": "phrase",
+   "target": "Otan tämän värin.",
+   "tr": "Bu rengi alıyorum.",
+   "en": "I'll take this color.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_shopping_6",
+   "kind": "phrase",
+   "target": "Voinko maksaa kortilla?",
+   "tr": "Kartla ödeyebilir miyim?",
+   "en": "Can I pay by card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers & time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "Birden büyük sayılardan sonra isim çoğul olmaz, özel bir ek alır: \"kaksi lasta\" (iki çocuk) derken \"lapset\" değil \"lasta\" kullanılır.",
+   "en": "After a number greater than one, the noun changes its ending instead of becoming plural: \"kaksi lasta\" (two children) uses \"lasta\", not \"lapset\".",
+   "context": "Minulla on kaksi lasta. / ✗ Minulla on kaksi lapset.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You practice counting.",
+   "context": "Yksi, kaksi, kolme, neljä, viisi.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "You want to know the time.",
+   "context": "Paljonko kello on?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "Someone asks you the time.",
+   "context": "Kello on kaksi.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "You arrange when to meet.",
+   "context": "Tapaamme kello kolme.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "You tell a friend the price.",
+   "context": "Se maksaa kymmenen euroa.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "Someone asks how many children you have.",
+   "context": "Minulla on kaksi lasta.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You count the animals you see.",
+   "context": "Näen kolme koiraa.",
+   "have": []
+  },
+  {
+   "key": "p.fi_numbers_time_0",
+   "kind": "phrase",
+   "target": "Yksi, kaksi, kolme, neljä, viisi.",
+   "tr": "Bir, iki, üç, dört, beş.",
+   "en": "One, two, three, four, five.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_numbers_time_1",
+   "kind": "phrase",
+   "target": "Paljonko kello on?",
+   "tr": "Saat kaç?",
+   "en": "What time is it?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_numbers_time_2",
+   "kind": "phrase",
+   "target": "Kello on kaksi.",
+   "tr": "Saat iki.",
+   "en": "It is two o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_numbers_time_3",
+   "kind": "phrase",
+   "target": "Tapaamme kello kolme.",
+   "tr": "Saat üçte buluşuyoruz.",
+   "en": "We'll meet at three o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_numbers_time_4",
+   "kind": "phrase",
+   "target": "Se maksaa kymmenen euroa.",
+   "tr": "On avro tutuyor.",
+   "en": "It costs ten euros.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_numbers_time_5",
+   "kind": "phrase",
+   "target": "Minulla on kaksi lasta.",
+   "tr": "İki çocuğum var.",
+   "en": "I have two children.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_numbers_time_6",
+   "kind": "phrase",
+   "target": "Näen kolme koiraa.",
+   "tr": "Üç köpek görüyorum.",
+   "en": "I see three dogs.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_family",
+   "kind": "grammar_rule",
+   "tr": "İyelik (\"benim\") ayrı bir kelimeyle değil, ismin sonuna eklenen -ni ekiyle gösterilir: äiti (anne) -> äitini (annem).",
+   "en": "Possession is shown by adding -ni to the end of the noun instead of a separate word for \"my\": äiti (mother) becomes äitini (my mother).",
+   "context": "Tässä on äitini. / ✗ Tässä on minun äiti.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a photo.",
+   "context": "Tässä on äitini.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_family.1",
+   "kind": "speaking_prompt",
+   "en": "They ask about your father.",
+   "context": "Isäni on lääkäri.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_family.2",
+   "kind": "speaking_prompt",
+   "en": "They ask if you have siblings.",
+   "context": "Minulla on kaksi sisarusta.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_family.3",
+   "kind": "speaking_prompt",
+   "en": "They ask where your brother lives.",
+   "context": "Veljeni asuu Helsingissä.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_family.4",
+   "kind": "speaking_prompt",
+   "en": "They ask about your sister.",
+   "context": "Siskoni on nuorempi kuin minä.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask about your parents.",
+   "context": "Vanhempani asuvat maalla.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_family.6",
+   "kind": "speaking_prompt",
+   "en": "You ask them the same question.",
+   "context": "Onko sinulla lapsia?",
+   "have": []
+  },
+  {
+   "key": "p.fi_family_0",
+   "kind": "phrase",
+   "target": "Tässä on äitini.",
+   "tr": "Bu benim annem.",
+   "en": "This is my mother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_family_1",
+   "kind": "phrase",
+   "target": "Isäni on lääkäri.",
+   "tr": "Babam doktor.",
+   "en": "My father is a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_family_2",
+   "kind": "phrase",
+   "target": "Minulla on kaksi sisarusta.",
+   "tr": "İki kardeşim var.",
+   "en": "I have two siblings.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_family_3",
+   "kind": "phrase",
+   "target": "Veljeni asuu Helsingissä.",
+   "tr": "Erkek kardeşim Helsinki'de yaşıyor.",
+   "en": "My brother lives in Helsinki.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_family_4",
+   "kind": "phrase",
+   "target": "Siskoni on nuorempi kuin minä.",
+   "tr": "Kız kardeşim benden daha küçük.",
+   "en": "My sister is younger than me.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_family_5",
+   "kind": "phrase",
+   "target": "Vanhempani asuvat maalla.",
+   "tr": "Ailem kırsalda yaşıyor.",
+   "en": "My parents live in the countryside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_family_6",
+   "kind": "phrase",
+   "target": "Onko sinulla lapsia?",
+   "tr": "Çocuğun var mı?",
+   "en": "Do you have children?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_weather",
+   "kind": "grammar_rule",
+   "tr": "Hava durumu cümlelerinde İngilizce'deki \"it\" gibi bir özne kullanılmaz, sadece \"on\" fiili ve sıfat yeterlidir.",
+   "en": "Weather sentences use only \"on\" plus an adjective, with no subject word like English \"it\".",
+   "context": "Ulkona on kylmä. / ✗ Se on kylmä ulkona.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You start small talk.",
+   "context": "Millainen sää tänään on?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You step outside.",
+   "context": "Ulkona on kylmä.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You look up at the sky.",
+   "context": "Aurinko paistaa.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You look out the window.",
+   "context": "Ulkona sataa.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You check tomorrow's forecast.",
+   "context": "Huomenna on lämmintä.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_weather.5",
+   "kind": "speaking_prompt",
+   "en": "You plan to go outside.",
+   "context": "Onko tänään tuulista?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_weather.6",
+   "kind": "speaking_prompt",
+   "en": "You warn a friend before they leave.",
+   "context": "Ota sateenvarjo mukaan.",
+   "have": []
+  },
+  {
+   "key": "p.fi_weather_0",
+   "kind": "phrase",
+   "target": "Millainen sää tänään on?",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_weather_1",
+   "kind": "phrase",
+   "target": "Ulkona on kylmä.",
+   "tr": "Dışarısı soğuk.",
+   "en": "It's cold outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_weather_2",
+   "kind": "phrase",
+   "target": "Aurinko paistaa.",
+   "tr": "Güneş parlıyor.",
+   "en": "The sun is shining.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_weather_3",
+   "kind": "phrase",
+   "target": "Ulkona sataa.",
+   "tr": "Dışarıda yağmur yağıyor.",
+   "en": "It's raining outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_weather_4",
+   "kind": "phrase",
+   "target": "Huomenna on lämmintä.",
+   "tr": "Yarın hava sıcak olacak.",
+   "en": "Tomorrow it will be warm.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_weather_5",
+   "kind": "phrase",
+   "target": "Onko tänään tuulista?",
+   "tr": "Bugün rüzgarlı mı?",
+   "en": "Is it windy today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_weather_6",
+   "kind": "phrase",
+   "target": "Ota sateenvarjo mukaan.",
+   "tr": "Yanına şemsiye al.",
+   "en": "Take an umbrella with you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Getting around",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_transport",
+   "kind": "grammar_rule",
+   "tr": "Bir yere gitmek/varmak anlamı isim sonuna -lle eki eklenerek verilir: asema (istasyon) -> asemalle (istasyona).",
+   "en": "To say you are going \"to\" a place, add -lle to the end of the noun: asema (station) becomes asemalle (to the station).",
+   "context": "Haluan mennä lentokentälle. / ✗ Haluan mennä lentokenttä.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You are lost near a train station.",
+   "context": "Miten pääsen asemalle?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_transport.1",
+   "kind": "speaking_prompt",
+   "en": "They ask how you get to work.",
+   "context": "Menen bussilla töihin.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You need a ticket.",
+   "context": "Mistä ostan lipun?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_transport.3",
+   "kind": "speaking_prompt",
+   "en": "You check the departure board.",
+   "context": "Seuraava juna lähtee kello yhdeksän.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You are not sure you are in the right place.",
+   "context": "Onko tämä oikea laituri?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You are heading to catch a flight.",
+   "context": "Haluan mennä lentokentälle.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_transport.6",
+   "kind": "speaking_prompt",
+   "en": "You look for the bus.",
+   "context": "Missä on lähin pysäkki?",
+   "have": []
+  },
+  {
+   "key": "p.fi_transport_0",
+   "kind": "phrase",
+   "target": "Miten pääsen asemalle?",
+   "tr": "İstasyona nasıl giderim?",
+   "en": "How do I get to the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_transport_1",
+   "kind": "phrase",
+   "target": "Menen bussilla töihin.",
+   "tr": "İşe otobüsle gidiyorum.",
+   "en": "I go to work by bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_transport_2",
+   "kind": "phrase",
+   "target": "Mistä ostan lipun?",
+   "tr": "Bileti nereden alırım?",
+   "en": "Where do I buy a ticket?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_transport_3",
+   "kind": "phrase",
+   "target": "Seuraava juna lähtee kello yhdeksän.",
+   "tr": "Sonraki tren saat dokuzda kalkıyor.",
+   "en": "The next train leaves at nine o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_transport_4",
+   "kind": "phrase",
+   "target": "Onko tämä oikea laituri?",
+   "tr": "Bu doğru peron mu?",
+   "en": "Is this the right platform?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_transport_5",
+   "kind": "phrase",
+   "target": "Haluan mennä lentokentälle.",
+   "tr": "Havalimanına gitmek istiyorum.",
+   "en": "I want to go to the airport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_transport_6",
+   "kind": "phrase",
+   "target": "Missä on lähin pysäkki?",
+   "tr": "En yakın durak nerede?",
+   "en": "Where is the nearest stop?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_emergency",
+   "kind": "grammar_rule",
+   "tr": "Emir kipi, fiilin sözlük halinden -a/-ä harfinin atılmasıyla yapılır: soittaa (aramak) -> soita (ara!).",
+   "en": "The command form drops the final -a/-ä from the dictionary form of the verb: soittaa (to call) becomes soita (call!).",
+   "context": "Soita ambulanssi! / ✗ Soittaa ambulanssi!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something just happened.",
+   "context": "Apua!",
+   "have": []
+  },
+  {
+   "key": "tp.fi_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Someone is badly hurt.",
+   "context": "Soita ambulanssi!",
+   "have": []
+  },
+  {
+   "key": "tp.fi_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You are not feeling well.",
+   "context": "Minä tarvitsen lääkäriä.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You need medical help fast.",
+   "context": "Missä on lähin sairaala?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You see a crime happening.",
+   "context": "Soita poliisi!",
+   "have": []
+  },
+  {
+   "key": "tp.fi_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "You cannot find your way.",
+   "context": "Olen eksynyt.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You need someone who can translate.",
+   "context": "Onko täällä joku, joka puhuu englantia?",
+   "have": []
+  },
+  {
+   "key": "p.fi_emergency_0",
+   "kind": "phrase",
+   "target": "Apua!",
+   "tr": "İmdat!",
+   "en": "Help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_emergency_1",
+   "kind": "phrase",
+   "target": "Soita ambulanssi!",
+   "tr": "Ambulans çağır!",
+   "en": "Call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_emergency_2",
+   "kind": "phrase",
+   "target": "Minä tarvitsen lääkäriä.",
+   "tr": "Doktora ihtiyacım var.",
+   "en": "I need a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_emergency_3",
+   "kind": "phrase",
+   "target": "Missä on lähin sairaala?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_emergency_4",
+   "kind": "phrase",
+   "target": "Soita poliisi!",
+   "tr": "Polisi ara!",
+   "en": "Call the police!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_emergency_5",
+   "kind": "phrase",
+   "target": "Olen eksynyt.",
+   "tr": "Kayboldum.",
+   "en": "I am lost.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_emergency_6",
+   "kind": "phrase",
+   "target": "Onko täällä joku, joka puhuu englantia?",
+   "tr": "Burada İngilizce konuşan biri var mı?",
+   "en": "Is there anyone here who speaks English?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_routine",
+   "kind": "grammar_rule",
+   "tr": "\"Ben\" özneli fiiller -n ekiyle biter: herää + n = herään.",
+   "en": "Verbs used with \"I\" end in -n: herää + n = herään (I wake up).",
+   "context": "Herään kello seitsemän. / ✗ Herää kello seitsemän.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your mornings.",
+   "context": "Herään kello seitsemän.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_routine.1",
+   "kind": "speaking_prompt",
+   "en": "They ask what you eat.",
+   "context": "Syön aamiaista kotona.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_routine.2",
+   "kind": "speaking_prompt",
+   "en": "They ask when you leave the house.",
+   "context": "Lähden kotoa kello kahdeksan.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_routine.3",
+   "kind": "speaking_prompt",
+   "en": "They ask about your morning habits.",
+   "context": "Käyn suihkussa joka aamu.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_routine.4",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do before bed.",
+   "context": "Luen kirjaa ennen nukkumaanmenoa.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_routine.5",
+   "kind": "speaking_prompt",
+   "en": "They ask when you sleep.",
+   "context": "Menen nukkumaan kello yksitoista.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_routine.6",
+   "kind": "speaking_prompt",
+   "en": "They ask if your days are different.",
+   "context": "Teen samat asiat joka päivä.",
+   "have": []
+  },
+  {
+   "key": "p.fi_routine_0",
+   "kind": "phrase",
+   "target": "Herään kello seitsemän.",
+   "tr": "Saat yedide uyanıyorum.",
+   "en": "I wake up at seven o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_routine_1",
+   "kind": "phrase",
+   "target": "Syön aamiaista kotona.",
+   "tr": "Evde kahvaltı yapıyorum.",
+   "en": "I eat breakfast at home.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_routine_2",
+   "kind": "phrase",
+   "target": "Lähden kotoa kello kahdeksan.",
+   "tr": "Evden saat sekizde çıkıyorum.",
+   "en": "I leave home at eight o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_routine_3",
+   "kind": "phrase",
+   "target": "Käyn suihkussa joka aamu.",
+   "tr": "Her sabah duş alıyorum.",
+   "en": "I take a shower every morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_routine_4",
+   "kind": "phrase",
+   "target": "Luen kirjaa ennen nukkumaanmenoa.",
+   "tr": "Yatmadan önce kitap okuyorum.",
+   "en": "I read a book before going to bed.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_routine_5",
+   "kind": "phrase",
+   "target": "Menen nukkumaan kello yksitoista.",
+   "tr": "Saat on birde yatıyorum.",
+   "en": "I go to sleep at eleven o'clock.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_routine_6",
+   "kind": "phrase",
+   "target": "Teen samat asiat joka päivä.",
+   "tr": "Her gün aynı şeyleri yapıyorum.",
+   "en": "I do the same things every day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_past_story",
+   "kind": "scenario_title",
+   "tr": "Bir günü anlatmak",
+   "en": "Telling a story about your day",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_past_story",
+   "kind": "grammar_rule",
+   "tr": "Geçmiş zaman, fiil gövdesine -i- eklenerek yapılır: mennä (gitmek) -> menin (gittim).",
+   "en": "The past tense is made by adding -i- inside the verb: mennä (to go) becomes menin (I went).",
+   "context": "Eilen menin kaupunkiin. / ✗ Menen kaupunkiin eilen.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks what you did yesterday.",
+   "context": "Eilen menin kaupunkiin.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "They ask if you saw anyone.",
+   "context": "Tapasin ystäväni kahvilassa.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what you did together.",
+   "context": "Söimme lounasta yhdessä.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "They ask what happened next.",
+   "context": "Sitten kävelimme puistossa.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "They ask about the weather that day.",
+   "context": "Sää oli aurinkoinen.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "They ask when you got home.",
+   "context": "Palasin kotiin illalla.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "They ask how the day was.",
+   "context": "Se oli hyvä päivä.",
+   "have": []
+  },
+  {
+   "key": "p.fi_past_story_0",
+   "kind": "phrase",
+   "target": "Eilen menin kaupunkiin.",
+   "tr": "Dün şehre gittim.",
+   "en": "Yesterday I went to the city.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_past_story_1",
+   "kind": "phrase",
+   "target": "Tapasin ystäväni kahvilassa.",
+   "tr": "Arkadaşımla kafede buluştum.",
+   "en": "I met my friend at a café.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_past_story_2",
+   "kind": "phrase",
+   "target": "Söimme lounasta yhdessä.",
+   "tr": "Birlikte öğle yemeği yedik.",
+   "en": "We ate lunch together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_past_story_3",
+   "kind": "phrase",
+   "target": "Sitten kävelimme puistossa.",
+   "tr": "Sonra parkta yürüdük.",
+   "en": "Then we walked in the park.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_past_story_4",
+   "kind": "phrase",
+   "target": "Sää oli aurinkoinen.",
+   "tr": "Hava güneşliydi.",
+   "en": "The weather was sunny.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_past_story_5",
+   "kind": "phrase",
+   "target": "Palasin kotiin illalla.",
+   "tr": "Akşam eve döndüm.",
+   "en": "I returned home in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_past_story_6",
+   "kind": "phrase",
+   "target": "Se oli hyvä päivä.",
+   "tr": "Güzel bir gündü.",
+   "en": "It was a good day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "Kahvi, kiitos.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "Minulla on varaus.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "Anteeksi, missä on asema?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "Hei, nimeni on Deniz.",
+   "have": []
+  },
+  {
+   "key": "p.fi_a2_route_0",
+   "kind": "phrase",
+   "target": "Kahvi, kiitos.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_a2_route_1",
+   "kind": "phrase",
+   "target": "Minulla on varaus.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_a2_route_2",
+   "kind": "phrase",
+   "target": "Anteeksi, missä on asema?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_a2_route_3",
+   "kind": "phrase",
+   "target": "Hei, nimeni on Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.fi_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "Sisältyykö aamiainen?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "En ymmärrä.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "Etsin asuntoa.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "Paljonko vuokra on?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "Voiko maksaa kortilla?",
+   "have": []
+  },
+  {
+   "key": "p.fi_b1_solve_0",
+   "kind": "phrase",
+   "target": "Sisältyykö aamiainen?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_b1_solve_1",
+   "kind": "phrase",
+   "target": "En ymmärrä.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_b1_solve_2",
+   "kind": "phrase",
+   "target": "Etsin asuntoa.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_b1_solve_3",
+   "kind": "phrase",
+   "target": "Paljonko vuokra on?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.fi_b1_solve_4",
+   "kind": "phrase",
+   "target": "Voiko maksaa kortilla?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.fi_exp_job_interview",
+   "kind": "scenario_title",
+   "tr": "İş görüşmesi",
+   "en": "Job interview",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_exp_job_interview",
+   "kind": "grammar_rule",
+   "tr": "Rica için konditionaali kullanılır: voisitteko + infinitiivi; doğrudan emir kaba kaçar.",
+   "en": null,
+   "context": "Voisitteko kertoa palkkahaitarin? / ✗ Sano palkka.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.fi_exp_job_interview.0",
+   "kind": "speaking_prompt",
+   "en": "Miksi haluatte juuri meille?",
+   "context": "Tapanne kohdata asiakas vastaa sitä, missä olen vahva.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_exp_job_interview.1",
+   "kind": "speaking_prompt",
+   "en": "Miten hallitsette kiireisen julkaisuviikon?",
+   "context": "Kavennaan laajuutta ja kirjaan riskit kirjallisesti.",
+   "have": []
+  },
+  {
+   "key": "p.fi_exp_interview_0",
+   "kind": "phrase",
+   "target": "Kiitos kutsusta haastatteluun.",
+   "tr": "Görüşmeye davet için teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_interview_1",
+   "kind": "phrase",
+   "target": "Olen työskennellyt tuotetiimeissä noin viisi vuotta.",
+   "tr": "Yaklaşık beş yıldır ürün ekiplerinde çalışıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_interview_2",
+   "kind": "phrase",
+   "target": "Minulle on tärkeää ymmärtää asiakkaan tarve kunnolla.",
+   "tr": "Müşterinin ihtiyacını doğru anlamak benim için önemli.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_interview_3",
+   "kind": "phrase",
+   "target": "Heikkouteni on juuttua yksityiskohtiin; käytän tarkistuslistaa.",
+   "tr": "Zayıf yönüm detaylara takılmam; kontrol listesi kullanıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_interview_4",
+   "kind": "phrase",
+   "target": "Voisitteko kertoa palkkahaitarin?",
+   "tr": "Maaş aralığını söyleyebilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_interview_5",
+   "kind": "phrase",
+   "target": "Onko tiedossa keskustelu myös tiimin kanssa?",
+   "tr": "Ekiple de bir görüşme olacak mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.fi_exp_team_meeting",
+   "kind": "scenario_title",
+   "tr": "Ekip toplantısı",
+   "en": "Team meeting",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_exp_team_meeting",
+   "kind": "grammar_rule",
+   "tr": "\"odottaa\" partitif alır: odottaa hyväksyntää, \"odottaa hyväksyntä\" yanlıştır.",
+   "en": null,
+   "context": "Odotan hyväksyntää. / ✗ Odotan hyväksyntä.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.fi_exp_team_meeting.0",
+   "kind": "speaking_prompt",
+   "en": "Onko jollakulla estettä?",
+   "context": "Odotan designin hyväksyntää; muistutan huomenna.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_exp_team_meeting.1",
+   "kind": "speaking_prompt",
+   "en": "Silloin tämä tehtävä on sinun.",
+   "context": "Selvä, päivitän tiimin perjantaina.",
+   "have": []
+  },
+  {
+   "key": "p.fi_exp_meeting_0",
+   "kind": "phrase",
+   "target": "Siirrytään suoraan agendaan.",
+   "tr": "Doğrudan gündeme geçelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_meeting_1",
+   "kind": "phrase",
+   "target": "Minulla on API-este; huomenna annan päivämäärän.",
+   "tr": "API tarafında bir engelim var; yarın tarih vereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_meeting_2",
+   "kind": "phrase",
+   "target": "Voimmeko jättää tämän kohdan loppuun?",
+   "tr": "Bu maddeyi sona bırakabilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_meeting_3",
+   "kind": "phrase",
+   "target": "Kirjaan päätöksen: torstai kello 16.",
+   "tr": "Kararı not ediyorum: perşembe saat 16.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_meeting_4",
+   "kind": "phrase",
+   "target": "Ei vastalauseita, mutta merkitään riski.",
+   "tr": "İtirazım yok ama riski kaydedelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_meeting_5",
+   "kind": "phrase",
+   "target": "Tarvitaanko viiden minuutin pidennys?",
+   "tr": "Beş dakikalık uzatmaya ihtiyaç var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.fi_exp_bank",
+   "kind": "scenario_title",
+   "tr": "Bankada hesap",
+   "en": "Bank account",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_exp_bank",
+   "kind": "grammar_rule",
+   "tr": "Gişe ricasında \"haluaisin + infinitiivi\" kullanılır; \"avaa tili\" emirdir.",
+   "en": null,
+   "context": "Haluaisin avata käyttötilin. / ✗ Avaa tili.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.fi_exp_bank.0",
+   "kind": "speaking_prompt",
+   "en": "Henkilökohtainen palkkatili?",
+   "context": "Kyllä, palkan maksua varten.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_exp_bank.1",
+   "kind": "speaking_prompt",
+   "en": "Allekirjoittaisitteko tähän?",
+   "context": "Toki, tässä on allekirjoitus.",
+   "have": []
+  },
+  {
+   "key": "p.fi_exp_bank_0",
+   "kind": "phrase",
+   "target": "Haluaisin avata käyttötilin.",
+   "tr": "Bir vadesiz hesap açmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_bank_1",
+   "kind": "phrase",
+   "target": "Minulla on henkilöllisyystodistus ja osoitetodiste.",
+   "tr": "Kimliğim ve ikametgah belgem yanımda.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_bank_2",
+   "kind": "phrase",
+   "target": "Mikä on kortin vuosimaksu?",
+   "tr": "Kartın yıllık ücreti ne kadar?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_bank_3",
+   "kind": "phrase",
+   "target": "Haluan myös verkkopankin, kiitos.",
+   "tr": "İnternet bankacılığını da istiyorum lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_bank_4",
+   "kind": "phrase",
+   "target": "Mikä on päivittäinen tilisiirtoraja?",
+   "tr": "Günlük havale limiti nedir?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_bank_5",
+   "kind": "phrase",
+   "target": "Saanko kuitin sähköpostiin?",
+   "tr": "Dekontu e-posta ile alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.fi_exp_apartment",
+   "kind": "scenario_title",
+   "tr": "Ev bakma",
+   "en": "Apartment viewing",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_exp_apartment",
+   "kind": "grammar_rule",
+   "tr": "Hâlâ boş olup olmadığını sormak için \"vielä\" kullanılır.",
+   "en": null,
+   "context": "Onko asunto vielä vapaa? / ✗ Onko asunto vapaa aina vielä?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.fi_exp_apartment.0",
+   "kind": "speaking_prompt",
+   "en": "Milloin haluaisitte muuttaa?",
+   "context": "Kuun alussa; tavaraa on vähän.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_exp_apartment.1",
+   "kind": "speaking_prompt",
+   "en": "Vuokranantaja ei salli lemmikkejä.",
+   "context": "Selvä, se ei ole minulle ongelma.",
+   "have": []
+  },
+  {
+   "key": "p.fi_exp_apartment_0",
+   "kind": "phrase",
+   "target": "Näin ilmoituksen; onko asunto vielä vapaa?",
+   "tr": "İlanı gördüm; daire hâlâ boş mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_apartment_1",
+   "kind": "phrase",
+   "target": "Sisältyykö lämmitys vuokraan?",
+   "tr": "Isınma kiraya dahil mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_apartment_2",
+   "kind": "phrase",
+   "target": "Kuinka monen kuukauden vuokra on vakuus?",
+   "tr": "Depozito kaç aylık kiraya denk geliyor?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_apartment_3",
+   "kind": "phrase",
+   "target": "Onko sopimus vuodeksi, vai voiko lyhyemmin?",
+   "tr": "Sözleşme bir yıllık mı, yoksa daha kısa olabilir mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_apartment_4",
+   "kind": "phrase",
+   "target": "Teen etätöitä, joten tarvitsen rauhaa.",
+   "tr": "Evden çalışıyorum, bu yüzden sessizliğe ihtiyacım var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_apartment_5",
+   "kind": "phrase",
+   "target": "Palaan asiaan huomenna.",
+   "tr": "Yarın dönüş yapacağım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.fi_exp_doctor",
+   "kind": "scenario_title",
+   "tr": "Doktorda",
+   "en": "At the doctor's",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_exp_doctor",
+   "kind": "grammar_rule",
+   "tr": "Şikâyeti belirtmede \"minulla on ollut\" + partitif kullanılır; kendi kendine teşhis koymayın.",
+   "en": null,
+   "context": "Minulla on ollut kuumetta kolme päivää. / ✗ Minulla on keuhkokuume, kai.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.fi_exp_doctor.0",
+   "kind": "speaking_prompt",
+   "en": "Missä kipu on? Alkoiko se äkkiä?",
+   "context": "Oikealla rinnassa, eilisillasta asti.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_exp_doctor.1",
+   "kind": "speaking_prompt",
+   "en": "Otetaan verikokeet.",
+   "context": "Selvä, mistä käyn ottamassa?",
+   "have": []
+  },
+  {
+   "key": "p.fi_exp_doctor_0",
+   "kind": "phrase",
+   "target": "Minulla on ollut kuumetta kolme päivää, ja yöllä yskin.",
+   "tr": "Üç gündür ateşim var ve geceleri öksürüyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_doctor_1",
+   "kind": "phrase",
+   "target": "Minulla ei ole tunnettua penisilliiniallergiaa.",
+   "tr": "Bilinen bir penisilin alerjim yok.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_doctor_2",
+   "kind": "phrase",
+   "target": "Aiheuttaako tämä lääke uneliaisuutta?",
+   "tr": "Bu ilaç uyku hâli yapar mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_doctor_3",
+   "kind": "phrase",
+   "target": "Tarvitsenko sairauslomatodistuksen työhön?",
+   "tr": "İş için rapora ihtiyacım var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_doctor_4",
+   "kind": "phrase",
+   "target": "Milloin minun pitäisi tulla kontrolliin?",
+   "tr": "Kontrol için ne zaman gelmeliyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_doctor_5",
+   "kind": "phrase",
+   "target": "Onko apteekki tämän rakennuksen ulkopuolella?",
+   "tr": "Eczane bu bina dışında mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.fi_exp_business_lunch",
+   "kind": "scenario_title",
+   "tr": "İş yemeği",
+   "en": "Business lunch",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_exp_business_lunch",
+   "kind": "grammar_rule",
+   "tr": "Hesabı üstlenmek: tarjoamme laskun; \"te maksatte\" kaba kaçar.",
+   "en": null,
+   "context": "Tarjoamme laskun. / ✗ Te maksatte kaiken.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.fi_exp_business_lunch.0",
+   "kind": "speaking_prompt",
+   "en": "Hinta tuntuu yhä korkealta.",
+   "context": "Voisimme jakaa hankkeen kahteen vaiheeseen.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_exp_business_lunch.1",
+   "kind": "speaking_prompt",
+   "en": "Pohdimme tätä.",
+   "context": "Toki, soitan perjantaina.",
+   "have": []
+  },
+  {
+   "key": "p.fi_exp_lunch_0",
+   "kind": "phrase",
+   "target": "Valitsin paikan teidän vinkkinne mukaan.",
+   "tr": "Mekanı sizin önerinize göre seçtim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_lunch_1",
+   "kind": "phrase",
+   "target": "Onko allergioita tai toiveita?",
+   "tr": "Alerjiniz veya tercihiniz var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_lunch_2",
+   "kind": "phrase",
+   "target": "Ennen tilausta kirkastetaanko pääkohdat?",
+   "tr": "Sipariş vermeden önce ana noktaları netleştirelim mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_lunch_3",
+   "kind": "phrase",
+   "target": "Ei mennä lukuihin pöydässä; lähetän ne myöhemmin.",
+   "tr": "Masada rakamlara girmeyelim; sonra göndereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_lunch_4",
+   "kind": "phrase",
+   "target": "Tällä kertaa tarjoamme laskun.",
+   "tr": "Bu sefer hesabı biz alıyoruz.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_lunch_5",
+   "kind": "phrase",
+   "target": "Tämä oli antoisa tapaaminen, kiitos.",
+   "tr": "Çok verimli bir toplantıydı, teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.fi_exp_complaint",
+   "kind": "scenario_title",
+   "tr": "Şikâyet",
+   "en": "Complaint",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_exp_complaint",
+   "kind": "grammar_rule",
+   "tr": "Yazılı kanıt için \"kirjallinen\" kullanılır; sadece mesaj yeterli değildir.",
+   "en": null,
+   "context": "Kirjallinen vahvistus. / ✗ Laita vaan WhatsAppiin.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.fi_exp_complaint.0",
+   "kind": "speaking_prompt",
+   "en": "Pahoittelut häiriöstä; tarkistan lähetyksen.",
+   "context": "Kiitos. Kirjatkaa myös soiton kellonaika.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_exp_complaint.1",
+   "kind": "speaking_prompt",
+   "en": "Toimitus huomenna kello 14 mennessä.",
+   "context": "Hyvä, odotan sitä.",
+   "have": []
+  },
+  {
+   "key": "p.fi_exp_complaint_0",
+   "kind": "phrase",
+   "target": "Tilausnumero 1842 ei ole vielä saapunut.",
+   "tr": "1842 numaralı sipariş hâlâ gelmedi.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_complaint_1",
+   "kind": "phrase",
+   "target": "Sovittu päivä oli eilen.",
+   "tr": "Kararlaştırılan tarih dündü.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_complaint_2",
+   "kind": "phrase",
+   "target": "Ratkaisuksi toivon toimituskulujen hyvitystä.",
+   "tr": "Çözüm olarak kargo ücretinin iadesini istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_complaint_3",
+   "kind": "phrase",
+   "target": "Pitääkö puhua esimiehelle, vai voitteko hoitaa tämän?",
+   "tr": "Yöneticiyle mi konuşmalıyım, yoksa siz çözebilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_complaint_4",
+   "kind": "phrase",
+   "target": "Saisinko kirjallisen vahvistuksen?",
+   "tr": "Yazılı bir teyit alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_complaint_5",
+   "kind": "phrase",
+   "target": "Olen kärsivällinen, mutta tarvitsen kellonajan tänään.",
+   "tr": "Sabırlıyım ama bugün net bir saat lazım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.fi_exp_business_trip",
+   "kind": "scenario_title",
+   "tr": "İş seyahati",
+   "en": "Business trip",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_exp_business_trip",
+   "kind": "grammar_rule",
+   "tr": "Aktarmaya yetişmek: ehtiä + illatiivi; \"missaan lentoaseman\" mantıksız olur.",
+   "en": null,
+   "context": "Ehdinkö vaihtoon? / ✗ Missaan lentokentän?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.fi_exp_business_trip.0",
+   "kind": "speaking_prompt",
+   "en": "Ikkuna vai käytävä?",
+   "context": "Käytävä, mieluiten lähellä uloskäyntiä.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_exp_business_trip.1",
+   "kind": "speaking_prompt",
+   "en": "Portti 12, noin neljänkymmenen minuutin päästä.",
+   "context": "Kiitos, menen sinne nyt.",
+   "have": []
+  },
+  {
+   "key": "p.fi_exp_trip_0",
+   "kind": "phrase",
+   "target": "Tässä PNR-koodini; boarding pass, kiitos.",
+   "tr": "İşte rezervasyon kodum; biniş kartı lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_trip_1",
+   "kind": "phrase",
+   "target": "Onko käsimatkatavara mitoissa?",
+   "tr": "El bagajı ölçülere uyuyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_trip_2",
+   "kind": "phrase",
+   "target": "Ehdinkö vaihtoon, jos lento myöhästyy?",
+   "tr": "Uçuş gecikirse aktarmaya yetişir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_trip_3",
+   "kind": "phrase",
+   "target": "Lasku yrityksen nimiin, kiitos.",
+   "tr": "Fatura şirket adına lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_trip_4",
+   "kind": "phrase",
+   "target": "Missä loungeen sisäänkäynti on?",
+   "tr": "Lounge girişi nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_trip_5",
+   "kind": "phrase",
+   "target": "Minun täytyy säilyttää taksikuitti kuluja varten.",
+   "tr": "Masraf için taksi fişini saklamam gerekiyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.fi_exp_client_call",
+   "kind": "scenario_title",
+   "tr": "Müşteri telefonu",
+   "en": "Client phone call",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_exp_client_call",
+   "kind": "grammar_rule",
+   "tr": "Yanlış anlamayı teyit etmek için \"jos ymmärsin väärin\" kullanılır.",
+   "en": null,
+   "context": "Jos ymmärsin väärin, korjatkaa. / ✗ Jos minä olisi ymmärtää väärin…",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.fi_exp_client_call.0",
+   "kind": "speaking_prompt",
+   "en": "Ilman tätä ominaisuutta emme voi julkaista.",
+   "context": "Siirretään muuta ja otetaan tämä ensin.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_exp_client_call.1",
+   "kind": "speaking_prompt",
+   "en": "Hyvä, kirjatkaa se.",
+   "context": "Selvä, lähetän sen kirjallisena.",
+   "have": []
+  },
+  {
+   "key": "p.fi_exp_call_0",
+   "kind": "phrase",
+   "target": "Onko teillä viisi minuuttia nyt?",
+   "tr": "Şu an beş dakikanız var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_call_1",
+   "kind": "phrase",
+   "target": "Eilisen viestin kolmas kohta ei ole selvä.",
+   "tr": "Dünkü mesajın üçüncü maddesi net değil.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_call_2",
+   "kind": "phrase",
+   "target": "Onko tämä lisätyötä vai nykyisessä laajuudessa?",
+   "tr": "Bu ek iş mi yoksa mevcut kapsamda mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_call_3",
+   "kind": "phrase",
+   "target": "Jos ymmärsin väärin, korjatkaa.",
+   "tr": "Yanlış anladıysam lütfen düzeltin.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_call_4",
+   "kind": "phrase",
+   "target": "Tiivistetysti: luonnos perjantaina, kommentit maanantaina.",
+   "tr": "Özetle: taslak cuma, yorumlar pazartesi.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_call_5",
+   "kind": "phrase",
+   "target": "Lähetän vahvistusviestin heti.",
+   "tr": "Şimdi bir teyit mesajı gönderiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.fi_exp_hr_salary",
+   "kind": "scenario_title",
+   "tr": "Maaş görüşmesi",
+   "en": "Salary conversation",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_exp_hr_salary",
+   "kind": "grammar_rule",
+   "tr": "Hedef belirtirken \"tavoitteeni on\" kullanılır; \"vaadin\" kapıyı kapatır.",
+   "en": null,
+   "context": "Tavoitteeni on viisitoista prosenttia. / ✗ Vaadin viisitoista nyt.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.fi_exp_hr_salary.0",
+   "kind": "speaking_prompt",
+   "en": "Tämän vuoden budjetti on kireä.",
+   "context": "Ymmärrän. Voidaanko puhua bonuksesta tai tasosta?",
+   "have": []
+  },
+  {
+   "key": "tp.fi_exp_hr_salary.1",
+   "kind": "speaking_prompt",
+   "en": "Palataan asiaan maaliskuussa.",
+   "context": "Laitetaan maaliskuu kalenteriin ja kriteerit tänään selviksi.",
+   "have": []
+  },
+  {
+   "key": "p.fi_exp_salary_0",
+   "kind": "phrase",
+   "target": "Haluaisin puhua tuloksista ja markkinatasosta.",
+   "tr": "Sonuçlarım ve piyasa seviyesi hakkında konuşmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_salary_1",
+   "kind": "phrase",
+   "target": "Puolen vuoden aikana toimitin kolme projektia ajallaan.",
+   "tr": "Altı ayda üç projeyi zamanında teslim ettim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_salary_2",
+   "kind": "phrase",
+   "target": "Tavoitteeni on viisitoista prosenttia; voin näyttää perustelut.",
+   "tr": "Hedefim yüzde on beş; bunu kanıtlayabilirim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_salary_3",
+   "kind": "phrase",
+   "target": "Nykyinen titteli ei vastaa vastuuta.",
+   "tr": "Mevcut unvan sorumluluğu yansıtmıyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_salary_4",
+   "kind": "phrase",
+   "target": "Jos budjettia ei ole, sovitaan tarkistuspäivä.",
+   "tr": "Bütçe yoksa bir değerlendirme tarihi belirleyelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_salary_5",
+   "kind": "phrase",
+   "target": "Toivon päätöksen kirjallisena.",
+   "tr": "Kararı yazılı olarak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.fi_exp_daily_errands",
+   "kind": "scenario_title",
+   "tr": "Market ve kargo",
+   "en": "Errands and deliveries",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_exp_daily_errands",
+   "kind": "grammar_rule",
+   "tr": "Hizmet ricalarında cümle sonuna \"kiitos\" eklenir: kuitti, kiitos.",
+   "en": null,
+   "context": "Kuitti, kiitos. / ✗ Anna kuitti.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.fi_exp_daily_errands.0",
+   "kind": "speaking_prompt",
+   "en": "Onko kanta-asiakaskorttia?",
+   "context": "Ei, ei tällä kertaa.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_exp_daily_errands.1",
+   "kind": "speaking_prompt",
+   "en": "Ei ole vaihtorahaa, veloitan kortilta.",
+   "context": "Selvä, ei haittaa.",
+   "have": []
+  },
+  {
+   "key": "p.fi_exp_errands_0",
+   "kind": "phrase",
+   "target": "Kaksi tätä leipää ja kuitti, kiitos.",
+   "tr": "Bu ekmekten iki tane ve fiş lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_errands_1",
+   "kind": "phrase",
+   "target": "Missä on gluteeniton hylly?",
+   "tr": "Glütensiz reyon nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_errands_2",
+   "kind": "phrase",
+   "target": "Älkää jättäkö pakettia naapurille; lappu oveen.",
+   "tr": "Paketi komşuya bırakmayın; kapıya not bırakın.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_errands_3",
+   "kind": "phrase",
+   "target": "Minulla ei ole käteistä; käykö kortti?",
+   "tr": "Nakit param yok; kart geçer mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_errands_4",
+   "kind": "phrase",
+   "target": "Palautus neljäntoista päivän sisällä, eikö niin?",
+   "tr": "İade on dört gün içinde, değil mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_errands_5",
+   "kind": "phrase",
+   "target": "En tarvitse kassia, minulla on oma kassi.",
+   "tr": "Poşete gerek yok, kendi çantam var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.fi_exp_networking",
+   "kind": "scenario_title",
+   "tr": "Networking",
+   "en": "Networking",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.fi_exp_networking",
+   "kind": "grammar_rule",
+   "tr": "Kimlik tanıtımı: olen + ammattinimike.",
+   "en": null,
+   "context": "Olen tuotejohtaja fintechissä. / ✗ Teen vähän tuotehommia.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.fi_exp_networking.0",
+   "kind": "speaking_prompt",
+   "en": "Mitä tuote konkreettisesti ratkaisee?",
+   "context": "Yksinkertaistamme laskutusta ja perintää pk-yrityksille.",
+   "have": []
+  },
+  {
+   "key": "tp.fi_exp_networking.1",
+   "kind": "speaking_prompt",
+   "en": "Kiinnostavaa, laittakaa sähköpostia.",
+   "context": "Laitan huomenna.",
+   "have": []
+  },
+  {
+   "key": "p.fi_exp_networking_0",
+   "kind": "phrase",
+   "target": "Olen Aino, tuotejohtaja fintechissä.",
+   "tr": "Benim adım Aino, fintech alanında ürün yöneticisiyim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_networking_1",
+   "kind": "phrase",
+   "target": "Maksuesimerkkinne oli hyvin selkeä.",
+   "tr": "Ödemeler hakkındaki örneğiniz çok netti.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_networking_2",
+   "kind": "phrase",
+   "target": "Onko teillä samanlaista kitkaa?",
+   "tr": "Sizde de aynı tür sorunlar oluyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_networking_3",
+   "kind": "phrase",
+   "target": "Käyntikortit loppuivat; voinko olla yhteydessä LinkedInissä?",
+   "tr": "Kartvizitlerim bitti; LinkedIn’den ulaşabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_networking_4",
+   "kind": "phrase",
+   "target": "Onko teillä kaksi minuuttia? Olen lyhyt.",
+   "tr": "İki dakikanız var mı? Kısa keseceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.fi_exp_networking_5",
+   "kind": "phrase",
+   "target": "Voin esitellä jonkun, josta voi olla hyötyä.",
+   "tr": "Yardımcı olabilecek birini tanıştırabilirim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.fi_balcony",
+   "kind": "story_title",
+   "target": "Parvekkeeni",
+   "tr": "Balkonum",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_balcony.0",
+   "kind": "story_sentence",
+   "target": "Minulla on pieni parveke.",
+   "tr": "Küçük bir balkonum var.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_balcony.1",
+   "kind": "story_sentence",
+   "target": "Parvekkeella kasvaa tomaatteja ja basilikaa.",
+   "tr": "Balkonda domates ve fesleğen büyüyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_balcony.2",
+   "kind": "story_sentence",
+   "target": "Joka aamu kastan kasvit.",
+   "tr": "Her sabah bitkilere su veririm.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_balcony.3",
+   "kind": "story_sentence",
+   "target": "Meidän kissa aina katsoo kukkia.",
+   "tr": "Bizim kedi hep çiçeklere bakar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_balcony.4",
+   "kind": "story_sentence",
+   "target": "Kesällä söimme tomaatteja aamiaisella.",
+   "tr": "Yazın kahvaltıda domates yedik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_balcony.5",
+   "kind": "story_sentence",
+   "target": "Pieni parveke on minun rauhani.",
+   "tr": "Küçük balkon benim sükunetim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.fi_laundry",
+   "kind": "story_title",
+   "target": "Pesupäivä",
+   "tr": "Çamaşır Günü",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_laundry.0",
+   "kind": "story_sentence",
+   "target": "Maanantai on pesupäivä.",
+   "tr": "Pazartesi çamaşır günü.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_laundry.1",
+   "kind": "story_sentence",
+   "target": "Laitan pyykin täyteen ja käynnistän koneen.",
+   "tr": "Çamaşır sepetini doldurup makineyi başlatırım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_laundry.2",
+   "kind": "story_sentence",
+   "target": "Koneen aikana luen sanomalehtiä.",
+   "tr": "Makine çalışırken gazete okurum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_laundry.3",
+   "kind": "story_sentence",
+   "target": "Iltapäivällä ripustan pyykkiä.",
+   "tr": "Öğleden sonra çamaşırları asarım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_laundry.4",
+   "kind": "story_sentence",
+   "target": "Launtaina taitan pyykkiä ja laitan sen kaappiin.",
+   "tr": "Cumartesi çamaşırları katlayıp dolaba koyarım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_laundry.5",
+   "kind": "story_sentence",
+   "target": "Puhtaat vaatteet tuntuvat hyvältä.",
+   "tr": "Temiz kıyafetler iyi hissettirir.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.fi_birthday",
+   "kind": "story_title",
+   "target": "Ystäväni syntymäpäivä",
+   "tr": "Arkadaşımın Doğum Günü",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_birthday.0",
+   "kind": "story_sentence",
+   "target": "Eilen oli ystäväni syntymäpäivä.",
+   "tr": "Dün arkadaşımın doğum günüydü.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_birthday.1",
+   "kind": "story_sentence",
+   "target": "Teimme yhdessä suuren juhlapöydän.",
+   "tr": "Birlikte büyük bir kutlama sofrası hazırladık.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_birthday.2",
+   "kind": "story_sentence",
+   "target": "Laulimme syntymäpäivälaulun.",
+   "tr": "Doğum günü şarkısını söyledik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_birthday.3",
+   "kind": "story_sentence",
+   "target": "Söimme kakkua ja juomimme kaakaota.",
+   "tr": "Pasta yedik, kakao içtik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_birthday.4",
+   "kind": "story_sentence",
+   "target": "Ystäväni sai paljon lahjoja.",
+   "tr": "Arkadaşım çok hediye aldı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.fi_birthday.5",
+   "kind": "story_sentence",
+   "target": "Se oli iloinen ilta.",
+   "tr": "Neşeli bir akşamdı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.A.n",
+   "kind": "alphabet_letter_name",
+   "target": "A",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.A.s",
+   "kind": "alphabet_sound",
+   "target": "A",
+   "tr": "a",
+   "context": "Auto",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.A.m",
+   "kind": "alphabet_example",
+   "target": "Auto",
+   "tr": "Araba",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.D.n",
+   "kind": "alphabet_letter_name",
+   "target": "D",
+   "tr": "De",
+   "en": "De",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.D.s",
+   "kind": "alphabet_sound",
+   "target": "D",
+   "tr": "d",
+   "context": "Radio",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.D.m",
+   "kind": "alphabet_example",
+   "target": "Radio",
+   "tr": "Radyo",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.E.n",
+   "kind": "alphabet_letter_name",
+   "target": "E",
+   "tr": "E",
+   "en": "E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.E.s",
+   "kind": "alphabet_sound",
+   "target": "E",
+   "tr": "e",
+   "context": "Elokuva",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.E.m",
+   "kind": "alphabet_example",
+   "target": "Elokuva",
+   "tr": "Film",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.H.n",
+   "kind": "alphabet_letter_name",
+   "target": "H",
+   "tr": "Ha",
+   "en": "Ha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.H.s",
+   "kind": "alphabet_sound",
+   "target": "H",
+   "tr": "h",
+   "context": "Hattu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.H.m",
+   "kind": "alphabet_example",
+   "target": "Hattu",
+   "tr": "Şapka",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.I.n",
+   "kind": "alphabet_letter_name",
+   "target": "I",
+   "tr": "İ",
+   "en": "I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.I.s",
+   "kind": "alphabet_sound",
+   "target": "I",
+   "tr": "i",
+   "context": "Ilta",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.I.m",
+   "kind": "alphabet_example",
+   "target": "Ilta",
+   "tr": "Akşam",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.J.n",
+   "kind": "alphabet_letter_name",
+   "target": "J",
+   "tr": "Yi",
+   "en": "Yi",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.J.s",
+   "kind": "alphabet_sound",
+   "target": "J",
+   "tr": "y",
+   "context": "Joki",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.J.m",
+   "kind": "alphabet_example",
+   "target": "Joki",
+   "tr": "Nehir",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.K.n",
+   "kind": "alphabet_letter_name",
+   "target": "K",
+   "tr": "Ka",
+   "en": "Ka",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.K.s",
+   "kind": "alphabet_sound",
+   "target": "K",
+   "tr": "k",
+   "context": "Kala",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.K.m",
+   "kind": "alphabet_example",
+   "target": "Kala",
+   "tr": "Balık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.L.n",
+   "kind": "alphabet_letter_name",
+   "target": "L",
+   "tr": "El",
+   "en": "El",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.L.s",
+   "kind": "alphabet_sound",
+   "target": "L",
+   "tr": "l",
+   "context": "Lintu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.L.m",
+   "kind": "alphabet_example",
+   "target": "Lintu",
+   "tr": "Kuş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.M.n",
+   "kind": "alphabet_letter_name",
+   "target": "M",
+   "tr": "Em",
+   "en": "Em",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.M.s",
+   "kind": "alphabet_sound",
+   "target": "M",
+   "tr": "m",
+   "context": "Maito",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.M.m",
+   "kind": "alphabet_example",
+   "target": "Maito",
+   "tr": "Süt",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.N.n",
+   "kind": "alphabet_letter_name",
+   "target": "N",
+   "tr": "En",
+   "en": "En",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.N.s",
+   "kind": "alphabet_sound",
+   "target": "N",
+   "tr": "n",
+   "context": "Nukke",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.N.m",
+   "kind": "alphabet_example",
+   "target": "Nukke",
+   "tr": "Bebek/oyuncak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.O.n",
+   "kind": "alphabet_letter_name",
+   "target": "O",
+   "tr": "O",
+   "en": "O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.O.s",
+   "kind": "alphabet_sound",
+   "target": "O",
+   "tr": "o",
+   "context": "Ovi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.O.m",
+   "kind": "alphabet_example",
+   "target": "Ovi",
+   "tr": "Kapı",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.P.n",
+   "kind": "alphabet_letter_name",
+   "target": "P",
+   "tr": "Pe",
+   "en": "Pe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.P.s",
+   "kind": "alphabet_sound",
+   "target": "P",
+   "tr": "p",
+   "context": "Poika",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.P.m",
+   "kind": "alphabet_example",
+   "target": "Poika",
+   "tr": "Erkek çocuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.R.n",
+   "kind": "alphabet_letter_name",
+   "target": "R",
+   "tr": "Er",
+   "en": "Er",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.R.s",
+   "kind": "alphabet_sound",
+   "target": "R",
+   "tr": "r",
+   "context": "Ruoka",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.R.m",
+   "kind": "alphabet_example",
+   "target": "Ruoka",
+   "tr": "Yemek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.S.n",
+   "kind": "alphabet_letter_name",
+   "target": "S",
+   "tr": "Es",
+   "en": "Es",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.S.s",
+   "kind": "alphabet_sound",
+   "target": "S",
+   "tr": "s",
+   "context": "Sade",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.S.m",
+   "kind": "alphabet_example",
+   "target": "Sade",
+   "tr": "Yağmur",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.T.n",
+   "kind": "alphabet_letter_name",
+   "target": "T",
+   "tr": "Te",
+   "en": "Te",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.T.s",
+   "kind": "alphabet_sound",
+   "target": "T",
+   "tr": "t",
+   "context": "Talo",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.T.m",
+   "kind": "alphabet_example",
+   "target": "Talo",
+   "tr": "Ev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.U.n",
+   "kind": "alphabet_letter_name",
+   "target": "U",
+   "tr": "U",
+   "en": "U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.U.s",
+   "kind": "alphabet_sound",
+   "target": "U",
+   "tr": "u",
+   "context": "Uni",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.U.m",
+   "kind": "alphabet_example",
+   "target": "Uni",
+   "tr": "Uyku",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.V.n",
+   "kind": "alphabet_letter_name",
+   "target": "V",
+   "tr": "Ve",
+   "en": "Ve",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.V.s",
+   "kind": "alphabet_sound",
+   "target": "V",
+   "tr": "v",
+   "context": "Vesi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.V.m",
+   "kind": "alphabet_example",
+   "target": "Vesi",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.Y.n",
+   "kind": "alphabet_letter_name",
+   "target": "Y",
+   "tr": "Y",
+   "en": "Y",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.Y.s",
+   "kind": "alphabet_sound",
+   "target": "Y",
+   "tr": "ü (ince)",
+   "context": "Yö",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.Y.m",
+   "kind": "alphabet_example",
+   "target": "Yö",
+   "tr": "Gece",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.Ä.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ä",
+   "tr": "Ä",
+   "en": "Ae",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.Ä.s",
+   "kind": "alphabet_sound",
+   "target": "Ä",
+   "tr": "e (açık)",
+   "context": "Äiti",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.Ä.m",
+   "kind": "alphabet_example",
+   "target": "Äiti",
+   "tr": "Anne",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.Ö.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ö",
+   "tr": "Ö",
+   "en": "Oe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.fi.Ö.s",
+   "kind": "alphabet_sound",
+   "target": "Ö",
+   "tr": "ö",
+   "context": "Öljy",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.fi.Ö.m",
+   "kind": "alphabet_example",
+   "target": "Öljy",
+   "tr": "Yağ/petrol",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.fi.0.h",
+   "kind": "pronunciation_heard",
+   "target": "çift harf",
+   "tr": "uzun ses",
+   "context": "Ateş vs rüzgar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.fi.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "tuli vs tuuli",
+   "tr": "tuli · tuuli",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.fi.1.h",
+   "kind": "pronunciation_heard",
+   "target": "ä",
+   "tr": "açık e",
+   "context": "Türkçe e'ye yakın.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.fi.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "pää",
+   "tr": "pee",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.fi.2.h",
+   "kind": "pronunciation_heard",
+   "target": "y",
+   "tr": "ü",
+   "context": "Türkçe ü.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.fi.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "syy",
+   "tr": "süü",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

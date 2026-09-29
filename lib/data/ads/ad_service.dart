@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 import 'package:flutter/foundation.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
@@ -42,12 +43,30 @@ class AdService {
     await consentForm.future;
     _canRequestAds = await ConsentInformation.instance.canRequestAds();
     if (_canRequestAds) {
+      await _requestTrackingAuthorization();
       await MobileAds.instance.updateRequestConfiguration(
         RequestConfiguration(maxAdContentRating: MaxAdContentRating.pg),
       );
       await MobileAds.instance.initialize();
     }
     _initialized = true;
+  }
+
+  /// iOS App Tracking Transparency (App Store Kural 5.1.2): reklam kimliği
+  /// (IDFA) yalnızca kullanıcı izin verirse kullanılır. Google'ın önerdiği
+  /// sıra: önce UMP izin formu, sonra ATT penceresi. Reddedilirse AdMob
+  /// kişiselleştirilmemiş reklam gösterir; uygulama normal çalışmaya devam
+  /// eder. Metin: ios/Runner/*.lproj/InfoPlist.strings.
+  static Future<void> _requestTrackingAuthorization() async {
+    if (defaultTargetPlatform != TargetPlatform.iOS) return;
+    try {
+      final status = await AppTrackingTransparency.trackingAuthorizationStatus;
+      if (status == TrackingStatus.notDetermined) {
+        await AppTrackingTransparency.requestTrackingAuthorization();
+      }
+    } catch (_) {
+      // ATT desteklenmeyen eski iOS sürümleri — reklam akışını bozma.
+    }
   }
 
   static String get _rewardedUnit => defaultTargetPlatform == TargetPlatform.iOS

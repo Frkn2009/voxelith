@@ -58,3 +58,18 @@ app.*.map.json
 /android/key.properties
 /android/*.jks
 /android/*.keystore
+
+# Secrets / local AI pipeline (tools/content_ai.py)
+.env
+.env.*
+*.env
+.content_ai/
+tools/__pycache__/
+*.dart.tmp
+*.pem
+*.p12
+*.key
+*.keystore
+*.mobileprovision
+credentials*.json
+service-account*.json

@@ -1,0 +1,4588 @@
+{
+ "lang": "th",
+ "scenarios": [
+  {
+   "id": "th_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "th_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "th_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "th_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "th_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "th_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "th_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "th_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "th_intro",
+   "cefr": "a1",
+   "title": "Getting to know someone"
+  },
+  {
+   "id": "th_shopping",
+   "cefr": "a1",
+   "title": "Shopping for clothes"
+  },
+  {
+   "id": "th_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers and telling time"
+  },
+  {
+   "id": "th_family",
+   "cefr": "a1",
+   "title": "Talking about family"
+  },
+  {
+   "id": "th_weather",
+   "cefr": "a1",
+   "title": "Talking about the weather"
+  },
+  {
+   "id": "th_transport",
+   "cefr": "a1",
+   "title": "Getting around"
+  },
+  {
+   "id": "th_emergency",
+   "cefr": "a1",
+   "title": "Emergency situations"
+  },
+  {
+   "id": "th_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "th_past_story",
+   "cefr": "a1",
+   "title": "Telling a story in the past"
+  },
+  {
+   "id": "th_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "th_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  },
+  {
+   "id": "th_exp_job_interview",
+   "cefr": "b1",
+   "title": "Job interview"
+  },
+  {
+   "id": "th_exp_team_meeting",
+   "cefr": "b1",
+   "title": "Team meeting"
+  },
+  {
+   "id": "th_exp_bank",
+   "cefr": "a2",
+   "title": "Bank account"
+  },
+  {
+   "id": "th_exp_apartment",
+   "cefr": "a2",
+   "title": "Apartment viewing"
+  },
+  {
+   "id": "th_exp_doctor",
+   "cefr": "a2",
+   "title": "At the doctor's"
+  },
+  {
+   "id": "th_exp_business_lunch",
+   "cefr": "b1",
+   "title": "Business lunch"
+  },
+  {
+   "id": "th_exp_complaint",
+   "cefr": "b1",
+   "title": "Complaint"
+  },
+  {
+   "id": "th_exp_business_trip",
+   "cefr": "a2",
+   "title": "Business trip"
+  },
+  {
+   "id": "th_exp_client_call",
+   "cefr": "b1",
+   "title": "Client phone call"
+  },
+  {
+   "id": "th_exp_hr_salary",
+   "cefr": "b2",
+   "title": "Salary conversation"
+  },
+  {
+   "id": "th_exp_daily_errands",
+   "cefr": "a2",
+   "title": "Errands and deliveries"
+  },
+  {
+   "id": "th_exp_networking",
+   "cefr": "b1",
+   "title": "Networking"
+  }
+ ],
+ "stories": [
+  {
+   "id": "th_my_weekend",
+   "level": "a1",
+   "title": "สุดสัปดาห์ของฉัน"
+  },
+  {
+   "id": "th_my_job",
+   "level": "a1",
+   "title": "งานของฉัน"
+  },
+  {
+   "id": "th_weather",
+   "level": "a1",
+   "title": "สภาพอากาศ"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.th_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "ขอกาแฟหนึ่งแก้ว",
+   "have": []
+  },
+  {
+   "key": "tp.th_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "ราคาเท่าไหร่?",
+   "have": []
+  },
+  {
+   "key": "p.th_cafe_0",
+   "kind": "phrase",
+   "target": "ขอกาแฟหนึ่งแก้ว",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_cafe_1",
+   "kind": "phrase",
+   "target": "ราคาเท่าไหร่?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_cafe_2",
+   "kind": "phrase",
+   "target": "ขอบคุณมาก",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "ฉันมีการจอง",
+   "have": []
+  },
+  {
+   "key": "tp.th_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "รวมอาหารเช้าไหม?",
+   "have": []
+  },
+  {
+   "key": "p.th_hotel_0",
+   "kind": "phrase",
+   "target": "ฉันมีการจอง",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_hotel_1",
+   "kind": "phrase",
+   "target": "รวมอาหารเช้าไหม?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_hotel_2",
+   "kind": "phrase",
+   "target": "ขอบคุณมาก",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "ขอโทษ สถานีอยู่ที่ไหน?",
+   "have": []
+  },
+  {
+   "key": "tp.th_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "ขอบคุณมาก",
+   "have": []
+  },
+  {
+   "key": "p.th_dir_0",
+   "kind": "phrase",
+   "target": "ขอโทษ สถานีอยู่ที่ไหน?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_dir_1",
+   "kind": "phrase",
+   "target": "ขอบคุณมาก",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_dir_2",
+   "kind": "phrase",
+   "target": "ฉันไม่เข้าใจ",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "สวัสดี ฉันชื่อเดนิซ",
+   "have": []
+  },
+  {
+   "key": "tp.th_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "ฉันมาจากตุรกี",
+   "have": []
+  },
+  {
+   "key": "p.th_hi_0",
+   "kind": "phrase",
+   "target": "สวัสดี ฉันชื่อเดนิซ",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_hi_1",
+   "kind": "phrase",
+   "target": "ฉันมาจากตุรกี",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_hi_2",
+   "kind": "phrase",
+   "target": "ขอบคุณมาก",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "ฉันกำลังหาอพาร์ตเมนต์",
+   "have": []
+  },
+  {
+   "key": "tp.th_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "ค่าเช่าเท่าไหร่?",
+   "have": []
+  },
+  {
+   "key": "p.th_flat_0",
+   "kind": "phrase",
+   "target": "ฉันกำลังหาอพาร์ตเมนต์",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_flat_1",
+   "kind": "phrase",
+   "target": "ค่าเช่าเท่าไหร่?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_flat_2",
+   "kind": "phrase",
+   "target": "ช่วยฉันได้ไหม?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "อันนี้ราคาเท่าไหร่?",
+   "have": []
+  },
+  {
+   "key": "tp.th_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "เอาอันนี้",
+   "have": []
+  },
+  {
+   "key": "p.th_shop_0",
+   "kind": "phrase",
+   "target": "อันนี้ราคาเท่าไหร่?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_shop_1",
+   "kind": "phrase",
+   "target": "เอาอันนี้",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_shop_2",
+   "kind": "phrase",
+   "target": "รับบัตรไหม?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "ขอบิลด้วย",
+   "have": []
+  },
+  {
+   "key": "tp.th_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "เราจะจ่ายรวมกัน",
+   "have": []
+  },
+  {
+   "key": "p.th_bill_0",
+   "kind": "phrase",
+   "target": "ขอบิลด้วย",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_bill_1",
+   "kind": "phrase",
+   "target": "เราจะจ่ายรวมกัน",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_bill_2",
+   "kind": "phrase",
+   "target": "ไม่ต้องทอน",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "ฉันมีการจอง",
+   "have": []
+  },
+  {
+   "key": "tp.th_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "ขอที่นั่งริมหน้าต่าง",
+   "have": []
+  },
+  {
+   "key": "p.th_airport_0",
+   "kind": "phrase",
+   "target": "ฉันมีการจอง",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_airport_1",
+   "kind": "phrase",
+   "target": "ขอที่นั่งริมหน้าต่าง",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_airport_2",
+   "kind": "phrase",
+   "target": "นี่คิวขึ้นเครื่องใช่ไหม?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Getting to know someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_intro",
+   "kind": "grammar_rule",
+   "tr": "Cümle sonu kibarlık parçacığı konuşanın cinsiyetine göre değişir: erkek \"ครับ\" der, kadın \"ค่ะ\" der. Bu derste kadın sesi kullanıldığı için cümleler \"ค่ะ\" ile biter.",
+   "en": "The sentence-final politeness particle changes with the speaker's gender: men say ครับ, women say ค่ะ.",
+   "context": "สวัสดีค่ะ (kadın konuşmacı) / ✗ สวัสดีครับ (kadın konuşmacı için yanlış)",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_intro.0",
+   "kind": "speaking_prompt",
+   "en": "Someone greets you.",
+   "context": "สวัสดีค่ะ ยินดีที่ได้รู้จัก",
+   "have": []
+  },
+  {
+   "key": "tp.th_intro.1",
+   "kind": "speaking_prompt",
+   "en": "They ask your name.",
+   "context": "ฉันชื่อไอเช่ค่ะ คุณชื่ออะไร?",
+   "have": []
+  },
+  {
+   "key": "tp.th_intro.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do.",
+   "context": "ฉันเป็นครูค่ะ คุณทำงานอะไร?",
+   "have": []
+  },
+  {
+   "key": "tp.th_intro.3",
+   "kind": "speaking_prompt",
+   "en": "They ask your age.",
+   "context": "คุณอายุเท่าไหร่?",
+   "have": []
+  },
+  {
+   "key": "tp.th_intro.4",
+   "kind": "speaking_prompt",
+   "en": "You answer.",
+   "context": "ฉันอายุสามสิบปีค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_intro.5",
+   "kind": "speaking_prompt",
+   "en": "They ask for your number.",
+   "context": "คุณมีเบอร์โทรศัพท์ไหม?",
+   "have": []
+  },
+  {
+   "key": "tp.th_intro.6",
+   "kind": "speaking_prompt",
+   "en": "You hand it over and say goodbye.",
+   "context": "นี่เบอร์ฉันค่ะ แล้วเจอกันนะ!",
+   "have": []
+  },
+  {
+   "key": "p.th_intro_0",
+   "kind": "phrase",
+   "target": "สวัสดีค่ะ ยินดีที่ได้รู้จัก",
+   "tr": "Merhaba, tanıştığımıza memnun oldum.",
+   "en": "Hello, nice to meet you.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_intro_1",
+   "kind": "phrase",
+   "target": "ฉันชื่อไอเช่ค่ะ คุณชื่ออะไร?",
+   "tr": "Benim adım Ayşe, senin adın ne?",
+   "en": "My name is Ayşe, what's your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_intro_2",
+   "kind": "phrase",
+   "target": "ฉันเป็นครูค่ะ คุณทำงานอะไร?",
+   "tr": "Ben öğretmenim. Sen ne iş yapıyorsun?",
+   "en": "I am a teacher. What do you do?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_intro_3",
+   "kind": "phrase",
+   "target": "คุณอายุเท่าไหร่?",
+   "tr": "Kaç yaşındasın?",
+   "en": "How old are you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_intro_4",
+   "kind": "phrase",
+   "target": "ฉันอายุสามสิบปีค่ะ",
+   "tr": "Otuz yaşındayım.",
+   "en": "I am thirty years old.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_intro_5",
+   "kind": "phrase",
+   "target": "คุณมีเบอร์โทรศัพท์ไหม?",
+   "tr": "Telefon numaran var mı?",
+   "en": "Do you have a phone number?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_intro_6",
+   "kind": "phrase",
+   "target": "นี่เบอร์ฉันค่ะ แล้วเจอกันนะ!",
+   "tr": "İşte numaram, sonra görüşürüz!",
+   "en": "Here is my number, see you later!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_shopping",
+   "kind": "scenario_title",
+   "tr": "Alışveriş",
+   "en": "Shopping for clothes",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_shopping",
+   "kind": "grammar_rule",
+   "tr": "Sayarken sıralama İSİM + SAYI + SINIFLAYICI şeklindedir — giysiler için sınıflayıcı \"ตัว\"dır.",
+   "en": "Counting order is NOUN + NUMBER + CLASSIFIER — the classifier for clothing items is \"ตัว\".",
+   "context": "เสื้อสองตัว / ✗ สองเสื้อตัว",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "You see a shirt you like.",
+   "context": "ขอโทษค่ะ เสื้อตัวนี้ราคาเท่าไหร่?",
+   "have": []
+  },
+  {
+   "key": "tp.th_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "It's too big.",
+   "context": "มีไซส์เล็กกว่านี้ไหม?",
+   "have": []
+  },
+  {
+   "key": "tp.th_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want to try it.",
+   "context": "ฉันลองใส่ได้ไหมคะ?",
+   "have": []
+  },
+  {
+   "key": "tp.th_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "You look for a place to change.",
+   "context": "ห้องลองเสื้ออยู่ที่ไหน?",
+   "have": []
+  },
+  {
+   "key": "tp.th_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You decide to buy it.",
+   "context": "ฉันเอาตัวนี้ค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You're ready to pay.",
+   "context": "รับบัตรเครดิตไหม?",
+   "have": []
+  },
+  {
+   "key": "tp.th_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "You need to carry it home.",
+   "context": "ขอถุงด้วยค่ะ",
+   "have": []
+  },
+  {
+   "key": "p.th_shopping_0",
+   "kind": "phrase",
+   "target": "ขอโทษค่ะ เสื้อตัวนี้ราคาเท่าไหร่?",
+   "tr": "Affedersiniz, bu gömlek ne kadar?",
+   "en": "Excuse me, how much is this shirt?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_shopping_1",
+   "kind": "phrase",
+   "target": "มีไซส์เล็กกว่านี้ไหม?",
+   "tr": "Daha küçük beden var mı?",
+   "en": "Do you have a smaller size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_shopping_2",
+   "kind": "phrase",
+   "target": "ฉันลองใส่ได้ไหมคะ?",
+   "tr": "Deneyebilir miyim?",
+   "en": "Can I try it on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_shopping_3",
+   "kind": "phrase",
+   "target": "ห้องลองเสื้ออยู่ที่ไหน?",
+   "tr": "Deneme kabini nerede?",
+   "en": "Where is the fitting room?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_shopping_4",
+   "kind": "phrase",
+   "target": "ฉันเอาตัวนี้ค่ะ",
+   "tr": "Bunu alacağım.",
+   "en": "I'll take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_shopping_5",
+   "kind": "phrase",
+   "target": "รับบัตรเครดิตไหม?",
+   "tr": "Kredi kartı geçiyor mu?",
+   "en": "Do you accept credit cards?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_shopping_6",
+   "kind": "phrase",
+   "target": "ขอถุงด้วยค่ะ",
+   "tr": "Bir poşet alabilir miyim?",
+   "en": "Can I get a bag, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers and telling time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "\"โมง\" (saatin kaç olduğu) ile \"ชั่วโมง\" (süre olarak saat) birbirine karıştırılmamalı.",
+   "en": "Don't confuse \"โมง\" (o'clock, time of day) with \"ชั่วโมง\" (hour, a duration).",
+   "context": "บ่ายสามโมง / ✗ บ่ายสามชั่วโมง",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You want to know the time.",
+   "context": "ตอนนี้กี่โมงแล้ว?",
+   "have": []
+  },
+  {
+   "key": "tp.th_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "Someone answers.",
+   "context": "บ่ายสามโมงแล้ว",
+   "have": []
+  },
+  {
+   "key": "tp.th_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "You're at the station.",
+   "context": "รถไฟออกกี่โมง?",
+   "have": []
+  },
+  {
+   "key": "tp.th_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "The clerk answers.",
+   "context": "ออกตอนบ่ายสี่โมงครึ่ง",
+   "have": []
+  },
+  {
+   "key": "tp.th_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "You mention your schedule.",
+   "context": "ฉันมีประชุมตอนสิบโมงเช้า",
+   "have": []
+  },
+  {
+   "key": "tp.th_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "You arrange to meet.",
+   "context": "เจอกันหนึ่งทุ่มนะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You want today's date.",
+   "context": "วันนี้วันที่เท่าไหร่?",
+   "have": []
+  },
+  {
+   "key": "p.th_numbers_time_0",
+   "kind": "phrase",
+   "target": "ตอนนี้กี่โมงแล้ว?",
+   "tr": "Şu an saat kaç?",
+   "en": "What time is it now?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_numbers_time_1",
+   "kind": "phrase",
+   "target": "บ่ายสามโมงแล้ว",
+   "tr": "Saat üç (öğleden sonra).",
+   "en": "It's three o'clock (afternoon).",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_numbers_time_2",
+   "kind": "phrase",
+   "target": "รถไฟออกกี่โมง?",
+   "tr": "Tren saat kaçta kalkıyor?",
+   "en": "What time does the train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_numbers_time_3",
+   "kind": "phrase",
+   "target": "ออกตอนบ่ายสี่โมงครึ่ง",
+   "tr": "Dört buçukta kalkıyor.",
+   "en": "It leaves at half past four.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_numbers_time_4",
+   "kind": "phrase",
+   "target": "ฉันมีประชุมตอนสิบโมงเช้า",
+   "tr": "Sabah saat onda toplantım var.",
+   "en": "I have a meeting at ten in the morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_numbers_time_5",
+   "kind": "phrase",
+   "target": "เจอกันหนึ่งทุ่มนะ",
+   "tr": "Akşam yedide görüşürüz.",
+   "en": "See you at seven in the evening.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_numbers_time_6",
+   "kind": "phrase",
+   "target": "วันนี้วันที่เท่าไหร่?",
+   "tr": "Bugünün tarihi kaç?",
+   "en": "What is today's date?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Talking about family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_family",
+   "kind": "grammar_rule",
+   "tr": "İnsanları sayarken sınıflayıcı olarak \"คน\" kullanılır.",
+   "en": "The classifier \"คน\" is used when counting people.",
+   "context": "มีพี่น้องสองคน / ✗ มีพี่น้องสองตัว",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_family.0",
+   "kind": "speaking_prompt",
+   "en": "You show a photo.",
+   "context": "นี่คือแม่ของฉัน",
+   "have": []
+  },
+  {
+   "key": "tp.th_family.1",
+   "kind": "speaking_prompt",
+   "en": "You point to another person.",
+   "context": "นี่คือพ่อของฉัน",
+   "have": []
+  },
+  {
+   "key": "tp.th_family.2",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about siblings.",
+   "context": "ฉันมีพี่น้องสองคน",
+   "have": []
+  },
+  {
+   "key": "tp.th_family.3",
+   "kind": "speaking_prompt",
+   "en": "You introduce him.",
+   "context": "นี่คือน้องชายของฉัน",
+   "have": []
+  },
+  {
+   "key": "tp.th_family.4",
+   "kind": "speaking_prompt",
+   "en": "You introduce her.",
+   "context": "นี่คือพี่สาวของฉัน",
+   "have": []
+  },
+  {
+   "key": "tp.th_family.5",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about her.",
+   "context": "เธอเป็นภรรยาคุณใช่ไหม?",
+   "have": []
+  },
+  {
+   "key": "tp.th_family.6",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your son.",
+   "context": "ลูกชายฉันอายุห้าขวบ",
+   "have": []
+  },
+  {
+   "key": "p.th_family_0",
+   "kind": "phrase",
+   "target": "นี่คือแม่ของฉัน",
+   "tr": "Bu benim annem.",
+   "en": "This is my mother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_family_1",
+   "kind": "phrase",
+   "target": "นี่คือพ่อของฉัน",
+   "tr": "Bu benim babam.",
+   "en": "This is my father.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_family_2",
+   "kind": "phrase",
+   "target": "ฉันมีพี่น้องสองคน",
+   "tr": "İki kardeşim var.",
+   "en": "I have two siblings.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_family_3",
+   "kind": "phrase",
+   "target": "นี่คือน้องชายของฉัน",
+   "tr": "Bu benim küçük erkek kardeşim.",
+   "en": "This is my younger brother.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_family_4",
+   "kind": "phrase",
+   "target": "นี่คือพี่สาวของฉัน",
+   "tr": "Bu benim büyük ablam.",
+   "en": "This is my older sister.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_family_5",
+   "kind": "phrase",
+   "target": "เธอเป็นภรรยาคุณใช่ไหม?",
+   "tr": "O senin eşin mi?",
+   "en": "Is she your wife?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_family_6",
+   "kind": "phrase",
+   "target": "ลูกชายฉันอายุห้าขวบ",
+   "tr": "Oğlum beş yaşında.",
+   "en": "My son is five years old.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Talking about the weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_weather",
+   "kind": "grammar_rule",
+   "tr": "Tay dilinde sıfatlar doğrudan fiil gibi davranır — sıfattan önce \"เป็น\" (\"olmak\") koymaya gerek yoktur.",
+   "en": "Thai adjectives function as stative verbs — no \"to be\" (เป็น) is needed before them.",
+   "context": "วันนี้ร้อนมาก / ✗ วันนี้เป็นร้อนมาก",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You start small talk.",
+   "context": "วันนี้อากาศเป็นยังไง?",
+   "have": []
+  },
+  {
+   "key": "tp.th_weather.1",
+   "kind": "speaking_prompt",
+   "en": "You comment on the heat.",
+   "context": "วันนี้ร้อนมาก",
+   "have": []
+  },
+  {
+   "key": "tp.th_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You look outside.",
+   "context": "ข้างนอกฝนตก",
+   "have": []
+  },
+  {
+   "key": "tp.th_weather.3",
+   "kind": "speaking_prompt",
+   "en": "You warn a friend.",
+   "context": "อากาศหนาว เอาเสื้อกันหนาวไปด้วยนะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You check the forecast.",
+   "context": "พรุ่งนี้แดดจะออก",
+   "have": []
+  },
+  {
+   "key": "tp.th_weather.5",
+   "kind": "speaking_prompt",
+   "en": "You feel the wind.",
+   "context": "ลมแรงมาก",
+   "have": []
+  },
+  {
+   "key": "tp.th_weather.6",
+   "kind": "speaking_prompt",
+   "en": "You share your preference.",
+   "context": "ฉันชอบหน้าหนาวมากกว่าหน้าร้อน",
+   "have": []
+  },
+  {
+   "key": "p.th_weather_0",
+   "kind": "phrase",
+   "target": "วันนี้อากาศเป็นยังไง?",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_weather_1",
+   "kind": "phrase",
+   "target": "วันนี้ร้อนมาก",
+   "tr": "Bugün çok sıcak.",
+   "en": "It's very hot today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_weather_2",
+   "kind": "phrase",
+   "target": "ข้างนอกฝนตก",
+   "tr": "Dışarıda yağmur yağıyor.",
+   "en": "It's raining outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_weather_3",
+   "kind": "phrase",
+   "target": "อากาศหนาว เอาเสื้อกันหนาวไปด้วยนะ",
+   "tr": "Hava soğuk, ceket al.",
+   "en": "It's cold, take a jacket.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_weather_4",
+   "kind": "phrase",
+   "target": "พรุ่งนี้แดดจะออก",
+   "tr": "Yarın güneşli olacak.",
+   "en": "Tomorrow it will be sunny.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_weather_5",
+   "kind": "phrase",
+   "target": "ลมแรงมาก",
+   "tr": "Çok rüzgar var.",
+   "en": "It's very windy.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_weather_6",
+   "kind": "phrase",
+   "target": "ฉันชอบหน้าหนาวมากกว่าหน้าร้อน",
+   "tr": "Yazdan çok kışı severim.",
+   "en": "I like winter more than summer.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Getting around",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_transport",
+   "kind": "grammar_rule",
+   "tr": "Gelecek zaman/niyet belirten \"จะ\", doğrudan fiilin ÖNÜNE gelir.",
+   "en": "The future/intention marker \"จะ\" goes directly BEFORE the verb.",
+   "context": "ฉันจะนั่งแท็กซี่ / ✗ ฉันนั่งจะแท็กซี่",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You're lost downtown.",
+   "context": "รถเมล์สายไหนไปใจกลางเมือง?",
+   "have": []
+  },
+  {
+   "key": "tp.th_transport.1",
+   "kind": "speaking_prompt",
+   "en": "You ask a stranger.",
+   "context": "ไปสนามบินยังไง?",
+   "have": []
+  },
+  {
+   "key": "tp.th_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You decide how to travel.",
+   "context": "ฉันจะนั่งแท็กซี่",
+   "have": []
+  },
+  {
+   "key": "tp.th_transport.3",
+   "kind": "speaking_prompt",
+   "en": "You check an empty seat.",
+   "context": "ที่นั่งนี้มีคนนั่งไหม?",
+   "have": []
+  },
+  {
+   "key": "tp.th_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You need a ticket.",
+   "context": "ซื้อตั๋วได้ที่ไหน?",
+   "have": []
+  },
+  {
+   "key": "tp.th_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You're waiting at the platform.",
+   "context": "รถไฟเที่ยวต่อไปออกกี่โมง?",
+   "have": []
+  },
+  {
+   "key": "tp.th_transport.6",
+   "kind": "speaking_prompt",
+   "en": "You're in the taxi.",
+   "context": "จอดตรงนี้ด้วยค่ะ",
+   "have": []
+  },
+  {
+   "key": "p.th_transport_0",
+   "kind": "phrase",
+   "target": "รถเมล์สายไหนไปใจกลางเมือง?",
+   "tr": "Şehir merkezine hangi otobüs gidiyor?",
+   "en": "Which bus goes to the city center?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_transport_1",
+   "kind": "phrase",
+   "target": "ไปสนามบินยังไง?",
+   "tr": "Havaalanına nasıl gidebilirim?",
+   "en": "How do I get to the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_transport_2",
+   "kind": "phrase",
+   "target": "ฉันจะนั่งแท็กซี่",
+   "tr": "Taksiye bineceğim.",
+   "en": "I will take a taxi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_transport_3",
+   "kind": "phrase",
+   "target": "ที่นั่งนี้มีคนนั่งไหม?",
+   "tr": "Bu koltuk dolu mu?",
+   "en": "Is this seat taken?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_transport_4",
+   "kind": "phrase",
+   "target": "ซื้อตั๋วได้ที่ไหน?",
+   "tr": "Bilet nereden alınır?",
+   "en": "Where do I buy a ticket?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_transport_5",
+   "kind": "phrase",
+   "target": "รถไฟเที่ยวต่อไปออกกี่โมง?",
+   "tr": "Bir sonraki tren saat kaçta kalkıyor?",
+   "en": "What time does the next train leave?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_transport_6",
+   "kind": "phrase",
+   "target": "จอดตรงนี้ด้วยค่ะ",
+   "tr": "Lütfen burada durun.",
+   "en": "Please stop here.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency situations",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_emergency",
+   "kind": "grammar_rule",
+   "tr": "Acil bir istek \"ช่วย ... ด้วย\" kalıbıyla sarılır — cümle \"ช่วย\" ile başlar, \"ด้วย\" ile biter.",
+   "en": "An urgent request is wrapped in \"ช่วย ... ด้วย\" — it must start with ช่วย and end with ด้วย.",
+   "context": "ช่วยเรียกตำรวจด้วย! / ✗ เรียกช่วยตำรวจด้วย!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "Something just happened.",
+   "context": "ช่วยด้วย!",
+   "have": []
+  },
+  {
+   "key": "tp.th_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "Someone is badly hurt.",
+   "context": "ช่วยเรียกรถพยาบาลด้วย!",
+   "have": []
+  },
+  {
+   "key": "tp.th_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You check your bag.",
+   "context": "ฉันทำพาสปอร์ตหาย",
+   "have": []
+  },
+  {
+   "key": "tp.th_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You witness a crime.",
+   "context": "ช่วยเรียกตำรวจด้วย!",
+   "have": []
+  },
+  {
+   "key": "tp.th_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You need medical help.",
+   "context": "โรงพยาบาลที่ใกล้ที่สุดอยู่ที่ไหน?",
+   "have": []
+  },
+  {
+   "key": "tp.th_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "Someone asks how you feel.",
+   "context": "ฉันรู้สึกไม่สบายมาก",
+   "have": []
+  },
+  {
+   "key": "tp.th_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You plead for help.",
+   "context": "ได้โปรด ฉันต้องการความช่วยเหลือตอนนี้",
+   "have": []
+  },
+  {
+   "key": "p.th_emergency_0",
+   "kind": "phrase",
+   "target": "ช่วยด้วย!",
+   "tr": "İmdat!",
+   "en": "Help!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_emergency_1",
+   "kind": "phrase",
+   "target": "ช่วยเรียกรถพยาบาลด้วย!",
+   "tr": "Lütfen ambulans çağırın!",
+   "en": "Please call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_emergency_2",
+   "kind": "phrase",
+   "target": "ฉันทำพาสปอร์ตหาย",
+   "tr": "Pasaportumu kaybettim.",
+   "en": "I lost my passport.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_emergency_3",
+   "kind": "phrase",
+   "target": "ช่วยเรียกตำรวจด้วย!",
+   "tr": "Lütfen polisi arayın!",
+   "en": "Call the police, please!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_emergency_4",
+   "kind": "phrase",
+   "target": "โรงพยาบาลที่ใกล้ที่สุดอยู่ที่ไหน?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_emergency_5",
+   "kind": "phrase",
+   "target": "ฉันรู้สึกไม่สบายมาก",
+   "tr": "Kendimi çok kötü hissediyorum.",
+   "en": "I feel very sick.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_emergency_6",
+   "kind": "phrase",
+   "target": "ได้โปรด ฉันต้องการความช่วยเหลือตอนนี้",
+   "tr": "Lütfen, şimdi yardıma ihtiyacım var.",
+   "en": "Please, I need help now.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_routine",
+   "kind": "grammar_rule",
+   "tr": "Tamamlanma bildiren \"แล้ว\", fiil ÖBEĞİNDEN SONRA gelir — fiilden önce konulmaz.",
+   "en": "The completion marker \"แล้ว\" comes AFTER the verb phrase — never before it.",
+   "context": "ฉันกินข้าวแล้ว / ✗ ฉันแล้วกินข้าว",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your morning.",
+   "context": "ฉันมักจะตื่นนอนตอนหกโมง",
+   "have": []
+  },
+  {
+   "key": "tp.th_routine.1",
+   "kind": "speaking_prompt",
+   "en": "You describe your habit.",
+   "context": "ฉันแปรงฟันก่อน",
+   "have": []
+  },
+  {
+   "key": "tp.th_routine.2",
+   "kind": "speaking_prompt",
+   "en": "You continue the routine.",
+   "context": "ฉันกินข้าวเช้าตอนเจ็ดโมง",
+   "have": []
+  },
+  {
+   "key": "tp.th_routine.3",
+   "kind": "speaking_prompt",
+   "en": "They ask how you commute.",
+   "context": "ฉันไปทำงานโดยรถเมล์",
+   "have": []
+  },
+  {
+   "key": "tp.th_routine.4",
+   "kind": "speaking_prompt",
+   "en": "They ask about lunch.",
+   "context": "ฉันมักจะกินข้าวเที่ยงตอนเที่ยง",
+   "have": []
+  },
+  {
+   "key": "tp.th_routine.5",
+   "kind": "speaking_prompt",
+   "en": "They ask about the evening.",
+   "context": "หลังอาหารเย็นฉันดูทีวี",
+   "have": []
+  },
+  {
+   "key": "tp.th_routine.6",
+   "kind": "speaking_prompt",
+   "en": "They ask when you sleep.",
+   "context": "ฉันเข้านอนตอนห้าทุ่ม",
+   "have": []
+  },
+  {
+   "key": "p.th_routine_0",
+   "kind": "phrase",
+   "target": "ฉันมักจะตื่นนอนตอนหกโมง",
+   "tr": "Genelde altıda kalkarım.",
+   "en": "I usually wake up at six.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_routine_1",
+   "kind": "phrase",
+   "target": "ฉันแปรงฟันก่อน",
+   "tr": "Önce dişlerimi fırçalarım.",
+   "en": "I brush my teeth first.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_routine_2",
+   "kind": "phrase",
+   "target": "ฉันกินข้าวเช้าตอนเจ็ดโมง",
+   "tr": "Yedide kahvaltı yaparım.",
+   "en": "I have breakfast at seven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_routine_3",
+   "kind": "phrase",
+   "target": "ฉันไปทำงานโดยรถเมล์",
+   "tr": "İşe otobüsle giderim.",
+   "en": "I go to work by bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_routine_4",
+   "kind": "phrase",
+   "target": "ฉันมักจะกินข้าวเที่ยงตอนเที่ยง",
+   "tr": "Genelde öğlen yemek yerim.",
+   "en": "I usually eat lunch at noon.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_routine_5",
+   "kind": "phrase",
+   "target": "หลังอาหารเย็นฉันดูทีวี",
+   "tr": "Akşam yemeğinden sonra televizyon izlerim.",
+   "en": "After dinner I watch TV.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_routine_6",
+   "kind": "phrase",
+   "target": "ฉันเข้านอนตอนห้าทุ่ม",
+   "tr": "On birde yatarım.",
+   "en": "I go to bed at eleven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_past_story",
+   "kind": "scenario_title",
+   "tr": "Geçmişte bir gün",
+   "en": "Telling a story in the past",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_past_story",
+   "kind": "grammar_rule",
+   "tr": "Tay fiilleri zamana göre çekimlenmez — \"เมื่อวาน\" (dün) gibi zaman sözcükleri geçmiş anlamını taşır.",
+   "en": "Thai verbs never conjugate for tense — time words like \"เมื่อวาน\" (yesterday) carry the past meaning instead.",
+   "context": "เมื่อวานฉันไปตลาด / ✗ เมื่อวานฉันจะไปตลาด",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "You start telling a story.",
+   "context": "เมื่อวานฉันไปตลาด",
+   "have": []
+  },
+  {
+   "key": "tp.th_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "ฉันซื้อผัก",
+   "have": []
+  },
+  {
+   "key": "tp.th_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "แล้วฉันก็เจอเพื่อน",
+   "have": []
+  },
+  {
+   "key": "tp.th_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "เราดื่มกาแฟด้วยกัน",
+   "have": []
+  },
+  {
+   "key": "tp.th_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "หลังจากนั้นฉันก็กลับบ้าน",
+   "have": []
+  },
+  {
+   "key": "tp.th_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "You continue.",
+   "context": "ฉันทำอาหารเย็น",
+   "have": []
+  },
+  {
+   "key": "tp.th_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "You finish the story.",
+   "context": "เป็นวันที่ดีมาก",
+   "have": []
+  },
+  {
+   "key": "p.th_past_story_0",
+   "kind": "phrase",
+   "target": "เมื่อวานฉันไปตลาด",
+   "tr": "Dün pazara gittim.",
+   "en": "Yesterday I went to the market.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_past_story_1",
+   "kind": "phrase",
+   "target": "ฉันซื้อผัก",
+   "tr": "Biraz sebze aldım.",
+   "en": "I bought some vegetables.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_past_story_2",
+   "kind": "phrase",
+   "target": "แล้วฉันก็เจอเพื่อน",
+   "tr": "Sonra arkadaşımla buluştum.",
+   "en": "Then I met my friend.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_past_story_3",
+   "kind": "phrase",
+   "target": "เราดื่มกาแฟด้วยกัน",
+   "tr": "Birlikte kahve içtik.",
+   "en": "We drank coffee together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_past_story_4",
+   "kind": "phrase",
+   "target": "หลังจากนั้นฉันก็กลับบ้าน",
+   "tr": "Ondan sonra eve gittim.",
+   "en": "After that I went home.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_past_story_5",
+   "kind": "phrase",
+   "target": "ฉันทำอาหารเย็น",
+   "tr": "Akşam yemeği pişirdim.",
+   "en": "I cooked dinner.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_past_story_6",
+   "kind": "phrase",
+   "target": "เป็นวันที่ดีมาก",
+   "tr": "Güzel bir gündü.",
+   "en": "It was a good day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "ขอกาแฟหนึ่งแก้ว",
+   "have": []
+  },
+  {
+   "key": "tp.th_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "ฉันมีการจอง",
+   "have": []
+  },
+  {
+   "key": "tp.th_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "ขอโทษ สถานีอยู่ที่ไหน?",
+   "have": []
+  },
+  {
+   "key": "tp.th_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "สวัสดี ฉันชื่อเดนิซ",
+   "have": []
+  },
+  {
+   "key": "p.th_a2_route_0",
+   "kind": "phrase",
+   "target": "ขอกาแฟหนึ่งแก้ว",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_a2_route_1",
+   "kind": "phrase",
+   "target": "ฉันมีการจอง",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_a2_route_2",
+   "kind": "phrase",
+   "target": "ขอโทษ สถานีอยู่ที่ไหน?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_a2_route_3",
+   "kind": "phrase",
+   "target": "สวัสดี ฉันชื่อเดนิซ",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.th_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "รวมอาหารเช้าไหม?",
+   "have": []
+  },
+  {
+   "key": "tp.th_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "ฉันไม่เข้าใจ",
+   "have": []
+  },
+  {
+   "key": "tp.th_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "ฉันกำลังหาอพาร์ตเมนต์",
+   "have": []
+  },
+  {
+   "key": "tp.th_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "ค่าเช่าเท่าไหร่?",
+   "have": []
+  },
+  {
+   "key": "tp.th_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "รับบัตรไหม?",
+   "have": []
+  },
+  {
+   "key": "p.th_b1_solve_0",
+   "kind": "phrase",
+   "target": "รวมอาหารเช้าไหม?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_b1_solve_1",
+   "kind": "phrase",
+   "target": "ฉันไม่เข้าใจ",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_b1_solve_2",
+   "kind": "phrase",
+   "target": "ฉันกำลังหาอพาร์ตเมนต์",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_b1_solve_3",
+   "kind": "phrase",
+   "target": "ค่าเช่าเท่าไหร่?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.th_b1_solve_4",
+   "kind": "phrase",
+   "target": "รับบัตรไหม?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.th_exp_job_interview",
+   "kind": "scenario_title",
+   "tr": "İş görüşmesi",
+   "en": "Job interview",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_exp_job_interview",
+   "kind": "grammar_rule",
+   "tr": "Rica için \"...ได้ไหมคะ/ค่ะ\" kullanılır; doğrudan emir kaba kaçar.",
+   "en": null,
+   "context": "ขอทราบช่วงเงินเดือนได้ไหมคะ / ✗ บอกเงินเดือนมา",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.th_exp_job_interview.0",
+   "kind": "speaking_prompt",
+   "en": "ทำไมถึงอยากร่วมงานกับเราค่ะ/คะ",
+   "context": "แนวทางกับลูกค้าตรงกับจุดแข็งของฉันค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_job_interview.1",
+   "kind": "speaking_prompt",
+   "en": "รับมือสัปดาห์ส่งงานกดดันอย่างไรค่ะ",
+   "context": "ฉันลดขอบเขตงานและบันทึกความเสี่ยงเป็นลายลักษณ์อักษรค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_job_interview.2",
+   "kind": "speaking_prompt",
+   "en": "มีคำถามอะไรไหมคะ",
+   "context": "มีค่ะ ต้องเริ่มงานเมื่อไหร่",
+   "have": []
+  },
+  {
+   "key": "p.th_exp_interview_0",
+   "kind": "phrase",
+   "target": "ขอบคุณที่นัดสัมภาษณ์ค่ะ",
+   "tr": "Görüşmeye davet için teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_interview_1",
+   "kind": "phrase",
+   "target": "ทำงานในทีมผลิตภัณฑ์มาประมาณห้าปีค่ะ",
+   "tr": "Yaklaşık beş yıldır ürün ekibinde çalışıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_interview_2",
+   "kind": "phrase",
+   "target": "สิ่งที่ให้ความสำคัญคือการเข้าใจความต้องการลูกค้าค่ะ",
+   "tr": "Önemsediğim şey müşteri ihtiyacını anlamaktır.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_interview_3",
+   "kind": "phrase",
+   "target": "จุดอ่อนคือติดรายละเอียด เลยใช้เช็กลิสต์ค่ะ",
+   "tr": "Zayıf yönüm detaylara takılmam; bu yüzden kontrol listesi kullanıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_interview_4",
+   "kind": "phrase",
+   "target": "ขอทราบช่วงเงินเดือนได้ไหมคะ",
+   "tr": "Maaş aralığını öğrenebilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_interview_5",
+   "kind": "phrase",
+   "target": "ต้องการให้เริ่มงานเมื่อไหร่คะ",
+   "tr": "İşe ne zaman başlamamı istersiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.th_exp_team_meeting",
+   "kind": "scenario_title",
+   "tr": "Ekip toplantısı",
+   "en": "Team meeting",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_exp_team_meeting",
+   "kind": "grammar_rule",
+   "tr": "\"รอ\" nesne alır: รออนุมัติ; \"รอสำหรับ\" doğru değildir.",
+   "en": null,
+   "context": "รออนุมัติดีไซน์ค่ะ / ✗ รอสำหรับดีไซน์",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.th_exp_team_meeting.0",
+   "kind": "speaking_prompt",
+   "en": "มีใครติดบล็อกไหมคะ",
+   "context": "รออนุมัติดีไซน์ พรุ่งนี้จะเตือนค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_team_meeting.1",
+   "kind": "speaking_prompt",
+   "en": "งานนี้เป็นของคุณต่อนะค่ะ",
+   "context": "รับทราบค่ะ จะอัปเดตทีมวันศุกร์",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_team_meeting.2",
+   "kind": "speaking_prompt",
+   "en": "มีวาระอื่นอีกไหมคะ",
+   "context": "ไม่มีแล้วค่ะ วันนี้ประชุมสั้น",
+   "have": []
+  },
+  {
+   "key": "p.th_exp_meeting_0",
+   "kind": "phrase",
+   "target": "เข้าวาระเลยนะคะ",
+   "tr": "Doğrudan gündeme geçelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_meeting_1",
+   "kind": "phrase",
+   "target": "ฝั่งฉันติดบล็อก API พรุ่งนี้จะให้วันที่ค่ะ",
+   "tr": "Benim tarafımda API engeli var; yarın tarih vereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_meeting_2",
+   "kind": "phrase",
+   "target": "ข้อนี้เลื่อนไปท้ายได้ไหมคะ",
+   "tr": "Bu maddeyi sona bırakabilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_meeting_3",
+   "kind": "phrase",
+   "target": "จดมติ: พฤหัสสี่โมงค่ะ",
+   "tr": "Kararı not ediyorum: perşembe saat dört.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_meeting_4",
+   "kind": "phrase",
+   "target": "ไม่คัดค้าน แต่ขอลงความเสี่ยงด้วยค่ะ",
+   "tr": "İtirazım yok ama riski de kaydedelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_meeting_5",
+   "kind": "phrase",
+   "target": "ต้องต่ออีกห้านาทีไหมคะ",
+   "tr": "Beş dakika daha uzatmamız gerekiyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.th_exp_bank",
+   "kind": "scenario_title",
+   "tr": "Bankada hesap",
+   "en": "Bank account",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_exp_bank",
+   "kind": "grammar_rule",
+   "tr": "Ricada \"อยาก + fiil\" kullanılır; \"เลย\" emir tonuna yaklaşır.",
+   "en": null,
+   "context": "อยากเปิดบัญชีค่ะ / ✗ เปิดบัญชีเดี๋ยวนี้",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.th_exp_bank.0",
+   "kind": "speaking_prompt",
+   "en": "บัญชีรับเงินเดือนใช่ไหมคะ",
+   "context": "ใช่ค่ะ สำหรับเงินเดือน",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_bank.1",
+   "kind": "speaking_prompt",
+   "en": "เซ็นตรงนี้ค่ะ",
+   "context": "ได้ค่ะ เซ็นเลย",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_bank.2",
+   "kind": "speaking_prompt",
+   "en": "ต้องการบัตรเดบิตด้วยไหมคะ",
+   "context": "ต้องการค่ะ ขอบัตรด้วย",
+   "have": []
+  },
+  {
+   "key": "p.th_exp_bank_0",
+   "kind": "phrase",
+   "target": "อยากเปิดบัญชีออมทรัพย์ค่ะ",
+   "tr": "Bir hesap açmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_bank_1",
+   "kind": "phrase",
+   "target": "มีบัตรประชาชนกับหลักฐานที่อยู่ค่ะ",
+   "tr": "Kimliğim ve ikametgah belgem var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_bank_2",
+   "kind": "phrase",
+   "target": "ค่าธรรมเนียมรายปีของบัตรเท่าไหร่คะ",
+   "tr": "Kartın yıllık ücreti ne kadar?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_bank_3",
+   "kind": "phrase",
+   "target": "ขออินเทอร์เน็ตแบงก์ด้วยค่ะ",
+   "tr": "İnternet bankacılığını da istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_bank_4",
+   "kind": "phrase",
+   "target": "วงเงินโอนต่อวันเท่าไหร่คะ",
+   "tr": "Günlük transfer limiti nedir?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_bank_5",
+   "kind": "phrase",
+   "target": "ขอใบเสร็จทางอีเมลได้ไหมคะ",
+   "tr": "Dekontu e-posta ile alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.th_exp_apartment",
+   "kind": "scenario_title",
+   "tr": "Ev bakma",
+   "en": "Apartment viewing",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_exp_apartment",
+   "kind": "grammar_rule",
+   "tr": "Hâlâ boş olup olmadığını sormak için \"ยัง...ไหม\" kullanılır.",
+   "en": null,
+   "context": "ห้องยังว่างไหมคะ / ✗ ว่างเสมอไหมยัง",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.th_exp_apartment.0",
+   "kind": "speaking_prompt",
+   "en": "จะย้ายเข้าเมื่อไหร่คะ",
+   "context": "ต้นเดือน ของไม่มากค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_apartment.1",
+   "kind": "speaking_prompt",
+   "en": "เจ้าของไม่อนุญาตสัตว์เลี้ยงค่ะ",
+   "context": "เข้าใจค่ะ ไม่มีสัตว์เลี้ยงอยู่แล้ว",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_apartment.2",
+   "kind": "speaking_prompt",
+   "en": "มีคำถามอื่นไหมคะ",
+   "context": "มีค่ะ ขอดูห้องตอนนี้ได้ไหม",
+   "have": []
+  },
+  {
+   "key": "p.th_exp_apartment_0",
+   "kind": "phrase",
+   "target": "เห็นประกาศมา ห้องยังว่างไหมคะ",
+   "tr": "İlanı gördüm, daire hâlâ boş mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_apartment_1",
+   "kind": "phrase",
+   "target": "ค่าส่วนกลางรวมค่าไฟร้อนไหมคะ",
+   "tr": "Aidat ısınmayı da kapsıyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_apartment_2",
+   "kind": "phrase",
+   "target": "เงินประกันกี่เดือนคะ",
+   "tr": "Depozito kaç aylık kiraya denk geliyor?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_apartment_3",
+   "kind": "phrase",
+   "target": "สัญญาปีหนึ่ง หรือสั้นกว่าได้ไหมคะ",
+   "tr": "Sözleşme bir yıllık mı, daha kısa olabilir mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_apartment_4",
+   "kind": "phrase",
+   "target": "ทำงานที่บ้าน ต้องการความเงียบค่ะ",
+   "tr": "Evden çalışıyorum, sessizliğe ihtiyacım var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_apartment_5",
+   "kind": "phrase",
+   "target": "จะตอบพรุ่งนี้นะคะ",
+   "tr": "Yarın cevap vereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.th_exp_doctor",
+   "kind": "scenario_title",
+   "tr": "Doktorda",
+   "en": "At the doctor's",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_exp_doctor",
+   "kind": "grammar_rule",
+   "tr": "\"แล้ว\" ile süre belirtilir: สามวันแล้ว; kendi kendine teşhis koymayın.",
+   "en": null,
+   "context": "มีไข้สามวันแล้วค่ะ / ✗ ฉันเป็นปอดบวมค่ะ น่าจะ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.th_exp_doctor.0",
+   "kind": "speaking_prompt",
+   "en": "เจ็บตรงไหน เริ่มกะทันหันไหมคะ",
+   "context": "อกด้านขวา ตั้งแต่เมื่อคืนค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_doctor.1",
+   "kind": "speaking_prompt",
+   "en": "ขอเจาะเลือดนะค่ะ",
+   "context": "ได้ค่ะ ไปตรงไหน",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_doctor.2",
+   "kind": "speaking_prompt",
+   "en": "ตอนนี้กินยาอะไรอยู่ไหมคะ",
+   "context": "ไม่มีค่ะ ไม่ได้กินยาอะไร",
+   "have": []
+  },
+  {
+   "key": "p.th_exp_doctor_0",
+   "kind": "phrase",
+   "target": "มีไข้สามวันแล้ว กลางคืนไอค่ะ",
+   "tr": "Üç gündür ateşim var, geceleri öksürüyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_doctor_1",
+   "kind": "phrase",
+   "target": "ไม่แพ้เพนิซิลินค่ะ",
+   "tr": "Penisiline alerjim yok.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_doctor_2",
+   "kind": "phrase",
+   "target": "ยานี้ทำให้ง่วงไหมคะ",
+   "tr": "Bu ilaç uyku hâli yapar mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_doctor_3",
+   "kind": "phrase",
+   "target": "ต้องมีใบรับรองแพทย์ไหมคะ",
+   "tr": "Doktor raporuna ihtiyacım var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_doctor_4",
+   "kind": "phrase",
+   "target": "ควรมาตรวจซ้ำเมื่อไหร่คะ",
+   "tr": "Kontrol için ne zaman gelmeliyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_doctor_5",
+   "kind": "phrase",
+   "target": "ร้านยาอยู่นอกตึกไหมคะ",
+   "tr": "Eczane bina dışında mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.th_exp_business_lunch",
+   "kind": "scenario_title",
+   "tr": "İş yemeği",
+   "en": "Business lunch",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_exp_business_lunch",
+   "kind": "grammar_rule",
+   "tr": "Hesabı ikram etmek: ทางเราเลี้ยง; \"คุณจ่าย\" kaba kaçar.",
+   "en": null,
+   "context": "รอบนี้ทางเราเลี้ยงค่ะ / ✗ คุณจ่ายทั้งหมด",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.th_exp_business_lunch.0",
+   "kind": "speaking_prompt",
+   "en": "ราคายังสูงอยู่ค่ะ",
+   "context": "แบ่งเป็นสองเฟสได้ค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_business_lunch.1",
+   "kind": "speaking_prompt",
+   "en": "เดี๋ยวไปคิดดูก่อนค่ะ",
+   "context": "ได้ค่ะ จะโทรตามวันศุกร์",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_business_lunch.2",
+   "kind": "speaking_prompt",
+   "en": "มีคำถามอื่นไหมคะ",
+   "context": "ไม่มีค่ะ ขอบคุณเวลาของคุณ",
+   "have": []
+  },
+  {
+   "key": "p.th_exp_lunch_0",
+   "kind": "phrase",
+   "target": "จองร้านตามคำแนะนำของคุณค่ะ",
+   "tr": "Mekanı sizin önerinize göre ayarladım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_lunch_1",
+   "kind": "phrase",
+   "target": "แพ้อาหารหรือข้อห้ามอะไรไหมคะ",
+   "tr": "Alerjiniz veya tercihiniz var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_lunch_2",
+   "kind": "phrase",
+   "target": "ก่อนสั่ง เคลียร์ประเด็นหลักก่อนไหมคะ",
+   "tr": "Sipariş vermeden önce ana noktaları netleştirelim mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_lunch_3",
+   "kind": "phrase",
+   "target": "ไม่คุยตัวเลขบนโต๊ะ ส่งทีหลังค่ะ",
+   "tr": "Masada rakamlara girmeyelim; sonra göndereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_lunch_4",
+   "kind": "phrase",
+   "target": "รอบนี้ทางเราเลี้ยงค่ะ",
+   "tr": "Bu sefer hesap bizden.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_lunch_5",
+   "kind": "phrase",
+   "target": "คุยกันได้ประโยชน์ ขอบคุณค่ะ",
+   "tr": "Verimli bir görüşme oldu, teşekkürler.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.th_exp_complaint",
+   "kind": "scenario_title",
+   "tr": "Şikâyet",
+   "en": "Complaint",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_exp_complaint",
+   "kind": "grammar_rule",
+   "tr": "Yazılı kanıt için \"ลายลักษณ์อักษร\" kullanılır; sadece mesaj yeterli değildir.",
+   "en": null,
+   "context": "ขอเป็นลายลักษณ์อักษรค่ะ / ✗ ทักไลน์อย่างเดียว",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.th_exp_complaint.0",
+   "kind": "speaking_prompt",
+   "en": "ขออภัย กำลังเช็คให้นะค่ะ",
+   "context": "ขอบคุณ ช่วยบันทึกเวลาสายด้วยค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_complaint.1",
+   "kind": "speaking_prompt",
+   "en": "ส่งถึงพรุ่งนี้สองโมงค่ะ",
+   "context": "ได้ค่ะ รอค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_complaint.2",
+   "kind": "speaking_prompt",
+   "en": "ส่งอีเมลยืนยันให้ไหมคะ",
+   "context": "ได้ค่ะ ช่วยส่งด้วย",
+   "have": []
+  },
+  {
+   "key": "p.th_exp_complaint_0",
+   "kind": "phrase",
+   "target": "ออเดอร์ 1842 ยังไม่ถึงค่ะ",
+   "tr": "1842 numaralı sipariş hâlâ gelmedi.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_complaint_1",
+   "kind": "phrase",
+   "target": "วันที่นัดไว้คือเมื่อวานค่ะ",
+   "tr": "Kararlaştırılan tarih dündü.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_complaint_2",
+   "kind": "phrase",
+   "target": "ขอคืนค่าส่งเป็นทางออกค่ะ",
+   "tr": "Çözüm olarak kargo ücretinin iadesini istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_complaint_3",
+   "kind": "phrase",
+   "target": "ต้องคุยหัวหน้า หรือคุณแก้ได้คะ",
+   "tr": "Bir yöneticiyle mi konuşmalıyım, yoksa siz çözebilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_complaint_4",
+   "kind": "phrase",
+   "target": "ขอหลักฐานเป็นลายลักษณ์อักษรได้ไหมคะ",
+   "tr": "Yazılı bir teyit alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_complaint_5",
+   "kind": "phrase",
+   "target": "อดทนได้ แต่วันนี้ขอเวลาที่ชัดค่ะ",
+   "tr": "Sabırlıyım ama bugün net bir saat lazım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.th_exp_business_trip",
+   "kind": "scenario_title",
+   "tr": "İş seyahati",
+   "en": "Business trip",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_exp_business_trip",
+   "kind": "grammar_rule",
+   "tr": "Yetişmek: \"ทัน\"; kaçırmak için \"พลาด\" kullanılır.",
+   "en": null,
+   "context": "จะทันต่อเครื่องไหมคะ / ✗ จะพลาดสนามบินไหม",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.th_exp_business_trip.0",
+   "kind": "speaking_prompt",
+   "en": "ริมหน้าต่างหรือทางเดินค่ะ",
+   "context": "ทางเดิน ใกล้ทางออกถ้าได้ค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_business_trip.1",
+   "kind": "speaking_prompt",
+   "en": "เกต 12 อีกประมาณสี่สิบนาทีค่ะ",
+   "context": "ขอบคุณค่ะ ไปเลย",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_business_trip.2",
+   "kind": "speaking_prompt",
+   "en": "มีกระเป๋าโหลดใต้เครื่องไหมคะ",
+   "context": "ไม่มีค่ะ มีแค่กระเป๋าถือ",
+   "have": []
+  },
+  {
+   "key": "p.th_exp_trip_0",
+   "kind": "phrase",
+   "target": "นี่รหัส PNR ขอ boarding pass ค่ะ",
+   "tr": "İşte rezervasyon kodum; biniş kartı lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_trip_1",
+   "kind": "phrase",
+   "target": "กระเป๋าถือเข้าขนาดไหมคะ",
+   "tr": "El bagajı ölçülere uyuyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_trip_2",
+   "kind": "phrase",
+   "target": "ดีเลย์แล้วจะทันต่อเครื่องไหมคะ",
+   "tr": "Gecikirsek aktarmaya yetişir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_trip_3",
+   "kind": "phrase",
+   "target": "ใบเสร็จออกชื่อบริษัทค่ะ",
+   "tr": "Fatura şirket adına lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_trip_4",
+   "kind": "phrase",
+   "target": "ทางเข้าเลานจ์อยู่ไหนคะ",
+   "tr": "Lounge girişi nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_trip_5",
+   "kind": "phrase",
+   "target": "ต้องเก็บใบแท็กซี่เบิกค่ะ",
+   "tr": "Masraf için taksi fişini saklamam gerekiyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.th_exp_client_call",
+   "kind": "scenario_title",
+   "tr": "Müşteri telefonu",
+   "en": "Client phone call",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_exp_client_call",
+   "kind": "grammar_rule",
+   "tr": "Yanlış anlamayı teyit etmek için \"ถ้าเข้าใจผิด\" kullanılır.",
+   "en": null,
+   "context": "ถ้าเข้าใจผิด ช่วยแก้ด้วยค่ะ / ✗ ถ้าจะเข้าใจผิดแล้ว…",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.th_exp_client_call.0",
+   "kind": "speaking_prompt",
+   "en": "ไม่มีฟีเจอร์นี้ขึ้นไลฟ์ไม่ได้ค่ะ",
+   "context": "งั้นเลื่อนอย่างอื่น ดึงอันนี้ขึ้นก่อนค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_client_call.1",
+   "kind": "speaking_prompt",
+   "en": "โอเค เขียนไว้ค่ะ",
+   "context": "ส่งเป็นลายลักษณ์อักษรตอนนี้เลยค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_client_call.2",
+   "kind": "speaking_prompt",
+   "en": "เวอร์ชันสุดท้ายเสร็จเมื่อไหร่คะ",
+   "context": "จะเสร็จภายในศุกร์นี้ค่ะ",
+   "have": []
+  },
+  {
+   "key": "p.th_exp_call_0",
+   "kind": "phrase",
+   "target": "ว่างห้านาทีไหมคะ",
+   "tr": "Beş dakikanız var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_call_1",
+   "kind": "phrase",
+   "target": "ข้อสามในเมลเมื่อวานยังไม่ชัดค่ะ",
+   "tr": "Dünkü mailin üçüncü maddesi net değil.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_call_2",
+   "kind": "phrase",
+   "target": "นี่งานเพิ่ม หรืออยู่ในสโคปเดิมคะ",
+   "tr": "Bu ek iş mi yoksa mevcut kapsamda mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_call_3",
+   "kind": "phrase",
+   "target": "ถ้าเข้าใจผิด ช่วยแก้ด้วยค่ะ",
+   "tr": "Yanlış anladıysam lütfen düzeltin.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_call_4",
+   "kind": "phrase",
+   "target": "สรุป: ศุกร์ดราฟต์ จันทร์คอมเมนต์ค่ะ",
+   "tr": "Özet: cuma taslak, pazartesi yorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_call_5",
+   "kind": "phrase",
+   "target": "ส่งเมลยืนยันทันทีค่ะ",
+   "tr": "Hemen bir teyit maili gönderiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.th_exp_hr_salary",
+   "kind": "scenario_title",
+   "tr": "Maaş görüşmesi",
+   "en": "Salary conversation",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_exp_hr_salary",
+   "kind": "grammar_rule",
+   "tr": "\"คาดหวัง\" beklentiyi yumuşak sunar; \"ต้องการเดี๋ยวนี้\" talep dayatır.",
+   "en": null,
+   "context": "คาดหวังสิบห้าเปอร์เซ็นต์ค่ะ / ✗ ขอสิบห้าเดี๋ยวนี้",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.th_exp_hr_salary.0",
+   "kind": "speaking_prompt",
+   "en": "ปีนี้งบตึงค่ะ",
+   "context": "เข้าใจค่ะ โบนัสหรือระดับได้ไหมคะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_hr_salary.1",
+   "kind": "speaking_prompt",
+   "en": "กลับมาดูมีนาคมค่ะ",
+   "context": "ได้ค่ะ คุยกันอีกทีมีนาคม",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_hr_salary.2",
+   "kind": "speaking_prompt",
+   "en": "มีอะไรอยากคุยเพิ่มไหมคะ",
+   "context": "มีค่ะ เรื่องงบอบรมด้วย",
+   "have": []
+  },
+  {
+   "key": "p.th_exp_salary_0",
+   "kind": "phrase",
+   "target": "อยากคุยผลงานกับตลาดแรงงานค่ะ",
+   "tr": "Performansım ve piyasa seviyesi hakkında konuşmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_salary_1",
+   "kind": "phrase",
+   "target": "หกเดือนส่งสามโปรเจกต์ตรงเวลาค่ะ",
+   "tr": "Altı ayda üç projeyi zamanında teslim ettim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_salary_2",
+   "kind": "phrase",
+   "target": "คาดหวังสิบห้าเปอร์เซ็นต์ มีหลักฐานค่ะ",
+   "tr": "Yüzde on beş bekliyorum, kanıtım var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_salary_3",
+   "kind": "phrase",
+   "target": "ตำแหน่งตอนนี้ไม่สะท้อนหน้าที่จริงค่ะ",
+   "tr": "Mevcut unvan gerçek görevi yansıtmıyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_salary_4",
+   "kind": "phrase",
+   "target": "ถ้างบไม่ถึง นัดวันทบทวนค่ะ",
+   "tr": "Bütçe yetmezse bir değerlendirme tarihi belirleyelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_salary_5",
+   "kind": "phrase",
+   "target": "ขอคำตัดสินเป็นลายลักษณ์อักษรค่ะ",
+   "tr": "Kararı yazılı olarak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.th_exp_daily_errands",
+   "kind": "scenario_title",
+   "tr": "Market ve kargo",
+   "en": "Errands and deliveries",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_exp_daily_errands",
+   "kind": "grammar_rule",
+   "tr": "Nazik red: \"ไม่เอา + isim\" kullanılır.",
+   "en": null,
+   "context": "ไม่เอาถุงค่ะ / ✗ อย่าให้ถุง!",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.th_exp_daily_errands.0",
+   "kind": "speaking_prompt",
+   "en": "มีบัตรสมาชิกไหมคะ",
+   "context": "รอบนี้ไม่เอาค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_daily_errands.1",
+   "kind": "speaking_prompt",
+   "en": "ไม่มีเงินทอน รูดบัตรนะค่ะ",
+   "context": "ได้ค่ะ รูดบัตรเลย",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_daily_errands.2",
+   "kind": "speaking_prompt",
+   "en": "รับใบกำกับภาษีด้วยไหมคะ",
+   "context": "ไม่ต้องค่ะ ขอแค่ใบเสร็จ",
+   "have": []
+  },
+  {
+   "key": "p.th_exp_errands_0",
+   "kind": "phrase",
+   "target": "ขนมปังนี้สองชิ้น กับใบเสร็จค่ะ",
+   "tr": "Bu ekmekten iki tane ve fiş lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_errands_1",
+   "kind": "phrase",
+   "target": "ชั้นกลูเตนฟรีอยู่ไหนคะ",
+   "tr": "Glütensiz reyon nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_errands_2",
+   "kind": "phrase",
+   "target": "อย่าฝากเพื่อนบ้าน ติดโน้ตที่ประตูค่ะ",
+   "tr": "Komşuya bırakmayın; kapıya not bırakın.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_errands_3",
+   "kind": "phrase",
+   "target": "ไม่มีเงินสด บัตรได้ไหมคะ",
+   "tr": "Nakit param yok; kart geçer mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_errands_4",
+   "kind": "phrase",
+   "target": "คืนของได้สิบสี่วันใช่ไหมคะ",
+   "tr": "İade on dört gün içinde, değil mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_errands_5",
+   "kind": "phrase",
+   "target": "ไม่เอาถุง มีถุงผ้าเองค่ะ",
+   "tr": "Poşete gerek yok, kendi çantam var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.th_exp_networking",
+   "kind": "scenario_title",
+   "tr": "Networking",
+   "en": "Networking",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.th_exp_networking",
+   "kind": "grammar_rule",
+   "tr": "Tanıtım: ฉันชื่อ… + อาชีพ, sonunda ค่ะ eklenir.",
+   "en": null,
+   "context": "ฉันเป็นโปรดักต์แมเนเจอร์ค่ะ / ✗ ฉันทำพวกโปรดักต์อะไรสักอย่าง",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.th_exp_networking.0",
+   "kind": "speaking_prompt",
+   "en": "แอปแก้ปัญหาอะไรชัด ๆ ค่ะ",
+   "context": "ทำบิลและเก็บเงินให้ง่ายสำหรับเอสเอ็มอีค่ะ",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_networking.1",
+   "kind": "speaking_prompt",
+   "en": "น่าสนใจ ส่งเมลมาได้ค่ะ",
+   "context": "ได้ค่ะ พรุ่งนี้ส่งไป",
+   "have": []
+  },
+  {
+   "key": "tp.th_exp_networking.2",
+   "kind": "speaking_prompt",
+   "en": "ตอนนี้เน้นตลาดไหนคะ",
+   "context": "ตอนนี้เน้นเอเชียตะวันออกเฉียงใต้ค่ะ",
+   "have": []
+  },
+  {
+   "key": "p.th_exp_networking_0",
+   "kind": "phrase",
+   "target": "ฉันชื่ออัน โปรดักต์แมเนเจอร์ด้านฟินเทคค่ะ",
+   "tr": "Benim adım An, fintech alanında ürün yöneticisiyim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_networking_1",
+   "kind": "phrase",
+   "target": "ตัวอย่างเรื่องเพย์เมนต์ชัดมากค่ะ",
+   "tr": "Ödemeler hakkındaki örneğiniz çok netti.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_networking_2",
+   "kind": "phrase",
+   "target": "ทางคุณก็เจอปัญหาแบบนี้ไหมคะ",
+   "tr": "Sizde de böyle sorunlar oluyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_networking_3",
+   "kind": "phrase",
+   "target": "นามบัตรหมด แอดลิงกด์อินได้ไหมคะ",
+   "tr": "Kartvizitlerim bitti; LinkedIn’den ekleyebilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_networking_4",
+   "kind": "phrase",
+   "target": "ขอสองนาที สั้น ๆ ค่ะ",
+   "tr": "İki dakika, kısa keseceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.th_exp_networking_5",
+   "kind": "phrase",
+   "target": "ยินดีแนะนำคนในสายใกล้เคียงค่ะ",
+   "tr": "İlgili birisini tanıştırmaktan memnuniyet duyarım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.th_my_weekend",
+   "kind": "story_title",
+   "target": "สุดสัปดาห์ของฉัน",
+   "tr": "Benim Hafta Sonum",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_my_weekend.0",
+   "kind": "story_sentence",
+   "target": "วันเสาร์เช้าฉันไปสวนสาธารณะ",
+   "tr": "Cumartesi sabahı parka gittim.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_my_weekend.1",
+   "kind": "story_sentence",
+   "target": "ฉันเดินเล่นกับเพื่อน",
+   "tr": "Arkadaşımla yürüdüm.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_my_weekend.2",
+   "kind": "story_sentence",
+   "target": "ในสวนมีดอกไม้และนก",
+   "tr": "Parkta çiçekler ve kuşlar vardı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_my_weekend.3",
+   "kind": "story_sentence",
+   "target": "ตอนเที่ยงเรากินก๋วยเตี๋ยว",
+   "tr": "Öğlen noodle yedik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_my_weekend.4",
+   "kind": "story_sentence",
+   "target": "ก๋วยเตี๋ยวอร่อยมาก",
+   "tr": "Noodle çok lezzetliydi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_my_weekend.5",
+   "kind": "story_sentence",
+   "target": "เป็นสุดสัปดาห์ที่ดีมาก",
+   "tr": "Çok güzel bir hafta sonuydu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.th_my_job",
+   "kind": "story_title",
+   "target": "งานของฉัน",
+   "tr": "Benim İşim",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_my_job.0",
+   "kind": "story_sentence",
+   "target": "ฉันทำงานในสำนักงาน",
+   "tr": "Bir ofiste çalışıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_my_job.1",
+   "kind": "story_sentence",
+   "target": "ทุกวันฉันนั่งรถเมล์ไปทำงาน",
+   "tr": "Her gün otobüsle işe gidiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_my_job.2",
+   "kind": "story_sentence",
+   "target": "ตอนเช้าฉันใช้คอมพิวเตอร์ทำงาน",
+   "tr": "Sabahları bilgisayarla çalışıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_my_job.3",
+   "kind": "story_sentence",
+   "target": "ตอนเที่ยงฉันกินข้าวกับเพื่อน",
+   "tr": "Öğlen arkadaşlarımla yemek yiyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_my_job.4",
+   "kind": "story_sentence",
+   "target": "หกโมงเย็นฉันเลิกงาน",
+   "tr": "Altıda işten ayrılıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_my_job.5",
+   "kind": "story_sentence",
+   "target": "ตอนเย็นฉันดูทีวีที่บ้าน",
+   "tr": "Akşam evde televizyon izliyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.th_weather",
+   "kind": "story_title",
+   "target": "สภาพอากาศ",
+   "tr": "Hava Durumu",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_weather.0",
+   "kind": "story_sentence",
+   "target": "วันนี้อากาศดี",
+   "tr": "Bugün hava güzel.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_weather.1",
+   "kind": "story_sentence",
+   "target": "เช้าอากาศเย็นเล็กน้อย",
+   "tr": "Sabah hava biraz serin.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_weather.2",
+   "kind": "story_sentence",
+   "target": "ตอนบ่ายฝนตก",
+   "tr": "Öğleden sonra yağmur yağdı.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_weather.3",
+   "kind": "story_sentence",
+   "target": "ฉันเอาร่มไปด้วย",
+   "tr": "Yanımda şemsiye taşıdım.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_weather.4",
+   "kind": "story_sentence",
+   "target": "ตอนเย็นฝนหยุด",
+   "tr": "Akşam yağmur durdu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.th_weather.5",
+   "kind": "story_sentence",
+   "target": "พรุ่งนี้อากาศจะดี",
+   "tr": "Yarın hava güzel olacak.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ก.n",
+   "kind": "alphabet_letter_name",
+   "target": "ก",
+   "tr": "Ko Kai",
+   "en": "Ko Kai",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ก.s",
+   "kind": "alphabet_sound",
+   "target": "ก",
+   "tr": "k",
+   "context": "ไก่",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ก.m",
+   "kind": "alphabet_example",
+   "target": "ไก่",
+   "tr": "Tavuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ข.n",
+   "kind": "alphabet_letter_name",
+   "target": "ข",
+   "tr": "Kho Khai",
+   "en": "Kho Khai",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ข.s",
+   "kind": "alphabet_sound",
+   "target": "ข",
+   "tr": "kh",
+   "context": "ไข่",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ข.m",
+   "kind": "alphabet_example",
+   "target": "ไข่",
+   "tr": "Yumurta",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ค.n",
+   "kind": "alphabet_letter_name",
+   "target": "ค",
+   "tr": "Kho Khwai",
+   "en": "Kho Khwai",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ค.s",
+   "kind": "alphabet_sound",
+   "target": "ค",
+   "tr": "kh",
+   "context": "ควาย",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ค.m",
+   "kind": "alphabet_example",
+   "target": "ควาย",
+   "tr": "Bufalo",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ง.n",
+   "kind": "alphabet_letter_name",
+   "target": "ง",
+   "tr": "Ngo Ngu",
+   "en": "Ngo Ngu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ง.s",
+   "kind": "alphabet_sound",
+   "target": "ง",
+   "tr": "ng",
+   "context": "งู",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ง.m",
+   "kind": "alphabet_example",
+   "target": "งู",
+   "tr": "Yılan",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.จ.n",
+   "kind": "alphabet_letter_name",
+   "target": "จ",
+   "tr": "Cho Chan",
+   "en": "Cho Chan",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.จ.s",
+   "kind": "alphabet_sound",
+   "target": "จ",
+   "tr": "c",
+   "context": "จาน",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.จ.m",
+   "kind": "alphabet_example",
+   "target": "จาน",
+   "tr": "Tabak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ช.n",
+   "kind": "alphabet_letter_name",
+   "target": "ช",
+   "tr": "Cho Chang",
+   "en": "Cho Chang",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ช.s",
+   "kind": "alphabet_sound",
+   "target": "ช",
+   "tr": "ç",
+   "context": "ช้าง",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ช.m",
+   "kind": "alphabet_example",
+   "target": "ช้าง",
+   "tr": "Fil",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ซ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ซ",
+   "tr": "So So",
+   "en": "So So",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ซ.s",
+   "kind": "alphabet_sound",
+   "target": "ซ",
+   "tr": "s",
+   "context": "โซ่",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ซ.m",
+   "kind": "alphabet_example",
+   "target": "โซ่",
+   "tr": "Zincir",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ญ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ญ",
+   "tr": "Yo Ying",
+   "en": "Yo Ying",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ญ.s",
+   "kind": "alphabet_sound",
+   "target": "ญ",
+   "tr": "y",
+   "context": "หญิง",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ญ.m",
+   "kind": "alphabet_example",
+   "target": "หญิง",
+   "tr": "Kadın",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ด.n",
+   "kind": "alphabet_letter_name",
+   "target": "ด",
+   "tr": "Do Dek",
+   "en": "Do Dek",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ด.s",
+   "kind": "alphabet_sound",
+   "target": "ด",
+   "tr": "d",
+   "context": "เด็ก",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ด.m",
+   "kind": "alphabet_example",
+   "target": "เด็ก",
+   "tr": "Çocuk",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ต.n",
+   "kind": "alphabet_letter_name",
+   "target": "ต",
+   "tr": "To Tao",
+   "en": "To Tao",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ต.s",
+   "kind": "alphabet_sound",
+   "target": "ต",
+   "tr": "t",
+   "context": "เต่า",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ต.m",
+   "kind": "alphabet_example",
+   "target": "เต่า",
+   "tr": "Kaplumbağa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ท.n",
+   "kind": "alphabet_letter_name",
+   "target": "ท",
+   "tr": "Tho Thahan",
+   "en": "Tho Thahan",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ท.s",
+   "kind": "alphabet_sound",
+   "target": "ท",
+   "tr": "th",
+   "context": "ทหาร",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ท.m",
+   "kind": "alphabet_example",
+   "target": "ทหาร",
+   "tr": "Asker",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.น.n",
+   "kind": "alphabet_letter_name",
+   "target": "น",
+   "tr": "No Nu",
+   "en": "No Nu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.น.s",
+   "kind": "alphabet_sound",
+   "target": "น",
+   "tr": "n",
+   "context": "หนู",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.น.m",
+   "kind": "alphabet_example",
+   "target": "หนู",
+   "tr": "Fare",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.บ.n",
+   "kind": "alphabet_letter_name",
+   "target": "บ",
+   "tr": "Bo Baimai",
+   "en": "Bo Baimai",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.บ.s",
+   "kind": "alphabet_sound",
+   "target": "บ",
+   "tr": "b",
+   "context": "ใบไม้",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.บ.m",
+   "kind": "alphabet_example",
+   "target": "ใบไม้",
+   "tr": "Yaprak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ป.n",
+   "kind": "alphabet_letter_name",
+   "target": "ป",
+   "tr": "Po Pla",
+   "en": "Po Pla",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ป.s",
+   "kind": "alphabet_sound",
+   "target": "ป",
+   "tr": "p",
+   "context": "ปลา",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ป.m",
+   "kind": "alphabet_example",
+   "target": "ปลา",
+   "tr": "Balık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.พ.n",
+   "kind": "alphabet_letter_name",
+   "target": "พ",
+   "tr": "Pho Phan",
+   "en": "Pho Phan",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.พ.s",
+   "kind": "alphabet_sound",
+   "target": "พ",
+   "tr": "ph",
+   "context": "พาน",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.พ.m",
+   "kind": "alphabet_example",
+   "target": "พาน",
+   "tr": "Tepsi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ฟ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ฟ",
+   "tr": "Fo Fan",
+   "en": "Fo Fan",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ฟ.s",
+   "kind": "alphabet_sound",
+   "target": "ฟ",
+   "tr": "f",
+   "context": "ฟัน",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ฟ.m",
+   "kind": "alphabet_example",
+   "target": "ฟัน",
+   "tr": "Diş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ม.n",
+   "kind": "alphabet_letter_name",
+   "target": "ม",
+   "tr": "Mo Ma",
+   "en": "Mo Ma",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ม.s",
+   "kind": "alphabet_sound",
+   "target": "ม",
+   "tr": "m",
+   "context": "ม้า",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ม.m",
+   "kind": "alphabet_example",
+   "target": "ม้า",
+   "tr": "At",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ย.n",
+   "kind": "alphabet_letter_name",
+   "target": "ย",
+   "tr": "Yo Yak",
+   "en": "Yo Yak",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ย.s",
+   "kind": "alphabet_sound",
+   "target": "ย",
+   "tr": "y",
+   "context": "ยักษ์",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ย.m",
+   "kind": "alphabet_example",
+   "target": "ยักษ์",
+   "tr": "Dev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ร.n",
+   "kind": "alphabet_letter_name",
+   "target": "ร",
+   "tr": "Ro Ruea",
+   "en": "Ro Ruea",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ร.s",
+   "kind": "alphabet_sound",
+   "target": "ร",
+   "tr": "r",
+   "context": "เรือ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ร.m",
+   "kind": "alphabet_example",
+   "target": "เรือ",
+   "tr": "Tekne",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ล.n",
+   "kind": "alphabet_letter_name",
+   "target": "ล",
+   "tr": "Lo Ling",
+   "en": "Lo Ling",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ล.s",
+   "kind": "alphabet_sound",
+   "target": "ล",
+   "tr": "l",
+   "context": "ลิง",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ล.m",
+   "kind": "alphabet_example",
+   "target": "ลิง",
+   "tr": "Maymun",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ว.n",
+   "kind": "alphabet_letter_name",
+   "target": "ว",
+   "tr": "Wo Waen",
+   "en": "Wo Waen",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ว.s",
+   "kind": "alphabet_sound",
+   "target": "ว",
+   "tr": "w",
+   "context": "แหวน",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ว.m",
+   "kind": "alphabet_example",
+   "target": "แหวน",
+   "tr": "Yüzük",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ส.n",
+   "kind": "alphabet_letter_name",
+   "target": "ส",
+   "tr": "So Suea",
+   "en": "So Suea",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ส.s",
+   "kind": "alphabet_sound",
+   "target": "ส",
+   "tr": "s",
+   "context": "เสือ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ส.m",
+   "kind": "alphabet_example",
+   "target": "เสือ",
+   "tr": "Kaplan",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ห.n",
+   "kind": "alphabet_letter_name",
+   "target": "ห",
+   "tr": "Ho Hip",
+   "en": "Ho Hip",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ห.s",
+   "kind": "alphabet_sound",
+   "target": "ห",
+   "tr": "h",
+   "context": "หีบ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ห.m",
+   "kind": "alphabet_example",
+   "target": "หีบ",
+   "tr": "Sandık",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.อ.n",
+   "kind": "alphabet_letter_name",
+   "target": "อ",
+   "tr": "O Ang",
+   "en": "O Ang",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.อ.s",
+   "kind": "alphabet_sound",
+   "target": "อ",
+   "tr": "o",
+   "context": "อ่าง",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.อ.m",
+   "kind": "alphabet_example",
+   "target": "อ่าง",
+   "tr": "Leğen",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ะ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ะ",
+   "tr": "Kısa A",
+   "en": "Short A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ะ.s",
+   "kind": "alphabet_sound",
+   "target": "ะ",
+   "tr": "a",
+   "context": "กะ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ะ.m",
+   "kind": "alphabet_example",
+   "target": "กะ",
+   "tr": "(kısa ünlü)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.า.n",
+   "kind": "alphabet_letter_name",
+   "target": "า",
+   "tr": "Aa",
+   "en": "Aa",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.า.s",
+   "kind": "alphabet_sound",
+   "target": "า",
+   "tr": "aa",
+   "context": "มา",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.า.m",
+   "kind": "alphabet_example",
+   "target": "มา",
+   "tr": "Gelmek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ิ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ิ",
+   "tr": "İ",
+   "en": "I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ิ.s",
+   "kind": "alphabet_sound",
+   "target": "ิ",
+   "tr": "i",
+   "context": "มิ",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ิ.m",
+   "kind": "alphabet_example",
+   "target": "มิ",
+   "tr": "(olumsuzluk eki)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ี.n",
+   "kind": "alphabet_letter_name",
+   "target": "ี",
+   "tr": "İi",
+   "en": "Ii",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ี.s",
+   "kind": "alphabet_sound",
+   "target": "ี",
+   "tr": "ii",
+   "context": "มี",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ี.m",
+   "kind": "alphabet_example",
+   "target": "มี",
+   "tr": "Sahip olmak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ุ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ุ",
+   "tr": "U",
+   "en": "U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ุ.s",
+   "kind": "alphabet_sound",
+   "target": "ุ",
+   "tr": "u",
+   "context": "นุ่ม",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ุ.m",
+   "kind": "alphabet_example",
+   "target": "นุ่ม",
+   "tr": "Yumuşak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ู.n",
+   "kind": "alphabet_letter_name",
+   "target": "ู",
+   "tr": "Uu",
+   "en": "Uu",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ู.s",
+   "kind": "alphabet_sound",
+   "target": "ู",
+   "tr": "uu",
+   "context": "ดู",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ู.m",
+   "kind": "alphabet_example",
+   "target": "ดู",
+   "tr": "Bakmak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.เ.n",
+   "kind": "alphabet_letter_name",
+   "target": "เ",
+   "tr": "E",
+   "en": "E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.เ.s",
+   "kind": "alphabet_sound",
+   "target": "เ",
+   "tr": "e",
+   "context": "เม",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.เ.m",
+   "kind": "alphabet_example",
+   "target": "เม",
+   "tr": "(ön ünlü işareti)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.โ.n",
+   "kind": "alphabet_letter_name",
+   "target": "โ",
+   "tr": "O",
+   "en": "O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.โ.s",
+   "kind": "alphabet_sound",
+   "target": "โ",
+   "tr": "o",
+   "context": "โต",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.โ.m",
+   "kind": "alphabet_example",
+   "target": "โต",
+   "tr": "Büyük",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ไ.n",
+   "kind": "alphabet_letter_name",
+   "target": "ไ",
+   "tr": "Ai",
+   "en": "Ai",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.th.ไ.s",
+   "kind": "alphabet_sound",
+   "target": "ไ",
+   "tr": "ai",
+   "context": "ไป",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.th.ไ.m",
+   "kind": "alphabet_example",
+   "target": "ไป",
+   "tr": "Gitmek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.th.0.h",
+   "kind": "pronunciation_heard",
+   "target": "5 ton",
+   "tr": "orta/alçak/düşen/yüksek/yükselen",
+   "context": "Ton = anlam.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.th.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "ไหม/ไม่/ใหม่",
+   "tr": "may? · may! · may(yeni)",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.th.1.h",
+   "kind": "pronunciation_heard",
+   "target": "aspirasyon",
+   "tr": "p/ph, t/th, k/kh",
+   "context": "Nefesli çift.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.th.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "พ่อ vs ป่า",
+   "tr": "phɔɔ · paa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.th.2.h",
+   "kind": "pronunciation_heard",
+   "target": "r vs l",
+   "tr": "bazen karışır",
+   "context": "Konuşma dilinde r→l olabilir.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.th.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "ร, ล",
+   "tr": "r · l",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

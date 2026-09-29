@@ -83,18 +83,6 @@ enum PracticeTimeOfDay { morning, afternoon, evening }
 
 enum Weekday { mon, tue, wed, thu, fri, sat, sun }
 
-extension WeekdayX on Weekday {
-  String get shortLabelTr => switch (this) {
-    Weekday.mon => 'Pzt',
-    Weekday.tue => 'Sal',
-    Weekday.wed => 'Çrş',
-    Weekday.thu => 'Prş',
-    Weekday.fri => 'Cum',
-    Weekday.sat => 'Cmt',
-    Weekday.sun => 'Paz',
-  };
-}
-
 /// Kullanıcının konuşma pratiğinde tercih ettiği akış. Herkese aynı sabit
 /// Duy→Gölgele→Konuş→Düzelt döngüsünü dayatmak yerine, onboarding'de
 /// seçilen bu tercihe göre adımlar atlanır/tekrarlanır — bkz.
@@ -483,7 +471,28 @@ class Phrase {
   final String? ipa;
   final String? hint;
 
-  String glossFor(UiLang ui) => gloss[ui] ?? gloss[UiLang.en] ?? target;
+  String glossFor(UiLang ui) =>
+      gloss[ui] ??
+      ContentOverlay.lookup('p.$id', ui) ??
+      gloss[UiLang.en] ??
+      ContentOverlay.lookup('p.$id', UiLang.en) ??
+      target;
+}
+
+/// Dart kaynağında olmayan çevirileri (`assets/content/i18n/<ui>.json`) modele
+/// bağlayan kanca. `ContentStore` açılışta doldurur; testlerde boş kalır ve
+/// her şey eskisi gibi Dart'taki haritalardan gelir.
+///
+/// Anahtarlar: `p.<phraseId>` cümle çevirisi, `s.<scenarioId>` senaryo
+/// başlığı, `g.<scenarioId>` gramer kuralı, `tp.<scenarioId>.<i>` konuşma
+/// adımı yönergesi, `st.<storyId>` / `ss.<storyId>.<i>` kitaplık.
+class ContentOverlay {
+  static String? Function(String key, UiLang ui)? resolver;
+
+  static String? lookup(String key, UiLang ui) {
+    final value = resolver?.call(key, ui);
+    return (value == null || value.isEmpty) ? null : value;
+  }
 }
 
 class SpeakTurn {
@@ -512,7 +521,13 @@ class GrammarNote {
   final String goodExample;
   final String badExample;
 
-  String ruleFor(UiLang ui) => rule[ui] ?? rule[UiLang.en] ?? '';
+  String ruleFor(UiLang ui, {String? scenarioId}) =>
+      rule[ui] ??
+      (scenarioId == null
+          ? null
+          : ContentOverlay.lookup('g.$scenarioId', ui)) ??
+      rule[UiLang.en] ??
+      '';
 }
 
 class Scenario {
@@ -538,20 +553,22 @@ class Scenario {
   final String clipLine;
   final GrammarNote? grammarNote;
 
-  String title(UiLang ui) => titles[ui] ?? titles[UiLang.en] ?? id;
+  String title(UiLang ui) =>
+      titles[ui] ??
+      ContentOverlay.lookup('s.$id', ui) ??
+      titles[UiLang.en] ??
+      id;
+
+  /// Konuşma adımı yönergesi — Dart'ta yalnızca İngilizce yazılı.
+  String turnPromptFor(int index, UiLang ui) =>
+      ContentOverlay.lookup('tp.$id.$index', ui) ?? turns[index].prompt;
 }
 
 enum XpRank { rookie, learner, speaker, master, legend }
 
+/// Görünen rütbe adları arayüz diline göre `I18n.xpRankLabel` ile gelir
+/// (lib/core/l10n/i18n_ui.dart).
 extension XpRankX on XpRank {
-  String get label => switch (this) {
-    XpRank.rookie => 'Çaylak',
-    XpRank.learner => 'Öğrenci',
-    XpRank.speaker => 'Konuşan',
-    XpRank.master => 'Usta',
-    XpRank.legend => 'Efsane',
-  };
-
   int get minimumXp => switch (this) {
     XpRank.rookie => 0,
     XpRank.learner => 500,
@@ -579,6 +596,8 @@ class UserProfile {
     required this.interpreterDayKey,
     required this.bonusInterpreterSeconds,
     required this.streak,
+    this.streakFreezes = 0,
+    this.freezeRefillWeekKey = '',
     required this.lastPracticeDayKey,
     required this.totalXp,
     required this.dailyXp,
@@ -622,6 +641,17 @@ class UserProfile {
   final String interpreterDayKey;
   final int bonusInterpreterSeconds;
   final int streak;
+
+  /// Seri koruma hakkı (en fazla [maxStreakFreezes]). Kaçırılan bir gün
+  /// bir hak harcanarak kapatılır; seri kırılmaz. Plus her hafta dolar,
+  /// ücretsiz kullanıcı her 7 günlük seride bir tane kazanır.
+  final int streakFreezes;
+
+  /// Plus haftalık dolumunun en son yapıldığı haftanın anahtarı (yyyy-mm-dd,
+  /// haftanın pazartesisi).
+  final String freezeRefillWeekKey;
+
+  static const maxStreakFreezes = 2;
   final String lastPracticeDayKey;
   final int totalXp;
   final int dailyXp;
@@ -647,6 +677,7 @@ class UserProfile {
   final StrugglePoint? strugglePoint;
   final Set<Weekday> practiceDays;
   final PracticeTimeOfDay? practiceTimeOfDay;
+
   /// Onboarding'in bittiği gün (`yyyy-MM-dd`) — `day1_return` event'inin
   /// tam olarak "kayıttan sonraki ilk dönüş günü"nde ateşlenmesi için.
   final String onboardedDayKey;
@@ -769,6 +800,8 @@ class UserProfile {
     String? interpreterDayKey,
     int? bonusInterpreterSeconds,
     int? streak,
+    int? streakFreezes,
+    String? freezeRefillWeekKey,
     String? lastPracticeDayKey,
     int? totalXp,
     int? dailyXp,
@@ -814,6 +847,8 @@ class UserProfile {
       bonusInterpreterSeconds:
           bonusInterpreterSeconds ?? this.bonusInterpreterSeconds,
       streak: streak ?? this.streak,
+      streakFreezes: streakFreezes ?? this.streakFreezes,
+      freezeRefillWeekKey: freezeRefillWeekKey ?? this.freezeRefillWeekKey,
       lastPracticeDayKey: lastPracticeDayKey ?? this.lastPracticeDayKey,
       totalXp: totalXp ?? this.totalXp,
       dailyXp: dailyXp ?? this.dailyXp,
@@ -859,6 +894,8 @@ class UserProfile {
     'interpreterDayKey': interpreterDayKey,
     'bonusInterpreterSeconds': bonusInterpreterSeconds,
     'streak': streak,
+    'streakFreezes': streakFreezes,
+    'freezeRefillWeekKey': freezeRefillWeekKey,
     'lastPracticeDayKey': lastPracticeDayKey,
     'totalXp': totalXp,
     'dailyXp': dailyXp,
@@ -916,6 +953,8 @@ class UserProfile {
       bonusInterpreterSeconds:
           (j['bonusInterpreterSeconds'] as num?)?.toInt() ?? 0,
       streak: (j['streak'] as num?)?.toInt() ?? 0,
+      streakFreezes: (j['streakFreezes'] as num?)?.toInt() ?? 0,
+      freezeRefillWeekKey: j['freezeRefillWeekKey'] as String? ?? '',
       lastPracticeDayKey: j['lastPracticeDayKey'] as String? ?? '',
       totalXp: (j['totalXp'] as num?)?.toInt() ?? 0,
       dailyXp: (j['dailyXp'] as num?)?.toInt() ?? 0,
@@ -954,14 +993,14 @@ class UserProfile {
           LearningStyle.values.asNameMap()[j['learningStyle'] as String? ??
               'balanced'] ??
           LearningStyle.balanced,
-      strugglePoint: StrugglePoint.values.asNameMap()[j['strugglePoint']
-          as String?],
+      strugglePoint: StrugglePoint.values
+          .asNameMap()[j['strugglePoint'] as String?],
       practiceDays: (j['practiceDays'] as List? ?? const [])
           .map((value) => Weekday.values.asNameMap()['$value'])
           .whereType<Weekday>()
           .toSet(),
-      practiceTimeOfDay: PracticeTimeOfDay.values.asNameMap()[j['practiceTimeOfDay']
-          as String?],
+      practiceTimeOfDay: PracticeTimeOfDay.values
+          .asNameMap()[j['practiceTimeOfDay'] as String?],
       onboardedDayKey: j['onboardedDayKey'] as String? ?? '',
       day1ReturnLogged: j['day1ReturnLogged'] as bool? ?? false,
     );

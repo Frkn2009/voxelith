@@ -20,9 +20,9 @@ final List<Scenario> catalogExtraBatchJ = [
     grammarNote: GrammarNote(
       rule: {
         UiLang.tr:
-            'Fince\'de fiil kişiye göre çekimlenir, bu yüzden "minä" (ben) zamiri genelde söylenmeden bırakılır: olen (ben) olen, değil "minä olen".',
+            'Fince\'de fiil kişiye göre çekimlenir: "ben" = olen, "o" = on. Bu yüzden "minä on" yanlıştır. Çekim kişiyi zaten gösterdiği için "minä" genelde söylenmez: "Olen opettaja."',
         UiLang.en:
-            'Finnish verbs change their ending for each person, so the pronoun "minä" (I) is usually dropped: "olen" already means "I am".',
+            'Finnish verbs change their ending for each person: "I am" = olen, "he/she is" = on, so "minä on" is wrong. Because "olen" already means "I am", "minä" is usually dropped.',
       },
       goodExample: 'Olen opettaja.',
       badExample: 'Minä on opettaja.',
@@ -146,12 +146,18 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'fi_shopping_3',
         target: 'Tämä on liian kallis.',
-        gloss: {UiLang.tr: 'Bu çok pahalı.', UiLang.en: 'This is too expensive.'},
+        gloss: {
+          UiLang.tr: 'Bu çok pahalı.',
+          UiLang.en: 'This is too expensive.',
+        },
       ),
       Phrase(
         id: 'fi_shopping_4',
         target: 'Onko tämä alennuksessa?',
-        gloss: {UiLang.tr: 'Bu indirimde mi?', UiLang.en: 'Is this on discount?'},
+        gloss: {
+          UiLang.tr: 'Bu indirimde mi?',
+          UiLang.en: 'Is this on discount?',
+        },
       ),
       Phrase(
         id: 'fi_shopping_5',
@@ -253,12 +259,18 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'fi_numbers_time_5',
         target: 'Minulla on kaksi lasta.',
-        gloss: {UiLang.tr: 'İki çocuğum var.', UiLang.en: 'I have two children.'},
+        gloss: {
+          UiLang.tr: 'İki çocuğum var.',
+          UiLang.en: 'I have two children.',
+        },
       ),
       Phrase(
         id: 'fi_numbers_time_6',
         target: 'Näen kolme koiraa.',
-        gloss: {UiLang.tr: 'Üç köpek görüyorum.', UiLang.en: 'I see three dogs.'},
+        gloss: {
+          UiLang.tr: 'Üç köpek görüyorum.',
+          UiLang.en: 'I see three dogs.',
+        },
       ),
     ],
     turns: [
@@ -270,7 +282,10 @@ final List<Scenario> catalogExtraBatchJ = [
         prompt: 'You want to know the time.',
         expected: 'Paljonko kello on?',
       ),
-      SpeakTurn(prompt: 'Someone asks you the time.', expected: 'Kello on kaksi.'),
+      SpeakTurn(
+        prompt: 'Someone asks you the time.',
+        expected: 'Kello on kaksi.',
+      ),
       SpeakTurn(
         prompt: 'You arrange when to meet.',
         expected: 'Tapaamme kello kolme.',
@@ -315,7 +330,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'fi_family_1',
         target: 'Isäni on lääkäri.',
-        gloss: {UiLang.tr: 'Babam doktor.', UiLang.en: 'My father is a doctor.'},
+        gloss: {
+          UiLang.tr: 'Babam doktor.',
+          UiLang.en: 'My father is a doctor.',
+        },
       ),
       Phrase(
         id: 'fi_family_2',
@@ -354,7 +372,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'fi_family_6',
         target: 'Onko sinulla lapsia?',
-        gloss: {UiLang.tr: 'Çocuğun var mı?', UiLang.en: 'Do you have children?'},
+        gloss: {
+          UiLang.tr: 'Çocuğun var mı?',
+          UiLang.en: 'Do you have children?',
+        },
       ),
     ],
     turns: [
@@ -424,7 +445,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'fi_weather_3',
         target: 'Ulkona sataa.',
-        gloss: {UiLang.tr: 'Dışarıda yağmur yağıyor.', UiLang.en: 'It\'s raining outside.'},
+        gloss: {
+          UiLang.tr: 'Dışarıda yağmur yağıyor.',
+          UiLang.en: 'It\'s raining outside.',
+        },
       ),
       Phrase(
         id: 'fi_weather_4',
@@ -457,7 +481,10 @@ final List<Scenario> catalogExtraBatchJ = [
         expected: 'Millainen sää tänään on?',
       ),
       SpeakTurn(prompt: 'You step outside.', expected: 'Ulkona on kylmä.'),
-      SpeakTurn(prompt: 'You look up at the sky.', expected: 'Aurinko paistaa.'),
+      SpeakTurn(
+        prompt: 'You look up at the sky.',
+        expected: 'Aurinko paistaa.',
+      ),
       SpeakTurn(prompt: 'You look out the window.', expected: 'Ulkona sataa.'),
       SpeakTurn(
         prompt: 'You check tomorrow\'s forecast.',
@@ -602,10 +629,7 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'fi_emergency_1',
         target: 'Soita ambulanssi!',
-        gloss: {
-          UiLang.tr: 'Ambulans çağır!',
-          UiLang.en: 'Call an ambulance!',
-        },
+        gloss: {UiLang.tr: 'Ambulans çağır!', UiLang.en: 'Call an ambulance!'},
       ),
       Phrase(
         id: 'fi_emergency_2',
@@ -656,7 +680,10 @@ final List<Scenario> catalogExtraBatchJ = [
         prompt: 'You need medical help fast.',
         expected: 'Missä on lähin sairaala?',
       ),
-      SpeakTurn(prompt: 'You see a crime happening.', expected: 'Soita poliisi!'),
+      SpeakTurn(
+        prompt: 'You see a crime happening.',
+        expected: 'Soita poliisi!',
+      ),
       SpeakTurn(prompt: 'You cannot find your way.', expected: 'Olen eksynyt.'),
       SpeakTurn(
         prompt: 'You need someone who can translate.',
@@ -825,7 +852,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'fi_past_story_4',
         target: 'Sää oli aurinkoinen.',
-        gloss: {UiLang.tr: 'Hava güneşliydi.', UiLang.en: 'The weather was sunny.'},
+        gloss: {
+          UiLang.tr: 'Hava güneşliydi.',
+          UiLang.en: 'The weather was sunny.',
+        },
       ),
       Phrase(
         id: 'fi_past_story_5',
@@ -1047,7 +1077,10 @@ final List<Scenario> catalogExtraBatchJ = [
         prompt: 'You do not like the color.',
         expected: 'Har I den i en anden farve?',
       ),
-      SpeakTurn(prompt: 'You check the price tag.', expected: 'Den er for dyr.'),
+      SpeakTurn(
+        prompt: 'You check the price tag.',
+        expected: 'Den er for dyr.',
+      ),
       SpeakTurn(
         prompt: 'You look for a better price.',
         expected: 'Er der rabat på den her?',
@@ -1114,7 +1147,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'da_numbers_time_5',
         target: 'Jeg har to børn.',
-        gloss: {UiLang.tr: 'İki çocuğum var.', UiLang.en: 'I have two children.'},
+        gloss: {
+          UiLang.tr: 'İki çocuğum var.',
+          UiLang.en: 'I have two children.',
+        },
       ),
       Phrase(
         id: 'da_numbers_time_6',
@@ -1134,7 +1170,10 @@ final List<Scenario> catalogExtraBatchJ = [
         prompt: 'You want to know the time.',
         expected: 'Hvad er klokken?',
       ),
-      SpeakTurn(prompt: 'Someone asks you the time.', expected: 'Klokken er to.'),
+      SpeakTurn(
+        prompt: 'Someone asks you the time.',
+        expected: 'Klokken er to.',
+      ),
       SpeakTurn(
         prompt: 'They tell you it is not quite ten yet.',
         expected: 'Klokken er halv ti.',
@@ -1179,7 +1218,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'da_family_1',
         target: 'Min far er læge.',
-        gloss: {UiLang.tr: 'Babam doktor.', UiLang.en: 'My father is a doctor.'},
+        gloss: {
+          UiLang.tr: 'Babam doktor.',
+          UiLang.en: 'My father is a doctor.',
+        },
       ),
       Phrase(
         id: 'da_family_2',
@@ -1216,7 +1258,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'da_family_6',
         target: 'Har du børn?',
-        gloss: {UiLang.tr: 'Çocuğun var mı?', UiLang.en: 'Do you have children?'},
+        gloss: {
+          UiLang.tr: 'Çocuğun var mı?',
+          UiLang.en: 'Do you have children?',
+        },
       ),
     ],
     turns: [
@@ -1419,7 +1464,10 @@ final List<Scenario> catalogExtraBatchJ = [
         prompt: 'They ask how you get to work.',
         expected: 'Jeg tager med bussen på arbejde.',
       ),
-      SpeakTurn(prompt: 'You need a ticket.', expected: 'Hvor køber jeg en billet?'),
+      SpeakTurn(
+        prompt: 'You need a ticket.',
+        expected: 'Hvor køber jeg en billet?',
+      ),
       SpeakTurn(
         prompt: 'You check the departure board.',
         expected: 'Næste tog kører klokken ni.',
@@ -1464,10 +1512,7 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'da_emergency_1',
         target: 'Ring efter en ambulance!',
-        gloss: {
-          UiLang.tr: 'Ambulans çağır!',
-          UiLang.en: 'Call an ambulance!',
-        },
+        gloss: {UiLang.tr: 'Ambulans çağır!', UiLang.en: 'Call an ambulance!'},
       ),
       Phrase(
         id: 'da_emergency_2',
@@ -1522,7 +1567,10 @@ final List<Scenario> catalogExtraBatchJ = [
         prompt: 'You see a crime happening.',
         expected: 'Ring til politiet!',
       ),
-      SpeakTurn(prompt: 'You cannot find your way.', expected: 'Jeg er faret vild.'),
+      SpeakTurn(
+        prompt: 'You cannot find your way.',
+        expected: 'Jeg er faret vild.',
+      ),
       SpeakTurn(
         prompt: 'You need someone who can translate.',
         expected: 'Er der nogen her, der taler engelsk?',
@@ -1691,7 +1739,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'da_past_story_4',
         target: 'Vejret var solrigt.',
-        gloss: {UiLang.tr: 'Hava güneşliydi.', UiLang.en: 'The weather was sunny.'},
+        gloss: {
+          UiLang.tr: 'Hava güneşliydi.',
+          UiLang.en: 'The weather was sunny.',
+        },
       ),
       Phrase(
         id: 'da_past_story_5',
@@ -1749,7 +1800,8 @@ final List<Scenario> catalogExtraBatchJ = [
     clipLine: 'Hyggelig å møte deg.',
     grammarNote: GrammarNote(
       rule: {
-        UiLang.tr: 'Sorularda fiil özneden önce gelir: "Hva heter du?", "Hva du heter?" değil.',
+        UiLang.tr:
+            'Sorularda fiil özneden önce gelir: "Hva heter du?", "Hva du heter?" değil.',
         UiLang.en:
             'In questions, the verb comes before the subject: "Hva heter du?", not "Hva du heter?".',
       },
@@ -1875,7 +1927,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'no_shopping_3',
         target: 'Denne er for dyr.',
-        gloss: {UiLang.tr: 'Bu çok pahalı.', UiLang.en: 'This is too expensive.'},
+        gloss: {
+          UiLang.tr: 'Bu çok pahalı.',
+          UiLang.en: 'This is too expensive.',
+        },
       ),
       Phrase(
         id: 'no_shopping_4',
@@ -1915,7 +1970,10 @@ final List<Scenario> catalogExtraBatchJ = [
         prompt: 'You do not like the color.',
         expected: 'Har dere denne i en annen farge?',
       ),
-      SpeakTurn(prompt: 'You check the price tag.', expected: 'Denne er for dyr.'),
+      SpeakTurn(
+        prompt: 'You check the price tag.',
+        expected: 'Denne er for dyr.',
+      ),
       SpeakTurn(
         prompt: 'You look for a better price.',
         expected: 'Er det rabatt på denne?',
@@ -1982,7 +2040,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'no_numbers_time_5',
         target: 'Jeg har to barn.',
-        gloss: {UiLang.tr: 'İki çocuğum var.', UiLang.en: 'I have two children.'},
+        gloss: {
+          UiLang.tr: 'İki çocuğum var.',
+          UiLang.en: 'I have two children.',
+        },
       ),
       Phrase(
         id: 'no_numbers_time_6',
@@ -2002,7 +2063,10 @@ final List<Scenario> catalogExtraBatchJ = [
         prompt: 'You want to know the time.',
         expected: 'Hva er klokken?',
       ),
-      SpeakTurn(prompt: 'Someone asks you the time.', expected: 'Klokken er to.'),
+      SpeakTurn(
+        prompt: 'Someone asks you the time.',
+        expected: 'Klokken er to.',
+      ),
       SpeakTurn(
         prompt: 'They tell you it is not quite ten yet.',
         expected: 'Klokken er halv ti.',
@@ -2047,7 +2111,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'no_family_1',
         target: 'Faren min er lege.',
-        gloss: {UiLang.tr: 'Babam doktor.', UiLang.en: 'My father is a doctor.'},
+        gloss: {
+          UiLang.tr: 'Babam doktor.',
+          UiLang.en: 'My father is a doctor.',
+        },
       ),
       Phrase(
         id: 'no_family_2',
@@ -2084,7 +2151,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'no_family_6',
         target: 'Har du barn?',
-        gloss: {UiLang.tr: 'Çocuğun var mı?', UiLang.en: 'Do you have children?'},
+        gloss: {
+          UiLang.tr: 'Çocuğun var mı?',
+          UiLang.en: 'Do you have children?',
+        },
       ),
     ],
     turns: [
@@ -2287,7 +2357,10 @@ final List<Scenario> catalogExtraBatchJ = [
         prompt: 'They ask how you get to work.',
         expected: 'Jeg tar bussen til jobb.',
       ),
-      SpeakTurn(prompt: 'You need a ticket.', expected: 'Hvor kjøper jeg en billett?'),
+      SpeakTurn(
+        prompt: 'You need a ticket.',
+        expected: 'Hvor kjøper jeg en billett?',
+      ),
       SpeakTurn(
         prompt: 'You check the departure board.',
         expected: 'Neste tog går klokken ni.',
@@ -2332,10 +2405,7 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'no_emergency_1',
         target: 'Ring etter en ambulanse!',
-        gloss: {
-          UiLang.tr: 'Ambulans çağır!',
-          UiLang.en: 'Call an ambulance!',
-        },
+        gloss: {UiLang.tr: 'Ambulans çağır!', UiLang.en: 'Call an ambulance!'},
       ),
       Phrase(
         id: 'no_emergency_2',
@@ -2386,7 +2456,10 @@ final List<Scenario> catalogExtraBatchJ = [
         prompt: 'You need medical help fast.',
         expected: 'Hvor er nærmeste sykehus?',
       ),
-      SpeakTurn(prompt: 'You see a crime happening.', expected: 'Ring politiet!'),
+      SpeakTurn(
+        prompt: 'You see a crime happening.',
+        expected: 'Ring politiet!',
+      ),
       SpeakTurn(
         prompt: 'You cannot find your way.',
         expected: 'Jeg har gått meg vill.',
@@ -2559,7 +2632,10 @@ final List<Scenario> catalogExtraBatchJ = [
       Phrase(
         id: 'no_past_story_4',
         target: 'Været var solrikt.',
-        gloss: {UiLang.tr: 'Hava güneşliydi.', UiLang.en: 'The weather was sunny.'},
+        gloss: {
+          UiLang.tr: 'Hava güneşliydi.',
+          UiLang.en: 'The weather was sunny.',
+        },
       ),
       Phrase(
         id: 'no_past_story_5',

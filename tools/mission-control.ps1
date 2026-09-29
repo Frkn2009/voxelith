@@ -1,8 +1,8 @@
 <#
 .SYNOPSIS
-  NURA icin guvenli gelistirme / test / commit-oncesi kontrol araci.
+  VOXELITH icin guvenli gelistirme / test / commit-oncesi kontrol araci.
   Turkce karakter iceren kullanici profili yolundaki native-asset
-  derleyici sorunundan kacinmak icin C:\nura-app + C:\pub-cache kullanir
+  derleyici sorunundan kacinmak icin ASCII bir klon yolu + C:\pub-cache kullanir
   (bkz. docs/DEVAM_SAYFASI.md "TEKRAR YASANMASIN").
 
 .EXAMPLE
@@ -20,9 +20,10 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$RepositoryPath = "C:\nura-app"
+# Varsayilan: bu scriptin bulundugu reponun koku (ASCII yolda olmali).
+$RepositoryPath = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $PubCachePath = "C:\pub-cache"
-$BackupPath = "C:\nura-app-backup"
+$BackupPath = "$RepositoryPath-backup"
 
 function Write-Section {
     param([string]$Title)
@@ -42,7 +43,7 @@ function Assert-Repository {
     }
 }
 
-function Set-NuraEnvironment {
+function Set-VoxelithEnvironment {
     $env:PUB_CACHE = $PubCachePath
     if (-not (Test-Path $PubCachePath)) {
         New-Item -ItemType Directory -Path $PubCachePath -Force | Out-Null
@@ -120,7 +121,7 @@ function Show-Status {
 }
 
 Assert-Repository
-Set-NuraEnvironment
+Set-VoxelithEnvironment
 
 switch ($Command) {
     "status"    { Show-Status }

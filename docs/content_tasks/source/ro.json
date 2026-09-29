@@ -1,0 +1,4366 @@
+{
+ "lang": "ro",
+ "scenarios": [
+  {
+   "id": "ro_cafe",
+   "cefr": "a1",
+   "title": "Ordering at a café"
+  },
+  {
+   "id": "ro_hotel",
+   "cefr": "a1",
+   "title": "Hotel check-in"
+  },
+  {
+   "id": "ro_dir",
+   "cefr": "a1",
+   "title": "Asking the way"
+  },
+  {
+   "id": "ro_hi",
+   "cefr": "a1",
+   "title": "Introducing yourself"
+  },
+  {
+   "id": "ro_flat",
+   "cefr": "a1",
+   "title": "Viewing a flat"
+  },
+  {
+   "id": "ro_shop",
+   "cefr": "a1",
+   "title": "At the market"
+  },
+  {
+   "id": "ro_bill",
+   "cefr": "a1",
+   "title": "Asking for the bill"
+  },
+  {
+   "id": "ro_airport",
+   "cefr": "a1",
+   "title": "Airport check-in"
+  },
+  {
+   "id": "ro_intro",
+   "cefr": "a1",
+   "title": "Meeting someone"
+  },
+  {
+   "id": "ro_shopping",
+   "cefr": "a1",
+   "title": "Shopping"
+  },
+  {
+   "id": "ro_numbers_time",
+   "cefr": "a1",
+   "title": "Numbers and time"
+  },
+  {
+   "id": "ro_family",
+   "cefr": "a1",
+   "title": "Family"
+  },
+  {
+   "id": "ro_weather",
+   "cefr": "a1",
+   "title": "Weather"
+  },
+  {
+   "id": "ro_transport",
+   "cefr": "a1",
+   "title": "Getting around"
+  },
+  {
+   "id": "ro_emergency",
+   "cefr": "a1",
+   "title": "Emergency"
+  },
+  {
+   "id": "ro_routine",
+   "cefr": "a1",
+   "title": "Daily routine"
+  },
+  {
+   "id": "ro_past_story",
+   "cefr": "a1",
+   "title": "Telling a story in the past"
+  },
+  {
+   "id": "ro_a2_route",
+   "cefr": "a1",
+   "title": "Mixed review 1"
+  },
+  {
+   "id": "ro_b1_solve",
+   "cefr": "a1",
+   "title": "Mixed review 2"
+  },
+  {
+   "id": "ro_exp_job_interview",
+   "cefr": "b1",
+   "title": "Job interview"
+  },
+  {
+   "id": "ro_exp_team_meeting",
+   "cefr": "b1",
+   "title": "Team meeting"
+  },
+  {
+   "id": "ro_exp_bank",
+   "cefr": "a2",
+   "title": "Bank account"
+  },
+  {
+   "id": "ro_exp_apartment",
+   "cefr": "a2",
+   "title": "Apartment viewing"
+  },
+  {
+   "id": "ro_exp_doctor",
+   "cefr": "a2",
+   "title": "At the doctor's"
+  },
+  {
+   "id": "ro_exp_business_lunch",
+   "cefr": "b1",
+   "title": "Business lunch"
+  },
+  {
+   "id": "ro_exp_complaint",
+   "cefr": "b1",
+   "title": "Complaint"
+  },
+  {
+   "id": "ro_exp_business_trip",
+   "cefr": "a2",
+   "title": "Business trip"
+  },
+  {
+   "id": "ro_exp_client_call",
+   "cefr": "b1",
+   "title": "Client phone call"
+  },
+  {
+   "id": "ro_exp_hr_salary",
+   "cefr": "b2",
+   "title": "Salary conversation"
+  },
+  {
+   "id": "ro_exp_daily_errands",
+   "cefr": "a2",
+   "title": "Errands and deliveries"
+  },
+  {
+   "id": "ro_exp_networking",
+   "cefr": "b1",
+   "title": "Networking"
+  }
+ ],
+ "stories": [
+  {
+   "id": "ro_birthday",
+   "level": "a1",
+   "title": "Ziua de naștere a fratelui meu"
+  },
+  {
+   "id": "ro_phone_call",
+   "level": "a1",
+   "title": "O plimbare la munte"
+  },
+  {
+   "id": "ro_park_walk",
+   "level": "a1",
+   "title": "O plimbare în parc"
+  }
+ ],
+ "items": [
+  {
+   "key": "s.ro_cafe",
+   "kind": "scenario_title",
+   "tr": "Kafede sipariş",
+   "en": "Ordering at a café",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_cafe.0",
+   "kind": "speaking_prompt",
+   "en": "What can I get you?",
+   "context": "O cafea, vă rog.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_cafe.1",
+   "kind": "speaking_prompt",
+   "en": "How much?",
+   "context": "Cât costă?",
+   "have": []
+  },
+  {
+   "key": "p.ro_cafe_0",
+   "kind": "phrase",
+   "target": "O cafea, vă rog.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_cafe_1",
+   "kind": "phrase",
+   "target": "Cât costă?",
+   "tr": "Ne kadar?",
+   "en": "How much is that?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_cafe_2",
+   "kind": "phrase",
+   "target": "Mulțumesc foarte mult.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_hotel",
+   "kind": "scenario_title",
+   "tr": "Otele giriş",
+   "en": "Hotel check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_hotel.0",
+   "kind": "speaking_prompt",
+   "en": "Good evening.",
+   "context": "Am o rezervare.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_hotel.1",
+   "kind": "speaking_prompt",
+   "en": "Any questions?",
+   "context": "Micul dejun e inclus?",
+   "have": []
+  },
+  {
+   "key": "p.ro_hotel_0",
+   "kind": "phrase",
+   "target": "Am o rezervare.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_hotel_1",
+   "kind": "phrase",
+   "target": "Micul dejun e inclus?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_hotel_2",
+   "kind": "phrase",
+   "target": "Mulțumesc foarte mult.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_dir",
+   "kind": "scenario_title",
+   "tr": "Yol sormak",
+   "en": "Asking the way",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_dir.0",
+   "kind": "speaking_prompt",
+   "en": "You stop someone.",
+   "context": "Scuzați, unde este gara?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_dir.1",
+   "kind": "speaking_prompt",
+   "en": "They point.",
+   "context": "Mulțumesc foarte mult.",
+   "have": []
+  },
+  {
+   "key": "p.ro_dir_0",
+   "kind": "phrase",
+   "target": "Scuzați, unde este gara?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_dir_1",
+   "kind": "phrase",
+   "target": "Mulțumesc foarte mult.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_dir_2",
+   "kind": "phrase",
+   "target": "Nu înțeleg.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_hi",
+   "kind": "scenario_title",
+   "tr": "Tanışmak",
+   "en": "Introducing yourself",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_hi.0",
+   "kind": "speaking_prompt",
+   "en": "Someone says hello.",
+   "context": "Bună, mă numesc Deniz.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_hi.1",
+   "kind": "speaking_prompt",
+   "en": "Where are you from?",
+   "context": "Sunt din Turcia.",
+   "have": []
+  },
+  {
+   "key": "p.ro_hi_0",
+   "kind": "phrase",
+   "target": "Bună, mă numesc Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_hi_1",
+   "kind": "phrase",
+   "target": "Sunt din Turcia.",
+   "tr": "Türkiye'denim.",
+   "en": "I am from Turkey.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_hi_2",
+   "kind": "phrase",
+   "target": "Mulțumesc foarte mult.",
+   "tr": "Çok teşekkür ederim.",
+   "en": "Thank you very much.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_flat",
+   "kind": "scenario_title",
+   "tr": "Ev bakmak",
+   "en": "Viewing a flat",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_flat.0",
+   "kind": "speaking_prompt",
+   "en": "The agent asks.",
+   "context": "Caut un apartament.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_flat.1",
+   "kind": "speaking_prompt",
+   "en": "They show a listing.",
+   "context": "Cât este chiria?",
+   "have": []
+  },
+  {
+   "key": "p.ro_flat_0",
+   "kind": "phrase",
+   "target": "Caut un apartament.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_flat_1",
+   "kind": "phrase",
+   "target": "Cât este chiria?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_flat_2",
+   "kind": "phrase",
+   "target": "Mă puteți ajuta?",
+   "tr": "Bana yardım edebilir misiniz?",
+   "en": "Can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_shop",
+   "kind": "scenario_title",
+   "tr": "Markette alışveriş",
+   "en": "At the market",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_shop.0",
+   "kind": "speaking_prompt",
+   "en": "You hold an item.",
+   "context": "Cât costă asta?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_shop.1",
+   "kind": "speaking_prompt",
+   "en": "You want it.",
+   "context": "Iau asta.",
+   "have": []
+  },
+  {
+   "key": "p.ro_shop_0",
+   "kind": "phrase",
+   "target": "Cât costă asta?",
+   "tr": "Bu ne kadar?",
+   "en": "How much does this cost?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_shop_1",
+   "kind": "phrase",
+   "target": "Iau asta.",
+   "tr": "Bunu alayım.",
+   "en": "I will take this one.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_shop_2",
+   "kind": "phrase",
+   "target": "Acceptați cardul?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_bill",
+   "kind": "scenario_title",
+   "tr": "Hesabı istemek",
+   "en": "Asking for the bill",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_bill.0",
+   "kind": "speaking_prompt",
+   "en": "You catch the waiter.",
+   "context": "Nota de plată, vă rog.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_bill.1",
+   "kind": "speaking_prompt",
+   "en": "Split or together?",
+   "context": "Vrem să plătim împreună.",
+   "have": []
+  },
+  {
+   "key": "p.ro_bill_0",
+   "kind": "phrase",
+   "target": "Nota de plată, vă rog.",
+   "tr": "Hesabı alabilir miyim?",
+   "en": "Could I get the check, please?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_bill_1",
+   "kind": "phrase",
+   "target": "Vrem să plătim împreună.",
+   "tr": "Birlikte ödemek istiyoruz.",
+   "en": "We would like to pay together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_bill_2",
+   "kind": "phrase",
+   "target": "Păstrați restul.",
+   "tr": "Üstü kalsın.",
+   "en": "Keep the change.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_airport",
+   "kind": "scenario_title",
+   "tr": "Havaalanı check-in",
+   "en": "Airport check-in",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_airport.0",
+   "kind": "speaking_prompt",
+   "en": "The agent greets you.",
+   "context": "Am o rezervare.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_airport.1",
+   "kind": "speaking_prompt",
+   "en": "Window or aisle?",
+   "context": "Un loc la fereastră.",
+   "have": []
+  },
+  {
+   "key": "p.ro_airport_0",
+   "kind": "phrase",
+   "target": "Am o rezervare.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_airport_1",
+   "kind": "phrase",
+   "target": "Un loc la fereastră.",
+   "tr": "Pencere kenarı, lütfen.",
+   "en": "A window seat, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_airport_2",
+   "kind": "phrase",
+   "target": "Aceasta este coada pentru îmbarcare?",
+   "tr": "Biniş kuyruğu bu mu?",
+   "en": "Is this the queue for boarding?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_intro",
+   "kind": "scenario_title",
+   "tr": "Tanışma",
+   "en": "Meeting someone",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_intro",
+   "kind": "grammar_rule",
+   "tr": "Meslek adı konuşanın cinsiyetine uyar: erkek 'profesor', kadın 'profesoară'. 'a fi'den sonra artikel genelde düşer.",
+   "en": "Job titles agree with the speaker's gender: a man is 'profesor', a woman is 'profesoară'. After 'a fi' the article is usually dropped.",
+   "context": "Ea este profesoară. / ✗ Ea este profesor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_intro.0",
+   "kind": "speaking_prompt",
+   "en": "Someone new smiles at you.",
+   "context": "Îmi pare bine, eu sunt Mihai.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_intro.1",
+   "kind": "speaking_prompt",
+   "en": "You want to know their name.",
+   "context": "Cum te cheamă?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_intro.2",
+   "kind": "speaking_prompt",
+   "en": "They ask your name back.",
+   "context": "Mă numesc Ioana, dar tu?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_intro.3",
+   "kind": "speaking_prompt",
+   "en": "You're curious where they're from.",
+   "context": "De unde ești?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_intro.4",
+   "kind": "speaking_prompt",
+   "en": "They ask where you're from.",
+   "context": "Sunt din Istanbul.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_intro.5",
+   "kind": "speaking_prompt",
+   "en": "You ask about their job.",
+   "context": "Cu ce te ocupi?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_intro.6",
+   "kind": "speaking_prompt",
+   "en": "They ask what you do.",
+   "context": "Sunt profesoară.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_intro.7",
+   "kind": "speaking_prompt",
+   "en": "Time to say goodbye.",
+   "context": "Mi-a făcut plăcere, pe curând!",
+   "have": []
+  },
+  {
+   "key": "p.ro_intro_0",
+   "kind": "phrase",
+   "target": "Îmi pare bine, eu sunt Mihai.",
+   "tr": "Memnun oldum, ben Mihai.",
+   "en": "Nice to meet you, I'm Mihai.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_intro_1",
+   "kind": "phrase",
+   "target": "Cum te cheamă?",
+   "tr": "Adın ne?",
+   "en": "What's your name?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_intro_2",
+   "kind": "phrase",
+   "target": "Mă numesc Ioana, dar tu?",
+   "tr": "Benim adım Ioana, ya sen?",
+   "en": "My name's Ioana, and you?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_intro_3",
+   "kind": "phrase",
+   "target": "De unde ești?",
+   "tr": "Nerelisin?",
+   "en": "Where are you from?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_intro_4",
+   "kind": "phrase",
+   "target": "Sunt din Istanbul.",
+   "tr": "İstanbulluyum.",
+   "en": "I'm from Istanbul.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_intro_5",
+   "kind": "phrase",
+   "target": "Cu ce te ocupi?",
+   "tr": "Ne iş yapıyorsun?",
+   "en": "What do you do?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_intro_6",
+   "kind": "phrase",
+   "target": "Sunt profesoară.",
+   "tr": "Öğretmenim.",
+   "en": "I'm a teacher.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_intro_7",
+   "kind": "phrase",
+   "target": "Mi-a făcut plăcere, pe curând!",
+   "tr": "Tanıştığımıza sevindim, yakında görüşürüz!",
+   "en": "Nice meeting you, see you soon!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_shopping",
+   "kind": "scenario_title",
+   "tr": "Alışveriş",
+   "en": "Shopping",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_shopping",
+   "kind": "grammar_rule",
+   "tr": "Gösterme sıfatı ismin cinsiyetine uyar: acest/această, acești/aceste.",
+   "en": "Demonstratives agree with the noun's gender: acest/această, acești/aceste.",
+   "context": "Cât costă acești pantofi? / ✗ Cât costă această pantofi?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_shopping.0",
+   "kind": "speaking_prompt",
+   "en": "A clerk asks if you need help.",
+   "context": "Doar mă uit, mulțumesc.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_shopping.1",
+   "kind": "speaking_prompt",
+   "en": "You found something you like.",
+   "context": "Aveți asta la mărimea 40?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_shopping.2",
+   "kind": "speaking_prompt",
+   "en": "You want to test the fit.",
+   "context": "Pot să-l probez?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_shopping.3",
+   "kind": "speaking_prompt",
+   "en": "You're checking the price.",
+   "context": "Cât costă acești pantofi?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_shopping.4",
+   "kind": "speaking_prompt",
+   "en": "You're ready to pay.",
+   "context": "Acceptați cardul?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_shopping.5",
+   "kind": "speaking_prompt",
+   "en": "You think the price is high.",
+   "context": "E prea scump.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_shopping.6",
+   "kind": "speaking_prompt",
+   "en": "It doesn't fit.",
+   "context": "Aveți o mărime mai mică?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_shopping.7",
+   "kind": "speaking_prompt",
+   "en": "You've decided to buy it.",
+   "context": "Îl iau.",
+   "have": []
+  },
+  {
+   "key": "p.ro_shopping_0",
+   "kind": "phrase",
+   "target": "Doar mă uit, mulțumesc.",
+   "tr": "Sadece bakıyorum, teşekkürler.",
+   "en": "I'm just looking, thanks.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_shopping_1",
+   "kind": "phrase",
+   "target": "Aveți asta la mărimea 40?",
+   "tr": "Bunun 40 numarası var mı?",
+   "en": "Do you have this in size 40?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_shopping_2",
+   "kind": "phrase",
+   "target": "Pot să-l probez?",
+   "tr": "Deneyebilir miyim?",
+   "en": "Can I try it on?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_shopping_3",
+   "kind": "phrase",
+   "target": "Cât costă acești pantofi?",
+   "tr": "Bu ayakkabılar ne kadar?",
+   "en": "How much are these shoes?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_shopping_4",
+   "kind": "phrase",
+   "target": "Acceptați cardul?",
+   "tr": "Kart geçiyor mu?",
+   "en": "Do you take cards?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_shopping_5",
+   "kind": "phrase",
+   "target": "E prea scump.",
+   "tr": "Çok pahalı.",
+   "en": "It's too expensive.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_shopping_6",
+   "kind": "phrase",
+   "target": "Aveți o mărime mai mică?",
+   "tr": "Daha küçük bedeniniz var mı?",
+   "en": "Do you have a smaller size?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_shopping_7",
+   "kind": "phrase",
+   "target": "Îl iau.",
+   "tr": "Bunu alıyorum.",
+   "en": "I'll take it.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_numbers_time",
+   "kind": "scenario_title",
+   "tr": "Sayılar ve saat",
+   "en": "Numbers and time",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_numbers_time",
+   "kind": "grammar_rule",
+   "tr": "Saat söylerken 'bir' için 'e ora unu' (tekil), diğer saatler için 'sunt orele...' (çoğul) kullanılır.",
+   "en": "Use 'e ora unu' (singular) only for one o'clock; other hours take 'sunt orele...' (plural).",
+   "context": "Sunt orele trei și jumătate. / ✗ E ora trei și jumătate.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_numbers_time.0",
+   "kind": "speaking_prompt",
+   "en": "You don't know the time.",
+   "context": "Cât e ceasul?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_numbers_time.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks you the time.",
+   "context": "Sunt orele trei și jumătate.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_numbers_time.2",
+   "kind": "speaking_prompt",
+   "en": "You want to visit a shop later.",
+   "context": "Magazinul se deschide la nouă.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_numbers_time.3",
+   "kind": "speaking_prompt",
+   "en": "At the counter.",
+   "context": "Am două bilete.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_numbers_time.4",
+   "kind": "speaking_prompt",
+   "en": "The clerk tells you the price.",
+   "context": "Fac doisprezece euro în total.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_numbers_time.5",
+   "kind": "speaking_prompt",
+   "en": "You're planning to meet a friend.",
+   "context": "Ne vedem la ora cinci?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_numbers_time.6",
+   "kind": "speaking_prompt",
+   "en": "You're running a bit late.",
+   "context": "Ajung în zece minute.",
+   "have": []
+  },
+  {
+   "key": "p.ro_numbers_time_0",
+   "kind": "phrase",
+   "target": "Cât e ceasul?",
+   "tr": "Saat kaç?",
+   "en": "What time is it?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_numbers_time_1",
+   "kind": "phrase",
+   "target": "Sunt orele trei și jumătate.",
+   "tr": "Saat üç buçuk.",
+   "en": "It's half past three.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_numbers_time_2",
+   "kind": "phrase",
+   "target": "Magazinul se deschide la nouă.",
+   "tr": "Dükkan dokuzda açılıyor.",
+   "en": "The shop opens at nine.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_numbers_time_3",
+   "kind": "phrase",
+   "target": "Am două bilete.",
+   "tr": "İki biletim var.",
+   "en": "I have two tickets.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_numbers_time_4",
+   "kind": "phrase",
+   "target": "Fac doisprezece euro în total.",
+   "tr": "Toplam on iki euro tutuyor.",
+   "en": "That's twelve euros in total.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_numbers_time_5",
+   "kind": "phrase",
+   "target": "Ne vedem la ora cinci?",
+   "tr": "Saat beşte görüşelim mi?",
+   "en": "Shall we meet at five?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_numbers_time_6",
+   "kind": "phrase",
+   "target": "Ajung în zece minute.",
+   "tr": "On dakikaya varırım.",
+   "en": "I'll arrive in ten minutes.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_family",
+   "kind": "scenario_title",
+   "tr": "Aile",
+   "en": "Family",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_family",
+   "kind": "grammar_rule",
+   "tr": "İyelik sıfatı isimden sonra gelir ve isme uyar: 'sora mea' (kız kardeşim), 'mea sora' değil.",
+   "en": "Possessive adjectives follow the noun and agree with it: 'sora mea' (my sister), never 'mea sora'.",
+   "context": "Sora mea locuiește la Cluj. / ✗ Mea sora locuiește la Cluj.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_family.0",
+   "kind": "speaking_prompt",
+   "en": "You're showing a photo.",
+   "context": "Aceasta este familia mea.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_family.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your siblings.",
+   "context": "Am doi frați și o soră.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_family.2",
+   "kind": "speaking_prompt",
+   "en": "They ask what your mother does.",
+   "context": "Mama mea este doctoriță.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_family.3",
+   "kind": "speaking_prompt",
+   "en": "You're talking about your sister.",
+   "context": "Sora mea locuiește la Cluj.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_family.4",
+   "kind": "speaking_prompt",
+   "en": "You want to know a friend's daughter's age.",
+   "context": "Câți ani are fiica ta?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_family.5",
+   "kind": "speaking_prompt",
+   "en": "They ask where your parents live.",
+   "context": "Părinții mei locuiesc la țară.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_family.6",
+   "kind": "speaking_prompt",
+   "en": "You're asking a new friend.",
+   "context": "Ai copii?",
+   "have": []
+  },
+  {
+   "key": "p.ro_family_0",
+   "kind": "phrase",
+   "target": "Aceasta este familia mea.",
+   "tr": "Bu benim ailem.",
+   "en": "This is my family.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_family_1",
+   "kind": "phrase",
+   "target": "Am doi frați și o soră.",
+   "tr": "İki erkek kardeşim ve bir kız kardeşim var.",
+   "en": "I have two brothers and a sister.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_family_2",
+   "kind": "phrase",
+   "target": "Mama mea este doctoriță.",
+   "tr": "Annem doktor.",
+   "en": "My mother is a doctor.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_family_3",
+   "kind": "phrase",
+   "target": "Sora mea locuiește la Cluj.",
+   "tr": "Kız kardeşim Cluj'da yaşıyor.",
+   "en": "My sister lives in Cluj.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_family_4",
+   "kind": "phrase",
+   "target": "Câți ani are fiica ta?",
+   "tr": "Kızın kaç yaşında?",
+   "en": "How old is your daughter?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_family_5",
+   "kind": "phrase",
+   "target": "Părinții mei locuiesc la țară.",
+   "tr": "Ailem kırsalda yaşıyor.",
+   "en": "My parents live in the countryside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_family_6",
+   "kind": "phrase",
+   "target": "Ai copii?",
+   "tr": "Çocuğun var mı?",
+   "en": "Do you have children?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_weather",
+   "kind": "scenario_title",
+   "tr": "Hava durumu",
+   "en": "Weather",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_weather",
+   "kind": "grammar_rule",
+   "tr": "'a ploua' (yağmur yağmak) kişisiz bir fiildir, yalnızca tekil üçüncü şahısta kullanılır: 'plouă'.",
+   "en": "'A ploua' (to rain) is an impersonal verb — it only ever appears in its third-person singular form 'plouă'.",
+   "context": "Plouă azi. / ✗ Eu plou azi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_weather.0",
+   "kind": "speaking_prompt",
+   "en": "You're about to go outside.",
+   "context": "Cum e vremea azi?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_weather.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about the weather.",
+   "context": "Plouă azi.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_weather.2",
+   "kind": "speaking_prompt",
+   "en": "You step outside.",
+   "context": "E foarte cald afară.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_weather.3",
+   "kind": "speaking_prompt",
+   "en": "Your friend is leaving the house.",
+   "context": "Ia o umbrelă, poate plouă.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_weather.4",
+   "kind": "speaking_prompt",
+   "en": "You wake up and check the window.",
+   "context": "E ger dimineața asta.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_weather.5",
+   "kind": "speaking_prompt",
+   "en": "You're talking about your favorite weather.",
+   "context": "Îmi plac zilele însorite.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_weather.6",
+   "kind": "speaking_prompt",
+   "en": "You're deciding what to wear.",
+   "context": "Bate vântul azi?",
+   "have": []
+  },
+  {
+   "key": "p.ro_weather_0",
+   "kind": "phrase",
+   "target": "Cum e vremea azi?",
+   "tr": "Bugün hava nasıl?",
+   "en": "What's the weather like today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_weather_1",
+   "kind": "phrase",
+   "target": "Plouă azi.",
+   "tr": "Bugün yağmur yağıyor.",
+   "en": "It's raining today.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_weather_2",
+   "kind": "phrase",
+   "target": "E foarte cald afară.",
+   "tr": "Dışarısı çok sıcak.",
+   "en": "It's really hot outside.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_weather_3",
+   "kind": "phrase",
+   "target": "Ia o umbrelă, poate plouă.",
+   "tr": "Şemsiyeni al, yağmur yağabilir.",
+   "en": "Take an umbrella, it might rain.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_weather_4",
+   "kind": "phrase",
+   "target": "E ger dimineața asta.",
+   "tr": "Bu sabah dondurucu soğuk.",
+   "en": "It's freezing this morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_weather_5",
+   "kind": "phrase",
+   "target": "Îmi plac zilele însorite.",
+   "tr": "Güneşli günleri severim.",
+   "en": "I love sunny days.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_weather_6",
+   "kind": "phrase",
+   "target": "Bate vântul azi?",
+   "tr": "Bugün rüzgar var mı?",
+   "en": "Is it windy today?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_transport",
+   "kind": "scenario_title",
+   "tr": "Ulaşım",
+   "en": "Getting around",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_transport",
+   "kind": "grammar_rule",
+   "tr": "Ulaşım aracından bahsederken 'cu' edatı belirli tanımlıklı isimle kullanılır: 'cu autobuzul', 'cu autobuz' değil.",
+   "en": "Transport uses 'cu' + the definite article on the vehicle: 'cu autobuzul', never 'cu autobuz'.",
+   "context": "Merg la muncă cu autobuzul. / ✗ Merg la muncă cu autobuz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_transport.0",
+   "kind": "speaking_prompt",
+   "en": "You need to find a bus.",
+   "context": "Unde e cea mai apropiată stație de autobuz?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_transport.1",
+   "kind": "speaking_prompt",
+   "en": "Someone asks how you commute.",
+   "context": "Merg la muncă cu autobuzul.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_transport.2",
+   "kind": "speaking_prompt",
+   "en": "You're at the train station.",
+   "context": "De la ce peron pleacă?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_transport.3",
+   "kind": "speaking_prompt",
+   "en": "At the ticket counter.",
+   "context": "Un bilet spre centru, vă rog.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_transport.4",
+   "kind": "speaking_prompt",
+   "en": "You're not sure of the route.",
+   "context": "Trenul acesta oprește la aeroport?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_transport.5",
+   "kind": "speaking_prompt",
+   "en": "You missed the last bus.",
+   "context": "Am nevoie de un taxi.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_transport.6",
+   "kind": "speaking_prompt",
+   "en": "You're asking about travel time.",
+   "context": "Cât durează?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_transport.7",
+   "kind": "speaking_prompt",
+   "en": "It's a short distance.",
+   "context": "Prefer să merg pe jos.",
+   "have": []
+  },
+  {
+   "key": "p.ro_transport_0",
+   "kind": "phrase",
+   "target": "Unde e cea mai apropiată stație de autobuz?",
+   "tr": "En yakın otobüs durağı nerede?",
+   "en": "Where's the nearest bus stop?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_transport_1",
+   "kind": "phrase",
+   "target": "Merg la muncă cu autobuzul.",
+   "tr": "İşe otobüsle gidiyorum.",
+   "en": "I go to work by bus.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_transport_2",
+   "kind": "phrase",
+   "target": "De la ce peron pleacă?",
+   "tr": "Hangi perondan kalkıyor?",
+   "en": "Which platform does it leave from?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_transport_3",
+   "kind": "phrase",
+   "target": "Un bilet spre centru, vă rog.",
+   "tr": "Şehir merkezine bir bilet, lütfen.",
+   "en": "One ticket to the center, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_transport_4",
+   "kind": "phrase",
+   "target": "Trenul acesta oprește la aeroport?",
+   "tr": "Bu tren havalimanında duruyor mu?",
+   "en": "Does this train stop at the airport?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_transport_5",
+   "kind": "phrase",
+   "target": "Am nevoie de un taxi.",
+   "tr": "Taksiye ihtiyacım var.",
+   "en": "I need a taxi.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_transport_6",
+   "kind": "phrase",
+   "target": "Cât durează?",
+   "tr": "Ne kadar sürüyor?",
+   "en": "How long does it take?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_transport_7",
+   "kind": "phrase",
+   "target": "Prefer să merg pe jos.",
+   "tr": "Yürüyerek gitmeyi tercih ederim.",
+   "en": "I prefer to go on foot.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_emergency",
+   "kind": "scenario_title",
+   "tr": "Acil durum",
+   "en": "Emergency",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_emergency",
+   "kind": "grammar_rule",
+   "tr": "Emir kipinde özne zamiri ('voi') kullanılmaz, doğrudan fiil ile başlanır.",
+   "en": "In the imperative, no subject pronoun ('voi') is used — start directly with the verb.",
+   "context": "Chemați poliția! / ✗ Voi chemați poliția!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_emergency.0",
+   "kind": "speaking_prompt",
+   "en": "You see someone collapse.",
+   "context": "Ajutor! Chemați o ambulanță!",
+   "have": []
+  },
+  {
+   "key": "tp.ro_emergency.1",
+   "kind": "speaking_prompt",
+   "en": "You call emergency services.",
+   "context": "S-a întâmplat un accident.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_emergency.2",
+   "kind": "speaking_prompt",
+   "en": "You describe the urgency.",
+   "context": "Am nevoie de un doctor acum.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_emergency.3",
+   "kind": "speaking_prompt",
+   "en": "You need directions fast.",
+   "context": "Unde e cel mai apropiat spital?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_emergency.4",
+   "kind": "speaking_prompt",
+   "en": "You're reporting a theft.",
+   "context": "Cineva mi-a furat geanta.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_emergency.5",
+   "kind": "speaking_prompt",
+   "en": "A doctor asks about allergies.",
+   "context": "Sunt alergic la penicilină.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_emergency.6",
+   "kind": "speaking_prompt",
+   "en": "You need official help.",
+   "context": "Chemați poliția, vă rog.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_emergency.7",
+   "kind": "speaking_prompt",
+   "en": "You don't know where you are.",
+   "context": "M-am rătăcit, mă puteți ajuta?",
+   "have": []
+  },
+  {
+   "key": "p.ro_emergency_0",
+   "kind": "phrase",
+   "target": "Ajutor! Chemați o ambulanță!",
+   "tr": "İmdat! Ambulans çağırın!",
+   "en": "Help! Call an ambulance!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_emergency_1",
+   "kind": "phrase",
+   "target": "S-a întâmplat un accident.",
+   "tr": "Bir kaza oldu.",
+   "en": "An accident happened.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_emergency_2",
+   "kind": "phrase",
+   "target": "Am nevoie de un doctor acum.",
+   "tr": "Şimdi bir doktora ihtiyacım var.",
+   "en": "I need a doctor now.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_emergency_3",
+   "kind": "phrase",
+   "target": "Unde e cel mai apropiat spital?",
+   "tr": "En yakın hastane nerede?",
+   "en": "Where is the nearest hospital?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_emergency_4",
+   "kind": "phrase",
+   "target": "Cineva mi-a furat geanta.",
+   "tr": "Biri çantamı çaldı.",
+   "en": "Someone stole my bag.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_emergency_5",
+   "kind": "phrase",
+   "target": "Sunt alergic la penicilină.",
+   "tr": "Penisiline alerjim var.",
+   "en": "I'm allergic to penicillin.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_emergency_6",
+   "kind": "phrase",
+   "target": "Chemați poliția, vă rog.",
+   "tr": "Lütfen polisi arayın.",
+   "en": "Please call the police.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_emergency_7",
+   "kind": "phrase",
+   "target": "M-am rătăcit, mă puteți ajuta?",
+   "tr": "Kayboldum, bana yardım edebilir misiniz?",
+   "en": "I'm lost, can you help me?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_routine",
+   "kind": "scenario_title",
+   "tr": "Günlük rutin",
+   "en": "Daily routine",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_routine",
+   "kind": "grammar_rule",
+   "tr": "Günlük eylemleri anlatan refleksif fiillerde ('a se trezi') zamir çekimli fiilden önce gelir.",
+   "en": "Daily-routine reflexive verbs like 'a se trezi' need the reflexive pronoun right before the conjugated verb.",
+   "context": "Mă trezesc la ora șapte. / ✗ Trezesc la ora șapte.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_routine.0",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your morning.",
+   "context": "De obicei mă trezesc la ora șapte.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_routine.1",
+   "kind": "speaking_prompt",
+   "en": "What do you do next?",
+   "context": "Fac duș în fiecare dimineață.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_routine.2",
+   "kind": "speaking_prompt",
+   "en": "You talk about your family's mornings.",
+   "context": "Luăm micul dejun împreună.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_routine.3",
+   "kind": "speaking_prompt",
+   "en": "You describe your commute.",
+   "context": "Merg la muncă cu bicicleta.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_routine.4",
+   "kind": "speaking_prompt",
+   "en": "You're talking about hygiene habits.",
+   "context": "Mă spăl pe dinți de două ori pe zi.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_routine.5",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your evenings.",
+   "context": "Seara ne uităm puțin la televizor.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_routine.6",
+   "kind": "speaking_prompt",
+   "en": "Someone asks about your weekend.",
+   "context": "Duminica mă trezesc târziu.",
+   "have": []
+  },
+  {
+   "key": "p.ro_routine_0",
+   "kind": "phrase",
+   "target": "De obicei mă trezesc la ora șapte.",
+   "tr": "Genelde saat yedide uyanırım.",
+   "en": "I usually wake up at seven.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_routine_1",
+   "kind": "phrase",
+   "target": "Fac duș în fiecare dimineață.",
+   "tr": "Her sabah duş alırım.",
+   "en": "I take a shower every morning.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_routine_2",
+   "kind": "phrase",
+   "target": "Luăm micul dejun împreună.",
+   "tr": "Birlikte kahvaltı yaparız.",
+   "en": "We have breakfast together.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_routine_3",
+   "kind": "phrase",
+   "target": "Merg la muncă cu bicicleta.",
+   "tr": "İşe bisikletle giderim.",
+   "en": "I go to work by bike.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_routine_4",
+   "kind": "phrase",
+   "target": "Mă spăl pe dinți de două ori pe zi.",
+   "tr": "Günde iki kez dişlerimi fırçalarım.",
+   "en": "I brush my teeth twice a day.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_routine_5",
+   "kind": "phrase",
+   "target": "Seara ne uităm puțin la televizor.",
+   "tr": "Akşamları biraz televizyon izleriz.",
+   "en": "In the evening we watch a bit of TV.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_routine_6",
+   "kind": "phrase",
+   "target": "Duminica mă trezesc târziu.",
+   "tr": "Pazar günleri geç kalkarım.",
+   "en": "On Sundays I get up late.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_past_story",
+   "kind": "scenario_title",
+   "tr": "Basit geçmiş zamanla bir olay anlatma",
+   "en": "Telling a story in the past",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_past_story",
+   "kind": "grammar_rule",
+   "tr": "Geçmiş zaman (perfectul compus) neredeyse tüm fiillerde 'a avea' (am, ai, a...) yardımcı fiiliyle kurulur, İtalyanca/Fransızca'nın aksine hareket fiillerinde bile.",
+   "en": "The past tense (perfect compus) uses the auxiliary 'a avea' (am, ai, a...) for nearly all verbs, even motion verbs — unlike Italian or French.",
+   "context": "Ieri am fost la piață. / ✗ Ieri sunt fost la piață.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_past_story.0",
+   "kind": "speaking_prompt",
+   "en": "You're telling a friend about your day.",
+   "context": "Ieri am fost la piață.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_past_story.1",
+   "kind": "speaking_prompt",
+   "en": "You continue the story.",
+   "context": "Am cumpărat legume proaspete.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_past_story.2",
+   "kind": "speaking_prompt",
+   "en": "Something unexpected happened.",
+   "context": "Apoi am întâlnit un vechi prieten.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_past_story.3",
+   "kind": "speaking_prompt",
+   "en": "You describe the encounter.",
+   "context": "Am vorbit timp de o oră.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_past_story.4",
+   "kind": "speaking_prompt",
+   "en": "Something went wrong.",
+   "context": "Mi-am pierdut portofelul pe drum.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_past_story.5",
+   "kind": "speaking_prompt",
+   "en": "It has a happy ending.",
+   "context": "Din fericire, cineva l-a găsit.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_past_story.6",
+   "kind": "speaking_prompt",
+   "en": "You're wrapping up the story.",
+   "context": "A fost o zi nebună!",
+   "have": []
+  },
+  {
+   "key": "p.ro_past_story_0",
+   "kind": "phrase",
+   "target": "Ieri am fost la piață.",
+   "tr": "Dün pazara gittim.",
+   "en": "Yesterday I went to the market.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_past_story_1",
+   "kind": "phrase",
+   "target": "Am cumpărat legume proaspete.",
+   "tr": "Taze sebze aldım.",
+   "en": "I bought fresh vegetables.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_past_story_2",
+   "kind": "phrase",
+   "target": "Apoi am întâlnit un vechi prieten.",
+   "tr": "Sonra eski bir arkadaşımla karşılaştım.",
+   "en": "Then I met an old friend.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_past_story_3",
+   "kind": "phrase",
+   "target": "Am vorbit timp de o oră.",
+   "tr": "Bir saat konuştuk.",
+   "en": "We talked for an hour.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_past_story_4",
+   "kind": "phrase",
+   "target": "Mi-am pierdut portofelul pe drum.",
+   "tr": "Yolda cüzdanımı kaybettim.",
+   "en": "I lost my wallet on the way.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_past_story_5",
+   "kind": "phrase",
+   "target": "Din fericire, cineva l-a găsit.",
+   "tr": "Neyse ki biri onu buldu.",
+   "en": "Luckily, someone found it.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_past_story_6",
+   "kind": "phrase",
+   "target": "A fost o zi nebună!",
+   "tr": "Çılgın bir gündü!",
+   "en": "It was a crazy day!",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_a2_route",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 1",
+   "en": "Mixed review 1",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_a2_route.0",
+   "kind": "speaking_prompt",
+   "en": "Start the situation politely.",
+   "context": "O cafea, vă rog.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_a2_route.1",
+   "kind": "speaking_prompt",
+   "en": "Explain what you already arranged.",
+   "context": "Am o rezervare.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_a2_route.2",
+   "kind": "speaking_prompt",
+   "en": "Ask for the next place or step.",
+   "context": "Scuzați, unde este gara?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_a2_route.3",
+   "kind": "speaking_prompt",
+   "en": "Close the exchange naturally.",
+   "context": "Bună, mă numesc Deniz.",
+   "have": []
+  },
+  {
+   "key": "p.ro_a2_route_0",
+   "kind": "phrase",
+   "target": "O cafea, vă rog.",
+   "tr": "Bir kahve, lütfen.",
+   "en": "A coffee, please.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_a2_route_1",
+   "kind": "phrase",
+   "target": "Am o rezervare.",
+   "tr": "Rezervasyonum var.",
+   "en": "I have a reservation.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_a2_route_2",
+   "kind": "phrase",
+   "target": "Scuzați, unde este gara?",
+   "tr": "Afedersiniz, istasyon nerede?",
+   "en": "Excuse me, where is the station?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_a2_route_3",
+   "kind": "phrase",
+   "target": "Bună, mă numesc Deniz.",
+   "tr": "Merhaba, adım Deniz.",
+   "en": "Hi, my name is Deniz.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_b1_solve",
+   "kind": "scenario_title",
+   "tr": "Karışık tekrar 2",
+   "en": "Mixed review 2",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "tp.ro_b1_solve.0",
+   "kind": "speaking_prompt",
+   "en": "Clarify one important condition.",
+   "context": "Micul dejun e inclus?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_b1_solve.1",
+   "kind": "speaking_prompt",
+   "en": "Say what you did not understand.",
+   "context": "Nu înțeleg.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_b1_solve.2",
+   "kind": "speaking_prompt",
+   "en": "Describe what you are looking for.",
+   "context": "Caut un apartament.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_b1_solve.3",
+   "kind": "speaking_prompt",
+   "en": "Ask about the cost or condition.",
+   "context": "Cât este chiria?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_b1_solve.4",
+   "kind": "speaking_prompt",
+   "en": "Request a practical solution.",
+   "context": "Acceptați cardul?",
+   "have": []
+  },
+  {
+   "key": "p.ro_b1_solve_0",
+   "kind": "phrase",
+   "target": "Micul dejun e inclus?",
+   "tr": "Kahvaltı dahil mi?",
+   "en": "Is breakfast included?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_b1_solve_1",
+   "kind": "phrase",
+   "target": "Nu înțeleg.",
+   "tr": "Anlamıyorum.",
+   "en": "I do not understand.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_b1_solve_2",
+   "kind": "phrase",
+   "target": "Caut un apartament.",
+   "tr": "Daire arıyorum.",
+   "en": "I am looking for a flat.",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_b1_solve_3",
+   "kind": "phrase",
+   "target": "Cât este chiria?",
+   "tr": "Kira ne kadar?",
+   "en": "How much is the rent?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "p.ro_b1_solve_4",
+   "kind": "phrase",
+   "target": "Acceptați cardul?",
+   "tr": "Kart geçerli mi?",
+   "en": "Do you take card?",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "s.ro_exp_job_interview",
+   "kind": "scenario_title",
+   "tr": "İş görüşmesi",
+   "en": "Job interview",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_exp_job_interview",
+   "kind": "grammar_rule",
+   "tr": "Resmî hitapta \"puteți\" + mastar kullanılır; \"spune salariul\" kaba kaçar.",
+   "en": null,
+   "context": "Puteți împărtăși intervalul salarial? / ✗ Spune salariul.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ro_exp_job_interview.0",
+   "kind": "speaking_prompt",
+   "en": "De ce doriți să lucrați tocmai la noi?",
+   "context": "Abordarea voastră față de client se potrivește cu ceea ce fac bine.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_exp_job_interview.1",
+   "kind": "speaking_prompt",
+   "en": "Cum gestionați o săptămână dificilă de lansare?",
+   "context": "Reduc scopul și consemnez riscurile în scris.",
+   "have": []
+  },
+  {
+   "key": "p.ro_exp_interview_0",
+   "kind": "phrase",
+   "target": "Vă mulțumesc pentru invitația la interviu.",
+   "tr": "Görüşmeye davet ettiğiniz için teşekkür ederim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_interview_1",
+   "kind": "phrase",
+   "target": "Lucrez în echipe de produs de aproximativ cinci ani.",
+   "tr": "Yaklaşık beş yıldır ürün ekiplerinde çalışıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_interview_2",
+   "kind": "phrase",
+   "target": "Prioritatea mea este să înțeleg bine nevoia clientului.",
+   "tr": "Önceliğim müşterinin ihtiyacını iyi anlamaktır.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_interview_3",
+   "kind": "phrase",
+   "target": "Punctul meu slab este să mă pierd în detalii; folosesc o listă de control.",
+   "tr": "Zayıf yönüm detaylarda kaybolmam; bir kontrol listesi kullanıyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_interview_4",
+   "kind": "phrase",
+   "target": "Puteți împărtăși intervalul salarial?",
+   "tr": "Maaş aralığını paylaşabilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_interview_5",
+   "kind": "phrase",
+   "target": "Este prevăzută și o discuție cu echipa?",
+   "tr": "Ekiple de bir görüşme öngörülüyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ro_exp_team_meeting",
+   "kind": "scenario_title",
+   "tr": "Ekip toplantısı",
+   "en": "Team meeting",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_exp_team_meeting",
+   "kind": "grammar_rule",
+   "tr": "\"aștept\" doğrudan nesne alır: aștept aprobarea.",
+   "en": null,
+   "context": "Aștept aprobarea designului. / ✗ Aștept designul el.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ro_exp_team_meeting.0",
+   "kind": "speaking_prompt",
+   "en": "Are cineva un blocker?",
+   "context": "Aștept aprobarea designului; mâine reamintesc.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_exp_team_meeting.1",
+   "kind": "speaking_prompt",
+   "en": "Atunci tu ești owner-ul sarcinii.",
+   "context": "Bine, actualizez echipa vineri.",
+   "have": []
+  },
+  {
+   "key": "p.ro_exp_meeting_0",
+   "kind": "phrase",
+   "target": "Trecem direct la agendă.",
+   "tr": "Doğrudan gündeme geçelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_meeting_1",
+   "kind": "phrase",
+   "target": "Am un blocaj la API; mâine dau o dată.",
+   "tr": "API tarafında bir engelim var; yarın tarih vereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_meeting_2",
+   "kind": "phrase",
+   "target": "Putem lăsa acest punct la final?",
+   "tr": "Bu maddeyi sona bırakabilir miyiz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_meeting_3",
+   "kind": "phrase",
+   "target": "Notez decizia: joi, ora 16:00.",
+   "tr": "Kararı not ediyorum: perşembe saat 16:00.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_meeting_4",
+   "kind": "phrase",
+   "target": "Nu am obiecții, dar să înregistrăm riscul.",
+   "tr": "İtirazım yok ama riski kaydedelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_meeting_5",
+   "kind": "phrase",
+   "target": "Avem nevoie de cinci minute în plus?",
+   "tr": "Beş dakika ekstra süreye ihtiyacımız var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ro_exp_bank",
+   "kind": "scenario_title",
+   "tr": "Bankada hesap",
+   "en": "Bank account",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_exp_bank",
+   "kind": "grammar_rule",
+   "tr": "Nazik istek: aș dori să + dilek kipi; \"deschide contul\" emirdir.",
+   "en": null,
+   "context": "Aș dori să deschid un cont curent. / ✗ Deschide un cont acum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ro_exp_bank.0",
+   "kind": "speaking_prompt",
+   "en": "Cont personal pentru salariu?",
+   "context": "Da, pentru virarea salariului.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_exp_bank.1",
+   "kind": "speaking_prompt",
+   "en": "Semnați aici, vă rog.",
+   "context": "Desigur, semnez acum.",
+   "have": []
+  },
+  {
+   "key": "p.ro_exp_bank_0",
+   "kind": "phrase",
+   "target": "Aș dori să deschid un cont curent.",
+   "tr": "Bir vadesiz hesap açmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_bank_1",
+   "kind": "phrase",
+   "target": "Am actul de identitate și dovada adresei.",
+   "tr": "Kimliğim ve ikametgah belgem yanımda.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_bank_2",
+   "kind": "phrase",
+   "target": "Cât este taxa anuală a cardului?",
+   "tr": "Kartın yıllık ücreti ne kadar?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_bank_3",
+   "kind": "phrase",
+   "target": "Doresc și internet banking, vă rog.",
+   "tr": "İnternet bankacılığını da istiyorum lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_bank_4",
+   "kind": "phrase",
+   "target": "Care este limita zilnică de transfer?",
+   "tr": "Havale için günlük limit nedir?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_bank_5",
+   "kind": "phrase",
+   "target": "Pot primi chitanța pe e-mail?",
+   "tr": "Dekontu e-posta ile alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ro_exp_apartment",
+   "kind": "scenario_title",
+   "tr": "Ev bakma",
+   "en": "Apartment viewing",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_exp_apartment",
+   "kind": "grammar_rule",
+   "tr": "Hâlâ boş olup olmadığını sormak için \"mai\" kullanılır.",
+   "en": null,
+   "context": "Mai este liber apartamentul? / ✗ Este liber încă tot timpul?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ro_exp_apartment.0",
+   "kind": "speaking_prompt",
+   "en": "Când ați dori să vă mutați?",
+   "context": "La începutul lunii; am puține lucruri.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_exp_apartment.1",
+   "kind": "speaking_prompt",
+   "en": "Proprietarul nu acceptă animale.",
+   "context": "Înțeleg, nu am animal de companie.",
+   "have": []
+  },
+  {
+   "key": "p.ro_exp_apartment_0",
+   "kind": "phrase",
+   "target": "Am văzut anunțul; mai este liber apartamentul?",
+   "tr": "İlanı gördüm; daire hâlâ boş mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_apartment_1",
+   "kind": "phrase",
+   "target": "Întreținerea include încălzirea?",
+   "tr": "Aidat ısınmayı da kapsıyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_apartment_2",
+   "kind": "phrase",
+   "target": "Garanția este de câte chirii?",
+   "tr": "Depozito kaç aylık kiraya denk geliyor?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_apartment_3",
+   "kind": "phrase",
+   "target": "Contractul e pe un an sau se poate mai scurt?",
+   "tr": "Sözleşme bir yıllık mı, yoksa daha kısa olabilir mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_apartment_4",
+   "kind": "phrase",
+   "target": "Lucrez de acasă, am nevoie de liniște.",
+   "tr": "Evden çalışıyorum, sessizliğe ihtiyacım var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_apartment_5",
+   "kind": "phrase",
+   "target": "Vă răspund mâine.",
+   "tr": "Yarın size dönüş yapacağım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ro_exp_doctor",
+   "kind": "scenario_title",
+   "tr": "Doktorda",
+   "en": "At the doctor's",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_exp_doctor",
+   "kind": "grammar_rule",
+   "tr": "Devam eden süre için \"de + süre\" kullanılır; kendi kendine teşhis koymayın.",
+   "en": null,
+   "context": "Am febră de trei zile. / ✗ Am pneumonie, cred.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ro_exp_doctor.0",
+   "kind": "speaking_prompt",
+   "en": "Unde doare? A început brusc?",
+   "context": "În partea dreaptă a pieptului, de aseară.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_exp_doctor.1",
+   "kind": "speaking_prompt",
+   "en": "Vă trimit la analize de sânge.",
+   "context": "Bine, unde trebuie să merg?",
+   "have": []
+  },
+  {
+   "key": "p.ro_exp_doctor_0",
+   "kind": "phrase",
+   "target": "Am febră de trei zile și tușesc noaptea.",
+   "tr": "Üç gündür ateşim var ve geceleri öksürüyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_doctor_1",
+   "kind": "phrase",
+   "target": "Nu am alergie cunoscută la penicilină.",
+   "tr": "Penisiline bilinen bir alerjim yok.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_doctor_2",
+   "kind": "phrase",
+   "target": "Acest medicament provoacă somnolență?",
+   "tr": "Bu ilaç uyku hâli yapar mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_doctor_3",
+   "kind": "phrase",
+   "target": "Am nevoie de concediu medical pentru serviciu?",
+   "tr": "İş için rapora ihtiyacım var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_doctor_4",
+   "kind": "phrase",
+   "target": "Când să revin la control?",
+   "tr": "Kontrol için ne zaman gelmeliyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_doctor_5",
+   "kind": "phrase",
+   "target": "Farmacia este în afara clădirii?",
+   "tr": "Eczane bina dışında mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ro_exp_business_lunch",
+   "kind": "scenario_title",
+   "tr": "İş yemeği",
+   "en": "Business lunch",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_exp_business_lunch",
+   "kind": "grammar_rule",
+   "tr": "Nazik üstlenme kalıbı: nota este din partea noastră; \"plătiți tot voi\" kaba kaçar.",
+   "en": null,
+   "context": "Nota este din partea noastră. / ✗ Plătiți tot voi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ro_exp_business_lunch.0",
+   "kind": "speaking_prompt",
+   "en": "Prețul mi se pare încă ridicat.",
+   "context": "Putem împărți proiectul în două faze.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_exp_business_lunch.1",
+   "kind": "speaking_prompt",
+   "en": "O să ne gândim.",
+   "context": "Desigur, aștept răspunsul dumneavoastră.",
+   "have": []
+  },
+  {
+   "key": "p.ro_exp_lunch_0",
+   "kind": "phrase",
+   "target": "Am ales restaurantul după sfatul dumneavoastră.",
+   "tr": "Restoranı sizin öneriniz üzerine seçtim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_lunch_1",
+   "kind": "phrase",
+   "target": "Aveți alergii sau preferințe?",
+   "tr": "Alerjiniz veya tercihiniz var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_lunch_2",
+   "kind": "phrase",
+   "target": "Înainte de comandă, clarificăm punctele principale?",
+   "tr": "Sipariş vermeden önce ana noktaları netleştirelim mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_lunch_3",
+   "kind": "phrase",
+   "target": "Nu intrăm în cifre la masă; le trimit după.",
+   "tr": "Masada rakamlara girmeyelim; sonra göndereceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_lunch_4",
+   "kind": "phrase",
+   "target": "De data aceasta nota este din partea noastră.",
+   "tr": "Bu sefer hesap bizden.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_lunch_5",
+   "kind": "phrase",
+   "target": "A fost o întâlnire productivă, vă mulțumesc.",
+   "tr": "Çok verimli bir toplantıydı, teşekkür ederim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ro_exp_complaint",
+   "kind": "scenario_title",
+   "tr": "Şikâyet",
+   "en": "Complaint",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_exp_complaint",
+   "kind": "grammar_rule",
+   "tr": "Kanıt dili \"scrisă\" kullanılır; sadece mesaj yeterli değildir.",
+   "en": null,
+   "context": "O confirmare scrisă. / ✗ Doar un mesaj pe WhatsApp.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ro_exp_complaint.0",
+   "kind": "speaking_prompt",
+   "en": "Ne cerem scuze; verific expedierea.",
+   "context": "Mulțumesc. Notați și ora apelului.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_exp_complaint.1",
+   "kind": "speaking_prompt",
+   "en": "Livrare mâine până la 14:00.",
+   "context": "Bine, aștept.",
+   "have": []
+  },
+  {
+   "key": "p.ro_exp_complaint_0",
+   "kind": "phrase",
+   "target": "Numărul comenzii este 1842 și încă nu a ajuns.",
+   "tr": "Sipariş numaram 1842 ve hâlâ ulaşmadı.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_complaint_1",
+   "kind": "phrase",
+   "target": "Data convenită a fost ieri.",
+   "tr": "Kararlaştırılan tarih dündü.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_complaint_2",
+   "kind": "phrase",
+   "target": "Ca soluție, solicit rambursarea costului de livrare.",
+   "tr": "Çözüm olarak kargo ücretinin iadesini talep ediyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_complaint_3",
+   "kind": "phrase",
+   "target": "Trebuie să vorbesc cu un supervizor sau puteți rezolva?",
+   "tr": "Bir yöneticiyle mi konuşmalıyım, yoksa siz çözebilir misiniz?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_complaint_4",
+   "kind": "phrase",
+   "target": "Pot primi o confirmare scrisă?",
+   "tr": "Yazılı bir teyit alabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_complaint_5",
+   "kind": "phrase",
+   "target": "Sunt răbdător, dar astăzi am nevoie de o oră clară.",
+   "tr": "Sabırlıyım ama bugün net bir saat lazım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ro_exp_business_trip",
+   "kind": "scenario_title",
+   "tr": "İş seyahati",
+   "en": "Business trip",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_exp_business_trip",
+   "kind": "grammar_rule",
+   "tr": "Aktarmaya yetişmek: a prinde conexiunea; a rata = kaçırmak.",
+   "en": null,
+   "context": "Prind conexiunea? / ✗ Ratez aeroportul?",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ro_exp_business_trip.0",
+   "kind": "speaking_prompt",
+   "en": "Geam sau culoar?",
+   "context": "Culoar, cât mai aproape de ieșire.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_exp_business_trip.1",
+   "kind": "speaking_prompt",
+   "en": "Poarta 12, în aproximativ patruzeci de minute.",
+   "context": "Mulțumesc, merg acum.",
+   "have": []
+  },
+  {
+   "key": "p.ro_exp_trip_0",
+   "kind": "phrase",
+   "target": "Iată PNR-ul; cartea de îmbarcare, vă rog.",
+   "tr": "İşte rezervasyon kodum; biniş kartı lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_trip_1",
+   "kind": "phrase",
+   "target": "Bagajul de mână respectă dimensiunile?",
+   "tr": "El bagajı ölçülere uyuyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_trip_2",
+   "kind": "phrase",
+   "target": "Din cauza întârzierii prind conexiunea?",
+   "tr": "Gecikme nedeniyle aktarmaya yetişebilecek miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_trip_3",
+   "kind": "phrase",
+   "target": "Factura pe numele firmei, vă rog.",
+   "tr": "Fatura şirket adına lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_trip_4",
+   "kind": "phrase",
+   "target": "Unde este intrarea în lounge?",
+   "tr": "Lounge girişi nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_trip_5",
+   "kind": "phrase",
+   "target": "Trebuie să păstrez chitanța de taxi pentru decont.",
+   "tr": "Masraf için taksi fişini saklamam gerekiyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ro_exp_client_call",
+   "kind": "scenario_title",
+   "tr": "Müşteri telefonu",
+   "en": "Client phone call",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_exp_client_call",
+   "kind": "grammar_rule",
+   "tr": "Yanlış anlamayı teyit etmek için \"dacă am înțeles greșit\" kullanılır.",
+   "en": null,
+   "context": "Dacă am înțeles greșit, corectați-mă. / ✗ Dacă aș înțelege greșit acum…",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ro_exp_client_call.0",
+   "kind": "speaking_prompt",
+   "en": "Fără această funcție nu putem ieși live.",
+   "context": "Atunci amânăm altceva și accelerăm asta.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_exp_client_call.1",
+   "kind": "speaking_prompt",
+   "en": "Bine, treceți în scris.",
+   "context": "Trimit confirmarea acum.",
+   "have": []
+  },
+  {
+   "key": "p.ro_exp_call_0",
+   "kind": "phrase",
+   "target": "Aveți cinci minute acum?",
+   "tr": "Şu an beş dakikanız var mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_call_1",
+   "kind": "phrase",
+   "target": "Punctul trei din e-mailul de ieri nu este clar.",
+   "tr": "Dünkü mailin üçüncü maddesi net değil.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_call_2",
+   "kind": "phrase",
+   "target": "Considerăm extra sau este în scopul actual?",
+   "tr": "Bunu ek iş mi sayalım yoksa mevcut kapsamda mı?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_call_3",
+   "kind": "phrase",
+   "target": "Dacă am înțeles greșit, vă rog să mă corectați.",
+   "tr": "Yanlış anladıysam lütfen beni düzeltin.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_call_4",
+   "kind": "phrase",
+   "target": "Pe scurt: ciornă vineri, comentarii luni.",
+   "tr": "Özetle: taslak cuma, yorumlar pazartesi.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_call_5",
+   "kind": "phrase",
+   "target": "Trimit imediat un e-mail de confirmare.",
+   "tr": "Hemen bir teyit maili gönderiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ro_exp_hr_salary",
+   "kind": "scenario_title",
+   "tr": "Maaş görüşmesi",
+   "en": "Salary conversation",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_exp_hr_salary",
+   "kind": "grammar_rule",
+   "tr": "Yumuşak rakam için \"așteptarea mea este\" kullanılır; \"cer\" kapıyı kapatır.",
+   "en": null,
+   "context": "Așteptarea mea este de 15%. / ✗ Cer 15% imediat.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ro_exp_hr_salary.0",
+   "kind": "speaking_prompt",
+   "en": "Anul acesta bugetul este foarte strâns.",
+   "context": "Înțeleg. Putem discuta un bonus sau un nivel?",
+   "have": []
+  },
+  {
+   "key": "tp.ro_exp_hr_salary.1",
+   "kind": "speaking_prompt",
+   "en": "Revenim în martie.",
+   "context": "Atunci punem martie în calendar și azi criteriile.",
+   "have": []
+  },
+  {
+   "key": "p.ro_exp_salary_0",
+   "kind": "phrase",
+   "target": "Aș dori să vorbim despre performanță și piață.",
+   "tr": "Performansım ve piyasa seviyesi hakkında konuşmak istiyorum.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_salary_1",
+   "kind": "phrase",
+   "target": "În șase luni am livrat trei proiecte la termen.",
+   "tr": "Altı ayda üç projeyi zamanında teslim ettim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_salary_2",
+   "kind": "phrase",
+   "target": "Așteptarea mea este de cincisprezece la sută; pot arăta argumente.",
+   "tr": "Beklentim yüzde on beş; kanıtlarımı gösterebilirim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_salary_3",
+   "kind": "phrase",
+   "target": "Titlul actual nu reflectă responsabilitățile.",
+   "tr": "Mevcut unvan sorumlulukları yansıtmıyor.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_salary_4",
+   "kind": "phrase",
+   "target": "Dacă nu există buget, să stabilim o dată de revizuire.",
+   "tr": "Bütçe yoksa bir değerlendirme tarihi belirleyelim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_salary_5",
+   "kind": "phrase",
+   "target": "Prefer decizia în scris.",
+   "tr": "Kararı yazılı olarak tercih ederim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ro_exp_daily_errands",
+   "kind": "scenario_title",
+   "tr": "Market ve kargo",
+   "en": "Errands and deliveries",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_exp_daily_errands",
+   "kind": "grammar_rule",
+   "tr": "Hizmet ricalarında cümle sonuna \"vă rog\" eklenir.",
+   "en": null,
+   "context": "Bonul, vă rog. / ✗ Dă bonul.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ro_exp_daily_errands.0",
+   "kind": "speaking_prompt",
+   "en": "Aveți card de fidelitate?",
+   "context": "Nu, de data aceasta nu.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_exp_daily_errands.1",
+   "kind": "speaking_prompt",
+   "en": "Nu am rest, trag de pe card.",
+   "context": "Bine, nicio problemă.",
+   "have": []
+  },
+  {
+   "key": "p.ro_exp_errands_0",
+   "kind": "phrase",
+   "target": "Două pâini din acestea și bonul, vă rog.",
+   "tr": "Bu ekmekten iki tane ve fiş lütfen.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_errands_1",
+   "kind": "phrase",
+   "target": "Unde este raftul fără gluten?",
+   "tr": "Glütensiz reyon nerede?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_errands_2",
+   "kind": "phrase",
+   "target": "Nu lăsați coletul la vecin; un bilet pe ușă.",
+   "tr": "Paketi komşuya bırakmayın; kapıya not bırakın.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_errands_3",
+   "kind": "phrase",
+   "target": "Nu am numerar; trece cardul?",
+   "tr": "Nakit param yok; kart geçer mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_errands_4",
+   "kind": "phrase",
+   "target": "Returul este în paisprezece zile, corect?",
+   "tr": "İade on dört gün içinde, değil mi?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_errands_5",
+   "kind": "phrase",
+   "target": "Nu am nevoie de pungă, am geanta mea.",
+   "tr": "Poşete gerek yok, kendi çantam var.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "s.ro_exp_networking",
+   "kind": "scenario_title",
+   "tr": "Networking",
+   "en": "Networking",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "g.ro_exp_networking",
+   "kind": "grammar_rule",
+   "tr": "Meslek tanıtımı: mă numesc / sunt + meserie.",
+   "en": null,
+   "context": "Sunt product manager în fintech. / ✗ Fac ceva cu produsul.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "tp.ro_exp_networking.0",
+   "kind": "speaking_prompt",
+   "en": "Ce rezolvă concret aplicația?",
+   "context": "Simplificăm facturarea și încasarea pentru IMM-uri.",
+   "have": []
+  },
+  {
+   "key": "tp.ro_exp_networking.1",
+   "kind": "speaking_prompt",
+   "en": "Interesant, trimiteți un e-mail.",
+   "context": "Cu siguranță, vă scriu mâine.",
+   "have": []
+  },
+  {
+   "key": "p.ro_exp_networking_0",
+   "kind": "phrase",
+   "target": "Mă numesc Ana, sunt product manager în fintech.",
+   "tr": "Benim adım Ana, fintech alanında ürün yöneticisiyim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_networking_1",
+   "kind": "phrase",
+   "target": "Exemplul despre plăți a fost foarte clar.",
+   "tr": "Ödemeler hakkındaki örneğiniz çok netti.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_networking_2",
+   "kind": "phrase",
+   "target": "Întâmpinați și voi acest tip de fricțiune?",
+   "tr": "Sizde de bu tür sürtüşmeler oluyor mu?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_networking_3",
+   "kind": "phrase",
+   "target": "S-au terminat cărțile de vizită; vă pot scrie pe LinkedIn?",
+   "tr": "Kartvizitlerim bitti; LinkedIn’den yazabilir miyim?",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_networking_4",
+   "kind": "phrase",
+   "target": "Aveți două minute? Voi fi scurtă.",
+   "tr": "İki dakikanız var mı? Kısa keseceğim.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "p.ro_exp_networking_5",
+   "kind": "phrase",
+   "target": "Cu plăcere vă prezint pe cineva dintr-un domeniu apropiat.",
+   "tr": "Sizi yakın bir alandan biriyle tanıştırmaktan memnuniyet duyarım.",
+   "en": null,
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.ro_birthday",
+   "kind": "story_title",
+   "target": "Ziua de naștere a fratelui meu",
+   "tr": "Kardeşimin Doğum Günü",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_birthday.0",
+   "kind": "story_sentence",
+   "target": "Astăzi este ziua de naștere a fratelui meu.",
+   "tr": "Bugün erkek kardeşimin doğum günü.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_birthday.1",
+   "kind": "story_sentence",
+   "target": "Rudele vin la noi.",
+   "tr": "Akrabalar bize geliyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_birthday.2",
+   "kind": "story_sentence",
+   "target": "Gătim împreună o cină mare.",
+   "tr": "Birlikte büyük bir akşam yemeği pişiriyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_birthday.3",
+   "kind": "story_sentence",
+   "target": "Pregătim și un tort cu fructe.",
+   "tr": "Meyveli bir pasta da hazırlıyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_birthday.4",
+   "kind": "story_sentence",
+   "target": "Fratele meu stinge lumânările, și bem suc.",
+   "tr": "Erkek kardeşim mumları söndürüyor, birlikte meyve suyu içiyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_birthday.5",
+   "kind": "story_sentence",
+   "target": "Toată lumea este fericită.",
+   "tr": "Herkes mutlu.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.ro_phone_call",
+   "kind": "story_title",
+   "target": "O plimbare la munte",
+   "tr": "Dağa Yürüyüş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_phone_call.0",
+   "kind": "story_sentence",
+   "target": "Sâmbătă dimineața sună prietenul meu Andrei.",
+   "tr": "Cumartesi sabahı arkadaşım Andrei arar.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_phone_call.1",
+   "kind": "story_sentence",
+   "target": "El vrea să mergem la munte.",
+   "tr": "Dağa gitmek istiyor.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_phone_call.2",
+   "kind": "story_sentence",
+   "target": "Cumpăr pâine, fructe și apă.",
+   "tr": "Ekmek, meyve ve su alıyorum.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_phone_call.3",
+   "kind": "story_sentence",
+   "target": "Andrei are o haină groasă și un sac mare.",
+   "tr": "Andrei’nin kalın bir ceket ve büyük bir çantası var.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_phone_call.4",
+   "kind": "story_sentence",
+   "target": "Pe drum, ascultăm muzică.",
+   "tr": "Yolda müzik dinliyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_phone_call.5",
+   "kind": "story_sentence",
+   "target": "Muntele este frumos și liniștit.",
+   "tr": "Dağ güzel ve sakin.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "st.ro_park_walk",
+   "kind": "story_title",
+   "target": "O plimbare în parc",
+   "tr": "Parkta Yürüyüş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_park_walk.0",
+   "kind": "story_sentence",
+   "target": "Duminica mergem în parc cu un prieten.",
+   "tr": "Pazar günü bir arkadaşla parka gideriz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_park_walk.1",
+   "kind": "story_sentence",
+   "target": "În parc există flori și copaci mari.",
+   "tr": "Parkta çiçekler ve büyük ağaçlar var.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_park_walk.2",
+   "kind": "story_sentence",
+   "target": "Plimbăm încet printre copaci.",
+   "tr": "Ağaçların arasında yavaşça yürüyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_park_walk.3",
+   "kind": "story_sentence",
+   "target": "Ascultăm păsările și vorbim despre vară.",
+   "tr": "Kuşları dinleyip yazdan konuşuruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_park_walk.4",
+   "kind": "story_sentence",
+   "target": "La prânz, mâncăm sandvișuri și fructe.",
+   "tr": "Öğlen sandviç ve meyve yiyoruz.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "ss.ro_park_walk.5",
+   "kind": "story_sentence",
+   "target": "Este o dimineață frumoasă.",
+   "tr": "Güzel bir sabah.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.A.n",
+   "kind": "alphabet_letter_name",
+   "target": "A",
+   "tr": "A",
+   "en": "A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.A.s",
+   "kind": "alphabet_sound",
+   "target": "A",
+   "tr": "a",
+   "context": "Apă",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.A.m",
+   "kind": "alphabet_example",
+   "target": "Apă",
+   "tr": "Su",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.Ă.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ă",
+   "tr": "Kapalı A",
+   "en": "Schwa A",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.Ă.s",
+   "kind": "alphabet_sound",
+   "target": "Ă",
+   "tr": "ı",
+   "context": "Măr",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.Ă.m",
+   "kind": "alphabet_example",
+   "target": "Măr",
+   "tr": "Elma",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.Â.n",
+   "kind": "alphabet_letter_name",
+   "target": "Â",
+   "tr": "Kalın I",
+   "en": "Central I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.Â.s",
+   "kind": "alphabet_sound",
+   "target": "Â",
+   "tr": "ı (kalın)",
+   "context": "Câine",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.Â.m",
+   "kind": "alphabet_example",
+   "target": "Câine",
+   "tr": "Köpek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.B.n",
+   "kind": "alphabet_letter_name",
+   "target": "B",
+   "tr": "Be",
+   "en": "Be",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.B.s",
+   "kind": "alphabet_sound",
+   "target": "B",
+   "tr": "b",
+   "context": "Bunica",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.B.m",
+   "kind": "alphabet_example",
+   "target": "Bunica",
+   "tr": "Büyükanne",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.C.n",
+   "kind": "alphabet_letter_name",
+   "target": "C",
+   "tr": "Ce",
+   "en": "Ce",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.C.s",
+   "kind": "alphabet_sound",
+   "target": "C",
+   "tr": "k/ç",
+   "context": "Casă",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.C.m",
+   "kind": "alphabet_example",
+   "target": "Casă",
+   "tr": "Ev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.D.n",
+   "kind": "alphabet_letter_name",
+   "target": "D",
+   "tr": "De",
+   "en": "De",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.D.s",
+   "kind": "alphabet_sound",
+   "target": "D",
+   "tr": "d",
+   "context": "Drum",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.D.m",
+   "kind": "alphabet_example",
+   "target": "Drum",
+   "tr": "Yol",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.E.n",
+   "kind": "alphabet_letter_name",
+   "target": "E",
+   "tr": "E",
+   "en": "E",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.E.s",
+   "kind": "alphabet_sound",
+   "target": "E",
+   "tr": "e",
+   "context": "Elev",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.E.m",
+   "kind": "alphabet_example",
+   "target": "Elev",
+   "tr": "Öğrenci",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.F.n",
+   "kind": "alphabet_letter_name",
+   "target": "F",
+   "tr": "Fe",
+   "en": "Fe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.F.s",
+   "kind": "alphabet_sound",
+   "target": "F",
+   "tr": "f",
+   "context": "Floare",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.F.m",
+   "kind": "alphabet_example",
+   "target": "Floare",
+   "tr": "Çiçek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.G.n",
+   "kind": "alphabet_letter_name",
+   "target": "G",
+   "tr": "Ge",
+   "en": "Ge",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.G.s",
+   "kind": "alphabet_sound",
+   "target": "G",
+   "tr": "g/c",
+   "context": "Gură",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.G.m",
+   "kind": "alphabet_example",
+   "target": "Gură",
+   "tr": "Ağız",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.H.n",
+   "kind": "alphabet_letter_name",
+   "target": "H",
+   "tr": "Ha",
+   "en": "Ha",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.H.s",
+   "kind": "alphabet_sound",
+   "target": "H",
+   "tr": "h",
+   "context": "Haină",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.H.m",
+   "kind": "alphabet_example",
+   "target": "Haină",
+   "tr": "Kıyafet",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.I.n",
+   "kind": "alphabet_letter_name",
+   "target": "I",
+   "tr": "İ",
+   "en": "I",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.I.s",
+   "kind": "alphabet_sound",
+   "target": "I",
+   "tr": "i",
+   "context": "Inimă",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.I.m",
+   "kind": "alphabet_example",
+   "target": "Inimă",
+   "tr": "Kalp",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.Î.n",
+   "kind": "alphabet_letter_name",
+   "target": "Î",
+   "tr": "Kalın I (baş)",
+   "en": "Central I (initial)",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.Î.s",
+   "kind": "alphabet_sound",
+   "target": "Î",
+   "tr": "ı (kalın)",
+   "context": "Înot",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.Î.m",
+   "kind": "alphabet_example",
+   "target": "Înot",
+   "tr": "Yüzme",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.J.n",
+   "kind": "alphabet_letter_name",
+   "target": "J",
+   "tr": "Je",
+   "en": "Zhe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.J.s",
+   "kind": "alphabet_sound",
+   "target": "J",
+   "tr": "j",
+   "context": "Joc",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.J.m",
+   "kind": "alphabet_example",
+   "target": "Joc",
+   "tr": "Oyun",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.L.n",
+   "kind": "alphabet_letter_name",
+   "target": "L",
+   "tr": "El",
+   "en": "El",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.L.s",
+   "kind": "alphabet_sound",
+   "target": "L",
+   "tr": "l",
+   "context": "Lapte",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.L.m",
+   "kind": "alphabet_example",
+   "target": "Lapte",
+   "tr": "Süt",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.M.n",
+   "kind": "alphabet_letter_name",
+   "target": "M",
+   "tr": "Em",
+   "en": "Em",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.M.s",
+   "kind": "alphabet_sound",
+   "target": "M",
+   "tr": "m",
+   "context": "Masă",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.M.m",
+   "kind": "alphabet_example",
+   "target": "Masă",
+   "tr": "Masa",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.N.n",
+   "kind": "alphabet_letter_name",
+   "target": "N",
+   "tr": "En",
+   "en": "En",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.N.s",
+   "kind": "alphabet_sound",
+   "target": "N",
+   "tr": "n",
+   "context": "Noapte",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.N.m",
+   "kind": "alphabet_example",
+   "target": "Noapte",
+   "tr": "Gece",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.O.n",
+   "kind": "alphabet_letter_name",
+   "target": "O",
+   "tr": "O",
+   "en": "O",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.O.s",
+   "kind": "alphabet_sound",
+   "target": "O",
+   "tr": "o",
+   "context": "Ochi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.O.m",
+   "kind": "alphabet_example",
+   "target": "Ochi",
+   "tr": "Göz",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.P.n",
+   "kind": "alphabet_letter_name",
+   "target": "P",
+   "tr": "Pe",
+   "en": "Pe",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.P.s",
+   "kind": "alphabet_sound",
+   "target": "P",
+   "tr": "p",
+   "context": "Pâine",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.P.m",
+   "kind": "alphabet_example",
+   "target": "Pâine",
+   "tr": "Ekmek",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.R.n",
+   "kind": "alphabet_letter_name",
+   "target": "R",
+   "tr": "Er",
+   "en": "Er",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.R.s",
+   "kind": "alphabet_sound",
+   "target": "R",
+   "tr": "r",
+   "context": "Rochie",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.R.m",
+   "kind": "alphabet_example",
+   "target": "Rochie",
+   "tr": "Elbise",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.S.n",
+   "kind": "alphabet_letter_name",
+   "target": "S",
+   "tr": "Es",
+   "en": "Es",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.S.s",
+   "kind": "alphabet_sound",
+   "target": "S",
+   "tr": "s",
+   "context": "Soare",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.S.m",
+   "kind": "alphabet_example",
+   "target": "Soare",
+   "tr": "Güneş",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.Ș.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ș",
+   "tr": "Şe",
+   "en": "Sh",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.Ș.s",
+   "kind": "alphabet_sound",
+   "target": "Ș",
+   "tr": "ş",
+   "context": "Șapte",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.Ș.m",
+   "kind": "alphabet_example",
+   "target": "Șapte",
+   "tr": "Yedi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.T.n",
+   "kind": "alphabet_letter_name",
+   "target": "T",
+   "tr": "Te",
+   "en": "Te",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.T.s",
+   "kind": "alphabet_sound",
+   "target": "T",
+   "tr": "t",
+   "context": "Timp",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.T.m",
+   "kind": "alphabet_example",
+   "target": "Timp",
+   "tr": "Zaman",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.Ț.n",
+   "kind": "alphabet_letter_name",
+   "target": "Ț",
+   "tr": "Tse",
+   "en": "Tse",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.Ț.s",
+   "kind": "alphabet_sound",
+   "target": "Ț",
+   "tr": "ts",
+   "context": "Țară",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.Ț.m",
+   "kind": "alphabet_example",
+   "target": "Țară",
+   "tr": "Ülke",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.U.n",
+   "kind": "alphabet_letter_name",
+   "target": "U",
+   "tr": "U",
+   "en": "U",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.U.s",
+   "kind": "alphabet_sound",
+   "target": "U",
+   "tr": "u",
+   "context": "Ureche",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.U.m",
+   "kind": "alphabet_example",
+   "target": "Ureche",
+   "tr": "Kulak",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.V.n",
+   "kind": "alphabet_letter_name",
+   "target": "V",
+   "tr": "Ve",
+   "en": "Ve",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.V.s",
+   "kind": "alphabet_sound",
+   "target": "V",
+   "tr": "v",
+   "context": "Vânt",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.V.m",
+   "kind": "alphabet_example",
+   "target": "Vânt",
+   "tr": "Rüzgar",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.Z.n",
+   "kind": "alphabet_letter_name",
+   "target": "Z",
+   "tr": "Zet",
+   "en": "Zet",
+   "have": [
+    "tr",
+    "en"
+   ]
+  },
+  {
+   "key": "al.ro.Z.s",
+   "kind": "alphabet_sound",
+   "target": "Z",
+   "tr": "z",
+   "context": "Zi",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "al.ro.Z.m",
+   "kind": "alphabet_example",
+   "target": "Zi",
+   "tr": "Gün",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ro.0.h",
+   "kind": "pronunciation_heard",
+   "target": "ă",
+   "tr": "schwa (ı)",
+   "context": "Gevşek ı sesi.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ro.0.x",
+   "kind": "pronunciation_respelling",
+   "target": "pădure",
+   "tr": "pıdure",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ro.1.h",
+   "kind": "pronunciation_heard",
+   "target": "î / â",
+   "tr": "ı (kalın)",
+   "context": "İkisi aynı ses.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ro.1.x",
+   "kind": "pronunciation_respelling",
+   "target": "în, România",
+   "tr": "ın · Romanıya",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ro.2.h",
+   "kind": "pronunciation_heard",
+   "target": "ț",
+   "tr": "ts",
+   "context": "t+s birleşik.",
+   "have": [
+    "tr"
+   ]
+  },
+  {
+   "key": "gd.ro.2.x",
+   "kind": "pronunciation_respelling",
+   "target": "țară",
+   "tr": "tsarı",
+   "have": [
+    "tr"
+   ]
+  }
+ ]
+}

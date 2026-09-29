@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/features.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/models/models.dart';
 import '../../data/translate/cloud_translate.dart';
@@ -102,9 +103,9 @@ class _TranslateScreenState extends ConsumerState<TranslateScreen> {
       searched = true;
       hit = localHit;
       cloudError = null;
-      translating = localHit == null && plus;
+      translating = localHit == null && plus && Features.paidCloudApis;
     });
-    if (localHit != null || !plus) return;
+    if (localHit != null || !plus || !Features.paidCloudApis) return;
 
     try {
       final cloudHit = await CloudTranslate.translate(
@@ -272,14 +273,20 @@ class _TranslateScreenState extends ConsumerState<TranslateScreen> {
                     i18n.translateNoResultBody,
                     style: const TextStyle(color: Voxelith.ink, height: 1.4),
                   ),
-                  const SizedBox(height: 10),
-                  Text(
-                    cloudError ??
-                        (p.isPlus
-                            ? i18n.translatePlusRequiredNote
-                            : i18n.translatePlusUpsellNote),
-                    style: const TextStyle(color: Voxelith.muted, fontSize: 13),
-                  ),
+                  // Bulut çeviri (ücretli) kapalıyken Plus'a çeviri vaadi yok.
+                  if (Features.paidCloudApis) ...[
+                    const SizedBox(height: 10),
+                    Text(
+                      cloudError ??
+                          (p.isPlus
+                              ? i18n.translatePlusRequiredNote
+                              : i18n.translatePlusUpsellNote),
+                      style: const TextStyle(
+                        color: Voxelith.muted,
+                        fontSize: 13,
+                      ),
+                    ),
+                  ],
                 ],
               ),
             ),

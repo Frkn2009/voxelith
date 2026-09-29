@@ -71,7 +71,8 @@ extension EditorialStrings on I18n {
     'tr': 'Gerçek hayattan kısa derslerle kendi ritminde ilerle.',
     'en': 'Move at your own pace with short lessons from real life.',
     'es': 'Avanza a tu ritmo con lecciones cortas de la vida real.',
-    'de': 'Gehe in deinem eigenen Tempo voran mit kurzen Lektionen aus dem echten Leben.',
+    'de':
+        'Gehe in deinem eigenen Tempo voran mit kurzen Lektionen aus dem echten Leben.',
     'fr': 'Avance à ton rythme avec de courtes leçons issues de la vraie vie.',
     'nl': 'Ga in je eigen tempo met korte lessen uit het echte leven.',
     'ar': 'تقدّم بوتيرتك الخاصة من خلال دروس قصيرة من الحياة الواقعية.',
@@ -84,20 +85,26 @@ extension EditorialStrings on I18n {
     'pl': 'Idź we własnym tempie dzięki krótkim lekcjom z prawdziwego życia.',
     'sv': 'Gå fram i din egen takt med korta lektioner från verkliga livet.',
     'da': 'Gå frem i dit eget tempo med korte lektioner fra det virkelige liv.',
-    'no': 'Gå fremover i ditt eget tempo med korte leksjoner fra det virkelige liv.',
-    'fi': 'Etene omaan tahtiisi lyhyillä, tosielämästä otetuilla oppitunneilla.',
-    'el': 'Προχώρα με τον δικό σου ρυθμό με σύντομα μαθήματα από την πραγματική ζωή.',
+    'no':
+        'Gå fremover i ditt eget tempo med korte leksjoner fra det virkelige liv.',
+    'fi':
+        'Etene omaan tahtiisi lyhyillä, tosielämästä otetuilla oppitunneilla.',
+    'el':
+        'Προχώρα με τον δικό σου ρυθμό με σύντομα μαθήματα από την πραγματική ζωή.',
     'cs': 'Postupuj svým tempem s krátkými lekcemi ze skutečného života.',
     'ro': 'Avansează în ritmul tău cu lecții scurte din viața reală.',
     'hu': 'Haladj a saját tempódban valós életből vett rövid leckékkel.',
     'hi': 'असल ज़िंदगी से लिए गए छोटे पाठों के साथ अपनी गति से आगे बढ़ो।',
     'th': 'ก้าวไปตามจังหวะของคุณเองด้วยบทเรียนสั้นๆ จากชีวิตจริง',
-    'vi': 'Tiến lên theo nhịp độ của riêng bạn với các bài học ngắn từ đời sống thực.',
-    'id': 'Maju sesuai ritmemu sendiri dengan pelajaran singkat dari kehidupan nyata.',
+    'vi':
+        'Tiến lên theo nhịp độ của riêng bạn với các bài học ngắn từ đời sống thực.',
+    'id':
+        'Maju sesuai ritmemu sendiri dengan pelajaran singkat dari kehidupan nyata.',
     'uk': 'Рухайся у своєму темпі з короткими уроками з реального життя.',
     'he': 'התקדם בקצב שלך עם שיעורים קצרים מהחיים האמיתיים.',
     'fa': 'با درس‌های کوتاه از زندگی واقعی، با سرعت خودت پیش برو.',
-    'sw': 'Songa mbele kwa kasi yako mwenyewe kwa masomo mafupi kutoka maisha halisi.',
+    'sw':
+        'Songa mbele kwa kasi yako mwenyewe kwa masomo mafupi kutoka maisha halisi.',
   });
   String get editorialPath => t({
     'tr': 'Ders akışın',
@@ -263,8 +270,10 @@ extension EditorialStrings on I18n {
     'tr': 'Bu dil ve seviye için henüz ders yok.',
     'en': 'No lessons are available for this language and level yet.',
     'es': 'Aún no hay lecciones disponibles para este idioma y nivel.',
-    'de': 'Für diese Sprache und dieses Niveau sind noch keine Lektionen verfügbar.',
-    'fr': "Aucune leçon n'est encore disponible pour cette langue et ce niveau.",
+    'de':
+        'Für diese Sprache und dieses Niveau sind noch keine Lektionen verfügbar.',
+    'fr':
+        "Aucune leçon n'est encore disponible pour cette langue et ce niveau.",
     'nl': 'Er zijn nog geen lessen beschikbaar voor deze taal en dit niveau.',
     'ar': 'لا توجد دروس متاحة بعد لهذه اللغة والمستوى.',
     'pt': 'Ainda não há aulas disponíveis para este idioma e nível.',
@@ -274,8 +283,10 @@ extension EditorialStrings on I18n {
     'ja': 'この言語とレベルのレッスンはまだありません。',
     'ko': '이 언어와 레벨에는 아직 레슨이 없습니다.',
     'pl': 'Dla tego języka i poziomu nie ma jeszcze lekcji.',
-    'sv': 'Det finns ännu inga lektioner för det här språket och den här nivån.',
-    'da': 'Der er endnu ingen lektioner tilgængelige for dette sprog og niveau.',
+    'sv':
+        'Det finns ännu inga lektioner för det här språket och den här nivån.',
+    'da':
+        'Der er endnu ingen lektioner tilgængelige for dette sprog og niveau.',
     'no': 'Det finnes ingen leksjoner ennå for dette språket og nivået.',
     'fi': 'Tälle kielelle ja tasolle ei ole vielä oppitunteja.',
     'el': 'Δεν υπάρχουν ακόμα μαθήματα για αυτή τη γλώσσα και το επίπεδο.',
@@ -421,31 +432,47 @@ extension EditorialStrings on I18n {
   });
   String get editorialOnboardingBody => t({
     'tr': 'Kısa bir konuşmayla başla. Her gün kendine biraz daha alan aç.',
-    'en': 'Start with a short conversation. Make a little room for yourself each day.',
-    'es': 'Empieza con una conversación corta. Hazte un poco de espacio cada día.',
-    'de': 'Beginne mit einem kurzen Gespräch. Schaffe dir jeden Tag ein bisschen Raum.',
-    'fr': "Commence par une courte conversation. Fais-toi un peu de place chaque jour.",
-    'nl': 'Begin met een kort gesprek. Maak elke dag een beetje ruimte voor jezelf.',
+    'en':
+        'Start with a short conversation. Make a little room for yourself each day.',
+    'es':
+        'Empieza con una conversación corta. Hazte un poco de espacio cada día.',
+    'de':
+        'Beginne mit einem kurzen Gespräch. Schaffe dir jeden Tag ein bisschen Raum.',
+    'fr':
+        "Commence par une courte conversation. Fais-toi un peu de place chaque jour.",
+    'nl':
+        'Begin met een kort gesprek. Maak elke dag een beetje ruimte voor jezelf.',
     'ar': 'ابدأ بمحادثة قصيرة. اصنع لنفسك مساحة صغيرة كل يوم.',
-    'pt': 'Comece com uma conversa curta. Abra um pequeno espaço para você todos os dias.',
-    'it': 'Inizia con una breve conversazione. Ritagliati un po\' di spazio ogni giorno.',
-    'ru': 'Начни с короткого разговора. Выделяй себе немного места каждый день.',
+    'pt':
+        'Comece com uma conversa curta. Abra um pequeno espaço para você todos os dias.',
+    'it':
+        'Inizia con una breve conversazione. Ritagliati un po\' di spazio ogni giorno.',
+    'ru':
+        'Начни с короткого разговора. Выделяй себе немного места каждый день.',
     'zh': '从一次简短的对话开始。每天为自己留一点空间。',
     'ja': '短い会話から始めましょう。毎日少しだけ自分の時間を作りましょう。',
     'ko': '짧은 대화로 시작하세요. 매일 자신을 위한 작은 공간을 만드세요.',
-    'pl': 'Zacznij od krótkiej rozmowy. Znajdź dla siebie odrobinę przestrzeni każdego dnia.',
+    'pl':
+        'Zacznij od krótkiej rozmowy. Znajdź dla siebie odrobinę przestrzeni każdego dnia.',
     'sv': 'Börja med ett kort samtal. Gör lite plats för dig själv varje dag.',
     'da': 'Start med en kort samtale. Skab lidt plads til dig selv hver dag.',
     'no': 'Start med en kort samtale. Skap litt plass til deg selv hver dag.',
-    'fi': 'Aloita lyhyellä keskustelulla. Tee itsellesi vähän tilaa joka päivä.',
-    'el': 'Ξεκίνα με μια σύντομη συνομιλία. Κάνε λίγο χώρο για τον εαυτό σου κάθε μέρα.',
-    'cs': 'Začni krátkou konverzací. Udělej si každý den trochu prostoru pro sebe.',
-    'ro': 'Începe cu o conversație scurtă. Fă-ți puțin loc pentru tine în fiecare zi.',
-    'hu': 'Kezdd egy rövid beszélgetéssel. Csinálj minden nap egy kis helyet magadnak.',
+    'fi':
+        'Aloita lyhyellä keskustelulla. Tee itsellesi vähän tilaa joka päivä.',
+    'el':
+        'Ξεκίνα με μια σύντομη συνομιλία. Κάνε λίγο χώρο για τον εαυτό σου κάθε μέρα.',
+    'cs':
+        'Začni krátkou konverzací. Udělej si každý den trochu prostoru pro sebe.',
+    'ro':
+        'Începe cu o conversație scurtă. Fă-ți puțin loc pentru tine în fiecare zi.',
+    'hu':
+        'Kezdd egy rövid beszélgetéssel. Csinálj minden nap egy kis helyet magadnak.',
     'hi': 'एक छोटी बातचीत से शुरू करो। हर दिन अपने लिए थोड़ी जगह बनाओ।',
     'th': 'เริ่มต้นด้วยบทสนทนาสั้นๆ สร้างพื้นที่เล็กๆ ให้ตัวเองในทุกวัน',
-    'vi': 'Bắt đầu bằng một cuộc trò chuyện ngắn. Hãy dành cho bản thân một chút không gian mỗi ngày.',
-    'id': 'Mulailah dengan percakapan singkat. Sisakan sedikit ruang untuk dirimu setiap hari.',
+    'vi':
+        'Bắt đầu bằng một cuộc trò chuyện ngắn. Hãy dành cho bản thân một chút không gian mỗi ngày.',
+    'id':
+        'Mulailah dengan percakapan singkat. Sisakan sedikit ruang untuk dirimu setiap hari.',
     'uk': 'Почни з короткої розмови. Виділяй трохи місця для себе щодня.',
     'he': 'התחל בשיחה קצרה. פנה לעצמך קצת מקום בכל יום.',
     'fa': 'با یک گفتگوی کوتاه شروع کن. هر روز کمی فضا برای خودت باز کن.',
@@ -615,7 +642,8 @@ extension EditorialStrings on I18n {
     'tr': 'Tercihlerin kaydedilemedi. Lütfen yeniden dene.',
     'en': 'Your preferences could not be saved. Please try again.',
     'es': 'No se pudieron guardar tus preferencias. Inténtalo de nuevo.',
-    'de': 'Deine Einstellungen konnten nicht gespeichert werden. Bitte versuche es erneut.',
+    'de':
+        'Deine Einstellungen konnten nicht gespeichert werden. Bitte versuche es erneut.',
     'fr': "Tes préférences n'ont pas pu être enregistrées. Réessaie.",
     'nl': 'Je voorkeuren konden niet worden opgeslagen. Probeer het opnieuw.',
     'ar': 'تعذّر حفظ تفضيلاتك. يرجى المحاولة مرة أخرى.',

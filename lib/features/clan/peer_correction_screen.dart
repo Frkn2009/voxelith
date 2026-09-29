@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 
 import '../../core/l10n/i18n.dart';
+import '../../core/l10n/i18n_ui.dart';
 import '../../core/theme/tokens.dart';
 import '../../data/models/clan.dart';
 import '../../data/supabase/supa_service.dart';
@@ -95,7 +96,11 @@ class _PeerCorrectionScreenState extends ConsumerState<PeerCorrectionScreen> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(Icons.groups_outlined, size: 48, color: Voxelith.mintDark),
+            const Icon(
+              Icons.groups_outlined,
+              size: 48,
+              color: Voxelith.mintDark,
+            ),
             const SizedBox(height: 12),
             Text(
               i18n.clanLoginPrompt,
@@ -158,7 +163,7 @@ class _PeerCorrectionScreenState extends ConsumerState<PeerCorrectionScreen> {
               children: [
                 Expanded(
                   child: Text(
-                    submission.playerName,
+                    i18n.playerDisplayName(submission.playerName),
                     style: const TextStyle(
                       fontWeight: FontWeight.w700,
                       color: Voxelith.mintDark,
@@ -270,8 +275,11 @@ class _PeerCorrectionScreenState extends ConsumerState<PeerCorrectionScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                correction.playerName,
-                style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700),
+                i18n.playerDisplayName(correction.playerName),
+                style: const TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w700,
+                ),
               ),
               Text(correction.correctionText),
               if (correction.note != null && correction.note!.isNotEmpty)
@@ -316,7 +324,9 @@ class _PeerCorrectionScreenState extends ConsumerState<PeerCorrectionScreen> {
               controller: noteController,
               maxLength: 300,
               maxLines: 2,
-              decoration: InputDecoration(labelText: i18n.peerCorrectionNoteLabel),
+              decoration: InputDecoration(
+                labelText: i18n.peerCorrectionNoteLabel,
+              ),
             ),
           ],
         ),
